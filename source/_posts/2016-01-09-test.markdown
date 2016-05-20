@@ -1,0 +1,7 @@
+---
+layout: post
+title: "脚本测试"
+date: 2016-01-09 19:00
+comments: true
+---
+shell

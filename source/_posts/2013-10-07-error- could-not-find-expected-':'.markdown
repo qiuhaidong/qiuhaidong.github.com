@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "error 2"
+title: "Error: could not find expected ':'"
 date: 2013-10-07 11:14
 comments: true
 categories: 

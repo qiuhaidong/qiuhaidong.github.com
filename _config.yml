@@ -4,10 +4,10 @@
 
 url: http://qiuhaidong.github.io
 title: 丘海东
-subtitle: #A blogging framework for hackers.
+subtitle: 
 author: 丘海东
-simple_search: http://cn.bing.com/ #https://www.google.com/search
-description: DG
+simple_search: https://www.google.com/search
+description: 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in

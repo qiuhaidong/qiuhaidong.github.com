@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-###出现错误要先看提示代码，知道错在哪里，如：
+####出现错误要先看提示代码，知道错在哪里，如：
 	dong@ubuntu:~/octopress$ rake generate
 	## Generating Site with Jekyll
 	identical source/stylesheets/screen.css 

@@ -5,7 +5,7 @@ date: 2013-06-06 20:54
 comments: true
 categories: 
 ---
-##Before You Begin
+***Before You Begin***  
 
 ###Install Git
 
@@ -180,7 +180,7 @@ If you want to work on posts without publishing them, you can add a `published: 
 
 	rake deploy
 
-#OK！That's it.  
+###OK！That's it.  
 
 2015-8-28  
 [这篇博文](http://justcoding.iteye.com/blog/1954645)讲得很好，推荐看看

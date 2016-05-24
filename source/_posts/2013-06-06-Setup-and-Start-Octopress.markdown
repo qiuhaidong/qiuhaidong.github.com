@@ -20,6 +20,7 @@ categories:
         curl -L https://get.rvm.io | bash -s stable --ruby
 
 *Be sure to **follow** any subsequent instructions as guided by the installation process.*  
+2016-05-21:这里可能会报错，按照它的英文提示做（它会给出命令），能通过  
 
 **Install Ruby 1.9.3**
 

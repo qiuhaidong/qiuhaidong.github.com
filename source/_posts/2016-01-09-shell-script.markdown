@@ -25,4 +25,13 @@ categories:
     chmod +x pull.sh
     ./pull.sh
     
-别漏了前面的符号.
+别漏了前面的符号.  
+
+push.sh  
+
+    #!/bin/sh
+    cd /home/dong/octopress
+    rake generate deploy
+    git add .
+    git commit -m 'update'
+    git push origin source

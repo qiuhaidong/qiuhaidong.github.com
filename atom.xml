@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-08-22T19:12:21+08:00</updated>
+  <updated>2016-08-22T19:22:30+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -62,7 +62,7 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
     <link href="http://qiuhaidong.github.io/blog/2016/08/22/tttt/"/>
     <updated>2016-08-22T19:11:57+08:00</updated>
     <id>http://qiuhaidong.github.io/blog/2016/08/22/tttt</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>pull</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-08-22T16:59:19+08:00</updated>
+  <updated>2016-08-22T17:06:16+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -58,11 +58,11 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Ssl or Https Test]]></title>
+    <title type="html"><![CDATA[SSL and HTTPS]]></title>
     <link href="http://qiuhaidong.github.io/blog/2016/08/22/ssl-or-https-test/"/>
     <updated>2016-08-22T16:58:26+08:00</updated>
     <id>http://qiuhaidong.github.io/blog/2016/08/22/ssl-or-https-test</id>
-    <content type="html"><![CDATA[<p>deploy test</p>
+    <content type="html"><![CDATA[<p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSL失效</a></p>
 ]]></content>
   </entry>
   

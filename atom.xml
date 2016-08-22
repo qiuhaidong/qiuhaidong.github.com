@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-08-22T16:28:59+08:00</updated>
+  <updated>2016-08-22T16:59:19+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -54,6 +54,15 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
 
 <pre><code>sudo gedit test.c
 </code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ssl or Https Test]]></title>
+    <link href="http://qiuhaidong.github.io/blog/2016/08/22/ssl-or-https-test/"/>
+    <updated>2016-08-22T16:58:26+08:00</updated>
+    <id>http://qiuhaidong.github.io/blog/2016/08/22/ssl-or-https-test</id>
+    <content type="html"><![CDATA[<p>deploy test</p>
 ]]></content>
   </entry>
   
@@ -597,15 +606,6 @@ S7 Edge：弧形屏幕的误触问题</p>
     <content type="html"><![CDATA[<p><a href="http://jingyan.baidu.com/article/5d6edee210ba8099eadeecb5.html">图文版</a><br/>
 选中单元格，在菜单栏选择：数据，有效性，（允许）序列，（来源）在菜单栏选择：插入，特殊符号，数字符号，选择“勾”
 ，回到“数据有效性”窗口，打上英文逗号，再重复刚刚的操作，选择“X”,完成。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[麦田群鸦]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/03/01/wheat-field-with-crows/"/>
-    <updated>2016-03-01T16:01:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/03/01/wheat-field-with-crows</id>
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/wheat_field_with_crows.png" alt="麦田群鸦" /></p>
 ]]></content>
   </entry>
   

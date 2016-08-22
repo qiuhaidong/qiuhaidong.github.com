@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Markdown语法 2 - 丘海东</title>
+  <meta name="author" content="丘海东">
+
+  
+  <meta name="description" content="首先表明，此文转载自 作业部落旗下 东哥再次感谢作者 欢迎使用 Cmd - 在线 Markdown 编辑阅读器 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://qiuhaidong.github.io/blog/2013/10/14/yu-fa-2/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">丘海东</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="qiuhaidong.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Markdown语法 2</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-10-14T20:28:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>8:28 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h4>首先表明，此文转载自</h4>
+
+<p><a href="http://www.zybuluo.com/mdeditor">作业部落旗下</a></p>
+
+<h4>东哥再次感谢作者</h4>
+
+<h2>欢迎使用 Cmd - 在线 Markdown 编辑阅读器</h2>
+
+<hr />
+
+<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。</p>
+
+<p>您可以使用 <strong>Cmd Makrdown</strong>：</p>
+
+<ul>
+<li>整理知识，学习笔记</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（公式支持）</li>
+<li>发布日记，杂文，所见所想</li>
+</ul>
+
+
+<p>这是一份 Cmd Markdown 的欢迎稿兼使用说明，请保留，如需撰写<strong>新稿件</strong>， 请在<strong>编辑-预览</strong>模式下，点击顶部工具栏右侧的<strong>新建文本</strong>图标或者使用快捷键 <strong>Ctrl+Alt+N</strong>。</p>
+
+<hr />
+
+<h3>什么是 Markdown</h3>
+
+<p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+
+<ul>
+<li>书写一个质能守恒公式：</li>
+</ul>
+
+
+<p> $E=mc<sup>2</sup>$</p>
+
+<ul>
+<li>或者高亮一段代码：</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">SomeClass</span><span class="p">:</span>
+</span><span class='line'>    <span class="k">pass</span>
+</span><span class='line'><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+</span><span class='line'>    <span class="k">print</span> <span class="s">&#39;hello world&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>想要了解更详细的语法说明，可以参考我们准备的 <a href="http://www.zybuluo.com/mdeditor?url=http://www.zybuluo.com/static/editor/md-help.markdown">Markdown 语法简明手册</a></p>
+
+<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：您只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 它目前已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+
+<hr />
+
+<h3>什么是 Cmd Markdown</h3>
+
+<p>您可以使用很多工具书写 Markdown，但是 <strong>Cmd Markdown</strong> 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 <strong>Cmd Markdown</strong>，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
+
+<h4>1. 实时同步预览</h4>
+
+<p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
+
+<h4>2. 编辑工具栏</h4>
+
+<p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
+
+<p><img src="http://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor" /></p>
+
+<h4>3. 编辑模式</h4>
+
+<p>如果您还想以更加心无旁骛的方式编辑文字，可以点击 <strong>编辑工具栏</strong> 最右测的拉伸按钮或者按下 <strong>Ctrl + M</strong>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
+
+<h4>4. 实时的云端文稿</h4>
+
+<p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 “已保存” 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
+
+<h4>5. 管理工具栏</h4>
+
+<p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
+
+<p><img src="http://www.zybuluo.com/static/img/toolbar-manager.png" alt="tool-manager" /></p>
+
+<p>工具栏上的四个图标依次为：</p>
+
+<ul>
+<li><strong>立即发布</strong>：将当前的文稿生成到固定链接，在网络上发布这个链接，分享您的文稿</li>
+<li><strong>新建文本</strong>：开始撰写一篇新的文稿</li>
+<li><strong>删除文本</strong>：删除当前的文稿</li>
+<li><strong>导出文本</strong>：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地</li>
+</ul>
+
+
+<h4>6. 阅读工具栏</h4>
+
+<p><img src="http://www.zybuluo.com/static/img/toolbar-reader.png" alt="tool-manager" /></p>
+
+<p>通过在 <strong>预览区</strong> 顶部右侧的 <strong>阅读工具栏</strong>，可以查看文稿列表，增强阅读体验</p>
+
+<p>工具栏上的四个图标依次为：</p>
+
+<ul>
+<li><strong>文稿列表</strong>：所有新增和过往的文稿都可以在这里查看、操作</li>
+<li><strong>主题切换</strong>：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！</li>
+<li><strong>阅读模式</strong>：心无旁骛的阅读模式提供超一流的阅读体验</li>
+<li><strong>全屏模式</strong>：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</li>
+</ul>
+
+
+<h4>7. 阅读模式</h4>
+
+<p>在 <strong>阅读工具栏</strong> 点击 <strong>阅读模式</strong> 图标或者按下 <strong>Ctrl+Alt+M</strong> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升您阅读的体验和品质。尝试进入阅读模式，感受这份诚意。</p>
+
+<h4>8. 文稿发布和分享</h4>
+
+<p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <strong>立即发布</strong> 图标发布这份文档给好友吧！</p>
+
+<hr />
+
+<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <strong>新建文本(Ctrl+Alt+N)</strong> 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
+
+<p>作者 <a href="http://weibo.com/ghosert">@ghosert</a>   <br/>
+于 2013 年 10月 3日  <br/>
+上海</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">丘海东</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2013-10-14T20:28:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>8:28 pm</span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/10/13/error-utf-8/" title="Previous Post: Error: UTF-8 无效字符">&laquo; Error: UTF-8 无效字符</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/11/14/ubuntu-software-cache/" title="Next Post: ubuntu software cache">ubuntu software cache &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/03/02/commands-about-linux/">Commands About Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/08/20/C%23-on-Linux/">C# on Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/08/13/Windows-Server-2012-AutoAdminLogon-and-Startup/">Windows Server 2012自动登录和软件自启动</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/06/28/c-plus-plus-under-linux/">C++ Under Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/06/27/c-on-linux/">C编程，linux下</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/06/21/zhong-ruan/">中软事件</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/05/24/vim/">Vim</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/05/21/job-hunting/">Job Hunting</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/04/12/leave-and-back/">逃离与返回</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/04/12/enjoy-alone/">一个人的醇享时光</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/04/01/be-alone/">习惯一个人</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/30/gym/">健身</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/23/books-about-emotional-intelligence/">关于情商的书</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/23/get-up/">寒门难出贵子</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/23/make-a-good-conversatin/">如何聊天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/21/good-temper-and-bad-temper/">脾气</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/20/foul-atmosphere/">戾气</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/16/qualities/">提升气质的一些方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/05/excel-da-gou-x/">Excel表格设置可选择输入勾或叉</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/01/wheat-field-with-crows/">麦田群鸦</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/26/pain/">两代人，城乡之间的矛盾</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/26/for-someone/">For Someone</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/24/secret/">不能说的秘密</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/11/wen-zi/">文字</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/10/gei-zi-ji-kan/">给自己看</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/10/cold-water/">冷水澡</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/10/long-xi-shu/">龙喜叔</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/08/to-myself/">致自己</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/07/you-are-different/">格格不入</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/29/she/">She</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/11/man-without-warm-shoes/">一个顾客</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/09/shell-script/">Shell脚本</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/08/lantern/">Lantern</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/12/02/happyhour-when-i-was-a-kid/">小时候的快乐</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/07/find-myself/">Find Myself</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/09/13/plan/">计划</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/09/08/be-good/">好好生活</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/30/da-sheng-gui-lai/">大圣归来</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/27/sport/">运动，感动</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/25/gentle/">做优雅的人</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/25/how-to-git-octopress/">How to ‘git’ Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/23/gfw-bundle-install/">GFW Rubygems Bundle Install</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/07/20/keyboard-configuration/">更改键盘布局</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/07/19/in-the-wind/">人在风里</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/07/09/kindle-screenshot/">Kindle Screenshot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/06/18/my-cat/">我家的猫</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/19/add-image/">Add Image</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/06/goagent/">GoAgent</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/05/tcpserver-error-address-already-in-use-bind-2/">TCPServer Error: Address Already in Use - Bind(2)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/05/could-not-find-a-javascript-runtime/">Could Not Find a JavaScript Runtime</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/02/22/running/">阿甘的奔跑</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/26/nightmares/">Nightmares</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/09/life-is-maze/">生活 经历 迷宫</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/22/dgs-classroom2/">东哥学堂2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/09/dgs-legend3/">东哥传3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/09/dgs-legend2/">东哥传2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/09/dgs-legend1/">东哥传1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/21/tobaowen/">致宝文</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/16/dgs-classroom/">东哥学堂1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/02/my-dad/">父亲</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/26/install-chrome/">Install Chrome</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/26/install-dropbox/">Install Dropbox</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/26/ubuntu%2014.04/">Ubuntu 14.04</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/26/zheng-neng-liang/">偶而还是需要正能量</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/20/sheng-ri-kuai-le/">生日快乐</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/28/shui-wen/">水汶</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/15/update-libreoffice/">Update Libreoffice by PPA</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/14/ubuntu-software-cache/">Ubuntu Software Cache</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/14/yu-fa-2/">Markdown语法 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/13/error-utf-8/">Error: UTF-8 无效字符</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/07/error-%20could-not-find-expected/">Error: Could Not Find Expected ':'</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/07/error-Could-not-find-syntax-1.0.0-in-any-of-the-sources/">Error: Could Not Find syntax-1.0.0 in Any of the Sources</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/06/markdown-yu-fa/">Markdown语法简明手册</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/06/Setup-and-Start-Octopress/">Setup and Start Octopress</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - 丘海东 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,1 +1,4059 @@
-My Octopress Page is coming soon &hellip;
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>丘海东</title>
+  <meta name="author" content="丘海东">
+
+  
+  <meta name="description" content="2016-03-02 21:26
+shell: 命令行解释器
+Linux命令格式: 命令名 [选项] [参数1] [参数2] …… 命令与参数之间，参数与参数之间用空格隔开
+立即关机: sudo shutdown-h now 或者 sudo halt （Ubuntu不行，在最后画面不动, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://qiuhaidong.github.io/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">丘海东</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="qiuhaidong.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2018/03/02/commands-about-linux/">Commands About Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2018-03-02T21:26:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2018</span></span> <span class='time'>9:26 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-03-02 21:26<br/>
+shell: 命令行解释器<br/>
+Linux<strong>命令格式</strong>: 命令名 [选项] [参数1] [参数2] …… <br/>
+命令与参数之间，参数与参数之间用空格隔开<br/>
+立即<strong>关机</strong>:  <code>sudo shutdown-h now</code> 或者 <code>sudo halt</code> （Ubuntu不行，在最后画面不动,停机但不关电源）或者<code>sudo poweroff</code><br/>
+立即<strong>重启</strong>:  <code>sudo shutdown-r now</code> (Ubuntu不行)或者 <code>sudo reboot</code>（行）<br/>
+<code>ls</code><br/>
+<code>cd  dir</code><br/>
+<strong>复制</strong>: <code>cp /.../.../sourcefile /.../.../targetfile</code> 有重命名的功能<br/>
+<code>cp file1 file2</code> #在当前目录为file1创建一个副本file2<br/>
+<code>cp file ~/target/</code> #复制当前目录下的file到主目录下的target目录中，保持原文件名<br/>
+<code>cp file1 file2 ~/target/</code> #把file1、file2俩个文件复制到target目录，保持原文件名<br/>
+-p: 保持文件属性 <code>cp -p file ~/target/</code><br/>
+-R: 若被复制对象有目录，则把该目录下的子目录和子目录下的文件都复制<br/>
+<strong>移动</strong>: <code>mv</code> #有重命名的功能<br/>
+<code>mv file1 file2</code> #把file1重命名为file2<br/>
+<code>mv file1 file2 ~/target/</code> 把这两个文件都移动到…… #最后一个参数（/target/）必须是目录<br/>
+<strong>创建目录</strong>: <code>mkdir dir</code><br/>
+<strong>删除目录</strong>: <code>rmdir dir</code>  (空目录)<br/>
+<strong>删除文件</strong>: <code>rm file</code><br/>
+<code>rm</code>用于删除文件，若使用参数<code>-r</code>或<code>-R</code>，则可删除目录<br/>
+<code>-r</code>,<code>-R</code>:递归删除，无论目录下是否有东西<br/>
+<code>-i</code>: 删除前先询问<br/>
+<code>-f</code>: 强制删除<br/>
+<code>rm -i test*</code>: 删除所有文件名以test开头的文件<br/>
+<code>rm -rf test/</code>: 删除目录test,无论是否是空目录<br/>
+<strong>超级用户</strong>:<code>sudo su -</code><br/>
+统计文件信息: <code>wc [-l] [-w] [-c] filename</code> (行数，单词数，字符数)<br/>
+<code>--version</code><br/>
+<code>--help</code><br/>
+<code>man</code><br/>
+Linux中，一个文件是一组数据的集合，可理解为一个字符流或字节流，Linux并不为文件设计内部结构，而是把文件都理解为无结构的数据集合。<br/>
+所以:新建并打开文件可直接说编辑该文件即可（test.c文件之前并未存在）:</p>
+
+<pre><code>sudo gedit test.c
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/20/C%23-on-Linux/">C# on Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-20T14:18:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:18 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives">参考官方说明</a><br/>
+attention:有些commend不适合ubuntu，要区分<br/>
+<a href="http://blog.csdn.net/caspiansea/article/details/50585025">参见另一篇blog</a><br/>
+install mono,(mono-complete and monodevelop):</p>
+
+<pre><code>sudo apt-get install mono-complete monodevelop
+</code></pre>
+
+<p>edit:</p>
+
+<pre><code>vim helloworld.cs
+</code></pre>
+
+<p>build:</p>
+
+<pre><code>mcs helloworld.cd
+</code></pre>
+
+<p>run:</p>
+
+<pre><code>./helloworld.exe
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/13/Windows-Server-2012-AutoAdminLogon-and-Startup/">Windows Server 2012自动登录和软件自启动</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-13T23:36:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:36 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>自动登录：<br/>
+win+r：Control UserPasswords2<br/>
+Administrator<br/>
+自启动：<br/>
+win+r：shell:startup
+文件夹已打开，把软件的快捷方式添加进去即可</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/06/28/c-plus-plus-under-linux/">C++ Under Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-06-28T17:19:52+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:19 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>编译：</p>
+
+<pre><code>g++ -o hello hello.cpp
+</code></pre>
+
+<p>或：</p>
+
+<pre><code>g++ hello.cpp -o hello
+</code></pre>
+
+<p>或：</p>
+
+<pre><code>g++ hello.cpp
+</code></pre>
+
+<p>生成hello或a.out<br/>
+运行：</p>
+
+<pre><code>./hello
+</code></pre>
+
+<p>或：</p>
+
+<pre><code>./a.out
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/06/27/c-on-linux/">C编程，linux下</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-06-27T09:18:14+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:18 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>linux下用gcc，系统自带有，用<code>gcc --version</code>查看一下即可，若没有，安装编译环境：</p>
+
+<pre><code>sudo apt-get install build-essential
+</code></pre>
+
+<p>新建test.c文件：</p>
+
+<pre><code>sudo gedit /…/…/…/test.c
+</code></pre>
+
+<p>然后开始编程：</p>
+
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    printf("hello,world!\n");
+    return 0;
+}
+</code></pre>
+
+<p>保存后编译：</p>
+
+<pre><code>gcc -o test test.c
+</code></pre>
+
+<p>生产可执行文件test，运行：</p>
+
+<pre><code>./test
+</code></pre>
+
+<p>完成。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/06/21/zhong-ruan/">中软事件</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-06-21T14:14:57+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>2:14 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><strong>2016-06-17 14:47</strong></p>
+
+<ul>
+<li>面对真实的自己</li>
+<li>一无所有之后</li>
+<li>写字楼、身光颈靓的表象与本质</li>
+<li>用法律、警察解决问题</li>
+<li>天哥V5</li>
+<li>天哥V5</li>
+<li>天哥V5</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/05/24/vim/">Vim</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-05-24T19:13:46+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>7:13 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>终端执行命令：</h4>
+
+<pre><code>vimtutor
+</code></pre>
+
+<p>查看《VIM教程》</p>
+
+<h4>基本操作：</h4>
+
+<p>光标移动：<br/>
+h：左<br/>
+j：下<br/>
+k：上<br/>
+l：右</p>
+
+<h4>正常模式==>输入模式：</h4>
+
+<p>i：左边输入<br/>
+I：行首输入（In the front）<br/>
+a：右边输入（after）<br/>
+A：行尾输入（After）<br/>
+o：下面输入一新行<br/>
+O：上面输入一新行<br/>
+s：删除字符再输入<br/>
+S：删除行再输入</p>
+
+<h4>其他模式==>正常模式：</h4>
+
+<p>Esc</p>
+
+<h4>正常模式==>命令模式：</h4>
+
+<p>:<br/>
+(shift加分号，英文输入法下)</p>
+
+<h4>正常模式==>可视模式：</h4>
+
+<p>v：可视模式<br/>
+V:可视块模式</p>
+
+<h4>常用命令：</h4>
+
+<p>:w<enter> 保存<br/>
+:q<enter> 退出<br/>
+:wq<enter> 保存后退出<br/>
+:q!<enter> 不保存，强制退出</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/05/21/job-hunting/">Job Hunting</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-05-21T03:58:16+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>3:58 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>感谢您用宝贵的时间看我的简历，谢谢</p>
+
+<p>个人信息：</p>
+
+<p>丘海东<br/>
+广东茂名人<br/>
+09-13年，就读于广东肇庆学院电子系<br/>
+结业，很惭愧<br/>
+13年11月-16年4月，在广西一家服装店工作<br/>
+这两年半的工作之余，我感兴趣的依然是电子产品，科技行业，遂在时机适合时，辞职</p>
+
+<p>说说我对几个电子产品的看法</p>
+
+<p>iPhone：<br/>
+优点：<br/>
+     省心<br/>
+     时尚轻奢品属性<br/>
+缺点：<br/>
+     丑<br/>
+     低屏占比<br/>
+     为了降低生产难度，增加良品率，耐摔，降低返修率，2.5D的屏幕需要空间）<br/>
+     最近iOS频出bug，我认为是：<br/>
+     1.外界关注度高，被放大<br/>
+     2.iPhone产品线增多，功能增多，系统更复杂，臃肿<br/>
+     3.苹果没有了乔布斯时代的严苛要求</p>
+
+<p>三星S7：无明显的短板，漂亮，设计、工艺无可挑剔<br/>
+S7 Edge：弧形屏幕的误触问题</p>
+
+<p>魅族：漂亮但没变化没惊喜</p>
+
+<p>高中低端各出一款机子，将精品路线和机海路线结合</p>
+
+<p>华为：工程师思维太重，机身设计粗犷，直接点说是粗糙，系统界面，应用图标无美感，变异的圆角矩形显得四不象，适合粗线条大心脏的用户。</p>
+
+<p>小米：<br/>
+      做得最漂亮的产品是电话卡<br/>
+      手机给我的感觉一直很粗糙，红米3背部的三段式设计，割裂感非常强烈，这是设计？<br/>
+      最好的是塑料一体机身的4C<br/>
+      在街上看到有人用米5，真机出来的质感还不错<br/>
+      由此引出来一点，看图片和真机是有差别的</p>
+
+<p>扁平化做得最好的：Windows<br/>
+产品理念最好的：kindle oasis<br/>
+    在看kindle（￥499款）拆解文章时我就想，机身里面大部分是空的，空间很足，为什么不做窄边框？便携，省料，省包装材料，省物流成本。<br/>
+    拿到手我就明白了，宽边框是必须的。拿手机和拿kindle完全不同，拿手机时，虎口扣住手机一边，四个手指扣住另一边，拇指在上面不停地操作。拿kindle时，手掌四指托在背面，拇指按住边框以拿稳，偶尔移动拇指翻页。如果把kindle边框做窄了，反而不好用了。<br/>
+    两个产品的使用方式迥异，所以对边框的处理就不同。</p>
+
+<p>Kindle很清楚自己是什么，要什么，并且很好地做到了。</p>
+
+<p>所以当kindle oasis出来时，我一下子就懂了它为什么这样设计外观，并“倒退”般地增加实体翻页键。</p>
+
+<p>就凭这点，可看出kindle团队的产品理念的高明</p>
+
+<p>现在的手机真的智能么？<br/>
+“能”，但不“智”。<br/>
+功能多了，强大了，但智慧并没有大的体现。<br/>
+智慧是什么？自己获取信息，感知信息，并处理，作出相应的动作。<br/>
+在同质化越来越严重的瓶颈期，做到真正的智，将引领下一个手机时代。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/04/12/leave-and-back/">逃离与返回</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-04-12T15:46:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>3:46 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我曾逃离北上广。<br/>
+我将回去。<br/>
+在广西水汶快两年半了，挺长的一段时间。和波波、阿媚共事很开心，彼此信任，做起事来很轻松很畅快。<br/>
+我的工作，最多的是出演收银员的角色，所以接触不少人。<br/>
+一类是极品奇葩。<br/>
+遇到这类人，自然很愤怒，很倒霉。但其实问题不大，毕竟早看开了，奇葩处处有，事情过了就扔一边了。<br/>
+另一类人，让我无奈。<br/>
+我是个普通人，懂的东西很少。很无奈，有人比我更差，尤其是一些偏远乡镇的一些人。很多事情我们一想就通一说就明，但是和他们说，就怎么说都说不明白，很费劲。<br/>
+这状况谁都没有错。我们国家近现代这么动乱，祖辈父辈很多人没读过书，很多东西都不懂，正常。而现在社会发展这么快，别说他们，我都远远落后了，怎么去要求他们懂。<br/>
+所以问题就在这了，谁都没错，只是和他们接触交流，很累。<br/>
+我选择离开。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/04/12/enjoy-alone/">一个人的醇享时光</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-04-12T15:25:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>3:25 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>人群之外的生活<br/>
+也能过得优雅有品味<br/>
+就算每个人都是一座孤岛<br/>
+也要是鸟语花香的那座</p>
+
+<p>一个人看电影<br/>
+因为喜欢<br/>
+所以不一定需要人陪伴<br/>
+不同于两个人闹腾腾的约会<br/>
+时刻上演激烈的爆米花争夺战<br/>
+一个人看的<br/>
+那才叫电影嘛</p>
+
+<p>一个人吃饭<br/>
+都说聚餐是一群人的狂欢<br/>
+其实哪有什么孤单不孤单<br/>
+一个人吃饭<br/>
+不用吵嚷着争执谁做什么晚餐<br/>
+把锅碗瓢盆都掀翻<br/>
+也不用神烦邻座的忌辣厌酸<br/>
+好好享受美食<br/>
+就是对生活的尊重</p>
+
+<p>一个人的周末旅行<br/>
+穿上最美的行头<br/>
+选个最喜欢的地方<br/>
+穷游<br/>
+暴走<br/>
+拒绝为与同伴路径不一致发飙<br/>
+拒绝在美好的风景里吵吵闹闹<br/>
+也不牵谁的手<br/>
+在路上感受不一样的风景<br/>
+经历什么都是人生的收获</p>
+
+<p>一个人的下午<br/>
+拆开心爱的零食<br/>
+一口清脆的“咔嚓”<br/>
+这个丢掉高跟鞋<br/>
+不理会手机来电的下午<br/>
+好像变得有点不一样</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/04/01/be-alone/">习惯一个人</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-04-01T20:29:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>8:29 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>独自面对自己的世界。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/30/gym/">健身</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-30T11:08:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:08 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>2016-03-30 身形还很差，练好了再发吧！</h4>
+
+<p>一直很懒，懒到自己都不好意思了。2月初开始做点运动健健身，还很恶俗的做了个表格来装逼[尴尬脸]。<br/>
+<a href="https://docs.google.com/spreadsheets/d/11uC6EdN4ofFRy84qfyGgWdGEqW57TLrArTYt8BTf8JA/edit#gid=536255186">坚持表</a><br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/gym01.png" alt="坚持表" />
+断断续续下来，差不多两个月了，虽然跟大神们没法比，但比起以前的心血来潮做一两天然后歇半年，再心血来潮做两天，好很多了。<br/>
+这么点时间，想要有巨大的变化是不可能的，不过小变化倒有，肚腩已经稍微缩小一点点了，当然还是挺大的，腹部腰部后背的脂肪果然很难减。<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/gym02.jpg" alt="2016-03-29" /><br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/gym03.jpg" alt="2016-03-28" /><br/>
+<a href="http://weibo.com/p/23044409f2cbd438616826c6de59d0364bf3ea">有个视频</a>说得很好：健身是等待，耐心，相信生活会一点点慢慢变好，毕竟改变需要时间。<br/>
+等待，耐心，一点点慢慢变好。如果一两个月就能大有成效，那么好身材好身形有什么厉害的？<br/>
+说到底，就是自律。<br/>
+运动，控制饮食。<br/>
+那句负能量鸡汤是怎么说来着？哦，想起来了：努力不一定成功。但不努力一定很轻松。<br/>
+整天坐着，躺着，想吃就吃，想睡就睡，多爽呀，没有场地器材，今天好累，天气不好，不是黄道吉日，明天再运动吧，多轻松。<br/>
+运动，控制饮食，是痛苦的。做双杠臂屈伸：<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/gym04.jpeg" alt="双杠1" /><br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/gym05.jpeg" alt="双杠2" /><br/>
+刚开始，一天做50个，慢慢增加到100,200,300。做了几百个，第二天再做的时候，一下去，筋骨关节是啪啪啪地响，肌肉酸痛，很想放弃。<br/>
+饮食方面也是，要知道，美食带来的满足感和愉悦感是无敌的。运动产生的那一丁点使人快乐的激素、那两块肌肉带来的精神上的满足，想要对抗糖，盐，油，肉，碳水化合物，好难哒。（没错，是在卖萌，不服你来打我呀）<br/>
+那我为什么还要健身呢？<br/>
+我傻咯。</p>
+
+<p>做运动脑子要平静，心态要平和，乱想东西，身体会一下子乱掉。想起14-15年度NBA季后赛火箭VS快船第六场，在下半场落后20几分的时候，我能感受到火箭的5个球员慢慢听不到球场里的杂音，慢慢看不到观众，眼里，脑里，心里，只剩下篮球，打好这个进攻，防好这个球，打好这个进攻，防好这个球……</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/23/books-about-emotional-intelligence/">关于情商的书</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-23T19:50:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>7:50 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>阶段一</h4>
+
+<ol>
+<li>自我（第二版）</li>
+<li>发展心理学</li>
+<li>心理学与生活</li>
+<li>社会心理学（第八版）</li>
+<li>裸猿（三部曲）</li>
+</ol>
+
+
+<h4>阶段二</h4>
+
+<ol>
+<li>简单冥想术</li>
+</ol>
+
+
+<h4>阶段三</h4>
+
+<ol>
+<li>不确定世界的理性选择：判断与决策心理学</li>
+<li>亲密关系（第五版）</li>
+<li>非暴力沟通</li>
+<li>态度改变与社会影响</li>
+<li>沃顿商学院最实用的谈判课</li>
+</ol>
+
+
+<h4>阶段四</h4>
+
+<ol>
+<li>性审判史</li>
+<li>性史</li>
+</ol>
+
+
+<h4>阶段五</h4>
+
+<ol>
+<li>审批</li>
+<li>现代地狱纪游</li>
+</ol>
+
+
+<h4>阶段六</h4>
+
+<ol>
+<li>三人同舟</li>
+<li>好兵帅克</li>
+<li>门萨的娼妓</li>
+<li>五号屠场</li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/23/get-up/">寒门难出贵子</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-23T13:47:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>1:47 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://bbs.tianya.cn/post-free-3560685-1.shtml">参见原文</a><br/>
+当然难。<br/>
+家境出身决定成长环境，成长经历，决定你以后怎么看自己，看别人，看世界，看事情，想事情，做事情，决定你的思维，决定你是得到助力，还是得不到助力，还是得到阻力。<br/>
+治国就因此眼界低，看低看轻看贱了自己。<br/>
+人要有傲骨。对自己，骨子里要狂傲到上天，对别人，为人处世要低调谦逊到下地。<br/>
+引以为戒。可以省，可以吝啬，可以小气，但绝不可占小便宜，绝不可低贱了自己。<br/>
+原子是笨。<br/>
+周周夫妇郎才女貌。要学习他们的待人接物，肢体动作，讲话语气，讲话方式等。他们有钱有权有势，而平易近人，相比之下，看看你自己，千万别拽，别有戾气。越有底气，越平和。<br/>
+太高傲，眼睛里揉不得沙子，自己懂的道理，也要求别人懂，自己不会做的事不会说的话，也要求别人不，世界非如此，要注意，灵活应对各种事，各种处境。<br/>
+师兄，你很好。你经受过那么久的黑暗冰冷。你离开。当机会降临，你能再次走进去，尽管依旧惧怕。<br/>
+我很清楚自己。要做的，就是规划，接下来做什么。改变自己的思维，待人处事的方式。<br/>
+寒门要出贵子，很难。<br/>
+要自己尽量多地接触各种人各种事，各种思维，然后思考。想明白了，做。<br/>
+思维还是可以改变的，人还是可以改变的。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/23/make-a-good-conversatin/">如何聊天</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-23T11:42:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>11:42 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://weibo.com/1742566624/Dnxr5ho01?type=comment#_rnd14587044733760">参见这条微博</a></p>
+
+<ol>
+<li><p>话题</p>
+
+<p>   大家都能参与的话题，观点别绝对（佛教就是迷信，日本人全部都坏）<br/>
+   说编程bug不如说电脑小技巧<br/>
+   说手机硬件不如说手机卡死后长按重启<br/>
+   话题观点要有多角度，别绝对<br/>
+   聊风土，人情，名人，影视歌，娇气，美食，幻想……</p></li>
+<li><p>态度</p>
+
+<p>   平和，微笑，身体动作要少，情绪要相符对应</p></li>
+<li><p>声音</p>
+
+<p>   大小，高低，快慢，语调，语气</p></li>
+<li><p>非线性对话</p>
+
+<p>   思维别一根筋，别一直追问（你多大？28。哪里人？广东。广东哪里？茂名。茂名哪里？信宜。信宜哪里？……），别有压迫感<br/>
+   要曲线，不要直线，多个话题结合，多路多线程</p></li>
+<li><p>合理的短悬念</p>
+
+<p>   别一股脑说结果<br/>
+   别太长
+   重要的事别设悬念</p></li>
+<li><p>不经意的幽默</p>
+
+<p>  别故意讲段子梗</p></li>
+<li><p>重复别人的关键词</p></li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/21/good-temper-and-bad-temper/">脾气</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-21T12:36:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>12:36 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>不能没有脾气。但是：<br/>
+好脾气不一定高尚，也不一定带来好运，但坏脾气肯定是瘟神，会把好运气赶跑。命运派来的贵人，未必一开始你就认得出，很多人因坏脾气把好运气赶跑了，然后运气就更坏，然后脾气也更坏，一个恶性循环就产生了。——水木丁<br/>
+控制脾气。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/20/foul-atmosphere/">戾气</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-20T15:45:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>3:45 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>因工作性质见过不少人，从一些人的眼角、嘴角可以感受到他们浓郁的戾气。<br/>
+有的人带孩子来买衣服，用了几块钱（真的就是几块钱或十来块钱的衣服），然后骂骂咧咧的，孩子闭着嘴低着头，目光闪躲呆滞无神。我也只能在心里默默叹口气。<br/>
+戾气并非绝对的贬义词，普通人甚至个别挺好的人都会有戾气。但戾气肯定不是好的东西，对自己对身边的人都不好。他们大多不如意，或者缺钱，或者做着不喜欢的工作，感受不到尊重和爱，彷徨迷茫。又没有足够的智慧和良好的心态去排解。<br/>
+简单点说，底气和智慧不足。<br/>
+而这两样东西都自能靠自己。<br/>
+我也见过一些老人，衣着简朴，而眼神充盈着平和的善意和笑意。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/16/qualities/">提升气质的一些方法</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-16T14:48:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:48 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>微笑<br/>
+少说话<br/>
+提升皮肤质感<br/>
+不断学习<br/>
+经常鼓励自己<br/>
+运动<br/>
+树立积极信念<br/>
+别再无精打采<br/>
+告诉自己还年轻</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/05/excel-da-gou-x/">Excel表格设置可选择输入勾或叉</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-05T10:47:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>10:47 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://jingyan.baidu.com/article/5d6edee210ba8099eadeecb5.html">图文版</a><br/>
+选中单元格，在菜单栏选择：数据，有效性，（允许）序列，（来源）在菜单栏选择：插入，特殊符号，数字符号，选择“勾”
+，回到“数据有效性”窗口，打上英文逗号，再重复刚刚的操作，选择“X”,完成。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/01/wheat-field-with-crows/">麦田群鸦</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-01T16:01:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>4:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/wheat_field_with_crows.png" alt="麦田群鸦" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/26/pain/">两代人，城乡之间的矛盾</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-26T17:26:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:26 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我认为我父母这一代人和我这一代人是相当矛盾的。<br/>
+我父亲是58年的，母亲是61年，我是89年。他们经历了文革、饥荒这些国家非常动乱艰难的时期。而我成长时是国家改革开放，与西方国家接触的时期。我们都处在老旧传统与新世界新思维的夹缝中。同时我是农村的，现在是我们国家农村城镇化的过程。<br/>
+一个新旧思维，一个城乡差距，把我们掐得够呛。<br/>
+比如我，我是能接受西方思维观念的，关于晚婚，不结婚，丁克，性开放，同性恋这些，我都是司空见惯的了。而我父母这一代人，能接受么？我不认为。<br/>
+农村城镇化这一点，也是压着我们这一代的许多人，说白了，就是在城市买房。这几年的房价的飞涨……<br/>
+希望下一代人，不必承受这些。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/26/for-someone/">For Someone</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-26T17:00:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:00 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我们都会想许多东西，把一部分写下了，有一些公开，有一些只给自己看。因为我们知道，这些文字充满了稚嫩与羞涩。<br/>
+而其实我们希望，有一天，有一个人说：我看完了你写的文字，我觉得你还有一些没有公开。我想看。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/24/secret/">不能说的秘密</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-24T23:41:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:41 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/secret.jpg" alt="secret" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/11/wen-zi/">文字</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-11T16:16:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>4:16 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>文字让人在柴米油盐里摸爬滚打之余，还有一丝灵气。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/10/gei-zi-ji-kan/">给自己看</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-10T22:35:50+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>10:35 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这两年的经历，让我体会各种感觉。我的三观，我的信仰，骄傲，坚守，勇敢，自尊，自负，甚至自卑，懦弱，被击打破碎。<br/>
+然后重建。<br/>
+有些碎片注定找不回，留下一个个破洞。我以后遇到的人和事，会把洞补上，最终和以前的不一样。<br/>
+与世界交手的这些年，我黯然失色，却依旧兴趣盎然。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/10/cold-water/">冷水澡</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-10T15:36:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>3:36 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>昨晚，大年初二，洗了个冷水澡，爽！<br/>
+意志力这东西，你觉得你行，你就行。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/10/long-xi-shu/">龙喜叔</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-10T14:28:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:28 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>昨晚龙喜叔来聊天，说了一件事。<br/>
+前些天，包茂高速还没开放，龙喜叔经过出入口，一时兴起，便问工作人员能否进入。工作人员说，现在还没开放，只有路政车能走。<br/>
+龙喜叔没有纠缠，和他闲聊几句，递上烟，过了会，工作人员说:没事，你想进去走走就进去吧。<br/>
+龙喜叔是个脸上总带着笑容的人。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/08/to-myself/">致自己</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-08T00:00:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这几年，我黯然无光，落魄至极。<br/>
+好像风里的一条狗。<br/>
+但有些东西，还在。<br/>
+祝你不在你不适合的舞台上跳舞，祝你就算孤独也过得生龙活虎，祝你不被那些大大小小的不如意打败。别人眼里的你一点也不重要，如果要努力，就努力为你喜欢的生活而活吧。—— 张晓晗<br/>
+<img src="http://r.photo.store.qq.com/psb?/V13NDf2z3Ltdij/heg0qGDHvGzcVIsO5MycFjpIze6Lip1azHJOzTcqKRE!/r/dFcBAAAAAAAA" alt="0" /><br/>
+<img src="http://r.photo.store.qq.com/psb?/V13NDf2z3Ltdij/WEwWMUc5nr1utRZHGRtBhKTh0t7IDwN7nRPCLJWfPXE!/r/dFoBAAAAAAAA" alt="1" /><br/>
+<img src="http://r.photo.store.qq.com/psb?/V13NDf2z3Ltdij/38jM363FbPiGoKd7VhCvtD1rCmOLXt9ZhtGsJmogguY!/r/dFkBAAAAAAAA" alt="2" /><br/>
+<img src="http://r.photo.store.qq.com/psb?/V13NDf2z3Ltdij/A7*9GLN3b0ZKYrd16GH3egofAeY3m4Pq*sIl1P3Mx.M!/r/dFoBAAAAAAAA" alt="3" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/07/you-are-different/">格格不入</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-07T17:20:05+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:20 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>理所当然。  <br/>
+你不会沦落至此。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/29/she/">She</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-29T12:15:05+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:15 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>You made her cried,can you make her smile?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/11/man-without-warm-shoes/">一个顾客</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-11T00:00:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这几天挺冷的，今天阴天，偶尔起风，下午5点多。<br/>
+一个中年男子，来买了条皮带，49块。<br/>
+他约三四十岁，一双手都是黑色的，估计是沾了机油，做维修之类的工作。头发浓密而略蓬乱，一脸的胡渣。<br/>
+出门的时候，我看了看，他穿一条破旧起皱的裤子，一双胶拖鞋。<br/>
+我想到这类的男人，中年，要负担一家人的开支，疲于挣钱，没有时间与精力拾腾自己。<br/>
+我还想到再多一些东西。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/09/shell-script/">Shell脚本</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-09T17:08:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:08 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://github.com/qinjx/30min_guides/blob/master/shell.md">参见原博</a><br/>
+新建文本，扩展名为sh，扩展名并不影响脚本的执行，见名知意即可，若是用PHP编写，扩展名就用php<br/>
+终端下先执行：</p>
+
+<pre><code>rvm use 1.9.3
+</code></pre>
+
+<p>再执行脚本<br/>
+代码：</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+git pull origin source
+rake generate deploy
+</code></pre>
+
+<p>保存即可(文件名为pull.sh)<br/>
+运行脚本，终端命令：</p>
+
+<pre><code>chmod +x pull.sh
+./pull.sh
+</code></pre>
+
+<p>别漏了前面的符号.</p>
+
+<p>push.sh</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+rake generate deploy
+git add .
+git commit -m 'update'
+git push origin source
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/08/lantern/">Lantern</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-08T14:56:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:56 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://github.com/getlantern/lantern">下载页面</a><br/>
+<a href="https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta.exe">Windows版</a><br/>
+<a href="https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta-32-bit.deb">Ubuntu（32位）版</a><br/>
+<a href="https://s3.amazonaws.com/lantern-android/lantern-android-beta.apk">android</a><br/>
+一键安装，双击即可<br/>
+<a href="https://getlantern.org">Lantern官网</a><br/>
+官网自然受到GFW的特殊照顾，要翻了墙才能访问到</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/12/02/happyhour-when-i-was-a-kid/">小时候的快乐</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-12-02T13:11:00+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:11 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>得到一个小电筒，晚上照亮东西<br/>
+捡到两石头，黑暗中打出火花<br/>
+买了个新橡皮<br/>
+拿根小水管，如图，在小溪边玩了半天<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/20151202_134227.jpg" alt="water" /><br/>
+到山上收集松香，砍竹子，找棉线，自制蜡烛，拿着蜡烛去钻排水渠<br/>
+河溪边捉鱼，虾，螃蟹，钓鱼，钓青蛙</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/10/07/find-myself/">Find Myself</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-10-07T08:50:27+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>8:50 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>找回自己<br/>
+找到自己<br/>
+找到自己的光</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/09/13/plan/">计划</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-09-13T23:17:27+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>11:17 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>早早就必须计划好所有事情，所有细节。<br/>
+拖延症害死人。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/09/08/be-good/">好好生活</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-09-08T09:14:00+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>9:14 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>好好睡<br/>
+好好吃喝<br/>
+锻炼身体<br/>
+读书<br/>
+做家务<br/>
+看好的电影，电视剧，节目<br/>
+好好听音乐<br/>
+好好上网</p>
+
+<p>2015.09.08 吃了早餐，喝了水<br/>
+2015.09.09 <strong><em>今天凌晨1点半才睡觉</em></strong>，不好，吃了早餐<br/>
+2015.09.10 <strong><em>苹果发布会，熬了半夜</em></strong>，其他正常<br/>
+2015.09.11 <strong><em>看优酷，1点半晚睡</em></strong>，……blue<br/>
+2015.09.12 <strong><em>还是晚睡</em></strong>，……blue<br/>
+2015.09.13 <strong><em>00：52</em></strong>，12k，man<br/>
+2015.10.05 00：30，lue，撑体向上，仰卧起坐130个<br/>
+2015.10.06 00：12，溢，吃早餐，今天运动方面估计要停一停了，来了两天，劳逸结合吧。吃宵夜。<br/>
+2015.10.07 00：41，今天腹肌酸疼，前天练的乳酸。晚上吃了个苹果，23：51就睡觉了。
+2015.10.08 晚上吃了半个月饼作宵夜。<br/>
+2015.10.09 00：33睡觉。<br/>
+hold on，7/8/9/10<br/>
+偷个小懒，歇了几天，现在继续<br/>
+2015.10.15 别吃太饱，中午吃了8分饱，很好</p>
+
+<p>2015.10.18 低谷，痛苦，逃避，麻木，更低迷……周而复始，我会毁了<br/>
+2015.12.20 00：51，睡觉</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/30/da-sheng-gui-lai/">大圣归来</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-30T14:22:57+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>2:22 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>挺好的一部动画电影。<br/>
+有当年看《舌尖上的中国》时的感觉。<br/>
+在一些习以为常，不以为意的东西上，可以深挖。<br/>
+技术的成熟，整个制作团队的水平，中国风，国画的意境，油画的色彩，等等，构建出好东西。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/27/sport/">运动，感动</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-27T22:47:57+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:47 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>NBA带给我们的感动，参看<a href="http://weibo.com/1742566624/Cpx4edoXw?type=comment#_rnd1440750564076">这条微博</a><br/>
+还有其他的众多运动，羽毛球，林丹，斯诺克，奥沙利文等等</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/25/gentle/">做优雅的人</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-25T18:24:37+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:24 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>尊重学识<br/>
+整洁精致美好<br/>
+教养、礼貌<br/>
+见识<br/>
+谈吐穿着<br/>
+审美<br/>
+探索，自知</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/25/how-to-git-octopress/">How to ‘git’ Octopress</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-25T13:58:37+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:58 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>如何为已经存在于Github上的Octopress搭建本地环境<br/>
+大部分步骤和全新搭建时差不多，这里只列出不同的那几步<br/>
+···安装其他···<br/>
+clone <code>source</code> 分支：</p>
+
+<pre><code>git clone -b source git@github.com:username/repositoryname.git octopress
+</code></pre>
+
+<p>换成我的具体命令就是:</p>
+
+<pre><code>git clone -b source git@github.com:qiuhaidong/qiuhaidong.github.com.git octopress
+</code></pre>
+
+<p>clone <code>master</code> 分支：<br/>
+<code>master</code> 分支存放在 <code>_deploy</code>目录</p>
+
+<pre><code>cd octopress
+git clone git@github.com:username/repositoryname.git _deploy
+</code></pre>
+
+<p>具体命令：</p>
+
+<pre><code>git clone git@github.com:qiuhaidong/qiuhaidong.github.com.git _deploy
+</code></pre>
+
+<p>···其他步骤···<br/>
+另个重要命令：<br/>
+拉取：</p>
+
+<pre><code>cd octopress
+git pull origin source
+cd _deploy
+git pull origin master
+</code></pre>
+
+<p>推送：</p>
+
+<pre><code>cd octopress
+git add .
+git commit -m 'my message'
+git push origin source
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/23/gfw-bundle-install/">GFW Rubygems Bundle Install</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-23T01:16:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:16 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>封网，rubygems.org 不行了<br/>
+<code>bundle install</code>  自然也不行<br/>
+点算？<br/>
+<a href="https://ruby.taobao.org">https://ruby.taobao.org</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
+用法：</p>
+
+<pre><code>gem sources --remove https://rubygems.org/
+gem sources -a https://ruby.taobao.org/
+gem sources -l
+</code></pre>
+
+<p>输出：</p>
+
+<pre><code>*** CURRENT SOURCES ***  
+
+https://ruby.taobao.org  
+</code></pre>
+
+<p>确保只有 ruby.taobao.org</p>
+
+<p>Ubuntu 14.04，安装octopress,执行</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>一直提示缺少各种 gem 包，例如：</p>
+
+<pre><code>```
+Gem::RemoteFetcher::FetchError: SSL_connect SYSCALL returned=5 errno=0 state=unknown state (https://rubygems.global.ssl.fastly.net/gems/safe_yaml-1.0.4.gem)
+An error occurred while installing safe_yaml (1.0.4), and Bundler cannot continue.
+Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
+
+```
+</code></pre>
+
+<p>按提示输入命令 <code>gem install safe_yaml -v '1.0.4'</code> 安装依赖项，但是安装了一个又一个，一个又一个，实在太多太慢太麻烦了</p>
+
+<p>解决方法：</p>
+
+<p>修改octopress文件夹里的Gemfile文件：</p>
+
+<p>把：<br/>
+<code>source "https://rubygems.org"</code><br/>
+改为：<br/>
+<code>source "https://ruby.taobao.org"</code><br/>
+再执行：</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>完美通过。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/07/20/keyboard-configuration/">更改键盘布局</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-07-20T22:24:02+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:24 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>键盘布局出错，想打‘#’，却出现一个类似‘f’的符号，打‘|’却出现‘~’。<br/>
+run：</p>
+
+<pre><code>sudo dpkg-reconfigure keyboard-configuration
+</code></pre>
+
+<p>会出现图形界面用以设置。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/07/19/in-the-wind/">人在风里</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-07-19T22:50:37+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:50 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>那一段我仅有的青春。<br/>
+很短，很简单。<br/>
+如果你有类似的经历，会很有共鸣，很有意思。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/07/09/kindle-screenshot/">Kindle Screenshot</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-07-09T23:03:31+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>11:03 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>kindle可以截屏，同时按屏幕对角即可。<br/>
+但Amazon没宣传这功能。</p>
+
+<h4>定位</h4>
+
+<p>专注阅读。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/06/18/my-cat/">我家的猫</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-06-18T22:54:13+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>18</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:54 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/20130921_182719-2.jpeg" alt="1" />
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/2014-07-27.jpeg" alt="2" />
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/2014-12-21-2.jpeg" alt="3" />
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/2014-12-21.jpeg" alt="4" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/19/add-image/">Add Image</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-19T14:13:28+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>2:13 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>方法略繁复<br/>
+把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）<br/>
+把图片上传到github repository托管</p>
+
+<pre><code>git add .           # don't forget the "."
+git commit -m 'your message'
+git push origin source
+</code></pre>
+
+<p>进入github抓取图片链接地址（先打开图片，然后鼠标右击图片，在新标签页中打开图片=或者=查看图片）<br/>
+示例地址：<br/>
+<a href="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png">https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png</a><br/>
+使用 ![描述](图片链接地址) 插入图像<br/>
+示例：<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png" alt="image test" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/06/goagent/">GoAgent</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-06T15:01:31+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-01-09  goagent的github仓库已经全部删除，it&rsquo;s gone.</p>
+
+<p><a href="https://github.com/goagent/goagent">新网址</a><br/>
+<a href="http://git.io/goa">压缩包下载地址</a><br/>
+<a href="https://github.com/goagent/goagent/blob/wiki/SimpleGuide.md">简易教程</a></p>
+
+<p><strong>部署</strong></p>
+
+<ol>
+<li>申请 Google Appengine 并创建 appid。</li>
+<li>下载 <a href="https://github.com/goagent/goagent">goagent</a></li>
+<li>修改 local\proxy.ini 中的 [gae] 下的 appid = 你的appid(多appid请用|隔开)</li>
+<li>运行 uploader.bat 或 uploader.py 开始上传, 成功后即可使用了。</li>
+</ol>
+
+
+<p><strong>使用</strong></p>
+
+<ul>
+<li>Windows 用户推荐使用 goagent.exe 托盘图标设置 IE 代理(对其它浏览器也有效)。</li>
+<li>Chrome/Opera 请安装 SwitchyOmega 插件(下载到本地然后拖放文件到扩展设置)，导入 SwitchyOptions.bak</li>
+<li>Firefox 请安装 FoxyProxy ，Firefox需要导入证书，方法请见 FAQ</li>
+<li>出现连接不上的情况可以尝试使用 gscan 或 GoGo Tester 测速。</li>
+</ul>
+
+
+<p><a href="https://github.com/goagent/goagent/blob/wiki/InstallGuide.md">图文教程</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/05/tcpserver-error-address-already-in-use-bind-2/">TCPServer Error: Address Already in Use - Bind(2)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-05T13:29:29+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:29 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在执行命令</p>
+
+<pre><code>rake preview
+</code></pre>
+
+<p>时，输出：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake preview  
+Starting to watch source with Jekyll and Compass. Starting Rack on port 4000  
+&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.  
+Configuration file: /home/dong/octopress/_config.yml  
+[2015-03-05 13:22:19] INFO  WEBrick 1.3.1  
+[2015-03-05 13:22:19] INFO  ruby 1.9.3 (2014-11-13) [i686-linux]  
+[2015-03-05 13:22:19] WARN  TCPServer Error: Address already in use - bind(2)  
+/home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `initialize': Address already in use - bind(2) (Errno::EADDRINUSE)
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `new'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `block in create_listeners'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:82:in `each'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:82:in `create_listeners'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:82:in `listen'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:70:in `initialize'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:45:in `initialize'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/handler/webrick.rb:32:in `new'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/handler/webrick.rb:32:in `run'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/server.rb:286:in `start'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/server.rb:147:in `start'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/bin/rackup:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/rackup:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/rackup:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+        Source: source
+   Destination: public
+      Generating... 
+                done.
+    write public/stylesheets/screen.css
+ Auto-regeneration: enabled for 'source'
+</code></pre>
+
+<p>解决方法：<br/>
+执行：</p>
+
+<pre><code>sudo netstat -tulpn |grep 4000
+</code></pre>
+
+<p>得到：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ sudo netstat -tulpn | grep 4000
+[sudo] password for dong: 
+tcp        0      0 127.0.0.1:4000          0.0.0.0:*               LISTEN      2889/rackup  
+</code></pre>
+
+<p>执行：</p>
+
+<pre><code>kill -9 2889
+</code></pre>
+
+<p>得到：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ kill -9 2889
+dong@Ubuntu:~/octopress$
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/05/could-not-find-a-javascript-runtime/">Could Not Find a JavaScript Runtime</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-05T13:10:34+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:10 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>以下是两条命令的输出结果：<br/>
+第一条：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+## Generating Site with Jekyll
+    write source/stylesheets/screen.css
+/home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:5:in `&lt;module:ExecJS&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `block in gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `each'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll.rb:166:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+</code></pre>
+
+<p>第二条：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake preview
+Starting to watch source with Jekyll and Compass. Starting Rack on port 4000
+/home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:5:in `&lt;module:ExecJS&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `block in gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `each'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll.rb:166:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
+[2015-03-05 12:32:30] INFO  WEBrick 1.3.1
+[2015-03-05 12:32:30] INFO  ruby 1.9.3 (2014-11-13) [i686-linux]
+[2015-03-05 12:32:30] INFO  WEBrick::HTTPServer#start: pid=2889 port=4000
+    write public/stylesheets/screen.css
+127.0.0.1 - - [05/Mar/2015:12:32:49 +0800] "GET / HTTP/1.1" 404 - 0.0610
+127.0.0.1 - - [05/Mar/2015:12:32:50 +0800] "GET /favicon.ico HTTP/1.1" 404 - 0.0015
+127.0.0.1 - - [05/Mar/2015:12:32:53 +0800] "GET / HTTP/1.1" 404 - 0.0013
+127.0.0.1 - - [05/Mar/2015:12:37:50 +0800] "GET / HTTP/1.1" 404 - 0.0007
+127.0.0.1 - - [05/Mar/2015:12:37:51 +0800] "GET / HTTP/1.1" 404 - 0.0007
+^Z
+[1]+  已停止               rake preview
+</code></pre>
+
+<p>解决方法：<br/>
+执行命令：</p>
+
+<pre><code>gem install execjs
+gem install therubyracer
+sudo apt-get install nodejs
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/02/22/running/">阿甘的奔跑</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-02-22T23:01:57+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>11:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>想起阿甘。<br/>
+阿甘有点傻，一点点傻。<br/>
+他经历了战友布巴的离世，丹中尉的悲怨起伏，母亲的离世，以及贯穿他整个生命的珍妮的美好而又若即若离触不可及。<br/>
+阿甘不孤单。<br/>
+童年时母亲和珍妮陪他。当兵时布巴陪他。在海上捕虾时丹中尉陪他。<br/>
+阿甘只是孤独。<br/>
+没有人走进阿甘的心里。<br/>
+没有人想走进阿甘的心里。<br/>
+或者说：<br/>
+珍妮没有走进阿甘心里。<br/>
+珍妮不想走进阿甘心里。<br/>
+当珍妮再次离开，所有孤独，清晰浮现。<br/>
+阿甘开始奔跑。<br/>
+跑到城边。<br/>
+跑遍县城。<br/>
+横越阿拉巴马州。<br/>
+跑到一个海角。<br/>
+跑到另一个海角。<br/>
+横越美国。<br/>
+在湖边奔跑。<br/>
+在麦田旁奔跑。<br/>
+在河流石桥上奔跑。<br/>
+在栅栏边奔跑。<br/>
+在牧场旁奔跑。<br/>
+在秋天黄叶林中奔跑。<br/>
+在沙漠奔跑。<br/>
+三年，两个半月。<br/>
+后来，珍妮问起，阿甘告诉她：<br/>
+战场雨停后的星空。<br/>
+海湾的日落。<br/>
+雪山旁湖面的倒影。<br/>
+沙漠的日出。<br/>
+那些属于阿甘的，一个人的一些瞬间。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/11/26/nightmares/">Nightmares</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-11-26T23:01:33+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2014年10月16日，4:59AM,在家，睡觉，做梦，醒。</p>
+
+<p>关于大学的梦。</p>
+
+<p>做这梦，不是第一次，估计也不会是最后一次。</p>
+
+<p>它是我生命的印记，不可磨灭。</p>
+
+<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3781293063682700/pid/780bc50fgw1emosmbfqn4j208w0dc759">2014-10-16-04-59，家里</a></p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2014-10-16-04-59-22.png" alt="2014年10月16日家里" /></p>
+
+<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3817040303409178/pid/780bc50fgw1epuu3qc365j208w0dc0ud">2015-03-04-06-29，水汶</a></p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2015-03-04-06-29-27.png" alt="2015年3月4日水汶" /></p>
+
+<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3854874397980519/pid/780bc50fgw1et7jbd7jejj208w0dcwgb">2015-06-17-05-44，水汶</a></p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2015-06-17-05-44-27.png" alt="2015年6月17日水汶" /></p>
+
+<p>2016-01-20 again</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/11/09/life-is-maze/">生活 经历 迷宫</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-11-09T23:36:05+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:36 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>生活像是一座特殊的迷宫。</p>
+
+<p>它是立体的，一层一层的，无尽的。</p>
+
+<p>它有不可改变的部分，非常难以改变的部分，容易改变的部分。有了足够的经历积累后，会出现一个楼梯，走上去，看下来，之前走过的那一层迷宫，一目了然。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/10/22/dgs-classroom2/">东哥学堂2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-22T02:58:05+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2014</span></span> <span class='time'>2:58 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>1.信任很脆弱</p>
+
+<p>2.信任很可贵</p>
+
+<p>3.冷漠面对网络暴力</p>
+
+<p>4.人脉就是一种能力</p>
+
+<p>5.飞虎II第二集：你看到的很可能是相反的，不要违背原则，瞎好心！</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/10/09/dgs-legend3/">东哥传3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-09T22:51:04+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:51 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>2014.10.9</h3>
+
+<p>说说我的大学舍友。</p>
+
+<p><strong>小郭</strong></p>
+
+<p>张志华，英德人，会客家话。“小郭”这个外号不像外号、小名不像小名的名字是他自己起的，没有人知道由来。</p>
+
+<p>他是宿舍最奇葩的人。</p>
+
+<p>大学刚入学时，他开摩托车，被烟囱烫伤了腿，回家休养了一周左右。这事我至今无法理解。因为我初一就学会摩托车了，至今开了十几年摩托，从来没烫伤过腿。目测小郭的腿的构造也没有什么特别，好难理解。</p>
+
+<p>小郭永远慢人好几拍，我们的卧谈会说了某个话题大半天，他总冒出一句：诶，你们说什么？还有大学几次体能测试，他每次都迟到，你妹呀，我们在昨晚就说过今天有体能测试了，而且叫着你的名字和你说的。</p>
+
+<h3>2014.10.22</h3>
+
+<p>小郭有些时候买些吃的回来，然后宅在床上很长一段时间不下床，不出去，目测超过一天，好厉害；有时候又背个书包出去学习，老大半天不见人。</p>
+
+<p>有时候我们会担心，小郭这人出到社会上咋办呢？而事实证明我们完全是杞人忧天，小郭毕业后是风生水起呀，工作好，最厉害的是他的七龙珠，羡煞旁人！么蛋，女孩的心思真难懂。</p>
+
+<p>13年67月吧，离开学校，我工作等等方面都没着落，小郭接济了我一个多月。做弟兄的我也不多说客气话，谢谢小郭!</p>
+
+<p><strong>友哥</strong></p>
+
+<p>梁世友，祖籍肇庆怀集，后来举家搬到广州，兄弟姐妹众多。</p>
+
+<p>我觉得我和友哥有很多方面很相像。我们都好色、喜欢文学文艺、写毛笔字、喜欢文字、自信心不太足、有时拖拖拉拉、能力一般、自卑又自负、眼高手低、有同情心、悲天悯人又冷酷……太多太多。在友哥身上，我看到很多自己的影子。同时我们身上又有很多截然相反的东西。我和友哥可以说的是惺惺相惜又相互看不顺眼相互憎恨。我们喜欢对方是因为在对方身上看到自己，讨厌对方也是因为在对方身上看到自己。产生这种现象，是因为我们本身的性格思想里就有很多矛盾的东西。</p>
+
+<h3>2014.10.27</h3>
+
+<p><strong>宝文</strong></p>
+
+<p><strong>老扬</strong></p>
+
+<p>冯家扬，广州人，典型的广州人性格。非常独立自主。在不伤害不妨碍别人的前提下，喜欢做什么就做什么，不喜欢的坚决不做。这两年我才逐渐意识到，这一点太可贵了————为自己而活。当年有段时间，我可能有点自卑，所以很敏感，</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/10/09/dgs-legend2/">东哥传2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-09T22:49:34+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:49 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>2014.10.4</h3>
+
+<p>09年上大学，肇庆学院，09电子1班。13年，结束。</p>
+
+<p>离校时，下雨，友哥送我到市车站。上车前，我们拥抱了一下。</p>
+
+<p>就是拥抱了一下。</p>
+
+<p>没有豪言壮语泪流满面等等情况。</p>
+
+<p>开车后，看着窗外熟悉的肇庆，我终是有点想哭。在这生活了四年，四年的感情，我不舍得。我知道现代交通很方便，以后要回去一次很容易，但还是不舍得。</p>
+
+<p>我对肇庆学院有深厚的感情。虽然不全是美好的，毕竟我是个学渣。</p>
+
+<p>美好的，是我和同学们经历的许多事。这里，以我的几个舍友为主。按床位排名：小郭，友哥，宝文，老扬，小康，老陈，老壁。</p>
+
+<p>插个话，大一时，是胖豪，住了一年后搬去了公寓，老扬和武昌搬入，小康是荣誉舍员。胖豪是冲我们发过很多次让我们很难理解的火，搞得很难堪，自己搬走了，而据我了解，他去公寓后也是这个鸟样。武昌在大学时和我们相处没什么问题，只是毕业后就慢慢没有了联系。小康是大一时和我们在相邻宿舍，我12栋306，他307，大二暑假我们一起去汕头打工，期间建立了不错的感情，之后经常来宿舍找宝文和我，继而和其他人打成一片，成功上位。加上我们喝酒时他经常买单，我就封了他荣誉舍员，希望他再接再厉，继续买单。</p>
+
+<p>从09年到现在，5年时间，我们走了过来，如果以后没有重大利益或感情纠葛，我相信我们能一直走下去。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/10/09/dgs-legend1/">东哥传1</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-09T22:23:31+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:23 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>开篇</h4>
+
+<p>我读完4年大学，离校路上，有感，萌生写传念头。拖拉至今，起笔。</p>
+
+<p>鉴于我水平低，先给自己一个台阶：本传毫无章法，无所限制，不讲顺序，完全是想到什么写什么！</p>
+
+<p>有此念头，一方面是我喜欢文学，另一方面是看到我的高中同学彪哥也给他自己写了传，写得很好，令我也想试一试，在此感谢<strong>彪哥</strong>，<strong>李彪</strong>。</p>
+
+<p>写写我这个人，我的事，我遇到的人，我遇到的事，也好。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/21/tobaowen/">致宝文</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-09-21T19:50:53+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>7:50 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>严正声明：事关宝文个人隐私，未经宝文允许，不得传出宿舍外！</h4>
+
+<p>昨天，秋风冷起。</p>
+
+<p>昨天，得知宝文又谈恋爱。</p>
+
+<p>都是昨天，万事万物皆有关联，这说明：宝文的恋爱和秋风一样让人感到冰冷。</p>
+
+<p>你想，全宿舍最猥琐的宝文居然谈恋爱了，而且是又谈恋爱了，而帅得血了呼啦潮得犀了马哈的东哥，却只配做个好人，我呸！</p>
+
+<p>然后我的反应是：难道这几天又有天文奇观天狗食月？</p>
+
+<p>插叙下：宝文上个女朋友，表白那天，下午，宝文和我去轮滑，到了鼎湖山，再去九龙湖。回来后，天黑了，我们在校门口吃了5块钱炒粉，宝文还打包多一份回宿舍，然后他没有冲凉，就约小宇出来表白，然后那天还遇上N年难得一遇的天狗食月。</p>
+
+<p>说到这我得简略小结一下：又累、又饿、又满身臭汗没冲凉、又月食，表白……</p>
+
+<p>么蛋，别说女生拒绝你，是我我也拒绝你啦！</p>
+
+<p>果然失败了。哈哈哈。</p>
+
+<p>过了段时间，我记得是寒假，中午，宝文发信息给我，说他成功了，小宇答应了。</p>
+
+<p>擦，女人真的是个奇怪的物种。</p>
+
+<p>再后来，我看到小宇，挺好的一个女生，就是眼神不好。</p>
+
+<p>我们曾无数次在宿舍卧谈会嘲笑宝文月食之夜表白的糗事，有时候我会想：这样赤裸裸地嘲笑自己的舍友会不会不好？宝文会不会想不开做自由落体运动？然后我想明白了，在情在理，我们嘲笑宝文，都是好的。</p>
+
+<p>理：宝文这么猥琐，如果被人笑笑就受不了，早就瓜老衬了。</p>
+
+<p>情：宝文这么猥琐，就应该被人嘲笑。</p>
+
+<p>毕业不久，他们分手了，感情上我也不好接受，挺好的女生，宝文可惜了，而理智告诉我，没被宝文糟蹋，也是好事。</p>
+
+<p>所以现在听到宝文又谈恋爱的消息，简直是晴天霹雳万里无云，唉……现在的许多小女生，就是喜欢猥琐屌丝、美女配野兽，啊不，禽兽！真希望下次聚会，约他们出来，谈谈小宇。</p>
+
+<p>对于宝文这个猥琐男，我只能说：希望宝文早日踏入婚姻的殿堂爱情的坟墓，然后买到穿孔的避孕套，生几个孩子向他讨债！</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/16/dgs-classroom/">东哥学堂1</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-09-16T16:08:10+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:08 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>新人入职，别太出风头，不然容易被排挤。</p>
+
+<p>当然也要适当表现自己的能力给老板看到。</p>
+
+<p>两者之间的度要把握好。</p>
+
+<p>小时候在学校在家里接受的很多教育都是错的，比如说：知错能改就是好孩子。社会上，错了，要负责任！</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/02/my-dad/">父亲</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-07-02T14:13:55+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2014</span></span> <span class='time'>2:13 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我觉得父亲是一个很难说得清看得懂的角色。</p>
+
+<p>我父亲，怎么说呢，抽烟，喝酒，喝浓茶。脾气不好，容易发怒，有时会像个顽劣的孩子一样冲我们发一些看起来莫名其妙的火，会让我觉得很无奈，就想着他到底有没有把我当家人。有点又挺讲道理，挺通情达理。</p>
+
+<p>我和他闹过不少矛盾。</p>
+
+<p>后来我听母亲说，我读初三时，姐姐读高中，母亲在深圳打工，父亲一个人在家，那段时间，家里经济不好，父亲常常半夜惊醒，一身冷汗，想着没钱供我们三姐弟读书怎么办。有次月末，我们三姐弟都放假回家，月初要交伙食费，父亲睡不着，把摩托车推到离家挺远后，才打火开车到外公家借钱。</p>
+
+<p>好与不好，怎么说。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/26/install-chrome/">Install Chrome</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-04-26T18:09:48+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>6:09 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在tweak里安装，chromium偶尔有问题，还是用 chrome stable好</p>
+
+<p>2015.3.6</p>
+
+<pre><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+sudo dpkg -i google-chrome-stable_current_i386.deb
+</code></pre>
+
+<p>如果提示缺失依赖包，执行：</p>
+
+<pre><code>sudo apt-get install -f
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/26/install-dropbox/">Install Dropbox</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-04-26T18:07:16+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>6:07 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>先配置好翻墙</p>
+
+<p>从官网下载deb文件安装(tweak里安装不行)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/26/ubuntu%2014.04/">Ubuntu 14.04</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-04-26T17:50:35+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>5:50 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>中文输入法太差了</p>
+
+<p>试用时就不行，以为安装了会好点，呵呵……</p>
+
+<p>看来以后得观望为主呀，没什么特别吸引人的新东西，不更新</p>
+
+<p>说什么性能提升，都是虚的</p>
+
+<p>2015.3.5</p>
+
+<p><strong>到了14.04.2，才好点</strong></p>
+
+<p>前两天，重装ubuntu 12.04，在setup octopress时，install RVM（命令为：）</p>
+
+<pre><code>curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<p>失败，因为ubuntu 12.04的rvm的库太老并且已损坏了。</p>
+
+<p>用ubuntu 14.04才行。</p>
+
+<p>2015-8-22</p>
+
+<p>又出错失败，不过有提示输入另一个命令，照做，行了。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/26/zheng-neng-liang/">偶而还是需要正能量</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-04-26T17:22:41+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>5:22 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>不管是为了家人</h4>
+
+<h4>还是为了自己</h4>
+
+<h4>朋友</h4>
+
+<h4>爱情</h4>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/12/20/sheng-ri-kuai-le/">生日快乐</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-12-20T00:45:00+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>12:45 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2013年</p>
+
+<p>祝自己生日快乐。</p>
+
+<p>妈妈，您辛苦了。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/28/shui-wen/">水汶</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-11-28T23:16:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:16 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>会说谎</p>
+
+<p>守时</p>
+
+<p>职责、职能、职权——分明</p>
+
+<p>人脉、信任</p>
+
+<p>经营者心态</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/15/update-libreoffice/">Update Libreoffice by PPA</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-11-15T00:32:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>12:32 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>现在最新的LibreOffice套装版本是4.1。每一个后续的版本可以立即在4.1的仓库中找到，直到新的主线版本比如4.2的推出。</p>
+
+<p>所以，为了在Ubuntu中自动的升级，请添加下面的软件仓库地址。</p>
+
+<pre><code>sudo add-apt-repository ppa:libreoffice/ppa 
+</code></pre>
+
+<p>接着，运行如下命令来升级最新的LibreOffice。</p>
+
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade 
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/14/ubuntu-software-cache/">Ubuntu Software Cache</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-11-14T15:06:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>3:06 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><strong>/var/cache/apt/archives</strong></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/14/yu-fa-2/">Markdown语法 2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-10-14T20:28:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>8:28 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>首先表明，此文转载自</h4>
+
+<p><a href="http://www.zybuluo.com/mdeditor">作业部落旗下</a></p>
+
+<h4>东哥再次感谢作者</h4>
+
+<h2>欢迎使用 Cmd - 在线 Markdown 编辑阅读器</h2>
+
+<hr />
+
+<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。</p>
+
+<p>您可以使用 <strong>Cmd Makrdown</strong>：</p>
+
+<ul>
+<li>整理知识，学习笔记</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（公式支持）</li>
+<li>发布日记，杂文，所见所想</li>
+</ul>
+
+
+<p>这是一份 Cmd Markdown 的欢迎稿兼使用说明，请保留，如需撰写<strong>新稿件</strong>， 请在<strong>编辑-预览</strong>模式下，点击顶部工具栏右侧的<strong>新建文本</strong>图标或者使用快捷键 <strong>Ctrl+Alt+N</strong>。</p>
+
+<hr />
+
+<h3>什么是 Markdown</h3>
+
+<p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+
+<ul>
+<li>书写一个质能守恒公式：</li>
+</ul>
+
+
+<p> $E=mc<sup>2</sup>$</p>
+
+<ul>
+<li>或者高亮一段代码：</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">SomeClass</span><span class="p">:</span>
+</span><span class='line'>    <span class="k">pass</span>
+</span><span class='line'><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+</span><span class='line'>    <span class="k">print</span> <span class="s">&#39;hello world&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>想要了解更详细的语法说明，可以参考我们准备的 <a href="http://www.zybuluo.com/mdeditor?url=http://www.zybuluo.com/static/editor/md-help.markdown">Markdown 语法简明手册</a></p>
+
+<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：您只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 它目前已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+
+<hr />
+
+<h3>什么是 Cmd Markdown</h3>
+
+<p>您可以使用很多工具书写 Markdown，但是 <strong>Cmd Markdown</strong> 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 <strong>Cmd Markdown</strong>，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
+
+<h4>1. 实时同步预览</h4>
+
+<p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
+
+<h4>2. 编辑工具栏</h4>
+
+<p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
+
+<p><img src="http://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor" /></p>
+
+<h4>3. 编辑模式</h4>
+
+<p>如果您还想以更加心无旁骛的方式编辑文字，可以点击 <strong>编辑工具栏</strong> 最右测的拉伸按钮或者按下 <strong>Ctrl + M</strong>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
+
+<h4>4. 实时的云端文稿</h4>
+
+<p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 “已保存” 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
+
+<h4>5. 管理工具栏</h4>
+
+<p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
+
+<p><img src="http://www.zybuluo.com/static/img/toolbar-manager.png" alt="tool-manager" /></p>
+
+<p>工具栏上的四个图标依次为：</p>
+
+<ul>
+<li><strong>立即发布</strong>：将当前的文稿生成到固定链接，在网络上发布这个链接，分享您的文稿</li>
+<li><strong>新建文本</strong>：开始撰写一篇新的文稿</li>
+<li><strong>删除文本</strong>：删除当前的文稿</li>
+<li><strong>导出文本</strong>：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地</li>
+</ul>
+
+
+<h4>6. 阅读工具栏</h4>
+
+<p><img src="http://www.zybuluo.com/static/img/toolbar-reader.png" alt="tool-manager" /></p>
+
+<p>通过在 <strong>预览区</strong> 顶部右侧的 <strong>阅读工具栏</strong>，可以查看文稿列表，增强阅读体验</p>
+
+<p>工具栏上的四个图标依次为：</p>
+
+<ul>
+<li><strong>文稿列表</strong>：所有新增和过往的文稿都可以在这里查看、操作</li>
+<li><strong>主题切换</strong>：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！</li>
+<li><strong>阅读模式</strong>：心无旁骛的阅读模式提供超一流的阅读体验</li>
+<li><strong>全屏模式</strong>：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</li>
+</ul>
+
+
+<h4>7. 阅读模式</h4>
+
+<p>在 <strong>阅读工具栏</strong> 点击 <strong>阅读模式</strong> 图标或者按下 <strong>Ctrl+Alt+M</strong> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升您阅读的体验和品质。尝试进入阅读模式，感受这份诚意。</p>
+
+<h4>8. 文稿发布和分享</h4>
+
+<p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <strong>立即发布</strong> 图标发布这份文档给好友吧！</p>
+
+<hr />
+
+<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <strong>新建文本(Ctrl+Alt+N)</strong> 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
+
+<p>作者 <a href="http://weibo.com/ghosert">@ghosert</a>   <br/>
+于 2013 年 10月 3日  <br/>
+上海</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/13/error-utf-8/">Error: UTF-8 无效字符</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-10-13T15:53:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>3:53 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>1.dconf-editor</h4>
+
+<h4>2.首次安装尽量要做这几步：</h4>
+
+<pre><code>rake setup_github_pages
+rake generate
+rake deploy
+git add . 
+git commit -m 'your message'
+git push origin source
+</code></pre>
+
+<h4>3.然后再edit _config.yml及添加按钮等等</h4>
+
+<h4>4.做完3后，rake generate ,可能又会有utf-8问题，因为之前编辑的文件可能又变了，再打开看一次，纠错</h4>
+
+<h4>5.多试多看几遍，也可在命令后加 &ndash;trace 追踪查看</h4>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/07/error-%20could-not-find-expected/">Error: Could Not Find Expected ':'</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-10-07T11:14:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:14 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>出现错误要先看提示代码，知道错在哪里，如：</h4>
+
+<pre><code>dong@ubuntu:~/octopress$ rake generate
+## Generating Site with Jekyll
+identical source/stylesheets/screen.css 
+/home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse': (/home/dong/octopress/_config.yml): could not find expected ':' while scanning a simple key at line 10 column 1 (Psych::SyntaxError)
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse_stream'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:151:in `parse'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:127:in `load'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `block in load_file'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `open'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `load_file'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/gems/jekyll-0.12.0/lib/jekyll.rb:130:in `configuration'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/gems/jekyll-0.12.0/bin/jekyll:221:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+</code></pre>
+
+<p>代码已经说得很清楚了，就是<strong><em>/home/dong/octopress/_config.yml</em></strong>，这个文件，<strong><em>could not find expected &lsquo;:&rsquo;</em></strong> while scanning a simple key <strong><em>at line 10 column 1</em></strong> (Psych::SyntaxError)<br/>
+<strong>就是'：'后面忘了加空格</strong></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/07/error-Could-not-find-syntax-1.0.0-in-any-of-the-sources/">Error: Could Not Find syntax-1.0.0 in Any of the Sources</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-10-07T11:00:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>if cout&lt;&lt;</h4>
+
+<pre><code>Could not find syntax-1.0.0 in any of the sources
+Run `bundle install` to install missing gems.
+</code></pre>
+
+<h4>run</h4>
+
+<pre><code>rvm use 1.9.3
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/06/markdown-yu-fa/">Markdown语法简明手册</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-06-06T23:34:00+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:34 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><strong><em>首先表明，本文转载自</em></strong>  <a href="http://ghosertblog.github.io/mdeditor/">http://ghosertblog.github.io/mdeditor/</a></p>
+
+<p><strong><em>东哥对作者表示：万分感谢</em></strong></p>
+
+<h2>Markdown 语法简明手册</h2>
+
+<h3>1. 使用 * 和 ** 表示斜体和粗体</h3>
+
+<p>示例：</p>
+
+<p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
+
+<h3>2. 使用 === 表示一级标题，使用 &mdash; 表示二级标题</h3>
+
+<p>示例：</p>
+
+<h1>这是一个一级标题</h1>
+
+<h2>这是一个二级标题</h2>
+
+<h3>这是一个三级标题</h3>
+
+<p>你也可以选择在行首加井号表示不同级别的标题，例如：# H1, ## H2, ### H3。</p>
+
+<h3>3. 使用 [描述](链接地址) 为文字增加外链接</h3>
+
+<p>示例：</p>
+
+<p>这是去往 <a href="http://ghosertblog.github.com">作者本人博客</a> 的链接。</p>
+
+<h3>4. 在行末加两个空格表示换行</h3>
+
+<p>示例：</p>
+
+<p>第一行(此行最右有两个看不见的空格)<br/>
+第二行</p>
+
+<h3>5. 使用 *，+，- 表示无序列表</h3>
+
+<p>示例：</p>
+
+<ul>
+<li>无序列表项 一</li>
+<li>无序列表项 二</li>
+<li>无序列表项 三</li>
+</ul>
+
+
+<h3>6. 使用数字和点表示有序列表</h3>
+
+<p>示例：</p>
+
+<ol>
+<li>有序列表项 一</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+
+
+<h3>7. 使用 > 表示文字引用</h3>
+
+<p>示例：</p>
+
+<blockquote><p>野火烧不尽，春风吹又生</p></blockquote>
+
+<h3>8. 使用 `代码` 表示行内代码块</h3>
+
+<p>示例：</p>
+
+<p>让我们聊聊 <code>html</code></p>
+
+<h3>9.  使用 四个缩进空格 表示代码块</h3>
+
+<p>示例：</p>
+
+<pre><code>这是一个代码块，此行左侧有四个不可见的空格
+</code></pre>
+
+<h3>10.  使用 ![描述](图片链接地址) 插入图像</h3>
+
+<p>示例：</p>
+
+<p><img src="http://tp3.sinaimg.cn/2204681022/180/5606968568/1" alt="我的头像" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/06/Setup-and-Start-Octopress/">Setup and Start Octopress</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-06-06T20:54:00+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>8:54 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><strong><em>Before You Begin</em></strong></p>
+
+<h3>Install Git</h3>
+
+<pre><code>sudo apt-add-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+</code></pre>
+
+<p><strong>Install Ruby 1.9.3 using either rbenv or RVM</strong></p>
+
+<p><strong>Install RVM:</strong></p>
+
+<pre><code>    curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<p><em>Be sure to <strong>follow</strong> any subsequent instructions as guided by the installation process.</em><br/>
+2016-05-21:这里可能会报错，按照它的英文提示做（它会给出命令），能通过</p>
+
+<p><strong>Install Ruby 1.9.3</strong></p>
+
+<pre><code>rvm install 1.9.3
+rvm use 1.9.3
+rvm rubygems latest
+</code></pre>
+
+<p>Run<code>ruby --version</code>to be sure you’re using Ruby 1.9.3</p>
+
+<h3>Setup Octopress</h3>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+ruby --version  # Should report Ruby 1.9.3
+</code></pre>
+
+<p>Next, install dependencies</p>
+
+<pre><code>gem install bundler
+rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+bundle install
+</code></pre>
+
+<p>Install the default Octopress theme.</p>
+
+<pre><code>rake install
+</code></pre>
+
+<h3>Next Steps</h3>
+
+<p><strong>1. Set up deployment</strong><br/>
+<strong>2. Configure your blog</strong><br/>
+<strong>3. Start blogging with Octopress</strong></p>
+
+<h2>Deploying to Github Pages</h2>
+
+<h3>Before Deploying to Github Pages,Set Up Git</h3>
+
+<p><strong>Username</strong></p>
+
+<p>First you need to tell git your name, so that it can properly label the commits you make.</p>
+
+<pre><code>git config --global user.name "Your Name Here"
+# Sets the default name for git to use when you commit
+</code></pre>
+
+<p><strong>Email</strong></p>
+
+<p>Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.</p>
+
+<pre><code>git config --global user.email "your_email@example.com"
+# Sets the default email for git to use when you commit
+</code></pre>
+
+<p><strong>Password caching</strong></p>
+
+<p>To use this option, you need to turn on the credential helper so that git will save your password in memory for some time:</p>
+
+<pre><code>git config --global credential.helper cache
+# Set git to use the credential memory cache
+</code></pre>
+
+<h2>Generating SSH Keys</h2>
+
+<h3>Step 1: Check for SSH keys</h3>
+
+<p>First, we need to check for existing ssh keys on your computer. Open up Terminal and run:</p>
+
+<pre><code>cd ~/.ssh
+# Checks to see if there is a directory named ".ssh" in your user directory
+</code></pre>
+
+<p>If it says &ldquo;No such file or directory&rdquo; go to <strong>step 2</strong>. Otherwise, you already have an existing keypair, and you can skip to <strong>step 3</strong>.</p>
+
+<h3>Step 2: Generate a new SSH key</h3>
+
+<p>To generate a new SSH key, enter the code below. We want the default settings so when asked to enter a file in which to save the key, just press enter.</p>
+
+<pre><code>ssh-keygen -t rsa -C "your_email@example.com"
+</code></pre>
+
+<p>Now you need to enter a passphrase.</p>
+
+<p>Which should give you something like this:</p>
+
+<pre><code>Your identification has been saved in /home/you/.ssh/id_rsa.
+Your public key has been saved in /home/you/.ssh/id_rsa.pub.
+The key fingerprint is:
+01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
+</code></pre>
+
+<h3>Step 3: Add your SSH key to GitHub</h3>
+
+<pre><code>sudo apt-get install xclip
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+
+xclip -sel clip &lt; ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+</code></pre>
+
+<p><strong>Add your SSH key to GitHub</strong></p>
+
+<h3>Step 4: Test everything out</h3>
+
+<pre><code>ssh -T git@github.com
+</code></pre>
+
+<p>if cout&lt;&lt;</p>
+
+<pre><code>Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+</code></pre>
+
+<p>If that username is correct, you&rsquo;ve successfully set up your SSH key. Don&rsquo;t worry about the shell access thing, you don&rsquo;t want that anyway.</p>
+
+<p>If you see &ldquo;access denied&rdquo; please consider using HTTPS instead of SSH. If you need SSH start at these instructions for diagnosing the issue.</p>
+
+<h2>Now Go Back to：Deploying to Github Pages</h2>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p><strong><em>This will ask you for something</em></strong></p>
+
+<p>Next run:</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<p>This will generate your blog, copy the generated files into _deploy/, add them to git, commit and push them up to the master branch. In a few seconds you should get an email from Github telling you that your commit has been received and will be published on your site.</p>
+
+<p><strong><em>Don’t forget</em></strong> to commit the source for your blog.</p>
+
+<pre><code>git add .           # don't forget the "."
+git commit -m 'your message'
+git push origin source
+</code></pre>
+
+<h2>Configuring Octopress</h2>
+
+<h3><em>edit _config.yml</em></h3>
+
+<h3>Main Configs</h3>
+
+<pre><code>url:                # For rewriting urls for RSS, etc
+title:              # Used in the header and title tags
+subtitle:           # A description used in the header
+author:             # Your name, for RSS, Copyright, Metadata
+simple_search:      # Search engine for simple site search
+description:        # A default meta description for your site
+date_format:        # Format dates using Ruby's date strftime syntax
+subscribe_rss:      # Url for your blog's feed, defauts to /atom.xml
+subscribe_email:    # Url to subscribe by email (service required)
+category_feeds:     # Enable per category RSS feeds (defaults to false in 2.1)
+email:              # Email address for the RSS feed if you want it.
+</code></pre>
+
+<h2>Blogging Basics</h2>
+
+<h3>new blog：</h3>
+
+<pre><code>rake new_post["title"]
+</code></pre>
+
+<h3>Generate &amp; Preview(生成&amp;预览)</h3>
+
+<pre><code>rake generate   # Generates posts and pages into the public directory
+rake watch      # Watches source/ and sass/ for changes and regenerates
+rake preview    # Watches, and mounts a webserver at http://localhost:4000
+</code></pre>
+
+<p>If you want to work on posts without publishing them, you can add a <code>published: false</code> to your post’s YAML header. You can preview these posts with <code>rake preview</code> on your local server, but they won’t get published by <code>rake generate</code>.</p>
+
+<h3>发布：</h3>
+
+<pre><code>rake deploy
+</code></pre>
+
+<h3>OK！That&rsquo;s it.</h3>
+
+<p>2015-8-28<br/>
+<a href="http://justcoding.iteye.com/blog/1954645">这篇博文</a>讲得很好，推荐看看</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/03/02/commands-about-linux/">Commands About Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/08/20/C%23-on-Linux/">C# on Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/08/13/Windows-Server-2012-AutoAdminLogon-and-Startup/">Windows Server 2012自动登录和软件自启动</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/06/28/c-plus-plus-under-linux/">C++ Under Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/06/27/c-on-linux/">C编程，linux下</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/06/21/zhong-ruan/">中软事件</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/05/24/vim/">Vim</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/05/21/job-hunting/">Job Hunting</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/04/12/leave-and-back/">逃离与返回</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/04/12/enjoy-alone/">一个人的醇享时光</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/04/01/be-alone/">习惯一个人</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/30/gym/">健身</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/23/books-about-emotional-intelligence/">关于情商的书</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/23/get-up/">寒门难出贵子</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/23/make-a-good-conversatin/">如何聊天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/21/good-temper-and-bad-temper/">脾气</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/20/foul-atmosphere/">戾气</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/16/qualities/">提升气质的一些方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/05/excel-da-gou-x/">Excel表格设置可选择输入勾或叉</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/01/wheat-field-with-crows/">麦田群鸦</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/26/pain/">两代人，城乡之间的矛盾</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/26/for-someone/">For Someone</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/24/secret/">不能说的秘密</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/11/wen-zi/">文字</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/10/gei-zi-ji-kan/">给自己看</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/10/cold-water/">冷水澡</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/10/long-xi-shu/">龙喜叔</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/08/to-myself/">致自己</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/07/you-are-different/">格格不入</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/29/she/">She</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/11/man-without-warm-shoes/">一个顾客</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/09/shell-script/">Shell脚本</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/08/lantern/">Lantern</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/12/02/happyhour-when-i-was-a-kid/">小时候的快乐</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/07/find-myself/">Find Myself</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/09/13/plan/">计划</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/09/08/be-good/">好好生活</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/30/da-sheng-gui-lai/">大圣归来</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/27/sport/">运动，感动</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/25/gentle/">做优雅的人</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/25/how-to-git-octopress/">How to ‘git’ Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/23/gfw-bundle-install/">GFW Rubygems Bundle Install</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/07/20/keyboard-configuration/">更改键盘布局</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/07/19/in-the-wind/">人在风里</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/07/09/kindle-screenshot/">Kindle Screenshot</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/06/18/my-cat/">我家的猫</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/19/add-image/">Add Image</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/06/goagent/">GoAgent</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/05/tcpserver-error-address-already-in-use-bind-2/">TCPServer Error: Address Already in Use - Bind(2)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/03/05/could-not-find-a-javascript-runtime/">Could Not Find a JavaScript Runtime</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/02/22/running/">阿甘的奔跑</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/26/nightmares/">Nightmares</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/09/life-is-maze/">生活 经历 迷宫</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/22/dgs-classroom2/">东哥学堂2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/09/dgs-legend3/">东哥传3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/09/dgs-legend2/">东哥传2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/09/dgs-legend1/">东哥传1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/21/tobaowen/">致宝文</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/16/dgs-classroom/">东哥学堂1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/02/my-dad/">父亲</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/26/install-chrome/">Install Chrome</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/26/install-dropbox/">Install Dropbox</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/26/ubuntu%2014.04/">Ubuntu 14.04</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/26/zheng-neng-liang/">偶而还是需要正能量</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/20/sheng-ri-kuai-le/">生日快乐</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/28/shui-wen/">水汶</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/15/update-libreoffice/">Update Libreoffice by PPA</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/14/ubuntu-software-cache/">Ubuntu Software Cache</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/14/yu-fa-2/">Markdown语法 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/13/error-utf-8/">Error: UTF-8 无效字符</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/07/error-%20could-not-find-expected/">Error: Could Not Find Expected ':'</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/07/error-Could-not-find-syntax-1.0.0-in-any-of-the-sources/">Error: Could Not Find syntax-1.0.0 in Any of the Sources</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/06/markdown-yu-fa/">Markdown语法简明手册</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/06/Setup-and-Start-Octopress/">Setup and Start Octopress</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - 丘海东 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

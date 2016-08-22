@@ -136,7 +136,7 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2016/08/22/ssl-or-https-test/">SSL and HTTPS</a></h1>
+      <h1 class="entry-title"><a href="/blog/2016/08/22/ssl-or-https-test/">SSH Keys and HTTPS</a></h1>
     
     
       <p class="meta">
@@ -152,7 +152,21 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
   </header>
 
 
-  <div class="entry-content"><p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSL失效</a></p>
+  <div class="entry-content"><p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS失效？</a>
+关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
+
+<pre><code>fatal: Could not read from remote repository. 
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
+
+<p>SSH keys不用动</p>
+
+<pre><code>gedit octopress/.git/config
+</code></pre>
+
+<p>把<code>url = git@github.com:qiuhaidong/qiuhaidong.github.com.git</code><br/>
+改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code><br/>
+done.</p>
 </div>
   
   
@@ -3763,7 +3777,7 @@ rake preview    # Watches, and mounts a webserver at http://localhost:4000
       </li>
     
       <li class="post">
-        <a href="/blog/2016/08/22/ssl-or-https-test/">SSL and HTTPS</a>
+        <a href="/blog/2016/08/22/ssl-or-https-test/">SSH Keys and HTTPS</a>
       </li>
     
       <li class="post">

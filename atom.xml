@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-08-23T00:58:06+08:00</updated>
+  <updated>2016-08-23T01:00:32+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -78,7 +78,7 @@ Please make sure you have the correct access rights and the repository exists.
 改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code><br/>
 done.</p>
 
-<p>或会出现<code>pull</code>or<code>push</code>时报错，但不影响功能，多用几次就好了。</p>
+<p><code>pull</code>or<code>push</code>时或会报错，但不影响功能，多用几次就好了。</p>
 ]]></content>
   </entry>
   

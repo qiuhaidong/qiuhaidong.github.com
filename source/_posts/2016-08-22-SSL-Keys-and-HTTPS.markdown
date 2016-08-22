@@ -19,4 +19,4 @@ SSH keys不用动
 改为`url = https://github.com/qiuhaidong/qiuhaidong.github.com.git`  
 done.  
 
-或会出现`pull`or`push`时报错，但不影响功能，多用几次就好了。
+`pull`or`push`时或会报错，但不影响功能，多用几次就好了。

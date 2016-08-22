@@ -10,7 +10,8 @@
 
   
   <meta name="description" content="SSH KEYS失效？
-关于git pull origin sourceorgit push origin source,若出错： fatal: Could not read from remote repository. Please make sure you have the correct &hellip;">
+关于git pull origin sourceorgit push origin source,若出错：
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD fatal: Could not read from remote repository. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -84,7 +85,24 @@
 
 
 <div class="entry-content"><p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS失效？</a>
-关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
+关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：<br/>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+
+<pre><code>fatal: Could not read from remote repository. 
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
+
+<p>SSH keys不用动</p>
+
+<pre><code>gedit octopress/.git/config
+</code></pre>
+
+<p>把<code>url = git@github.com:qiuhaidong/qiuhaidong.github.com.git</code><br/>
+改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code></p>
+
+<h1>done.</h1>
+
+<blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>4988377e8fbbfbbfa01330d42d840ffa33e16012</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote>
 
 <pre><code>fatal: Could not read from remote repository. 
 Please make sure you have the correct access rights and the repository exists.

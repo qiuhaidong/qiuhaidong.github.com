@@ -17,6 +17,6 @@ SSH keys不用动
 
 把`url = git@github.com:qiuhaidong/qiuhaidong.github.com.git`  
 改为`url = https://github.com/qiuhaidong/qiuhaidong.github.com.git`  
-[参见blog9楼](http://bbs.csdn.net/topics/390909877)  
+[参见此BLOG9楼](http://bbs.csdn.net/topics/390909877)  
 done.  
 `pull`or`push`时或会报错，但不影响功能，多用几次就好了。

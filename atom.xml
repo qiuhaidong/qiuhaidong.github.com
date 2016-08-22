@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-08-22T18:45:46+08:00</updated>
+  <updated>2016-08-22T18:52:56+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -74,22 +74,6 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
     <content type="html"><![CDATA[<p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS失效？</a>
 关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：<br/>
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-
-<pre><code>fatal: Could not read from remote repository. 
-Please make sure you have the correct access rights and the repository exists.
-</code></pre>
-
-<p>SSH keys不用动</p>
-
-<pre><code>gedit octopress/.git/config
-</code></pre>
-
-<p>把<code>url = git@github.com:qiuhaidong/qiuhaidong.github.com.git</code><br/>
-改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code></p>
-
-<h1>done.</h1>
-
-<blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>4988377e8fbbfbbfa01330d42d840ffa33e16012</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote>
 
 <pre><code>fatal: Could not read from remote repository. 
 Please make sure you have the correct access rights and the repository exists.

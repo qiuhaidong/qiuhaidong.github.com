@@ -17,5 +17,6 @@ SSH keys不用动
 
 把`url = git@github.com:qiuhaidong/qiuhaidong.github.com.git`  
 改为`url = https://github.com/qiuhaidong/qiuhaidong.github.com.git`  
-done.
+done.  
 
+或会出现`pull`or`push`时报错，但不影响功能，多用几次就好了。

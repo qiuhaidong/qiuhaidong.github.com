@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "commands about linux"
+title: "Commands about Linux"
 date: 2018-03-02 21:26 +0800
 ---
 2016-03-02 21:26  

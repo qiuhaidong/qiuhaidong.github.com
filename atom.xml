@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-08-23T00:48:27+08:00</updated>
+  <updated>2016-08-23T00:58:06+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -59,9 +59,9 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
   
   <entry>
     <title type="html"><![CDATA[SSH Keys and HTTPS]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/22/ssl-or-https/"/>
+    <link href="http://qiuhaidong.github.io/blog/2016/08/22/SSL-Keys-and-HTTPS/"/>
     <updated>2016-08-22T16:58:26+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/22/ssl-or-https</id>
+    <id>http://qiuhaidong.github.io/blog/2016/08/22/SSL-Keys-and-HTTPS</id>
     <content type="html"><![CDATA[<p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS失效？</a>
 关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
 
@@ -77,6 +77,8 @@ Please make sure you have the correct access rights and the repository exists.
 <p>把<code>url = git@github.com:qiuhaidong/qiuhaidong.github.com.git</code><br/>
 改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code><br/>
 done.</p>
+
+<p>或会出现<code>pull</code>or<code>push</code>时报错，但不影响功能，多用几次就好了。</p>
 ]]></content>
   </entry>
   

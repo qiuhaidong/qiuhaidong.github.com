@@ -5,6 +5,7 @@ date: 2016-08-23 10:47:01 +0800
 comments: true
 categories: 
 ---
+感谢教我帮我的老总和黎先生  
 要用到Windows Server的ISO文件  
 管理服务器，添加角色和功能  
 

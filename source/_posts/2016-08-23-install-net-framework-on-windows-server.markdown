@@ -15,5 +15,6 @@ categories:
 ![选择服务器角色AD域DNS](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net%20/AD%E5%9F%9F%2CDNS%2C.NET.png)  
 ![.NET Framework](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net%20/.NET%20Framework.png)  
 指定备用源路径：  
-\…ISO…\sources\sxs 
+![指定备用源路径](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net%20/%E6%8C%87%E5%AE%9A%E5%A4%87%E7%94%A8%E6%BA%90%E8%B7%AF%E5%BE%84.png)  
+\…ISO…\sources\sxs  
 done.

@@ -16,3 +16,4 @@ install:
 在下面添加:  
 
     dia-normal "$@"
+![dia](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/dia.png)

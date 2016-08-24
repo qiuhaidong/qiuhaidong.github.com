@@ -136,6 +136,50 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2016/08/24/dia-on-linux/">Dia on Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-24T22:46:45+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>10:46 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>DIA,流程图绘制软件<br/>
+install:</p>
+
+<pre><code>sudo apt-get install dia
+</code></pre>
+
+<p>关于输入中文:</p>
+
+<pre><code>sudo vim /usr/bin/dia
+</code></pre>
+
+<p>把<code>dia-normal --integrated "$@"</code>注释掉，在前面加<code>#</code><br/>
+在下面添加:</p>
+
+<pre><code>dia-normal "$@"
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2016/08/23/system-about-ds/">德胜系统</a></h1>
     
     
@@ -3856,6 +3900,10 @@ rake preview    # Watches, and mounts a webserver at http://localhost:4000
     
       <li class="post">
         <a href="/blog/2018/03/02/commands-about-linux/">Commands About Linux</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/08/24/dia-on-linux/">Dia on Linux</a>
       </li>
     
       <li class="post">

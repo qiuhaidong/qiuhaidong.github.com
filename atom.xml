@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-08-24T22:58:00+08:00</updated>
+  <updated>2016-08-24T23:03:35+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -78,6 +78,8 @@ install:</p>
 
 <pre><code>dia-normal "$@"
 </code></pre>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/dia.png" alt="dia" /></p>
 ]]></content>
   </entry>
   

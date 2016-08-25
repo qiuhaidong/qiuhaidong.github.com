@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>C++ Under Linux - 丘海东</title>
+  <title>SQL Server Autobackup - 丘海东</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="编译： g++ -o hello hello.cpp 或： g++ hello.cpp -o hello 或： g++ hello.cpp 生成hello或a.out
-运行： ./hello 或： ./a.out ">
+  <meta name="description" content="前提:SQL Server 代理开机自启
+控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:自动
+Microsoft SQL Server Management Studio，192.168.0.250,1433，管理，维护计划，右键， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://qiuhaidong.github.io/blog/2016/06/28/c-plus-plus-under-linux/">
+  <link rel="canonical" href="http://qiuhaidong.github.io/blog/2016/08/25/sql-server-autobackup/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
@@ -67,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">C++ Under Linux</h1>
+      <h1 class="entry-title">SQL Server Autobackup</h1>
     
     
       <p class="meta">
@@ -76,38 +77,17 @@
 
 
 
-<time class='entry-date' datetime='2016-06-28T17:19:52+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:19 pm</span></time>
+<time class='entry-date' datetime='2016-08-25T13:23:32+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:23 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>编译：</p>
-
-<pre><code>g++ -o hello hello.cpp
-</code></pre>
-
-<p>或：</p>
-
-<pre><code>g++ hello.cpp -o hello
-</code></pre>
-
-<p>或：</p>
-
-<pre><code>g++ hello.cpp
-</code></pre>
-
-<p>生成hello或a.out<br/>
-运行：</p>
-
-<pre><code>./hello
-</code></pre>
-
-<p>或：</p>
-
-<pre><code>./a.out
-</code></pre>
+<div class="entry-content"><p>前提:<strong>SQL Server 代理</strong>开机自启<br/>
+控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:<strong>自动</strong><br/>
+Microsoft SQL Server Management Studio，<em>192.168.0.250,1433</em>，管理，维护计划，右键，维护计划向导……<br/>
+Done.</p>
 </div>
 
 
@@ -123,7 +103,7 @@
 
 
 
-<time class='entry-date' datetime='2016-06-28T17:19:52+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:19 pm</span></time>
+<time class='entry-date' datetime='2016-08-25T13:23:32+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:23 pm</span></time>
       
 
 
@@ -138,10 +118,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2016/06/27/c-on-linux/" title="Previous Post: c编程，linux下">&laquo; c编程，linux下</a>
+        <a class="basic-alignment left" href="/blog/2016/08/24/dia-on-linux/" title="Previous Post: dia on linux">&laquo; dia on linux</a>
       
       
-        <a class="basic-alignment right" href="/blog/2016/08/13/Windows-Server-2012-AutoAdminLogon-and-Startup/" title="Next Post: windows server 2012自动登录和软件自启动">windows server 2012自动登录和软件自启动 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2018/03/02/commands-about-linux/" title="Next Post: Commands about Linux">Commands about Linux &raquo;</a>
       
     </p>
   </footer>

@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-08-25T15:53:41+08:00</updated>
+  <updated>2016-08-28T21:13:01+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -54,6 +54,15 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
 
 <pre><code>sudo gedit test.c
 </code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[系统接线图]]></title>
+    <link href="http://qiuhaidong.github.io/blog/2016/08/28/xi-tong-jie-xian-tu/"/>
+    <updated>2016-08-28T21:06:27+08:00</updated>
+    <id>http://qiuhaidong.github.io/blog/2016/08/28/xi-tong-jie-xian-tu</id>
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E7%B3%BB%E7%BB%9F%E6%8E%A5%E7%BA%BF%E5%9B%BE.png" alt="系统接线图" /></p>
 ]]></content>
   </entry>
   
@@ -609,45 +618,6 @@ S7 Edge：弧形屏幕的误触问题</p>
 寒门要出贵子，很难。<br/>
 要自己尽量多地接触各种人各种事，各种思维，然后思考。想明白了，做。<br/>
 思维还是可以改变的，人还是可以改变的。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[如何聊天]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/03/23/make-a-good-conversatin/"/>
-    <updated>2016-03-23T11:42:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/03/23/make-a-good-conversatin</id>
-    <content type="html"><![CDATA[<p><a href="http://weibo.com/1742566624/Dnxr5ho01?type=comment#_rnd14587044733760">参见这条微博</a></p>
-
-<ol>
-<li><p>话题</p>
-
-<p>   大家都能参与的话题，观点别绝对（佛教就是迷信，日本人全部都坏）<br/>
-   说编程bug不如说电脑小技巧<br/>
-   说手机硬件不如说手机卡死后长按重启<br/>
-   话题观点要有多角度，别绝对<br/>
-   聊风土，人情，名人，影视歌，娇气，美食，幻想……</p></li>
-<li><p>态度</p>
-
-<p>   平和，微笑，身体动作要少，情绪要相符对应</p></li>
-<li><p>声音</p>
-
-<p>   大小，高低，快慢，语调，语气</p></li>
-<li><p>非线性对话</p>
-
-<p>   思维别一根筋，别一直追问（你多大？28。哪里人？广东。广东哪里？茂名。茂名哪里？信宜。信宜哪里？……），别有压迫感<br/>
-   要曲线，不要直线，多个话题结合，多路多线程</p></li>
-<li><p>合理的短悬念</p>
-
-<p>   别一股脑说结果<br/>
-   别太长
-   重要的事别设悬念</p></li>
-<li><p>不经意的幽默</p>
-
-<p>  别故意讲段子梗</p></li>
-<li><p>重复别人的关键词</p></li>
-</ol>
-
 ]]></content>
   </entry>
   

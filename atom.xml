@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-08-30T13:28:58+08:00</updated>
+  <updated>2016-08-31T20:24:32+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -54,6 +54,16 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
 
 <pre><code>sudo gedit test.c
 </code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[头像]]></title>
+    <link href="http://qiuhaidong.github.io/blog/2016/08/31/tou-xiang/"/>
+    <updated>2016-08-31T20:12:12+08:00</updated>
+    <id>http://qiuhaidong.github.io/blog/2016/08/31/tou-xiang</id>
+    <content type="html"><![CDATA[<p>在难搞的日子笑出声来<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E5%A4%A7%E8%83%A1%E5%AD%90%E5%A4%B4%E5%83%8F.jpg" alt="头像" /></p>
 ]]></content>
   </entry>
   
@@ -545,68 +555,6 @@ S7 Edge：弧形屏幕的误触问题</p>
 我傻咯。</p>
 
 <p>做运动脑子要平静，心态要平和，乱想东西，身体会一下子乱掉。想起14-15年度NBA季后赛火箭VS快船第六场，在下半场落后20几分的时候，我能感受到火箭的5个球员慢慢听不到球场里的杂音，慢慢看不到观众，眼里，脑里，心里，只剩下篮球，打好这个进攻，防好这个球，打好这个进攻，防好这个球……</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[关于情商的书]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/03/23/books-about-emotional-intelligence/"/>
-    <updated>2016-03-23T19:50:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/03/23/books-about-emotional-intelligence</id>
-    <content type="html"><![CDATA[<h4>阶段一</h4>
-
-<ol>
-<li>自我（第二版）</li>
-<li>发展心理学</li>
-<li>心理学与生活</li>
-<li>社会心理学（第八版）</li>
-<li>裸猿（三部曲）</li>
-</ol>
-
-
-<h4>阶段二</h4>
-
-<ol>
-<li>简单冥想术</li>
-</ol>
-
-
-<h4>阶段三</h4>
-
-<ol>
-<li>不确定世界的理性选择：判断与决策心理学</li>
-<li>亲密关系（第五版）</li>
-<li>非暴力沟通</li>
-<li>态度改变与社会影响</li>
-<li>沃顿商学院最实用的谈判课</li>
-</ol>
-
-
-<h4>阶段四</h4>
-
-<ol>
-<li>性审判史</li>
-<li>性史</li>
-</ol>
-
-
-<h4>阶段五</h4>
-
-<ol>
-<li>审批</li>
-<li>现代地狱纪游</li>
-</ol>
-
-
-<h4>阶段六</h4>
-
-<ol>
-<li>三人同舟</li>
-<li>好兵帅克</li>
-<li>门萨的娼妓</li>
-<li>五号屠场</li>
-</ol>
-
 ]]></content>
   </entry>
   

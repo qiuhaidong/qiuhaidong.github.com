@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "头像"
+title: "笑"
 date: 2016-08-31 20:12:12 +0800
 ---
 在难搞的日子笑出声来  
-![头像](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E5%A4%A7%E8%83%A1%E5%AD%90%E5%A4%B4%E5%83%8F.jpg)
+![头像](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E8%83%A1%E5%AD%90%E5%A4%B4%E5%83%8F.jpg)
+想起我父亲，小时候有一次，好像是晚上，我没有原因的闹脾气，用我们家乡话叫：放烂。我父亲没有打我没有骂我，而是给我一瓶八宝粥哄我。

@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-08-31T20:34:56+08:00</updated>
+  <updated>2016-09-02T01:46:26+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -82,11 +82,12 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[系统接线图]]></title>
+    <title type="html"><![CDATA[外星人场地管理系统]]></title>
     <link href="http://qiuhaidong.github.io/blog/2016/08/28/xi-tong-jie-xian-tu/"/>
     <updated>2016-08-28T21:06:27+08:00</updated>
     <id>http://qiuhaidong.github.io/blog/2016/08/28/xi-tong-jie-xian-tu</id>
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E7%B3%BB%E7%BB%9F%E6%8E%A5%E7%BA%BF%E5%9B%BE.png" alt="系统接线图" /></p>
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E7%B3%BB%E7%BB%9F%E6%8E%A5%E7%BA%BF%E5%9B%BE.png" alt="系统接线图" /><br/>
+三辊闸，淘气堡，后台终端管理，扣费由场地决定，投币数设置为1即可。若扣费50，投币50，会导致三辊闸打开时间过长，比如连续20秒～～～</p>
 ]]></content>
   </entry>
   

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SQL2000某个程序安装已在安装计算机上创建挂起的文件操作"
+title: "SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作"
 date: 2016-09-03 19:16:20 +0800
 comments: true
 categories: 

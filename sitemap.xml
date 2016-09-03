@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://qiuhaidong.github.io/blog/2018/03/02/commands-about-linux/</loc>
-<lastmod>2018-03-02T21:26:00+08:00</lastmod>
-</url>
-<url>
 <loc>http://qiuhaidong.github.io/blog/2016/09/03/extract/</loc>
 <lastmod>2016-09-03T20:52:13+08:00</lastmod>
 </url>
@@ -115,6 +111,10 @@
 <url>
 <loc>http://qiuhaidong.github.io/blog/2016/03/05/excel-da-gou-x/</loc>
 <lastmod>2016-03-05T10:47:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://qiuhaidong.github.io/blog/2016/03/02/commands-about-linux/</loc>
+<lastmod>2016-03-02T21:26:00+08:00</lastmod>
 </url>
 <url>
 <loc>http://qiuhaidong.github.io/blog/2016/03/01/wheat-field-with-crows/</loc>

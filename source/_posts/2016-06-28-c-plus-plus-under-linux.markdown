@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "c++ under linux"
+title: "c++ on linux"
 date: 2016-06-28 17:19:52 +0800
 comments: true
 categories: 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Commands about Linux"
-date: 2018-03-02 21:26 +0800
+date: 2016-03-02 21:26 +0800
 ---
 2016-03-02 21:26  
 shell: 命令行解释器  

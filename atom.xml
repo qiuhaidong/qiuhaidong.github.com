@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-09-03T19:29:38+08:00</updated>
+  <updated>2016-09-03T19:33:47+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -68,7 +68,7 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
 4）删除注册表中跟sql server相关的键。<br/>
 其实一般只要做或者说只做第3步就可以完全搞定，这样就可以清除安装暂挂项目。以上是网络搜索的资料，我直接做第3步，就可以安装了</p>
 
-<p>或者使用:SQL安装挂起解决工具免安装版.exe
+<p>或者使用:SQL安装挂起解决工具免安装版.exe<br/>
 DG:在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项。<br/>
 done.</p>
 ]]></content>

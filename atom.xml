@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-09-03T21:14:14+08:00</updated>
+  <updated>2016-09-03T21:20:52+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -72,15 +72,19 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
     <link href="http://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up/"/>
     <updated>2016-09-03T19:16:20+08:00</updated>
     <id>http://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up</id>
-    <content type="html"><![CDATA[<p>1）在添加/删除程序中彻底删除sql server。<br/>
-2）将没有删除的sql server目录也删除掉。<br/>
-3）打开注册表编辑器，在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager中找到PendingFileRenameOperations项目，并删除它。这样就可以清除安装暂挂项目。<br/>
-4）删除注册表中跟sql server相关的键。<br/>
-其实一般只要做或者说只做第3步就可以完全搞定，这样就可以清除安装暂挂项目。以上是网络搜索的资料，我直接做第3步，就可以安装了</p>
+    <content type="html"><![CDATA[<ol>
+<li>在添加/删除程序中彻底删除sql server</li>
+<li>将没有删除的sql server目录也删除掉</li>
+<li>打开注册表编辑器，在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager中找到PendingFileRenameOperations项目，并删除它。这样就可以清除安装暂挂项目</li>
+<li><p>删除注册表中跟sql server相关的键<br/>
+其实一般只要做或者说只做第3步就可以完全搞定，这样就可以清除安装暂挂项目。以上是网络搜索的资料，我直接做第3步，就可以安装了</p></li>
+<li><p>或者使用:SQL安装挂起解决工具免安装版.exe</p></li>
+<li>DG：<br/>
+ 在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项——SQL2000安装挂起.reg</li>
+</ol>
 
-<p>或者使用:SQL安装挂起解决工具免安装版.exe<br/>
-DG:在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项:SQL2000安装挂起.reg。<br/>
-done.</p>
+
+<p>done</p>
 ]]></content>
   </entry>
   

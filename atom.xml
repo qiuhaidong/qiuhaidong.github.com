@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-09-03T19:33:47+08:00</updated>
+  <updated>2016-09-03T20:55:17+08:00</updated>
   <id>http://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -53,6 +53,16 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
 所以:新建并打开文件可直接说编辑该文件即可（test.c文件之前并未存在）:</p>
 
 <pre><code>sudo gedit test.c
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[解压 Extract]]></title>
+    <link href="http://qiuhaidong.github.io/blog/2016/09/03/extract/"/>
+    <updated>2016-09-03T20:52:13+08:00</updated>
+    <id>http://qiuhaidong.github.io/blog/2016/09/03/extract</id>
+    <content type="html"><![CDATA[<pre><code>sudo apt-get install rar unrar p7zip-full p7zip-rar
 </code></pre>
 ]]></content>
   </entry>
@@ -535,15 +545,6 @@ S7 Edge：弧形屏幕的误触问题</p>
 这个丢掉高跟鞋<br/>
 不理会手机来电的下午<br/>
 好像变得有点不一样</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[习惯一个人]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/04/01/be-alone/"/>
-    <updated>2016-04-01T20:29:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/04/01/be-alone</id>
-    <content type="html"><![CDATA[<p>独自面对自己的世界。</p>
 ]]></content>
   </entry>
   

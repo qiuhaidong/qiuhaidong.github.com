@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Markdown语法简明手册 - 丘海东</title>
+  <title>SQL2000某个程序安装已在安装计算机上创建挂起的文件操作 - 丘海东</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="首先表明，本文转载自 http://ghosertblog.github.io/mdeditor/ 东哥对作者表示：万分感谢 Markdown 语法简明手册 1. 使用 * 和 ** 表示斜体和粗体 示例： 这是 斜体，这是 粗体。 2. 使用 === 表示一级标题，使用 &mdash; &hellip;">
+  <meta name="description" content="1）在添加/删除程序中彻底删除sql server。
+2）将没有删除的sql server目录也删除掉。
+3）打开注册表编辑器，在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://qiuhaidong.github.io/blog/2013/06/06/markdown-yu-fa/">
+  <link rel="canonical" href="http://qiuhaidong.github.io/blog/2016/09/03/sql2000installhangup/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
@@ -66,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Markdown语法简明手册</h1>
+      <h1 class="entry-title">SQL2000某个程序安装已在安装计算机上创建挂起的文件操作</h1>
     
     
       <p class="meta">
@@ -75,96 +77,22 @@
 
 
 
-<time class='entry-date' datetime='2013-06-06T23:34:00+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:34 pm</span></time>
+<time class='entry-date' datetime='2016-09-03T19:16:20+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>7:16 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><strong><em>首先表明，本文转载自</em></strong>  <a href="http://ghosertblog.github.io/mdeditor/">http://ghosertblog.github.io/mdeditor/</a></p>
+<div class="entry-content"><p>1）在添加/删除程序中彻底删除sql server。<br/>
+2）将没有删除的sql server目录也删除掉。<br/>
+3）打开注册表编辑器，在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager中找到PendingFileRenameOperations项目，并删除它。这样就可以清除安装暂挂项目。<br/>
+4）删除注册表中跟sql server相关的键。<br/>
+其实一般只要做或者说只做第3步就可以完全搞定，这样就可以清除安装暂挂项目。以上是网络搜索的资料，我直接做第3步，就可以安装了</p>
 
-<p><strong><em>东哥对作者表示：万分感谢</em></strong></p>
-
-<h2>Markdown 语法简明手册</h2>
-
-<h3>1. 使用 * 和 ** 表示斜体和粗体</h3>
-
-<p>示例：</p>
-
-<p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
-
-<h3>2. 使用 === 表示一级标题，使用 &mdash; 表示二级标题</h3>
-
-<p>示例：</p>
-
-<h1>这是一个一级标题</h1>
-
-<h2>这是一个二级标题</h2>
-
-<h3>这是一个三级标题</h3>
-
-<p>你也可以选择在行首加井号表示不同级别的标题，例如：# H1, ## H2, ### H3。</p>
-
-<h3>3. 使用 [描述](链接地址) 为文字增加外链接</h3>
-
-<p>示例：</p>
-
-<p>这是去往 <a href="http://ghosertblog.github.com">作者本人博客</a> 的链接。</p>
-
-<h3>4. 在行末加两个空格表示换行</h3>
-
-<p>示例：</p>
-
-<p>第一行(此行最右有两个看不见的空格)<br/>
-第二行</p>
-
-<h3>5. 使用 *，+，- 表示无序列表</h3>
-
-<p>示例：</p>
-
-<ul>
-<li>无序列表项 一</li>
-<li>无序列表项 二</li>
-<li>无序列表项 三</li>
-</ul>
-
-
-<h3>6. 使用数字和点表示有序列表</h3>
-
-<p>示例：</p>
-
-<ol>
-<li>有序列表项 一</li>
-<li>有序列表项 二</li>
-<li>有序列表项 三</li>
-</ol>
-
-
-<h3>7. 使用 > 表示文字引用</h3>
-
-<p>示例：</p>
-
-<blockquote><p>野火烧不尽，春风吹又生</p></blockquote>
-
-<h3>8. 使用 `代码` 表示行内代码块</h3>
-
-<p>示例：</p>
-
-<p>让我们聊聊 <code>html</code></p>
-
-<h3>9.  使用 四个缩进空格 表示代码块</h3>
-
-<p>示例：</p>
-
-<pre><code>这是一个代码块，此行左侧有四个不可见的空格
-</code></pre>
-
-<h3>10.  使用 ![描述](图片链接地址) 插入图像</h3>
-
-<p>示例：</p>
-
-<p><img src="http://tp3.sinaimg.cn/2204681022/180/5606968568/1" alt="我的头像" /></p>
+<p>或者使用:SQL安装挂起解决工具免安装版.exe
+DG:在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项。<br/>
+done.</p>
 </div>
 
 
@@ -180,7 +108,7 @@
 
 
 
-<time class='entry-date' datetime='2013-06-06T23:34:00+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:34 pm</span></time>
+<time class='entry-date' datetime='2016-09-03T19:16:20+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>7:16 pm</span></time>
       
 
 
@@ -195,10 +123,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/06/06/Setup-and-Start-Octopress/" title="Previous Post: Setup and Start Octopress">&laquo; Setup and Start Octopress</a>
+        <a class="basic-alignment left" href="/blog/2016/08/31/tou-xiang/" title="Previous Post: 笑">&laquo; 笑</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/10/07/error-Could-not-find-syntax-1.0.0-in-any-of-the-sources/" title="Next Post: Error: Could not find syntax-1.0.0 in any of the sources">Error: Could not find syntax-1.0.0 in any of the sources &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2018/03/02/commands-about-linux/" title="Next Post: Commands about Linux">Commands about Linux &raquo;</a>
       
     </p>
   </footer>

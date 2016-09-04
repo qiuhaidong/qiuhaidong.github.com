@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-09-04T16:55:51+08:00</updated>
+  <updated>2016-09-04T17:13:35+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[解压 Extract]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/09/03/extract/"/>
+    <updated>2016-09-03T20:52:13+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/09/03/extract</id>
+    <content type="html"><![CDATA[<pre><code>sudo apt-get install rar unrar p7zip-full p7zip-rar
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作]]></title>
@@ -28,6 +38,55 @@
 
 <p><em>或者使用:SQL安装挂起解决工具免安装版.exe</em><br/>
 <strong>DG：在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项——SQL2000安装挂起.reg</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[外星人场地管理系统]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/28/xi-tong-jie-xian-tu/"/>
+    <updated>2016-08-28T21:06:27+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/08/28/xi-tong-jie-xian-tu</id>
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E7%B3%BB%E7%BB%9F%E6%8E%A5%E7%BA%BF%E5%9B%BE.png" alt="系统接线图" /><br/>
+三辊闸，淘气堡，后台终端管理，扣费由场地决定，投币数设置为1即可。若扣费50，投币50，会导致三辊闸打开时间过长，比如连续20秒～～～</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SQL Server Autobackup]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/25/sql-server-autobackup/"/>
+    <updated>2016-08-25T13:23:32+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/08/25/sql-server-autobackup</id>
+    <content type="html"><![CDATA[<p>前提:<strong>SQL Server 代理</strong>开机自启<br/>
+控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:<strong>自动</strong><br/>
+Microsoft SQL Server Management Studio，<em>192.168.0.250,1433</em>，管理，维护计划，右键，维护计划向导……<br/>
+若要做多个备份，重复上个步骤<br/>
+Done.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dia on Linux]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/24/dia-on-linux/"/>
+    <updated>2016-08-24T22:46:45+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/08/24/dia-on-linux</id>
+    <content type="html"><![CDATA[<p>DIA,流程图绘制软件<br/>
+install:</p>
+
+<pre><code>sudo apt-get install dia
+</code></pre>
+
+<p>关于输入中文:</p>
+
+<pre><code>sudo vim /usr/bin/dia
+</code></pre>
+
+<p>把<code>dia-normal --integrated "$@"</code>注释掉，在前面加<code>#</code><br/>
+在下面添加:</p>
+
+<pre><code>dia-normal "$@"
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/dia.png" alt="dia" /></p>
 ]]></content>
   </entry>
   

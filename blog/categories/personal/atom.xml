@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Personal | 丘海东]]></title>
-  <link href="http://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
-  <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-09-04T16:43:08+08:00</updated>
-  <id>http://qiuhaidong.github.io/</id>
+  <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2016-09-04T16:54:33+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[SSH Keys and HTTPS]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/22/SSL-Keys-and-HTTPS/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/22/SSL-Keys-and-HTTPS/"/>
     <updated>2016-08-22T16:58:26+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/22/SSL-Keys-and-HTTPS</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/22/SSL-Keys-and-HTTPS</id>
     <content type="html"><![CDATA[<p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS认证方式改动</a>
 关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
 
@@ -40,18 +40,18 @@ done.<br/>
   
   <entry>
     <title type="html"><![CDATA[习惯一个人]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/04/01/be-alone/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/04/01/be-alone/"/>
     <updated>2016-04-01T20:29:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/04/01/be-alone</id>
+    <id>https://qiuhaidong.github.io/blog/2016/04/01/be-alone</id>
     <content type="html"><![CDATA[<p>独自面对自己的世界。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[寒门难出贵子]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/03/23/get-up/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/03/23/get-up/"/>
     <updated>2016-03-23T13:47:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/03/23/get-up</id>
+    <id>https://qiuhaidong.github.io/blog/2016/03/23/get-up</id>
     <content type="html"><![CDATA[<p><a href="http://bbs.tianya.cn/post-free-3560685-1.shtml">参见原文</a><br/>
 当然难。<br/>
 家境出身决定成长环境，成长经历，决定你以后怎么看自己，看别人，看世界，看事情，想事情，做事情，决定你的思维，决定你是得到助力，还是得不到助力，还是得到阻力。<br/>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[丘海东]]></title>
-  <link href="http://qiuhaidong.github.io/atom.xml" rel="self"/>
-  <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-09-04T16:43:08+08:00</updated>
-  <id>http://qiuhaidong.github.io/</id>
+  <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2016-09-04T16:54:33+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[解压 Extract]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/09/03/extract/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/09/03/extract/"/>
     <updated>2016-09-03T20:52:13+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/09/03/extract</id>
+    <id>https://qiuhaidong.github.io/blog/2016/09/03/extract</id>
     <content type="html"><![CDATA[<pre><code>sudo apt-get install rar unrar p7zip-full p7zip-rar
 </code></pre>
 ]]></content>
@@ -25,9 +25,9 @@
   
   <entry>
     <title type="html"><![CDATA[SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up/"/>
     <updated>2016-09-03T19:16:20+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up</id>
+    <id>https://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up</id>
     <content type="html"><![CDATA[<ol>
 <li>在添加/删除程序中彻底删除sql server</li>
 <li>将没有删除的sql server目录也删除掉</li>
@@ -43,9 +43,9 @@
   
   <entry>
     <title type="html"><![CDATA[笑]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/31/tou-xiang/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/31/tou-xiang/"/>
     <updated>2016-08-31T20:12:12+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/31/tou-xiang</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/31/tou-xiang</id>
     <content type="html"><![CDATA[<p>在难搞的日子笑出声来</p>
 
 <p>想起我父亲，小时候有一次，好像是晚上，我没有原因地闹脾气，用我们家乡话叫：放烂。我父亲没有打我没有骂我，而是给我一瓶八宝粥哄我。</p>
@@ -56,9 +56,9 @@
   
   <entry>
     <title type="html"><![CDATA[健康饮食]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/30/eat-healthy/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/30/eat-healthy/"/>
     <updated>2016-08-30T13:21:09+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/30/eat-healthy</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/30/eat-healthy</id>
     <content type="html"><![CDATA[<p>2016-08-30 04:01<br/>
 这几天，没吃蔬菜，没定时定量，闹肚子了，凌晨3点多，在厕所蹲到脚麻，肚子痛到全身没力。
 <img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/Screenshot_2016-08-30-04-01-40.png" alt="2016-08-30 04:01" /></p>
@@ -67,9 +67,9 @@
   
   <entry>
     <title type="html"><![CDATA[外星人场地管理系统]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/28/xi-tong-jie-xian-tu/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/28/xi-tong-jie-xian-tu/"/>
     <updated>2016-08-28T21:06:27+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/28/xi-tong-jie-xian-tu</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/28/xi-tong-jie-xian-tu</id>
     <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E7%B3%BB%E7%BB%9F%E6%8E%A5%E7%BA%BF%E5%9B%BE.png" alt="系统接线图" /><br/>
 三辊闸，淘气堡，后台终端管理，扣费由场地决定，投币数设置为1即可。若扣费50，投币50，会导致三辊闸打开时间过长，比如连续20秒～～～</p>
 ]]></content>
@@ -77,9 +77,9 @@
   
   <entry>
     <title type="html"><![CDATA[SQL Server Autobackup]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/25/sql-server-autobackup/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/25/sql-server-autobackup/"/>
     <updated>2016-08-25T13:23:32+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/25/sql-server-autobackup</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/25/sql-server-autobackup</id>
     <content type="html"><![CDATA[<p>前提:<strong>SQL Server 代理</strong>开机自启<br/>
 控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:<strong>自动</strong><br/>
 Microsoft SQL Server Management Studio，<em>192.168.0.250,1433</em>，管理，维护计划，右键，维护计划向导……<br/>
@@ -90,9 +90,9 @@ Done.</p>
   
   <entry>
     <title type="html"><![CDATA[Dia on Linux]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/24/dia-on-linux/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/24/dia-on-linux/"/>
     <updated>2016-08-24T22:46:45+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/24/dia-on-linux</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/24/dia-on-linux</id>
     <content type="html"><![CDATA[<p>DIA,流程图绘制软件<br/>
 install:</p>
 
@@ -116,9 +116,9 @@ install:</p>
   
   <entry>
     <title type="html"><![CDATA[德胜系统]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/23/system-about-ds/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/23/system-about-ds/"/>
     <updated>2016-08-23T14:10:59+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/23/system-about-ds</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/23/system-about-ds</id>
     <content type="html"><![CDATA[<p>E51:网络没连通，线路没接好<br/>
 安装windows server 2000时，若autorun或setup都失败，有可能是被tencent qq阻止了，在任务管理器里把tencent关了就行了</p>
 ]]></content>
@@ -126,9 +126,9 @@ install:</p>
   
   <entry>
     <title type="html"><![CDATA[Install .NET Framework on Windows Server]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/23/install-net-framework-on-windows-server/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/23/install-net-framework-on-windows-server/"/>
     <updated>2016-08-23T10:47:01+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/23/install-net-framework-on-windows-server</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/23/install-net-framework-on-windows-server</id>
     <content type="html"><![CDATA[<p>感谢教我帮我的老总和黎先生<br/>
 要用到Windows Server的ISO文件<br/>
 管理服务器，添加角色和功能</p>
@@ -156,9 +156,9 @@ done.</p>
   
   <entry>
     <title type="html"><![CDATA[SSH Keys and HTTPS]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/22/SSL-Keys-and-HTTPS/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/22/SSL-Keys-and-HTTPS/"/>
     <updated>2016-08-22T16:58:26+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/22/SSL-Keys-and-HTTPS</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/22/SSL-Keys-and-HTTPS</id>
     <content type="html"><![CDATA[<p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS认证方式改动</a>
 关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
 
@@ -181,9 +181,9 @@ done.<br/>
   
   <entry>
     <title type="html"><![CDATA[C# on Linux]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/20/C%23-on-Linux/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/20/C%23-on-Linux/"/>
     <updated>2016-08-20T14:18:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/20/C#-on-Linux</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/20/C#-on-Linux</id>
     <content type="html"><![CDATA[<p><a href="http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives">参考官方说明</a><br/>
 attention:有些commend不适合ubuntu，要区分<br/>
 <a href="http://blog.csdn.net/caspiansea/article/details/50585025">参见另一篇blog</a><br/>
@@ -213,9 +213,9 @@ install mono,(mono-complete and monodevelop):</p>
   
   <entry>
     <title type="html"><![CDATA[Windows Server 2012自动登录和软件自启动]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/08/13/Windows-Server-2012-AutoAdminLogon-and-Startup/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/13/Windows-Server-2012-AutoAdminLogon-and-Startup/"/>
     <updated>2016-08-13T23:36:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/08/13/Windows-Server-2012-AutoAdminLogon-and-Startup</id>
+    <id>https://qiuhaidong.github.io/blog/2016/08/13/Windows-Server-2012-AutoAdminLogon-and-Startup</id>
     <content type="html"><![CDATA[<p>自动登录：<br/>
 win+r：Control UserPasswords2<br/>
 Administrator<br/>
@@ -227,9 +227,9 @@ win+r：shell:startup
   
   <entry>
     <title type="html"><![CDATA[C++ on Linux]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/06/28/c-plus-plus-under-linux/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/06/28/c-plus-plus-under-linux/"/>
     <updated>2016-06-28T17:19:52+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/06/28/c-plus-plus-under-linux</id>
+    <id>https://qiuhaidong.github.io/blog/2016/06/28/c-plus-plus-under-linux</id>
     <content type="html"><![CDATA[<p>编译：</p>
 
 <pre><code>g++ -o hello hello.cpp
@@ -260,9 +260,9 @@ win+r：shell:startup
   
   <entry>
     <title type="html"><![CDATA[C on Linux]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/06/27/c-on-linux/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/06/27/c-on-linux/"/>
     <updated>2016-06-27T09:18:14+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/06/27/c-on-linux</id>
+    <id>https://qiuhaidong.github.io/blog/2016/06/27/c-on-linux</id>
     <content type="html"><![CDATA[<p>linux下用gcc，系统自带有，用<code>gcc --version</code>查看一下即可，若没有，安装编译环境：</p>
 
 <pre><code>sudo apt-get install build-essential
@@ -299,9 +299,9 @@ int main()
   
   <entry>
     <title type="html"><![CDATA[中软事件]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/06/21/zhong-ruan/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/06/21/zhong-ruan/"/>
     <updated>2016-06-21T14:14:57+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/06/21/zhong-ruan</id>
+    <id>https://qiuhaidong.github.io/blog/2016/06/21/zhong-ruan</id>
     <content type="html"><![CDATA[<p><strong>2016-06-17 14:47</strong></p>
 
 <ul>
@@ -319,9 +319,9 @@ int main()
   
   <entry>
     <title type="html"><![CDATA[Vim]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/05/24/vim/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/05/24/vim/"/>
     <updated>2016-05-24T19:13:46+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/05/24/vim</id>
+    <id>https://qiuhaidong.github.io/blog/2016/05/24/vim</id>
     <content type="html"><![CDATA[<h4>终端执行命令：</h4>
 
 <pre><code>vimtutor
@@ -373,9 +373,9 @@ V:可视块模式</p>
   
   <entry>
     <title type="html"><![CDATA[Job Hunting]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/05/21/job-hunting/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/05/21/job-hunting/"/>
     <updated>2016-05-21T03:58:16+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/05/21/job-hunting</id>
+    <id>https://qiuhaidong.github.io/blog/2016/05/21/job-hunting</id>
     <content type="html"><![CDATA[<p>感谢您用宝贵的时间看我的简历，谢谢</p>
 
 <p>个人信息：</p>
@@ -440,9 +440,9 @@ S7 Edge：弧形屏幕的误触问题</p>
   
   <entry>
     <title type="html"><![CDATA[逃离与返回]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/04/12/leave-and-back/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/04/12/leave-and-back/"/>
     <updated>2016-04-12T15:46:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/04/12/leave-and-back</id>
+    <id>https://qiuhaidong.github.io/blog/2016/04/12/leave-and-back</id>
     <content type="html"><![CDATA[<p>我曾逃离北上广。<br/>
 我将回去。<br/>
 在广西水汶快两年半了，挺长的一段时间。和波波、阿媚共事很开心，彼此信任，做起事来很轻松很畅快。<br/>
@@ -459,9 +459,9 @@ S7 Edge：弧形屏幕的误触问题</p>
   
   <entry>
     <title type="html"><![CDATA[一个人的醇享时光]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/04/12/enjoy-alone/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/04/12/enjoy-alone/"/>
     <updated>2016-04-12T15:25:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/04/12/enjoy-alone</id>
+    <id>https://qiuhaidong.github.io/blog/2016/04/12/enjoy-alone</id>
     <content type="html"><![CDATA[<p>人群之外的生活<br/>
 也能过得优雅有品味<br/>
 就算每个人都是一座孤岛<br/>
@@ -507,9 +507,9 @@ S7 Edge：弧形屏幕的误触问题</p>
   
   <entry>
     <title type="html"><![CDATA[习惯一个人]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/04/01/be-alone/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/04/01/be-alone/"/>
     <updated>2016-04-01T20:29:00+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/04/01/be-alone</id>
+    <id>https://qiuhaidong.github.io/blog/2016/04/01/be-alone</id>
     <content type="html"><![CDATA[<p>独自面对自己的世界。</p>
 ]]></content>
   </entry>

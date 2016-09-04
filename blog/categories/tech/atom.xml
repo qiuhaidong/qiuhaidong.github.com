@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Tech | 丘海东]]></title>
-  <link href="http://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
-  <link href="http://qiuhaidong.github.io/"/>
-  <updated>2016-09-04T16:43:08+08:00</updated>
-  <id>http://qiuhaidong.github.io/</id>
+  <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2016-09-04T16:54:33+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作]]></title>
-    <link href="http://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up/"/>
     <updated>2016-09-03T19:16:20+08:00</updated>
-    <id>http://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up</id>
+    <id>https://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up</id>
     <content type="html"><![CDATA[<ol>
 <li>在添加/删除程序中彻底删除sql server</li>
 <li>将没有删除的sql server目录也删除掉</li>

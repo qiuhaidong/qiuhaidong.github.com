@@ -3,7 +3,7 @@ layout: post
 title: "nightmares"
 date: 2014-11-26 23:01:33 +0800
 comments: true
-categories: 
+categories: personal
 ---
 2014年10月16日，4:59AM,在家，睡觉，做梦，醒。  
 

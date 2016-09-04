@@ -3,7 +3,7 @@ layout: post
 title: "Setup and Start Octopress"
 date: 2013-06-06 20:54
 comments: true
-categories: 
+categories: tech
 ---
 ***Before You Begin***  
 

@@ -3,7 +3,7 @@ layout: post
 title: "东哥学堂1"
 date: 2014-09-16 16:08:10 +0800
 comments: true
-categories: 
+categories: personal
 ---
 新人入职，别太出风头，不然容易被排挤。  
 

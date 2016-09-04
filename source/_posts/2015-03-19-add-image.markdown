@@ -3,7 +3,7 @@ layout: post
 title: "add image"
 date: 2015-03-19 14:13:28 +0800
 comments: true
-categories: 
+categories: tech
 ---
 方法略繁复  
 把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）  

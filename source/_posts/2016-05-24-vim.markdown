@@ -3,7 +3,7 @@ layout: post
 title: "vim"
 date: 2016-05-24 19:13:46 +0800
 comments: true
-categories: 
+categories: tech
 ---
 ####终端执行命令：
     vimtutor

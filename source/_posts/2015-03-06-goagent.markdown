@@ -3,7 +3,7 @@ layout: post
 title: "GoAgent"
 date: 2015-03-06 15:01:31 +0800
 comments: true
-categories: 
+categories: tech
 ---
 2016-01-09  goagent的github仓库已经全部删除，it's gone.  
 

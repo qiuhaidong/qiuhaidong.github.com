@@ -3,6 +3,7 @@ layout: post
 title: "给自己看"
 date: 2016-02-10 22:35:50 +0800
 comments: true
+categories: personal
 ---
 这两年的经历，让我体会各种感觉。我的三观，我的信仰，骄傲，坚守，勇敢，自尊，自负，甚至自卑，懦弱，被击打破碎。  
 然后重建。  

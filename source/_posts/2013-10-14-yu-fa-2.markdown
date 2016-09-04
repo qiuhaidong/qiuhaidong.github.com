@@ -3,7 +3,7 @@ layout: post
 title: "Markdown语法 2"
 date: 2013-10-14 20:28
 comments: true
-categories: 
+categories: tech
 ---
 #### 首先表明，此文转载自
 [作业部落旗下][3]

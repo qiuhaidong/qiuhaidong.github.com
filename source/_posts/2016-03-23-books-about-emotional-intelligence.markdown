@@ -2,6 +2,7 @@
 layout: post
 title: "关于情商的书"
 date: 2016-03-23 19:50 +0800
+categories: personal
 ---
 ####阶段一
 

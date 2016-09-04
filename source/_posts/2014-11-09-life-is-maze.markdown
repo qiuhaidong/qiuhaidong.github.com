@@ -3,7 +3,7 @@ layout: post
 title: "生活 经历 迷宫"
 date: 2014-11-09 23:36:05 +0800
 comments: true
-categories: 
+categories: personal
 ---
 生活像是一座特殊的迷宫。  
 

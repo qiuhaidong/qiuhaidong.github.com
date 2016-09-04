@@ -3,7 +3,7 @@ layout: post
 title: "dia on linux"
 date: 2016-08-24 22:46:45 +0800
 comments: true
-categories: 
+categories: tech
 ---
 DIA,流程图绘制软件  
 install:  

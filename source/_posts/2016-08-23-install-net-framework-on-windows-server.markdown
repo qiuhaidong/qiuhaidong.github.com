@@ -3,7 +3,7 @@ layout: post
 title: "Install .NET Framework on Windows Server"
 date: 2016-08-23 10:47:01 +0800
 comments: true
-categories: 
+categories: tech
 ---
 感谢教我帮我的老总和黎先生  
 要用到Windows Server的ISO文件  

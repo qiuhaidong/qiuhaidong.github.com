@@ -2,6 +2,7 @@
 layout: post
 title: "Commands about Linux"
 date: 2016-03-02 21:26 +0800
+categories: tech
 ---
 2016-03-02 21:26  
 shell: 命令行解释器  

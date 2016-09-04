@@ -3,7 +3,7 @@ layout: post
 title: "东哥传2"
 date: 2014-10-09 22:49:34 +0800
 comments: true
-categories: 
+categories: personal
 ---
 ###2014.10.4
 09年上大学，肇庆学院，09电子1班。13年，结束。  

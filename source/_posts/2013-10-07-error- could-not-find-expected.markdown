@@ -3,7 +3,7 @@ layout: post
 title: "Error: could not find expected ':'"
 date: 2013-10-07 11:14
 comments: true
-categories: 
+categories: tech
 ---
 
 ####出现错误要先看提示代码，知道错在哪里，如：

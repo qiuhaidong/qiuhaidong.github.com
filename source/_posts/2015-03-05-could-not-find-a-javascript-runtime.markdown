@@ -3,7 +3,7 @@ layout: post
 title: "Could not find a JavaScript runtime"
 date: 2015-03-05 13:10:34 +0800
 comments: true
-categories: 
+categories: tech
 ---
 以下是两条命令的输出结果：  
 第一条：  

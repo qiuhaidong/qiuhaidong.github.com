@@ -3,7 +3,7 @@ layout: post
 title: "水汶"
 date: 2013-11-28 23:16
 comments: true
-categories: 
+categories: personal
 ---
 会说谎  
 

@@ -2,6 +2,7 @@
 layout: post
 title: " 一个人的醇享时光"
 date: 2016-04-12 15:25 +0800
+categories: personal
 ---
 人群之外的生活  
 也能过得优雅有品味  

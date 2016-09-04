@@ -2,6 +2,7 @@
 layout: post
 title: "逃离与返回"
 date: 2016-04-12 15:46 +0800
+categories: personal
 ---
 我曾逃离北上广。  
 我将回去。  

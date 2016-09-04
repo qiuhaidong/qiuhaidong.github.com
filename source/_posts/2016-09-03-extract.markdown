@@ -3,6 +3,6 @@ layout: post
 title: "解压 Extract"
 date: 2016-09-03 20:52:13 +0800
 comments: true
-categories: 
+categories: tech
 ---
     sudo apt-get install rar unrar p7zip-full p7zip-rar

@@ -3,7 +3,7 @@ layout: post
 title: "致宝文"
 date: 2014-09-21 19:50:53 +0800
 comments: true
-categories: 
+categories: personal
 ---
 ####严正声明：事关宝文个人隐私，未经宝文允许，不得传出宿舍外！  
 

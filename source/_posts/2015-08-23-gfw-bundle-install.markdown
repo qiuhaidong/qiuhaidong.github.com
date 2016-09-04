@@ -3,7 +3,7 @@ layout: post
 title: "GFW rubygems bundle install"
 date: 2015-08-23 01:16:00 +0800
 comments: true
-categories: 
+categories: tech
 ---
 封网，rubygems.org 不行了  
 `bundle install`  自然也不行  

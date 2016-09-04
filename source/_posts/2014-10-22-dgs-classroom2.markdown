@@ -3,7 +3,7 @@ layout: post
 title: "东哥学堂2"
 date: 2014-10-22 02:58:05 +0800
 comments: true
-categories: 
+categories: personal
 ---
 1.信任很脆弱  
 

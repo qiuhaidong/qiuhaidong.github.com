@@ -3,7 +3,7 @@ layout: post
 title: "阿甘的奔跑"
 date: 2015-02-22 23:01:57 +0800
 comments: true
-categories: 
+categories: personal
 ---
 想起阿甘。  
 阿甘有点傻，一点点傻。  

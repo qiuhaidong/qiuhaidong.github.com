@@ -3,7 +3,7 @@ layout: post
 title: "install chrome"
 date: 2014-04-26 18:09:48 +0800
 comments: true
-categories: 
+categories: tech
 ---
 在tweak里安装，chromium偶尔有问题，还是用 chrome stable好  
 

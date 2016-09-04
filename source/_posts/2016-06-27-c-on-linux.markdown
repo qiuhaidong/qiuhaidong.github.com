@@ -3,7 +3,7 @@ layout: post
 title: "C on linux"
 date: 2016-06-27 09:18:14 +0800
 comments: true
-categories: 
+categories: tech
 ---
 linux下用gcc，系统自带有，用`gcc --version`查看一下即可，若没有，安装编译环境：  
 

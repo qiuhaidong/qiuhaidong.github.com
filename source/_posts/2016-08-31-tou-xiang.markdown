@@ -2,6 +2,7 @@
 layout: post
 title: "笑"
 date: 2016-08-31 20:12:12 +0800
+categories: personal
 ---
 在难搞的日子笑出声来  
 

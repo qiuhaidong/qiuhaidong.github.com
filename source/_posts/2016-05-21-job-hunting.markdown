@@ -3,7 +3,7 @@ layout: post
 title: "job hunting"
 date: 2016-05-21 03:58:16 +0800
 comments: true
-categories: 
+categories: tech
 ---
 感谢您用宝贵的时间看我的简历，谢谢  
 

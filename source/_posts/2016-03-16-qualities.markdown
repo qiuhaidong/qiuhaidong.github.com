@@ -2,6 +2,7 @@
 layout: post
 title: "提升气质的一些方法"
 date: 2016-03-16 14:48 +0800
+categories: personal
 ---
 微笑  
 少说话  

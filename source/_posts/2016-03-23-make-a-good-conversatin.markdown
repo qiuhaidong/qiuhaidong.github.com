@@ -2,6 +2,7 @@
 layout: post
 title: "如何聊天"
 date: 2016-03-23 11:42 +0800
+categories: personal
 ---
 [参见这条微博](http://weibo.com/1742566624/Dnxr5ho01?type=comment#_rnd14587044733760)  
 

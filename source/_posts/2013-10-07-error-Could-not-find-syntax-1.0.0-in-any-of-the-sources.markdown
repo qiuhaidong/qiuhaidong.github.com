@@ -3,7 +3,7 @@ layout: post
 title: "Error: Could not find syntax-1.0.0 in any of the sources"
 date: 2013-10-07 11:00
 comments: true
-categories: 
+categories: tech
 ---
 
 ####if cout<<

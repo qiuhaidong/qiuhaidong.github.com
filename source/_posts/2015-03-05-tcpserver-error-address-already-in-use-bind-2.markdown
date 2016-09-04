@@ -3,7 +3,7 @@ layout: post
 title: "TCPServer Error: Address already in use - bind(2)"
 date: 2015-03-05 13:29:29 +0800
 comments: true
-categories: 
+categories: tech
 ---
 在执行命令  
 

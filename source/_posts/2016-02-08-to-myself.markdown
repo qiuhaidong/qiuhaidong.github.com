@@ -3,6 +3,7 @@ layout: post
 title: "致自己"
 data: 2016-02-08 00:00:01 +0800
 comments: true
+categories: personal
 ---
 这几年，我黯然无光，落魄至极。  
 好像风里的一条狗。  

@@ -3,7 +3,7 @@ layout: post
 title: "父亲"
 date: 2014-07-02 14:13:55 +0800
 comments: true
-categories: 
+categories: personal
 ---
 我觉得父亲是一个很难说得清看得懂的角色。  
 

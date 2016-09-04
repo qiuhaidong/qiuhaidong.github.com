@@ -3,7 +3,7 @@ layout: post
 title: "SQL server autobackup"
 date: 2016-08-25 13:23:32 +0800
 comments: true
-categories: 
+categories: tech
 ---
 前提:**SQL Server 代理**开机自启  
 控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:**自动**  

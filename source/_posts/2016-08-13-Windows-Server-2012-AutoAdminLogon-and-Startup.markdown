@@ -3,7 +3,7 @@ layout: post
 title: "windows server 2012自动登录和软件自启动"
 date: 2016-08-13 23:36
 comment: true
-categories: 
+categories: tech
 published: true
 ---
 自动登录：  

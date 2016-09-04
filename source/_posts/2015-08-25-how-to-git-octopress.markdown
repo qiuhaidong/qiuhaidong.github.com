@@ -3,7 +3,7 @@ layout: post
 title: "how to ‘git’ Octopress"
 date: 2015-08-25 13:58:37 +0800
 comments: true
-categories: 
+categories: tech
 ---
 如何为已经存在于Github上的Octopress搭建本地环境  
 大部分步骤和全新搭建时差不多，这里只列出不同的那几步  

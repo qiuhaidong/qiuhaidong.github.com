@@ -3,7 +3,7 @@ layout: post
 title: "做优雅的人"
 date: 2015-08-25 18:24:37 +0800
 comments: true
-categories: 
+categories: personal
 ---
 尊重学识  
 整洁精致美好  

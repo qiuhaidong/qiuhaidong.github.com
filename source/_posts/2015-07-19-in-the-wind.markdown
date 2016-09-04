@@ -3,7 +3,7 @@ layout: post
 title: "人在风里"
 date: 2015-07-19 22:50:37 +0800
 comments: true
-categories: 
+categories: personal
 ---
 那一段我仅有的青春。  
 很短，很简单。  

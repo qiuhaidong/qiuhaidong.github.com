@@ -3,7 +3,7 @@ layout: post
 title: "大圣归来"
 date: 2015-08-30 14:22:57 +0800
 comments: true
-categories: 
+categories: personal
 ---
 挺好的一部动画电影。  
 有当年看《舌尖上的中国》时的感觉。  

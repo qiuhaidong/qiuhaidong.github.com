@@ -3,7 +3,7 @@ layout: post
 title: "install dropbox"
 date: 2014-04-26 18:07:16 +0800
 comments: true
-categories: 
+categories: tech
 ---
 先配置好翻墙  
 

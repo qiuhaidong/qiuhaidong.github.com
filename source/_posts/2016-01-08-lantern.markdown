@@ -2,6 +2,7 @@
 layout: post
 title: "Lantern"
 date: 2016-01-08 14:56 
+categories: tech
 ---
 [下载页面](https://github.com/getlantern/lantern)  
 [Windows版](https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta.exe)  

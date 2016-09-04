@@ -3,7 +3,7 @@ layout: post
 title: "小时候的快乐"
 date: 2015-12-02 13:11
 comments: true
-categories: 
+categories: personal
 ---
 得到一个小电筒，晚上照亮东西  
 捡到两石头，黑暗中打出火花  

@@ -3,7 +3,7 @@ layout: post
 title: "生日快乐"
 date: 2013-12-20 00:45
 comments: true
-categories: 
+categories: personal
 ---
 2013年  
 

@@ -3,7 +3,7 @@ layout: post
 title: "Markdown语法简明手册"
 date: 2013-06-06 23:34
 comments: true
-categories: 
+categories: tech
 published: true
 ---
 ***首先表明，本文转载自***  http://ghosertblog.github.io/mdeditor/

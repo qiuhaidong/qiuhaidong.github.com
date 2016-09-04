@@ -3,7 +3,7 @@ layout: post
 title: "SSH Keys and HTTPS"
 date: 2016-08-22 16:58:26 +0800
 comments: true
-categories: 
+categories: personal
 ---
 [SSH KEYS认证方式改动](https://help.github.com/articles/securing-your-github-pages-site-with-https/)
 关于`git pull origin source`or`git push origin source`,若出错：  

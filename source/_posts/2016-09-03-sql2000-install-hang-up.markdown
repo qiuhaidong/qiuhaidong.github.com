@@ -3,7 +3,7 @@ layout: post
 title: "SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作"
 date: 2016-09-03 19:16:20 +0800
 comments: true
-categories: 
+categories: tech
 ---
 1. 在添加/删除程序中彻底删除sql server
 2. 将没有删除的sql server目录也删除掉

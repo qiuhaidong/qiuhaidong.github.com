@@ -2,6 +2,7 @@
 layout: post
 title: "寒门难出贵子"
 date: 2016-03-23 13:47 +0800
+categories: personal
 ---
 [参见原文](http://bbs.tianya.cn/post-free-3560685-1.shtml)  
 当然难。  

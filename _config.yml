@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://qiuhaidong.github.io
+url: https://qiuhaidong.github.com
 title: 丘海东
 subtitle: 
 author: 丘海东
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-#email: 
+email: 
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -64,10 +64,10 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-#github_user: qiuhaidong
-#github_repo_count: 0
-#github_show_profile_link: true
-#github_skip_forks: true
+github_user: 
+github_repo_count: 0
+github_show_profile_link: true
+github_skip_forks: true
 
 
 

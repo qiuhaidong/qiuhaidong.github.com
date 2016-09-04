@@ -4,10 +4,10 @@
 
 url: http://qiuhaidong.github.io
 title: Anthony
-#subtitle: 
+subtitle: 
 author: 丘海东
-#simple_search: 
-#description: 
+simple_search: 
+description: 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -17,9 +17,9 @@ date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
-#subscribe_email:
+subscribe_email:
 # RSS feeds can list your email address if you like
-#email: 
+email: 
 
 # ----------------------- #
 #    Jekyll & Plugins     #

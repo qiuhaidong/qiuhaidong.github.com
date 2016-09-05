@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-09-04T17:50:41+08:00</updated>
+  <updated>2016-09-05T13:29:52+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[图标显示不正常]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/09/05/display-icon-error/"/>
+    <updated>2016-09-05T13:26:50+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/09/05/display-icon-error</id>
+    <content type="html"><![CDATA[<p>控制面板，显示，更改大小，应用，注销，再把大小改回来就行了。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[解压 Extract]]></title>
@@ -61,32 +70,6 @@
 Microsoft SQL Server Management Studio，<em>192.168.0.250,1433</em>，管理，维护计划，右键，维护计划向导……<br/>
 若要做多个备份，重复上个步骤<br/>
 Done.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Dia on Linux]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/08/24/dia-on-linux/"/>
-    <updated>2016-08-24T22:46:45+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/08/24/dia-on-linux</id>
-    <content type="html"><![CDATA[<p>DIA,流程图绘制软件<br/>
-install:</p>
-
-<pre><code>sudo apt-get install dia
-</code></pre>
-
-<p>关于输入中文:</p>
-
-<pre><code>sudo vim /usr/bin/dia
-</code></pre>
-
-<p>把<code>dia-normal --integrated "$@"</code>注释掉，在前面加<code>#</code><br/>
-在下面添加:</p>
-
-<pre><code>dia-normal "$@"
-</code></pre>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/dia.png" alt="dia" /></p>
 ]]></content>
   </entry>
   

@@ -5,15 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Install .NET Framework on Windows Server - 丘海东</title>
+  <title>Install Again - 丘海东</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="感谢教我帮我的老总和黎先生
-要用到Windows Server的ISO文件
-管理服务器，添加角色和功能 选择服务器角色：AD域，DNS，.NET Framework 指定备用源路径 \…ISO…\sources\sxs
-done.
-">
+  <meta name="description" content="再一次安装，又有新的变化：
+1、ruby不再使用1.9.3的版本，自己上官网查一查，看最新的版本是多少就用多少。用旧版会导致很多gem依赖包无法安装。
+2、rubygems bundle install的网址也变化了，最新的是https://gems.ruby-china.org%EF%BC%8C &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +20,7 @@ done.
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2016/08/23/install-net-framework-on-windows-server/">
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2016/10/28/install-again/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
@@ -70,7 +68,7 @@ done.
   
   <header>
     
-      <h1 class="entry-title">Install .NET Framework on Windows Server</h1>
+      <h1 class="entry-title">Install Again</h1>
     
     
       <p class="meta">
@@ -79,35 +77,16 @@ done.
 
 
 
-<time class='entry-date' datetime='2016-08-23T10:47:01+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>10:47 am</span></time>
+<time class='entry-date' datetime='2016-10-28T02:22:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:22 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>感谢教我帮我的老总和黎先生<br/>
-要用到Windows Server的ISO文件<br/>
-管理服务器，添加角色和功能</p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E6%B7%BB%E5%8A%A0%E8%A7%92%E8%89%B2%E5%92%8C%E5%8A%9F%E8%83%BD.png" alt="添加角色和功能" /></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E5%9F%BA%E4%BA%8E%E8%A7%92%E8%89%B2%E6%88%96%E5%9F%BA%E4%BA%8E%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%89%E8%A3%85.png" alt="基于角色或功能的安装" /></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B1%A0%E9%80%89%E6%8B%A9%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="从服务器池中选择服务器" /></p>
-
-<p>选择服务器角色：AD域，DNS，.NET Framework</p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/AD%E5%9F%9F%2CDNS%2C.NET.png" alt="选择服务器角色AD域DNS" /></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/NET%20Framework.png" alt=".NET Framework" /></p>
-
-<p>指定备用源路径</p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E6%8C%87%E5%AE%9A%E5%A4%87%E7%94%A8%E6%BA%90%E8%B7%AF%E5%BE%84.png" alt="指定备用源路径" /></p>
-
-<p>\…ISO…\sources\sxs<br/>
-done.</p>
+<div class="entry-content"><p>再一次安装，又有新的变化：<br/>
+1、ruby不再使用1.9.3的版本，自己上官网查一查，看最新的版本是多少就用多少。用旧版会导致很多gem依赖包无法安装。<br/>
+2、rubygems bundle install的网址也变化了，最新的是<a href="https://gems.ruby-china.org%EF%BC%8C%E8%87%AA%E5%B7%B1%E5%8F%AF%E5%88%B0%E6%9C%80%E5%88%9D%E7%9A%84%E7%BD%91%E5%9D%80%E7%9C%8B%E7%9C%8B%EF%BC%8C%E5%B7%B2%E7%BB%8F%E7%BB%99%E5%87%BA%E5%AE%98%E6%96%B9%E8%AF%B4%E6%98%8E%E3%80%82">https://gems.ruby-china.org%EF%BC%8C%E8%87%AA%E5%B7%B1%E5%8F%AF%E5%88%B0%E6%9C%80%E5%88%9D%E7%9A%84%E7%BD%91%E5%9D%80%E7%9C%8B%E7%9C%8B%EF%BC%8C%E5%B7%B2%E7%BB%8F%E7%BB%99%E5%87%BA%E5%AE%98%E6%96%B9%E8%AF%B4%E6%98%8E%E3%80%82</a></p>
 </div>
 
 
@@ -123,7 +102,7 @@ done.</p>
 
 
 
-<time class='entry-date' datetime='2016-08-23T10:47:01+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>10:47 am</span></time>
+<time class='entry-date' datetime='2016-10-28T02:22:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:22 am</span></time>
       
 
 <span class="categories">
@@ -144,10 +123,8 @@ done.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2016/08/22/SSL-Keys-and-HTTPS/" title="Previous Post: SSH Keys and HTTPS">&laquo; SSH Keys and HTTPS</a>
+        <a class="basic-alignment left" href="/blog/2016/10/28/zai-lai-liu-pan-shui/" title="Previous Post: 再来六盘水">&laquo; 再来六盘水</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2016/08/23/system-about-ds/" title="Next Post: 德胜系统">德胜系统 &raquo;</a>
       
     </p>
   </footer>

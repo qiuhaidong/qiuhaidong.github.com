@@ -9,11 +9,11 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="2016-01-09 goagent的github仓库已经全部删除，it&rsquo;s gone. 新网址
-压缩包下载地址
-简易教程 部署 申请 Google Appengine 并创建 appid。
-下载 goagent
-修改 local\proxy.ini 中的 [gae] 下的 appid &hellip;">
+  <meta name="description" content="方法略繁复
+把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）
+把图片上传到github repository托管 git add . # don't forget the "."
+git commit -m 'your message'
+git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +67,49 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/19/add-image/">Add Image</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-19T14:13:28+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>2:13 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>方法略繁复<br/>
+把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）<br/>
+把图片上传到github repository托管</p>
+
+<pre><code>git add .           # don't forget the "."
+git commit -m 'your message'
+git push origin source
+</code></pre>
+
+<p>进入github抓取图片链接地址（先打开图片，然后鼠标右击图片，在新标签页中打开图片=或者=查看图片）<br/>
+示例地址：<br/>
+<a href="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png">https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png</a><br/>
+使用 ![描述](图片链接地址) 插入图像<br/>
+示例：<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png" alt="image test" /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -379,55 +422,6 @@ sudo apt-get install nodejs
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/11/26/nightmares/">Nightmares</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-11-26T23:01:33+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:01 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2014年10月16日，4:59AM,在家，睡觉，做梦，醒。</p>
-
-<p>关于大学的梦。</p>
-
-<p>做这梦，不是第一次，估计也不会是最后一次。</p>
-
-<p>它是我生命的印记，不可磨灭。</p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3781293063682700/pid/780bc50fgw1emosmbfqn4j208w0dc759">2014-10-16-04-59，家里</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2014-10-16-04-59-22.png" alt="2014年10月16日家里" /></p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3817040303409178/pid/780bc50fgw1epuu3qc365j208w0dc0ud">2015-03-04-06-29，水汶</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2015-03-04-06-29-27.png" alt="2015年3月4日水汶" /></p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3854874397980519/pid/780bc50fgw1et7jbd7jejj208w0dcwgb">2015-06-17-05-44，水汶</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2015-06-17-05-44-27.png" alt="2015年6月17日水汶" /></p>
-
-<p>2016-01-20 again</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/14">&larr; Older</a>
@@ -445,6 +439,10 @@ sudo apt-get install nodejs
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2016/10/28/install-again/">Install Again</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2016/10/28/zai-lai-liu-pan-shui/">再来六盘水</a>
       </li>
     
@@ -460,17 +458,13 @@ sudo apt-get install nodejs
         <a href="/blog/2016/09/03/extract/">解压 Extract</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/09/03/sql2000-install-hang-up/">SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/personal/'>personal (49)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (38)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (39)</a></li>
 
   </ul>
 </section>

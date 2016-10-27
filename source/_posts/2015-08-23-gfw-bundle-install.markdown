@@ -5,6 +5,8 @@ date: 2015-08-23 01:16:00 +0800
 comments: true
 categories: tech
 ---
+
+2016-10-28:最新网址：https://gems.ruby-china.org  
 封网，rubygems.org 不行了  
 `bundle install`  自然也不行  
 点算？  

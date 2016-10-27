@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-10-28T02:34:52+08:00</updated>
+  <updated>2016-10-28T02:55:15+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -20,7 +20,7 @@
     <id>https://qiuhaidong.github.io/blog/2016/10/28/install-again</id>
     <content type="html"><![CDATA[<p>再一次安装，又有新的变化：<br/>
 1、ruby不再使用1.9.3的版本，自己上官网查一查，看最新的版本是多少就用多少。用旧版会导致很多gem依赖包无法安装。<br/>
-2、rubygems bundle install的网址也变化了，最新的是<a href="https://gems.ruby-china.org%EF%BC%8C%E8%87%AA%E5%B7%B1%E5%8F%AF%E5%88%B0%E6%9C%80%E5%88%9D%E7%9A%84%E7%BD%91%E5%9D%80%E7%9C%8B%E7%9C%8B%EF%BC%8C%E5%B7%B2%E7%BB%8F%E7%BB%99%E5%87%BA%E5%AE%98%E6%96%B9%E8%AF%B4%E6%98%8E%E3%80%82">https://gems.ruby-china.org%EF%BC%8C%E8%87%AA%E5%B7%B1%E5%8F%AF%E5%88%B0%E6%9C%80%E5%88%9D%E7%9A%84%E7%BD%91%E5%9D%80%E7%9C%8B%E7%9C%8B%EF%BC%8C%E5%B7%B2%E7%BB%8F%E7%BB%99%E5%87%BA%E5%AE%98%E6%96%B9%E8%AF%B4%E6%98%8E%E3%80%82</a></p>
+2、rubygems bundle install的网址也变化了，最新的是()[<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a>]，可到最初的官网查看更改告示。</p>
 ]]></content>
   </entry>
   

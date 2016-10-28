@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>丘海东</title>
+  <title>config.yml - 丘海东</title>
   <meta name="author" content="丘海东">
 
   
@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://qiuhaidong.github.io/">
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2016/10/29/config-dot-yml/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
@@ -63,15 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2016/10/29/config-dot-yml/">config.yml</a></h1>
+      <h1 class="entry-title">config.yml</h1>
     
     
       <p class="meta">
@@ -87,7 +84,7 @@
   </header>
 
 
-  <div class="entry-content"><p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
+<div class="entry-content"><p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
 .#      Main Configs       #<br/>
 .# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
 
@@ -134,151 +131,81 @@ highlighter: pygments # default python pygments have been replaced by pygments.r
 paginate_path: &ldquo;posts/:num&rdquo;     # Directory base for pagination URLs eg. /posts/2/<br/>
 recent_posts: 5               # Posts in the sidebar Recent Posts section<br/>
 excerpt_link: &ldquo;Read on &rarr;&rdquo;  # &ldquo;Continue reading&rdquo; link text at the bottom of excerpted articles<br/>
-excerpt_separator: &ldquo;</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2016/10/29/config-dot-yml/">Read on &rarr;</a>
-    </footer>
-  
+excerpt_separator: &ldquo;<!--more-->&rdquo;</p>
+
+<p>titlecase: true       # Converts page and post titles to titlecase</p>
+
+<p>.# list each of the sidebar modules you want to include, in the order you want them to appear.<br/>
+.# To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like &lsquo;custom/asides/custom_aside_name.html&rsquo;<br/>
+default_asides: [asides/recent_posts.html, asides/category_list.html, asides/github.html]<br/>
+.#default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</p>
+
+<p>.# Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below<br/>
+.# and add an array with the asides you want to use.<br/>
+.# blog_index_asides:<br/>
+.# post_asides:<br/>
+.# page_asides:</p>
+
+<p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
+.#   3rd Party Settings    #<br/>
+.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
+
+<p>.# Github repositories<br/>
+github_user: qiuhaidong<br/>
+github_repo_count: 0<br/>
+github_show_profile_link: true<br/>
+github_skip_forks: true</p>
+
+<p>.# Pinboard<br/>
+.#pinboard_user:<br/>
+.#pinboard_count: 3</p>
+
+<p>.# Delicious<br/>
+.#delicious_user:<br/>
+.#delicious_count: 3</p>
+
+<p>.# Disqus Comments<br/>
+.#disqus_short_name:<br/>
+.#disqus_show_comment_count: false</p>
+</div>
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/10/28/install-again/">Install Again</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-10-28T02:22:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:22 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>再一次安装，又有新的变化：<br/>
-安装git，直接<code>sudo apt-get install git</code>,不必添加安装源ppa。<br/>
-安装rvm，直接上官网查找命令，其实也就是安装最新版的rvm，而不是安装stable版的。<br/>
-ruby不再使用1.9.3的版本，自己上官网查一查，看最新的版本是多少就用多少，比如2.3.1。用旧版会导致很多gem依赖包无法安装。<br/>
-rubygems bundle install的网址也变化了，最新的是<a href="https://gems.ruby-china.org">Ruby China</a>，可到最初的官网查看更改告示。</p>
-</div>
-  
   
 
+<span class="byline author vcard">Posted by <span class="fn">丘海东</span></span>
 
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/10/28/zai-lai-liu-pan-shui/">再来六盘水</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
 
-<time class='entry-date' datetime='2016-10-28T02:10:25+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:10 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>世事难料。<br/>
-坚守本心。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+<time class='entry-date' datetime='2016-10-29T00:19:30+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:19 am</span></time>
       
-  <header>
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2016/09/05/display-icon-error/">图标显示不正常</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-09-05T13:26:50+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:26 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>控制面板，显示，更改大小，应用，注销，再把大小改回来就行了。<br/>
-如果还不行，就用360修复一下，或者随便搜索个工具改回来就行了。</p>
+      <div class="sharing">
+  
+  
+  
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/09/04/business-trip-to-liupanshui/">出差六盘水</a></h1>
-    
-    
-      <p class="meta">
-        
+        <a class="basic-alignment left" href="/blog/2016/10/28/install-again/" title="Previous Post: install again">&laquo; install again</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-
-
-
-<time class='entry-date' datetime='2016-09-04T19:45:10+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>7:45 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>8月1号出发，9月7号回来。<br/>
-第一次出差。<br/>
-第一次坐火车超过24小时。<br/>
-第一次住宾馆超过一个月。<br/>
-第一次可以说是真正意义上的去外省。我以前在广西工作，但离广东不到10公里，当然如果你说广西不是外省，中国移动会坚决反对！</p>
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-      <a class="prev" href="/posts/2">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -348,6 +275,7 @@ rubygems bundle install的网址也变化了，最新的是<a href="https://gems
 
   
 </aside>
+
 
     </div>
   </div>

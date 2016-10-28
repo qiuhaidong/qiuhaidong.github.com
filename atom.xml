@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-10-29T00:14:44+08:00</updated>
+  <updated>2016-10-29T00:27:56+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[config.yml]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/10/29/config-dot-yml/"/>
+    <updated>2016-10-29T00:19:30+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/10/29/config-dot-yml</id>
+    <content type="html"><![CDATA[<p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
+.#      Main Configs       #<br/>
+.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
+
+<p>url: <a href="https://qiuhaidong.github.io">https://qiuhaidong.github.io</a><br/>
+title: 丘海东<br/>
+subtitle:<br/>
+author: 丘海东<br/>
+simple_search: <a href="https://www.google.com/search">https://www.google.com/search</a><br/>
+description:</p>
+
+<p>.# Default date format is &ldquo;ordinal&rdquo; (resulting in &ldquo;July 22nd 2007&rdquo;)<br/>
+.# You can customize the format as defined in<br/>
+.# <a href="http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime">http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime</a><br/>
+.# Additionally, %o will give you the ordinal representation of the day<br/>
+date_format: &ldquo;ordinal&rdquo;</p>
+
+<p>.# RSS / Email (optional) subscription links (change if using something like Feedburner)<br/>
+subscribe_rss: /atom.xml<br/>
+subscribe_email:<br/>
+.# RSS feeds can list your email address if you like<br/>
+email:</p>
+
+<p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
+.#    Jekyll &amp; Plugins     #<br/>
+.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
+
+<p>.# If publishing to a subdirectory as in <a href="http://site.com/project">http://site.com/project</a> set &lsquo;root: /project&rsquo;<br/>
+root: /<br/>
+permalink: /blog/:year/:month/:day/:title/<br/>
+source: source<br/>
+destination: public<br/>
+plugins: plugins<br/>
+code_dir: downloads/code<br/>
+category_dir: blog/categories<br/>
+markdown: rdiscount<br/>
+rdiscount:<br/>
+  extensions:<br/>
+    - autolink<br/>
+    - footnotes<br/>
+    - smart<br/>
+highlighter: pygments # default python pygments have been replaced by pygments.rb</p>
+
+<p>paginate: 5                     # Posts per page on the blog index<br/>
+paginate_path: &ldquo;posts/:num&rdquo;     # Directory base for pagination URLs eg. /posts/2/<br/>
+recent_posts: 5               # Posts in the sidebar Recent Posts section<br/>
+excerpt_link: &ldquo;Read on &rarr;&rdquo;  # &ldquo;Continue reading&rdquo; link text at the bottom of excerpted articles<br/>
+excerpt_separator: &ldquo;<!--more-->&rdquo;</p>
+
+<p>titlecase: true       # Converts page and post titles to titlecase</p>
+
+<p>.# list each of the sidebar modules you want to include, in the order you want them to appear.<br/>
+.# To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like &lsquo;custom/asides/custom_aside_name.html&rsquo;<br/>
+default_asides: [asides/recent_posts.html, asides/category_list.html, asides/github.html]<br/>
+.#default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</p>
+
+<p>.# Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below<br/>
+.# and add an array with the asides you want to use.<br/>
+.# blog_index_asides:<br/>
+.# post_asides:<br/>
+.# page_asides:</p>
+
+<p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
+.#   3rd Party Settings    #<br/>
+.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
+
+<p>.# Github repositories<br/>
+github_user: qiuhaidong<br/>
+github_repo_count: 0<br/>
+github_show_profile_link: true<br/>
+github_skip_forks: true</p>
+
+<p>.# Pinboard<br/>
+.#pinboard_user:<br/>
+.#pinboard_count: 3</p>
+
+<p>.# Delicious<br/>
+.#delicious_user:<br/>
+.#delicious_count: 3</p>
+
+<p>.# Disqus Comments<br/>
+.#disqus_short_name:<br/>
+.#disqus_show_comment_count: false</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Install Again]]></title>
@@ -358,60 +449,6 @@ int main()
 <li>天哥V5</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Vim]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/05/24/vim/"/>
-    <updated>2016-05-24T19:13:46+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/05/24/vim</id>
-    <content type="html"><![CDATA[<h4>终端执行命令：</h4>
-
-<pre><code>vimtutor
-</code></pre>
-
-<p>查看《VIM教程》</p>
-
-<h4>基本操作：</h4>
-
-<p>光标移动：<br/>
-h：左<br/>
-j：下<br/>
-k：上<br/>
-l：右</p>
-
-<h4>正常模式==>输入模式：</h4>
-
-<p>i：左边输入<br/>
-I：行首输入（In the front）<br/>
-a：右边输入（after）<br/>
-A：行尾输入（After）<br/>
-o：下面输入一新行<br/>
-O：上面输入一新行<br/>
-s：删除字符再输入<br/>
-S：删除行再输入</p>
-
-<h4>其他模式==>正常模式：</h4>
-
-<p>Esc</p>
-
-<h4>正常模式==>命令模式：</h4>
-
-<p>:<br/>
-(shift加分号，英文输入法下)</p>
-
-<h4>正常模式==>可视模式：</h4>
-
-<p>v：可视模式<br/>
-V:可视块模式</p>
-
-<h4>常用命令：</h4>
-
-<p>:w<enter> 保存<br/>
-:q<enter> 退出<br/>
-:wq<enter> 保存后退出<br/>
-:q!<enter> 不保存，强制退出</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-10-28T03:03:47+08:00</updated>
+  <updated>2016-10-29T00:14:44+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,8 +19,10 @@
     <updated>2016-10-28T02:22:00+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2016/10/28/install-again</id>
     <content type="html"><![CDATA[<p>再一次安装，又有新的变化：<br/>
-1、ruby不再使用1.9.3的版本，自己上官网查一查，看最新的版本是多少就用多少。用旧版会导致很多gem依赖包无法安装。<br/>
-2、rubygems bundle install的网址也变化了，最新的是<a href="https://gems.ruby-china.org">Ruby China</a>，可到最初的官网查看更改告示。</p>
+安装git，直接<code>sudo apt-get install git</code>,不必添加安装源ppa。<br/>
+安装rvm，直接上官网查找命令，其实也就是安装最新版的rvm，而不是安装stable版的。<br/>
+ruby不再使用1.9.3的版本，自己上官网查一查，看最新的版本是多少就用多少，比如2.3.1。用旧版会导致很多gem依赖包无法安装。<br/>
+rubygems bundle install的网址也变化了，最新的是<a href="https://gems.ruby-china.org">Ruby China</a>，可到最初的官网查看更改告示。</p>
 ]]></content>
   </entry>
   

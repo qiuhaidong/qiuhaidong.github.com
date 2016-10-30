@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-10-29T00:27:56+08:00</updated>
+  <updated>2016-10-31T03:11:29+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bad Night]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/10/31/bad-night/"/>
+    <updated>2016-10-31T03:02:55+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/10/31/bad-night</id>
+    <content type="html"><![CDATA[<p>Got a lot of nightmares on those days.<br/>
+So many bad things,bad days.<br/>
+Got to carry on.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[config.yml]]></title>
@@ -431,24 +442,6 @@ int main()
 </code></pre>
 
 <p>完成。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[中软事件]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/06/21/zhong-ruan/"/>
-    <updated>2016-06-21T14:14:57+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/06/21/zhong-ruan</id>
-    <content type="html"><![CDATA[<p><strong>2016-06-17 14:47</strong></p>
-
-<ul>
-<li>面对真实的自己</li>
-<li>一无所有之后</li>
-<li>写字楼、身光颈靓的表象与本质</li>
-<li>用法律、警察解决问题</li>
-<li>天哥V5</li>
-</ul>
-
 ]]></content>
   </entry>
   

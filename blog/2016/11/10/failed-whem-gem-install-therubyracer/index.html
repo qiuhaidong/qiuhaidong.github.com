@@ -5,16 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>GFW Rubygems Bundle Install - 丘海东</title>
+  <title>Failed Whem: Gem Install Therubyracer - 丘海东</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="2016-10-28:最新网址：https://gems.ruby-china.org
-封网，rubygems.org 不行了
-bundle install 自然也不行
-点算？
-https://ruby.taobao.org 是一个完整的 rubygems.org 镜像，用以代替官网
-用法： &hellip;">
+  <meta name="description" content="dong@ubuntu:~/octopress$ gem install therubyracer ERROR: Error installing therubyracer: invalid gem: package is corrupt, exception while verifying: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -23,7 +18,7 @@ https://ruby.taobao.org 是一个完整的 rubygems.org 镜像，用以代替官
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2015/08/23/gfw-bundle-install/">
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2016/11/10/failed-whem-gem-install-therubyracer/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
@@ -71,7 +66,7 @@ https://ruby.taobao.org 是一个完整的 rubygems.org 镜像，用以代替官
   
   <header>
     
-      <h1 class="entry-title">GFW Rubygems Bundle Install</h1>
+      <h1 class="entry-title">Failed Whem: Gem Install Therubyracer</h1>
     
     
       <p class="meta">
@@ -80,65 +75,20 @@ https://ruby.taobao.org 是一个完整的 rubygems.org 镜像，用以代替官
 
 
 
-<time class='entry-date' datetime='2015-08-23T01:16:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:16 am</span></time>
+<time class='entry-date' datetime='2016-11-10T00:55:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:55 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>2016-10-28:最新网址：<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a><br/>
-封网，rubygems.org 不行了<br/>
-<code>bundle install</code>  自然也不行<br/>
-点算？<br/>
-<a href="https://ruby.taobao.org">https://ruby.taobao.org</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
-用法：</p>
+<div class="entry-content"><p>dong@ubuntu:~/octopress$ gem install therubyracer</p>
 
-<pre><code>gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
-gem sources -l
+<pre><code>ERROR:  Error installing therubyracer:
+    invalid gem: package is corrupt, exception while verifying: undefined method `size' for nil:NilClass (NoMethodError) in /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem
 </code></pre>
 
-<p>输出：</p>
-
-<pre><code>*** CURRENT SOURCES ***  
-
-https://ruby.taobao.org  
-</code></pre>
-
-<p>确保只有 ruby.taobao.org</p>
-
-<p>Ubuntu 14.04，安装octopress,执行</p>
-
-<pre><code>bundle install
-</code></pre>
-
-<p>一直提示缺少各种 gem 包，例如：</p>
-
-<pre><code>```
-Gem::RemoteFetcher::FetchError: SSL_connect SYSCALL returned=5 errno=0 state=unknown state (https://rubygems.global.ssl.fastly.net/gems/safe_yaml-1.0.4.gem)
-An error occurred while installing safe_yaml (1.0.4), and Bundler cannot continue.
-Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
-
-```
-</code></pre>
-
-<p>按提示输入命令 <code>gem install safe_yaml -v '1.0.4'</code> 安装依赖项，但是安装了一个又一个，一个又一个，实在太多太慢太麻烦了</p>
-
-<p>解决方法：</p>
-
-<p>修改octopress文件夹里的Gemfile文件：</p>
-
-<p>把：<br/>
-<code>source "https://rubygems.org"</code><br/>
-改为：<br/>
-<code>source "https://ruby.taobao.org"</code><br/>
-再执行：</p>
-
-<pre><code>bundle install
-</code></pre>
-
-<p>完美通过。</p>
+<p>corrupt:broken;the package is broken,so remove /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem,then,redownload and reinstall again,sucessed.</p>
 </div>
 
 
@@ -154,7 +104,7 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
 
 
 
-<time class='entry-date' datetime='2015-08-23T01:16:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:16 am</span></time>
+<time class='entry-date' datetime='2016-11-10T00:55:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:55 am</span></time>
       
 
 <span class="categories">
@@ -175,10 +125,8 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2015/07/20/keyboard-configuration/" title="Previous Post: 更改键盘布局">&laquo; 更改键盘布局</a>
+        <a class="basic-alignment left" href="/blog/2016/10/31/bad-night/" title="Previous Post: bad night">&laquo; bad night</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2015/08/25/how-to-git-octopress/" title="Next Post: how to ‘git’ Octopress">how to ‘git’ Octopress &raquo;</a>
       
     </p>
   </footer>

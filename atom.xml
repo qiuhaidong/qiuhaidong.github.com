@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-10-31T03:11:29+08:00</updated>
+  <updated>2016-11-10T01:03:06+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Failed Whem: Gem Install Therubyracer]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/10/failed-whem-gem-install-therubyracer/"/>
+    <updated>2016-11-10T00:55:00+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/10/failed-whem-gem-install-therubyracer</id>
+    <content type="html"><![CDATA[<p>dong@ubuntu:~/octopress$ gem install therubyracer</p>
+
+<pre><code>ERROR:  Error installing therubyracer:
+    invalid gem: package is corrupt, exception while verifying: undefined method `size' for nil:NilClass (NoMethodError) in /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem
+</code></pre>
+
+<p>corrupt:broken;the package is broken,so remove /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem,then,redownload and reinstall again,sucessed.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Bad Night]]></title>
@@ -403,45 +418,6 @@ win+r：shell:startup
 
 <pre><code>./a.out
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[C on Linux]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/06/27/c-on-linux/"/>
-    <updated>2016-06-27T09:18:14+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/06/27/c-on-linux</id>
-    <content type="html"><![CDATA[<p>linux下用gcc，系统自带有，用<code>gcc --version</code>查看一下即可，若没有，安装编译环境：</p>
-
-<pre><code>sudo apt-get install build-essential
-</code></pre>
-
-<p>新建test.c文件：</p>
-
-<pre><code>sudo gedit /…/…/…/test.c
-</code></pre>
-
-<p>然后开始编程：</p>
-
-<pre><code>#include &lt;stdio.h&gt;
-int main()
-{
-    printf("hello,world!\n");
-    return 0;
-}
-</code></pre>
-
-<p>保存后编译：</p>
-
-<pre><code>gcc -o test test.c
-</code></pre>
-
-<p>生产可执行文件test，运行：</p>
-
-<pre><code>./test
-</code></pre>
-
-<p>完成。</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-10-31T03:11:29+08:00</updated>
+  <updated>2016-11-10T01:03:06+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Failed Whem: Gem Install Therubyracer]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/10/failed-whem-gem-install-therubyracer/"/>
+    <updated>2016-11-10T00:55:00+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/10/failed-whem-gem-install-therubyracer</id>
+    <content type="html"><![CDATA[<p>dong@ubuntu:~/octopress$ gem install therubyracer</p>
+
+<pre><code>ERROR:  Error installing therubyracer:
+    invalid gem: package is corrupt, exception while verifying: undefined method `size' for nil:NilClass (NoMethodError) in /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem
+</code></pre>
+
+<p>corrupt:broken;the package is broken,so remove /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem,then,redownload and reinstall again,sucessed.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Install Again]]></title>
@@ -61,16 +76,6 @@ rubygems bundle install的网址也变化了，最新的是<a href="https://gems
 
 <p><em>或者使用:SQL安装挂起解决工具免安装版.exe</em><br/>
 <strong>DG：在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项——SQL2000安装挂起.reg</strong></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[外星人场地管理系统]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/08/28/system-link/"/>
-    <updated>2016-08-28T21:06:27+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/08/28/system-link</id>
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E7%B3%BB%E7%BB%9F%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg" alt="系统接线图" /><br/>
-三辊闸，淘气堡，后台终端管理，扣费由场地决定，投币数设置为1即可。若扣费50，投币50，会导致三辊闸打开时间过长，比如连续20秒～～～</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-10T01:03:06+08:00</updated>
+  <updated>2016-11-10T01:04:19+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Failed Whem: Gem Install Therubyracer]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/10/failed-whem-gem-install-therubyracer/"/>
+    <title type="html"><![CDATA[Failed When: Gem Install Therubyracer]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/10/failed-when-gem-install-therubyracer/"/>
     <updated>2016-11-10T00:55:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/10/failed-whem-gem-install-therubyracer</id>
+    <id>https://qiuhaidong.github.io/blog/2016/11/10/failed-when-gem-install-therubyracer</id>
     <content type="html"><![CDATA[<p>dong@ubuntu:~/octopress$ gem install therubyracer</p>
 
 <pre><code>ERROR:  Error installing therubyracer:

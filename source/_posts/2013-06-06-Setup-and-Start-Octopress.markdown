@@ -17,7 +17,7 @@ categories: tech
 
 **Install RVM:**
 
-        don't need anymore: curl -L https://get.rvm.io | bash -s stable --ruby
+	don't need anymore: curl -L https://get.rvm.io | bash -s stable --ruby
 	use this: 
 	gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 	curl -sSL https://get.rvm.io | bash -s stable
@@ -37,13 +37,18 @@ Run`ruby --version`to be sure you’re using Ruby 2.3.1
 
 ###Setup Octopress
 
-	git clone git://github.com/imathis/octopress.git octopress
+	no more:  git clone git://github.com/imathis/octopress.git octopress
+	git clone -b source git@github.com:qiuhaidong/qiuhaidong.github.com.git octopress
 	cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
 	ruby --version  # Should report Ruby 1.9.3
+git octopress  
+
+	git clone git@github.com:qiuhaidong/qiuhaidong.github.com.git _deploy
 
 Next, install dependencies
 
 	gem install bundler
+	sudo apt-get install rbenv
 	rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
 	bundle install
 

@@ -9,26 +9,31 @@ categories: tech
 
 ###Install Git
 
-	sudo apt-add-repository ppa:git-core/ppa
-	sudo apt-get update
+	don't need anymore: sudo apt-add-repository ppa:git-core/ppa
+	don't need anymore: sudo apt-get update
 	sudo apt-get install git
 
 **Install Ruby 1.9.3 using either rbenv or RVM**  
 
 **Install RVM:**
 
-        curl -L https://get.rvm.io | bash -s stable --ruby
+        don't need anymore: curl -L https://get.rvm.io | bash -s stable --ruby
+	use this: 
+	gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+	curl -sSL https://get.rvm.io | bash -s stable
 
+maybe there is some other command come ouy,and it may ask you to do,follow it,and run `curl -sSL https://get.rvm.io | bash -s stable`again.then it would be successed.  
 *Be sure to **follow** any subsequent instructions as guided by the installation process.*  
 2016-05-21:这里可能会报错，按照它的英文提示做（它会给出命令），能通过  
 
-**Install Ruby 1.9.3**
+**Install Ruby lastest vesion**
+check for the curent version on the official website  
 
-	rvm install 1.9.3
-	rvm use 1.9.3
+	rvm install 2.3.1
+	rvm use 2.3.1
 	rvm rubygems latest
 
-Run`ruby --version`to be sure you’re using Ruby 1.9.3
+Run`ruby --version`to be sure you’re using Ruby 2.3.1
 
 ###Setup Octopress
 

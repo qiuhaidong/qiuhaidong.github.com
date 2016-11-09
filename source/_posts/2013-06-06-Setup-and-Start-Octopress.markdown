@@ -13,7 +13,7 @@ categories: tech
 	don't need anymore: sudo apt-get update
 	sudo apt-get install git
 
-**Install Ruby 1.9.3 using either rbenv or RVM**  
+**Install Ruby (the larest version) using either rbenv or RVM**  
 
 **Install RVM:**
 
@@ -22,12 +22,12 @@ categories: tech
 	gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 	curl -sSL https://get.rvm.io | bash -s stable
 
-maybe there is some other command come ouy,and it may ask you to do,follow it,and run `curl -sSL https://get.rvm.io | bash -s stable`again.then it would be successed.  
+maybe there is some other command come out,and it may ask you to run it,follow it,run:`curl -sSL https://get.rvm.io | bash -s stable`again.then it should be successed.  
 *Be sure to **follow** any subsequent instructions as guided by the installation process.*  
 2016-05-21:这里可能会报错，按照它的英文提示做（它会给出命令），能通过  
 
 **Install Ruby lastest vesion**
-check for the curent version on the official website  
+check for the curent (latest) version on the official website  
 
 	rvm install 2.3.1
 	rvm use 2.3.1

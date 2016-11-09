@@ -10,4 +10,4 @@ dong@ubuntu:~/octopress$ gem install therubyracer
 	ERROR:  Error installing therubyracer:
 		invalid gem: package is corrupt, exception while verifying: undefined method `size' for nil:NilClass (NoMethodError) in /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem
 
-corrupt:broken;the package is broken,so remove /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem,then,redownload and reinstall again,sucessed.
+corrupt:broken;the package is broken,so remove /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem,then redownload and reinstall,successed.

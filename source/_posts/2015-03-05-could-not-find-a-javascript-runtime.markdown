@@ -75,6 +75,7 @@ categories: tech
 	gem install execjs
 	gem install therubyracer
 	
-may fail,check this:[](http://stackoverflow.com/questions/20888318/error-install-rubyracer-with-error-invalid-gem-package-is-corrupt)
+may fail,check this:[fail](http://stackoverflow.com/questions/20888318/error-install-rubyracer-with-error-invalid-gem-package-is-corrupt) 
+
 	sudo apt-get install nodejs
 done.

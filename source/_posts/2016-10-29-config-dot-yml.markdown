@@ -10,7 +10,7 @@ categories:
 .# ----------------------- #  
 
 url: https://qiuhaidong.github.io  
-title: 丘海东  
+title: Haydn Yau  
 subtitle:  
 author: 丘海东  
 simple_search: https://www.google.com/search  

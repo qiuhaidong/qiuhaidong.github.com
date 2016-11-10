@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-10T10:47:53+08:00</updated>
+  <updated>2016-11-10T15:26:05+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Voltage Change]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/10/Voltage-change/"/>
+    <updated>2016-11-10T15:03:00+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/10/Voltage-change</id>
+    <content type="html"><![CDATA[<p>MACHINE: fish hunting<br/>
+black pan: GND<br/>
+red pan:<br/>
+A: co1</p>
+
+<p>  press 100, voltage change from 3.36V to almost 0V,and then come back to 3.36V<br/>
+  PRESS 10, 3.36V,0.9V,3.36V</p>
+
+<p>B: HP</p>
+
+<p>  press coin return, 3.2V, 1.8V,3.2V</p>
+
+<p>C: SSR</p>
+
+<p>  press coin return, 5.0V, 0.48V, 5.0V</p>
+
+<p>D: TF</p>
+
+<p>  press coin return, 3.2V, 0V, 3.2V</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Failed When: Gem Install Therubyracer]]></title>
@@ -62,24 +89,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     <id>https://qiuhaidong.github.io/blog/2016/09/03/extract</id>
     <content type="html"><![CDATA[<pre><code>sudo apt-get install rar unrar p7zip-full p7zip-rar
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up/"/>
-    <updated>2016-09-03T19:16:20+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/09/03/sql2000-install-hang-up</id>
-    <content type="html"><![CDATA[<ol>
-<li>在添加/删除程序中彻底删除sql server</li>
-<li>将没有删除的sql server目录也删除掉</li>
-<li>打开注册表编辑器，在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager中找到PendingFileRenameOperations项目，并删除它。这样就可以清除安装暂挂项目</li>
-<li>删除注册表中跟sql server相关的键</li>
-</ol>
-
-
-<p><em>或者使用:SQL安装挂起解决工具免安装版.exe</em><br/>
-<strong>DG：在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项——SQL2000安装挂起.reg</strong></p>
 ]]></content>
   </entry>
   

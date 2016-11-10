@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-10T10:47:53+08:00</updated>
+  <updated>2016-11-10T15:26:05+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Voltage Change]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/10/Voltage-change/"/>
+    <updated>2016-11-10T15:03:00+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/10/Voltage-change</id>
+    <content type="html"><![CDATA[<p>MACHINE: fish hunting<br/>
+black pan: GND<br/>
+red pan:<br/>
+A: co1</p>
+
+<p>  press 100, voltage change from 3.36V to almost 0V,and then come back to 3.36V<br/>
+  PRESS 10, 3.36V,0.9V,3.36V</p>
+
+<p>B: HP</p>
+
+<p>  press coin return, 3.2V, 1.8V,3.2V</p>
+
+<p>C: SSR</p>
+
+<p>  press coin return, 5.0V, 0.48V, 5.0V</p>
+
+<p>D: TF</p>
+
+<p>  press coin return, 3.2V, 0V, 3.2V</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Failed When: Gem Install Therubyracer]]></title>
@@ -389,39 +416,6 @@ Administrator<br/>
 自启动：<br/>
 win+r：shell:startup
 文件夹已打开，把软件的快捷方式添加进去即可</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[C++ on Linux]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/06/28/c-plus-plus-under-linux/"/>
-    <updated>2016-06-28T17:19:52+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/06/28/c-plus-plus-under-linux</id>
-    <content type="html"><![CDATA[<p>编译：</p>
-
-<pre><code>g++ -o hello hello.cpp
-</code></pre>
-
-<p>或：</p>
-
-<pre><code>g++ hello.cpp -o hello
-</code></pre>
-
-<p>或：</p>
-
-<pre><code>g++ hello.cpp
-</code></pre>
-
-<p>生成hello或a.out<br/>
-运行：</p>
-
-<pre><code>./hello
-</code></pre>
-
-<p>或：</p>
-
-<pre><code>./a.out
-</code></pre>
 ]]></content>
   </entry>
   

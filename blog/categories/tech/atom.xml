@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Tech | 丘海东]]></title>
+  <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-10T01:23:23+08:00</updated>
+  <updated>2016-11-10T10:44:23+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -33,21 +33,25 @@
     <link href="https://qiuhaidong.github.io/blog/2016/10/28/install-again/"/>
     <updated>2016-10-28T02:22:00+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2016/10/28/install-again</id>
-    <content type="html"><![CDATA[<p>再一次安装，又有新的变化：<br/>
-安装git，直接<code>sudo apt-get install git</code>,不必添加安装源ppa。<br/>
-安装rvm，直接上官网查找命令，其实也就是安装最新版的rvm，而不是安装stable版的。<br/>
-ruby不再使用1.9.3的版本，自己上官网查一查，看最新的版本是多少就用多少，比如2.3.1。用旧版会导致很多gem依赖包无法安装。<br/>
-rubygems bundle install的网址也变化了，最新的是<a href="https://gems.ruby-china.org">Ruby China</a>，可到最初的官网查看更改告示。</p>
+    <content type="html"><![CDATA[<p>something new:<br/>
+install git:</p>
+
+<pre><code>sudo apt-get install git
+</code></pre>
+
+<p>don&rsquo;t install from ppa anymore.<br/>
+install rvm: run the command from official website,the latest version,maybe not the stable version.<br/>
+install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official website，the latest version,for exemple:2.3.1  the old version may got some problem when install the gem package.<br/>
+<code>rubygems bundle install</code>its address has change,the latest version is<a href="https://gems.ruby-china.org">Ruby China</a>，we could check it out from the origin official website.</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[图标显示不正常]]></title>
+    <title type="html"><![CDATA[Icon Display Error]]></title>
     <link href="https://qiuhaidong.github.io/blog/2016/09/05/display-icon-error/"/>
     <updated>2016-09-05T13:26:50+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2016/09/05/display-icon-error</id>
-    <content type="html"><![CDATA[<p>控制面板，显示，更改大小，应用，注销，再把大小改回来就行了。<br/>
-如果还不行，就用360修复一下，或者随便搜索个工具改回来就行了。</p>
+    <content type="html"><![CDATA[<p>控制面板，显示，更改大小，应用，注销，再把大小改回来。</p>
 ]]></content>
   </entry>
   

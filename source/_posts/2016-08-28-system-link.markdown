@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "外星人场地管理系统"
+title: "Alien system"
 date: 2016-08-28 21:06:27 +0800
 comments: true
 categories: tech

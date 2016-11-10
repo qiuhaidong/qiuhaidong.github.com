@@ -16,9 +16,9 @@ windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装
 
     sudo apt-get install ntpdate
     sudo ntpdate time.windows.com
-　　
+
 然后将时间更新到硬件上：  
 
     sudo hwclock --localtime --systohc
-　
+
 重新进入windows10，发现时间恢复正常了！

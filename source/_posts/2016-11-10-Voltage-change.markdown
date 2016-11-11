@@ -11,17 +11,22 @@ black pan: GND
 red pan:  
 A: co1
 
-  press 100, voltage change from 3.36V to almost 0V,and then come back to 3.36V  
-  PRESS 10, 3.36V,0.9V,3.36V
+	press 100
+		voltage change from 3.36V to almost 0V,and then come back to 3.36V
+  	PRESS 10
+		3.36V,0.9V,3.36V
 
-B: HP  
+B: HP 
 
-  press coin return, 3.2V, 1.8V,3.2V
+	press coin return
+		3.2V, 1.8V,3.2V
   
 C: SSR
 
-  press coin return, 5.0V, 0.48V, 5.0V
+	press coin return
+		5.0V, 0.48V, 5.0V
   
 D: TF
 
-  press coin return, 3.2V, 0V, 3.2V
+	press coin return
+		3.2V, 0V, 3.2V

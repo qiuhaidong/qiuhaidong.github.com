@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-10T15:26:05+08:00</updated>
+  <updated>2016-11-11T19:28:27+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Time Stuff Between Windows10 and Ubuntu]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/"/>
+    <updated>2016-11-10T21:37:00+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/10/time-stuff-between-windows-and-ubuntu</id>
+    <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/qf19910623/p/5559514.html">原博文</a><br/>
+windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：</p>
+
+<pre><code>sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no
+</code></pre>
+
+<p>然而并没有什么效果，ubuntu16.04里面根本就没有utc这一项！<br/>
+后来谷歌了半天找到了一个完美解决办法：<br/>
+先在ubuntu下更新一下时间，确保时间无误：</p>
+
+<pre><code>sudo apt-get install ntpdate
+sudo ntpdate time.windows.com
+</code></pre>
+
+<p>然后将时间更新到硬件上：</p>
+
+<pre><code>sudo hwclock --localtime --systohc
+</code></pre>
+
+<p>重新进入windows10，发现时间恢复正常了！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Voltage Change]]></title>
@@ -79,16 +108,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     <updated>2016-09-05T13:26:50+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2016/09/05/display-icon-error</id>
     <content type="html"><![CDATA[<p>控制面板，显示，更改大小，应用，注销，再把大小改回来。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[解压 Extract]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/09/03/extract/"/>
-    <updated>2016-09-03T20:52:13+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/09/03/extract</id>
-    <content type="html"><![CDATA[<pre><code>sudo apt-get install rar unrar p7zip-full p7zip-rar
-</code></pre>
 ]]></content>
   </entry>
   

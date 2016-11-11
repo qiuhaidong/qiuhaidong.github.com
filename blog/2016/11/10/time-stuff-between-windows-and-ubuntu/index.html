@@ -5,15 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>GoAgent - Haydn Yau</title>
+  <title>Time Stuff Between Windows10 and Ubuntu - Haydn Yau</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="2016-01-09 goagent的github仓库已经全部删除，it&rsquo;s gone. 新网址
-压缩包下载地址
-简易教程 部署 申请 Google Appengine 并创建 appid。
-下载 goagent
-修改 local\proxy.ini 中的 [gae] 下的 appid &hellip;">
+  <meta name="description" content="原博文
+windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是： sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no 然而并没有什么效果，ubuntu16. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2015/03/06/goagent/">
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Haydn Yau" type="application/atom+xml">
@@ -70,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">GoAgent</h1>
+      <h1 class="entry-title">Time Stuff Between Windows10 and Ubuntu</h1>
     
     
       <p class="meta">
@@ -79,40 +77,34 @@
 
 
 
-<time class='entry-date' datetime='2015-03-06T15:01:31+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:01 pm</span></time>
+<time class='entry-date' datetime='2016-11-10T21:37:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:37 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>2016-01-09  goagent的github仓库已经全部删除，it&rsquo;s gone.</p>
+<div class="entry-content"><p><a href="http://www.cnblogs.com/qf19910623/p/5559514.html">原博文</a><br/>
+windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：</p>
 
-<p><a href="https://github.com/goagent/goagent">新网址</a><br/>
-<a href="http://git.io/goa">压缩包下载地址</a><br/>
-<a href="https://github.com/goagent/goagent/blob/wiki/SimpleGuide.md">简易教程</a></p>
+<pre><code>sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no
+</code></pre>
 
-<p><strong>部署</strong></p>
+<p>然而并没有什么效果，ubuntu16.04里面根本就没有utc这一项！<br/>
+后来谷歌了半天找到了一个完美解决办法：<br/>
+先在ubuntu下更新一下时间，确保时间无误：</p>
 
-<ol>
-<li>申请 Google Appengine 并创建 appid。</li>
-<li>下载 <a href="https://github.com/goagent/goagent">goagent</a></li>
-<li>修改 local\proxy.ini 中的 [gae] 下的 appid = 你的appid(多appid请用|隔开)</li>
-<li>运行 uploader.bat 或 uploader.py 开始上传, 成功后即可使用了。</li>
-</ol>
+<pre><code>sudo apt-get install ntpdate
+sudo ntpdate time.windows.com
+</code></pre>
 
+<p>然后将时间更新到硬件上：</p>
 
-<p><strong>使用</strong></p>
+<pre><code>sudo hwclock --localtime --systohc
+</code></pre>
 
-<ul>
-<li>Windows 用户推荐使用 goagent.exe 托盘图标设置 IE 代理(对其它浏览器也有效)。</li>
-<li>Chrome/Opera 请安装 SwitchyOmega 插件(下载到本地然后拖放文件到扩展设置)，导入 SwitchyOptions.bak</li>
-<li>Firefox 请安装 FoxyProxy ，Firefox需要导入证书，方法请见 FAQ</li>
-<li>出现连接不上的情况可以尝试使用 gscan 或 GoGo Tester 测速。</li>
-</ul>
-
-
-<p><a href="https://github.com/goagent/goagent/blob/wiki/InstallGuide.md">图文教程</a></p>
+<p>重新进入windows10，发现时间恢复正常了！</p>
 </div>
 
 
@@ -128,7 +120,7 @@
 
 
 
-<time class='entry-date' datetime='2015-03-06T15:01:31+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:01 pm</span></time>
+<time class='entry-date' datetime='2016-11-10T21:37:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:37 pm</span></time>
       
 
 <span class="categories">
@@ -149,10 +141,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2015/03/05/tcpserver-error-address-already-in-use-bind-2/" title="Previous Post: TCPServer Error: Address already in use - bind(2)">&laquo; TCPServer Error: Address already in use - bind(2)</a>
+        <a class="basic-alignment left" href="/blog/2016/11/10/Voltage-change/" title="Previous Post: voltage change">&laquo; voltage change</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2015/03/19/add-image/" title="Next Post: add image">add image &raquo;</a>
       
     </p>
   </footer>

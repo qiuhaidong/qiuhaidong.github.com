@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-11T19:28:27+08:00</updated>
+  <updated>2016-11-11T19:57:54+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -52,20 +52,29 @@ black pan: GND<br/>
 red pan:<br/>
 A: co1</p>
 
-<p>  press 100, voltage change from 3.36V to almost 0V,and then come back to 3.36V<br/>
-  PRESS 10, 3.36V,0.9V,3.36V</p>
+<pre><code>press 100
+    voltage change from 3.36V to almost 0V,and then come back to 3.36V
+PRESS 10
+    3.36V,0.9V,3.36V
+</code></pre>
 
 <p>B: HP</p>
 
-<p>  press coin return, 3.2V, 1.8V,3.2V</p>
+<pre><code>press coin return
+    3.2V, 1.8V,3.2V
+</code></pre>
 
 <p>C: SSR</p>
 
-<p>  press coin return, 5.0V, 0.48V, 5.0V</p>
+<pre><code>press coin return
+    5.0V, 0.48V, 5.0V
+</code></pre>
 
 <p>D: TF</p>
 
-<p>  press coin return, 3.2V, 0V, 3.2V</p>
+<pre><code>press coin return
+    3.2V, 0V, 3.2V
+</code></pre>
 ]]></content>
   </entry>
   

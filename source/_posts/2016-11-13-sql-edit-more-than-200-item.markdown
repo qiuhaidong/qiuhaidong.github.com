@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SQL: edit more than 200 item
+title: "SQL: edit more than 200 item"
 date: 2016-11-13 18:27 +0800
 categories: tech
 ---

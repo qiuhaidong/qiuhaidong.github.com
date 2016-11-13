@@ -9,8 +9,11 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="if cout&lt;&lt; Could not find syntax-1.0.0 in any of the sources
-Run `bundle install` to install missing gems. run rvm use 1.9.3 ">
+  <meta name="description" content="1.dconf-editor 2.首次安装尽量要做这几步： rake setup_github_pages
+rake generate
+rake deploy
+git add . git commit -m 'your message'
+git push origin source 3. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +67,101 @@ Run `bundle install` to install missing gems. run rvm use 1.9.3 ">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/13/error-utf-8/">Error: UTF-8 无效字符</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-10-13T15:53:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>3:53 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>1.dconf-editor</h4>
+
+<h4>2.首次安装尽量要做这几步：</h4>
+
+<pre><code>rake setup_github_pages
+rake generate
+rake deploy
+git add . 
+git commit -m 'your message'
+git push origin source
+</code></pre>
+
+<h4>3.然后再edit _config.yml及添加按钮等等</h4>
+
+<h4>4.做完3后，rake generate ,可能又会有utf-8问题，因为之前编辑的文件可能又变了，再打开看一次，纠错</h4>
+
+<h4>5.多试多看几遍，也可在命令后加 &ndash;trace 追踪查看</h4>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/07/error-%20could-not-find-expected/">Error: Could Not Find Expected ':'</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-10-07T11:14:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:14 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>出现错误要先看提示代码，知道错在哪里，如：</h4>
+
+<pre><code>dong@ubuntu:~/octopress$ rake generate
+## Generating Site with Jekyll
+identical source/stylesheets/screen.css 
+/home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse': (/home/dong/octopress/_config.yml): could not find expected ':' while scanning a simple key at line 10 column 1 (Psych::SyntaxError)
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse_stream'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:151:in `parse'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:127:in `load'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `block in load_file'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `open'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `load_file'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/gems/jekyll-0.12.0/lib/jekyll.rb:130:in `configuration'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/gems/jekyll-0.12.0/bin/jekyll:221:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+</code></pre>
+
+<p>代码已经说得很清楚了，就是<strong><em>/home/dong/octopress/_config.yml</em></strong>，这个文件，<strong><em>could not find expected &lsquo;:&rsquo;</em></strong> while scanning a simple key <strong><em>at line 10 column 1</em></strong> (Psych::SyntaxError)<br/>
+<strong>就是'：'后面忘了加空格</strong></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -470,6 +568,14 @@ rake preview    # Watches, and mounts a webserver at http://localhost:4000
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2016/11/13/explorer-do-not-start-up-on-windows/">Explorer Do Not Start Up on Windows</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/11/13/sql-edit-more-than-200-item/">SQL: Edit More Than 200 Item</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">Time Stuff Between Windows10 and Ubuntu</a>
       </li>
     
@@ -509,21 +615,13 @@ rake preview    # Watches, and mounts a webserver at http://localhost:4000
         <a href="/blog/2016/09/03/extract/">解压 Extract</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/09/03/sql2000-install-hang-up/">SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/08/31/smile/">Smile</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/personal/'>personal (50)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (42)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (44)</a></li>
 
   </ul>
 </section>

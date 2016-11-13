@@ -9,7 +9,10 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="2014年10月16日，4:59AM,在家，睡觉，做梦，醒。 关于大学的梦。 做这梦，不是第一次，估计也不会是最后一次。 它是我生命的印记，不可磨灭。 2014-10-16-04-59，家里 2015-03-04-06-29，水汶 2015-06-17-05-44，水汶 2016-01-20 &hellip;">
+  <meta name="description" content="以下是两条命令的输出结果：
+第一条： dong@Ubuntu:~/octopress$ rake generate
+## Generating Site with Jekyll write source/stylesheets/screen.css
+/home/dong/.rvm/gems/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -63,6 +66,174 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/05/could-not-find-a-javascript-runtime/">Could Not Find a JavaScript Runtime</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-05T13:10:34+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:10 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>以下是两条命令的输出结果：<br/>
+第一条：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+## Generating Site with Jekyll
+    write source/stylesheets/screen.css
+/home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:5:in `&lt;module:ExecJS&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `block in gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `each'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll.rb:166:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+</code></pre>
+
+<p>第二条：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake preview
+Starting to watch source with Jekyll and Compass. Starting Rack on port 4000
+/home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:5:in `&lt;module:ExecJS&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `block in gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `each'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll.rb:166:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
+[2015-03-05 12:32:30] INFO  WEBrick 1.3.1
+[2015-03-05 12:32:30] INFO  ruby 1.9.3 (2014-11-13) [i686-linux]
+[2015-03-05 12:32:30] INFO  WEBrick::HTTPServer#start: pid=2889 port=4000
+    write public/stylesheets/screen.css
+127.0.0.1 - - [05/Mar/2015:12:32:49 +0800] "GET / HTTP/1.1" 404 - 0.0610
+127.0.0.1 - - [05/Mar/2015:12:32:50 +0800] "GET /favicon.ico HTTP/1.1" 404 - 0.0015
+127.0.0.1 - - [05/Mar/2015:12:32:53 +0800] "GET / HTTP/1.1" 404 - 0.0013
+127.0.0.1 - - [05/Mar/2015:12:37:50 +0800] "GET / HTTP/1.1" 404 - 0.0007
+127.0.0.1 - - [05/Mar/2015:12:37:51 +0800] "GET / HTTP/1.1" 404 - 0.0007
+^Z
+[1]+  已停止               rake preview
+</code></pre>
+
+<p>解决方法：<br/>
+执行命令：</p>
+
+<pre><code>gem install execjs
+gem install therubyracer
+</code></pre>
+
+<p>may fail,<a href="http://stackoverflow.com/questions/20888318/error-install-rubyracer-with-error-invalid-gem-package-is-corrupt">check this</a> ,<a href="https://qiuhaidong.github.io/blog/2016/11/10/failed-when-gem-install-therubyracer/">or</a></p>
+
+<pre><code>sudo apt-get install nodejs
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/02/22/running/">阿甘的奔跑</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-02-22T23:01:57+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>11:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>想起阿甘。<br/>
+阿甘有点傻，一点点傻。<br/>
+他经历了战友布巴的离世，丹中尉的悲怨起伏，母亲的离世，以及贯穿他整个生命的珍妮的美好而又若即若离触不可及。<br/>
+阿甘不孤单。<br/>
+童年时母亲和珍妮陪他。当兵时布巴陪他。在海上捕虾时丹中尉陪他。<br/>
+阿甘只是孤独。<br/>
+没有人走进阿甘的心里。<br/>
+没有人想走进阿甘的心里。<br/>
+或者说：<br/>
+珍妮没有走进阿甘心里。<br/>
+珍妮不想走进阿甘心里。<br/>
+当珍妮再次离开，所有孤独，清晰浮现。<br/>
+阿甘开始奔跑。<br/>
+跑到城边。<br/>
+跑遍县城。<br/>
+横越阿拉巴马州。<br/>
+跑到一个海角。<br/>
+跑到另一个海角。<br/>
+横越美国。<br/>
+在湖边奔跑。<br/>
+在麦田旁奔跑。<br/>
+在河流石桥上奔跑。<br/>
+在栅栏边奔跑。<br/>
+在牧场旁奔跑。<br/>
+在秋天黄叶林中奔跑。<br/>
+在沙漠奔跑。<br/>
+三年，两个半月。<br/>
+后来，珍妮问起，阿甘告诉她：<br/>
+战场雨停后的星空。<br/>
+海湾的日落。<br/>
+雪山旁湖面的倒影。<br/>
+沙漠的日出。<br/>
+那些属于阿甘的，一个人的一些瞬间。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -183,116 +354,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/09/dgs-legend3/">东哥传3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-10-09T22:51:04+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:51 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>2014.10.9</h3>
-
-<p>说说我的大学舍友。</p>
-
-<p><strong>小郭</strong></p>
-
-<p>张志华，英德人，会客家话。“小郭”这个外号不像外号、小名不像小名的名字是他自己起的，没有人知道由来。</p>
-
-<p>他是宿舍最奇葩的人。</p>
-
-<p>大学刚入学时，他开摩托车，被烟囱烫伤了腿，回家休养了一周左右。这事我至今无法理解。因为我初一就学会摩托车了，至今开了十几年摩托，从来没烫伤过腿。目测小郭的腿的构造也没有什么特别，好难理解。</p>
-
-<p>小郭永远慢人好几拍，我们的卧谈会说了某个话题大半天，他总冒出一句：诶，你们说什么？还有大学几次体能测试，他每次都迟到，你妹呀，我们在昨晚就说过今天有体能测试了，而且叫着你的名字和你说的。</p>
-
-<h3>2014.10.22</h3>
-
-<p>小郭有些时候买些吃的回来，然后宅在床上很长一段时间不下床，不出去，目测超过一天，好厉害；有时候又背个书包出去学习，老大半天不见人。</p>
-
-<p>有时候我们会担心，小郭这人出到社会上咋办呢？而事实证明我们完全是杞人忧天，小郭毕业后是风生水起呀，工作好，最厉害的是他的七龙珠，羡煞旁人！么蛋，女孩的心思真难懂。</p>
-
-<p>13年67月吧，离开学校，我工作等等方面都没着落，小郭接济了我一个多月。做弟兄的我也不多说客气话，谢谢小郭!</p>
-
-<p><strong>友哥</strong></p>
-
-<p>梁世友，祖籍肇庆怀集，后来举家搬到广州，兄弟姐妹众多。</p>
-
-<p>我觉得我和友哥有很多方面很相像。我们都好色、喜欢文学文艺、写毛笔字、喜欢文字、自信心不太足、有时拖拖拉拉、能力一般、自卑又自负、眼高手低、有同情心、悲天悯人又冷酷……太多太多。在友哥身上，我看到很多自己的影子。同时我们身上又有很多截然相反的东西。我和友哥可以说的是惺惺相惜又相互看不顺眼相互憎恨。我们喜欢对方是因为在对方身上看到自己，讨厌对方也是因为在对方身上看到自己。产生这种现象，是因为我们本身的性格思想里就有很多矛盾的东西。</p>
-
-<h3>2014.10.27</h3>
-
-<p><strong>宝文</strong></p>
-
-<p><strong>老扬</strong></p>
-
-<p>冯家扬，广州人，典型的广州人性格。非常独立自主。在不伤害不妨碍别人的前提下，喜欢做什么就做什么，不喜欢的坚决不做。这两年我才逐渐意识到，这一点太可贵了————为自己而活。当年有段时间，我可能有点自卑，所以很敏感，</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/09/dgs-legend2/">东哥传2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-10-09T22:49:34+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:49 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>2014.10.4</h3>
-
-<p>09年上大学，肇庆学院，09电子1班。13年，结束。</p>
-
-<p>离校时，下雨，友哥送我到市车站。上车前，我们拥抱了一下。</p>
-
-<p>就是拥抱了一下。</p>
-
-<p>没有豪言壮语泪流满面等等情况。</p>
-
-<p>开车后，看着窗外熟悉的肇庆，我终是有点想哭。在这生活了四年，四年的感情，我不舍得。我知道现代交通很方便，以后要回去一次很容易，但还是不舍得。</p>
-
-<p>我对肇庆学院有深厚的感情。虽然不全是美好的，毕竟我是个学渣。</p>
-
-<p>美好的，是我和同学们经历的许多事。这里，以我的几个舍友为主。按床位排名：小郭，友哥，宝文，老扬，小康，老陈，老壁。</p>
-
-<p>插个话，大一时，是胖豪，住了一年后搬去了公寓，老扬和武昌搬入，小康是荣誉舍员。胖豪是冲我们发过很多次让我们很难理解的火，搞得很难堪，自己搬走了，而据我了解，他去公寓后也是这个鸟样。武昌在大学时和我们相处没什么问题，只是毕业后就慢慢没有了联系。小康是大一时和我们在相邻宿舍，我12栋306，他307，大二暑假我们一起去汕头打工，期间建立了不错的感情，之后经常来宿舍找宝文和我，继而和其他人打成一片，成功上位。加上我们喝酒时他经常买单，我就封了他荣誉舍员，希望他再接再厉，继续买单。</p>
-
-<p>从09年到现在，5年时间，我们走了过来，如果以后没有重大利益或感情纠葛，我相信我们能一直走下去。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/16">&larr; Older</a>
@@ -308,6 +369,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/11/13/explorer-do-not-start-up-on-windows/">Explorer Do Not Start Up on Windows</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/11/13/sql-edit-more-than-200-item/">SQL: Edit More Than 200 Item</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">Time Stuff Between Windows10 and Ubuntu</a>
@@ -349,21 +418,13 @@
         <a href="/blog/2016/09/03/extract/">解压 Extract</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/09/03/sql2000-install-hang-up/">SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/08/31/smile/">Smile</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/personal/'>personal (50)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (42)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (44)</a></li>
 
   </ul>
 </section>

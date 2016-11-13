@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-11T19:57:54+08:00</updated>
+  <updated>2016-11-13T19:04:18+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Explorer Do Not Start Up on Windows]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/13/explorer-do-not-start-up-on-windows/"/>
+    <updated>2016-11-13T18:51:00+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/13/explorer-do-not-start-up-on-windows</id>
+    <content type="html"><![CDATA[<p><a href="https://zhidao.baidu.com/question/588254618.html">原帖</a><br/>
+<strong>DG works：</strong><br/>
+<strong>打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。这样在登录时系统会再加载一次Explorer.exe就可以显示出桌面了。但也有如我的状况，gpedit.msc打不开。</strong></p>
+
+<p>关于explorer.exe加载不了 无法显示任务栏与桌面解决办法<br/>
+Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.exe。说明系统启动时候没有加载Explorer.exe。(explorer是Windows程序管理器或者Windows资源管理器，它用于管理Windows图形壳，包括开始菜单、任务栏、桌面和文件管理。删除该程序会导致Windows图形界面无法适用。)<br/>
+点击“Windows任务管理器”&ndash;>“文件”&ndash;>“新建任务（运行……）”敲入Explorer.exe看看是否能够执行，如果不能执行说明系统的winnt目录下没有Explorer.exe这个文件或者Explorer.exe文件损坏。<br/>
+首先尝试下面的方法：<br/>
+1<br/>
+<strong>打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。这样在登录时系统会再加载一次Explorer.exe就可以显示出桌面了。但也有如我的状况，gpedit.msc打不开。</strong><br/>
+2<br/>
+打开注册表，找到子键“HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer”，新建“DWORD”值“NoDesktop”，其值为“1”。（这个是我在网上搜索的方法，为什么要使用这个健值我不清楚。）再检查注册表&hellip;.HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell
+看是否为explorer.exe，不是的话自己改.</p>
+
+<p>第一个，把Explorer加入进程：<br/>
+开始菜单→运行→输入“regedit”，回车→打开注册表内的HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\项，在该项下新建一个名称为“Explorer.exe”的新字符串值，编辑该值，数据为你系统中Explorer.exe的位置。<br/>
+第二个，取消开机项目<br/>
+开始菜单→运行→输入“msconfig”，回车→在『启动』选项卡中，找到那个安装程序的对应的值（如果不知道就把一些没有必要的全部去掉），去掉前面的“√”，保存，退出。<br/>
+重启电脑。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SQL: Edit More Than 200 Item]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/13/sql-edit-more-than-200-item/"/>
+    <updated>2016-11-13T18:27:00+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/13/sql-edit-more-than-200-item</id>
+    <content type="html"><![CDATA[<p>工具，选项，SQL Server 对象资源管理器，命令……</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Time Stuff Between Windows10 and Ubuntu]]></title>
@@ -90,33 +126,6 @@ PRESS 10
 </code></pre>
 
 <p>corrupt:broken;the package is broken,so remove /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem,then redownload and reinstall,successed.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Install Again]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/10/28/install-again/"/>
-    <updated>2016-10-28T02:22:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/10/28/install-again</id>
-    <content type="html"><![CDATA[<p>something new:<br/>
-install git:</p>
-
-<pre><code>sudo apt-get install git
-</code></pre>
-
-<p>don&rsquo;t install from ppa anymore.<br/>
-install rvm: run the command from official website,the latest version,maybe not the stable version.<br/>
-install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official website，the latest version,for exemple:2.3.1  the old version may got some problem when install the gem package.<br/>
-<code>rubygems bundle install</code>its address has change,the latest version is<a href="https://gems.ruby-china.org">Ruby China</a>，we could check it out from the origin official website.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Icon Display Error]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/09/05/display-icon-error/"/>
-    <updated>2016-09-05T13:26:50+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/09/05/display-icon-error</id>
-    <content type="html"><![CDATA[<p>控制面板，显示，更改大小，应用，注销，再把大小改回来。</p>
 ]]></content>
   </entry>
   

@@ -9,9 +9,9 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="DIA,流程图绘制软件
-install: sudo apt-get install dia 关于输入中文: sudo vim /usr/bin/dia 把dia-normal --integrated "$@"注释掉，在前面加#
-在下面添加: dia-normal "$@" ">
+  <meta name="description" content="
+三辊闸，淘气堡，后台终端管理，扣费由场地决定，投币数设置为1即可。若扣费50，投币50，会导致三辊闸打开时间过长，比如连续20秒～～～
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,69 @@ install: sudo apt-get install dia 关于输入中文: sudo vim /usr/bin/dia 把d
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/28/system-link/">Alien System</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-28T21:06:27+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:06 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E7%B3%BB%E7%BB%9F%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg" alt="系统接线图" /><br/>
+三辊闸，淘气堡，后台终端管理，扣费由场地决定，投币数设置为1即可。若扣费50，投币50，会导致三辊闸打开时间过长，比如连续20秒～～～</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/25/sql-server-autobackup/">SQL Server Autobackup</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-25T13:23:32+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:23 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>前提:<strong>SQL Server 代理</strong>开机自启<br/>
+控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:<strong>自动</strong><br/>
+Microsoft SQL Server Management Studio，<em>192.168.0.250,1433</em>，管理，维护计划，右键，维护计划向导……<br/>
+若要做多个备份，重复上个步骤<br/>
+Done.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -192,103 +255,6 @@ done.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/08/22/SSL-Keys-and-HTTPS/">SSH Keys and HTTPS</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-08-22T16:58:26+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>4:58 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS认证方式改动</a>
-关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
-
-<pre><code>fatal: Could not read from remote repository. 
-Please make sure you have the correct access rights and the repository exists.
-</code></pre>
-
-<p>SSH keys不用动</p>
-
-<pre><code>gedit octopress/.git/config
-</code></pre>
-
-<p>把<code>url = git@github.com:qiuhaidong/qiuhaidong.github.com.git</code><br/>
-改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code><br/>
-<a href="http://bbs.csdn.net/topics/390909877">参见此Blog，9楼</a><br/>
-done.<br/>
-<code>pull</code>or<code>push</code>时或会报错，但不影响功能，多用几次就好了。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/08/20/C%23-on-Linux/">C# on Linux</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-08-20T14:18:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:18 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives">参考官方说明</a><br/>
-attention:有些commend不适合ubuntu，要区分<br/>
-<a href="http://blog.csdn.net/caspiansea/article/details/50585025">参见另一篇blog</a><br/>
-install mono,(mono-complete and monodevelop):</p>
-
-<pre><code>sudo apt-get install mono-complete monodevelop
-</code></pre>
-
-<p>edit:</p>
-
-<pre><code>vim helloworld.cs
-</code></pre>
-
-<p>build:</p>
-
-<pre><code>mcs helloworld.cd
-</code></pre>
-
-<p>run:</p>
-
-<pre><code>./helloworld.exe
-</code></pre>
-
-<p>done.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/5">&larr; Older</a>
@@ -304,6 +270,14 @@ install mono,(mono-complete and monodevelop):</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/11/13/explorer-do-not-start-up-on-windows/">Explorer Do Not Start Up on Windows</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/11/13/sql-edit-more-than-200-item/">SQL: Edit More Than 200 Item</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">Time Stuff Between Windows10 and Ubuntu</a>
@@ -345,21 +319,13 @@ install mono,(mono-complete and monodevelop):</p>
         <a href="/blog/2016/09/03/extract/">解压 Extract</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/09/03/sql2000-install-hang-up/">SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/08/31/smile/">Smile</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/personal/'>personal (50)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (42)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (44)</a></li>
 
   </ul>
 </section>

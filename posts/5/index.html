@@ -9,13 +9,8 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="自动登录：
-win+r：Control UserPasswords2
-Administrator
-自启动：
-win+r：shell:startup
-文件夹已打开，把软件的快捷方式添加进去即可
-">
+  <meta name="description" content="SSH KEYS认证方式改动
+关于git pull origin sourceorgit push origin source,若出错： fatal: Could not read from remote repository. Please make sure you have the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,6 +64,103 @@ win+r：shell:startup
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/22/SSL-Keys-and-HTTPS/">SSH Keys and HTTPS</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-22T16:58:26+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>4:58 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS认证方式改动</a>
+关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
+
+<pre><code>fatal: Could not read from remote repository. 
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
+
+<p>SSH keys不用动</p>
+
+<pre><code>gedit octopress/.git/config
+</code></pre>
+
+<p>把<code>url = git@github.com:qiuhaidong/qiuhaidong.github.com.git</code><br/>
+改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code><br/>
+<a href="http://bbs.csdn.net/topics/390909877">参见此Blog，9楼</a><br/>
+done.<br/>
+<code>pull</code>or<code>push</code>时或会报错，但不影响功能，多用几次就好了。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/20/C%23-on-Linux/">C# on Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-20T14:18:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:18 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives">参考官方说明</a><br/>
+attention:有些commend不适合ubuntu，要区分<br/>
+<a href="http://blog.csdn.net/caspiansea/article/details/50585025">参见另一篇blog</a><br/>
+install mono,(mono-complete and monodevelop):</p>
+
+<pre><code>sudo apt-get install mono-complete monodevelop
+</code></pre>
+
+<p>edit:</p>
+
+<pre><code>vim helloworld.cs
+</code></pre>
+
+<p>build:</p>
+
+<pre><code>mcs helloworld.cd
+</code></pre>
+
+<p>run:</p>
+
+<pre><code>./helloworld.exe
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -216,118 +308,6 @@ int main()
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/06/21/zhong-ruan/">中软事件</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-06-21T14:14:57+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>2:14 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><strong>2016-06-17 14:47</strong></p>
-
-<ul>
-<li>面对真实的自己</li>
-<li>一无所有之后</li>
-<li>写字楼、身光颈靓的表象与本质</li>
-<li>用法律、警察解决问题</li>
-<li>天哥V5</li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/05/24/vim/">Vim</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-05-24T19:13:46+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>7:13 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>终端执行命令：</h4>
-
-<pre><code>vimtutor
-</code></pre>
-
-<p>查看《VIM教程》</p>
-
-<h4>基本操作：</h4>
-
-<p>光标移动：<br/>
-h：左<br/>
-j：下<br/>
-k：上<br/>
-l：右</p>
-
-<h4>正常模式==>输入模式：</h4>
-
-<p>i：左边输入<br/>
-I：行首输入（In the front）<br/>
-a：右边输入（after）<br/>
-A：行尾输入（After）<br/>
-o：下面输入一新行<br/>
-O：上面输入一新行<br/>
-s：删除字符再输入<br/>
-S：删除行再输入</p>
-
-<h4>其他模式==>正常模式：</h4>
-
-<p>Esc</p>
-
-<h4>正常模式==>命令模式：</h4>
-
-<p>:<br/>
-(shift加分号，英文输入法下)</p>
-
-<h4>正常模式==>可视模式：</h4>
-
-<p>v：可视模式<br/>
-V:可视块模式</p>
-
-<h4>常用命令：</h4>
-
-<p>:w<enter> 保存<br/>
-:q<enter> 退出<br/>
-:wq<enter> 保存后退出<br/>
-:q!<enter> 不保存，强制退出</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/6">&larr; Older</a>
@@ -343,6 +323,14 @@ V:可视块模式</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/11/13/explorer-do-not-start-up-on-windows/">Explorer Do Not Start Up on Windows</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/11/13/sql-edit-more-than-200-item/">SQL: Edit More Than 200 Item</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">Time Stuff Between Windows10 and Ubuntu</a>
@@ -384,21 +372,13 @@ V:可视块模式</p>
         <a href="/blog/2016/09/03/extract/">解压 Extract</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/09/03/sql2000-install-hang-up/">SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/08/31/smile/">Smile</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/personal/'>personal (50)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (42)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (44)</a></li>
 
   </ul>
 </section>

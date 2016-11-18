@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-19T02:35:54+08:00</updated>
+  <updated>2016-11-19T02:40:24+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -18,7 +18,11 @@
     <link href="https://qiuhaidong.github.io/blog/2016/11/19/halfwidth-and-fullwidth-forms/"/>
     <updated>2016-11-19T02:13:01+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2016/11/19/halfwidth-and-fullwidth-forms</id>
-    <content type="html"><![CDATA[<p>ctrl+A，格式，大小写</p>
+    <content type="html"><![CDATA[<p>ctrl+A，格式<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/halfwidth%20and%20fullwidth%20forms/1.jpg" alt="格式" /><br/>
+更改大小写<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/halfwidth%20and%20fullwidth%20forms/2.jpg" alt="更改大小写" /><br/>
+<a href="https://en.wikipedia.org/wiki/Halfwidth_and_fullwidth_forms">介绍</a></p>
 ]]></content>
   </entry>
   

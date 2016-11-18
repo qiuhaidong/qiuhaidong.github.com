@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "半角全角"
+title: "Halfwidth and Fullwidth Forms"
 date: 2016-11-19 02:13:01 +0800
 comments: true
 categories: 

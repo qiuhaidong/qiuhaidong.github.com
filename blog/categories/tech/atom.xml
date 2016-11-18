@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-19T02:43:35+08:00</updated>
+  <updated>2016-11-19T02:46:18+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Halfwidth and Fullwidth Forms]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/19/halfwidth-and-fullwidth-forms/"/>
+    <updated>2016-11-19T02:13:01+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/19/halfwidth-and-fullwidth-forms</id>
+    <content type="html"><![CDATA[<p>ctrl+A，格式,更改大小写<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/halfwidth%20and%20fullwidth%20forms/1.jpg" alt="格式" /><br/>
+ 全角or半角<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/halfwidth%20and%20fullwidth%20forms/2.jpg" alt="全角半角" /><br/>
+<a href="https://en.wikipedia.org/wiki/Halfwidth_and_fullwidth_forms">介绍</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Explorer Do Not Start Up on Windows]]></title>
@@ -111,21 +124,6 @@ PRESS 10
 <pre><code>press coin return
     3.2V, 0V, 3.2V
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Failed When: Gem Install Therubyracer]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/10/failed-when-gem-install-therubyracer/"/>
-    <updated>2016-11-10T00:55:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/10/failed-when-gem-install-therubyracer</id>
-    <content type="html"><![CDATA[<p>dong@ubuntu:~/octopress$ gem install therubyracer</p>
-
-<pre><code>ERROR:  Error installing therubyracer:
-    invalid gem: package is corrupt, exception while verifying: undefined method `size' for nil:NilClass (NoMethodError) in /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem
-</code></pre>
-
-<p>corrupt:broken;the package is broken,so remove /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem,then redownload and reinstall,successed.</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-19T02:15:07+08:00</updated>
+  <updated>2016-11-19T02:35:54+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[半角全角]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/19/test/"/>
+    <title type="html"><![CDATA[Halfwidth and Fullwidth Forms]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/19/halfwidth-and-fullwidth-forms/"/>
     <updated>2016-11-19T02:13:01+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/19/test</id>
+    <id>https://qiuhaidong.github.io/blog/2016/11/19/halfwidth-and-fullwidth-forms</id>
     <content type="html"><![CDATA[<p>ctrl+A，格式，大小写</p>
 ]]></content>
   </entry>

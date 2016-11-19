@@ -9,7 +9,11 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="在执行命令 rake preview 时，输出： dong@Ubuntu:~/octopress$ rake preview Starting to watch source with Jekyll and Compass. Starting Rack on port 4000 &gt;&gt;& &hellip;">
+  <meta name="description" content="方法略繁复
+把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）
+把图片上传到github repository托管 git add . # don't forget the "."
+git commit -m 'your message'
+git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -63,6 +67,104 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/19/add-image/">Add Image</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-19T14:13:28+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>2:13 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>方法略繁复<br/>
+把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）<br/>
+把图片上传到github repository托管</p>
+
+<pre><code>git add .           # don't forget the "."
+git commit -m 'your message'
+git push origin source
+</code></pre>
+
+<p>进入github抓取图片链接地址（先打开图片，然后鼠标右击图片，在新标签页中打开图片=或者=查看图片）<br/>
+示例地址：<br/>
+<a href="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png">https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png</a><br/>
+使用 ![描述](图片链接地址) 插入图像<br/>
+示例：<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png" alt="image test" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/06/goagent/">GoAgent</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-06T15:01:31+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-01-09  goagent的github仓库已经全部删除，it&rsquo;s gone.</p>
+
+<p><a href="https://github.com/goagent/goagent">新网址</a><br/>
+<a href="http://git.io/goa">压缩包下载地址</a><br/>
+<a href="https://github.com/goagent/goagent/blob/wiki/SimpleGuide.md">简易教程</a></p>
+
+<p><strong>部署</strong></p>
+
+<ol>
+<li>申请 Google Appengine 并创建 appid。</li>
+<li>下载 <a href="https://github.com/goagent/goagent">goagent</a></li>
+<li>修改 local\proxy.ini 中的 [gae] 下的 appid = 你的appid(多appid请用|隔开)</li>
+<li>运行 uploader.bat 或 uploader.py 开始上传, 成功后即可使用了。</li>
+</ol>
+
+
+<p><strong>使用</strong></p>
+
+<ul>
+<li>Windows 用户推荐使用 goagent.exe 托盘图标设置 IE 代理(对其它浏览器也有效)。</li>
+<li>Chrome/Opera 请安装 SwitchyOmega 插件(下载到本地然后拖放文件到扩展设置)，导入 SwitchyOptions.bak</li>
+<li>Firefox 请安装 FoxyProxy ，Firefox需要导入证书，方法请见 FAQ</li>
+<li>出现连接不上的情况可以尝试使用 gscan 或 GoGo Tester 测速。</li>
+</ul>
+
+
+<p><a href="https://github.com/goagent/goagent/blob/wiki/InstallGuide.md">图文教程</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -324,88 +426,6 @@ gem install therubyracer
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/11/26/nightmares/">Nightmares</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-11-26T23:01:33+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:01 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2014年10月16日，4:59AM,在家，睡觉，做梦，醒。</p>
-
-<p>关于大学的梦。</p>
-
-<p>做这梦，不是第一次，估计也不会是最后一次。</p>
-
-<p>它是我生命的印记，不可磨灭。</p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3781293063682700/pid/780bc50fgw1emosmbfqn4j208w0dc759">2014-10-16-04-59，家里</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2014-10-16-04-59-22.png" alt="2014年10月16日家里" /></p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3817040303409178/pid/780bc50fgw1epuu3qc365j208w0dc0ud">2015-03-04-06-29，水汶</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2015-03-04-06-29-27.png" alt="2015年3月4日水汶" /></p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3854874397980519/pid/780bc50fgw1et7jbd7jejj208w0dcwgb">2015-06-17-05-44，水汶</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2015-06-17-05-44-27.png" alt="2015年6月17日水汶" /></p>
-
-<p>2016-01-20 again</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/11/09/life-is-maze/">生活 经历 迷宫</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-11-09T23:36:05+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:36 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>生活像是一座特殊的迷宫。</p>
-
-<p>它是立体的，一层一层的，无尽的。</p>
-
-<p>它有不可改变的部分，非常难以改变的部分，容易改变的部分。有了足够的经历积累后，会出现一个楼梯，走上去，看下来，之前走过的那一层迷宫，一目了然。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/16">&larr; Older</a>
@@ -421,6 +441,14 @@ gem install therubyracer
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/11/19/screen-light/">Screen Light</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/11/19/ruby-version/">Ruby Version</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/11/19/halfwidth-and-fullwidth-forms/">Halfwidth and Fullwidth Forms</a>
@@ -462,21 +490,13 @@ gem install therubyracer
         <a href="/blog/2016/10/28/zai-lai-liu-pan-shui/">Come Liupanshui Again</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/09/05/display-icon-error/">Icon Display Error</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/09/04/business-trip-to-liupanshui/">出差六盘水</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/personal/'>personal (50)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (45)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (47)</a></li>
 
   </ul>
 </section>

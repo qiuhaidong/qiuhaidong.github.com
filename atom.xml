@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-19T02:46:18+08:00</updated>
+  <updated>2016-11-19T12:04:17+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Screen Light]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/19/screen-light/"/>
+    <updated>2016-11-19T11:53:44+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/19/screen-light</id>
+    <content type="html"><![CDATA[<pre><code>sudo gedit /etc/default/grub
+</code></pre>
+
+<p>更改为：(斜黑体部分)</p>
+
+<p>GRUB_CMDLINE_LINUX_DEFAULT=&ldquo;quiet splash&rdquo;<br/>
+GRUB_CMDLINE_LINUX=&ldquo;<strong><em>acpi_osi=Linux</em></strong>&rdquo;</p>
+
+<p>(东哥：13.04、16.04按Fn有效调节)</p>
+
+<pre><code>sudo update-grub
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby Version]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/19/ruby-version/"/>
+    <updated>2016-11-19T11:52:18+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/19/ruby-version</id>
+    <content type="html"><![CDATA[<p>2016-11-19<br/>
+ruby version:2.2.6</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Halfwidth and Fullwidth Forms]]></title>
@@ -366,42 +396,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 Microsoft SQL Server Management Studio，<em>192.168.0.250,1433</em>，管理，维护计划，右键，维护计划向导……<br/>
 若要做多个备份，重复上个步骤<br/>
 Done.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Dia on Linux]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/08/24/dia-on-linux/"/>
-    <updated>2016-08-24T22:46:45+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/08/24/dia-on-linux</id>
-    <content type="html"><![CDATA[<p>DIA,流程图绘制软件<br/>
-install:</p>
-
-<pre><code>sudo apt-get install dia
-</code></pre>
-
-<p>关于输入中文:</p>
-
-<pre><code>sudo vim /usr/bin/dia
-</code></pre>
-
-<p>把<code>dia-normal --integrated "$@"</code>注释掉，在前面加<code>#</code><br/>
-在下面添加:</p>
-
-<pre><code>dia-normal "$@"
-</code></pre>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/dia.png" alt="dia" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[德胜系统]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/08/23/system-about-ds/"/>
-    <updated>2016-08-23T14:10:59+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/08/23/system-about-ds</id>
-    <content type="html"><![CDATA[<p>E51:网络没连通，线路没接好<br/>
-安装windows server 2000时，若autorun或setup都失败，有可能是被tencent qq阻止了，在任务管理器里把tencent关了就行了</p>
 ]]></content>
   </entry>
   

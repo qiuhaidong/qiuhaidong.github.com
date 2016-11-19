@@ -9,8 +9,8 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="ctrl+A，格式,更改大小写 全角or半角 介绍
-">
+  <meta name="description" content="sudo gedit /etc/default/grub 更改为：(斜黑体部分) GRUB_CMDLINE_LINUX_DEFAULT=&ldquo;quiet splash&rdquo;
+GRUB_CMDLINE_LINUX=&ldquo;acpi_osi=Linux&rdquo; (东哥：13 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +64,76 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/19/screen-light/">Screen Light</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-19T11:53:44+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:53 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>sudo gedit /etc/default/grub
+</code></pre>
+
+<p>更改为：(斜黑体部分)</p>
+
+<p>GRUB_CMDLINE_LINUX_DEFAULT=&ldquo;quiet splash&rdquo;<br/>
+GRUB_CMDLINE_LINUX=&ldquo;<strong><em>acpi_osi=Linux</em></strong>&rdquo;</p>
+
+<p>(东哥：13.04、16.04按Fn有效调节)</p>
+
+<pre><code>sudo update-grub
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/19/ruby-version/">Ruby Version</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-19T11:52:18+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:52 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-11-19<br/>
+ruby version:2.2.6</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -174,111 +244,6 @@ Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.e
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">Time Stuff Between Windows10 and Ubuntu</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-11-10T21:37:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:37 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.cnblogs.com/qf19910623/p/5559514.html">原博文</a><br/>
-windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：</p>
-
-<pre><code>sudo gedit /etc/default/rcS
-utc=yes 改成 utc=no
-</code></pre>
-
-<p>然而并没有什么效果，ubuntu16.04里面根本就没有utc这一项！<br/>
-后来谷歌了半天找到了一个完美解决办法：<br/>
-先在ubuntu下更新一下时间，确保时间无误：</p>
-
-<pre><code>sudo apt-get install ntpdate
-sudo ntpdate time.windows.com
-</code></pre>
-
-<p>然后将时间更新到硬件上：</p>
-
-<pre><code>sudo hwclock --localtime --systohc
-</code></pre>
-
-<p>重新进入windows10，发现时间恢复正常了！</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/11/10/Voltage-change/">Voltage Change</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-11-10T15:03:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>3:03 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>MACHINE: fish hunting<br/>
-black pan: GND<br/>
-red pan:<br/>
-A: co1</p>
-
-<pre><code>press 100
-    voltage change from 3.36V to almost 0V,and then come back to 3.36V
-PRESS 10
-    3.36V,0.9V,3.36V
-</code></pre>
-
-<p>B: HP</p>
-
-<pre><code>press coin return
-    3.2V, 1.8V,3.2V
-</code></pre>
-
-<p>C: SSR</p>
-
-<pre><code>press coin return
-    5.0V, 0.48V, 5.0V
-</code></pre>
-
-<p>D: TF</p>
-
-<pre><code>press coin return
-    3.2V, 0V, 3.2V
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -292,6 +257,14 @@ PRESS 10
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/11/19/screen-light/">Screen Light</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/11/19/ruby-version/">Ruby Version</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/11/19/halfwidth-and-fullwidth-forms/">Halfwidth and Fullwidth Forms</a>
@@ -333,21 +306,13 @@ PRESS 10
         <a href="/blog/2016/10/28/zai-lai-liu-pan-shui/">Come Liupanshui Again</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/09/05/display-icon-error/">Icon Display Error</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/09/04/business-trip-to-liupanshui/">出差六盘水</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/personal/'>personal (50)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (45)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (47)</a></li>
 
   </ul>
 </section>

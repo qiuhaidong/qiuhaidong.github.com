@@ -5,18 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Lantern - Haydn Yau</title>
+  <title>Screen Light - Haydn Yau</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="下载页面
-Windows版
-Ubuntu（32位）版
-android
-一键安装，双击即可
-Lantern官网
-官网自然受到GFW的特殊照顾，要翻了墙才能访问到
-">
+  <meta name="description" content="sudo gedit /etc/default/grub 更改为：(斜黑体部分) GRUB_CMDLINE_LINUX_DEFAULT=&ldquo;quiet splash&rdquo;
+GRUB_CMDLINE_LINUX=&ldquo;acpi_osi=Linux&rdquo; (东哥：13 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -25,7 +19,7 @@ Lantern官网
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2016/01/08/lantern/">
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2016/11/19/screen-light/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Haydn Yau" type="application/atom+xml">
@@ -73,7 +67,7 @@ Lantern官网
   
   <header>
     
-      <h1 class="entry-title">Lantern</h1>
+      <h1 class="entry-title">Screen Light</h1>
     
     
       <p class="meta">
@@ -82,20 +76,25 @@ Lantern官网
 
 
 
-<time class='entry-date' datetime='2016-01-08T14:56:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:56 pm</span></time>
+<time class='entry-date' datetime='2016-11-19T11:53:44+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:53 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><a href="https://github.com/getlantern/lantern">下载页面</a><br/>
-<a href="https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta.exe">Windows版</a><br/>
-<a href="https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta-32-bit.deb">Ubuntu（32位）版</a><br/>
-<a href="https://s3.amazonaws.com/lantern-android/lantern-android-beta.apk">android</a><br/>
-一键安装，双击即可<br/>
-<a href="https://getlantern.org">Lantern官网</a><br/>
-官网自然受到GFW的特殊照顾，要翻了墙才能访问到</p>
+<div class="entry-content"><pre><code>sudo gedit /etc/default/grub
+</code></pre>
+
+<p>更改为：(斜黑体部分)</p>
+
+<p>GRUB_CMDLINE_LINUX_DEFAULT=&ldquo;quiet splash&rdquo;<br/>
+GRUB_CMDLINE_LINUX=&ldquo;<strong><em>acpi_osi=Linux</em></strong>&rdquo;</p>
+
+<p>(东哥：13.04、16.04按Fn有效调节)</p>
+
+<pre><code>sudo update-grub
+</code></pre>
 </div>
 
 
@@ -111,7 +110,7 @@ Lantern官网
 
 
 
-<time class='entry-date' datetime='2016-01-08T14:56:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:56 pm</span></time>
+<time class='entry-date' datetime='2016-11-19T11:53:44+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:53 am</span></time>
       
 
 <span class="categories">
@@ -132,10 +131,8 @@ Lantern官网
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2015/12/02/happyhour-when-i-was-a-kid/" title="Previous Post: 小时候的快乐">&laquo; 小时候的快乐</a>
+        <a class="basic-alignment left" href="/blog/2016/11/19/ruby-version/" title="Previous Post: ruby version">&laquo; ruby version</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2016/01/09/shell-script/" title="Next Post: shell脚本">shell脚本 &raquo;</a>
       
     </p>
   </footer>

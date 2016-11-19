@@ -9,11 +9,9 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="感谢教我帮我的老总和黎先生
-要用到Windows Server的ISO文件
-管理服务器，添加角色和功能 选择服务器角色：AD域，DNS，.NET Framework 指定备用源路径 \…ISO…\sources\sxs
-done.
-">
+  <meta name="description" content="DIA,流程图绘制软件
+install: sudo apt-get install dia 关于输入中文: sudo vim /usr/bin/dia 把dia-normal --integrated "$@"注释掉，在前面加#
+在下面添加: dia-normal "$@" ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +65,82 @@ done.
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/24/dia-on-linux/">Dia on Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-24T22:46:45+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>10:46 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>DIA,流程图绘制软件<br/>
+install:</p>
+
+<pre><code>sudo apt-get install dia
+</code></pre>
+
+<p>关于输入中文:</p>
+
+<pre><code>sudo vim /usr/bin/dia
+</code></pre>
+
+<p>把<code>dia-normal --integrated "$@"</code>注释掉，在前面加<code>#</code><br/>
+在下面添加:</p>
+
+<pre><code>dia-normal "$@"
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/dia.png" alt="dia" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/23/system-about-ds/">德胜系统</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-23T14:10:59+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>2:10 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>E51:网络没连通，线路没接好<br/>
+安装windows server 2000时，若autorun或setup都失败，有可能是被tencent qq阻止了，在任务管理器里把tencent关了就行了</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -215,93 +289,6 @@ install mono,(mono-complete and monodevelop):</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/08/13/Windows-Server-2012-AutoAdminLogon-and-Startup/">Windows Server 2012自动登录和软件自启动</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-08-13T23:36:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:36 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>自动登录：<br/>
-win+r：Control UserPasswords2<br/>
-Administrator<br/>
-自启动：<br/>
-win+r：shell:startup
-文件夹已打开，把软件的快捷方式添加进去即可</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/06/28/c-plus-plus-under-linux/">C++ on Linux</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-06-28T17:19:52+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:19 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>编译：</p>
-
-<pre><code>g++ -o hello hello.cpp
-</code></pre>
-
-<p>或：</p>
-
-<pre><code>g++ hello.cpp -o hello
-</code></pre>
-
-<p>或：</p>
-
-<pre><code>g++ hello.cpp
-</code></pre>
-
-<p>生成hello或a.out<br/>
-运行：</p>
-
-<pre><code>./hello
-</code></pre>
-
-<p>或：</p>
-
-<pre><code>./a.out
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/6">&larr; Older</a>
@@ -317,6 +304,14 @@ win+r：shell:startup
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/11/19/screen-light/">Screen Light</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/11/19/ruby-version/">Ruby Version</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/11/19/halfwidth-and-fullwidth-forms/">Halfwidth and Fullwidth Forms</a>
@@ -358,21 +353,13 @@ win+r：shell:startup
         <a href="/blog/2016/10/28/zai-lai-liu-pan-shui/">Come Liupanshui Again</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/09/05/display-icon-error/">Icon Display Error</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/09/04/business-trip-to-liupanshui/">出差六盘水</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/personal/'>personal (50)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (45)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (47)</a></li>
 
   </ul>
 </section>

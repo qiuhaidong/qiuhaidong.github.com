@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-19T02:46:18+08:00</updated>
+  <updated>2016-11-19T12:04:17+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Screen Light]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/19/screen-light/"/>
+    <updated>2016-11-19T11:53:44+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/19/screen-light</id>
+    <content type="html"><![CDATA[<pre><code>sudo gedit /etc/default/grub
+</code></pre>
+
+<p>更改为：(斜黑体部分)</p>
+
+<p>GRUB_CMDLINE_LINUX_DEFAULT=&ldquo;quiet splash&rdquo;<br/>
+GRUB_CMDLINE_LINUX=&ldquo;<strong><em>acpi_osi=Linux</em></strong>&rdquo;</p>
+
+<p>(东哥：13.04、16.04按Fn有效调节)</p>
+
+<pre><code>sudo update-grub
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby Version]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/19/ruby-version/"/>
+    <updated>2016-11-19T11:52:18+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/19/ruby-version</id>
+    <content type="html"><![CDATA[<p>2016-11-19<br/>
+ruby version:2.2.6</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Halfwidth and Fullwidth Forms]]></title>
@@ -59,71 +89,6 @@ Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.e
     <updated>2016-11-13T18:27:00+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2016/11/13/sql-edit-more-than-200-item</id>
     <content type="html"><![CDATA[<p>工具，选项，SQL Server 对象资源管理器，命令……</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Time Stuff Between Windows10 and Ubuntu]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/"/>
-    <updated>2016-11-10T21:37:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/10/time-stuff-between-windows-and-ubuntu</id>
-    <content type="html"><![CDATA[<p><a href="http://www.cnblogs.com/qf19910623/p/5559514.html">原博文</a><br/>
-windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：</p>
-
-<pre><code>sudo gedit /etc/default/rcS
-utc=yes 改成 utc=no
-</code></pre>
-
-<p>然而并没有什么效果，ubuntu16.04里面根本就没有utc这一项！<br/>
-后来谷歌了半天找到了一个完美解决办法：<br/>
-先在ubuntu下更新一下时间，确保时间无误：</p>
-
-<pre><code>sudo apt-get install ntpdate
-sudo ntpdate time.windows.com
-</code></pre>
-
-<p>然后将时间更新到硬件上：</p>
-
-<pre><code>sudo hwclock --localtime --systohc
-</code></pre>
-
-<p>重新进入windows10，发现时间恢复正常了！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Voltage Change]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/10/Voltage-change/"/>
-    <updated>2016-11-10T15:03:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/10/Voltage-change</id>
-    <content type="html"><![CDATA[<p>MACHINE: fish hunting<br/>
-black pan: GND<br/>
-red pan:<br/>
-A: co1</p>
-
-<pre><code>press 100
-    voltage change from 3.36V to almost 0V,and then come back to 3.36V
-PRESS 10
-    3.36V,0.9V,3.36V
-</code></pre>
-
-<p>B: HP</p>
-
-<pre><code>press coin return
-    3.2V, 1.8V,3.2V
-</code></pre>
-
-<p>C: SSR</p>
-
-<pre><code>press coin return
-    5.0V, 0.48V, 5.0V
-</code></pre>
-
-<p>D: TF</p>
-
-<pre><code>press coin return
-    3.2V, 0V, 3.2V
-</code></pre>
 ]]></content>
   </entry>
   

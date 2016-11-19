@@ -9,10 +9,12 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="那一段我仅有的青春。
-很短，很简单。
-如果你有类似的经历，会很有共鸣，很有意思。
-">
+  <meta name="description" content="2016-10-28:最新网址：https://gems.ruby-china.org
+封网，rubygems.org 不行了
+bundle install 自然也不行
+点算？
+https://ruby.taobao.org 是一个完整的 rubygems.org 镜像，用以代替官网
+用法： &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +68,121 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/23/gfw-bundle-install/">GFW Rubygems Bundle Install</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-23T01:16:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:16 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-10-28:最新网址：<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a><br/>
+封网，rubygems.org 不行了<br/>
+<code>bundle install</code>  自然也不行<br/>
+点算？<br/>
+<a href="https://ruby.taobao.org">https://ruby.taobao.org</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
+用法：</p>
+
+<pre><code>gem sources --remove https://rubygems.org/
+gem sources -a https://ruby.taobao.org/
+gem sources -l
+</code></pre>
+
+<p>输出：</p>
+
+<pre><code>*** CURRENT SOURCES ***  
+
+https://ruby.taobao.org  
+</code></pre>
+
+<p>确保只有 ruby.taobao.org</p>
+
+<p>Ubuntu 14.04，安装octopress,执行</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>一直提示缺少各种 gem 包，例如：</p>
+
+<pre><code>```
+Gem::RemoteFetcher::FetchError: SSL_connect SYSCALL returned=5 errno=0 state=unknown state (https://rubygems.global.ssl.fastly.net/gems/safe_yaml-1.0.4.gem)
+An error occurred while installing safe_yaml (1.0.4), and Bundler cannot continue.
+Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
+
+```
+</code></pre>
+
+<p>按提示输入命令 <code>gem install safe_yaml -v '1.0.4'</code> 安装依赖项，但是安装了一个又一个，一个又一个，实在太多太慢太麻烦了</p>
+
+<p>解决方法：</p>
+
+<p>修改octopress文件夹里的Gemfile文件：</p>
+
+<p>把：<br/>
+<code>source "https://rubygems.org"</code><br/>
+改为：<br/>
+<code>source "https://ruby.taobao.org"</code><br/>
+再执行：</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>完美通过。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/07/20/keyboard-configuration/">更改键盘布局</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-07-20T22:24:02+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:24 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>键盘布局出错，想打‘#’，却出现一个类似‘f’的符号，打‘|’却出现‘~’。<br/>
+run：</p>
+
+<pre><code>sudo dpkg-reconfigure keyboard-configuration
+</code></pre>
+
+<p>会出现图形界面用以设置。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -164,104 +281,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/03/19/add-image/">Add Image</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-03-19T14:13:28+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>2:13 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>方法略繁复<br/>
-把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）<br/>
-把图片上传到github repository托管</p>
-
-<pre><code>git add .           # don't forget the "."
-git commit -m 'your message'
-git push origin source
-</code></pre>
-
-<p>进入github抓取图片链接地址（先打开图片，然后鼠标右击图片，在新标签页中打开图片=或者=查看图片）<br/>
-示例地址：<br/>
-<a href="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png">https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png</a><br/>
-使用 ![描述](图片链接地址) 插入图像<br/>
-示例：<br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png" alt="image test" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/03/06/goagent/">GoAgent</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-03-06T15:01:31+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:01 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2016-01-09  goagent的github仓库已经全部删除，it&rsquo;s gone.</p>
-
-<p><a href="https://github.com/goagent/goagent">新网址</a><br/>
-<a href="http://git.io/goa">压缩包下载地址</a><br/>
-<a href="https://github.com/goagent/goagent/blob/wiki/SimpleGuide.md">简易教程</a></p>
-
-<p><strong>部署</strong></p>
-
-<ol>
-<li>申请 Google Appengine 并创建 appid。</li>
-<li>下载 <a href="https://github.com/goagent/goagent">goagent</a></li>
-<li>修改 local\proxy.ini 中的 [gae] 下的 appid = 你的appid(多appid请用|隔开)</li>
-<li>运行 uploader.bat 或 uploader.py 开始上传, 成功后即可使用了。</li>
-</ol>
-
-
-<p><strong>使用</strong></p>
-
-<ul>
-<li>Windows 用户推荐使用 goagent.exe 托盘图标设置 IE 代理(对其它浏览器也有效)。</li>
-<li>Chrome/Opera 请安装 SwitchyOmega 插件(下载到本地然后拖放文件到扩展设置)，导入 SwitchyOptions.bak</li>
-<li>Firefox 请安装 FoxyProxy ，Firefox需要导入证书，方法请见 FAQ</li>
-<li>出现连接不上的情况可以尝试使用 gscan 或 GoGo Tester 测速。</li>
-</ul>
-
-
-<p><a href="https://github.com/goagent/goagent/blob/wiki/InstallGuide.md">图文教程</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/15">&larr; Older</a>
@@ -277,6 +296,14 @@ git push origin source
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/11/19/screen-light/">Screen Light</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/11/19/ruby-version/">Ruby Version</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/11/19/halfwidth-and-fullwidth-forms/">Halfwidth and Fullwidth Forms</a>
@@ -318,21 +345,13 @@ git push origin source
         <a href="/blog/2016/10/28/zai-lai-liu-pan-shui/">Come Liupanshui Again</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/09/05/display-icon-error/">Icon Display Error</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/09/04/business-trip-to-liupanshui/">出差六盘水</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/personal/'>personal (50)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (45)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (47)</a></li>
 
   </ul>
 </section>

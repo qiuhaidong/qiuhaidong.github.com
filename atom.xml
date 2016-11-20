@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-20T13:41:12+08:00</updated>
+  <updated>2016-11-20T13:44:10+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Uninstall and Update Command]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/20/uninstall-command/"/>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/20/uninstall-and-update-command/"/>
     <updated>2016-11-20T13:35:45+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/20/uninstall-command</id>
+    <id>https://qiuhaidong.github.io/blog/2016/11/20/uninstall-and-update-command</id>
     <content type="html"><![CDATA[<pre><code>sudo apt-get purge ***
 sudo apt-get remove ***
 sudo apt-get autoremove

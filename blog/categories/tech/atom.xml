@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-19T12:09:13+08:00</updated>
+  <updated>2016-11-20T13:41:12+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Uninstall and Update Command]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/20/uninstall-command/"/>
+    <updated>2016-11-20T13:35:45+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/20/uninstall-command</id>
+    <content type="html"><![CDATA[<pre><code>sudo apt-get purge ***
+sudo apt-get remove ***
+sudo apt-get autoremove
+sudo apt-get clean
+sudo apt-get update
+sudo apt list --upgradable
+sudo apt upgrade
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Screen Light]]></title>
@@ -80,15 +96,6 @@ Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.e
 第二个，取消开机项目<br/>
 开始菜单→运行→输入“msconfig”，回车→在『启动』选项卡中，找到那个安装程序的对应的值（如果不知道就把一些没有必要的全部去掉），去掉前面的“√”，保存，退出。<br/>
 重启电脑。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SQL: Edit More Than 200 Item]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/13/sql-edit-more-than-200-item/"/>
-    <updated>2016-11-13T18:27:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/13/sql-edit-more-than-200-item</id>
-    <content type="html"><![CDATA[<p>工具，选项，SQL Server 对象资源管理器，命令……</p>
 ]]></content>
   </entry>
   

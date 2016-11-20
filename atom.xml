@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-19T12:09:13+08:00</updated>
+  <updated>2016-11-20T13:41:12+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Uninstall and Update Command]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/20/uninstall-command/"/>
+    <updated>2016-11-20T13:35:45+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/20/uninstall-command</id>
+    <content type="html"><![CDATA[<pre><code>sudo apt-get purge ***
+sudo apt-get remove ***
+sudo apt-get autoremove
+sudo apt-get clean
+sudo apt-get update
+sudo apt list --upgradable
+sudo apt upgrade
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Screen Light]]></title>
@@ -383,19 +399,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     <id>https://qiuhaidong.github.io/blog/2016/08/28/system-link</id>
     <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E7%B3%BB%E7%BB%9F%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg" alt="系统接线图" /><br/>
 三辊闸，淘气堡，后台终端管理，扣费由场地决定，投币数设置为1即可。若扣费50，投币50，会导致三辊闸打开时间过长，比如连续20秒～～～</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SQL Server Autobackup]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/08/25/sql-server-autobackup/"/>
-    <updated>2016-08-25T13:23:32+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/08/25/sql-server-autobackup</id>
-    <content type="html"><![CDATA[<p>前提:<strong>SQL Server 代理</strong>开机自启<br/>
-控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:<strong>自动</strong><br/>
-Microsoft SQL Server Management Studio，<em>192.168.0.250,1433</em>，管理，维护计划，右键，维护计划向导……<br/>
-若要做多个备份，重复上个步骤<br/>
-Done.</p>
 ]]></content>
   </entry>
   

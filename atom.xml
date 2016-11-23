@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-20T13:44:10+08:00</updated>
+  <updated>2016-11-23T23:02:10+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RUN RED LIGHT]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/23/i-run-a-red-light/"/>
+    <updated>2016-11-23T22:49:38+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/23/i-run-a-red-light</id>
+    <content type="html"><![CDATA[<h3>VERY DANGEROUS!</h3>
+
+<h3>FOR MYSELY AND THE OTHER PEOPLE WHO DROVE!</h3>
+
+<h3>YOU FOOL!</h3>
+
+<h3>NEVER DO THAT ANY MORE!</h3>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Uninstall and Update Command]]></title>
@@ -389,16 +404,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     <content type="html"><![CDATA[<p>2016-08-30 04:01<br/>
 这几天，没吃蔬菜，没定时定量，闹肚子了，凌晨3点多，在厕所蹲到脚麻，肚子痛到全身没力。
 <img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/Screenshot_2016-08-30-04-01-40.png" alt="2016-08-30 04:01" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Alien System]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/08/28/system-link/"/>
-    <updated>2016-08-28T21:06:27+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/08/28/system-link</id>
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E7%B3%BB%E7%BB%9F%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg" alt="系统接线图" /><br/>
-三辊闸，淘气堡，后台终端管理，扣费由场地决定，投币数设置为1即可。若扣费50，投币50，会导致三辊闸打开时间过长，比如连续20秒～～～</p>
 ]]></content>
   </entry>
   

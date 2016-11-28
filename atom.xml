@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-11-25T00:50:12+08:00</updated>
+  <updated>2016-11-29T00:29:29+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Brave]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/11/29/brave/"/>
+    <updated>2016-11-29T00:28:01+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/11/29/brave</id>
+    <content type="html"><![CDATA[<p>勇敢走出去，会有新天地！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘]]></title>
@@ -410,19 +419,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 
 <p><em>或者使用:SQL安装挂起解决工具免安装版.exe</em><br/>
 <strong>DG：在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项——SQL2000安装挂起.reg</strong></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Smile]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/08/31/smile/"/>
-    <updated>2016-08-31T20:12:12+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/08/31/smile</id>
-    <content type="html"><![CDATA[<p>在难搞的日子笑出声来</p>
-
-<p>想起我父亲，小时候有一次，好像是晚上，我没有原因地闹小性子，用我们家乡话叫：放烂。我父亲没有打我没有骂我，而是给我一瓶八宝粥哄我。</p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E8%83%A1%E5%AD%90%E5%A4%B4%E5%83%8F.jpg" alt="头像" /></p>
 ]]></content>
   </entry>
   

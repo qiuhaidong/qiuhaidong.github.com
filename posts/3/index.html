@@ -9,11 +9,9 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="MACHINE: fish hunting
-black pan: GND
-red pan:
-A: co1 press 100 voltage change from 3.36V to almost 0V,and then come back to 3.36V
-PRESS 10 3.36V,0.9V &hellip;">
+  <meta name="description" content="原博文
+windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是： sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no 然而并没有什么效果，ubuntu16. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +65,55 @@ PRESS 10 3.36V,0.9V &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">Time Stuff Between Windows10 and Ubuntu</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-10T21:37:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:37 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.cnblogs.com/qf19910623/p/5559514.html">原博文</a><br/>
+windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：</p>
+
+<pre><code>sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no
+</code></pre>
+
+<p>然而并没有什么效果，ubuntu16.04里面根本就没有utc这一项！<br/>
+后来谷歌了半天找到了一个完美解决办法：<br/>
+先在ubuntu下更新一下时间，确保时间无误：</p>
+
+<pre><code>sudo apt-get install ntpdate
+sudo ntpdate time.windows.com
+</code></pre>
+
+<p>然后将时间更新到硬件上：</p>
+
+<pre><code>sudo hwclock --localtime --systohc
+</code></pre>
+
+<p>重新进入windows10，发现时间恢复正常了！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -269,44 +316,6 @@ excerpt_separator: &ldquo;</div>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/10/28/install-again/">Install Again</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-10-28T02:22:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:22 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>something new:<br/>
-install git:</p>
-
-<pre><code>sudo apt-get install git
-</code></pre>
-
-<p>don&rsquo;t install from ppa anymore.<br/>
-install rvm: run the command from official website,the latest version,maybe not the stable version.<br/>
-install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official website，the latest version,for exemple:2.3.1  the old version may got some problem when install the gem package.<br/>
-<code>rubygems bundle install</code>its address has change,the latest version is<a href="https://gems.ruby-china.org">Ruby China</a>，we could check it out from the origin official website.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/4">&larr; Older</a>
@@ -322,6 +331,10 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/12/04/my-nba/">小谈 NBA</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/11/29/brave/">Brave</a>
@@ -367,16 +380,12 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
         <a href="/blog/2016/11/10/Voltage-change/">Voltage Change</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/11/10/failed-when-gem-install-therubyracer/">Failed When: Gem Install Therubyracer</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/personal/'>personal (51)</a></li>
+    <li class='category'><a href='/blog/categories/personal/'>personal (52)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (50)</a></li>
 
   </ul>

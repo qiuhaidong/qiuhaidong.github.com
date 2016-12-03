@@ -9,14 +9,13 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="下载页面
-Windows版
-Ubuntu（32位）版
-android
-一键安装，双击即可
-Lantern官网
-官网自然受到GFW的特殊照顾，要翻了墙才能访问到
-">
+  <meta name="description" content="参见原博
+新建文本，扩展名为sh，扩展名并不影响脚本的执行，见名知意即可，若是用PHP编写，扩展名就用php
+终端下先执行： rvm use 1.9.3 再执行脚本
+代码： #!/bin/sh
+cd /home/dong/octopress
+git pull origin source
+rake &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +69,68 @@ Lantern官网
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/09/shell-script/">Shell脚本</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-09T17:08:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:08 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://github.com/qinjx/30min_guides/blob/master/shell.md">参见原博</a><br/>
+新建文本，扩展名为sh，扩展名并不影响脚本的执行，见名知意即可，若是用PHP编写，扩展名就用php<br/>
+终端下先执行：</p>
+
+<pre><code>rvm use 1.9.3
+</code></pre>
+
+<p>再执行脚本<br/>
+代码：</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+git pull origin source
+rake generate deploy
+</code></pre>
+
+<p>保存即可(文件名为pull.sh)<br/>
+运行脚本，终端命令：</p>
+
+<pre><code>chmod +x pull.sh
+./pull.sh
+</code></pre>
+
+<p>别漏了前面的符号.</p>
+
+<p>push.sh</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+rake generate deploy
+git add .
+git commit -m 'update'
+git push origin source
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -202,60 +263,6 @@ Lantern官网
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/09/08/be-good/">好好生活</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-09-08T09:14:00+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>9:14 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>好好睡<br/>
-好好吃喝<br/>
-锻炼身体<br/>
-读书<br/>
-做家务<br/>
-看好的电影，电视剧，节目<br/>
-好好听音乐<br/>
-好好上网</p>
-
-<p>2015.09.08 吃了早餐，喝了水<br/>
-2015.09.09 <strong><em>今天凌晨1点半才睡觉</em></strong>，不好，吃了早餐<br/>
-2015.09.10 <strong><em>苹果发布会，熬了半夜</em></strong>，其他正常<br/>
-2015.09.11 <strong><em>看优酷，1点半晚睡</em></strong>，……blue<br/>
-2015.09.12 <strong><em>还是晚睡</em></strong>，……blue<br/>
-2015.09.13 <strong><em>00：52</em></strong>，12k，man<br/>
-2015.10.05 00：30，lue，撑体向上，仰卧起坐130个<br/>
-2015.10.06 00：12，溢，吃早餐，今天运动方面估计要停一停了，来了两天，劳逸结合吧。吃宵夜。<br/>
-2015.10.07 00：41，今天腹肌酸疼，前天练的乳酸。晚上吃了个苹果，23：51就睡觉了。
-2015.10.08 晚上吃了半个月饼作宵夜。<br/>
-2015.10.09 00：33睡觉。<br/>
-hold on，7/8/9/10<br/>
-偷个小懒，歇了几天，现在继续<br/>
-2015.10.15 别吃太饱，中午吃了8分饱，很好</p>
-
-<p>2015.10.18 低谷，痛苦，逃避，麻木，更低迷……周而复始，我会毁了<br/>
-2015.12.20 00：51，睡觉</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/14">&larr; Older</a>
@@ -271,6 +278,10 @@ hold on，7/8/9/10<br/>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/12/04/my-nba/">小谈 NBA</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/11/29/brave/">Brave</a>
@@ -316,16 +327,12 @@ hold on，7/8/9/10<br/>
         <a href="/blog/2016/11/10/Voltage-change/">Voltage Change</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/11/10/failed-when-gem-install-therubyracer/">Failed When: Gem Install Therubyracer</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/personal/'>personal (51)</a></li>
+    <li class='category'><a href='/blog/categories/personal/'>personal (52)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (50)</a></li>
 
   </ul>

@@ -9,13 +9,10 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="自动登录：
-win+r：Control UserPasswords2
-Administrator
-自启动：
-win+r：shell:startup
-文件夹已打开，把软件的快捷方式添加进去即可
-">
+  <meta name="description" content="参考官方说明
+attention:有些commend不适合ubuntu，要区分
+参见另一篇blog
+install mono,(mono-complete and monodevelop): sudo apt-get install mono-complete monodevelop edit: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,6 +66,58 @@ win+r：shell:startup
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/20/C%23-on-Linux/">C# on Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-20T14:18:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:18 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives">参考官方说明</a><br/>
+attention:有些commend不适合ubuntu，要区分<br/>
+<a href="http://blog.csdn.net/caspiansea/article/details/50585025">参见另一篇blog</a><br/>
+install mono,(mono-complete and monodevelop):</p>
+
+<pre><code>sudo apt-get install mono-complete monodevelop
+</code></pre>
+
+<p>edit:</p>
+
+<pre><code>vim helloworld.cs
+</code></pre>
+
+<p>build:</p>
+
+<pre><code>mcs helloworld.cd
+</code></pre>
+
+<p>run:</p>
+
+<pre><code>./helloworld.exe
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -254,80 +303,6 @@ int main()
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/05/24/vim/">Vim</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-05-24T19:13:46+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>7:13 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>终端执行命令：</h4>
-
-<pre><code>vimtutor
-</code></pre>
-
-<p>查看《VIM教程》</p>
-
-<h4>基本操作：</h4>
-
-<p>光标移动：<br/>
-h：左<br/>
-j：下<br/>
-k：上<br/>
-l：右</p>
-
-<h4>正常模式==>输入模式：</h4>
-
-<p>i：左边输入<br/>
-I：行首输入（In the front）<br/>
-a：右边输入（after）<br/>
-A：行尾输入（After）<br/>
-o：下面输入一新行<br/>
-O：上面输入一新行<br/>
-s：删除字符再输入<br/>
-S：删除行再输入</p>
-
-<h4>其他模式==>正常模式：</h4>
-
-<p>Esc</p>
-
-<h4>正常模式==>命令模式：</h4>
-
-<p>:<br/>
-(shift加分号，英文输入法下)</p>
-
-<h4>正常模式==>可视模式：</h4>
-
-<p>v：可视模式<br/>
-V:可视块模式</p>
-
-<h4>常用命令：</h4>
-
-<p>:w<enter> 保存<br/>
-:q<enter> 退出<br/>
-:wq<enter> 保存后退出<br/>
-:q!<enter> 不保存，强制退出</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/8">&larr; Older</a>
@@ -343,6 +318,10 @@ V:可视块模式</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/12/24/do-not-write-for-long-sometime/">好久没写字</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2016/12/04/my-nba/">小谈 NBA</a>
@@ -386,10 +365,6 @@ V:可视块模式</p>
     
       <li class="post">
         <a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">Time Stuff Between Windows10 and Ubuntu</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/11/10/Voltage-change/">Voltage Change</a>
       </li>
     
   </ul>

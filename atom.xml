@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2016-12-21T17:41:19+08:00</updated>
+  <updated>2016-12-24T18:08:54+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[好久没写字]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/12/24/do-not-write-for-long-sometime/"/>
+    <updated>2016-12-24T18:07:17+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/12/24/do-not-write-for-long-sometime</id>
+    <content type="html"><![CDATA[<p>也好久没读书。<br/>
+捡起来。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[小谈 NBA]]></title>
@@ -409,16 +419,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 第一次坐火车超过24小时。<br/>
 第一次住宾馆超过一个月。<br/>
 第一次可以说是真正意义上的去外省。我以前在广西工作，但离广东不到10公里，当然如果你说广西不是外省，中国移动会坚决反对！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[解压 Extract]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/09/03/extract/"/>
-    <updated>2016-09-03T20:52:13+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/09/03/extract</id>
-    <content type="html"><![CDATA[<pre><code>sudo apt-get install rar unrar p7zip-full p7zip-rar
-</code></pre>
 ]]></content>
   </entry>
   

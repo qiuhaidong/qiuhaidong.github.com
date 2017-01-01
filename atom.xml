@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2017-01-01T00:11:24+08:00</updated>
+  <updated>2017-01-01T23:35:37+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Watch]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2017/01/01/watch/"/>
+    <updated>2017-01-01T23:29:25+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2017/01/01/watch</id>
+    <content type="html"><![CDATA[<p><img src="http://ww3.sinaimg.cn/large/780bc50fgw1fbbjh1gn9wj21at1fth1u.jpg" alt="1" /><br/>
+<img src="http://ww3.sinaimg.cn/large/780bc50fgw1fbbjh5f7ymj21aj1d1gzi.jpg" alt="2" /><br/>
+<img src="http://ww4.sinaimg.cn/large/780bc50fgw1fbbjhdo8yej224n2dse81.jpg" alt="3" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Run After 6 Months]]></title>
@@ -406,15 +417,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     <id>https://qiuhaidong.github.io/blog/2016/10/28/zai-lai-liu-pan-shui</id>
     <content type="html"><![CDATA[<p>世事难料。<br/>
 坚守本心。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Icon Display Error]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/09/05/display-icon-error/"/>
-    <updated>2016-09-05T13:26:50+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/09/05/display-icon-error</id>
-    <content type="html"><![CDATA[<p>控制面板，显示，更改大小，应用，注销，再把大小改回来。</p>
 ]]></content>
   </entry>
   

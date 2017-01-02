@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2017-01-01T23:45:32+08:00</updated>
+  <updated>2017-01-02T11:34:56+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,13 +14,23 @@
 
   
   <entry>
+    <title type="html"><![CDATA[02]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2017/01/02/02/"/>
+    <updated>2017-01-02T11:33:32+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2017/01/02/02</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Watch]]></title>
     <link href="https://qiuhaidong.github.io/blog/2017/01/01/watch/"/>
     <updated>2017-01-01T23:29:25+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2017/01/01/watch</id>
     <content type="html"><![CDATA[<p><img src="http://ww4.sinaimg.cn/large/780bc50fgw1fbbk3hv0edj21at1ftqjq.jpg" alt="1" /><br/>
 <img src="http://ww1.sinaimg.cn/large/780bc50fgw1fbbk3mfvguj21aj1d1gzi.jpg" alt="2" /><br/>
-<img src="http://ww3.sinaimg.cn/large/780bc50fgw1fbbk48zmfqj224n2dse81.jpg" alt="3" /></p>
+<img src="http://ww3.sinaimg.cn/large/780bc50fgw1fbbk48zmfqj224n2dse81.jpg" alt="3" /><br/>
+<img src="http://ww4.sinaimg.cn/large/780bc50fgw1fbbl392o0kj22eo37k1kx.jpg" alt="4" /></p>
 ]]></content>
   </entry>
   
@@ -407,16 +417,6 @@ install git:</p>
 install rvm: run the command from official website,the latest version,maybe not the stable version.<br/>
 install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official website，the latest version,for exemple:2.3.1  the old version may got some problem when install the gem package.<br/>
 <code>rubygems bundle install</code>its address has change,the latest version is<a href="https://gems.ruby-china.org">Ruby China</a>，we could check it out from the origin official website.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Come Liupanshui Again]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/10/28/zai-lai-liu-pan-shui/"/>
-    <updated>2016-10-28T02:10:25+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/10/28/zai-lai-liu-pan-shui</id>
-    <content type="html"><![CDATA[<p>世事难料。<br/>
-坚守本心。</p>
 ]]></content>
   </entry>
   

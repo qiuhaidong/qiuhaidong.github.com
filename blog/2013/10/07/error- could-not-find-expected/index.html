@@ -36,7 +36,7 @@ identical source/stylesheets/screen.css /home/dong/.rvm/ &hellip;">
 
 
 <!-- load sina weibo share -->
-<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
 
@@ -141,10 +141,9 @@ identical source/stylesheets/screen.css
   
   
   
-
-{ % if site.weibo_share % }
-    <wb:share-button appkey="4120489290" addition="simple" type="button" ralateUid="2014037263"></wb:share-button>
-{ % endif % }
+  
+    <wb:share-button appkey="4120489290" addition="simple" type="button" ralateUid="2014037263" language="zh_cn"></wb:share-button>
+  
 </div>
 
     

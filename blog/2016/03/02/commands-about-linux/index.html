@@ -37,7 +37,7 @@ Linux命令格式: 命令名 [选项] [参数1] [参数2] …… 命令与参数
 
 
 <!-- load sina weibo share -->
-<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
 
@@ -156,10 +156,9 @@ Linux中，一个文件是一组数据的集合，可理解为一个字符流或
   
   
   
-
-{ % if site.weibo_share % }
-    <wb:share-button appkey="4120489290" addition="simple" type="button" ralateUid="2014037263"></wb:share-button>
-{ % endif % }
+  
+    <wb:share-button appkey="4120489290" addition="simple" type="button" ralateUid="2014037263" language="zh_cn"></wb:share-button>
+  
 </div>
 
     

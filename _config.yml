@@ -84,4 +84,8 @@ github_skip_forks: true
 #disqus_short_name:
 #disqus_show_comment_count: false
 
+#weibo share
+weibo_share: true
+
+
 

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en" xmlns:wb="http://open.weibo.com/wb"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <title>Markdown语法简明手册 - Haydn Yau</title>
@@ -31,6 +31,10 @@
 <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+
+
+<!-- load sina weibo share -->
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
 
 </head>
 
@@ -196,6 +200,10 @@
   
   
   
+
+{ % if site.weibo_share % }
+    <wb:share-button appkey="4120489290" addition="simple" type="button" ralateUid="2014037263"></wb:share-button>
+{ % endif % }
 </div>
 
     

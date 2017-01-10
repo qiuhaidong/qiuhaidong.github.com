@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2017-01-07T01:44:04+08:00</updated>
+  <updated>2017-01-10T23:38:31+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[人际关系]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2017/01/10/relationship-between-human-being/"/>
+    <updated>2017-01-10T23:35:07+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2017/01/10/relationship-between-human-being</id>
+    <content type="html"><![CDATA[<p>表达方式，效果，比目的重要。<br/>
+恰当的方式更能达成效果。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[认识你自己]]></title>
@@ -402,24 +412,6 @@ github_skip_forks: true</p>
 <p>.# Disqus Comments<br/>
 .#disqus_short_name:<br/>
 .#disqus_show_comment_count: false</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Install Again]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/10/28/install-again/"/>
-    <updated>2016-10-28T02:22:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/10/28/install-again</id>
-    <content type="html"><![CDATA[<p>something new:<br/>
-install git:</p>
-
-<pre><code>sudo apt-get install git
-</code></pre>
-
-<p>don&rsquo;t install from ppa anymore.<br/>
-install rvm: run the command from official website,the latest version,maybe not the stable version.<br/>
-install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official website，the latest version,for exemple:2.3.1  the old version may got some problem when install the gem package.<br/>
-<code>rubygems bundle install</code>its address has change,the latest version is<a href="https://gems.ruby-china.org">Ruby China</a>，we could check it out from the origin official website.</p>
 ]]></content>
   </entry>
   

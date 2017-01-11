@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2017-01-11T00:04:35+08:00</updated>
+  <updated>2017-01-11T19:43:36+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Kindle Something]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2017/01/11/kindle-something/"/>
+    <updated>2017-01-11T19:39:19+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2017/01/11/kindle-something</id>
+    <content type="html"><![CDATA[<p>1.Kindle安卓客户端非常差，打开登录慢，下载慢。估计为了不影响Kindle的销量做了负优化。ios客户端也难逃厄运吧。<br/>
+2.手机，红米，别折腾稳定版开发版，6.0，7.0.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Running From Xiyuan to Dafushan]]></title>
@@ -321,17 +331,6 @@ PRESS 10
 </code></pre>
 
 <p>corrupt:broken;the package is broken,so remove /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem,then redownload and reinstall,successed.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Bad Night]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/10/31/bad-night/"/>
-    <updated>2016-10-31T03:02:55+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/10/31/bad-night</id>
-    <content type="html"><![CDATA[<p>Got a lot of nightmares on those days.<br/>
-So many bad things,bad days.<br/>
-Got to carry on.</p>
 ]]></content>
   </entry>
   

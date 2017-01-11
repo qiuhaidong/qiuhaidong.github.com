@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "kindle something"
+title: "kindle 红米二三事"
 date: 2017-01-11 19:39:19 +0800
 comments: true
 categories: 

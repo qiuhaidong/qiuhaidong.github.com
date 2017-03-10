@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2017-02-02T12:05:18+08:00</updated>
+  <updated>2017-03-10T12:43:21+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[梦回]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2017/03/03/become-deskmate-in-dream/"/>
+    <updated>2017-03-03T06:48:14+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2017/03/03/become-deskmate-in-dream</id>
+    <content type="html"><![CDATA[<p>这个梦太好<br/>
+我一下子醒了<br/>
+似乎不配拥有<br/>
+只模糊记得<br/>
+你和我以长大的模样回到过去<br/>
+学校重新排座位<br/>
+你和我迟迟未被安排<br/>
+我痴想你成为我的前桌<br/>
+终成了同桌的你<br/>
+带着一脸的嫌弃轻骂我<br/>
+手臂却越过三八线<br/>
+占据我的半张桌子写字<br/>
+我只觉得<br/>
+你是半个人在我怀中</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[河与桥]]></title>
@@ -307,42 +329,6 @@ sudo ntpdate time.windows.com
 </code></pre>
 
 <p>重新进入windows10，发现时间恢复正常了！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Voltage Change]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/10/Voltage-change/"/>
-    <updated>2016-11-10T15:03:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/10/Voltage-change</id>
-    <content type="html"><![CDATA[<p>MACHINE: fish hunting<br/>
-black pan: GND<br/>
-red pan:<br/>
-A: co1</p>
-
-<pre><code>press 100
-    voltage change from 3.36V to almost 0V,and then come back to 3.36V
-PRESS 10
-    3.36V,0.9V,3.36V
-</code></pre>
-
-<p>B: HP</p>
-
-<pre><code>press coin return
-    3.2V, 1.8V,3.2V
-</code></pre>
-
-<p>C: SSR</p>
-
-<pre><code>press coin return
-    5.0V, 0.48V, 5.0V
-</code></pre>
-
-<p>D: TF</p>
-
-<pre><code>press coin return
-    3.2V, 0V, 3.2V
-</code></pre>
 ]]></content>
   </entry>
   

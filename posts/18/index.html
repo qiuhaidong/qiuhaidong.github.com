@@ -9,8 +9,9 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="kindle可以截屏，同时按屏幕对角即可。
-但Amazon没宣传这功能。 定位 专注阅读。
+  <meta name="description" content="那一段我仅有的青春。
+很短，很简单。
+如果你有类似的经历，会很有共鸣，很有意思。
 ">
   
 
@@ -66,6 +67,37 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/07/19/in-the-wind/">人在风里</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-07-19T22:50:37+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:50 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>那一段我仅有的青春。<br/>
+很短，很简单。<br/>
+如果你有类似的经历，会很有共鸣，很有意思。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -231,98 +263,6 @@ git push origin source
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/03/05/tcpserver-error-address-already-in-use-bind-2/">TCPServer Error: Address Already in Use - Bind(2)</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-03-05T13:29:29+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:29 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在执行命令</p>
-
-<pre><code>rake preview
-</code></pre>
-
-<p>时，输出：</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ rake preview  
-Starting to watch source with Jekyll and Compass. Starting Rack on port 4000  
-&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.  
-Configuration file: /home/dong/octopress/_config.yml  
-[2015-03-05 13:22:19] INFO  WEBrick 1.3.1  
-[2015-03-05 13:22:19] INFO  ruby 1.9.3 (2014-11-13) [i686-linux]  
-[2015-03-05 13:22:19] WARN  TCPServer Error: Address already in use - bind(2)  
-/home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `initialize': Address already in use - bind(2) (Errno::EADDRINUSE)
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `new'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `block in create_listeners'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:82:in `each'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:82:in `create_listeners'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:82:in `listen'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:70:in `initialize'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:45:in `initialize'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/handler/webrick.rb:32:in `new'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/handler/webrick.rb:32:in `run'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/server.rb:286:in `start'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/server.rb:147:in `start'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/bin/rackup:4:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/rackup:23:in `load'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/rackup:23:in `&lt;main&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
-        Source: source
-   Destination: public
-      Generating... 
-                done.
-    write public/stylesheets/screen.css
- Auto-regeneration: enabled for 'source'
-</code></pre>
-
-<p>解决方法：<br/>
-执行：</p>
-
-<pre><code>sudo netstat -tulpn |grep 4000
-</code></pre>
-
-<p>得到：</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ sudo netstat -tulpn | grep 4000
-[sudo] password for dong: 
-tcp        0      0 127.0.0.1:4000          0.0.0.0:*               LISTEN      2889/rackup  
-</code></pre>
-
-<p>执行：</p>
-
-<pre><code>kill -9 2889
-</code></pre>
-
-<p>得到：</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ kill -9 2889
-dong@Ubuntu:~/octopress$
-</code></pre>
-
-<p>done.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/19">&larr; Older</a>
@@ -338,6 +278,10 @@ dong@Ubuntu:~/octopress$
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/05/16/about-marriage/">关于婚姻，关于不婚</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/04/27/huai-ji-yu-ye/">怀集雨夜</a>
@@ -383,16 +327,12 @@ dong@Ubuntu:~/octopress$
         <a href="/blog/2017/01/01/run-after-6-months/">Run After 6 Months</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2016/12/24/do-not-write-for-long-sometime/">好久没写字</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/personal/'>personal (62)</a></li>
+    <li class='category'><a href='/blog/categories/personal/'>personal (63)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (50)</a></li>
 
   </ul>

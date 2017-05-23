@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2017-05-16T14:25:35+08:00</updated>
+  <updated>2017-05-23T12:01:42+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[菊次郎的夏天]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2017/05/23/ju-ci-lang-de-xia-tian/"/>
+    <updated>2017-05-23T11:58:35+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2017/05/23/ju-ci-lang-de-xia-tian</id>
+    <content type="html"><![CDATA[<p>那些已冷藏的伤疤，被温暖照亮，却愈发刺眼。<br/>
+<img src="http://r.photo.store.qq.com/psb?/V13NDf2z0er9V4/gEEtVVwokP3l3d8.*duRr7cZTSt2bXHsR2Dn2jcwWts!/r/dFYBAAAAAAAA" alt="1" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[关于婚姻，关于不婚]]></title>
@@ -302,16 +312,6 @@ GRUB_CMDLINE_LINUX=&ldquo;<strong><em>acpi_osi=Linux</em></strong>&rdquo;</p>
 
 <pre><code>sudo update-grub
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ruby Version]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/19/ruby-version/"/>
-    <updated>2016-11-19T11:52:18+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/19/ruby-version</id>
-    <content type="html"><![CDATA[<p>2016-11-19<br/>
-ruby version:2.2.6</p>
 ]]></content>
   </entry>
   

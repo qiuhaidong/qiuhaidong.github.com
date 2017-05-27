@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2017-05-23T12:01:42+08:00</updated>
+  <updated>2017-05-27T14:00:00+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[成人的抉择]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2017/05/27/about-choice/"/>
+    <updated>2017-05-27T01:11:18+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2017/05/27/about-choice</id>
+    <content type="html"><![CDATA[<p><img src="http://r.photo.store.qq.com/psb?/V13NDf2z0er9V4/R.UjuC99btw5rzEcLoyXk*HznjZP2JOQc4xKsgxEKm0!/r/dGsBAAAAAAAA" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[菊次郎的夏天]]></title>
@@ -291,26 +300,6 @@ sudo apt-get clean
 sudo apt-get update
 sudo apt list --upgradable
 sudo apt upgrade
-</code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Screen Light]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/19/screen-light/"/>
-    <updated>2016-11-19T11:53:44+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/19/screen-light</id>
-    <content type="html"><![CDATA[<pre><code>sudo gedit /etc/default/grub
-</code></pre>
-
-<p>更改为：(斜黑体部分)</p>
-
-<p>GRUB_CMDLINE_LINUX_DEFAULT=&ldquo;quiet splash&rdquo;<br/>
-GRUB_CMDLINE_LINUX=&ldquo;<strong><em>acpi_osi=Linux</em></strong>&rdquo;</p>
-
-<p>(东哥：13.04、16.04按Fn有效调节)</p>
-
-<pre><code>sudo update-grub
 </code></pre>
 ]]></content>
   </entry>

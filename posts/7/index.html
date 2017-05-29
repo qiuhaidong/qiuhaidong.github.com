@@ -9,9 +9,9 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="something new:
-install git: sudo apt-get install git don&rsquo;t install from ppa anymore.
-install rvm: run the command from official website,the &hellip;">
+  <meta name="description" content=".# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #
+.# Main Configs #
+.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; # url: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,85 @@ install rvm: run the command from official website,the &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/10/29/config-dot-yml/">config.yml</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-10-29T00:19:30+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:19 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
+.#      Main Configs       #<br/>
+.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
+
+<p>url: <a href="https://qiuhaidong.github.io">https://qiuhaidong.github.io</a><br/>
+title: Haydn Yau<br/>
+subtitle:<br/>
+author: 丘海东<br/>
+simple_search: <a href="https://www.google.com/search">https://www.google.com/search</a><br/>
+description:</p>
+
+<p>.# Default date format is &ldquo;ordinal&rdquo; (resulting in &ldquo;July 22nd 2007&rdquo;)<br/>
+.# You can customize the format as defined in<br/>
+.# <a href="http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime">http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime</a><br/>
+.# Additionally, %o will give you the ordinal representation of the day<br/>
+date_format: &ldquo;ordinal&rdquo;</p>
+
+<p>.# RSS / Email (optional) subscription links (change if using something like Feedburner)<br/>
+subscribe_rss: /atom.xml<br/>
+subscribe_email:<br/>
+.# RSS feeds can list your email address if you like<br/>
+email:</p>
+
+<p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
+.#    Jekyll &amp; Plugins     #<br/>
+.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
+
+<p>.# If publishing to a subdirectory as in <a href="http://site.com/project">http://site.com/project</a> set &lsquo;root: /project&rsquo;<br/>
+root: /<br/>
+permalink: /blog/:year/:month/:day/:title/<br/>
+source: source<br/>
+destination: public<br/>
+plugins: plugins<br/>
+code_dir: downloads/code<br/>
+category_dir: blog/categories<br/>
+markdown: rdiscount<br/>
+rdiscount:<br/>
+  extensions:<br/>
+    - autolink<br/>
+    - footnotes<br/>
+    - smart<br/>
+highlighter: pygments # default python pygments have been replaced by pygments.rb</p>
+
+<p>paginate: 5                     # Posts per page on the blog index<br/>
+paginate_path: &ldquo;posts/:num&rdquo;     # Directory base for pagination URLs eg. /posts/2/<br/>
+recent_posts: 5               # Posts in the sidebar Recent Posts section<br/>
+excerpt_link: &ldquo;Read on &rarr;&rdquo;  # &ldquo;Continue reading&rdquo; link text at the bottom of excerpted articles<br/>
+excerpt_separator: &ldquo;</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2016/10/29/config-dot-yml/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -197,36 +276,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/09/03/extract/">解压 Extract</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-09-03T20:52:13+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>8:52 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><pre><code>sudo apt-get install rar unrar p7zip-full p7zip-rar
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/8">&larr; Older</a>
@@ -242,6 +291,10 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/05/27/redmi-note-4/">我的手机体验</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/05/27/about-choice/">成人的抉择</a>
@@ -285,10 +338,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     
       <li class="post">
         <a href="/blog/2017/01/10/relationship-between-human-being/">人际关系</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/01/07/07/">认识你自己</a>
       </li>
     
   </ul>

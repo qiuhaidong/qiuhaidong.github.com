@@ -1,10 +1,11 @@
 ---
 layout: post
 date: 2017-05-27 18:02:00 +0800
-title: "我的手机体验"
+title: "About cellphone"
 ---
+###~~红米note 4 体验~~
+###我的手机体验
 2016-10-11入手的红米note 4，到现在已用了半年，实话说早就没有新鲜感了。但凭着不知廉耻的个性，和对电子产品的兴趣，想写点东西。  
-标题本想写：~~红米note 4 体验~~，想想后改了。  
 我的第一台手机是诺基亚1202，在2009年国庆前夕买的，一款直板黑白屏幕手机，很经典，现在还能用。  
 ![1202](http://r.photo.store.qq.com/psb?/V13NDf2z19tOOV/SBSAwBOD4bfLo6esy3poJN01Mn5ftwKEj0ooZhJrfDw!/r/dG0BAAAAAAAA)  
 第二台手机是三星S2812i，2013年7月19日买的，当时的低端入门级手机，现在也还能用。  

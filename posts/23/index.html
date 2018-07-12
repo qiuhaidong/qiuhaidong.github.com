@@ -9,7 +9,7 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="/var/cache/apt/archives
+  <meta name="description" content="会说谎 守时 职责、职能、职权——分明 人脉、信任 经营者心态
 ">
   
 
@@ -65,6 +65,82 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/28/shui-wen/">水汶</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-11-28T23:16:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:16 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>会说谎</p>
+
+<p>守时</p>
+
+<p>职责、职能、职权——分明</p>
+
+<p>人脉、信任</p>
+
+<p>经营者心态</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/15/update-libreoffice/">Update Libreoffice by PPA</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-11-15T00:32:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>12:32 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>现在最新的LibreOffice套装版本是4.1。每一个后续的版本可以立即在4.1的仓库中找到，直到新的主线版本比如4.2的推出。</p>
+
+<p>所以，为了在Ubuntu中自动的升级，请添加下面的软件仓库地址。</p>
+
+<pre><code>sudo add-apt-repository ppa:libreoffice/ppa 
+</code></pre>
+
+<p>接着，运行如下命令来升级最新的LibreOffice。</p>
+
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade 
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -296,94 +372,6 @@ git push origin source
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/07/error-%20could-not-find-expected/">Error: Could Not Find Expected ':'</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2013-10-07T11:14:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:14 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>出现错误要先看提示代码，知道错在哪里，如：</h4>
-
-<pre><code>dong@ubuntu:~/octopress$ rake generate
-## Generating Site with Jekyll
-identical source/stylesheets/screen.css 
-/home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse': (/home/dong/octopress/_config.yml): could not find expected ':' while scanning a simple key at line 10 column 1 (Psych::SyntaxError)
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse_stream'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:151:in `parse'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:127:in `load'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `block in load_file'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `open'
-    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `load_file'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p448/gems/jekyll-0.12.0/lib/jekyll.rb:130:in `configuration'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p448/gems/jekyll-0.12.0/bin/jekyll:221:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/jekyll:23:in `load'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/jekyll:23:in `&lt;main&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `eval'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
-</code></pre>
-
-<p>代码已经说得很清楚了，就是<strong><em>/home/dong/octopress/_config.yml</em></strong>，这个文件，<strong><em>could not find expected &lsquo;:&rsquo;</em></strong> while scanning a simple key <strong><em>at line 10 column 1</em></strong> (Psych::SyntaxError)<br/>
-<strong>就是'：'后面忘了加空格</strong></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/07/error-Could-not-find-syntax-1.0.0-in-any-of-the-sources/">Error: Could Not Find syntax-1.0.0 in Any of the Sources</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2013-10-07T11:00:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>if cout&lt;&lt;</h4>
-
-<pre><code>Could not find syntax-1.0.0 in any of the sources
-Run `bundle install` to install missing gems.
-</code></pre>
-
-<h4>run</h4>
-
-<pre><code>rvm use 1.9.3
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/24">&larr; Older</a>
@@ -399,6 +387,14 @@ Run `bundle install` to install missing gems.
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/07/13/20180713/">20180713</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/03/26/what-we-live-for/">活着——抉择</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/05/27/redmi-note-4/">About Cellphone</a>
@@ -440,20 +436,12 @@ Run `bundle install` to install missing gems.
         <a href="/blog/2017/01/11/kindle-something/">Kindle 红米二三事</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2017/01/10/running-from-xiyuan-to-dafushan/">跑步大夫山</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/01/10/relationship-between-human-being/">人际关系</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/personal/'>personal (63)</a></li>
+    <li class='category'><a href='/blog/categories/personal/'>personal (64)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (50)</a></li>
 
   </ul>
@@ -495,7 +483,7 @@ Run `bundle install` to install missing gems.
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2017 - 丘海东 -
+  Copyright &copy; 2018 - 丘海东 -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

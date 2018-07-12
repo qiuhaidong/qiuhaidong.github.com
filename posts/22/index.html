@@ -9,7 +9,8 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="中文输入法太差了 试用时就不行，以为安装了会好点，呵呵…… 看来以后得观望为主呀，没什么特别吸引人的新东西，不更新 说什么性能提升，都是虚的 2015.3.5 到了14.04.2，才好点 前两天，重装ubuntu 12.04，在setup octopress时，install RVM（命令为：） &hellip;">
+  <meta name="description" content="在tweak里安装，chromium偶尔有问题，还是用 chrome stable好 2015.3.6 wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+sudo dpkg -i google &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +65,79 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/26/install-chrome/">Install Chrome</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-04-26T18:09:48+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>6:09 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在tweak里安装，chromium偶尔有问题，还是用 chrome stable好</p>
+
+<p>2015.3.6</p>
+
+<pre><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+sudo dpkg -i google-chrome-stable_current_i386.deb
+</code></pre>
+
+<p>如果提示缺失依赖包，执行：</p>
+
+<pre><code>sudo apt-get install -f
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/26/install-dropbox/">Install Dropbox</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-04-26T18:07:16+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>6:07 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>先配置好翻墙</p>
+
+<p>从官网下载deb文件安装(tweak里安装不行)</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -185,82 +259,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/28/shui-wen/">水汶</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2013-11-28T23:16:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:16 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>会说谎</p>
-
-<p>守时</p>
-
-<p>职责、职能、职权——分明</p>
-
-<p>人脉、信任</p>
-
-<p>经营者心态</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/15/update-libreoffice/">Update Libreoffice by PPA</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2013-11-15T00:32:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>12:32 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>现在最新的LibreOffice套装版本是4.1。每一个后续的版本可以立即在4.1的仓库中找到，直到新的主线版本比如4.2的推出。</p>
-
-<p>所以，为了在Ubuntu中自动的升级，请添加下面的软件仓库地址。</p>
-
-<pre><code>sudo add-apt-repository ppa:libreoffice/ppa 
-</code></pre>
-
-<p>接着，运行如下命令来升级最新的LibreOffice。</p>
-
-<pre><code>sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade 
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/23">&larr; Older</a>
@@ -276,6 +274,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/07/13/20180713/">20180713</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/03/26/what-we-live-for/">活着——抉择</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2017/05/27/redmi-note-4/">About Cellphone</a>
@@ -317,20 +323,12 @@
         <a href="/blog/2017/01/11/kindle-something/">Kindle 红米二三事</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2017/01/10/running-from-xiyuan-to-dafushan/">跑步大夫山</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/01/10/relationship-between-human-being/">人际关系</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/personal/'>personal (63)</a></li>
+    <li class='category'><a href='/blog/categories/personal/'>personal (64)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (50)</a></li>
 
   </ul>
@@ -372,7 +370,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2017 - 丘海东 -
+  Copyright &copy; 2018 - 丘海东 -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

@@ -1,0 +1,8 @@
+---
+layout: post
+title: "20180713v02"
+date: 2018-07-13 11:42:35 +0800
+comments: true
+categories: 
+---
+![weibo image for this](http://wx2.sinaimg.cn/large/780bc50fly1ft836oajhnj237k2eoe81.jpg)

@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-07-13T04:37:02+08:00</updated>
+  <updated>2018-07-13T11:58:03+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,11 +14,20 @@
 
   
   <entry>
+    <title type="html"><![CDATA[20180713v02]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/07/13/20180713v02/"/>
+    <updated>2018-07-13T11:42:35+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/07/13/20180713v02</id>
+    <content type="html"><![CDATA[<p><img src="http://wx2.sinaimg.cn/large/780bc50fly1ft836oajhnj237k2eoe81.jpg" alt="weibo image for this" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[20180713]]></title>
     <link href="https://qiuhaidong.github.io/blog/2018/07/13/20180713/"/>
     <updated>2018-07-13T03:16:24+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2018/07/13/20180713</id>
-    <content type="html"><![CDATA[<p>生活是这样的啦<br/>
+    <content type="html"><![CDATA[<p>生活就是这样<br/>
 一次次迷失<br/>
 一次次寻回<br/>
 <img src="http://wx2.sinaimg.cn/large/780bc50fgy1ft7oths668j21x51cpwxd.jpg" alt="" /></p>
@@ -304,15 +313,6 @@ Beyond的现场比专辑更好<br/>
 <img src="http://ww4.sinaimg.cn/large/780bc50fgw1faf1kb4fhjj20s00i2grk.jpg" alt="麦迪科比" /><br/>
 <img src="http://ww4.sinaimg.cn/large/780bc50fgw1faf2tqb9luj21kw2dcwyh.jpg" alt="35秒" /><br/>
 <img src="http://ww3.sinaimg.cn/large/780bc50fgw1faf2ntxtxjj21400p0jz7.jpg" alt="科比绝杀" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Brave]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/29/brave/"/>
-    <updated>2016-11-29T00:28:01+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/29/brave</id>
-    <content type="html"><![CDATA[<p>勇敢走出去，会有新天地！</p>
 ]]></content>
   </entry>
   

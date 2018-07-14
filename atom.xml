@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-07-14T19:25:38+08:00</updated>
+  <updated>2018-07-14T20:15:57+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -58,7 +58,8 @@ rake generate preview
     <link href="https://qiuhaidong.github.io/blog/2018/07/13/20180713v02/"/>
     <updated>2018-07-13T11:42:35+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2018/07/13/20180713v02</id>
-    <content type="html"><![CDATA[<p><img src="http://wx2.sinaimg.cn/large/780bc50fly1ft836oajhnj237k2eoe81.jpg" alt="weibo image for this" /></p>
+    <content type="html"><![CDATA[<p><img src="http://wx2.sinaimg.cn/large/780bc50fly1ft836oajhnj237k2eoe81.jpg" alt="weibo image 01 for this" /><br/>
+<img src="http://wx2.sinaimg.cn/large/780bc50fgy1ft9c37qtzyj237k2eonpd.jpg" alt="weibo image 02 for this" /></p>
 ]]></content>
   </entry>
   

@@ -9,7 +9,7 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="首先表明，此文转载自 作业部落旗下 东哥再次感谢作者 欢迎使用 Cmd - 在线 Markdown 编辑阅读器 我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 &hellip;">
+  <meta name="description" content="现在最新的LibreOffice套装版本是4.1。每一个后续的版本可以立即在4.1的仓库中找到，直到新的主线版本比如4.2的推出。 所以，为了在Ubuntu中自动的升级，请添加下面的软件仓库地址。 sudo add-apt-repository ppa:libreoffice/ppa 接着， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +64,74 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/15/update-libreoffice/">Update Libreoffice by PPA</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-11-15T00:32:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>12:32 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>现在最新的LibreOffice套装版本是4.1。每一个后续的版本可以立即在4.1的仓库中找到，直到新的主线版本比如4.2的推出。</p>
+
+<p>所以，为了在Ubuntu中自动的升级，请添加下面的软件仓库地址。</p>
+
+<pre><code>sudo add-apt-repository ppa:libreoffice/ppa 
+</code></pre>
+
+<p>接着，运行如下命令来升级最新的LibreOffice。</p>
+
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade 
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/14/ubuntu-software-cache/">Ubuntu Software Cache</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-11-14T15:06:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>3:06 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><strong>/var/cache/apt/archives</strong></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -316,155 +384,6 @@ identical source/stylesheets/screen.css
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/07/error-Could-not-find-syntax-1.0.0-in-any-of-the-sources/">Error: Could Not Find syntax-1.0.0 in Any of the Sources</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2013-10-07T11:00:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>if cout&lt;&lt;</h4>
-
-<pre><code>Could not find syntax-1.0.0 in any of the sources
-Run `bundle install` to install missing gems.
-</code></pre>
-
-<h4>run</h4>
-
-<pre><code>rvm use 1.9.3
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/06/markdown-yu-fa/">Markdown语法简明手册</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2013-06-06T23:34:00+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:34 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><strong><em>首先表明，本文转载自</em></strong>  <a href="http://ghosertblog.github.io/mdeditor/">http://ghosertblog.github.io/mdeditor/</a></p>
-
-<p><strong><em>东哥对作者表示：万分感谢</em></strong></p>
-
-<h2>Markdown 语法简明手册</h2>
-
-<h3>1. 使用 * 和 ** 表示斜体和粗体</h3>
-
-<p>示例：</p>
-
-<p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
-
-<h3>2. 使用 === 表示一级标题，使用 &mdash; 表示二级标题</h3>
-
-<p>示例：</p>
-
-<h1>这是一个一级标题</h1>
-
-<h2>这是一个二级标题</h2>
-
-<h3>这是一个三级标题</h3>
-
-<p>你也可以选择在行首加井号表示不同级别的标题，例如：# H1, ## H2, ### H3。</p>
-
-<h3>3. 使用 [描述](链接地址) 为文字增加外链接</h3>
-
-<p>示例：</p>
-
-<p>这是去往 <a href="http://ghosertblog.github.com">作者本人博客</a> 的链接。</p>
-
-<h3>4. 在行末加两个空格表示换行</h3>
-
-<p>示例：</p>
-
-<p>第一行(此行最右有两个看不见的空格)<br/>
-第二行</p>
-
-<h3>5. 使用 *，+，- 表示无序列表</h3>
-
-<p>示例：</p>
-
-<ul>
-<li>无序列表项 一</li>
-<li>无序列表项 二</li>
-<li>无序列表项 三</li>
-</ul>
-
-
-<h3>6. 使用数字和点表示有序列表</h3>
-
-<p>示例：</p>
-
-<ol>
-<li>有序列表项 一</li>
-<li>有序列表项 二</li>
-<li>有序列表项 三</li>
-</ol>
-
-
-<h3>7. 使用 > 表示文字引用</h3>
-
-<p>示例：</p>
-
-<blockquote><p>野火烧不尽，春风吹又生</p></blockquote>
-
-<h3>8. 使用 `代码` 表示行内代码块</h3>
-
-<p>示例：</p>
-
-<p>让我们聊聊 <code>html</code></p>
-
-<h3>9.  使用 四个缩进空格 表示代码块</h3>
-
-<p>示例：</p>
-
-<pre><code>这是一个代码块，此行左侧有四个不可见的空格
-</code></pre>
-
-<h3>10.  使用 ![描述](图片链接地址) 插入图像</h3>
-
-<p>示例：</p>
-
-<p><img src="http://tp3.sinaimg.cn/2204681022/180/5606968568/1" alt="我的头像" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/25">&larr; Older</a>
@@ -480,6 +399,14 @@ Run `bundle install` to install missing gems.
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/07/14/20180724/">20180724</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/07/13/do-something-useful/">Do Something Useful</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2018/07/13/auto-generate-and-preview/">Shell脚本 for Generate and Preview</a>
@@ -519,14 +446,6 @@ Run `bundle install` to install missing gems.
     
       <li class="post">
         <a href="/blog/2017/04/26/huai-ji-che-shang-za-xiang/">怀集车上杂想</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/03/18/music-and-movie/">车上杂想</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/03/03/become-deskmate-in-dream/">梦回</a>
       </li>
     
   </ul>

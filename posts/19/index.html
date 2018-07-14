@@ -9,9 +9,10 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="键盘布局出错，想打‘#’，却出现一个类似‘f’的符号，打‘|’却出现‘~’。
-run： sudo dpkg-reconfigure keyboard-configuration 会出现图形界面用以设置。
-">
+  <meta name="description" content="如何为已经存在于Github上的Octopress搭建本地环境
+大部分步骤和全新搭建时差不多，这里只列出不同的那几步
+···安装其他···
+clone source 分支： git clone -b source git@github.com:username/repositoryname.git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +67,156 @@ run： sudo dpkg-reconfigure keyboard-configuration 会出现图形界面用以�
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/25/how-to-git-octopress/">How to ‘git’ Octopress</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-25T13:58:37+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:58 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>如何为已经存在于Github上的Octopress搭建本地环境<br/>
+大部分步骤和全新搭建时差不多，这里只列出不同的那几步<br/>
+···安装其他···<br/>
+clone <code>source</code> 分支：</p>
+
+<pre><code>git clone -b source git@github.com:username/repositoryname.git octopress
+</code></pre>
+
+<p>换成我的具体命令就是:</p>
+
+<pre><code>git clone -b source git@github.com:qiuhaidong/qiuhaidong.github.com.git octopress
+</code></pre>
+
+<p>clone <code>master</code> 分支：<br/>
+<code>master</code> 分支存放在 <code>_deploy</code>目录</p>
+
+<pre><code>cd octopress
+git clone git@github.com:username/repositoryname.git _deploy
+</code></pre>
+
+<p>具体命令：</p>
+
+<pre><code>git clone git@github.com:qiuhaidong/qiuhaidong.github.com.git _deploy
+</code></pre>
+
+<p>···其他步骤···<br/>
+另个重要命令：<br/>
+拉取：</p>
+
+<pre><code>cd octopress
+git pull origin source
+cd _deploy
+git pull origin master
+</code></pre>
+
+<p>推送：</p>
+
+<pre><code>cd octopress
+git add .
+git commit -m 'my message'
+git push origin source
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/23/gfw-bundle-install/">GFW Rubygems Bundle Install</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-23T01:16:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:16 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-10-28:最新网址：<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a><br/>
+封网，rubygems.org 不行了<br/>
+<code>bundle install</code>  自然也不行<br/>
+点算？<br/>
+<a href="https://ruby.taobao.org">https://ruby.taobao.org</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
+用法：</p>
+
+<pre><code>gem sources --remove https://rubygems.org/
+gem sources -a https://ruby.taobao.org/
+gem sources -l
+</code></pre>
+
+<p>输出：</p>
+
+<pre><code>*** CURRENT SOURCES ***  
+
+https://ruby.taobao.org  
+</code></pre>
+
+<p>确保只有 ruby.taobao.org</p>
+
+<p>Ubuntu 14.04，安装octopress,执行</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>一直提示缺少各种 gem 包，例如：</p>
+
+<pre><code>```
+Gem::RemoteFetcher::FetchError: SSL_connect SYSCALL returned=5 errno=0 state=unknown state (https://rubygems.global.ssl.fastly.net/gems/safe_yaml-1.0.4.gem)
+An error occurred while installing safe_yaml (1.0.4), and Bundler cannot continue.
+Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
+
+```
+</code></pre>
+
+<p>按提示输入命令 <code>gem install safe_yaml -v '1.0.4'</code> 安装依赖项，但是安装了一个又一个，一个又一个，实在太多太慢太麻烦了</p>
+
+<p>解决方法：</p>
+
+<p>修改octopress文件夹里的Gemfile文件：</p>
+
+<p>把：<br/>
+<code>source "https://rubygems.org"</code><br/>
+改为：<br/>
+<code>source "https://ruby.taobao.org"</code><br/>
+再执行：</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>完美通过。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -167,82 +318,6 @@ run：</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/06/18/my-cat/">我家的猫</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-06-18T22:54:13+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>18</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:54 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/20130921_182719-2.jpeg" alt="1" />
-<img src="http://r.photo.store.qq.com/psb?/V13NDf2z0alMfY/uiVkcIrOT9PpqKqwVD62LFyFoO7HjMkIYVKb2XZJaxg!/r/dP.w6W4rNwAA" alt="02" />
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/2014-07-27.jpeg" alt="2" />
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/2014-12-21-2.jpeg" alt="3" />
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/2014-12-21.jpeg" alt="4" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/03/19/add-image/">Add Image</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-03-19T14:13:28+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>2:13 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>方法略繁复<br/>
-把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）<br/>
-把图片上传到github repository托管</p>
-
-<pre><code>git add .           # don't forget the "."
-git commit -m 'your message'
-git push origin source
-</code></pre>
-
-<p>进入github抓取图片链接地址（先打开图片，然后鼠标右击图片，在新标签页中打开图片=或者=查看图片）<br/>
-示例地址：<br/>
-<a href="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png">https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png</a><br/>
-使用 ![描述](图片链接地址) 插入图像<br/>
-示例：<br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png" alt="image test" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/20">&larr; Older</a>
@@ -258,6 +333,14 @@ git push origin source
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/07/14/20180724/">20180724</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/07/13/do-something-useful/">Do Something Useful</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2018/07/13/auto-generate-and-preview/">Shell脚本 for Generate and Preview</a>
@@ -297,14 +380,6 @@ git push origin source
     
       <li class="post">
         <a href="/blog/2017/04/26/huai-ji-che-shang-za-xiang/">怀集车上杂想</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/03/18/music-and-movie/">车上杂想</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/03/03/become-deskmate-in-dream/">梦回</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-07-13T19:22:59+08:00</updated>
+  <updated>2018-07-14T19:25:38+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[20180724]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/07/14/20180724/"/>
+    <updated>2018-07-14T19:22:18+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/07/14/20180724</id>
+    <content type="html"><![CDATA[<p><img src="http://wx2.sinaimg.cn/large/780bc50fgy1ft9bzli8y7j22eo37kqv5.jpg" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Do Something Useful]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/07/13/do-something-useful/"/>
+    <updated>2018-07-13T21:16:27+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/07/13/do-something-useful</id>
+    <content type="html"><![CDATA[<p>我们拥有众多的资源，手机，电脑，网络，通过这些，我可以得到绝大部分能赚钱和使自己生活得更加愉悦的知识和能力。<br/>
+多多关注和获取这方面的资源。<br/>
+这是一个娱乐至死的时代，但是娱乐的是别人（明星，娱乐公司），至死的是沉迷其中的自己。<br/>
+别老关注娱乐圈和社交网络。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Shell脚本 for Generate and Preview]]></title>
@@ -295,25 +316,6 @@ Beyond的现场比专辑更好<br/>
 <img src="http://ww1.sinaimg.cn/large/780bc50fgw1fbbk3mfvguj21aj1d1gzi.jpg" alt="2" /><br/>
 <img src="http://ww3.sinaimg.cn/large/780bc50fgw1fbbk48zmfqj224n2dse81.jpg" alt="3" /><br/>
 <img src="http://ww4.sinaimg.cn/large/780bc50fgw1fbbl392o0kj22eo37k1kx.jpg" alt="4" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Run After 6 Months]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2017/01/01/run-after-6-months/"/>
-    <updated>2017-01-01T00:08:44+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2017/01/01/run-after-6-months</id>
-    <content type="html"><![CDATA[<p><img src="http://ww1.sinaimg.cn/large/780bc50fgw1fbaf710jhcj21ci0qothf.jpg" alt="run after 6 months" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[好久没写字]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/12/24/do-not-write-for-long-sometime/"/>
-    <updated>2016-12-24T18:07:17+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/12/24/do-not-write-for-long-sometime</id>
-    <content type="html"><![CDATA[<p>也好久没读书。<br/>
-捡起来。</p>
 ]]></content>
   </entry>
   

@@ -2,6 +2,7 @@
 layout: post
 date: 2017-05-27 18:02:00 +0800
 title: "About cellphone"
+categories: personal
 ---
 ###~~红米note 4 体验~~
 ###我的手机体验

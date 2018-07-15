@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-07-14T20:15:57+08:00</updated>
+  <updated>2018-07-15T11:15:21+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Shell脚本 for Generate and Preview]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/07/13/auto-generate-and-preview/"/>
+    <updated>2018-07-13T19:12:00+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/07/13/auto-generate-and-preview</id>
+    <content type="html"><![CDATA[<p>还是要先手动运行：</p>
+
+<pre><code>rvm use 2.2.6
+</code></pre>
+
+<p>然后：</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+rake generate preview
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Brave]]></title>
@@ -82,16 +101,6 @@ GRUB_CMDLINE_LINUX=&ldquo;<strong><em>acpi_osi=Linux</em></strong>&rdquo;</p>
 
 <pre><code>sudo update-grub
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ruby Version]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/19/ruby-version/"/>
-    <updated>2016-11-19T11:52:18+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/19/ruby-version</id>
-    <content type="html"><![CDATA[<p>2016-11-19<br/>
-ruby version:2.2.6</p>
 ]]></content>
   </entry>
   

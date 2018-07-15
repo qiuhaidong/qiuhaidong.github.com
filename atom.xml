@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-07-14T20:15:57+08:00</updated>
+  <updated>2018-07-15T11:15:21+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,10 +14,20 @@
 
   
   <entry>
-    <title type="html"><![CDATA[20180724]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/07/14/20180724/"/>
+    <title type="html"><![CDATA[2018.07.15]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/07/15/20180715/"/>
+    <updated>2018-07-15T10:56:38+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/07/15/20180715</id>
+    <content type="html"><![CDATA[<p>忍住手，别挠<br/>
+另外早点睡觉，现在已经酸偏高了</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2018.07.14]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/07/14/20180714/"/>
     <updated>2018-07-14T19:22:18+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/07/14/20180724</id>
+    <id>https://qiuhaidong.github.io/blog/2018/07/14/20180714</id>
     <content type="html"><![CDATA[<p><img src="http://wx2.sinaimg.cn/large/780bc50fgy1ft9bzli8y7j22eo37kqv5.jpg" alt="" /></p>
 ]]></content>
   </entry>
@@ -54,7 +64,7 @@ rake generate preview
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[20180713v02]]></title>
+    <title type="html"><![CDATA[2018.07.13.v02]]></title>
     <link href="https://qiuhaidong.github.io/blog/2018/07/13/20180713v02/"/>
     <updated>2018-07-13T11:42:35+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2018/07/13/20180713v02</id>
@@ -64,7 +74,7 @@ rake generate preview
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[20180713]]></title>
+    <title type="html"><![CDATA[2018.07.13.v01]]></title>
     <link href="https://qiuhaidong.github.io/blog/2018/07/13/20180713/"/>
     <updated>2018-07-13T03:16:24+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2018/07/13/20180713</id>
@@ -305,18 +315,6 @@ Beyond的现场比专辑更好<br/>
 认识你自己。大概是高中时看到苏格拉底的这句话，当时不以为意，现在的经历多了一点点，又刚好在这个不认识自己的状态，才体会到认识自己的难得。我们的古语也说到：四十不惑，五十知天命。当中也有认识自己不容易的意思。<br/>
 想起前段时间挺沸扬的关于抑郁症的话题。抑郁，除去不开心，更多的是对什么都没兴趣。我想也有对自己认知不够清楚的成分吧。<br/>
 外向孤独症。表面外向，实际内向。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Watch]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2017/01/01/watch/"/>
-    <updated>2017-01-01T23:29:25+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2017/01/01/watch</id>
-    <content type="html"><![CDATA[<p><img src="http://ww4.sinaimg.cn/large/780bc50fgw1fbbk3hv0edj21at1ftqjq.jpg" alt="1" /><br/>
-<img src="http://ww1.sinaimg.cn/large/780bc50fgw1fbbk3mfvguj21aj1d1gzi.jpg" alt="2" /><br/>
-<img src="http://ww3.sinaimg.cn/large/780bc50fgw1fbbk48zmfqj224n2dse81.jpg" alt="3" /><br/>
-<img src="http://ww4.sinaimg.cn/large/780bc50fgw1fbbl392o0kj22eo37k1kx.jpg" alt="4" /></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-07-17T00:09:36+08:00</updated>
+  <updated>2018-08-27T22:26:38+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Intel 8g Cpu Cannot Install Win7]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/08/27/intel-8g-cpu-cannot-install-win7/"/>
+    <updated>2018-08-27T22:20:43+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/08/27/intel-8g-cpu-cannot-install-win7</id>
+    <content type="html"><![CDATA[<p>无法验证此文件的数字签名<br/>
+进入bios<br/>
+1. security选项，secure boot control这类的选项，设置为disabled。<br/>
+2. boot选项，launch csm 设置为enble。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[2018.07.16]]></title>
@@ -301,17 +313,6 @@ Beyond的现场比专辑更好<br/>
 <li>手机，红米，别折腾稳定版开发版，6.0，7.0.</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[跑步大夫山]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2017/01/10/running-from-xiyuan-to-dafushan/"/>
-    <updated>2017-01-10T23:52:21+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2017/01/10/running-from-xiyuan-to-dafushan</id>
-    <content type="html"><![CDATA[<p><img src="http://ww3.sinaimg.cn/large/780bc50fgw1fblyybaw05j21kw292qfq.jpg" alt="1" /><br/>
-<img src="http://ww4.sinaimg.cn/large/780bc50fgw1fblyy8g85uj21kw16o7lt.jpg" alt="2" /><br/>
-<img src="http://ww1.sinaimg.cn/large/780bc50fgw1fblyy2yf3xj20u01hctj1.jpg" alt="3" /></p>
 ]]></content>
   </entry>
   

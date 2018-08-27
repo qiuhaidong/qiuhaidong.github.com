@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-08-27T22:32:17+08:00</updated>
+  <updated>2018-08-27T22:40:10+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<p>无法验证此文件的数字签名<br/>
 进入bios<br/>
 1. security选项，secure boot control这类的选项，设置为disabled。<br/>
-2. boot选项，launch csm 设置为enble。</p>
+2. boot选项，launch csm 设置为enabled。</p>
 ]]></content>
   </entry>
   

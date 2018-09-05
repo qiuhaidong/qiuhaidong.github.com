@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-08-27T22:40:10+08:00</updated>
+  <updated>2018-09-05T09:57:29+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Error : No Symbol Table]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/09/05/error-no-symbol-table/"/>
+    <updated>2018-09-05T09:17:32+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/09/05/error-no-symbol-table</id>
+    <content type="html"><![CDATA[<p><a href="https://askubuntu.com/questions/965070/no-symbol-table-error-after-upgrading-to-17-04">参见原博：error : no symbol table</a><br/>
+升级到ubuntu18.04后，开机出现：</p>
+
+<p><strong><em>error：no symbol table</em></strong><br/>
+<strong><em>press any key to continue&hellip;</em></strong></p>
+
+<pre><code>sudo fdisk -l  
+</code></pre>
+
+<p>This will list all partitions on your HDD (find under Type section the Ubuntu or Linux and its Device (like <code>/dev/sda</code>)) then, do:</p>
+
+<pre><code>sudo grub-install /dev/sda  
+</code></pre>
+
+<p>note that is sda and NOT sda1</p>
+
+<pre><code>sudo update-grub  
+
+sudo reboot  
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Intel 8g Cpu Cannot Install Win7]]></title>
@@ -77,22 +105,6 @@ rake generate preview
 <img src="http://www.45it.com/picture/allimg/130123/14494Ac2-2.jpg" alt="4" /><br/>
 <img src="http://www.45it.com/picture/allimg/130123/1449464146-3.jpg" alt="5" /><br/>
 解决方法四：使用windows8 的分区工具来重分区安装。或者用diskgenius最新版的来建立GPT分区。提示，使用这种方法前请把硬盘数据进行拷贝，以免造成损失。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Uninstall and Update Command]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/20/uninstall-and-update-command/"/>
-    <updated>2016-11-20T13:35:45+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/20/uninstall-and-update-command</id>
-    <content type="html"><![CDATA[<pre><code>sudo apt-get purge ***
-sudo apt-get remove ***
-sudo apt-get autoremove
-sudo apt-get clean
-sudo apt-get update
-sudo apt list --upgradable
-sudo apt upgrade
-</code></pre>
 ]]></content>
   </entry>
   

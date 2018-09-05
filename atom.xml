@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-08-27T22:40:10+08:00</updated>
+  <updated>2018-09-05T09:57:29+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Error : No Symbol Table]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/09/05/error-no-symbol-table/"/>
+    <updated>2018-09-05T09:17:32+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/09/05/error-no-symbol-table</id>
+    <content type="html"><![CDATA[<p><a href="https://askubuntu.com/questions/965070/no-symbol-table-error-after-upgrading-to-17-04">参见原博：error : no symbol table</a><br/>
+升级到ubuntu18.04后，开机出现：</p>
+
+<p><strong><em>error：no symbol table</em></strong><br/>
+<strong><em>press any key to continue&hellip;</em></strong></p>
+
+<pre><code>sudo fdisk -l  
+</code></pre>
+
+<p>This will list all partitions on your HDD (find under Type section the Ubuntu or Linux and its Device (like <code>/dev/sda</code>)) then, do:</p>
+
+<pre><code>sudo grub-install /dev/sda  
+</code></pre>
+
+<p>note that is sda and NOT sda1</p>
+
+<pre><code>sudo update-grub  
+
+sudo reboot  
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Intel 8g Cpu Cannot Install Win7]]></title>
@@ -298,19 +326,6 @@ Beyond的现场比专辑更好<br/>
 <li>既然选择了走小路，村里的公路自然是闪避的重点。我从家里出发后，翻两座山，走隔壁村的路，两座山之间，有三间废弃的老屋。你想，傍晚放学，走了八九公里路后，快天黑了，走到两座山里，有几间废弃的老屋。我现在不相信神神怪怪之说，什么时候去哪里都敢，但是以前，我胆子不大。</li>
 <li>铁索桥具体何时建成的，我不清楚，但很确定是初中之后才落成的。初中毕业后，不用再走路上学了，过了许久，经过那附近，它已矗立河中，沟通两岸。</li>
 <li>今日重来故地，这里热闹非凡，众人驱车而来，在桥上拍照游玩。我上桥走了一遍，又在桥头等了几许，意欲桥上无人时拍照，终不得意， 且此桥非彼桥，彼桥已永乔。</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Kindle 红米二三事]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2017/01/11/kindle-something/"/>
-    <updated>2017-01-11T19:39:19+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2017/01/11/kindle-something</id>
-    <content type="html"><![CDATA[<ul>
-<li>Kindle安卓客户端非常差，打开登录慢，下载慢。估计为了不影响Kindle的销量做了负优化。ios客户端也难逃厄运吧。</li>
-<li>手机，红米，别折腾稳定版开发版，6.0，7.0.</li>
 </ul>
 
 ]]></content>

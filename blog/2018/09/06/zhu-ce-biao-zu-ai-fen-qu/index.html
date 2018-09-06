@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Error : No Symbol Table - Haydn Yau</title>
+  <title>关于注册表文件阻碍分区 - Haydn Yau</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="参见原博：error : no symbol table
-升级到ubuntu18.04后，开机出现： error：no symbol table
-press any key to continue&hellip; sudo fdisk -l This will list all &hellip;">
+  <meta name="description" content="在用windows自带的磁盘整理工具无法移动注册表文件后，可以使用DiskGenius工具来分区，比如在老毛桃PE里就集成有这个软件。
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +19,7 @@ press any key to continue&hellip; sudo fdisk -l This will list all &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2018/09/05/error-no-symbol-table/">
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2018/09/06/zhu-ce-biao-zu-ai-fen-qu/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Haydn Yau" type="application/atom+xml">
@@ -69,7 +68,7 @@ press any key to continue&hellip; sudo fdisk -l This will list all &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Error : No Symbol Table</h1>
+      <h1 class="entry-title">关于注册表文件阻碍分区</h1>
     
     
       <p class="meta">
@@ -78,33 +77,14 @@ press any key to continue&hellip; sudo fdisk -l This will list all &hellip;">
 
 
 
-<time class='entry-date' datetime='2018-09-05T09:17:32+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>9:17 am</span></time>
+<time class='entry-date' datetime='2018-09-06T16:46:35+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>4:46 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><a href="https://askubuntu.com/questions/965070/no-symbol-table-error-after-upgrading-to-17-04">参见原博：error : no symbol table</a><br/>
-升级到ubuntu18.04后，开机出现：</p>
-
-<p><strong><em>error：no symbol table</em></strong><br/>
-<strong><em>press any key to continue&hellip;</em></strong></p>
-
-<pre><code>sudo fdisk -l  
-</code></pre>
-
-<p>This will list all partitions on your HDD (find under Type section the Ubuntu or Linux and its Device (like <code>/dev/sda</code>)) then, do:</p>
-
-<pre><code>sudo grub-install /dev/sda  
-</code></pre>
-
-<p>note that is sda and NOT sda1</p>
-
-<pre><code>sudo update-grub  
-
-sudo reboot  
-</code></pre>
+<div class="entry-content"><p>在用windows自带的磁盘整理工具无法移动注册表文件后，可以使用DiskGenius工具来分区，比如在老毛桃PE里就集成有这个软件。</p>
 </div>
 
 
@@ -120,7 +100,7 @@ sudo reboot
 
 
 
-<time class='entry-date' datetime='2018-09-05T09:17:32+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>9:17 am</span></time>
+<time class='entry-date' datetime='2018-09-06T16:46:35+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>4:46 pm</span></time>
       
 
 <span class="categories">
@@ -141,10 +121,8 @@ sudo reboot
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2018/08/27/intel-8g-cpu-cannot-install-win7/" title="Previous Post: intel 8g cpu cannot install win7">&laquo; intel 8g cpu cannot install win7</a>
+        <a class="basic-alignment left" href="/blog/2018/09/05/error-no-symbol-table/" title="Previous Post: error : no symbol table">&laquo; error : no symbol table</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2018/09/06/zhu-ce-biao-zu-ai-fen-qu/" title="Next Post: 关于注册表文件阻碍分区">关于注册表文件阻碍分区 &raquo;</a>
       
     </p>
   </footer>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-09-08T23:36:57+08:00</updated>
+  <updated>2018-09-20T11:14:54+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[设置默认打印机，特殊情况]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/09/20/setting-default-printer/"/>
+    <updated>2018-09-20T11:09:39+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/09/20/setting-default-printer</id>
+    <content type="html"><![CDATA[<p><img src="http://wx3.sinaimg.cn/large/780bc50fgy1fvfu0lle36j20fp0hhtae.jpg" alt="打印机" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[关于注册表文件阻碍分区]]></title>
@@ -78,15 +87,6 @@ sudo reboot
 cd /home/dong/octopress
 rake generate preview
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Brave]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2016/11/29/brave/"/>
-    <updated>2016-11-29T00:28:01+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2016/11/29/brave</id>
-    <content type="html"><![CDATA[<p>勇敢走出去，会有新天地！</p>
 ]]></content>
   </entry>
   

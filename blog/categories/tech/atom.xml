@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-09-20T11:14:54+08:00</updated>
+  <updated>2018-09-24T00:04:50+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Install Thundermini on Win10]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/09/23/install-thundermini-on-win10/"/>
+    <updated>2018-09-23T23:59:26+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/09/23/install-thundermini-on-win10</id>
+    <content type="html"><![CDATA[<p>在开始菜单，右键，以管理要的身份运行powershell，输入迅雷安装包的路径，如：<br/>
+    D:\a.exe<br/>
+我是把文件名改为a，放在根目录下，方便输入。<br/>
+done</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[设置默认打印机，特殊情况]]></title>
@@ -68,25 +80,6 @@ sudo reboot
 进入bios<br/>
 1. security选项，secure boot control这类的选项，设置为disabled。<br/>
 2. boot选项，launch csm 设置为enabled。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Shell脚本 for Generate and Preview]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/07/13/auto-generate-and-preview/"/>
-    <updated>2018-07-13T19:12:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/07/13/auto-generate-and-preview</id>
-    <content type="html"><![CDATA[<p>还是要先手动运行：</p>
-
-<pre><code>rvm use 2.2.6
-</code></pre>
-
-<p>然后：</p>
-
-<pre><code>#!/bin/sh
-cd /home/dong/octopress
-rake generate preview
-</code></pre>
 ]]></content>
   </entry>
   

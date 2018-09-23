@@ -9,14 +9,13 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="下载页面
-Windows版
-Ubuntu（32位）版
-android
-一键安装，双击即可
-Lantern官网
-官网自然受到GFW的特殊照顾，要翻了墙才能访问到
-">
+  <meta name="description" content="参见原博
+新建文本，扩展名为sh，扩展名并不影响脚本的执行，见名知意即可，若是用PHP编写，扩展名就用php
+终端下先执行： rvm use 1.9.3 再执行脚本
+代码： #!/bin/sh
+cd /home/dong/octopress
+git pull origin source
+rake &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +70,68 @@ Lantern官网
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/09/shell-script/">Shell脚本</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-09T17:08:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:08 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://github.com/qinjx/30min_guides/blob/master/shell.md">参见原博</a><br/>
+新建文本，扩展名为sh，扩展名并不影响脚本的执行，见名知意即可，若是用PHP编写，扩展名就用php<br/>
+终端下先执行：</p>
+
+<pre><code>rvm use 1.9.3
+</code></pre>
+
+<p>再执行脚本<br/>
+代码：</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+git pull origin source
+rake generate deploy
+</code></pre>
+
+<p>保存即可(文件名为pull.sh)<br/>
+运行脚本，终端命令：</p>
+
+<pre><code>chmod +x pull.sh
+./pull.sh
+</code></pre>
+
+<p>别漏了前面的符号.</p>
+
+<p>push.sh</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+rake generate deploy
+git add .
+git commit -m 'update'
+git push origin source
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -424,86 +485,6 @@ git push origin source
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/08/23/gfw-bundle-install/">GFW Rubygems Bundle Install</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-08-23T01:16:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:16 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2016-10-28:最新网址：<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a><br/>
-封网，rubygems.org 不行了<br/>
-<code>bundle install</code>  自然也不行<br/>
-点算？<br/>
-<a href="https://ruby.taobao.org">https://ruby.taobao.org</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
-用法：</p>
-
-<pre><code>gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
-gem sources -l
-</code></pre>
-
-<p>输出：</p>
-
-<pre><code>*** CURRENT SOURCES ***  
-
-https://ruby.taobao.org  
-</code></pre>
-
-<p>确保只有 ruby.taobao.org</p>
-
-<p>Ubuntu 14.04，安装octopress,执行</p>
-
-<pre><code>bundle install
-</code></pre>
-
-<p>一直提示缺少各种 gem 包，例如：</p>
-
-<pre><code>```
-Gem::RemoteFetcher::FetchError: SSL_connect SYSCALL returned=5 errno=0 state=unknown state (https://rubygems.global.ssl.fastly.net/gems/safe_yaml-1.0.4.gem)
-An error occurred while installing safe_yaml (1.0.4), and Bundler cannot continue.
-Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
-
-```
-</code></pre>
-
-<p>按提示输入命令 <code>gem install safe_yaml -v '1.0.4'</code> 安装依赖项，但是安装了一个又一个，一个又一个，实在太多太慢太麻烦了</p>
-
-<p>解决方法：</p>
-
-<p>修改octopress文件夹里的Gemfile文件：</p>
-
-<p>把：<br/>
-<code>source "https://rubygems.org"</code><br/>
-改为：<br/>
-<code>source "https://ruby.taobao.org"</code><br/>
-再执行：</p>
-
-<pre><code>bundle install
-</code></pre>
-
-<p>完美通过。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/11">&larr; Older</a>
@@ -519,6 +500,10 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/09/23/install-thundermini-on-win10/">Install Thundermini on Win10</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2018/09/20/setting-default-printer/">设置默认打印机，特殊情况</a>
@@ -596,17 +581,13 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
         <a href="/blog/2017/04/27/huai-ji-yu-ye/">怀集雨夜</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2017/04/26/huai-ji-che-shang-za-xiang/">怀集车上杂想</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/personal/'>personal (72)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (55)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (56)</a></li>
 
   </ul>
 </section>

@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-09-20T11:14:54+08:00</updated>
+  <updated>2018-09-24T00:04:50+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Install Thundermini on Win10]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/09/23/install-thundermini-on-win10/"/>
+    <updated>2018-09-23T23:59:26+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/09/23/install-thundermini-on-win10</id>
+    <content type="html"><![CDATA[<p>在开始菜单，右键，以管理要的身份运行powershell，输入迅雷安装包的路径，如：<br/>
+    D:\a.exe<br/>
+我是把文件名改为a，放在根目录下，方便输入。<br/>
+done</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[设置默认打印机，特殊情况]]></title>
@@ -279,21 +291,6 @@ CPU：联发科X20<br/>
 有人回忆当年的年少荒唐<br/>
 如今奔走生活……<br/>
 有人沉默于现在的困顿与彷徨……</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[怀集车上杂想]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2017/04/26/huai-ji-che-shang-za-xiang/"/>
-    <updated>2017-04-26T16:08:23+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2017/04/26/huai-ji-che-shang-za-xiang</id>
-    <content type="html"><![CDATA[<p>列车穿行于漆黑隧道，突然白芒耀眼——出隧道了！<br/>
-刚下过雨，残留的乌云停在低空。<br/>
-窗外群山连绵，覆满竹子。<br/>
-山顶山腰白雾萦绕。<br/>
-山脚的农田，有禾苗，有一垄垄的土行，长着瓜藤豆苗。<br/>
-河水黄浊。<br/>
-春耕时节。</p>
 ]]></content>
   </entry>
   

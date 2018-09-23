@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-09-24T00:07:05+08:00</updated>
+  <updated>2018-09-24T00:08:29+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -18,9 +18,12 @@
     <link href="https://qiuhaidong.github.io/blog/2018/09/23/install-thundermini-on-win10/"/>
     <updated>2018-09-23T23:59:26+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2018/09/23/install-thundermini-on-win10</id>
-    <content type="html"><![CDATA[<p>在开始菜单，右键，以管理要的身份运行powershell，输入迅雷安装包的路径，如：<br/>
-    D:\a.exe<br/>
-我是把文件名改为a，放在根目录下，方便输入。<br/>
+    <content type="html"><![CDATA[<p>在开始菜单，右键，以管理要的身份运行powershell，输入迅雷安装包的路径，如：</p>
+
+<pre><code>D:\a.exe  
+</code></pre>
+
+<p>我是把文件名改为a，放在根目录下，方便输入。<br/>
 done</p>
 ]]></content>
   </entry>

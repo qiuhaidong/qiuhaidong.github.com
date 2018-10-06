@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2018-09-24T00:09:45+08:00</updated>
+  <updated>2018-10-06T22:40:59+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[About Cad]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2018/10/06/about-cad/"/>
+    <updated>2018-10-06T22:34:04+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2018/10/06/about-cad</id>
+    <content type="html"><![CDATA[<p>画线，可以点第一个图标，或者英文输入法下，按<code>l</code>，稍等一下，出现<code>line</code>，按空格键或者回车键确定。用鼠标确定起点，或输入坐标值，在勾选极轴的情况下？鼠标确定方向，输入长度，空格键确定，在按空格键输入完毕退出。
+break，输入<code>br</code>，点选一段，删除。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Install Thundermini on Win10]]></title>
@@ -274,26 +284,6 @@ CPU：联发科X20<br/>
     <updated>2017-05-16T00:10:30+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2017/05/16/about-marriage</id>
     <content type="html"><![CDATA[<p><img src="http://r.photo.store.qq.com/psb?/V13NDf2z0er9V4/MeeU3Mc9nk8EbWJg.jKs8BgmXbgJxE22JtMQeSI2YsM!/r/dGsBAAAAAAAA" alt="marriage" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[怀集雨夜]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2017/04/27/huai-ji-yu-ye/"/>
-    <updated>2017-04-27T01:01:30+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2017/04/27/huai-ji-yu-ye</id>
-    <content type="html"><![CDATA[<p>夜<br/>
-无人的街<br/>
-小餐馆<br/>
-铁棚屋顶传下雨点的声音<br/>
-一盏灯<br/>
-三面墙<br/>
-四个男人<br/>
-几盆菜<br/>
-一壶酒<br/>
-有人回忆当年的年少荒唐<br/>
-如今奔走生活……<br/>
-有人沉默于现在的困顿与彷徨……</p>
 ]]></content>
   </entry>
   

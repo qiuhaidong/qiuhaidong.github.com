@@ -1,0 +1,8 @@
+---
+layout: post
+title: "just do it"
+date: 2019-04-03 23:06:36 +0800
+comments: true
+categories: personal
+---
+![just do it](https://wx1.sinaimg.cn/large/780bc50fgy1g1pucpgdczj21wx2mku0x.jpg)

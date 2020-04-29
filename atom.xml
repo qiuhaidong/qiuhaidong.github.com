@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2019-06-29T17:35:59+08:00</updated>
+  <updated>2020-04-30T01:43:53+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[运动安全]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2020/04/30/gym-safely/"/>
+    <updated>2020-04-30T00:45:03+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2020/04/30/gym-safely</id>
+    <content type="html"><![CDATA[<p>运动一定要<strong>安全</strong>，不要争强好胜，不要斗气，不要鲁莽，不要逞强。<br/>
+<strong>安全</strong>！<br/>
+<strong>安全</strong>！<br/>
+<strong>安全</strong>！<br/>
+因为脑袋或者脊椎受伤，会有可能是致命的，或者生不如死。<br/>
+与之相比，戳到手指，崴脚，肌肉拉伤，太小儿科了。<br/>
+<strong>安全</strong>！<br/>
+<strong>安全</strong>！<br/>
+<strong>安全</strong>！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I Love You]]></title>
@@ -241,16 +258,6 @@ sudo reboot
 cd /home/dong/octopress
 rake generate preview
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[2018.07.13.v02]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/07/13/20180713v02/"/>
-    <updated>2018-07-13T11:42:35+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/07/13/20180713v02</id>
-    <content type="html"><![CDATA[<p><img src="http://wx2.sinaimg.cn/large/780bc50fly1ft836oajhnj237k2eoe81.jpg" alt="weibo image 01 for this" /><br/>
-<img src="http://wx2.sinaimg.cn/large/780bc50fgy1ft9c37qtzyj237k2eonpd.jpg" alt="weibo image 02 for this" /></p>
 ]]></content>
   </entry>
   

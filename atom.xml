@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2020-04-30T16:09:37+08:00</updated>
+  <updated>2020-04-30T16:32:07+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wallpaper Engine Overwatch]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2020/04/30/overwatch/"/>
+    <updated>2020-04-30T16:11:13+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2020/04/30/overwatch</id>
+    <content type="html"><![CDATA[<p>!(Overwatch1)[<a href="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/overwatch/overwatch1.jpg">https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/overwatch/overwatch1.jpg</a>]<br/>
+!(Overwatch2)[<a href="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/overwatch/overwatch2.jpg">https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/overwatch/overwatch2.jpg</a>]</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[运动安全]]></title>
@@ -239,25 +249,6 @@ sudo reboot
 多多关注和获取这方面的资源。<br/>
 这是一个娱乐至死的时代，但是娱乐的是别人（明星，娱乐公司），至死的是沉迷其中的自己。<br/>
 别老关注娱乐圈和社交网络。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Shell脚本 for Generate and Preview]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/07/13/auto-generate-and-preview/"/>
-    <updated>2018-07-13T19:12:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/07/13/auto-generate-and-preview</id>
-    <content type="html"><![CDATA[<p>还是要先手动运行：</p>
-
-<pre><code>rvm use 2.2.6
-</code></pre>
-
-<p>然后：</p>
-
-<pre><code>#!/bin/sh
-cd /home/dong/octopress
-rake generate preview
-</code></pre>
 ]]></content>
   </entry>
   

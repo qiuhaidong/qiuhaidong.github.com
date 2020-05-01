@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2020-05-01T18:34:57+08:00</updated>
+  <updated>2020-05-01T18:42:35+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Excel WPS 条件格式：按照条件设置字体背景等格式]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2020/05/01/exceltiaojiangeshi/"/>
+    <updated>2020-05-01T18:35:53+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2020/05/01/exceltiaojiangeshi</id>
+    <content type="html"><![CDATA[<p>Excel：开始，条件格式<br/>
+WPS：数据，条件格式，包含以下内容，文本包括，输入或复制√或者×，应用范围，鼠标选择行或列，格式样式，自己定，创建规则，OK<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/exceltiaojiangeshi.png" alt="excel条件格式" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Install Thundermini on Win10]]></title>
@@ -71,18 +82,6 @@ done</p>
 
 sudo reboot  
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Intel 8g Cpu Cannot Install Win7]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/08/27/intel-8g-cpu-cannot-install-win7/"/>
-    <updated>2018-08-27T22:20:43+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/08/27/intel-8g-cpu-cannot-install-win7</id>
-    <content type="html"><![CDATA[<p>无法验证此文件的数字签名<br/>
-进入bios<br/>
-1. security选项，secure boot control这类的选项，设置为disabled。<br/>
-2. boot选项，launch csm 设置为enabled。</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Excel | Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/excel/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2020-05-01T18:42:35+08:00</updated>
+  <updated>2020-05-01T18:58:44+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -21,6 +21,20 @@
     <content type="html"><![CDATA[<p>Excel：开始，条件格式<br/>
 WPS：数据，条件格式，包含以下内容，文本包括，输入或复制√或者×，应用范围，鼠标选择行或列，格式样式，自己定，创建规则，OK<br/>
 <img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/exceltiaojiangeshi.png" alt="excel条件格式" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Excel表格设置可选择输入√或×]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/03/05/excel-da-gou-x/"/>
+    <updated>2016-03-05T10:47:00+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/03/05/excel-da-gou-x</id>
+    <content type="html"><![CDATA[<p><a href="http://jingyan.baidu.com/article/5d6edee210ba8099eadeecb5.html">图文版</a><br/>
+WPS：<br/>
+选中1个单元格，菜单栏选择：插入，特殊符号，数字符号，选择“√”，打上英文逗号，再选择“×”，然后复制。<br/>
+数据，有效性，（允许）序列，（来源）粘贴，完成。<br/>
+Excel：<br/>
+（来源步骤处）可以选择插入，符号。</p>
 ]]></content>
   </entry>
   

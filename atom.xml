@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2020-05-01T18:58:44+08:00</updated>
+  <updated>2020-05-01T19:00:50+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -18,8 +18,10 @@
     <link href="https://qiuhaidong.github.io/blog/2020/05/01/exceltiaojiangeshi/"/>
     <updated>2020-05-01T18:35:53+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2020/05/01/exceltiaojiangeshi</id>
-    <content type="html"><![CDATA[<p>Excel：开始，条件格式<br/>
-WPS：数据，条件格式，包含以下内容，文本包括，输入或复制√或者×，应用范围，鼠标选择行或列，格式样式，自己定，创建规则，OK<br/>
+    <content type="html"><![CDATA[<p>Excel：<br/>
+开始，条件格式……<br/>
+WPS：<br/>
+数据，条件格式，包含以下内容，文本包括，输入或复制√或者×，应用范围，鼠标选择行或列，格式样式，自己定，创建规则，OK<br/>
 <img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/exceltiaojiangeshi.png" alt="excel条件格式" /></p>
 ]]></content>
   </entry>

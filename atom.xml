@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2020-05-01T19:06:51+08:00</updated>
+  <updated>2020-06-14T10:22:30+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu 分区大小]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/"/>
+    <updated>2020-06-14T10:17:52+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu</id>
+    <content type="html"><![CDATA[<p>Ubuntu 分区大小不用太多，现在只用了12G而已，估计下次给它30G就ok了<br/>
+<img src="https://photo.weibo.com/2014037263/wbphotos/large/mid/4515661135866990/pid/780bc50fgy1gfrlmi1tcpj211y0lcac3" alt="分区容量" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Excel WPS 条件格式：按照条件设置字体背景等格式]]></title>
@@ -249,15 +259,6 @@ sudo reboot
     <id>https://qiuhaidong.github.io/blog/2018/07/15/20180715</id>
     <content type="html"><![CDATA[<p>忍住手，别挠<br/>
 另外早点睡觉，现在已经酸偏高了</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[2018.07.14]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/07/14/20180714/"/>
-    <updated>2018-07-14T19:22:18+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/07/14/20180714</id>
-    <content type="html"><![CDATA[<p><img src="http://wx2.sinaimg.cn/large/780bc50fgy1ft9bzli8y7j22eo37kqv5.jpg" alt="" /></p>
 ]]></content>
   </entry>
   

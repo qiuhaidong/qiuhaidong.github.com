@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2020-07-12T01:01:32+08:00</updated>
+  <updated>2020-07-12T01:17:54+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[人性的弱点]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2020/07/12/ren-xing-de-ruo-dian/"/>
+    <updated>2020-07-12T01:07:29+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2020/07/12/ren-xing-de-ruo-dian</id>
+    <content type="html"><![CDATA[<h3>急功近利,自负</h3>
+
+<p>老表的一次失利遭遇<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/master/images/renxingderuodian.jpg" alt="人性的弱点" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS的升级与降级]]></title>
@@ -283,16 +295,6 @@ sudo reboot
     <updated>2018-07-16T13:36:30+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2018/07/16/20180716</id>
     <content type="html"><![CDATA[<p><img src="http://wx2.sinaimg.cn/large/780bc50fgy1ftbxos4uotj228v21pb29.jpg" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[2018.07.15.v02]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/07/15/20180715v02/"/>
-    <updated>2018-07-15T23:09:58+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/07/15/20180715v02</id>
-    <content type="html"><![CDATA[<p>我们一直在努力远离土地，而未曾思考自己和这片土地的关系。<br/>
-<img src="http://wx2.sinaimg.cn/large/780bc50fgy1ftaxwg4392j237k2eo7wh.jpg" alt="" /></p>
 ]]></content>
   </entry>
   

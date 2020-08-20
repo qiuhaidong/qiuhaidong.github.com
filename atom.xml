@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2020-08-21T01:01:28+08:00</updated>
+  <updated>2020-08-21T01:09:51+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[家人]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2020/08/21/famaly/"/>
+    <updated>2020-08-21T01:03:17+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2020/08/21/famaly</id>
+    <content type="html"><![CDATA[<p>在我没钱的时候，我的家人们用最短的时间赶我走<br/>
+哈哈哈哈哈哈哈哈<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/family.jpg" alt="family" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[人性的弱点]]></title>
@@ -286,15 +297,6 @@ sudo reboot
 进入bios<br/>
 1. security选项，secure boot control这类的选项，设置为disabled。<br/>
 2. boot选项，launch csm 设置为enabled。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[2018.07.16]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/07/16/20180716/"/>
-    <updated>2018-07-16T13:36:30+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/07/16/20180716</id>
-    <content type="html"><![CDATA[<p><img src="http://wx2.sinaimg.cn/large/780bc50fgy1ftbxos4uotj228v21pb29.jpg" alt="" /></p>
 ]]></content>
   </entry>
   

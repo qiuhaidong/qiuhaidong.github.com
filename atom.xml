@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2020-08-21T01:09:51+08:00</updated>
+  <updated>2020-09-09T00:32:51+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[崩溃]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2020/09/09/dying/"/>
+    <updated>2020-09-09T00:26:39+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2020/09/09/dying</id>
+    <content type="html"><![CDATA[<p>每天深夜，崩溃，折磨，垂死，挣扎，咒骂<br/>
+也睡不好<br/>
+醒来昏昏沉沉<br/>
+深夜继续折磨<br/>
+我快死了</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[家人]]></title>
@@ -285,18 +298,6 @@ done</p>
 
 sudo reboot  
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Intel 8g Cpu Cannot Install Win7]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/08/27/intel-8g-cpu-cannot-install-win7/"/>
-    <updated>2018-08-27T22:20:43+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/08/27/intel-8g-cpu-cannot-install-win7</id>
-    <content type="html"><![CDATA[<p>无法验证此文件的数字签名<br/>
-进入bios<br/>
-1. security选项，secure boot control这类的选项，设置为disabled。<br/>
-2. boot选项，launch csm 设置为enabled。</p>
 ]]></content>
   </entry>
   

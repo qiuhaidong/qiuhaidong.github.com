@@ -4,7 +4,7 @@
   <title><![CDATA[Haydn Yau]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2021-04-04T23:13:21+08:00</updated>
+  <updated>2021-04-04T23:17:19+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[臭了的鸡腿]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2021/04/04/chou-le-de-ji-tui/"/>
+    <updated>2021-04-04T23:14:01+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2021/04/04/chou-le-de-ji-tui</id>
+    <content type="html"><![CDATA[<p>还是这一天，我在美团上买了6块钱鸡腿，拿回来，打开包装的时候，已经闻到有点臭味了，但是没办法，硬着头皮，用热水壶水煮了，吃了。<br/>
+希望别吃坏肚子。<br/>
+希望最坏就是拉肚子就算了，别去医院。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[放下 接受 和解]]></title>
@@ -286,15 +297,6 @@ done</p>
     <content type="html"><![CDATA[<p>生活是什么？生活应该怎么过？<br/>
 小森林给了一种答案。在一个小森林里，一个小山村里，简单的房子，简单的家具，大事小事都亲力亲为，每天干农活，耘田，割草，珍惜每一件用具，烤面包，酿甜酒，邀请朋友一起饮尝，吃不知名的小果子，果子可能是酸，苦，涩的，但是还可以试着做果酱。<br/>
 日出而作，日落而息，一日三餐。没有远大高尚的理想，但平凡生活中却也不缺小精致、小情趣。不奔波于都市的繁华，也不刻意避世，在世间找到自己的所在。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[关于注册表文件阻碍分区]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/09/06/zhu-ce-biao-zu-ai-fen-qu/"/>
-    <updated>2018-09-06T16:46:35+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/09/06/zhu-ce-biao-zu-ai-fen-qu</id>
-    <content type="html"><![CDATA[<p>在用windows自带的磁盘整理工具无法移动注册表文件后，可以使用DiskGenius工具来分区，比如在老毛桃PE里就集成有这个软件。</p>
 ]]></content>
   </entry>
   

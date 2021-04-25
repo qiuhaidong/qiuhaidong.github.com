@@ -6,4 +6,4 @@ comments: true
 categories: personal
 ---
 电影《百元之恋》，她并无意外地输了比赛，但是远离了一团糟糕的过往。  
-![百元之恋](https://wx2.sinaimg.cn/large/780bc50fgy1gpvlo12n4vj20zk0k07dz.jpg)  
+![百元之恋](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/byzl.jpg)  

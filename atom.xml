@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2021-04-26T16:36:07+08:00</updated>
+  <updated>2021-06-02T00:55:33+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[崩溃]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2021/06/02/crash/"/>
+    <updated>2021-06-02T00:46:18+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2021/06/02/crash</id>
+    <content type="html"><![CDATA[<p>刚刚楼下，有个年轻人崩溃了。<br/>
+我听到一阵激烈的嘈杂声，到阳台一看，一个年轻男人向远处走去，情绪激动，动作夸张，锤着踢着路经的墙面，喊了一句：你可以穷，我不可以……一个女生在后面跟着。<br/>
+其实今天中午，我也是很接近边缘的情绪，我妈跟我说买房的事，呵呵，没有钱，我能怎么回应？！这两年我没有工作，之前那点积蓄也用了大半了。<br/>
+我很想把这些问题都告诉她。可是，这样能带给我什么？又会带给她什么？<br/>
+还好，我选择​了沉默。<br/>
+遇到这些事情，别说话，别做事，自己走开，一个人安静地待一会。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[做饭想到的一些事]]></title>
@@ -297,21 +311,6 @@ WPS：<br/>
     <id>https://qiuhaidong.github.io/blog/2018/10/06/about-cad</id>
     <content type="html"><![CDATA[<p>画线，可以点第一个图标，或者英文输入法下，按<code>l</code>，稍等一下，出现<code>line</code>，按空格键或者回车键确定。用鼠标确定起点，或输入坐标值，在勾选极轴的情况下？鼠标确定方向，输入长度，空格键确定，在按空格键输入完毕退出。<br/>
 break，输入<code>br</code>，点选一段，删除。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Install Thundermini on Win10]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/09/23/install-thundermini-on-win10/"/>
-    <updated>2018-09-23T23:59:26+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/09/23/install-thundermini-on-win10</id>
-    <content type="html"><![CDATA[<p>在开始菜单，右键，以管理要的身份运行powershell，输入迅雷安装包的路径，如：</p>
-
-<pre><code>D:\a.exe  
-</code></pre>
-
-<p>我是把文件名改为a，放在根目录下，方便输入。<br/>
-done</p>
 ]]></content>
   </entry>
   

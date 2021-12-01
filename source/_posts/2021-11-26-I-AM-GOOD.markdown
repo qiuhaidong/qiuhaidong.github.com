@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "好了，耳朵好了"
+title: "耳朵好了|饮鸩止渴，当断则断"
 date: 2021-11-26 09:22:11 +0800
 comments: true
 categories: personal
@@ -12,6 +12,4 @@ categories: personal
 ###身体健康  
 ###好好生活  
 ###饮鸩止渴  
-###慎  
-###慎  
-###慎
+###当断则断

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2021-12-31T23:23:34+08:00</updated>
+  <updated>2022-01-02T17:09:14+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[安装octopress 3.0 博客失败]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/02/fail-in-installing-octopress-3-dot-0/"/>
+    <updated>2022-01-02T17:05:08+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/02/fail-in-installing-octopress-3-dot-0</id>
+    <content type="html"><![CDATA[<p>如题<br/>
+算了，先别折腾</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS的升级与降级]]></title>
@@ -88,15 +98,6 @@ done</p>
     <updated>2018-09-20T11:09:39+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2018/09/20/setting-default-printer</id>
     <content type="html"><![CDATA[<p><img src="http://wx3.sinaimg.cn/large/780bc50fgy1fvfu0lle36j20fp0hhtae.jpg" alt="打印机" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[关于注册表文件阻碍分区]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2018/09/06/zhu-ce-biao-zu-ai-fen-qu/"/>
-    <updated>2018-09-06T16:46:35+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2018/09/06/zhu-ce-biao-zu-ai-fen-qu</id>
-    <content type="html"><![CDATA[<p>在用windows自带的磁盘整理工具无法移动注册表文件后，可以使用DiskGenius工具来分区，比如在老毛桃PE里就集成有这个软件。</p>
 ]]></content>
   </entry>
   

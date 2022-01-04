@@ -1,4 +1,4 @@
-source "https://gems.ruby-china.org"
+source "https://gems.ruby-china.com"
 
 group :development do
   gem 'rake', '~> 10.0'
@@ -16,3 +16,4 @@ group :development do
 end
 
 gem 'sinatra', '~> 1.4.2'
+gem 'octopress', '~> 3.0'

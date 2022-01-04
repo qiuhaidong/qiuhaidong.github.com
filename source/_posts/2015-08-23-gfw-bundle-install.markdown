@@ -6,24 +6,29 @@ comments: true
 categories: tech
 ---
 
-2016-10-28:最新网址：https://gems.ruby-china.org  
+2022-01-05:最新网址：https://gems.ruby-china.com/  
+**这个不行了**：2016-10-28:最新网址：https://gems.ruby-china.org **这个不行了**  
 封网，rubygems.org 不行了  
 `bundle install`  自然也不行  
 点算？  
-https://ruby.taobao.org 是一个完整的 rubygems.org 镜像，用以代替官网  
+https://gems.ruby-china.com/ 是一个完整的 rubygems.org 镜像，用以代替官网  
 用法：  
 
 	gem sources --remove https://rubygems.org/
-	gem sources -a https://ruby.taobao.org/
+	gem sources -a https://gems.ruby-china.com/
 	gem sources -l
 
 输出：  
 
 	*** CURRENT SOURCES ***  
 
-	https://ruby.taobao.org  
+	https://gems.ruby-china.com  
 
-确保只有 ruby.taobao.org  
+确保只有 https://gems.ruby-china.com/  
+
+###但是这样也不行，还得到octopress文件夹，打开Gemfile文件，编辑：  
+
+        source "https://gems.ruby-china.com"
 
 Ubuntu 14.04，安装octopress,执行  
 
@@ -47,7 +52,7 @@ Ubuntu 14.04，安装octopress,执行
 把：  
 `source "https://rubygems.org"`  
 改为：  
-`source "https://ruby.taobao.org"`  
+`source "https://gems.ruby-china.com"`  
 再执行：  
 
 	bundle install

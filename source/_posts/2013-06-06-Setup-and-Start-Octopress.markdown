@@ -13,6 +13,7 @@ categories: tech
 	don't need anymore: sudo apt-get update
 	sudo apt-get install git
 
+然后就应该跳到后面的**Before Deploying to Github Pages,Set Up Git**  
 **Install Ruby (the larest version) using either rbenv or RVM**  
 
 **Install RVM:**
@@ -71,6 +72,7 @@ Install the default Octopress theme.
 First you need to tell git your name, so that it can properly label the commits you make.
 
 	git config --global user.name "Your Name Here"
+	我的就是：git config --global user.name "qiuhaidong"
 	# Sets the default name for git to use when you commit
 
 **Email**  
@@ -78,6 +80,7 @@ First you need to tell git your name, so that it can properly label the commits 
 Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
 
 	git config --global user.email "your_email@example.com"
+	我的就是：git config --global user.email "690982322@qq.com"
 	# Sets the default email for git to use when you commit
 
 **Password caching**  
@@ -96,17 +99,19 @@ First, we need to check for existing ssh keys on your computer. Open up Terminal
 	cd ~/.ssh
 	# Checks to see if there is a directory named ".ssh" in your user directory
 
-If it says "No such file or directory" go to **step 2**. Otherwise, you already have an existing keypair, and you can skip to **step 3**.
+If it says "No such file or directory" go to **step 2**. Otherwise, you already have an existing keypair, and you can skip to **step 3**.  
+最好就是把 .shh 这个文件夹删除了，做step2  
 
 ###Step 2: Generate a new SSH key  
 
 To generate a new SSH key, enter the code below. We want the default settings so when asked to enter a file in which to save the key, just press enter.
 
 	ssh-keygen -t rsa -C "your_email@example.com"
+	我的就是：ssh-keygen -t rsa -C "690982322@qq.com"
 
 Now you need to enter a passphrase.  
 
-Which should give you something like this:
+Which should give you something like this:  
 
 	Your identification has been saved in /home/you/.ssh/id_rsa.
 	Your public key has been saved in /home/you/.ssh/id_rsa.pub.
@@ -122,10 +127,13 @@ Which should give you something like this:
 	# Copies the contents of the id_rsa.pub file to your clipboard
 
 **Add your SSH key to GitHub**	
+到github网站，登陆，头像，设置，SSH and GPG keys，把旧的SSH keys删除，添加新的，title不用管，粘贴到key就行了  
 
 ###Step 4: Test everything out
 
 	ssh -T git@github.com
+	
+这里可能会还要按照提示做一下，不难，看英文做  
 
 if cout<<
 

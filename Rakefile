@@ -4,6 +4,12 @@ require "stringex"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
+
+
+
+editor = "gedit"
+
+
 ssh_user       = "user@domain.com"
 ssh_port       = "22"
 document_root  = "~/website.com/"
@@ -91,6 +97,7 @@ task :preview do
   }
 
   [jekyllPid, compassPid, rackupPid].each { |pid| Process.wait(pid) }
+   
 end
 
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
@@ -117,6 +124,16 @@ task :new_post, :title do |t, args|
     post.puts "categories: "
     post.puts "---"
   end
+  
+  
+  
+  
+  if #{editor}
+    system "#{editor} #{filename}"
+  end
+  
+  
+  
 end
 
 # usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to "new-page.markdown")

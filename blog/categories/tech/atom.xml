@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-01-12T00:26:06+08:00</updated>
+  <updated>2022-01-12T00:58:24+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Z]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/12/z/"/>
+    <updated>2022-01-12T00:37:26+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/12/z</id>
+    <content type="html"><![CDATA[<p>no</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu 安装后wifi无法使用]]></title>
@@ -456,16 +465,6 @@ iOS14降级为13.5.1：</p>
 
 
 <h3>4. 开机后从电脑恢复数据</h3>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu 分区大小]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/"/>
-    <updated>2020-06-14T10:17:52+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu</id>
-    <content type="html"><![CDATA[<p>Ubuntu 分区大小不用太多，现在只用了12G而已，估计下次给它30G就ok了<br/>
-<img src="http://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/jmmX4OKaz9ls*nNN2EORpdUZxewuHv2zzf0xLU5fQbxzOua1RSynmCnzTIHZiqC*6XkA94FYqyCRSoPTFb63m6qEs3HFCGw0gTgyMroP1qA!/r" alt="分区容量" /></p>
 ]]></content>
   </entry>
   

@@ -9,12 +9,11 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="2016-10-28:最新网址：https://gems.ruby-china.org
+  <meta name="description" content="2022-01-05:最新网址：https://gems.ruby-china.com/
+这个不行了：2016-10-28:最新网址：https://gems.ruby-china.org 这个不行了
 封网，rubygems.org 不行了
 bundle install 自然也不行
-点算？
-https://ruby.taobao.org 是一个完整的 rubygems.org 镜像，用以代替官网
-用法： &hellip;">
+点算？ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -90,15 +89,16 @@ https://ruby.taobao.org 是一个完整的 rubygems.org 镜像，用以代替官
   </header>
 
 
-<div class="entry-content"><p>2016-10-28:最新网址：<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a><br/>
+<div class="entry-content"><p>2022-01-05:最新网址：<a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a><br/>
+<strong>这个不行了</strong>：2016-10-28:最新网址：<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a> <strong>这个不行了</strong><br/>
 封网，rubygems.org 不行了<br/>
 <code>bundle install</code>  自然也不行<br/>
 点算？<br/>
-<a href="https://ruby.taobao.org">https://ruby.taobao.org</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
+<a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
 用法：</p>
 
 <pre><code>gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
+gem sources -a https://gems.ruby-china.com/
 gem sources -l
 </code></pre>
 
@@ -106,10 +106,15 @@ gem sources -l
 
 <pre><code>*** CURRENT SOURCES ***  
 
-https://ruby.taobao.org  
+https://gems.ruby-china.com  
 </code></pre>
 
-<p>确保只有 ruby.taobao.org</p>
+<p>确保只有 <a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a></p>
+
+<h3>但是这样也不行，还得到octopress文件夹，打开Gemfile文件，编辑：</h3>
+
+<pre><code>    source "https://gems.ruby-china.com"
+</code></pre>
 
 <p>Ubuntu 14.04，安装octopress,执行</p>
 
@@ -135,7 +140,7 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
 <p>把：<br/>
 <code>source "https://rubygems.org"</code><br/>
 改为：<br/>
-<code>source "https://ruby.taobao.org"</code><br/>
+<code>source "https://gems.ruby-china.com"</code><br/>
 再执行：</p>
 
 <pre><code>bundle install
@@ -194,6 +199,14 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开编辑 插入本地图片 程序</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/11/ttttttttttttttt/">Ttttttttttttttt</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2022/01/02/basketball-in-the-zone/">打篮球最好的一次——境界</a>
@@ -267,14 +280,6 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
         <a href="/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/">Ubuntu 分区大小</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2020/05/01/exceltiaojiangeshi/">Excel WPS 条件格式：按照条件设置字体背景等格式</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/04/30/overwatch/">Wallpaper Engine Overwatch</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -284,6 +289,7 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
 <li class='category'><a href='/blog/categories/onlyforyou/'>onlyforyou (1)</a></li>
 <li class='category'><a href='/blog/categories/personal/'>personal (92)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (58)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (1)</a></li>
 
   </ul>
 </section>

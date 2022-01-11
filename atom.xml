@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-01-03T01:04:50+08:00</updated>
+  <updated>2022-01-11T23:25:57+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,72 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 自动打开编辑 插入本地图片 程序]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/11/octopress-new-post-auto-open/"/>
+    <updated>2022-01-11T22:42:33+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/11/octopress-new-post-auto-open</id>
+    <content type="html"><![CDATA[<h3>自动打开文件编辑</h3>
+
+<p><code>rake new_post["file name"]</code>后自动打开对应的markdown文件</p>
+
+<p><code>Rakefile</code>文件，上面位置，添加定义：</p>
+
+<pre><code>editor = "gedit"
+</code></pre>
+
+<p>然后在<code>new_post</code>命令后面添加：</p>
+
+<pre><code>  if #{editor}
+    system "#{editor} #{filename}"
+  end
+</code></pre>
+
+<h3>插入本地图片</h3>
+
+<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中直接引用即可。也可以直接引用网络上的图片。</p>
+
+<p>为了方便管理，可以在images下对自己添加的图片建立目录区分，比如：<code>images/2013/12</code>。</p>
+
+<p>语法与插入超链接类似：</p>
+
+<pre><code>格式显示有问题，请看原文，或下面的图片&lt;img src="https://qiuhaidong.github.io/images/麦迪科比.jpg"&gt;
+</code></pre>
+
+<p><img src="https://qiuhaidong.github.io/images/自动打开-本地图片-程序.png"></p>
+
+<p><img src="https://qiuhaidong.github.io/images/麦迪科比.jpg"></p>
+
+<h3>test code in blog</h3>
+
+<p>看原文</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>c++
+</span><span class='line'>int main()
+</span><span class='line'>{
+</span><span class='line'>  cout&lt;&lt;"hello world"&lt;&lt;endl;
+</span><span class='line'>};
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ttttttttttttttt]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/11/ttttttttttttttt/"/>
+    <updated>2022-01-11T22:35:44+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/11/ttttttttttttttt</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[打篮球最好的一次——境界]]></title>
@@ -519,28 +585,6 @@ iOS14降级为13.5.1：</p>
     <id>https://qiuhaidong.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu</id>
     <content type="html"><![CDATA[<p>Ubuntu 分区大小不用太多，现在只用了12G而已，估计下次给它30G就ok了<br/>
 <img src="http://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/jmmX4OKaz9ls*nNN2EORpdUZxewuHv2zzf0xLU5fQbxzOua1RSynmCnzTIHZiqC*6XkA94FYqyCRSoPTFb63m6qEs3HFCGw0gTgyMroP1qA!/r" alt="分区容量" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Excel WPS 条件格式：按照条件设置字体背景等格式]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2020/05/01/exceltiaojiangeshi/"/>
-    <updated>2020-05-01T18:35:53+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2020/05/01/exceltiaojiangeshi</id>
-    <content type="html"><![CDATA[<p>Excel：<br/>
-开始，条件格式……<br/>
-WPS：<br/>
-数据，条件格式，包含以下内容，文本包括，输入或复制√或者×，应用范围，鼠标选择行或列，格式样式，自己定，创建规则，OK<br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/exceltiaojiangeshi.png" alt="excel条件格式" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Wallpaper Engine Overwatch]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2020/04/30/overwatch/"/>
-    <updated>2020-04-30T16:11:13+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2020/04/30/overwatch</id>
-    <content type="html"><![CDATA[<p><img src="http://r.photo.store.qq.com/psc?/V13NDf2z4CD2IV/jmmX4OKaz9ls*nNN2EORpfdvzsRjORStlpA3HXSbn7FUK46WLPwdjqlta5j0ghE6dpqoLVaB.frbD9DHMzPaPZfVmo5ElHCk3pYugGxMJQ4!/r" alt="anime-Overwatch" /></p>
 ]]></content>
   </entry>
   

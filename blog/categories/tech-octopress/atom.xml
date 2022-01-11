@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2022-01-11T23:25:57+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 自动打开编辑 插入本地图片 程序]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/11/octopress-new-post-auto-open/"/>
+    <updated>2022-01-11T22:42:33+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/11/octopress-new-post-auto-open</id>
+    <content type="html"><![CDATA[<h3>自动打开文件编辑</h3>
+
+<p><code>rake new_post["file name"]</code>后自动打开对应的markdown文件</p>
+
+<p><code>Rakefile</code>文件，上面位置，添加定义：</p>
+
+<pre><code>editor = "gedit"
+</code></pre>
+
+<p>然后在<code>new_post</code>命令后面添加：</p>
+
+<pre><code>  if #{editor}
+    system "#{editor} #{filename}"
+  end
+</code></pre>
+
+<h3>插入本地图片</h3>
+
+<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中直接引用即可。也可以直接引用网络上的图片。</p>
+
+<p>为了方便管理，可以在images下对自己添加的图片建立目录区分，比如：<code>images/2013/12</code>。</p>
+
+<p>语法与插入超链接类似：</p>
+
+<pre><code>格式显示有问题，请看原文，或下面的图片<img src="/images/麦迪科比.jpg">
+</code></pre>
+
+<p><img src="/images/自动打开-本地图片-程序.png"></p>
+
+<p><img src="/images/麦迪科比.jpg"></p>
+
+<h3>test code in blog</h3>
+
+<p>看原文</p>
+
+<pre><code>c++
+int main()
+{
+    cout&lt;&lt;"hello world"&lt;&lt;endl;
+};
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

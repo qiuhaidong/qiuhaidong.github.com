@@ -9,15 +9,7 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="今晚。
-并不是说命中率最高、速度最快，而是心态最好，进入境界。
-就像麦迪说的，35秒13分并不是他的最好，他的最好是进入了“in the zone”的境界。
-我今晚也一样。
-具体这样说吧：
-心跳如常，不为任何情况所动，该怎样怎样。
-进攻：
-该跑跑，该停停，该切切，该快快，该慢慢。
-该投投，不犹豫 &hellip;">
+  <meta name="description" content="自动打开文件编辑 rake new_post["file name"]后自动打开对应的markdown文件 Rakefile文件，上面位置，添加定义： editor = "gedit" 然后在new_post命令后面添加： if #{editor} system "#{editor} #{ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -74,6 +66,112 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开编辑 插入本地图片 程序</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T22:42:33+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:42 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>自动打开文件编辑</h3>
+
+<p><code>rake new_post["file name"]</code>后自动打开对应的markdown文件</p>
+
+<p><code>Rakefile</code>文件，上面位置，添加定义：</p>
+
+<pre><code>editor = "gedit"
+</code></pre>
+
+<p>然后在<code>new_post</code>命令后面添加：</p>
+
+<pre><code>  if #{editor}
+    system "#{editor} #{filename}"
+  end
+</code></pre>
+
+<h3>插入本地图片</h3>
+
+<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中直接引用即可。也可以直接引用网络上的图片。</p>
+
+<p>为了方便管理，可以在images下对自己添加的图片建立目录区分，比如：<code>images/2013/12</code>。</p>
+
+<p>语法与插入超链接类似：</p>
+
+<pre><code>格式显示有问题，请看原文，或下面的图片&lt;img src="/images/麦迪科比.jpg"&gt;
+</code></pre>
+
+<p><img src="/images/自动打开-本地图片-程序.png"></p>
+
+<p><img src="/images/麦迪科比.jpg"></p>
+
+<h3>test code in blog</h3>
+
+<p>看原文</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>c++
+</span><span class='line'>int main()
+</span><span class='line'>{
+</span><span class='line'>  cout&lt;&lt;"hello world"&lt;&lt;endl;
+</span><span class='line'>};
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/ttttttttttttttt/">Ttttttttttttttt</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T22:35:44+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:35 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -569,85 +667,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/06/02/crash/">崩溃</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-06-02T00:46:18+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2021</span></span> <span class='time'>12:46 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>刚刚楼下，有个年轻人崩溃了。<br/>
-我听到一阵激烈的嘈杂声，到阳台一看，一个年轻男人向远处走去，情绪激动，动作夸张，锤着踢着路经的墙面，喊了一句：你可以穷，我不可以……一个女生在后面跟着。<br/>
-其实今天中午，我也是很接近边缘的情绪，我妈跟我说买房的事，呵呵，没有钱，我能怎么回应？！这两年我没有工作，之前那点积蓄也用了大半了。<br/>
-我很想把这些问题都告诉她。可是，这样能带给我什么？又会带给她什么？<br/>
-还好，我选择​了沉默。<br/>
-遇到这些事情，别说话，别做事，自己走开，一个人安静地待一会。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/04/26/zuo-fan-xiang-dao-de-yi-xie-shi/">做饭想到的一些事</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-04-26T16:05:14+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>4:05 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>为了省钱，最近不时自己做饭，经常在美团上买特价菜和水果。</p>
-
-<p><img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEM.CHc2e9MhVdRlgWxDtBfhEBtkGGoWpdtU3npOSJdElcqevEiag*vYh4WXjad1XJTTSyrDKHBr6aPQBM17IFlY!/r" alt="" /><br/>
-<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEHjHOYKrb9BJ.rBoqp9h*vCKnrqYCVKIgBu9KvfpCQvYoHwH7C5QPhzX2RKKleWWRf09FSJ0shsrlcIrF3.RSYQ!/r" alt="" /><br/>
-<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrELEnXoIu37NvYWfKmK3HrBiEiFxgkpB.EzGxqVXWf0SzRwlA7Z2YTnptvhE7dIQAJ3Uyh3tDU5bBk6rYG8g1PCM!/r" alt="" /><br/>
-<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEJ1IecCWW4GzxhvfbbdhFkz4biSA78f09rBjp1EX3OcXPyYpxxcV9dobJMrr.M9wYCsXHXMVxZ6Q4KWCE9913Os!/r" alt="" /><br/>
-<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEAWmgMs2QiCa3.4kedrH7Ed.VKSHNWNuFgvmrn0eA1DQk6ZtGA6sxdb9mKDyFS5z2OKinkmTN2RAOaNEW0T9pN4!/r" alt="" /><br/>
-<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEFgH0QYQ1myrAzlkBGnsdBWtHxhgopcP3AsoG43FXE.lIBxO2DupGMWe0lqIgw934wGbJxTYOx1pErkitQaGWSg!/r" alt="" /><br/>
-<img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEGo04ohfDRdaBlIEerCy6UqgnCY.ED2SkLmp7Rhi1xmTEdYbAZNyFyTM4gAl7Ul9s0ZVX3zQQVOjbE8k6aaZuiA!/r" alt="" /></p>
-
-<p>水果：<br/>
-为了催熟，把它们装在袋子，再装入纸箱。每次开箱，丰富的混合的果香，闻着真舒服。</p>
-
-<p><img src="https://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrELlrSvAkZ3sMrac3RKumIVZ549od5A7SSJMjT0k1iWpZi.VGSj0MqIl5HTcw3U3p5Y9cYQvDlisf7N6ZbzmG1Xc!/r" alt="" /></p>
-
-<p>纸箱装水果，让我想起小时候，我和阿妈去外婆家，晚上，昏黄的灯光，在厨房，烧柴火，炒菜，我坐在旁边，外公用梯子，取下放在灶头上的木棚的纸箱，打开，是大蕉，给我。​​​​<br/>
-我家是在山上的，小学时，爸妈为了我们三姐弟方便上学，到山脚下租房子住，换租过至少五六个泥砖瓦房，也做过多种工作，木工，开杂货店，碾米，种粉蕉。在山下没有田地，家人经常带各种粮菜来给我们。爷爷带沙梨，伯母带粉蕉，堂哥带龙眼，有次妈妈带我们去了外婆家，龙眼放了几天。我有时跑回山上玩，姑姑也会装一袋子菜叫我带下去。外公也经常挑米来，两小时的山路呀。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -661,6 +680,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开编辑 插入本地图片 程序</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/11/ttttttttttttttt/">Ttttttttttttttt</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2022/01/02/basketball-in-the-zone/">打篮球最好的一次——境界</a>
@@ -734,14 +761,6 @@
         <a href="/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/">Ubuntu 分区大小</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2020/05/01/exceltiaojiangeshi/">Excel WPS 条件格式：按照条件设置字体背景等格式</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/04/30/overwatch/">Wallpaper Engine Overwatch</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -751,6 +770,7 @@
 <li class='category'><a href='/blog/categories/onlyforyou/'>onlyforyou (1)</a></li>
 <li class='category'><a href='/blog/categories/personal/'>personal (92)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (58)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (1)</a></li>
 
   </ul>
 </section>

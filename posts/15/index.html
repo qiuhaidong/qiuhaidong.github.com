@@ -9,7 +9,7 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="2014年10月16日，4:59AM,在家，睡觉，做梦，醒。 关于大学的梦。 做这梦，不是第一次，估计也不会是最后一次。 它是我生命的印记，不可磨灭。 2014-10-16-04-59，家里 2015-03-04-06-29，水汶 2015-06-17-05-44，水汶 2016-01-20 &hellip;">
+  <meta name="description" content=" ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,397 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/06/18/my-cat/">我家的猫</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-06-18T22:54:13+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>18</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:54 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/20130921_182719-2.jpeg" alt="1" />
+<img src="http://r.photo.store.qq.com/psb?/V13NDf2z0alMfY/uiVkcIrOT9PpqKqwVD62LFyFoO7HjMkIYVKb2XZJaxg!/r/dP.w6W4rNwAA" alt="02" />
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/2014-07-27.jpeg" alt="2" />
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/2014-12-21-2.jpeg" alt="3" />
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/cat/2014-12-21.jpeg" alt="4" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/19/add-image/">Add Image</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-19T14:13:28+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>2:13 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>方法略繁复<br/>
+把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）<br/>
+把图片上传到github repository托管</p>
+
+<pre><code>git add .           # don't forget the "."
+git commit -m 'your message'
+git push origin source
+</code></pre>
+
+<p>进入github抓取图片链接地址（先打开图片，然后鼠标右击图片，在新标签页中打开图片=或者=查看图片）<br/>
+示例地址：<br/>
+<a href="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png">https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png</a><br/>
+使用 ![描述](图片链接地址) 插入图像<br/>
+示例：<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png" alt="image test" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/06/goagent/">GoAgent</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-06T15:01:31+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-01-09  goagent的github仓库已经全部删除，it&rsquo;s gone.</p>
+
+<p><a href="https://github.com/goagent/goagent">新网址</a><br/>
+<a href="http://git.io/goa">压缩包下载地址</a><br/>
+<a href="https://github.com/goagent/goagent/blob/wiki/SimpleGuide.md">简易教程</a></p>
+
+<p><strong>部署</strong></p>
+
+<ol>
+<li>申请 Google Appengine 并创建 appid。</li>
+<li>下载 <a href="https://github.com/goagent/goagent">goagent</a></li>
+<li>修改 local\proxy.ini 中的 [gae] 下的 appid = 你的appid(多appid请用|隔开)</li>
+<li>运行 uploader.bat 或 uploader.py 开始上传, 成功后即可使用了。</li>
+</ol>
+
+
+<p><strong>使用</strong></p>
+
+<ul>
+<li>Windows 用户推荐使用 goagent.exe 托盘图标设置 IE 代理(对其它浏览器也有效)。</li>
+<li>Chrome/Opera 请安装 SwitchyOmega 插件(下载到本地然后拖放文件到扩展设置)，导入 SwitchyOptions.bak</li>
+<li>Firefox 请安装 FoxyProxy ，Firefox需要导入证书，方法请见 FAQ</li>
+<li>出现连接不上的情况可以尝试使用 gscan 或 GoGo Tester 测速。</li>
+</ul>
+
+
+<p><a href="https://github.com/goagent/goagent/blob/wiki/InstallGuide.md">图文教程</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/05/tcpserver-error-address-already-in-use-bind-2/">TCPServer Error: Address Already in Use - Bind(2)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-05T13:29:29+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:29 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在执行命令</p>
+
+<pre><code>rake preview
+</code></pre>
+
+<p>时，输出：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake preview  
+Starting to watch source with Jekyll and Compass. Starting Rack on port 4000  
+&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.  
+Configuration file: /home/dong/octopress/_config.yml  
+[2015-03-05 13:22:19] INFO  WEBrick 1.3.1  
+[2015-03-05 13:22:19] INFO  ruby 1.9.3 (2014-11-13) [i686-linux]  
+[2015-03-05 13:22:19] WARN  TCPServer Error: Address already in use - bind(2)  
+/home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `initialize': Address already in use - bind(2) (Errno::EADDRINUSE)
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `new'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `block in create_listeners'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:82:in `each'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:82:in `create_listeners'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:82:in `listen'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:70:in `initialize'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:45:in `initialize'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/handler/webrick.rb:32:in `new'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/handler/webrick.rb:32:in `run'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/server.rb:286:in `start'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/server.rb:147:in `start'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/bin/rackup:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/rackup:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/rackup:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+        Source: source
+   Destination: public
+      Generating... 
+                done.
+    write public/stylesheets/screen.css
+ Auto-regeneration: enabled for 'source'
+</code></pre>
+
+<p>解决方法：<br/>
+执行：</p>
+
+<pre><code>sudo netstat -tulpn |grep 4000
+</code></pre>
+
+<p>得到：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ sudo netstat -tulpn | grep 4000
+[sudo] password for dong: 
+tcp        0      0 127.0.0.1:4000          0.0.0.0:*               LISTEN      2889/rackup  
+</code></pre>
+
+<p>执行：</p>
+
+<pre><code>kill -9 2889
+</code></pre>
+
+<p>得到：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ kill -9 2889
+dong@Ubuntu:~/octopress$
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/05/could-not-find-a-javascript-runtime/">Could Not Find a JavaScript Runtime</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-05T13:10:34+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:10 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>以下是两条命令的输出结果：<br/>
+第一条：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+## Generating Site with Jekyll
+    write source/stylesheets/screen.css
+/home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:5:in `&lt;module:ExecJS&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `block in gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `each'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll.rb:166:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+</code></pre>
+
+<p>第二条：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake preview
+Starting to watch source with Jekyll and Compass. Starting Rack on port 4000
+/home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:5:in `&lt;module:ExecJS&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `block in gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `each'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll.rb:166:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
+[2015-03-05 12:32:30] INFO  WEBrick 1.3.1
+[2015-03-05 12:32:30] INFO  ruby 1.9.3 (2014-11-13) [i686-linux]
+[2015-03-05 12:32:30] INFO  WEBrick::HTTPServer#start: pid=2889 port=4000
+    write public/stylesheets/screen.css
+127.0.0.1 - - [05/Mar/2015:12:32:49 +0800] "GET / HTTP/1.1" 404 - 0.0610
+127.0.0.1 - - [05/Mar/2015:12:32:50 +0800] "GET /favicon.ico HTTP/1.1" 404 - 0.0015
+127.0.0.1 - - [05/Mar/2015:12:32:53 +0800] "GET / HTTP/1.1" 404 - 0.0013
+127.0.0.1 - - [05/Mar/2015:12:37:50 +0800] "GET / HTTP/1.1" 404 - 0.0007
+127.0.0.1 - - [05/Mar/2015:12:37:51 +0800] "GET / HTTP/1.1" 404 - 0.0007
+^Z
+[1]+  已停止               rake preview
+</code></pre>
+
+<p>解决方法：<br/>
+执行命令：</p>
+
+<pre><code>gem install execjs
+gem install therubyracer
+</code></pre>
+
+<p>may fail,<a href="http://stackoverflow.com/questions/20888318/error-install-rubyracer-with-error-invalid-gem-package-is-corrupt">check this</a> ,<a href="https://qiuhaidong.github.io/blog/2016/11/10/failed-when-gem-install-therubyracer/">or</a></p>
+
+<pre><code>sudo apt-get install nodejs
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/02/22/running/">阿甘的奔跑</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-02-22T23:01:57+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>11:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>想起阿甘。<br/>
+阿甘有点傻，一点点傻。<br/>
+他经历了战友布巴的离世，丹中尉的悲怨起伏，母亲的离世，以及贯穿他整个生命的珍妮的美好而又若即若离触不可及。<br/>
+阿甘不孤单。<br/>
+童年时母亲和珍妮陪他。当兵时布巴陪他。在海上捕虾时丹中尉陪他。<br/>
+阿甘只是孤独。<br/>
+没有人走进阿甘的心里。<br/>
+没有人想走进阿甘的心里。<br/>
+或者说：<br/>
+珍妮没有走进阿甘心里。<br/>
+珍妮不想走进阿甘心里。<br/>
+当珍妮再次离开，所有孤独，清晰浮现。<br/>
+阿甘开始奔跑。<br/>
+跑到城边。<br/>
+跑遍县城。<br/>
+横越阿拉巴马州。<br/>
+跑到一个海角。<br/>
+跑到另一个海角。<br/>
+横越美国。<br/>
+在湖边奔跑。<br/>
+在麦田旁奔跑。<br/>
+在河流石桥上奔跑。<br/>
+在栅栏边奔跑。<br/>
+在牧场旁奔跑。<br/>
+在秋天黄叶林中奔跑。<br/>
+在沙漠奔跑。<br/>
+三年，两个半月。<br/>
+后来，珍妮问起，阿甘告诉她：<br/>
+战场雨停后的星空。<br/>
+海湾的日落。<br/>
+雪山旁湖面的倒影。<br/>
+沙漠的日出。<br/>
+那些属于阿甘的，一个人的一些瞬间。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -249,263 +640,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/09/dgs-legend2/">东哥传2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-10-09T22:49:34+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:49 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>2014.10.4</h3>
-
-<p>09年上大学，肇庆学院，09电子1班。13年，结束。</p>
-
-<p>离校时，下雨，友哥送我到市车站。上车前，我们拥抱了一下。</p>
-
-<p>就是拥抱了一下。</p>
-
-<p>没有豪言壮语泪流满面等等情况。</p>
-
-<p>开车后，看着窗外熟悉的肇庆，我终是有点想哭。在这生活了四年，四年的感情，我不舍得。我知道现代交通很方便，以后要回去一次很容易，但还是不舍得。</p>
-
-<p>我对肇庆学院有深厚的感情。虽然不全是美好的，毕竟我是个学渣。</p>
-
-<p>美好的，是我和同学们经历的许多事。这里，以我的几个舍友为主。按床位排名：小郭，友哥，宝文，老扬，小康，老陈，老壁。</p>
-
-<p>插个话，大一时，是胖豪，住了一年后搬去了公寓，老扬和武昌搬入，小康是荣誉舍员。胖豪是冲我们发过很多次让我们很难理解的火，搞得很难堪，自己搬走了，而据我了解，他去公寓后也是这个鸟样。武昌在大学时和我们相处没什么问题，只是毕业后就慢慢没有了联系。小康是大一时和我们在相邻宿舍，我12栋306，他307，大二暑假我们一起去汕头打工，期间建立了不错的感情，之后经常来宿舍找宝文和我，继而和其他人打成一片，成功上位。加上我们喝酒时他经常买单，我就封了他荣誉舍员，希望他再接再厉，继续买单。</p>
-
-<p>从09年到现在，5年时间，我们走了过来，如果以后没有重大利益或感情纠葛，我相信我们能一直走下去。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/09/dgs-legend1/">东哥传1</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-10-09T22:23:31+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:23 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>开篇</h4>
-
-<p>我读完4年大学，离校路上，有感，萌生写传念头。拖拉至今，起笔。</p>
-
-<p>鉴于我水平低，先给自己一个台阶：本传毫无章法，无所限制，不讲顺序，完全是想到什么写什么！</p>
-
-<p>有此念头，一方面是我喜欢文学，另一方面是看到我的高中同学彪哥也给他自己写了传，写得很好，令我也想试一试，在此感谢<strong>彪哥</strong>，<strong>李彪</strong>。</p>
-
-<p>写写我这个人，我的事，我遇到的人，我遇到的事，也好。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/21/tobaowen/">致宝文</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-09-21T19:50:53+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>7:50 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>严正声明：事关宝文个人隐私，未经宝文允许，不得传出宿舍外！</h4>
-
-<p>昨天，秋风冷起。</p>
-
-<p>昨天，得知宝文又谈恋爱。</p>
-
-<p>都是昨天，万事万物皆有关联，这说明：宝文的恋爱和秋风一样让人感到冰冷。</p>
-
-<p>你想，全宿舍最猥琐的宝文居然谈恋爱了，而且是又谈恋爱了，而帅得血了呼啦潮得犀了马哈的东哥，却只配做个好人，我呸！</p>
-
-<p>然后我的反应是：难道这几天又有天文奇观天狗食月？</p>
-
-<p>插叙下：宝文上个女朋友，表白那天，下午，宝文和我去轮滑，到了鼎湖山，再去九龙湖。回来后，天黑了，我们在校门口吃了5块钱炒粉，宝文还打包多一份回宿舍，然后他没有冲凉，就约小宇出来表白，然后那天还遇上N年难得一遇的天狗食月。</p>
-
-<p>说到这我得简略小结一下：又累、又饿、又满身臭汗没冲凉、又月食，表白……</p>
-
-<p>么蛋，别说女生拒绝你，是我我也拒绝你啦！</p>
-
-<p>果然失败了。哈哈哈。</p>
-
-<p>过了段时间，我记得是寒假，中午，宝文发信息给我，说他成功了，小宇答应了。</p>
-
-<p>擦，女人真的是个奇怪的物种。</p>
-
-<p>再后来，我看到小宇，挺好的一个女生，就是眼神不好。</p>
-
-<p>我们曾无数次在宿舍卧谈会嘲笑宝文月食之夜表白的糗事，有时候我会想：这样赤裸裸地嘲笑自己的舍友会不会不好？宝文会不会想不开做自由落体运动？然后我想明白了，在情在理，我们嘲笑宝文，都是好的。</p>
-
-<p>理：宝文这么猥琐，如果被人笑笑就受不了，早就瓜老衬了。</p>
-
-<p>情：宝文这么猥琐，就应该被人嘲笑。</p>
-
-<p>毕业不久，他们分手了，感情上我也不好接受，挺好的女生，宝文可惜了，而理智告诉我，没被宝文糟蹋，也是好事。</p>
-
-<p>所以现在听到宝文又谈恋爱的消息，简直是晴天霹雳万里无云，唉……现在的许多小女生，就是喜欢猥琐屌丝、美女配野兽，啊不，禽兽！真希望下次聚会，约他们出来，谈谈小宇。</p>
-
-<p>对于宝文这个猥琐男，我只能说：希望宝文早日踏入婚姻的殿堂爱情的坟墓，然后买到穿孔的避孕套，生几个孩子向他讨债！</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/16/dgs-classroom/">东哥学堂1</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-09-16T16:08:10+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:08 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>新人入职，别太出风头，不然容易被排挤。</p>
-
-<p>当然也要适当表现自己的能力给老板看到。</p>
-
-<p>两者之间的度要把握好。</p>
-
-<p>小时候在学校在家里接受的很多教育都是错的，比如说：知错能改就是好孩子。社会上，错了，要负责任！</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/26/install-chrome/">Install Chrome</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-04-26T18:09:48+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>6:09 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在tweak里安装，chromium偶尔有问题，还是用 chrome stable好</p>
-
-<p>2015.3.6</p>
-
-<pre><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
-sudo dpkg -i google-chrome-stable_current_i386.deb
-</code></pre>
-
-<p>如果提示缺失依赖包，执行：</p>
-
-<pre><code>sudo apt-get install -f
-</code></pre>
-
-<p>done.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/26/install-dropbox/">Install Dropbox</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-04-26T18:07:16+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>6:07 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>先配置好翻墙</p>
-
-<p>从官网下载deb文件安装(tweak里安装不行)</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/16">&larr; Older</a>
@@ -523,19 +657,43 @@ sudo dpkg -i google-chrome-stable_current_i386.deb
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开编辑 插入本地图片 程序</a>
+        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开文件 插入本地图片 程序</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/11/ttttttttttttttt/">Ttttttttttttttt</a>
+        <a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/02/basketball-in-the-zone/">打篮球最好的一次——境界</a>
+        <a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/02/fail-in-installing-octopress-3-dot-0/">安装octopress 3.0 博客失败</a>
+        <a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/add-category/">侧边栏增加分类 Category</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/can-not-push/">没有正确路径或权限上传，push</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/change-templates--post-if-error/">更改了文件_templates/post，以后若出错改回来</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a>
       </li>
     
       <li class="post">
@@ -578,40 +736,16 @@ sudo dpkg -i google-chrome-stable_current_i386.deb
         <a href="/blog/2021/04/04/chou-le-de-ji-tui/">臭了的鸡腿</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2021/04/04/fang-xia/">放下 接受 和解</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/09/09/dying/">崩溃</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/08/21/famaly/">家人</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/12/ren-xing-de-ruo-dian/">人性的弱点</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/03/ios-upgrade-and-downgrade/">iOS的升级与降级</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/">Ubuntu 分区大小</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
-<li class='category'><a href='/blog/categories/onlyforyou/'>onlyforyou (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (92)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (58)</a></li>
-<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (1)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (97)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (59)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (8)</a></li>
 
   </ul>
 </section>

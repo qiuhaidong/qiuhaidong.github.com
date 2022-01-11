@@ -9,7 +9,12 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="自动打开文件编辑 rake new_post["file name"]后自动打开对应的markdown文件 Rakefile文件，上面位置，添加定义： editor = "gedit" 然后在new_post命令后面添加： if #{editor} system "#{editor} #{ &hellip;">
+  <meta name="description" content="添加功能：自动打开文件编辑 rake new_post["file name"] 后自动打开博客文件
+编辑Rakefile文件，上面位置，添加定义： 1
+editor = "gedit" 然后在new_post命令后面添加： 1
+2
+3
+if #{editor} system "#{editor &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -72,7 +77,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开编辑 插入本地图片 程序</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开文件 插入本地图片 程序</a></h1>
     
     
       <p class="meta">
@@ -88,40 +93,36 @@
   </header>
 
 
-  <div class="entry-content"><h3>自动打开文件编辑</h3>
+  <div class="entry-content"><h3>添加功能：自动打开文件编辑</h3>
 
-<p><code>rake new_post["file name"]</code>后自动打开对应的markdown文件</p>
+<p><code>rake new_post["file name"]</code> 后自动打开博客文件<br/>
+编辑<code>Rakefile</code>文件，上面位置，添加定义：</p>
 
-<p><code>Rakefile</code>文件，上面位置，添加定义：</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>editor = "gedit"</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>editor = "gedit"
-</code></pre>
 
 <p>然后在<code>new_post</code>命令后面添加：</p>
 
-<pre><code>  if #{editor}
-    system "#{editor} #{filename}"
-  end
-</code></pre>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if #{editor}
+</span><span class='line'>  system "#{editor} #{filename}"
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
 
 <h3>插入本地图片</h3>
 
-<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中直接引用即可。也可以直接引用网络上的图片。</p>
-
-<p>为了方便管理，可以在images下对自己添加的图片建立目录区分，比如：<code>images/2013/12</code>。</p>
-
-<p>语法与插入超链接类似：</p>
+<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中可直接引用，用法：</p>
 
 <pre><code>格式显示有问题，请看原文，或下面的图片&lt;img src="/images/麦迪科比.jpg"&gt;
 </code></pre>
 
-<p><img src="/images/自动打开-本地图片-程序.png"></p>
+<p><img src="/images/自动打开-本地图片-程序.png"><br/>
+<img src="/images/麦迪科比.jpg"></p>
 
-<p><img src="/images/麦迪科比.jpg"></p>
-
-<h3>test code in blog</h3>
-
-<p>看原文</p>
+<h4>前后行3个```显示代码，且有显示行数</h4>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -149,7 +150,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/01/11/ttttttttttttttt/">Ttttttttttttttt</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a></h1>
     
     
       <p class="meta">
@@ -158,14 +159,110 @@
 
 
 
-<time class='entry-date' datetime='2022-01-11T22:35:44+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:35 pm</span></time>
+<time class='entry-date' datetime='2022-01-11T07:52:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:52 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><pre><code>install 2.3.1  
+</code></pre>
+
+<p>失败<br/>
+.</p>
+
+<pre><code>cd octopress
+</code></pre>
+
+<p>.</p>
+
+<pre><code>ruby --version
+</code></pre>
+
+<p>.</p>
+
+<pre><code>rvm use 2.7.0
+Required ruby-2.7.0 is not installed.
+To install do: 'rvm install "ruby-2.7.0"'  
+</code></pre>
+
+<h1>记得是用2.7.0</h1>
+
+<p> .</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rvm install "ruby-2.7.0"  
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ ruby --version
+ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+Could not find rake-10.5.0 in any of the sources
+Run `bundle install` to install missing gems.
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ bundle install
+Traceback (most recent call last):
+4: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/ruby_executable_hooks:22:in `&lt;main&gt;'
+3: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/ruby_executable_hooks:22:in `eval'
+2: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/bundle:23:in `&lt;main&gt;'
+1: from /home/dong/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/rubygems.rb:294:in `activate_bin_path'
+/home/dong/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/rubygems.rb:275:in `find_spec_for_exe': Could not find 'bundler' (1.17.3) required by your /home/dong/octopress/Gemfile.lock. (Gem::GemNotFoundException)
+To update to the latest version installed on your system, run `bundle update --bundler`.
+To install the missing version, run `gem install bundler:1.17.3`
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ gem install bundler:1.17.3
+Fetching bundler-1.17.3.gem
+Successfully installed bundler-1.17.3
+Parsing documentation for bundler-1.17.3
+Installing ri documentation for bundler-1.17.3
+Done installing documentation for bundler after 3 seconds
+1 gem installed
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+Could not find rake-10.5.0 in any of the sources
+Run `bundle install` to install missing gems.
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ bundle install
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+rake aborted!
+Gem::LoadError: You have already activated rake 13.0.1, but your Gemfile requires rake 10.5.0. Prepending `bundle exec` to your command may solve this.
+/home/dong/octopress/Rakefile:2:in `&lt;top (required)&gt;'
+(See full trace by running task with --trace)
+</code></pre>
+
+<p>提示失败，<br/>
+但是可以加上<code>bundle exec</code></p>
+
+<pre><code>dong@Ubuntu:~/octopress$bundle exec rake generate
+</code></pre>
+
+<p>很多警告，但是成了，<br/>
+下面也一样：</p>
+
+<pre><code>bundle exec rake preview
+</code></pre>
 </div>
   
   
@@ -178,7 +275,983 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/01/02/basketball-in-the-zone/">打篮球最好的一次——境界</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T04:38:50+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:38 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容</h3>
+
+<p>首先利用<code>rfkill</code>命令查看目前无线传输设备的状态，<code>rfkill</code>是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。</p>
+
+<p>rfkill的常用方法为:</p>
+
+<pre><code>rfkill list all
+#  获得设备列表
+
+rfkill block [index|type]
+#  通过索引或类型禁用设备
+
+rfkill unblock [index|type]
+#  通过索引或类型启用设备
+</code></pre>
+
+<p>当前设备状态如下：</p>
+
+<pre><code>rfkill list all
+输出：
+0: phy0: Wireless LAN
+    Soft blocked: no
+    Hard blocked: yes
+1: acer-wireless: Wireless LAN
+    Soft blocked: no
+    Hard blocked: no
+</code></pre>
+
+<p>通过rfkill启用/禁用设备无法对硬件阻塞产生作用。</p>
+
+<p>由于笔记本只有一个无线网卡，这两个模块应该是有冲突</p>
+
+<p>使用命令lsmod | grep acer可以看出系统启动了acer_wmi模块</p>
+
+<p>通过查找资料后，解决方法为禁用acer_wmi模块。</p>
+
+<p>解决方法：</p>
+
+<p>通过在/etc/modprobe.d/文件夹下，编辑blacklist.conf文件，最后一行添加内容：  <code>blacklist acer_wmi</code></p>
+
+<pre><code>sudo gedit /etc/modprobe.d/blacklist.conf
+</code></pre>
+
+<p>重启<br/>
+wifi自动为打开状态，此时rfkill list all命令结果如下:</p>
+
+<pre><code>rfkill list all
+
+0: phy0: Wireless LAN
+Soft blocked: no
+Hard blocked: no
+</code></pre>
+
+<p>版权声明：本文为CSDN博主「Monkey_D_Shuai」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/ls12165/article/details/68189943">https://blog.csdn.net/ls12165/article/details/68189943</a></p>
+
+<p><a href="https://blog.csdn.net/ls12165/article/details/68189943?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;utm_relevant_index=2">原文链接</a></p>
+
+<p><a href="https://blog.csdn.net/weixin_34305091/article/details/116951261?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;utm_relevant_index=2">另一篇博文</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T00:17:21+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:17 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ubuntu20.04安装了几次2.0都失败<br/>
+ubuntu12.04已经无法安装系统本身的更新了，更别说安装其他软件<br/>
+强迫症发作，于是有了这次：</p>
+
+<h3>列出大致步骤吧，主要是有些error要如何解决</h3>
+
+<h2>git</h2>
+
+<h3>install git</h3>
+
+<pre><code>git --version
+sudo apt install git
+git --version
+</code></pre>
+
+<h3>set up git</h3>
+
+<h4>Username</h4>
+
+<p>github用户名</p>
+
+<pre><code>git config --global user.name "qiuhaidong"
+#or haydnyau
+</code></pre>
+
+<h4>Email</h4>
+
+<p>github登录帐号邮箱名</p>
+
+<pre><code>git config --global user.email "690982322@qq.com"
+#or 1148891016@qq.com
+</code></pre>
+
+<p>Password caching</p>
+
+<p>To use this option, you need to turn on the credential helper so that git will save your password in memory for some time:</p>
+
+<pre><code>git config --global credential.helper cache
+</code></pre>
+
+<h3>添加 SSH Keys</h3>
+
+<h4>Step 1: Check for SSH keys</h4>
+
+<p>First, we need to check for existing ssh keys on your computer. Open up Terminal and run:</p>
+
+<pre><code>cd ~/.ssh
+# Checks to see if there is a directory named ".ssh" in your user directory
+</code></pre>
+
+<p>If it says “No such file or directory” go to step 2. Otherwise, you already have an existing keypair, and you can skip to step 3.</p>
+
+<p><strong>最好就是把 .shh 这个文件夹删除了，做step 2</strong></p>
+
+<h4>Step 2: Generate a new SSH key</h4>
+
+<p>To generate a new SSH key, enter the code below. We want the default settings so when asked to enter a file in which to save the key, <strong>just press enter</strong>.不要输入文件名</p>
+
+<pre><code>ssh-keygen -t rsa -C "your_email@example.com"
+我的就是：ssh-keygen -t rsa -C "690982322@qq.com"
+#or 1148891016@qq.com
+</code></pre>
+
+<p>Now you need to enter a passphrase.设置密码。（有人是密码都不要的，再按两下enter就行了）</p>
+
+<p>Which should give you something like this:</p>
+
+<pre><code>Your identification has been saved in /home/you/.ssh/id_rsa.
+Your public key has been saved in /home/you/.ssh/id_rsa.pub.
+The key fingerprint is:
+01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
+</code></pre>
+
+<h3>Step 3: Add your SSH key to GitHub</h3>
+
+<p>ctrl+h，显示隐藏文件，这里其实可以打开这个<strong>id_rsa.pub</strong>文件，直接复制，不用安装下面的软件</p>
+
+<pre><code>sudo apt-get install xclip
+# Downloads and installs xclip.
+
+xclip -sel clip &lt; ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+</code></pre>
+
+<h4>Add your SSH key to GitHub</h4>
+
+<p>到github网站，登陆，头像，设置，SSH and GPG keys，把旧的SSH keys删除，添加新的，title不用管，粘贴到key就行了</p>
+
+<h3>Step 4: Test</h3>
+
+<pre><code>ssh -T git@github.com
+</code></pre>
+
+<p>这里可能会还要按照提示做一下，不难，看英文做</p>
+
+<p>如果看到：</p>
+
+<pre><code>Hi qiuhaidong! You've successfully authenticated, but GitHub does not provide shell access.
+# or haydnyau
+</code></pre>
+
+<p>If that username is correct, you’ve successfully set up your SSH key. Don’t worry about the shell access thing, you don’t want that anyway.</p>
+
+<p>If you see “<strong>access denied</strong>” please consider using HTTPS instead of SSH. If you need SSH start at these instructions for diagnosing the issue.</p>
+
+<h4>如果不成功，用https的认证方式代替ssh，因为github觉得ssh不安全，认证方式有时会改变</h4>
+
+<h2>RVM</h2>
+
+<p>看官网命令</p>
+
+<pre><code>rvm --version
+gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+</code></pre>
+
+<p>会显示失败，先不管它<br/>
+Install RVM：命令</p>
+
+<pre><code>curl -sSL https://get.rvm.io | bash -s stable
+</code></pre>
+
+<p>如下：</p>
+
+<pre><code>dong@Ubuntu:~$ curl -sSL https://get.rvm.io | bash -s stable
+Downloading https://github.com/rvm/rvm/archive/1.29.12.tar.gz
+Downloading https://github.com/rvm/rvm/releases/download/1.29.12/1.29.12.tar.gz.asc
+gpg: 于 2021年01月16日 星期六 02时46分22秒 CST 创建的签名，使用 RSA，钥匙号 39499BDB
+gpg: 无法检查签名：没有公钥
+GPG signature verification failed for '/home/dong/.rvm/archives/rvm-1.29.12.tgz' - 'https://github.com/rvm/rvm/releases/download/1.29.12/1.29.12.tar.gz.asc'! Try to install GPG v2 and then fetch the public key:
+    gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+or if it fails:
+    command curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
+    command curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
+In case of further problems with validation please refer to https://rvm.io/rvm/security
+</code></pre>
+
+<p>这个提示错误，并且给出了解决方法：<br/>
+运行：<br/>
+命令1：</p>
+
+<pre><code>curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
+</code></pre>
+
+<p>命令2：</p>
+
+<pre><code>curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
+</code></pre>
+
+<p>再运行上一条命令安装rvm：</p>
+
+<pre><code>curl -L https://get.rvm.io | bash -s stable
+</code></pre>
+
+<p>输出：</p>
+
+<pre><code>  * To start using RVM you need to run `source /home/dong/.rvm/scripts/rvm`
+</code></pre>
+
+<p>安装成功，按照提示运行：</p>
+
+<pre><code>source /home/dong/.rvm/scripts/rvm
+</code></pre>
+
+<p>测试：</p>
+
+<pre><code>rvm --version
+git --version
+</code></pre>
+
+<p>安装ruby2.2.6（1.9.3太久了，无法安装）</p>
+
+<pre><code>rvm install 2.2.6
+</code></pre>
+
+<p>会提示输入本机密码</p>
+
+<pre><code>rvm use 2.2.6
+</code></pre>
+
+<h3>Setup Octopress</h3>
+
+<pre><code>git clone -b source git@github.com:qiuhaidong/qiuhaidong.github.com.git octopress
+# 或者 git clone git://github.com/imathis/octopress.git octopress
+# octopress  2.0 原码
+cd octopress
+</code></pre>
+
+<h4>install dependencies</h4>
+
+<pre><code>gem install bundler
+</code></pre>
+
+<h4>会提示失败，按提示加上版本号，安装适合本系统的</h4>
+
+<pre><code>bundle install
+</code></pre>
+
+<h4>Install the default Octopress theme</h4>
+
+<pre><code>rake install
+</code></pre>
+
+<h4>Deploying to Github Pages</h4>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p>这里可能会要输入链接等，ssh，https</p>
+
+<p>The rake task will ask you for a URL of the Github repo. Copy the SSH or HTTPS URL from your newly created repository <br/>
+(e.g. git@github.com:username/username.github.io.git) <br/>
+git@github.com:qiuhaidong/qiuhaidong.github.com.git<br/>
+<a href="https://github.com/qiuhaidong/qiuhaidong.github.com.git">https://github.com/qiuhaidong/qiuhaidong.github.com.git</a><br/>
+or<br/>
+git@github.com:haydnyau/haydnyau.github.io.git<br/>
+<a href="https://github.com/haydnyau/haydnyau.github.io.git">https://github.com/haydnyau/haydnyau.github.io.git</a><br/>
+and paste it in as a response.</p>
+
+<p>This will:</p>
+
+<ol>
+<li>Ask for and store your Github Pages repository url.</li>
+<li>Rename the remote pointing to imathis/octopress from &lsquo;origin&rsquo; to &lsquo;octopress&rsquo;</li>
+<li>Add your Github Pages repository as the default origin remote.</li>
+<li>Switch the active branch from master to source.</li>
+<li>Configure your blog&rsquo;s url according to your repository.</li>
+<li>Setup a master branch in the _deploy directory for deployment.</li>
+</ol>
+
+
+<p>Next run:</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<p>This will generate your blog, copy the generated files into <code>_deploy/</code>, add them to git, commit and push them up to the master branch. In a few seconds you should get an email from Github telling you that your commit has been received and will be published on your site.</p>
+
+<hr />
+
+<hr />
+
+<p>来自官网<br/>
+<strong>下面这个不知道要不要做：</strong><br/>
+Now you have a place to commit the generated content for your site, but you should also set up repository to store the source for your blog. After you set up a repository for your blog source, add it as the origin remote.</p>
+
+<pre><code>git remote add origin (your repo url)
+# set your new origin as the default branch
+git config branch.master.remote origin
+</code></pre>
+
+<p>Now push your changes and you&rsquo;ll be all set.<br/>
+<strong>上面这个不知道要不要做：</strong><br/>
+来自官网</p>
+
+<hr />
+
+<hr />
+
+<p><strong>Don&rsquo;t forget</strong> to commit the source for your blog.</p>
+
+<pre><code>git add .
+git commit -m 'update'
+git push origin source
+</code></pre>
+
+<h3>Configuring Octopress</h3>
+
+<h4>edit _config.yml</h4>
+
+<pre><code>url:                # 不管
+title:              # 丘海东
+subtitle:           # Haydn Yau
+author:             # 丘海东
+paginate: 10          # 主页文章数
+recent_posts: 20       # 主页显示最近文字标题数
+
+# list each of the sidebar modules you want to include, in the order you want them to appear.
+# To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
+default_asides: [asides/category_list.html注意，这里添加侧边栏，看另一篇博文, asides/recent_posts.html, asides/github.html]
+
+github_user: haydnyau
+</code></pre>
+
+<h4>一些命令：</h4>
+
+<pre><code>rake new_post["title"]
+rake generate
+rake preview
+rake deploy
+</code></pre>
+
+<h4>pull.sh</h4>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+git pull origin source
+rake generate deploy
+</code></pre>
+
+<h4>push.sh</h4>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+rake generate deploy
+git add .
+git commit -m 'update'
+git push origin source
+</code></pre>
+
+<p><strong>记得右键，属性，权限，程序执行文件</strong></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/10/add-category/">侧边栏增加分类 Category</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-10T23:00:59+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:00 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>三步</h3>
+
+<h2>Step 1</h2>
+
+<h3>添加 <code>category_list</code> 插件</h3>
+
+<p>在 <code>octopress\plugins\</code> 文件夹里面，新建一个文件，名为：<code>category_list_tag.rb</code>。并将下面的代码粘贴到里面。</p>
+
+<pre><code>module Jekyll
+  class CategoryListTag &lt; Liquid::Tag
+    def render(context)
+      html = ""
+      categories = context.registers[:site].categories.keys
+      categories.sort.each do |category|
+        posts_in_category = context.registers[:site].categories[category].size
+       category_dir = context.registers[:site].config['category_dir']
+        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
+        html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+      end
+      html
+    end
+  end
+end
+
+Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
+</code></pre>
+
+<p>这个插件会向<code>liquid</code>注册一个名为<code>category_list</code>的<code>tag</code>，该<code>tag</code>就是以<code>li</code>的形式将站点所有的<code>category</code>组织起来。如果要将<code>category</code>加入到侧边导航栏，需要增加一个<code>aside</code>。</p>
+
+<h2>Step 2</h2>
+
+<h3>增加 <code>aside</code></h3>
+
+<p>在 <code>octopress\source\_includes\asides\</code> 文件夹里面，新建一个文件，名为：<code>category_list.html</code> 。并粘贴下面的代码：</p>
+
+<p><strong>注意</strong>： 去掉 <code>%</code> 前面的2个 <code>\</code><br/>
+这里如果不加上<code>\</code>，markdown格式会显示<code>category_list</code>的内容。我是为了正确显示代码才加上的</p>
+
+<pre><code>&lt;section&gt;
+  &lt;h1&gt;Categories&lt;/h1&gt;
+  &lt;ul id="categories"&gt;
+    {\% category_list \%}
+  &lt;/ul&gt;
+&lt;/section&gt;
+</code></pre>
+
+<h2>Step 3</h2>
+
+<h3><code>_config.yml</code> 文件 ，修改 <code>default_asides</code></h3>
+
+<p>打开 <code>octopress\_config.yml</code> 文件，修改里面的 <code>default_asides</code> 这一行，将 <code>asides/category_list.html</code> 添加进去。</p>
+
+<pre><code>default_asides: [asides/category_list.html, ......]
+</code></pre>
+
+<p>这里可以修改侧边栏的顺序</p>
+
+<h2>ok</h2>
+
+<p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-categories-list-for-site-sidebar/">原博</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/10/can-not-push/">没有正确路径或权限上传，push</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-10T22:42:18+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:42 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>代码如下：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ git push origin source
+
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
+
+<p>打开文件~/octopress/.git/config，查看</p>
+
+<pre><code>[remote "origin"]
+    url = git@github.com:haydnyau/haydnyau.github.io.git
+</code></pre>
+
+<p>我是改了几次，com.git和io.git搞错了</p>
+
+<p><a href="https://blog.csdn.net/weixin_40886892/article/details/80725071">和我同样问题的网友</a></p>
+
+<p><a href="https://blog.csdn.net/meng_lemon/article/details/88963157">另一个网友的类似问题</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-07T06:34:42+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:34 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>preview.sh代码</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build #生成
+jekyll serve
+</code></pre>
+
+<hr />
+
+<p>deploy.sh代码</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+octopress deploy
+</code></pre>
+
+<hr />
+
+<p>（不行，这个会造成有些blog页面头尾显示不全）发布，并上传/_posts/源文件，deploy.sh 代码</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+mv _posts/ _site/
+octopress deploy
+mv _site/_posts/ .
+</code></pre>
+
+<p>注意这个点 &ldquo;.&rdquo;
+<code>.</code> 或者 <code>./</code> 表示当前目录</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/07/change-templates--post-if-error/">更改了文件_templates/post，以后若出错改回来</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-07T06:19:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:19 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>更改了/home/dong/haydnyau/_templates/post
+增加了：</p>
+
+<pre><code>categories: 
+</code></pre>
+
+<h3>ps: {}里面有代码:</h3>
+
+<p>categories: {{ categories }}<br/>
+因为格式问题没有显示，参见原文件</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-07T06:02:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:02 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>重装octopress 2.0 博客失败<br/>
+很多新旧的软件，依赖，都不兼容了<br/>
+算了，世界在发展，有的旧事物必然被淘汰<br/>
+毕竟连作者都不维护了<br/>
+而且连3.0都不维护了</p>
+
+<hr />
+
+<p><a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a></p>
+
+<p><a href="https://jingsam.github.io/2015/10/21/blogging-with-octopress-3-0.html">博文2，Octopress 3.0博客搭建教程</a></p>
+
+<p>安装git<br/>
+设置好用户名，email等等，参见之前的blog<br/>
+添加ssh钥匙到github<br/>
+安装rvm<br/>
+安装ruby<br/>
+安装octopress</p>
+
+<pre><code>gem install octopress
+</code></pre>
+
+<p>创建博客的主文件夹</p>
+
+<pre><code>octopress new haydnyau #名字自取
+</code></pre>
+
+<p>新建一篇blog</p>
+
+<pre><code>octopress new post hello world
+</code></pre>
+
+<p>生成网页</p>
+
+<pre><code>jekyll build
+</code></pre>
+
+<p>为避免下面的错误：</p>
+
+<pre><code>sudo bundle add webrick
+</code></pre>
+
+<p>本地预览</p>
+
+<pre><code>jekyll serve
+</code></pre>
+
+<h3><a href="https://github.com/jekyll/jekyll/issues/8523">可能会报错,参见此blog</a></h3>
+
+<p><img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrEOrm72ctF5gw0aqWv21aZeNSASWKMfjZMh4q6GkEqIeM78CkO7o4O*iqGXdxCboPoKIKO9drAx052jTS2quUV58!/r" alt="jekyll serve, cannot load such file -- webrick (LoadError)" /></p>
+
+<pre><code>dong@Ubuntu:~/haydnyau$ bundle exec jekyll serve
+Configuration file: /home/dong/haydnyau/_config.yml
+            Source: /home/dong/haydnyau
+       Destination: /home/dong/haydnyau/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.398 seconds.
+ Auto-regeneration: enabled for '/home/dong/haydnyau'
+                    ------------------------------------------------
+      Jekyll 4.2.1   Please append `--trace` to the `serve` command 
+                     for any additional information or backtrace. 
+                    ------------------------------------------------
+/home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve/servlet.rb:3:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:179:in `require_relative'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:179:in `setup'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:100:in `process'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/command.rb:91:in `each'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:86:in `block (2 levels) in init_with_program'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/exe/jekyll:15:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-3.1.0/bin/jekyll:25:in `load'
+    from /home/dong/.rvm/gems/ruby-3.1.0/bin/jekyll:25:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-3.1.0/bin/ruby_executable_hooks:22:in `eval'
+    from /home/dong/.rvm/gems/ruby-3.1.0/bin/ruby_executable_hooks:22:in `&lt;main&gt;'
+dong@Ubuntu:~/haydnyau$ 
+</code></pre>
+
+<p>原因：</p>
+
+<h3>回答1：</h3>
+
+<p>This happens because webrick is no longer a bundled gem in Ruby 3.0. From <a href="https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/:">https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/:</a></p>
+
+<blockquote><ul>
+<li>The following libraries are no longer bundled gems or standard libraries. Install the corresponding gems to use these features.</li>
+<li>sdbm</li>
+<li>webrick</li>
+<li>net-telnet</li>
+<li>xmlrpc</li>
+</ul>
+</blockquote>
+
+<p>Adding <code>gem "webrick"</code> to my Gemfile solves the problem, but Jekyll should include it in its gemspec.</p>
+
+<h2>回答2：</h2>
+
+<p>I think you want run: <code>bundle add webrick</code>.</p>
+
+<p>我运行：</p>
+
+<pre><code>sudo bundle add webrick
+</code></pre>
+
+<p><img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrEBN4rGxoHZRJvba1HYTQq27ffRKlLPwSuElBnQsx8myUeNz3PvYmrJfIi3*2TZPi9OuuBIJmyilHvC5IQwNqaYw!/r" alt="sudo bundle add webrick" /></p>
+
+<pre><code>dong@Ubuntu:~/haydnyau$ bundle add webrick
+Fetching gem metadata from https://rubygems.org/.........
+Resolving dependencies...
+Fetching gem metadata from https://rubygems.org/.........
+Resolving dependencies...
+Using public_suffix 4.0.6
+Using bundler 2.3.4
+Using colorator 1.1.0
+Using concurrent-ruby 1.1.9
+Using eventmachine 1.2.7
+Using http_parser.rb 0.8.0
+Using ffi 1.15.4
+Using forwardable-extended 2.6.0
+Using rb-fsevent 0.11.0
+Using rexml 3.2.5
+Using liquid 4.0.3
+Using mercenary 0.4.0
+Using rouge 3.27.0
+Using safe_yaml 1.0.5
+Using unicode-display_width 1.8.0
+Using webrick 1.7.0
+Using addressable 2.8.0
+Using sassc 2.4.0
+Using rb-inotify 0.10.1
+Using kramdown 2.3.1
+Using terminal-table 2.0.0
+Using listen 3.7.0
+Using kramdown-parser-gfm 1.1.0
+Using jekyll-sass-converter 2.1.0
+Using pathutil 0.16.2
+Using em-websocket 0.5.3
+Using i18n 1.8.11
+Using jekyll-watch 2.2.1
+Using jekyll 4.2.1
+Using jekyll-feed 0.16.0
+Using jekyll-seo-tag 2.7.1
+Using minima 2.5.1
+dong@Ubuntu:~/haydnyau$ 
+</code></pre>
+
+<p>问题解决</p>
+
+<p>解决前后的Gemfile文件：<br/>
+<img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrEJRCIzYAaW3bXX8u6*IVJZ.XtCdPn6AvRrMkapg1VV.CqGful*eQepRFyH0ztMqVtAXon32yueiaIigulllP3VI!/r" alt="Genfile，前" /><br/>
+<img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrECtxM1XJmWMiuXm2sA41EdXEaIr2GF1uWWNzSBr7KU5QsmUQqXrNTxgBvdf2nvM66ZFdRT4*rwlgIb3LIswYiAo!/r" alt="Genfile，后" /></p>
+
+<p>生成发布配置文件</p>
+
+<pre><code>octopress deploy init git git@github.com:haydnyau/haydnyau.github.com.git
+</code></pre>
+
+<p>发布</p>
+
+<pre><code>octopress deploy
+</code></pre>
+
+<p>git上传</p>
+
+<pre><code>git init
+git add .
+</code></pre>
+
+<p>还有的以后琢磨<br/>
+买个早餐，吃饱，睡觉</p>
+
+<hr />
+
+<h1>下面的是详细一点但有点杂乱的，若已经创建好，不必要看</h1>
+
+<hr />
+
+<p>欢迎来到octopress3.0<br/>
+折腾两三天了<br/>
+先简单说说吧，详细的自己再琢磨<br/>
+安装以下的：<br/>
+git，设置好用户名，email等等，参见之前的blog<br/>
+添加ssh钥匙到github<br/>
+安装rvm<br/>
+安装ruby</p>
+
+<pre><code>dong@Ubuntu:~$ rvm install 3.1.0
+dong@Ubuntu:~$ rvm use 3.1.0
+dong@Ubuntu:~$ rvm rubygems latest
+</code></pre>
+
+<p>install the Octopress gem. From your terminal:</p>
+
+<pre><code>dong@Ubuntu:~$ gem install octopress
+</code></pre>
+
+<p>And with that, you have Octopress installed!<br/>
+Blog Creation<br/>
+Getting up and running is easy with the new Octopress CLI commands. Navigate to your working directory and run the command below:</p>
+
+<pre><code>octopress new haydnyau 
+</code></pre>
+
+<p>This will create a directory named <strong>haydnyau</strong> with scaffolding for the website. Replace “haydnyau” with whatever you want to call your blog. Navigate to the newly crewated directory and open up your text editor to see what you have.</p>
+
+<p>Creating a Post<br/>
+We can create a new post using one of the Octopress CLI commands:</p>
+
+<pre><code>octopress new post hello world
+</code></pre>
+
+<p>This command creates a new blog post with the title <strong>hello world</strong>. You can obviously use any title of your choice. The post is created in the <strong>_posts</strong> directory.</p>
+
+<p>Viewing the Site<br/>
+Before the site can be viewed it has to be built. Since Octopress is a wrapper around Jekyll, we will use the command below to build:</p>
+
+<pre><code>jekyll build
+</code></pre>
+
+<p>That will build a static HTML website that can be found in the _site directory. This is built out of the markdown files for pages, posts, stylesheets, and config.</p>
+
+<p>To view the site run the command below from your terminal:</p>
+
+<pre><code>jekyll serve
+</code></pre>
+
+<p>Then, point your browser to the address <strong>localhost:4000</strong>.<br/>
+Configuration<br/>
+Octopress has a configuration file where you manage the settings for the website. This is the <strong>_config.yml</strong> file located in the home directory of the site. Here is an example of what it looks like:</p>
+
+<pre><code># Site settings
+title: Your awesome title
+email: your-email@domain.com
+description: &gt; # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname &amp; protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+</code></pre>
+
+<p>From the configuration file, you can add your Twitter and Github usernames. They will show up at the bottom of your page, along with the description. Feel free to edit the settings as desired by adding the necessary information. You will have to restart your server for the configuration changes to show up in your browser. You can stop the server by pressing CTRL+C.</p>
+
+<p>Deploying to GitHub Pages<br/>
+We will be hosting our blog on GitHub. Create an account if you do not have one yet.</p>
+
+<p>Create a new repository, give it a name in this format; <strong>username.github.com</strong>, replacing <strong>username</strong> with your Github username. Mine looks like this <strong>haydnyau.github.com</strong>.</p>
+
+<p>Generate the deployment configuration file for our blog using octopress deploy init command.</p>
+
+<pre><code>octopress deploy init git git@github.com:haydnyau/haydnyau.github.com.git
+</code></pre>
+
+<p>This generates a file called _deploy.yml, which contains the deployment configuration:</p>
+
+<pre><code>method: git                               # How do you want to deploy? git, rsync or s3.
+site_dir: _site                           # Location of your static site files.
+
+git_url: git@github.com:kinsomicrote/kinsomicrote.github.io  # remote repository url, e.g. git@github.com:username/repo_name
+
+# Note on git_branch:
+# If using GitHub project pages, set the branch to 'gh-pages'.
+# For GitHub user/organization pages or Heroku, set the branch to 'master'.
+#
+git_branch: master                        # Git branch where static site files are commited
+
+
+# remote_path:                            # Destination directory
+</code></pre>
+
+<p>Now deploy!</p>
+
+<pre><code>octopress deploy
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a></h1>
     
     
       <p class="meta">
@@ -194,7 +1267,7 @@
   </header>
 
 
-  <div class="entry-content"><p>今晚。<br/>
+  <div class="entry-content"><p>今晚<br/>
 并不是说命中率最高、速度最快，而是心态最好，进入境界。<br/>
 就像麦迪说的，35秒13分并不是他的最好，他的最好是进入了“in the zone”的境界。<br/>
 我今晚也一样。<br/>
@@ -223,450 +1296,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/02/fail-in-installing-octopress-3-dot-0/">安装octopress 3.0 博客失败</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-02T17:05:08+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2022</span></span> <span class='time'>5:05 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>如题<br/>
-算了，先别折腾</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/12/31/my-2021/">我的2021</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-12-31T22:27:13+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>31</span><span class='date-suffix'>st</span>, <span class='date-year'>2021</span></span> <span class='time'>10:27 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>这一年，三件事：到京东<strong>打工</strong>，学<strong>做饭</strong>，耳朵<strong>生病</strong>。<br/>
-<strong>打工</strong><br/>
-是做苦力，卖力气，很丢人，但，荒废了两年，终于动了。具体的，以前写过，不重复。<br/>
-<strong>做饭</strong><br/>
-很有门道，比如炒青菜，刚下锅，有的马上熟了，有的还没炒到，心慌。淡定，正常翻炒，就行了。还有先炒猪肉，再放面去炒，再放青菜，看起来一大锅，怕青菜在上面炒不熟，慌了。淡定，正常翻炒，就行了。<br/>
-淡定，正常地做，就行了。<br/>
-<strong>生病</strong><br/>
-对自己太狠。秋冬，连续俩月通宵夜班，噪声大，有压力，情绪不稳定，早上洗冷水澡，重糖，重淀粉（米面主食），重油，重盐，吃辣椒，估计血糖高，血脂高，血压高，血粘稠，睡眠严重不足，內耳供血不足，听觉神经长期疲累不堪。免疫力下降，感冒，鼻塞，咽鼓管之类的不通畅。<br/>
-种种原因，祸不单行，差点聋了。<br/>
-就这三件事。<br/>
-吸取教训，放下执念，放过自己，好好生活。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/12/15/jd3/">京東3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-12-15T19:09:42+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>7:09 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>day 68<br/>
-今天休假<br/>
-昨天耳朵又听到低沉的发动机的轰隆隆的声音，我以为是耳鸣，现在基本可以确定，这就是附近道路晚上泥头车汽車发动机或者工廠機器運转的声音。<br/>
-在京东时也常常听到。<br/>
-我<strong>感冒鼻塞</strong>时，耳朵<strong>对这些声音特别敏感</strong>。<br/>
-就这样。<br/>
-昨天上班时，没搞清情况，情绪又崩溃了……<br/>
-<strong><em>補充</em></strong>：<br/>
-工作沒勁頭，好想打電話給媽，和她坦白這一切，想讓她接受我的平庸，我的失敗，我的不婚，想發泄所有的不安、恐懼、負面情緒。<br/>
-幸好，我還懂得衝動憤怒情緒不穩定時，別做決定，別做事。<br/>
-休息了一天，現在知道不是耳鳴，是感冒鼻塞或者咽鼓管堵塞或者其他的聽力系統的某一部分出了問題，而引起的狀況，感冒好了，整個聽力系統自然就沒事了。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/12/07/grateful/">感恩</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-12-07T16:50:35+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>4:50 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>此一時彼一時，我又回京東上班了。<br/>
-總不能閒着不做事，沒有收入是不行的。<br/>
-不過我有保護自己，現在上日班，一天只需要工作6小時，活也不是很忙，挺好的。<br/>
-<strong>保護自己</strong>呀，一定要！</p>
-
-<h3>感恩</h3>
-
-<p>很多時候，挺多人，都對我很好的。很照顧我，甚至我不要臉地說，他們有時簡直是寵我。<br/>
-比如老大喻胡龍，人手足夠時，叫我不用幹活，讓別人做了我的那份工作，他會罵別人，但是不會說我我。還有他老婆，給東西我吃。<br/>
-比如潤峯大哥，旁邊的人工作比我更忙，但是他卻是幫我。<br/>
-比如？韋亦凡？（音譯，不知道是不是這個名字），其實不是很熟悉，但是京東發的小零食，他經常給我吃。<br/>
-還有大劉，老李，光頭大哥，光頭二哥，肥佬，肥仔老楊，胖子……還有很多我不知道名字的人。<br/>
-所以：<br/>
--<strong>越努力越幸運</strong>。<br/>
-我是個認真做事的人，別人看在眼裏，自然在條件允許時幫助我。<br/>
--別人幫我，是證明了別人是好人，自己<strong>別得瑟</strong>，<strong>得意不忘形</strong>。<br/>
-一直以來，都是很多人幫助我，加油吧，中年人，<strong>別辜負了那麼多的善意</strong>。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/11/26/I-AM-GOOD/">耳朵好了|饮鸩止渴|当断则断</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-11-26T09:22:11+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>9:22 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>劳逸结合</h3>
-
-<p>何同学说的：你通过熬夜，不规律的生活，随意而为得来的东西，总有一天，要<strong>连本带利</strong>还回去</p>
-
-<p>我倒是没有熬夜，生活也挺规律的，也没有随意，但就是<strong>对自己太狠了</strong>，<strong>过犹不及</strong>，可能我的躯体受得了繁重的体力劳动，我的意志也顶得住冬日早晨的冷水澡，但是我的<strong>血管</strong>，我的<strong>眼睛</strong>，<strong>耳朵</strong>，这些柔弱的，脆弱的，<strong>不能修复的</strong>，不行呀</p>
-
-<h3>身体健康</h3>
-
-<h3>好好生活</h3>
-
-<h3>饮鸩止渴</h3>
-
-<h3>当断则断</h3>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/11/23/JD2/">我的耳鸣，我爸的腿伤——京东打工后续</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-11-23T10:05:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2021</span></span> <span class='time'>10:05 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在我小的时候，爸工作受伤，被木头狠狠地撞到腿，<strong>直到现在，一条腿都是严重的静脉曲张，惨不忍睹.</strong><br/>
-<strong>那时他是什么年纪？不到40岁吧。</strong><br/>
-我那时还小，记不清了。那时我上小学了没？一二年级？<br/>
-<strong>记不清了，只记得有次我跟在他后面，到小学旁的山上路边挖草根，药材，熬药治疗。</strong><br/>
-<strong>那时他应该和我现在耳鸣耳聋一样的彷徨无助吧？</strong><br/>
-<strong>或者更无助。</strong><br/>
-<strong>一个农村中年男人，没有知识，太多东西都不懂，还背负着一个家庭的担子。受了伤，没有人能给他支持，帮助，解答，得不到妥善的处理。</strong><br/>
-我想这次我也会永远失去一部分的听力吧，如同爸爸再也没有那条完整的腿。这是我们的宿命吗？<br/>
-还是说这是我们的父子缘？<br/>
-无怨不成夫妇，无仇不成父子。我总是抱怨爸没有知识，脾气差，性格差，很多东西都不懂，很多事情处理得一塌糊涂，给我带来巨大的阻碍。<br/>
-唉，<strong>他那个时代，注定</strong>很多人就是没有知识的，有什么办法呢？<br/>
-<strong>他能成家，养大三个儿女，供书教学，已是他的能力极限了。现在我都做不到他能做到的，我没有资格抱怨他。</strong><br/>
-<strong>人生苦短，好好把握吧，中年人。</strong></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/11/21/JD/">京东打散工记</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-11-21T18:57:59+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2021</span></span> <span class='time'>6:57 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>2021/11/21</h3>
-
-<h3>很丢人，但我还是想写下来，没办法，这就是我，不得不承认</h3>
-
-<p>我很久没有工作了，从19年4月到21年8月，两年半时间偶尔有零星的活，大多都是失业，整个一切，一塌糊涂。那段时间，没有工作，也没有去找工作，心态很差，经常在心里埋怨父母，自怨自艾，反反复复， 把自己折磨了个透。</p>
-
-<p>今年8月10号，快没钱了，于是找了份日结工，京东物流，番禺分拣中心，打板，就是把快递叠放在木板上，和我大二暑假在汕头荣诚月饼厂打工差不多。</p>
-
-<p><strong>第1次</strong></p>
-
-<p>（在6线外，第一个口，其实是最轻松的点）</p>
-
-<p>干完活，觉得厂里很脏，厕所更甚，心里抗拒得很，也有点累，厂里的人素质也差，各方面都差。回来后洗澡洗了很久，衣服鞋子都洗了个遍。还有就是第一次做通宵夜班（19：00&ndash;05：30），第二天脸上出油严重，洗脸时手一抹，脸和手上的油都很难去干净。</p>
-
-<p>这晚一起打工的一个年轻人，做事认真，负责，勤快，有责任心，有职业道德和职业素养，非常健谈，但是估计碍于文化水平和认知水平有限，有些观点明显错误。他在很多地方打过工，现在还去学习做抖音，直播带货，当然这个时间点他可能是49年入国军。</p>
-
-<p><strong>做了这一次，觉得心理受到巨大冲击，能激励自己去找一份正儿八经的工作了。但是并没有找到合适的，其实也还是自己的惰性作怪。</strong></p>
-
-<p><strong>第2次</strong></p>
-
-<p>（6线内，第一二个口，也轻松）</p>
-
-<p>8月23号，钱快用完了，于是再去打工。</p>
-
-<p>这次，遇到两个中年人，一个从老家跑出来，住着小一百块的宾馆，做着不到200块一天的散工。他说在老家是开休闲会所的，估计会涉及到一些色情，以及权钱交易，为了安全，出来外地。他还说前几天被骗了30多万，不知道真假。</p>
-
-<p>另一个，懒，慢，偷奸耍滑，无责任心，没有太子的命，患着想做太子的病。后来还做了正式工。被被人叫做酱油王。最近听说要不干了。</p>
-
-<p>我认为，一个人可以埋怨自己的出身不好，命不好，因为这些东西是你无法选择的，但不要埋怨自己的工作，因为这份工作是你自己选的，你可以选择做，也随时可以选择不做，自己选择的就不要埋怨，就得把它做好。</p>
-
-<p><strong>第3次</strong></p>
-
-<p>（2线内，第五六七个口）</p>
-
-<p><strong>南村胖子</strong></p>
-
-<p>8月25号，再去做，这晚遇到一个人，南村的，做了很久的了，和众信老板陈沫很熟的，到现在我也和他很熟，但至今不知道他的名字，姑且叫他<strong>胖子</strong>吧。挺高大的，小我一岁，以前是个两百斤的大胖子，现在减到一百七十斤了，结过婚，离了婚，以前赌博疯了，欠了挺多债务，得过病，缺钾，一种会反复发作的全身软瘫的独居死了都没人知道的病。挺复杂的一个人，听说以前在厂里经常打架，像个混子，但是我和他又挺聊得来的，当然我不清楚他的人品。</p>
-
-<p>这晚的工作量疯了，上半夜胖子就打了17-18板，是我做这么久以来最累的一晚，到了下半夜，两个小臂都痛了，收工后，睡完觉，肿了，过了好些天才好。而且还痔疮发作了。这样我就好些天没去了。</p>
-
-<p><strong>9月15号，iPhone13发布，我定了个目标，给自己买一台，以此激励自己去打工。</strong></p>
-
-<p>（当然直到现在我也没买，因为只有4G运存，没有可变刷新率，镜头鬼影问题）</p>
-
-<p>我直接在陈沫那报名，9月16、17、18号连续做了3天。认识了李庆林和朱学青。</p>
-
-<p>19号我“跳槽了”，李庆林叫我跳槽到老大喻胡龙那里，时薪多一元。</p>
-
-<p>再接下来，我从日结转了做周结，很稳定地上夜班打工，只要没事，我都去上班，直到现在，我也是中秋休息了2天，友哥结婚我休息了2天，双十一开门红累趴了加上阿天来小聚休息了2天。</p>
-
-<p><strong>============================================================</strong></p>
-
-<h3>2021/10/11，我的日志</h3>
-
-<p>中秋节之后到现在，我已连续上了19天夜班，并且未来两周将继续，直到去参加婚礼。<br/>
-我一直不敢休假，一直希望晚点下班，因为工钱是计时的。<br/>
-我睡眠不好，昨天更甚，昨晚整晚工作都没干劲，但我不敢说这天想早点下班。<br/>
-很多个凌晨一点，半小时吃宵夜休息，我不敢吃。<br/>
-我饿。<br/>
-但为了省三五块钱。<br/>
-很多个早晨，下班回来，我吃了粥，又吃麦片，还是饿。<br/>
-吃了很多蛋炒饭，还是饿。<br/>
-吃了两倍份量的河粉，还是饿。<br/>
-煮了两个面饼，还是饿。<br/>
-我瘦了。<br/>
-裤子卡不住腰，往下掉，总感觉裤子要掉下来。<br/>
-我的腹肌显现出来了。<br/>
-看到路边的大蕉，我想着在深夜去偷几疏回来，但一直上夜班没机会，今早去看，已被别人砍了。<br/>
-我拿着一天两百一左右的工钱，却不敢多花两块钱吃饱饭。<br/>
-夜作日眠，我已经挺久没拥有白天了。<br/>
-这些事，都不足与人道。<br/>
-我想诉说吗？想有人倾听吗？想。<br/>
-但，算了，我不配。</p>
-
-<p><strong>============================================================</strong></p>
-
-<h3>现在我请了3天假，因为我持续耳鸣一周了，11月14号开始的，现在21号，听力下降，有可能很严重。</h3>
-
-<p>有点累了，还有很多东西没有写，其实每天的事、感想，我都写在微信朋友圈了，只不过没有公开。</p>
-
-<p>还有很多照片，在QQ相册。结合着它们，我能讲一些事给自己听。如果有人愿意，我也想挺给人听听。</p>
-
-<p>李庆林<br/>
-精明，略懂工厂的生存之道，但是又目光短浅，因为时薪降了1元，为了12元放弃200元，来到了厂里也不干了，回去之后宵夜喝大酒，玩乐，花了个三五百，可以说是个傻逼，喝醉了就连发二三十条微信和我吐槽。<br/>
-心眼小，受不了一点委屈，其实那些都不是委屈，自己瞎想的。<br/>
-不懂得：帮你是情分，不帮是本分，这个道理。<br/>
-想事做事反反复复犹豫不决，难堪大用。<br/>
-但我个人还是感谢他的，因为是他让我跳槽，之后我每天挣多了几十块钱。</p>
-
-<h3>朱学青大哥</h3>
-
-<p>外号：<strong>光头大哥</strong></p>
-
-<p>我遇到的一个几乎没有缺点的人，50岁了，当年牛逼的大学生，做了多年的业务招商，随便找份工作都是万元底薪的。因为疫情影响，同时也想找一份能做得长久的，能作出业绩的，行业好的工作，才暂时到京东做临时工。</p>
-
-<p>有知识，有文化，有见识，健谈，热爱生活，热心，做事积极，主动，心里有数，肯帮人，做过代班，会选人，也敢于踢走差劲的人。遇事不急，急忙时不乱，货多就多，先移到一旁，不急时总能码完的，看透事情的本质。</p>
-
-<p>几乎完美。</p>
-
-<p>唯一我觉得有一点我不太认同的，他是个老好人，对于有些故意慢吞吞磨洋工的人，他也会去帮忙，我觉得他不够狠。</p>
-
-<p>他告诉我，很多人都目光短浅，只看到蝇头小利，捡了芝麻丢了西瓜，有的人偷懒耍滑，工作没做好，下次别人就不给他这份工作了，这样会断了自己的后路。</p>
-
-<p>在光头大哥身上，我看到：<strong>优秀是一种习惯，永不松懈，而支撑它并与之相互作用的，是智慧。</strong></p>
-
-<h3>润峰大哥</h3>
-
-<p>新疆人，爱自己的家乡，做事认真，负责，一丝不苟，勇敢，兢兢业业。<br/>
-好员工。</p>
-
-<h3>热爱生活的年轻人</h3>
-
-<p>主动找叉车，拉板，帮人，乐观，积极，不怕困难，他连上了白班和夜班<br/>
-在他这里，我看到一句话：<strong>热爱生活</strong>。</p>
-
-<p>老大喻胡龙<br/>
-我不清楚他心里是怎样的，但我看到他做出来的是：讲义气，为手下弟兄着想，用心待人，真诚，说话接地气，做事也狠，要抉择是，肯定选自己的人。</p>
-
-<p>肖坚<br/>
-外号眼镜，是个狠人，极其自利，甚至我认为很多时候是损人不利己。让5个人做7个人的活，估计是为了自己升职或要表现自己，狠用员工，几乎所有人都不喜欢他</p>
-
-<p>还有一些SB管理，说话不过脑子，难听，有点权利就飘，其实啥也不是。<br/>
-赌鬼很多。<br/>
-那个大雄，有钱了就去嫖，没钱了就到处借钱，还不还，别人要债时就说，急什么，这一百几十块钱。<br/>
-是个垃圾。<br/>
-不认识我却找我借30元，当然我没有上当啦。</p>
-
-<h3>拒绝人，一定要果断，别tm不好意思。</h3>
-
-<h3>别人要意思为难你，你有什么不好意思拒绝他呢</h3>
-
-<p>先到这里，还有很多心理历程，比如：</p>
-
-<p><strong>============================================================</strong></p>
-
-<h3>友哥结婚时，我的微信日志</h3>
-
-<p>day 36<br/>
-今天（中国传统没天亮就还是）是友哥的大喜日子。<br/>
-好日子，因为有良人。<br/>
-我和友哥认识十二年了，一轮了，人生会有几个十二年？<br/>
-作为同学，朋友，兄弟，我知道友哥的家庭环境，成长经历，这些年的许多历程。我知道友哥的许多性格特质，有大大咧咧，也有心思细腻，有勇敢大胆，也有卑微怯懦，有乐天积极，也有悲天悯人，有过少年的莽撞，青年的迷茫，初出社会的困顿，京漂挨过饿，挨过冷，流落过在街巷公园，无三尺睡床。<br/>
-然后在创业前期，亦饱受煎熬摧残，狡诈的房东，繁杂琐碎的工作，一人身兼数职，通宵熬夜，还有各种奇葩脑残的客户要求，各种刁难，各种委屈……<br/>
-而友哥承受了下来，坚持了下来，老天爷是一直在看着的，友哥付出了这么多，自会有回报。<br/>
-现在友哥结婚，人生的一个重要里程达成，以后的日子，酸甜苦辣，五味调和，他们一起携手品尝。<br/>
-祝福。<br/>
-接上条<br/>
-困苦就是那么大那么多，多年的坚持，数不清的日夜辛勤就是这样一笔带过，谁做到了，就是收成。<br/>
-曾经我说过，我们是有些相像的人，在一起相互讨厌，分开了相互想念，很抱歉曾经一起工作时，无知傻X的我没能帮到你，还给你带来麻烦，对不起，谢谢<br/>
-兄弟，在康庄大道上，你轻快前行吧。<br/>
-我要去渡我的劫了，希望某一天，某个路口，我们还能遇到，一起喝茶</p>
-
-<p>day 37<br/>
-昨晚6:27拍的天空，刚刚打开看，才发现是几乎全黑的<br/>
-昨晚上班不久，想到用正确的视角去看，才发现我落后太多了，如友哥的伴郎团，全是身家千百万的老板，青年才俊。<br/>
-而我在京东做第三方劳务派遣的临时工，写的每日一省，比小孩子玩泥沙都不如，真是井底之蛙，别人都不屑耻笑我。<br/>
-我心态崩了，几近当众哭出来，唱着歌，眼睛发痛，冲动之下想着周末骑行回学校，去拜祭启爷，或去看妈妈，或者做半年苦力，然后长途骑行……<br/>
-很幼稚。<br/>
-然后慢慢的，情绪恢复了。</p>
-
-<p><strong>============================================================</strong></p>
-
-<h3>耳鸣埋怨</h3>
-
-<p>我怕我就要聋了，心态很糟糕。</p>
-
-<p>想打电话和妈妈说，别再逼我了，我不想买房，不想结婚，我没有那个能力，我是个普通人，比普通人都不如，小学时我牛逼，初中时我也牛逼，但是高中时，我已经学不懂数学了，大学时的数学这些科目，我更不懂了，我考试不及格，拿不了毕业照，我是个loser，我认了。</p>
-
-<p>你能不能也认了，别再想着和别人比较了，我比不动，你要面子，你凭自己的能力去挣，行吗？你一个农村妇女，没知识，没背景，没机遇，没努力过，别要我去满足你的虚荣心，可以吗？</p>
-
-<p>你要我几十万买房，你又是否留了几十万家产给我呢？</p>
-
-<p>爸爸的酒瘾，我们有很大的责任。我要读书，要钱，他拼命去挣，但是他一个普通人，能有多大本事？压力之下，作出了错误的抉择，喝酒解困，喝酒解压，上瘾了，中毒了，身体跨了。</p>
-
-<p>我就嫌弃他了。</p>
-
-<p>我又算是什么垃圾！</p>
-
-<p><strong>============================================================</strong></p>
-
-<p>迟点有心情了再写吧</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -682,19 +1311,43 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开编辑 插入本地图片 程序</a>
+        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开文件 插入本地图片 程序</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/11/ttttttttttttttt/">Ttttttttttttttt</a>
+        <a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/02/basketball-in-the-zone/">打篮球最好的一次——境界</a>
+        <a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/02/fail-in-installing-octopress-3-dot-0/">安装octopress 3.0 博客失败</a>
+        <a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/add-category/">侧边栏增加分类 Category</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/can-not-push/">没有正确路径或权限上传，push</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/change-templates--post-if-error/">更改了文件_templates/post，以后若出错改回来</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a>
       </li>
     
       <li class="post">
@@ -737,40 +1390,16 @@
         <a href="/blog/2021/04/04/chou-le-de-ji-tui/">臭了的鸡腿</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2021/04/04/fang-xia/">放下 接受 和解</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/09/09/dying/">崩溃</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/08/21/famaly/">家人</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/12/ren-xing-de-ruo-dian/">人性的弱点</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/03/ios-upgrade-and-downgrade/">iOS的升级与降级</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/">Ubuntu 分区大小</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
-<li class='category'><a href='/blog/categories/onlyforyou/'>onlyforyou (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (92)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (58)</a></li>
-<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (1)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (97)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (59)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (8)</a></li>
 
   </ul>
 </section>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Excel | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/excel/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-01-11T23:25:57+08:00</updated>
+  <updated>2022-01-12T00:26:06+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -31,8 +31,9 @@ WPS：<br/>
     <link href="https://qiuhaidong.github.io/blog/2016/03/05/excel-da-gou-x/"/>
     <updated>2016-03-05T10:47:00+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2016/03/05/excel-da-gou-x</id>
-    <content type="html"><![CDATA[<p><a href="http://jingyan.baidu.com/article/5d6edee210ba8099eadeecb5.html">图文版</a><br/>
-WPS：<br/>
+    <content type="html"><![CDATA[<p><a href="http://jingyan.baidu.com/article/5d6edee210ba8099eadeecb5.html">图文版</a></p>
+
+<p>WPS：<br/>
 选中1个单元格，菜单栏选择：插入，特殊符号，数字符号，选择“√”，打上英文逗号，再选择“×”，然后复制。<br/>
 数据，有效性，（允许）序列，（来源）粘贴，完成。<br/>
 Excel：<br/>

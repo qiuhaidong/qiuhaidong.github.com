@@ -5,13 +5,17 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>RUN RED LIGHT - 丘海东</title>
+  <title>Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件 - 丘海东</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="VERY DANGEROUS! FOR MYSELY AND THE OTHER PEOPLE WHO DROVE! YOU FOOL! NEVER DO THAT ANY MORE! 11-24
-昨天刚说完，今天就有星力的人出车祸了！
-">
+  <meta name="description" content="preview.sh代码 #!/bin/sh
+cd /home/dong/haydnyau
+jekyll build #生成
+jekyll serve deploy.sh代码 #!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+octopress &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2016/11/23/i-run-a-red-light/">
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
@@ -71,7 +75,7 @@
   
   <header>
     
-      <h1 class="entry-title">RUN RED LIGHT</h1>
+      <h1 class="entry-title">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</h1>
     
     
       <p class="meta">
@@ -80,23 +84,45 @@
 
 
 
-<time class='entry-date' datetime='2016-11-23T22:49:38+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>10:49 pm</span></time>
+<time class='entry-date' datetime='2022-01-07T06:34:42+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:34 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h3>VERY DANGEROUS!</h3>
+<div class="entry-content"><p>preview.sh代码</p>
 
-<h3>FOR MYSELY AND THE OTHER PEOPLE WHO DROVE!</h3>
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build #生成
+jekyll serve
+</code></pre>
 
-<h3>YOU FOOL!</h3>
+<hr />
 
-<h3>NEVER DO THAT ANY MORE!</h3>
+<p>deploy.sh代码</p>
 
-<p>11-24<br/>
-昨天刚说完，今天就有星力的人出车祸了！</p>
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+octopress deploy
+</code></pre>
+
+<hr />
+
+<p>（不行，这个会造成有些blog页面头尾显示不全）发布，并上传/_posts/源文件，deploy.sh 代码</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+mv _posts/ _site/
+octopress deploy
+mv _site/_posts/ .
+</code></pre>
+
+<p>注意这个点 &ldquo;.&rdquo;
+<code>.</code> 或者 <code>./</code> 表示当前目录</p>
 </div>
 
 
@@ -112,12 +138,12 @@
 
 
 
-<time class='entry-date' datetime='2016-11-23T22:49:38+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>10:49 pm</span></time>
+<time class='entry-date' datetime='2022-01-07T06:34:42+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:34 am</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/personal/'>personal</a>
+    <a class='category' href='/blog/categories/tech/'>tech</a>
   
 </span>
 
@@ -133,10 +159,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2016/11/20/uninstall-and-update-command/" title="Previous Post: uninstall and update command">&laquo; uninstall and update command</a>
+        <a class="basic-alignment left" href="/blog/2022/01/07/change-templates--post-if-error/" title="Previous Post: 更改了文件_templates/post，以后若出错改回来">&laquo; 更改了文件_templates/post，以后若出错改回来</a>
       
       
-        <a class="basic-alignment right" href="/blog/2016/11/25/win10-can-not-install-mbr-gpt/" title="Next Post: Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘">Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2022/01/10/can-not-push/" title="Next Post: 没有正确路径或权限上传，push">没有正确路径或权限上传，push &raquo;</a>
       
     </p>
   </footer>
@@ -151,19 +177,43 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开编辑 插入本地图片 程序</a>
+        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开文件 插入本地图片 程序</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/11/ttttttttttttttt/">Ttttttttttttttt</a>
+        <a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/02/basketball-in-the-zone/">打篮球最好的一次——境界</a>
+        <a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/02/fail-in-installing-octopress-3-dot-0/">安装octopress 3.0 博客失败</a>
+        <a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/add-category/">侧边栏增加分类 Category</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/can-not-push/">没有正确路径或权限上传，push</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/change-templates--post-if-error/">更改了文件_templates/post，以后若出错改回来</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a>
       </li>
     
       <li class="post">
@@ -206,40 +256,16 @@
         <a href="/blog/2021/04/04/chou-le-de-ji-tui/">臭了的鸡腿</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2021/04/04/fang-xia/">放下 接受 和解</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/09/09/dying/">崩溃</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/08/21/famaly/">家人</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/12/ren-xing-de-ruo-dian/">人性的弱点</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/03/ios-upgrade-and-downgrade/">iOS的升级与降级</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/">Ubuntu 分区大小</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
-<li class='category'><a href='/blog/categories/onlyforyou/'>onlyforyou (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (92)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (58)</a></li>
-<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (1)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (97)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (59)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (8)</a></li>
 
   </ul>
 </section>

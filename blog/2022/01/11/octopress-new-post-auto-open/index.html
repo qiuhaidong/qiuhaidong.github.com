@@ -5,11 +5,16 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Octopress 自动打开编辑 插入本地图片 程序 - 丘海东</title>
+  <title>Octopress 自动打开文件 插入本地图片 程序 - 丘海东</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="自动打开文件编辑 rake new_post["file name"]后自动打开对应的markdown文件 Rakefile文件，上面位置，添加定义： editor = "gedit" 然后在new_post命令后面添加： if #{editor} system "#{editor} #{ &hellip;">
+  <meta name="description" content="添加功能：自动打开文件编辑 rake new_post["file name"] 后自动打开博客文件
+编辑Rakefile文件，上面位置，添加定义： 1
+editor = "gedit" 然后在new_post命令后面添加： 1
+2
+3
+if #{editor} system "#{editor &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,7 +74,7 @@
   
   <header>
     
-      <h1 class="entry-title">Octopress 自动打开编辑 插入本地图片 程序</h1>
+      <h1 class="entry-title">Octopress 自动打开文件 插入本地图片 程序</h1>
     
     
       <p class="meta">
@@ -85,40 +90,36 @@
   </header>
 
 
-<div class="entry-content"><h3>自动打开文件编辑</h3>
+<div class="entry-content"><h3>添加功能：自动打开文件编辑</h3>
 
-<p><code>rake new_post["file name"]</code>后自动打开对应的markdown文件</p>
+<p><code>rake new_post["file name"]</code> 后自动打开博客文件<br/>
+编辑<code>Rakefile</code>文件，上面位置，添加定义：</p>
 
-<p><code>Rakefile</code>文件，上面位置，添加定义：</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>editor = "gedit"</span></code></pre></td></tr></table></div></figure>
 
-<pre><code>editor = "gedit"
-</code></pre>
 
 <p>然后在<code>new_post</code>命令后面添加：</p>
 
-<pre><code>  if #{editor}
-    system "#{editor} #{filename}"
-  end
-</code></pre>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if #{editor}
+</span><span class='line'>  system "#{editor} #{filename}"
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
 
 <h3>插入本地图片</h3>
 
-<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中直接引用即可。也可以直接引用网络上的图片。</p>
-
-<p>为了方便管理，可以在images下对自己添加的图片建立目录区分，比如：<code>images/2013/12</code>。</p>
-
-<p>语法与插入超链接类似：</p>
+<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中可直接引用，用法：</p>
 
 <pre><code>格式显示有问题，请看原文，或下面的图片&lt;img src="/images/麦迪科比.jpg"&gt;
 </code></pre>
 
-<p><img src="/images/自动打开-本地图片-程序.png"></p>
+<p><img src="/images/自动打开-本地图片-程序.png"><br/>
+<img src="/images/麦迪科比.jpg"></p>
 
-<p><img src="/images/麦迪科比.jpg"></p>
-
-<h3>test code in blog</h3>
-
-<p>看原文</p>
+<h4>前后行3个```显示代码，且有显示行数</h4>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -170,7 +171,7 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2022/01/11/ttttttttttttttt/" title="Previous Post: ttttttttttttttt">&laquo; ttttttttttttttt</a>
+        <a class="basic-alignment left" href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/" title="Previous Post: octopress 2.0 test on ubuntu 20.04">&laquo; octopress 2.0 test on ubuntu 20.04</a>
       
       
     </p>
@@ -186,19 +187,43 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开编辑 插入本地图片 程序</a>
+        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开文件 插入本地图片 程序</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/11/ttttttttttttttt/">Ttttttttttttttt</a>
+        <a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/02/basketball-in-the-zone/">打篮球最好的一次——境界</a>
+        <a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/02/fail-in-installing-octopress-3-dot-0/">安装octopress 3.0 博客失败</a>
+        <a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/add-category/">侧边栏增加分类 Category</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/can-not-push/">没有正确路径或权限上传，push</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/change-templates--post-if-error/">更改了文件_templates/post，以后若出错改回来</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a>
       </li>
     
       <li class="post">
@@ -241,40 +266,16 @@
         <a href="/blog/2021/04/04/chou-le-de-ji-tui/">臭了的鸡腿</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2021/04/04/fang-xia/">放下 接受 和解</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/09/09/dying/">崩溃</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/08/21/famaly/">家人</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/12/ren-xing-de-ruo-dian/">人性的弱点</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/03/ios-upgrade-and-downgrade/">iOS的升级与降级</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/">Ubuntu 分区大小</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
-<li class='category'><a href='/blog/categories/onlyforyou/'>onlyforyou (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (92)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (58)</a></li>
-<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (1)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (97)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (59)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (8)</a></li>
 
   </ul>
 </section>

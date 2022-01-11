@@ -9,13 +9,9 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="自动登录：
-win+r：Control UserPasswords2
-Administrator
-自启动：
-win+r：shell:startup
-文件夹已打开，把软件的快捷方式添加进去即可
-">
+  <meta name="description" content="前提:SQL Server 代理开机自启
+控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:自动
+Microsoft SQL Server Management Studio，192.168.0.250,1433，管理，维护计划，右键， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -72,6 +68,266 @@ win+r：shell:startup
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/25/sql-server-autobackup/">SQL Server Autobackup</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-25T13:23:32+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:23 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>前提:<strong>SQL Server 代理</strong>开机自启<br/>
+控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:<strong>自动</strong><br/>
+Microsoft SQL Server Management Studio，<em>192.168.0.250,1433</em>，管理，维护计划，右键，维护计划向导……<br/>
+若要做多个备份，重复上个步骤<br/>
+Done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/24/dia-on-linux/">Dia on Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-24T22:46:45+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>10:46 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>DIA,流程图绘制软件<br/>
+install:</p>
+
+<pre><code>sudo apt-get install dia
+</code></pre>
+
+<p>关于输入中文:</p>
+
+<pre><code>sudo vim /usr/bin/dia
+</code></pre>
+
+<p>把<code>dia-normal --integrated "$@"</code>注释掉，在前面加<code>#</code></p>
+
+<p>在下面添加:</p>
+
+<pre><code>dia-normal "$@"
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/dia.png" alt="dia" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/23/system-about-ds/">德胜系统</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-23T14:10:59+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>2:10 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>E51:网络没连通，线路没接好<br/>
+安装windows server 2000时，若autorun或setup都失败，有可能是被tencent qq阻止了，在任务管理器里把tencent关了就行了</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/23/install-net-framework-on-windows-server/">Install .NET Framework on Windows Server</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-23T10:47:01+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>10:47 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>感谢教我帮我的老总和黎先生<br/>
+要用到Windows Server的ISO文件<br/>
+管理服务器，添加角色和功能</p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E6%B7%BB%E5%8A%A0%E8%A7%92%E8%89%B2%E5%92%8C%E5%8A%9F%E8%83%BD.png" alt="添加角色和功能" /></p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E5%9F%BA%E4%BA%8E%E8%A7%92%E8%89%B2%E6%88%96%E5%9F%BA%E4%BA%8E%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%89%E8%A3%85.png" alt="基于角色或功能的安装" /></p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B1%A0%E9%80%89%E6%8B%A9%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="从服务器池中选择服务器" /></p>
+
+<p>选择服务器角色：AD域，DNS，.NET Framework</p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/AD%E5%9F%9F%2CDNS%2C.NET.png" alt="选择服务器角色AD域DNS" /></p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/NET%20Framework.png" alt=".NET Framework" /></p>
+
+<p>指定备用源路径</p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E6%8C%87%E5%AE%9A%E5%A4%87%E7%94%A8%E6%BA%90%E8%B7%AF%E5%BE%84.png" alt="指定备用源路径" /></p>
+
+<p>\…ISO…\sources\sxs<br/>
+done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/22/SSL-cannot-push-pull-keys-https-issue/">路径权限错误，无法pull Push: Not Read From Remote Repository. Correct Access Rights and the Repository Exists.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-22T16:58:26+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>4:58 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS认证方式改动</a>
+关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
+
+<pre><code>fatal: Could not read from remote repository. 
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
+
+<p>SSH keys不用动</p>
+
+<pre><code>gedit octopress/.git/config
+</code></pre>
+
+<p>把<code>url = git@github.com:qiuhaidong/qiuhaidong.github.com.git</code><br/>
+改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code><br/>
+<a href="http://bbs.csdn.net/topics/390909877">参见此Blog，9楼</a><br/>
+done.<br/>
+<code>pull</code>or<code>push</code>时或会报错，但不影响功能，多用几次就好了。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/20/C%23-on-Linux/">C# on Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-20T14:18:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:18 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives">参考官方说明</a></p>
+
+<p>attention:有些commend不适合ubuntu，要区分</p>
+
+<p><a href="http://blog.csdn.net/caspiansea/article/details/50585025">参见另一篇blog</a></p>
+
+<p>install mono,(mono-complete and monodevelop):</p>
+
+<pre><code>sudo apt-get install mono-complete monodevelop
+</code></pre>
+
+<p>edit:</p>
+
+<pre><code>vim helloworld.cs
+</code></pre>
+
+<p>build:</p>
+
+<pre><code>mcs helloworld.cd
+</code></pre>
+
+<p>run:</p>
+
+<pre><code>./helloworld.exe
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -143,8 +399,9 @@ win+r：shell:startup
 <pre><code>g++ hello.cpp
 </code></pre>
 
-<p>生成hello或a.out<br/>
-运行：</p>
+<p>生成hello或a.out</p>
+
+<p>运行：</p>
 
 <pre><code>./hello
 </code></pre>
@@ -257,355 +514,6 @@ int main()
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/05/24/vim/">Vim</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-05-24T19:13:46+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>7:13 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>终端执行命令：</h4>
-
-<pre><code>vimtutor
-</code></pre>
-
-<p>查看《VIM教程》</p>
-
-<h4>基本操作：</h4>
-
-<p>光标移动：<br/>
-h：左<br/>
-j：下<br/>
-k：上<br/>
-l：右</p>
-
-<h4>正常模式==>输入模式：</h4>
-
-<p>i：左边输入<br/>
-I：行首输入（In the front）<br/>
-a：右边输入（after）<br/>
-A：行尾输入（After）<br/>
-o：下面输入一新行<br/>
-O：上面输入一新行<br/>
-s：删除字符再输入<br/>
-S：删除行再输入</p>
-
-<h4>其他模式==>正常模式：</h4>
-
-<p>Esc</p>
-
-<h4>正常模式==>命令模式：</h4>
-
-<p>:<br/>
-(shift加分号，英文输入法下)</p>
-
-<h4>正常模式==>可视模式：</h4>
-
-<p>v：可视模式<br/>
-V:可视块模式</p>
-
-<h4>常用命令：</h4>
-
-<p>:w<enter> 保存<br/>
-:q<enter> 退出<br/>
-:wq<enter> 保存后退出<br/>
-:q!<enter> 不保存，强制退出</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/05/21/job-hunting/">Job Hunting</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-05-21T03:58:16+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>3:58 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>感谢您用宝贵的时间看我的简历，谢谢</p>
-
-<p>个人信息：</p>
-
-<p>丘海东<br/>
-广东茂名人<br/>
-09-13年，就读于广东肇庆学院电子系<br/>
-结业，很惭愧<br/>
-13年11月-16年4月，在广西一家服装店工作<br/>
-这两年半的工作之余，我感兴趣的依然是电子产品，科技行业，遂在时机适合时，辞职</p>
-
-<p>说说我对几个电子产品的看法</p>
-
-<p>iPhone：<br/>
-优点：<br/>
-     省心<br/>
-     时尚轻奢品属性<br/>
-缺点：<br/>
-     丑<br/>
-     低屏占比<br/>
-     为了降低生产难度，增加良品率，耐摔，降低返修率，2.5D的屏幕需要空间）<br/>
-     最近iOS频出bug，我认为是：<br/>
-     1.外界关注度高，被放大<br/>
-     2.iPhone产品线增多，功能增多，系统更复杂，臃肿<br/>
-     3.苹果没有了乔布斯时代的严苛要求</p>
-
-<p>三星S7：无明显的短板，漂亮，设计、工艺无可挑剔<br/>
-S7 Edge：弧形屏幕的误触问题</p>
-
-<p>魅族：漂亮但没变化没惊喜</p>
-
-<p>高中低端各出一款机子，将精品路线和机海路线结合</p>
-
-<p>华为：工程师思维太重，机身设计粗犷，直接点说是粗糙，系统界面，应用图标无美感，变异的圆角矩形显得四不象，适合粗线条大心脏的用户。</p>
-
-<p>小米：<br/>
-      做得最漂亮的产品是电话卡<br/>
-      手机给我的感觉一直很粗糙，红米3背部的三段式设计，割裂感非常强烈，这是设计？<br/>
-      最好的是塑料一体机身的4C<br/>
-      在街上看到有人用米5，真机出来的质感还不错<br/>
-      由此引出来一点，看图片和真机是有差别的</p>
-
-<p>扁平化做得最好的：Windows<br/>
-产品理念最好的：kindle oasis<br/>
-    在看kindle（￥499款）拆解文章时我就想，机身里面大部分是空的，空间很足，为什么不做窄边框？便携，省料，省包装材料，省物流成本。<br/>
-    拿到手我就明白了，宽边框是必须的。拿手机和拿kindle完全不同，拿手机时，虎口扣住手机一边，四个手指扣住另一边，拇指在上面不停地操作。拿kindle时，手掌四指托在背面，拇指按住边框以拿稳，偶尔移动拇指翻页。如果把kindle边框做窄了，反而不好用了。<br/>
-    两个产品的使用方式迥异，所以对边框的处理就不同。</p>
-
-<p>Kindle很清楚自己是什么，要什么，并且很好地做到了。</p>
-
-<p>所以当kindle oasis出来时，我一下子就懂了它为什么这样设计外观，并“倒退”般地增加实体翻页键。</p>
-
-<p>就凭这点，可看出kindle团队的产品理念的高明</p>
-
-<p>现在的手机真的智能么？<br/>
-“能”，但不“智”。<br/>
-功能多了，强大了，但智慧并没有大的体现。<br/>
-智慧是什么？自己获取信息，感知信息，并处理，作出相应的动作。<br/>
-在同质化越来越严重的瓶颈期，做到真正的智，将引领下一个手机时代。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/04/12/leave-and-back/">逃离与返回</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-04-12T15:46:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>3:46 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>我曾逃离北上广。<br/>
-我将回去。<br/>
-在广西水汶快两年半了，挺长的一段时间。和波波、阿媚共事很开心，彼此信任，做起事来很轻松很畅快。<br/>
-我的工作，最多的是出演收银员的角色，所以接触不少人。<br/>
-一类是极品奇葩。<br/>
-遇到这类人，自然很愤怒，很倒霉。但其实问题不大，毕竟早看开了，奇葩处处有，事情过了就扔一边了。<br/>
-另一类人，让我无奈。<br/>
-我是个普通人，懂的东西很少。很无奈，有人比我更差，尤其是一些偏远乡镇的一些人。很多事情我们一想就通一说就明，但是和他们说，就怎么说都说不明白，很费劲。<br/>
-这状况谁都没有错。我们国家近现代这么动乱，祖辈父辈很多人没读过书，很多东西都不懂，正常。而现在社会发展这么快，别说他们，我都远远落后了，怎么去要求他们懂。<br/>
-所以问题就在这了，谁都没错，只是和他们接触交流，很累。<br/>
-我选择离开。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/04/12/enjoy-alone/">一个人的醇享时光</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-04-12T15:25:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>3:25 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>人群之外的生活<br/>
-也能过得优雅有品味<br/>
-就算每个人都是一座孤岛<br/>
-也要是鸟语花香的那座</p>
-
-<p>一个人看电影<br/>
-因为喜欢<br/>
-所以不一定需要人陪伴<br/>
-不同于两个人闹腾腾的约会<br/>
-时刻上演激烈的爆米花争夺战<br/>
-一个人看的<br/>
-那才叫电影嘛</p>
-
-<p>一个人吃饭<br/>
-都说聚餐是一群人的狂欢<br/>
-其实哪有什么孤单不孤单<br/>
-一个人吃饭<br/>
-不用吵嚷着争执谁做什么晚餐<br/>
-把锅碗瓢盆都掀翻<br/>
-也不用神烦邻座的忌辣厌酸<br/>
-好好享受美食<br/>
-就是对生活的尊重</p>
-
-<p>一个人的周末旅行<br/>
-穿上最美的行头<br/>
-选个最喜欢的地方<br/>
-穷游<br/>
-暴走<br/>
-拒绝为与同伴路径不一致发飙<br/>
-拒绝在美好的风景里吵吵闹闹<br/>
-也不牵谁的手<br/>
-在路上感受不一样的风景<br/>
-经历什么都是人生的收获</p>
-
-<p>一个人的下午<br/>
-拆开心爱的零食<br/>
-一口清脆的“咔嚓”<br/>
-这个丢掉高跟鞋<br/>
-不理会手机来电的下午<br/>
-好像变得有点不一样</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/04/01/be-alone/">习惯一个人</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-04-01T20:29:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>8:29 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>独自面对自己的世界。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/03/30/gym/">健身</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-03-30T11:08:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:08 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>2016-03-30 身形还很差，练好了再发吧！</h4>
-
-<p>一直很懒，懒到自己都不好意思了。2月初开始做点运动健健身，还很恶俗的做了个表格来装逼[尴尬脸]。<br/>
-<a href="https://docs.google.com/spreadsheets/d/11uC6EdN4ofFRy84qfyGgWdGEqW57TLrArTYt8BTf8JA/edit#gid=536255186">坚持表</a><br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/gym01.png" alt="坚持表" />
-断断续续下来，差不多两个月了，虽然跟大神们没法比，但比起以前的心血来潮做一两天然后歇半年，再心血来潮做两天，好很多了。<br/>
-这么点时间，想要有巨大的变化是不可能的，不过小变化倒有，肚腩已经稍微缩小一点点了，当然还是挺大的，腹部腰部后背的脂肪果然很难减。<br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/gym02.jpg" alt="2016-03-29" /><br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/gym03.jpg" alt="2016-03-28" /><br/>
-<a href="http://weibo.com/p/23044409f2cbd438616826c6de59d0364bf3ea">有个视频</a>说得很好：健身是等待，耐心，相信生活会一点点慢慢变好，毕竟改变需要时间。<br/>
-等待，耐心，一点点慢慢变好。如果一两个月就能大有成效，那么好身材好身形有什么厉害的？<br/>
-说到底，就是自律。<br/>
-运动，控制饮食。<br/>
-那句负能量鸡汤是怎么说来着？哦，想起来了：努力不一定成功。但不努力一定很轻松。<br/>
-整天坐着，躺着，想吃就吃，想睡就睡，多爽呀，没有场地器材，今天好累，天气不好，不是黄道吉日，明天再运动吧，多轻松。<br/>
-运动，控制饮食，是痛苦的。做双杠臂屈伸：<br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/gym04.jpeg" alt="双杠1" /><br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/gym05.jpeg" alt="双杠2" /><br/>
-刚开始，一天做50个，慢慢增加到100,200,300。做了几百个，第二天再做的时候，一下去，筋骨关节是啪啪啪地响，肌肉酸痛，很想放弃。<br/>
-饮食方面也是，要知道，美食带来的满足感和愉悦感是无敌的。运动产生的那一丁点使人快乐的激素、那两块肌肉带来的精神上的满足，想要对抗糖，盐，油，肉，碳水化合物，好难哒。（没错，是在卖萌，不服你来打我呀）<br/>
-那我为什么还要健身呢？<br/>
-我傻咯。</p>
-
-<p>做运动脑子要平静，心态要平和，乱想东西，身体会一下子乱掉。想起14-15年度NBA季后赛火箭VS快船第六场，在下半场落后20几分的时候，我能感受到火箭的5个球员慢慢听不到球场里的杂音，慢慢看不到观众，眼里，脑里，心里，只剩下篮球，打好这个进攻，防好这个球，打好这个进攻，防好这个球……</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/11">&larr; Older</a>
@@ -623,19 +531,43 @@ S7 Edge：弧形屏幕的误触问题</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开编辑 插入本地图片 程序</a>
+        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开文件 插入本地图片 程序</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/11/ttttttttttttttt/">Ttttttttttttttt</a>
+        <a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/02/basketball-in-the-zone/">打篮球最好的一次——境界</a>
+        <a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/01/02/fail-in-installing-octopress-3-dot-0/">安装octopress 3.0 博客失败</a>
+        <a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/add-category/">侧边栏增加分类 Category</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/can-not-push/">没有正确路径或权限上传，push</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/change-templates--post-if-error/">更改了文件_templates/post，以后若出错改回来</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a>
       </li>
     
       <li class="post">
@@ -678,40 +610,16 @@ S7 Edge：弧形屏幕的误触问题</p>
         <a href="/blog/2021/04/04/chou-le-de-ji-tui/">臭了的鸡腿</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2021/04/04/fang-xia/">放下 接受 和解</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/09/09/dying/">崩溃</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/08/21/famaly/">家人</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/12/ren-xing-de-ruo-dian/">人性的弱点</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/07/03/ios-upgrade-and-downgrade/">iOS的升级与降级</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/">Ubuntu 分区大小</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
-<li class='category'><a href='/blog/categories/onlyforyou/'>onlyforyou (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (92)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (58)</a></li>
-<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (1)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (97)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (59)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (8)</a></li>
 
   </ul>
 </section>

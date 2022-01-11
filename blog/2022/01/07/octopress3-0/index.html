@@ -1,0 +1,581 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>创建octopress3.0简单说明 - 丘海东</title>
+  <meta name="author" content="丘海东">
+
+  
+  <meta name="description" content="重装octopress 2.0 博客失败
+很多新旧的软件，依赖，都不兼容了
+算了，世界在发展，有的旧事物必然被淘汰
+毕竟连作者都不维护了
+而且连3.0都不维护了 博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple 博文2， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2022/01/07/octopress3-0/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">丘海东</a></h1>
+  
+    <h2>Haydn Yau</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.baidu.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="qiuhaidong.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">创建octopress3.0简单说明</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-07T06:02:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:02 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>重装octopress 2.0 博客失败<br/>
+很多新旧的软件，依赖，都不兼容了<br/>
+算了，世界在发展，有的旧事物必然被淘汰<br/>
+毕竟连作者都不维护了<br/>
+而且连3.0都不维护了</p>
+
+<hr />
+
+<p><a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a></p>
+
+<p><a href="https://jingsam.github.io/2015/10/21/blogging-with-octopress-3-0.html">博文2，Octopress 3.0博客搭建教程</a></p>
+
+<p>安装git<br/>
+设置好用户名，email等等，参见之前的blog<br/>
+添加ssh钥匙到github<br/>
+安装rvm<br/>
+安装ruby<br/>
+安装octopress</p>
+
+<pre><code>gem install octopress
+</code></pre>
+
+<p>创建博客的主文件夹</p>
+
+<pre><code>octopress new haydnyau #名字自取
+</code></pre>
+
+<p>新建一篇blog</p>
+
+<pre><code>octopress new post hello world
+</code></pre>
+
+<p>生成网页</p>
+
+<pre><code>jekyll build
+</code></pre>
+
+<p>为避免下面的错误：</p>
+
+<pre><code>sudo bundle add webrick
+</code></pre>
+
+<p>本地预览</p>
+
+<pre><code>jekyll serve
+</code></pre>
+
+<h3><a href="https://github.com/jekyll/jekyll/issues/8523">可能会报错,参见此blog</a></h3>
+
+<p><img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrEOrm72ctF5gw0aqWv21aZeNSASWKMfjZMh4q6GkEqIeM78CkO7o4O*iqGXdxCboPoKIKO9drAx052jTS2quUV58!/r" alt="jekyll serve, cannot load such file -- webrick (LoadError)" /></p>
+
+<pre><code>dong@Ubuntu:~/haydnyau$ bundle exec jekyll serve
+Configuration file: /home/dong/haydnyau/_config.yml
+            Source: /home/dong/haydnyau
+       Destination: /home/dong/haydnyau/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.398 seconds.
+ Auto-regeneration: enabled for '/home/dong/haydnyau'
+                    ------------------------------------------------
+      Jekyll 4.2.1   Please append `--trace` to the `serve` command 
+                     for any additional information or backtrace. 
+                    ------------------------------------------------
+/home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve/servlet.rb:3:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:179:in `require_relative'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:179:in `setup'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:100:in `process'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/command.rb:91:in `each'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:86:in `block (2 levels) in init_with_program'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+    from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/exe/jekyll:15:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-3.1.0/bin/jekyll:25:in `load'
+    from /home/dong/.rvm/gems/ruby-3.1.0/bin/jekyll:25:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-3.1.0/bin/ruby_executable_hooks:22:in `eval'
+    from /home/dong/.rvm/gems/ruby-3.1.0/bin/ruby_executable_hooks:22:in `&lt;main&gt;'
+dong@Ubuntu:~/haydnyau$ 
+</code></pre>
+
+<p>原因：</p>
+
+<h3>回答1：</h3>
+
+<p>This happens because webrick is no longer a bundled gem in Ruby 3.0. From <a href="https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/:">https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/:</a></p>
+
+<blockquote><ul>
+<li>The following libraries are no longer bundled gems or standard libraries. Install the corresponding gems to use these features.</li>
+<li>sdbm</li>
+<li>webrick</li>
+<li>net-telnet</li>
+<li>xmlrpc</li>
+</ul>
+</blockquote>
+
+<p>Adding <code>gem "webrick"</code> to my Gemfile solves the problem, but Jekyll should include it in its gemspec.</p>
+
+<h2>回答2：</h2>
+
+<p>I think you want run: <code>bundle add webrick</code>.</p>
+
+<p>我运行：</p>
+
+<pre><code>sudo bundle add webrick
+</code></pre>
+
+<p><img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrEBN4rGxoHZRJvba1HYTQq27ffRKlLPwSuElBnQsx8myUeNz3PvYmrJfIi3*2TZPi9OuuBIJmyilHvC5IQwNqaYw!/r" alt="sudo bundle add webrick" /></p>
+
+<pre><code>dong@Ubuntu:~/haydnyau$ bundle add webrick
+Fetching gem metadata from https://rubygems.org/.........
+Resolving dependencies...
+Fetching gem metadata from https://rubygems.org/.........
+Resolving dependencies...
+Using public_suffix 4.0.6
+Using bundler 2.3.4
+Using colorator 1.1.0
+Using concurrent-ruby 1.1.9
+Using eventmachine 1.2.7
+Using http_parser.rb 0.8.0
+Using ffi 1.15.4
+Using forwardable-extended 2.6.0
+Using rb-fsevent 0.11.0
+Using rexml 3.2.5
+Using liquid 4.0.3
+Using mercenary 0.4.0
+Using rouge 3.27.0
+Using safe_yaml 1.0.5
+Using unicode-display_width 1.8.0
+Using webrick 1.7.0
+Using addressable 2.8.0
+Using sassc 2.4.0
+Using rb-inotify 0.10.1
+Using kramdown 2.3.1
+Using terminal-table 2.0.0
+Using listen 3.7.0
+Using kramdown-parser-gfm 1.1.0
+Using jekyll-sass-converter 2.1.0
+Using pathutil 0.16.2
+Using em-websocket 0.5.3
+Using i18n 1.8.11
+Using jekyll-watch 2.2.1
+Using jekyll 4.2.1
+Using jekyll-feed 0.16.0
+Using jekyll-seo-tag 2.7.1
+Using minima 2.5.1
+dong@Ubuntu:~/haydnyau$ 
+</code></pre>
+
+<p>问题解决</p>
+
+<p>解决前后的Gemfile文件：<br/>
+<img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrEJRCIzYAaW3bXX8u6*IVJZ.XtCdPn6AvRrMkapg1VV.CqGful*eQepRFyH0ztMqVtAXon32yueiaIigulllP3VI!/r" alt="Genfile，前" /><br/>
+<img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrECtxM1XJmWMiuXm2sA41EdXEaIr2GF1uWWNzSBr7KU5QsmUQqXrNTxgBvdf2nvM66ZFdRT4*rwlgIb3LIswYiAo!/r" alt="Genfile，后" /></p>
+
+<p>生成发布配置文件</p>
+
+<pre><code>octopress deploy init git git@github.com:haydnyau/haydnyau.github.com.git
+</code></pre>
+
+<p>发布</p>
+
+<pre><code>octopress deploy
+</code></pre>
+
+<p>git上传</p>
+
+<pre><code>git init
+git add .
+</code></pre>
+
+<p>还有的以后琢磨<br/>
+买个早餐，吃饱，睡觉</p>
+
+<hr />
+
+<h1>下面的是详细一点但有点杂乱的，若已经创建好，不必要看</h1>
+
+<hr />
+
+<p>欢迎来到octopress3.0<br/>
+折腾两三天了<br/>
+先简单说说吧，详细的自己再琢磨<br/>
+安装以下的：<br/>
+git，设置好用户名，email等等，参见之前的blog<br/>
+添加ssh钥匙到github<br/>
+安装rvm<br/>
+安装ruby</p>
+
+<pre><code>dong@Ubuntu:~$ rvm install 3.1.0
+dong@Ubuntu:~$ rvm use 3.1.0
+dong@Ubuntu:~$ rvm rubygems latest
+</code></pre>
+
+<p>install the Octopress gem. From your terminal:</p>
+
+<pre><code>dong@Ubuntu:~$ gem install octopress
+</code></pre>
+
+<p>And with that, you have Octopress installed!<br/>
+Blog Creation<br/>
+Getting up and running is easy with the new Octopress CLI commands. Navigate to your working directory and run the command below:</p>
+
+<pre><code>octopress new haydnyau 
+</code></pre>
+
+<p>This will create a directory named <strong>haydnyau</strong> with scaffolding for the website. Replace “haydnyau” with whatever you want to call your blog. Navigate to the newly crewated directory and open up your text editor to see what you have.</p>
+
+<p>Creating a Post<br/>
+We can create a new post using one of the Octopress CLI commands:</p>
+
+<pre><code>octopress new post hello world
+</code></pre>
+
+<p>This command creates a new blog post with the title <strong>hello world</strong>. You can obviously use any title of your choice. The post is created in the <strong>_posts</strong> directory.</p>
+
+<p>Viewing the Site<br/>
+Before the site can be viewed it has to be built. Since Octopress is a wrapper around Jekyll, we will use the command below to build:</p>
+
+<pre><code>jekyll build
+</code></pre>
+
+<p>That will build a static HTML website that can be found in the _site directory. This is built out of the markdown files for pages, posts, stylesheets, and config.</p>
+
+<p>To view the site run the command below from your terminal:</p>
+
+<pre><code>jekyll serve
+</code></pre>
+
+<p>Then, point your browser to the address <strong>localhost:4000</strong>.<br/>
+Configuration<br/>
+Octopress has a configuration file where you manage the settings for the website. This is the <strong>_config.yml</strong> file located in the home directory of the site. Here is an example of what it looks like:</p>
+
+<pre><code># Site settings
+title: Your awesome title
+email: your-email@domain.com
+description: &gt; # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname &amp; protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+</code></pre>
+
+<p>From the configuration file, you can add your Twitter and Github usernames. They will show up at the bottom of your page, along with the description. Feel free to edit the settings as desired by adding the necessary information. You will have to restart your server for the configuration changes to show up in your browser. You can stop the server by pressing CTRL+C.</p>
+
+<p>Deploying to GitHub Pages<br/>
+We will be hosting our blog on GitHub. Create an account if you do not have one yet.</p>
+
+<p>Create a new repository, give it a name in this format; <strong>username.github.com</strong>, replacing <strong>username</strong> with your Github username. Mine looks like this <strong>haydnyau.github.com</strong>.</p>
+
+<p>Generate the deployment configuration file for our blog using octopress deploy init command.</p>
+
+<pre><code>octopress deploy init git git@github.com:haydnyau/haydnyau.github.com.git
+</code></pre>
+
+<p>This generates a file called _deploy.yml, which contains the deployment configuration:</p>
+
+<pre><code>method: git                               # How do you want to deploy? git, rsync or s3.
+site_dir: _site                           # Location of your static site files.
+
+git_url: git@github.com:kinsomicrote/kinsomicrote.github.io  # remote repository url, e.g. git@github.com:username/repo_name
+
+# Note on git_branch:
+# If using GitHub project pages, set the branch to 'gh-pages'.
+# For GitHub user/organization pages or Heroku, set the branch to 'master'.
+#
+git_branch: master                        # Git branch where static site files are commited
+
+
+# remote_path:                            # Destination directory
+</code></pre>
+
+<p>Now deploy!</p>
+
+<pre><code>octopress deploy
+</code></pre>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">丘海东</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2022-01-07T06:02:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:02 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/tech/'>tech</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2022/01/02/basketball-in-the-zone/" title="Previous Post: 篮球境界">&laquo; 篮球境界</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2022/01/07/change-templates--post-if-error/" title="Next Post: 更改了文件_templates/post，以后若出错改回来">更改了文件_templates/post，以后若出错改回来 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress 自动打开文件 插入本地图片 程序</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/add-category/">侧边栏增加分类 Category</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/10/can-not-push/">没有正确路径或权限上传，push</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/change-templates--post-if-error/">更改了文件_templates/post，以后若出错改回来</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/12/31/my-2021/">我的2021</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/12/15/jd3/">京東3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/12/07/grateful/">感恩</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/11/26/I-AM-GOOD/">耳朵好了|饮鸩止渴|当断则断</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/11/23/JD2/">我的耳鸣，我爸的腿伤——京东打工后续</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/11/21/JD/">京东打散工记</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/06/02/crash/">崩溃</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/26/zuo-fan-xiang-dao-de-yi-xie-shi/">做饭想到的一些事</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/25/bai-yuan-zhi-lian/">百元之恋</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2021/04/04/chou-le-de-ji-tui/">臭了的鸡腿</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (97)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (59)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (8)</a></li>
+
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/qiuhaidong">@qiuhaidong</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'qiuhaidong',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2022 - 丘海东 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

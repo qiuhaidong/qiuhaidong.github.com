@@ -1,0 +1,291 @@
+---
+layout: post
+title: "创建octopress3.0简单说明"
+date: 2022-01-07 06:02:12 +08:00
+comments: true
+categories: tech
+---
+重装octopress 2.0 博客失败  
+很多新旧的软件，依赖，都不兼容了  
+算了，世界在发展，有的旧事物必然被淘汰  
+毕竟连作者都不维护了  
+而且连3.0都不维护了  
+
+
+============================
+
+[博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple](https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/)  
+
+[博文2，Octopress 3.0博客搭建教程](https://jingsam.github.io/2015/10/21/blogging-with-octopress-3-0.html)  
+
+安装git  
+设置好用户名，email等等，参见之前的blog  
+添加ssh钥匙到github  
+安装rvm  
+安装ruby  
+安装octopress  
+
+	gem install octopress
+	
+创建博客的主文件夹  
+
+	octopress new haydnyau #名字自取
+	
+新建一篇blog  
+	
+	octopress new post hello world
+	
+生成网页  
+
+	jekyll build
+	
+为避免下面的错误：  
+
+	sudo bundle add webrick
+	
+本地预览  
+
+	jekyll serve
+	
+### [可能会报错,参见此blog](https://github.com/jekyll/jekyll/issues/8523)  
+![jekyll serve, cannot load such file -- webrick (LoadError)](https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrEOrm72ctF5gw0aqWv21aZeNSASWKMfjZMh4q6GkEqIeM78CkO7o4O*iqGXdxCboPoKIKO9drAx052jTS2quUV58!/r)  
+
+
+	dong@Ubuntu:~/haydnyau$ bundle exec jekyll serve
+	Configuration file: /home/dong/haydnyau/_config.yml
+	            Source: /home/dong/haydnyau
+	       Destination: /home/dong/haydnyau/_site
+	 Incremental build: disabled. Enable with --incremental
+	      Generating... 
+	       Jekyll Feed: Generating feed for posts
+	                    done in 0.398 seconds.
+	 Auto-regeneration: enabled for '/home/dong/haydnyau'
+	                    ------------------------------------------------
+	      Jekyll 4.2.1   Please append `--trace` to the `serve` command 
+	                     for any additional information or backtrace. 
+	                    ------------------------------------------------
+	/home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve/servlet.rb:3:in `<top (required)>'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:179:in `require_relative'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:179:in `setup'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:100:in `process'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/command.rb:91:in `each'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/lib/jekyll/commands/serve.rb:86:in `block (2 levels) in init_with_program'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+		from /home/dong/.rvm/gems/ruby-3.1.0/gems/jekyll-4.2.1/exe/jekyll:15:in `<top (required)>'
+		from /home/dong/.rvm/gems/ruby-3.1.0/bin/jekyll:25:in `load'
+		from /home/dong/.rvm/gems/ruby-3.1.0/bin/jekyll:25:in `<main>'
+		from /home/dong/.rvm/gems/ruby-3.1.0/bin/ruby_executable_hooks:22:in `eval'
+		from /home/dong/.rvm/gems/ruby-3.1.0/bin/ruby_executable_hooks:22:in `<main>'
+	dong@Ubuntu:~/haydnyau$ 
+	
+
+原因：   
+### 回答1：  
+
+This happens because webrick is no longer a bundled gem in Ruby 3.0. From https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/:  
+
+> * The following libraries are no longer bundled gems or standard libraries. Install the corresponding gems to use these features.
+> * sdbm
+> * webrick
+> * net-telnet
+> * xmlrpc
+
+Adding `gem "webrick"` to my Gemfile solves the problem, but Jekyll should include it in its gemspec.
+
+## 回答2：  
+
+I think you want run: `bundle add webrick`.  
+
+我运行：  
+
+	sudo bundle add webrick
+	
+![sudo bundle add webrick](https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrEBN4rGxoHZRJvba1HYTQq27ffRKlLPwSuElBnQsx8myUeNz3PvYmrJfIi3*2TZPi9OuuBIJmyilHvC5IQwNqaYw!/r)
+
+
+	dong@Ubuntu:~/haydnyau$ bundle add webrick
+	Fetching gem metadata from https://rubygems.org/.........
+	Resolving dependencies...
+	Fetching gem metadata from https://rubygems.org/.........
+	Resolving dependencies...
+	Using public_suffix 4.0.6
+	Using bundler 2.3.4
+	Using colorator 1.1.0
+	Using concurrent-ruby 1.1.9
+	Using eventmachine 1.2.7
+	Using http_parser.rb 0.8.0
+	Using ffi 1.15.4
+	Using forwardable-extended 2.6.0
+	Using rb-fsevent 0.11.0
+	Using rexml 3.2.5
+	Using liquid 4.0.3
+	Using mercenary 0.4.0
+	Using rouge 3.27.0
+	Using safe_yaml 1.0.5
+	Using unicode-display_width 1.8.0
+	Using webrick 1.7.0
+	Using addressable 2.8.0
+	Using sassc 2.4.0
+	Using rb-inotify 0.10.1
+	Using kramdown 2.3.1
+	Using terminal-table 2.0.0
+	Using listen 3.7.0
+	Using kramdown-parser-gfm 1.1.0
+	Using jekyll-sass-converter 2.1.0
+	Using pathutil 0.16.2
+	Using em-websocket 0.5.3
+	Using i18n 1.8.11
+	Using jekyll-watch 2.2.1
+	Using jekyll 4.2.1
+	Using jekyll-feed 0.16.0
+	Using jekyll-seo-tag 2.7.1
+	Using minima 2.5.1
+	dong@Ubuntu:~/haydnyau$ 
+
+
+问题解决  
+
+解决前后的Gemfile文件：  
+![Genfile，前](https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrEJRCIzYAaW3bXX8u6*IVJZ.XtCdPn6AvRrMkapg1VV.CqGful*eQepRFyH0ztMqVtAXon32yueiaIigulllP3VI!/r)  
+![Genfile，后](https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF23xXMs/TmEUgtj9EK6.7V8ajmQrECtxM1XJmWMiuXm2sA41EdXEaIr2GF1uWWNzSBr7KU5QsmUQqXrNTxgBvdf2nvM66ZFdRT4*rwlgIb3LIswYiAo!/r)  
+
+
+生成发布配置文件  
+
+	octopress deploy init git git@github.com:haydnyau/haydnyau.github.com.git
+	
+发布  
+
+	octopress deploy
+	
+git上传  
+
+	git init
+	git add .
+
+还有的以后琢磨  
+买个早餐，吃饱，睡觉
+
+
+
+
+
+
+	
+===================================================	
+# 下面的是详细一点但有点杂乱的，若已经创建好，不必要看
+===================================================
+	
+		
+	
+	
+	
+	
+	
+	
+
+
+欢迎来到octopress3.0  
+折腾两三天了  
+先简单说说吧，详细的自己再琢磨  
+安装以下的：  
+git，设置好用户名，email等等，参见之前的blog  
+添加ssh钥匙到github  
+安装rvm  
+安装ruby  
+
+	dong@Ubuntu:~$ rvm install 3.1.0
+	dong@Ubuntu:~$ rvm use 3.1.0
+	dong@Ubuntu:~$ rvm rubygems latest
+	
+install the Octopress gem. From your terminal:   
+
+	dong@Ubuntu:~$ gem install octopress
+	
+And with that, you have Octopress installed!  
+Blog Creation  
+Getting up and running is easy with the new Octopress CLI commands. Navigate to your working directory and run the command below:  
+
+	octopress new haydnyau 
+	
+This will create a directory named **haydnyau** with scaffolding for the website. Replace “haydnyau” with whatever you want to call your blog. Navigate to the newly crewated directory and open up your text editor to see what you have.  
+
+Creating a Post  
+We can create a new post using one of the Octopress CLI commands:  
+
+	octopress new post hello world
+	
+This command creates a new blog post with the title **hello world**. You can obviously use any title of your choice. The post is created in the **_posts** directory.  
+
+Viewing the Site  
+Before the site can be viewed it has to be built. Since Octopress is a wrapper around Jekyll, we will use the command below to build:  
+
+	jekyll build
+	
+That will build a static HTML website that can be found in the _site directory. This is built out of the markdown files for pages, posts, stylesheets, and config.  
+
+To view the site run the command below from your terminal:  
+
+	jekyll serve
+	
+Then, point your browser to the address **localhost:4000**.  
+Configuration  
+Octopress has a configuration file where you manage the settings for the website. This is the **_config.yml** file located in the home directory of the site. Here is an example of what it looks like:  
+
+	# Site settings
+	title: Your awesome title
+	email: your-email@domain.com
+	description: > # this means to ignore newlines until "baseurl:"
+	  Write an awesome description for your new site here. You can edit this
+	  line in _config.yml. It will appear in your document head meta (for
+	  Google search results) and in your feed.xml site description.
+	baseurl: "" # the subpath of your site, e.g. /blog/
+	url: "http://yourdomain.com" # the base hostname & protocol for your site
+	twitter_username: jekyllrb
+	github_username:  jekyll
+		
+	# Build settings
+	markdown: kramdown
+	
+From the configuration file, you can add your Twitter and Github usernames. They will show up at the bottom of your page, along with the description. Feel free to edit the settings as desired by adding the necessary information. You will have to restart your server for the configuration changes to show up in your browser. You can stop the server by pressing CTRL+C.  
+
+Deploying to GitHub Pages  
+We will be hosting our blog on GitHub. Create an account if you do not have one yet.  
+
+Create a new repository, give it a name in this format; **username.github.com**, replacing **username** with your Github username. Mine looks like this **haydnyau.github.com**.  
+
+Generate the deployment configuration file for our blog using octopress deploy init command.  
+
+	octopress deploy init git git@github.com:haydnyau/haydnyau.github.com.git
+	
+This generates a file called _deploy.yml, which contains the deployment configuration:  
+
+	method: git                               # How do you want to deploy? git, rsync or s3.
+	site_dir: _site                           # Location of your static site files.
+	
+	git_url: git@github.com:kinsomicrote/kinsomicrote.github.io  # remote repository url, e.g. git@github.com:username/repo_name
+	
+	# Note on git_branch:
+	# If using GitHub project pages, set the branch to 'gh-pages'.
+	# For GitHub user/organization pages or Heroku, set the branch to 'master'.
+	#
+	git_branch: master                        # Git branch where static site files are commited
+	
+	
+	# remote_path:                            # Destination directory
+	
+Now deploy!  
+
+	octopress deploy
+	
+	
+
+
+

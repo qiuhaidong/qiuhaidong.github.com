@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "about cad"
+title: "CAD画图"
 date: 2018-10-06 22:34:04 +0800
 comments: true
-categories: 
+categories: tech
 ---
 画线，可以点第一个图标，或者英文输入法下，按`l`，稍等一下，出现`line`，按空格键或者回车键确定。用鼠标确定起点，或输入坐标值，在勾选极轴的情况下？鼠标确定方向，输入长度，空格键确定，在按空格键输入完毕退出。  
 break，输入`br`，点选一段，删除。

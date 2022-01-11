@@ -17,7 +17,7 @@ categories: tech
 
 **到了14.04.2，才好点**  
 
-前两天，重装ubuntu 12.04，在setup octopress时，install RVM（命令为：）
+前两天，重装ubuntu 12.04，在setup octopress时，install RVM（命令为：）  
 
 	curl -L https://get.rvm.io | bash -s stable --ruby
 

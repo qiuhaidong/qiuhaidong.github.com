@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "shell脚本"
+title: "pull push.sh shell脚本"
 date: 2016-01-09 17:08
 comments: true
-categories: tech
+categories: tech-octopress
 ---
 [参见原博](https://github.com/qinjx/30min_guides/blob/master/shell.md)  
+
 新建文本，扩展名为sh，扩展名并不影响脚本的执行，见名知意即可，若是用PHP编写，扩展名就用php  
 终端下先执行：  
 
@@ -35,3 +36,6 @@ push.sh
     git add .
     git commit -m 'update'
     git push origin source
+
+
+或者建好后修改文件属性，权限，允许作为程序执行文件（ubuntu16.04）

@@ -6,7 +6,8 @@ comments: true
 categories: tech
 ---
 
-####出现错误要先看提示代码，知道错在哪里，如：
+#### 出现错误要先看提示代码，知道错在哪里，如：
+
 	dong@ubuntu:~/octopress$ rake generate
 	## Generating Site with Jekyll
 	identical source/stylesheets/screen.css 
@@ -23,6 +24,7 @@ categories: tech
 		from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/jekyll:23:in `<main>'
 		from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `eval'
 		from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `<main>'
+		
 代码已经说得很清楚了，就是***/home/dong/octopress/_config.yml***，这个文件，***could not find expected ':'*** while scanning a simple key ***at line 10 column 1*** (Psych::SyntaxError)  
 **就是'：'后面忘了加空格**
 

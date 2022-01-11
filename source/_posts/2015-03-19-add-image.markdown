@@ -7,7 +7,7 @@ categories: tech
 ---
 方法略繁复  
 把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）  
-把图片上传到github repository托管
+把图片上传到github repository托管  
 
 	git add .           # don't forget the "."
 	git commit -m 'your message'

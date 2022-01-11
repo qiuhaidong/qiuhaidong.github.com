@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "time stuff between windows10 and ubuntu"
+title: "windows10和Ubuntu双系统，时间不对"
 date: 2016-11-10 21:37 +0800
 categories: tech
 ---
 [原博文](http://www.cnblogs.com/qf19910623/p/5559514.html)  
-windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：
+
+windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：  
 
     sudo gedit /etc/default/rcS
     utc=yes 改成 utc=no

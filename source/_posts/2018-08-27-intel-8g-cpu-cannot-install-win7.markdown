@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "intel 8g cpu cannot install win7"
+title: "intel8代cpu无法安装win7"
 date: 2018-08-27 22:20:43 +0800
 comments: true
 categories: tech

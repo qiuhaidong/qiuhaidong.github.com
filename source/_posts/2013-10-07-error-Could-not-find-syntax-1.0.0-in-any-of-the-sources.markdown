@@ -6,10 +6,12 @@ comments: true
 categories: tech
 ---
 
-####if cout<<
+#### if cout<<
+
 	Could not find syntax-1.0.0 in any of the sources
 	Run `bundle install` to install missing gems.
-####run
+	
+#### run
 	rvm use 1.9.3
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "error : no symbol table"
+title: "Ubuntu启动问题 : no symbol table"
 date: 2018-09-05 09:17:32 +0800
 comments: true
 categories: tech

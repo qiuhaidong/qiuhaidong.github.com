@@ -6,7 +6,7 @@ comments: true
 categories: tech-octopress
 ---
 
-	install 2.3.1  
+	rvm install 2.3.1  
 	
 失败  
 .  

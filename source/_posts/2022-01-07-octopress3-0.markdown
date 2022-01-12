@@ -5,6 +5,10 @@ date: 2022-01-07 06:02:12 +08:00
 comments: true
 categories: tech
 ---
+
+### 注意，下面的有些步骤不适合
+#### 先到jekyll官网，用它的方法安装好本地博客，再看几个octopress3.0的教程，比如官方github的和[博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple](https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/)  ，安装octopress，用它来上传blog，结合下面的前面几步，git，rvm，ruby，bundler，bundle install(or bundle)
+
 重装octopress 2.0 博客失败  
 很多新旧的软件，依赖，都不兼容了  
 算了，世界在发展，有的旧事物必然被淘汰  
@@ -22,7 +26,8 @@ categories: tech
 设置好用户名，email等等，参见之前的blog  
 添加ssh钥匙到github  
 安装rvm  
-安装ruby  
+安装ruby 2.7.0,好像默认就是  
+[修复安装2.2.6失败的教程](https://blog.csdn.net/qq_41988167/article/details/106202868)  
 安装octopress  
 
 	gem install octopress

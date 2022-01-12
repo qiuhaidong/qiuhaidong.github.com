@@ -6,6 +6,8 @@ comments: true
 categories: tech-octopress
 ---
 
+[教程](http://blog.lessfun.com/blog/2013/12/05/config-the-octopress-blog-after-deployed/)  
+
 ### 添加功能：自动打开文件编辑
 `rake new_post["file name"]` 后自动打开博客文件  
 编辑`Rakefile`文件，上面位置，添加定义：  

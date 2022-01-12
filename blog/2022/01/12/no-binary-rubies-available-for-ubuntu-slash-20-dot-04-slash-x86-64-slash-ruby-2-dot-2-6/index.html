@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>生活 经历 迷宫 - 丘海东</title>
+  <title>No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6 - 丘海东</title>
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="生活像是一座特殊的迷宫。 它是立体的，一层一层的，无尽的。 它有不可改变的部分，非常难以改变的部分，容易改变的部分。有了足够的经历积累后，会出现一个楼梯，走上去，看下来，之前走过的那一层迷宫，一目了然。
-">
+  <meta name="description" content="No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev 原博内容： &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2014/11/09/life-is-maze/">
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
@@ -70,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">生活 经历 迷宫</h1>
+      <h1 class="entry-title">No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6</h1>
     
     
       <p class="meta">
@@ -79,18 +78,56 @@
 
 
 
-<time class='entry-date' datetime='2014-11-09T23:36:05+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:36 pm</span></time>
+<time class='entry-date' datetime='2022-01-12T19:03:01+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:03 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>生活像是一座特殊的迷宫。</p>
+<div class="entry-content"><p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
 
-<p>它是立体的，一层一层的，无尽的。</p>
+<p>原博内容：</p>
 
-<p>它有不可改变的部分，非常难以改变的部分，容易改变的部分。有了足够的经历积累后，会出现一个楼梯，走上去，看下来，之前走过的那一层迷宫，一目了然。</p>
+<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
+
+<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
+解决办法：</p>
+
+<ul>
+<li>运行</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/apt/sources.list</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
+
+<ul>
+<li>更新</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt update</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>安装</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后再安装<code>rvm install 2.2.6</code></p>
+
+<p>————————————————<br/>
+版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
 </div>
 
 
@@ -106,12 +143,12 @@
 
 
 
-<time class='entry-date' datetime='2014-11-09T23:36:05+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:36 pm</span></time>
+<time class='entry-date' datetime='2022-01-12T19:03:01+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:03 pm</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/personal/'>personal</a>
+    <a class='category' href='/blog/categories/tech/'>tech</a>
   
 </span>
 
@@ -127,10 +164,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/10/22/dgs-classroom2/" title="Previous Post: 东哥学堂2">&laquo; 东哥学堂2</a>
+        <a class="basic-alignment left" href="/blog/2022/01/12/write-them-all/" title="Previous Post: 好记性不如烂笔头">&laquo; 好记性不如烂笔头</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/11/26/nightmares/" title="Next Post: nightmares">nightmares &raquo;</a>
       
     </p>
   </footer>

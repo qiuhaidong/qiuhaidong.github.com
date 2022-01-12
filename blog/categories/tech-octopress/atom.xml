@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-01-12T01:23:13+08:00</updated>
+  <updated>2022-01-12T19:40:35+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -18,7 +18,9 @@
     <link href="https://qiuhaidong.github.io/blog/2022/01/11/octopress-new-post-auto-open/"/>
     <updated>2022-01-11T22:42:33+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/01/11/octopress-new-post-auto-open</id>
-    <content type="html"><![CDATA[<h3>添加功能：自动打开文件编辑</h3>
+    <content type="html"><![CDATA[<p><a href="http://blog.lessfun.com/blog/2013/12/05/config-the-octopress-blog-after-deployed/">教程</a></p>
+
+<h3>添加功能：自动打开文件编辑</h3>
 
 <p><code>rake new_post["file name"]</code> 后自动打开博客文件<br/>
 编辑<code>Rakefile</code>文件，上面位置，添加定义：<br/>
@@ -58,7 +60,7 @@ int main()
     <link href="https://qiuhaidong.github.io/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/"/>
     <updated>2022-01-11T07:52:12+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04</id>
-    <content type="html"><![CDATA[<pre><code>install 2.3.1  
+    <content type="html"><![CDATA[<pre><code>rvm install 2.3.1  
 </code></pre>
 
 <p>失败<br/>

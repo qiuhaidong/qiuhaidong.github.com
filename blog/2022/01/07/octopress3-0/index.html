@@ -9,11 +9,7 @@
   <meta name="author" content="丘海东">
 
   
-  <meta name="description" content="重装octopress 2.0 博客失败
-很多新旧的软件，依赖，都不兼容了
-算了，世界在发展，有的旧事物必然被淘汰
-毕竟连作者都不维护了
-而且连3.0都不维护了 博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple 博文2， &hellip;">
+  <meta name="description" content="注意，下面的有些步骤不适合 先到jekyll官网，用它的方法安装好本地博客，再看几个octopress3.0的教程，比如官方github的和博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple ，安装octopress， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -89,7 +85,11 @@
   </header>
 
 
-<div class="entry-content"><p>重装octopress 2.0 博客失败<br/>
+<div class="entry-content"><h3>注意，下面的有些步骤不适合</h3>
+
+<h4>先到jekyll官网，用它的方法安装好本地博客，再看几个octopress3.0的教程，比如官方github的和<a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a>  ，安装octopress，用它来上传blog，结合下面的前面几步，git，rvm，ruby，bundler，bundle install(or bundle)</h4>
+
+<p>重装octopress 2.0 博客失败<br/>
 很多新旧的软件，依赖，都不兼容了<br/>
 算了，世界在发展，有的旧事物必然被淘汰<br/>
 毕竟连作者都不维护了<br/>
@@ -105,7 +105,8 @@
 设置好用户名，email等等，参见之前的blog<br/>
 添加ssh钥匙到github<br/>
 安装rvm<br/>
-安装ruby<br/>
+安装ruby 2.7.0,好像默认就是<br/>
+<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">修复安装2.2.6失败的教程</a><br/>
 安装octopress</p>
 
 <pre><code>gem install octopress
@@ -430,6 +431,10 @@ git_branch: master                        # Git branch where static site files a
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/">No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2022/01/12/write-them-all/">好记性不如烂笔头</a>
       </li>
     
@@ -505,10 +510,6 @@ git_branch: master                        # Git branch where static site files a
         <a href="/blog/2021/04/26/zuo-fan-xiang-dao-de-yi-xie-shi/">做饭想到的一些事</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2021/04/25/bai-yuan-zhi-lian/">百元之恋</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -517,7 +518,7 @@ git_branch: master                        # Git branch where static site files a
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
 <li class='category'><a href='/blog/categories/personal/'>personal (98)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (59)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (60)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (8)</a></li>
 
   </ul>

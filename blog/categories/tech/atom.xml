@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-01-12T01:23:13+08:00</updated>
+  <updated>2022-01-12T19:40:35+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/"/>
+    <updated>2022-01-12T19:03:01+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6</id>
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
+
+<p>原博内容：</p>
+
+<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
+
+<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
+解决办法：</p>
+
+<ul>
+<li>运行</li>
+</ul>
+
+
+<pre><code>sudo gedit /etc/apt/sources.list
+</code></pre>
+
+<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
+
+<ul>
+<li>更新</li>
+</ul>
+
+
+<pre><code>sudo apt update
+</code></pre>
+
+<ul>
+<li>安装</li>
+</ul>
+
+
+<pre><code>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）
+</code></pre>
+
+<p>然后再安装<code>rvm install 2.2.6</code></p>
+
+<p>————————————————<br/>
+版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu 安装后wifi无法使用]]></title>
@@ -125,7 +173,11 @@ mv _site/_posts/ .
     <link href="https://qiuhaidong.github.io/blog/2022/01/07/octopress3-0/"/>
     <updated>2022-01-07T06:02:12+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/01/07/octopress3-0</id>
-    <content type="html"><![CDATA[<p>重装octopress 2.0 博客失败<br/>
+    <content type="html"><![CDATA[<h3>注意，下面的有些步骤不适合</h3>
+
+<h4>先到jekyll官网，用它的方法安装好本地博客，再看几个octopress3.0的教程，比如官方github的和<a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a>  ，安装octopress，用它来上传blog，结合下面的前面几步，git，rvm，ruby，bundler，bundle install(or bundle)</h4>
+
+<p>重装octopress 2.0 博客失败<br/>
 很多新旧的软件，依赖，都不兼容了<br/>
 算了，世界在发展，有的旧事物必然被淘汰<br/>
 毕竟连作者都不维护了<br/>
@@ -141,7 +193,8 @@ mv _site/_posts/ .
 设置好用户名，email等等，参见之前的blog<br/>
 添加ssh钥匙到github<br/>
 安装rvm<br/>
-安装ruby<br/>
+安装ruby 2.7.0,好像默认就是<br/>
+<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">修复安装2.2.6失败的教程</a><br/>
 安装octopress</p>
 
 <pre><code>gem install octopress
@@ -456,16 +509,6 @@ iOS14降级为13.5.1：</p>
 
 
 <h3>4. 开机后从电脑恢复数据</h3>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu 分区大小]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu/"/>
-    <updated>2020-06-14T10:17:52+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2020/06/14/next-computer-partition-capacity-about-ubuntu</id>
-    <content type="html"><![CDATA[<p>Ubuntu 分区大小不用太多，现在只用了12G而已，估计下次给它30G就ok了<br/>
-<img src="http://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/jmmX4OKaz9ls*nNN2EORpdUZxewuHv2zzf0xLU5fQbxzOua1RSynmCnzTIHZiqC*6XkA94FYqyCRSoPTFb63m6qEs3HFCGw0gTgyMroP1qA!/r" alt="分区容量" /></p>
 ]]></content>
   </entry>
   

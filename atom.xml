@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-01-12T01:23:13+08:00</updated>
+  <updated>2022-01-12T19:40:35+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/"/>
+    <updated>2022-01-12T19:03:01+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6</id>
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
+
+<p>原博内容：</p>
+
+<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
+
+<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
+解决办法：</p>
+
+<ul>
+<li>运行</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/apt/sources.list</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
+
+<ul>
+<li>更新</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt update</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>安装</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后再安装<code>rvm install 2.2.6</code></p>
+
+<p>————————————————<br/>
+版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[好记性不如烂笔头]]></title>
@@ -27,7 +78,9 @@
     <link href="https://qiuhaidong.github.io/blog/2022/01/11/octopress-new-post-auto-open/"/>
     <updated>2022-01-11T22:42:33+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/01/11/octopress-new-post-auto-open</id>
-    <content type="html"><![CDATA[<h3>添加功能：自动打开文件编辑</h3>
+    <content type="html"><![CDATA[<p><a href="http://blog.lessfun.com/blog/2013/12/05/config-the-octopress-blog-after-deployed/">教程</a></p>
+
+<h3>添加功能：自动打开文件编辑</h3>
 
 <p><code>rake new_post["file name"]</code> 后自动打开博客文件<br/>
 编辑<code>Rakefile</code>文件，上面位置，添加定义：</p>
@@ -80,7 +133,7 @@
     <link href="https://qiuhaidong.github.io/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/"/>
     <updated>2022-01-11T07:52:12+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04</id>
-    <content type="html"><![CDATA[<pre><code>install 2.3.1  
+    <content type="html"><![CDATA[<pre><code>rvm install 2.3.1  
 </code></pre>
 
 <p>失败<br/>
@@ -726,7 +779,11 @@ mv _site/_posts/ .
     <link href="https://qiuhaidong.github.io/blog/2022/01/07/octopress3-0/"/>
     <updated>2022-01-07T06:02:12+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/01/07/octopress3-0</id>
-    <content type="html"><![CDATA[<p>重装octopress 2.0 博客失败<br/>
+    <content type="html"><![CDATA[<h3>注意，下面的有些步骤不适合</h3>
+
+<h4>先到jekyll官网，用它的方法安装好本地博客，再看几个octopress3.0的教程，比如官方github的和<a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a>  ，安装octopress，用它来上传blog，结合下面的前面几步，git，rvm，ruby，bundler，bundle install(or bundle)</h4>
+
+<p>重装octopress 2.0 博客失败<br/>
 很多新旧的软件，依赖，都不兼容了<br/>
 算了，世界在发展，有的旧事物必然被淘汰<br/>
 毕竟连作者都不维护了<br/>
@@ -742,7 +799,8 @@ mv _site/_posts/ .
 设置好用户名，email等等，参见之前的blog<br/>
 添加ssh钥匙到github<br/>
 安装rvm<br/>
-安装ruby<br/>
+安装ruby 2.7.0,好像默认就是<br/>
+<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">修复安装2.2.6失败的教程</a><br/>
 安装octopress</p>
 
 <pre><code>gem install octopress
@@ -1376,16 +1434,6 @@ git_branch: master                        # Git branch where static site files a
 
 <p>纸箱装水果，让我想起小时候，我和阿妈去外婆家，晚上，昏黄的灯光，在厨房，烧柴火，炒菜，我坐在旁边，外公用梯子，取下放在灶头上的木棚的纸箱，打开，是大蕉，给我。​​​​<br/>
 我家是在山上的，小学时，爸妈为了我们三姐弟方便上学，到山脚下租房子住，换租过至少五六个泥砖瓦房，也做过多种工作，木工，开杂货店，碾米，种粉蕉。在山下没有田地，家人经常带各种粮菜来给我们。爷爷带沙梨，伯母带粉蕉，堂哥带龙眼，有次妈妈带我们去了外婆家，龙眼放了几天。我有时跑回山上玩，姑姑也会装一袋子菜叫我带下去。外公也经常挑米来，两小时的山路呀。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[百元之恋]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2021/04/25/bai-yuan-zhi-lian/"/>
-    <updated>2021-04-25T15:16:37+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2021/04/25/bai-yuan-zhi-lian</id>
-    <content type="html"><![CDATA[<p>电影《百元之恋》，她并无意外地输了比赛，但是远离了一团糟糕的过往。<br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/byzl.jpg" alt="百元之恋" /></p>
 ]]></content>
   </entry>
   

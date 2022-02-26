@@ -32,7 +32,7 @@ categories: tech-octopress
 **去除Twitter按钮**  
 **去除Google+相关**  
 **去除Pinboard服务**  
-**去除Delicious评论,去除后可能没有评论系统**  
+**去除Delicious评论，去除后可能没有评论系统**  
 **去除Facebook Like**  
 
 ## 替换快速的请求资源

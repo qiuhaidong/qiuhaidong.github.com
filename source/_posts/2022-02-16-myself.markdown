@@ -1,0 +1,9 @@
+---
+layout: post
+title: 做自己，就…只…做自己
+date: 2022-02-16T00:30:51+08:00
+tags: octopress3.0
+comments: 
+categories: personal
+---
+### 别被其他一切因素影响

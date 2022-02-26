@@ -1,0 +1,8 @@
+---
+layout: post
+title: "brave"
+date: 2016-11-29 00:28:01 +0800
+comments: true
+categories: tech
+---
+勇敢走出去，会有新天地！

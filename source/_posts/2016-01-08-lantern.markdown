@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Lantern"
+date: 2016-01-08 14:56 
+categories: tech
+---
+[下载页面](https://github.com/getlantern/lantern)  
+[Windows版](https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta.exe)  
+[Ubuntu（32位）版](https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta-32-bit.deb)  
+[android](https://s3.amazonaws.com/lantern-android/lantern-android-beta.apk)  
+一键安装，双击即可  
+[Lantern官网](https://getlantern.org)  
+官网自然受到GFW的特殊照顾，要翻了墙才能访问到

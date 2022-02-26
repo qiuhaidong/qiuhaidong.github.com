@@ -1,0 +1,30 @@
+---
+layout: post
+title: "C# on Linux"
+date: 2016-08-20 14:18
+comments: true
+categories: tech
+---
+[参考官方说明](http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives)  
+
+attention:有些commend不适合ubuntu，要区分  
+
+[参见另一篇blog](http://blog.csdn.net/caspiansea/article/details/50585025)  
+
+install mono,(mono-complete and monodevelop):  
+
+    sudo apt-get install mono-complete monodevelop
+    
+edit:  
+
+    vim helloworld.cs
+    
+build:  
+
+    mcs helloworld.cd
+    
+run:  
+
+    ./helloworld.exe
+    
+done.

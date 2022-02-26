@@ -1,0 +1,33 @@
+---
+layout: post
+title: "C on linux"
+date: 2016-06-27 09:18:14 +0800
+comments: true
+categories: tech
+---
+linux下用gcc，系统自带有，用`gcc --version`查看一下即可，若没有，安装编译环境：  
+
+    sudo apt-get install build-essential
+    
+新建test.c文件：  
+
+    sudo gedit /…/…/…/test.c
+    
+然后开始编程：  
+
+    #include <stdio.h>
+    int main()
+    {
+	    printf("hello,world!\n");
+	    return 0;
+    }
+
+保存后编译：  
+
+    gcc -o test test.c
+    
+生产可执行文件test，运行：
+
+    ./test
+    
+完成。

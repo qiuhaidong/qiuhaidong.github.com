@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Error: UTF-8 无效字符"
+date: 2013-10-13 15:53
+comments: true
+categories: tech
+---
+
+#### 1.dconf-editor 
+
+#### 2.首次安装尽量要做这几步：  
+
+    rake setup_github_pages
+    rake generate
+    rake deploy
+    git add . 
+    git commit -m 'your message'
+    git push origin source
+
+#### 3.然后再edit _config.yml及添加按钮等等 
+ 
+#### 4.做完3后，rake generate ,可能又会有utf-8问题，因为之前编辑的文件可能又变了，再打开看一次，纠错  
+
+#### 5.多试多看几遍，也可在命令后加 --trace 追踪查看

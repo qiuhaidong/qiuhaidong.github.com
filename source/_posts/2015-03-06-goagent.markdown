@@ -1,0 +1,28 @@
+---
+layout: post
+title: "GoAgent"
+date: 2015-03-06 15:01:31 +0800
+comments: true
+categories: tech
+---
+2016-01-09  goagent的github仓库已经全部删除，it's gone.  
+
+[新网址](https://github.com/goagent/goagent)  
+[压缩包下载地址](http://git.io/goa)  
+[简易教程](https://github.com/goagent/goagent/blob/wiki/SimpleGuide.md)  
+
+**部署**
+
+1. 申请 Google Appengine 并创建 appid。
+2. 下载 [goagent](https://github.com/goagent/goagent)
+3. 修改 local\proxy.ini 中的 [gae] 下的 appid = 你的appid(多appid请用|隔开)
+4. 运行 uploader.bat 或 uploader.py 开始上传, 成功后即可使用了。
+
+**使用**
+
+- Windows 用户推荐使用 goagent.exe 托盘图标设置 IE 代理(对其它浏览器也有效)。
+- Chrome/Opera 请安装 SwitchyOmega 插件(下载到本地然后拖放文件到扩展设置)，导入 SwitchyOptions.bak
+- Firefox 请安装 FoxyProxy ，Firefox需要导入证书，方法请见 FAQ
+- 出现连接不上的情况可以尝试使用 gscan 或 GoGo Tester 测速。
+
+[图文教程](https://github.com/goagent/goagent/blob/wiki/InstallGuide.md)

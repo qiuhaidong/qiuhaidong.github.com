@@ -2,5 +2,5 @@
 cd /home/dong/octopress
 rake generate deploy
 git add .
-git commit -m '20220226'
+git commit -m 'update'
 git push origin source

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 新博客
+title: 新 舊博客
 date: 2022-01-12T23:56:02+08:00
-tags: octopress3.0
+tags: 
 categories: personal
 ---
-## [旧Blog](https://qiuhaidong.github.io/)
-### 热爱生活
-折腾了好几天，终于迁移好了
+### [新博客](https://haydnyau.github.io/)
+### [旧博客](https://qiuhaidong.github.io/)
 
+折腾了好几天，终于迁移好了
 
 [这是主题作者的Blog](https://gaohaoyang.github.io/)  
 

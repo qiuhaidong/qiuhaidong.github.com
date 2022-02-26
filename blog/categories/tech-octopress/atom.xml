@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2022-02-26T20:17:59+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ubuntu20.04 octopress2.0]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/26/ubuntu20-dot-04-octopress2-dot-0/"/>
+    <updated>2022-02-26T18:31:18+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/26/ubuntu20-dot-04-octopress2-dot-0</id>
+    <content type="html"><![CDATA[<p>有時候報錯，記得把<code>Gemfile.lock</code>文件刪除<br/>
+<code>
+rvm use 2.2.6
+sudo apt install python2
+</code>
+test:<br/>
+0123456789<br/>
+010203040506070809 69</p>
+
+<h3>0123456789 69</h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress3.0訪問速度比2.0快太多了]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0/"/>
+    <updated>2022-02-24T16:53:49+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0</id>
+    <content type="html"><![CDATA[<p>真是快太多了，完全不是一個級別的，2.0有時候根本就訪問不了</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Git 如何 Clone 非 Master 分支的代码]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/git-clone-not-master-branch/"/>
+    <updated>2022-02-24T04:08:51+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/git-clone-not-master-branch</id>
+    <content type="html"><![CDATA[<h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>问题描述</h2>
+
+<p>我们每次使用命令</p>
+
+<pre><code>git clone git@gitlab.xxx.com:xxxxx.git
+</code></pre>
+
+<p>默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在<code>daily/1.4.1</code>分支上，我们希望拿到这个分支上的代码。</p>
+
+<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png" /></p>
+
+<h2>解决方法</h2>
+
+<p>直接使用命令</p>
+
+<pre><code>git branch -r #查看远程分支
+</code></pre>
+
+<p>或</p>
+
+<pre><code>git branch -a #查看所有分支
+</code></pre>
+
+<p>会显示</p>
+
+<pre><code>origin/HEAD -&gt; origin/master
+origin/daily/1.2.2
+origin/daily/1.3.0
+origin/daily/1.4.1
+origin/develop
+origin/feature/daily-1.0.0
+origin/master
+</code></pre>
+
+<p>然后直接</p>
+
+<pre><code>git checkout origin/daily/1.4.1
+</code></pre>
+
+<p>就好了。。。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Error: Jekyll-paginate 分頁功能錯誤，依赖缺失]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/error-jekyll-paginate/"/>
+    <updated>2022-02-24T04:02:35+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/error-jekyll-paginate</id>
+    <content type="html"><![CDATA[<h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>jekyll-paginate 依赖缺失</h2>
+
+<p>因为 jekyll 3 中默认安装已经没有这个分页组件了，官方把这个分页组件插件化了，因此要独立安装。详情见 <a href="https://jekyllrb.com/docs/pagination/">https://jekyllrb.com/docs/pagination/</a>。</p>
+
+<h3>错误呈现</h3>
+
+<p>在启动 jekyll 服务的时候出现以下错误：</p>
+
+<pre><code>jekyll serve
+Configuration file: c:/gitWorkSpace/blog-based-on-jekyll-3/_config.yml
+  Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate' If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!
+jekyll 3.1.2 | Error:  jekyll-paginate
+</code></pre>
+
+<h3>解决方法</h3>
+
+<p>我们安装这个插件到本地即可。</p>
+
+<pre><code>gem install jekyll-paginate
+Fetching: jekyll-paginate-1.1.0.gem (100%)
+Successfully installed jekyll-paginate-1.1.0
+Parsing documentation for jekyll-paginate-1.1.0
+Installing ri documentation for jekyll-paginate-1.1.0
+Done installing documentation for jekyll-paginate after 3 seconds
+1 gem installed
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[博文页增加Recent Posts等侧边栏]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/21/post-html-add-sidebar-about-recent-posts/"/>
+    <updated>2022-02-21T21:43:06+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/21/post-html-add-sidebar-about-recent-posts</id>
+    <content type="html"><![CDATA[<p>博客根目录，文件<code>index.html</code>，找到<code>Recent Posts</code>这一大段内容，复制，打开<code>_layouts/post.html</code>，找到：<br/>
+<code>
+    &lt;div class="right"&gt;
+        &lt;div class="wrap"&gt;
+</code>
+复制到其后面。</p>
+
+<p>因为只复制一段老是有错，现在我是把<code>index.html</code>的<code>&lt;div class="right"&gt;</code>右边栏一直到最后的内容，代替了<code>_layouts/post.html</code>右边栏一直到最后的内容。</p>
+
+<h1>🤪😀</h1>
+]]></content>
+  </entry>
+  
+</feed>

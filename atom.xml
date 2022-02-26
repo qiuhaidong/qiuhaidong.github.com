@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-02-26T20:14:42+08:00</updated>
+  <updated>2022-02-26T20:17:59+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,5 +12,440 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ubuntu20.04 octopress2.0]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/26/ubuntu20-dot-04-octopress2-dot-0/"/>
+    <updated>2022-02-26T18:31:18+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/26/ubuntu20-dot-04-octopress2-dot-0</id>
+    <content type="html"><![CDATA[<p>有時候報錯，記得把<code>Gemfile.lock</code>文件刪除</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 2.2.6
+</span><span class='line'>sudo apt install python2</span></code></pre></td></tr></table></div></figure>
+
+
+<p>test:<br/>
+0123456789<br/>
+010203040506070809 69</p>
+
+<h3>0123456789 69</h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[男人要有比欲望更高級的興趣愛好，和作為]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/26/be-a-good-man/"/>
+    <updated>2022-02-26T16:00:01+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/26/be-a-good-man</id>
+    <content type="html"><![CDATA[<p>過年在家期間，每天醒了吃，吃了玩手機電腦，玩累了睡。<br/>
+24號中午買車票，然後各種收拾，沒睡午覺，晚上12點1點多才睡着。4點半卻醒了，然後一直沒再睡着。6點半從家出發，9點大巴發車，下午2點到燕塘地鐵站，下車。<br/>
+這個時候已經開始頭痛了。<br/>
+到了租房，收拾，蒸熱2條<a href="https://bkimg.cdn.bcebos.com/pic/0df3d7ca7bcb0a4682b36d3a6b63f6246b60af24?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto">古粽</a>吃了。<br/>
+<img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/baike/g=0;w=268/sign=e56602fba786c91718035732be0042f9/0df3d7ca7bcb0a4682b36d3a6b63f6246b60af24.jpg" alt="古粽" /><br/>
+然後玩玩手機電腦。也沒有睡覺。<br/>
+晚上8點半，騎車拿古粽過去給梅。小坐20分鐘就回來。<br/>
+很累，頭很痛，但是卻睡不着覺，一直到兩三點，頭沒那麼痛了，才睡着。<br/>
+不到8點卻醒了。之後在床上翻來覆去，也沒能再睡着。<br/>
+玩手機，刷抖音，看到一句話：</p>
+
+<h3><strong>男人要有比欲望更高級的興趣愛好</strong></h3>
+
+<p>把自己的生活調整好。好好做人呀。<br/>
+每個人都有他的優缺點，要懂得，要放下，和自己和解。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress3.0訪問速度比2.0快太多了]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0/"/>
+    <updated>2022-02-24T16:53:49+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0</id>
+    <content type="html"><![CDATA[<p>真是快太多了，完全不是一個級別的，2.0有時候根本就訪問不了</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[被貓抓了一下]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/cat-catch/"/>
+    <updated>2022-02-24T04:20:49+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/cat-catch</id>
+    <content type="html"><![CDATA[<p>前幾天晚上，有一隻貓，據父親說是野貓、流浪貓，都會來我家討食，我們餵了它兩天。<br/>
+昨晚我想和它玩玩，把手伸到它面前，它抓了我一下，一道1厘米多點的抓痕，過了兩三分鐘，滲出一下血。<br/>
+我用熱水器的熱水沖洗了幾分鐘，擦洗了傷口。<br/>
+希望沒事。<br/>
+雖然愛貓，但因貓的性子，如若不熟悉，還是別逗它。<br/>
+有風險。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Git 如何 Clone 非 Master 分支的代码]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/git-clone-not-master-branch/"/>
+    <updated>2022-02-24T04:08:51+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/git-clone-not-master-branch</id>
+    <content type="html"><![CDATA[<h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>问题描述</h2>
+
+<p>我们每次使用命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@gitlab.xxx.com:xxxxx.git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在<code>daily/1.4.1</code>分支上，我们希望拿到这个分支上的代码。</p>
+
+<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png" /></p>
+
+<h2>解决方法</h2>
+
+<p>直接使用命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -r #查看远程分支</span></code></pre></td></tr></table></div></figure>
+
+
+<p>或</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -a #查看所有分支</span></code></pre></td></tr></table></div></figure>
+
+
+<p>会显示</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>origin/HEAD -&gt; origin/master
+</span><span class='line'>origin/daily/1.2.2
+</span><span class='line'>origin/daily/1.3.0
+</span><span class='line'>origin/daily/1.4.1
+</span><span class='line'>origin/develop
+</span><span class='line'>origin/feature/daily-1.0.0
+</span><span class='line'>origin/master</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后直接</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git checkout origin/daily/1.4.1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>就好了。。。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Error: Jekyll-paginate 分頁功能錯誤，依赖缺失]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/error-jekyll-paginate/"/>
+    <updated>2022-02-24T04:02:35+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/error-jekyll-paginate</id>
+    <content type="html"><![CDATA[<h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>jekyll-paginate 依赖缺失</h2>
+
+<p>因为 jekyll 3 中默认安装已经没有这个分页组件了，官方把这个分页组件插件化了，因此要独立安装。详情见 <a href="https://jekyllrb.com/docs/pagination/">https://jekyllrb.com/docs/pagination/</a>。</p>
+
+<h3>错误呈现</h3>
+
+<p>在启动 jekyll 服务的时候出现以下错误：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>jekyll serve
+</span><span class='line'>Configuration file: c:/gitWorkSpace/blog-based-on-jekyll-3/_config.yml
+</span><span class='line'>  Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate' If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!
+</span><span class='line'>jekyll 3.1.2 | Error:  jekyll-paginate</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>解决方法</h3>
+
+<p>我们安装这个插件到本地即可。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install jekyll-paginate
+</span><span class='line'>Fetching: jekyll-paginate-1.1.0.gem (100%)
+</span><span class='line'>Successfully installed jekyll-paginate-1.1.0
+</span><span class='line'>Parsing documentation for jekyll-paginate-1.1.0
+</span><span class='line'>Installing ri documentation for jekyll-paginate-1.1.0
+</span><span class='line'>Done installing documentation for jekyll-paginate after 3 seconds
+</span><span class='line'>1 gem installed</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[什麼才是重要的]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/what-really-matter/"/>
+    <updated>2022-02-24T00:45:30+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/what-really-matter</id>
+    <content type="html"><![CDATA[<p>專注內容<br/>
+專注技術<br/>
+Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
+博文才重要</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[博文页增加Recent Posts等侧边栏]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/21/post-html-add-sidebar-about-recent-posts/"/>
+    <updated>2022-02-21T21:43:06+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/21/post-html-add-sidebar-about-recent-posts</id>
+    <content type="html"><![CDATA[<p>博客根目录，文件<code>index.html</code>，找到<code>Recent Posts</code>这一大段内容，复制，打开<code>_layouts/post.html</code>，找到：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;div class="right"&gt;
+</span><span class='line'>    &lt;div class="wrap"&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>复制到其后面。</p>
+
+<p>因为只复制一段老是有错，现在我是把<code>index.html</code>的<code>&lt;div class="right"&gt;</code>右边栏一直到最后的内容，代替了<code>_layouts/post.html</code>右边栏一直到最后的内容。</p>
+
+<h1>🤪😀</h1>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[新建post文件的“头文件”]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/21/template-of-new-post/"/>
+    <updated>2022-02-21T04:39:45+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/21/template-of-new-post</id>
+    <content type="html"><![CDATA[<p>在根目录新建一文件夹<code>_templates</code>，文件夹里建一个文件<code>post</code>，无后缀，内容是：</p>
+
+<h2><strong><em>注意，格式问题，显示有问题，参见原文件</em></strong>  </h2>
+
+<p>layout: <br/>
+title: &ldquo;&rdquo;<br/>
+date: <br/>
+tags: <br/>
+comments: true</p>
+
+<h2>categories:   </h2>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[生命悲凉]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/18/life-is-pity/"/>
+    <updated>2022-02-18T18:09:40+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/18/life-is-pity</id>
+    <content type="html"><![CDATA[<p>农历正月十八<br/>
+有时雨，有时雾<br/>
+破烂的旧房子<br/>
+天花板不时剥落残渣<br/>
+雨水漏下，打在铁谷柜上，在这寂静中，尤为响动</p>
+
+<p>我父亲是可怜的<br/>
+我母亲是可怜的<br/>
+时代给他们的无知<br/>
+身处巨大变革而无能为力<br/>
+求而不得<br/>
+我是可怜可悲的<br/>
+这是时代的安排<br/>
+宿命的印记<br/>
+是知识见闻和无能的无奈和残酷<br/>
+如果我是一样的无知就好了<br/>
+只可惜我的另一个区域的无知和无能<br/>
+如果我没那么的无能就好了<br/>
+如果我……<br/>
+深深的无力</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[做自己，就…只…做自己]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/16/myself/"/>
+    <updated>2022-02-16T00:30:51+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/16/myself</id>
+    <content type="html"><![CDATA[<h3>别被其他一切因素影响</h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[穷山恶水，离开吧]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/20/leave/"/>
+    <updated>2022-01-20T18:40:25+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/20/leave</id>
+    <content type="html"><![CDATA[<p>刚才父亲又因山林补贴争吵。<br/>
+风险太大。<br/>
+官场黑暗。邻里纷争。<br/>
+穷山恶水。<br/>
+走吧，早走为上。<br/>
+君子不立危墙之下。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ubuntu2022年无法添加引导windows，官方禁用OS Prober]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/15/ubuntu-cannot-boot-windows/"/>
+    <updated>2022-01-15T15:34:36+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/15/ubuntu-cannot-boot-windows</id>
+    <content type="html"><![CDATA[<h3><a href="https://www.oschina.net/news/174751/ubuntu-22.04-multi-boot-changes">原博：OS Prober 被禁用，Ubuntu 正在考虑新的多重引导方案</a></h3>
+
+<p>GNU GRUB（GRUB）是一个来自 GNU 项目的启动引导程序。它允许用户在计算机内同时拥有多个操作系统，并在计算机启动时选择希望运行的操作系统。</p>
+
+<p>今年 6 月，由于上游 GRUB 引导程序在发布 2.06 版本时禁用 OS_Prober 后所带来的一些变化，Ubuntu 的开发者正在考虑如何在 Ubuntu 22.04 LTS 中管理双引导/多引导方案。</p>
+
+<p>Ubuntu 依靠 OS-Prober 来检查其他已安装的操作系统，以便能够方便地在 GRUB 引导程序中显示它们。这意味着随着 Ubuntu 22.04 转向 GRUB 2.06，非 UEFI BIOS 用户不能再启动任何其他操作系统，而基于 UEFI 的系统如果通过 UEFI 引导程序，则仍然可以启动其他操作系统。这个问题主要是会阻碍那些仍然运行传统 BIOS 启动程序的用户使用已安装的系统。</p>
+
+<p>默认禁用OS-Prober旨在通过操作系统检测功能解决潜在的安全问题，因为它在检查其他操作系统时，会检查并挂载系统上的所有分区，如果利用文件系统的漏洞，启用该功能会引发一个能被黑客利用的安全问题。</p>
+
+<p>因此，面对安全和用户体验这个两难的选择下，Ubuntu 开发者也不得不考虑是否要重新启用 OS-Prober。</p>
+
+<p>因为 OS_Prober 存在潜在安全风险，所以重新启用它并不是一个理想的解决方案，目前 Ubuntu 团队内部也在仔细思考这个问题，但不排除这个可能性。</p>
+
+<p>Ubuntu 团队考虑的其他解决方案包括：创建一个新的 GRUB 模块，该模块只在用户查找系统时才执行 OS-Prober 的一些功能，用于增加一个链式启动选项专门处理用户需要启动 Windows 的需求；亦或是仅在安装系统时运行 OS-Prober，然后依靠该信息进行后续启动；最后一种可能性是，从以前的 Ubuntu 版本升级到 Ubuntu 22.04 时启用 OS-Prober。</p>
+
+<p>我们还不清楚 Ubuntu 团队在上述选择中最终会如何进行抉择，在 Ubuntu 22.04 正式推出之前还有充足的考虑时间，可以访问 ubuntu-devel 了解更多详情。我们也将关注 GRUB 上游在此期间是否也会推出相应的解决方案。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[搜狗输入法]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/15/sougou-is-xiugou/"/>
+    <updated>2022-01-15T14:51:13+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/15/sougou-is-xiugou</id>
+    <content type="html"><![CDATA[<p>就是个坑，有时安装了就能用，有时搞到所有的输入法都用不了，要卸载了才能恢复之前的输入法</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ok 好累]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/15/done-tired/"/>
+    <updated>2022-01-15T03:23:36+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/15/done-tired</id>
+    <content type="html"><![CDATA[<p>睡觉</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Post文件模板]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/15/model/"/>
+    <updated>2022-01-15T03:18:34+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/15/model</id>
+    <content type="html"><![CDATA[<p>layout: post<br/>
+title: <br/>
+date: <br/>
+tags: <br/>
+author: 丘海东<br/>
+comments: <br/>
+categories:</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[好艰难---把Gemfile和Gemfile.lock文件删除]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/15/fucking-hard/"/>
+    <updated>2022-01-15T02:48:34+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/15/fucking-hard</id>
+    <content type="html"><![CDATA[<p>怎么都不行<br/>
+用octopress3.0创建theme blog，可能因为</p>
+
+<h2>网络不行？</h2>
+
+<p>一直卡在那里，一动不动<br/>
+<code>bundle</code> 和 <code>bundle install</code> 也是一动不动<br/>
+这是没有成功的，后面会报错<br/>
+重复，直到ok</p>
+
+<h2>对了，我把Gemfile和Gemfile.lock文件删除，就没报错了</h2>
+
+<p>正常来说，rvm安装ruby就行了，如果还不行，再用<code>apt</code> ubuntu官方源安装一次</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install ruby</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[生命不息，折腾不止]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/13/zhe-teng/"/>
+    <updated>2022-01-13T07:45:02+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/13/zhe-teng</id>
+    <content type="html"><![CDATA[<p>强迫症发作<br/>
+Ubuntu<br/>
+20.04  21.10  12.04  16.04  18.04  20.04<br/>
+Ocotpress<br/>
+2.0  3.0<br/>
+jekyll<br/>
+theme<br/>
+折腾了好几天，没日没夜，不眠不休，吃喝不管，性格使然<br/>
+好了，好好吃个早餐，睡觉<br/>
+买票，回家<br/>
+过年<br/>
+又一年</p>
+
+<p><img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF4SNHNw/TmEUgtj9EK6.7V8ajmQrED*vOD1GW9P6z*YHWzdix5ugnQZhaqS7C.z080deNWFg4xOMjEHv1aasu8tzxYvAtb1t9yau2Mq4OpNK*fQIgtU!/r" alt="qq" /></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEBBt8qnK74UlxjsyjJazHjsofXQG0rneEceE2fxJ0iYoev1qV8XUkGa4f3zBfsnMgFIYBE1jz*MnTX.pIZ3Q*vM!/r">1</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEMvM6fKWWIQv6JDPdRrBOJqFS4uUzBy0m8XBjGOIoiZXMSoI.HdGAy.rkrSc5UI8Z*ysJrYVi0R.4DY*u*OrPQE!/r">2</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEAw6qMrx.DeMqYhYPoEnryZ2mTrcAJOnMc9Xx2iSdXrgYHFg4sZN5ZGinn5jCvWIvCcJjldvIixNDk52hLvjZn8!/r">3</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEG.2u5LO7ccw90DKotmv7RsLQgumBc.mg5E5KTLsM.Fg99Fhnb9DK0Ses.zLtoernJRx3brpcsyNMPD0RVJRaq8!/r">4</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEFlB5ERIdlKsfngVuoiz21Qj4tdrizVtkIJ0ua4Xq9SfOVPBzKif3gRqpfZEbyjsP3R8CwlHEt.Xm8iJyuz2nGw!/r">5</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEMUFcGm9g7XE9f.fwXhEjR30nG7aiswalxP6Ywg3gXL0M95PSB.m8xx8UpxlTcm.R*BBTWREfGkrCrcndSaspsQ!/r">6</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEDw6.pSwRjPoCMVPlKqnitgykgEcoUEE0NkZ2XKCIsiXTx9gMTxcD2J6wujiIkfLV6RfO4AVxca.yqf9IyAzHzk!/r">7</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jekyll Theme Octopress 博客的具体配置]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/13/jekyll-theme-config/"/>
+    <updated>2022-01-13T00:58:31+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/13/jekyll-theme-config</id>
+    <content type="html"><![CDATA[<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 2.7.0  </span></code></pre></td></tr></table></div></figure>
+
+
+<p>_config.yml<br/>
+gemfile<br/>
+gemfile.lock</p>
+
+<p>一些问题看手机图片,在空间</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[新博客]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/12/new-blog/"/>
+    <updated>2022-01-12T23:56:02+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/12/new-blog</id>
+    <content type="html"><![CDATA[<h2><a href="https://qiuhaidong.github.io/">旧Blog</a></h2>
+
+<h3>热爱生活</h3>
+
+<p>折腾了好几天，终于迁移好了</p>
+
+<p><a href="https://gaohaoyang.github.io/">这是主题作者的Blog</a></p>
+
+<p><a href="https://github.com/Gaohaoyang">这是他的Github</a> 和 <a href="https://github.com/Gaohaoyang/gaohaoyang.github.io">仓库</a></p>
+]]></content>
+  </entry>
   
 </feed>

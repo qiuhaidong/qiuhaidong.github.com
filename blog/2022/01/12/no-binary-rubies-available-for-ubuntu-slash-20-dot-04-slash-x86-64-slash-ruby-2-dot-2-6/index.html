@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6 - 丘海东</title>
+  <meta name="author" content="丘海东">
+
+  
+  <meta name="description" content="No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev 原博内容： &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">丘海东</a></h1>
+  
+    <h2>Haydn Yau</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.baidu.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="qiuhaidong.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-12T19:03:01+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:03 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
+
+<p>原博内容：</p>
+
+<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
+
+<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
+解决办法：</p>
+
+<ul>
+<li>运行</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/apt/sources.list</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
+
+<ul>
+<li>更新</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt update</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>安装</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后再安装<code>rvm install 2.2.6</code></p>
+
+<p>————————————————<br/>
+版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">丘海东</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2022-01-12T19:03:01+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:03 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/tech/'>tech</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2022/01/12/write-them-all/" title="Previous Post: 好记性不如烂笔头">&laquo; 好记性不如烂笔头</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2022/01/12/new-blog/" title="Next Post: 新博客">新博客 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2022/02/26/ubuntu20-dot-04-octopress2-dot-0/">ubuntu20.04 octopress2.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/26/be-a-good-man/">男人要有比欲望更高級的興趣愛好，和作為</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/24/octopress-3-0-is-faster-than-2-0/">Octopress3.0訪問速度比2.0快太多了</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/24/cat-catch/">被貓抓了一下</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/24/git-clone-not-master-branch/">Git 如何 Clone 非 Master 分支的代码</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/24/error-jekyll-paginate/">Error: Jekyll-paginate 分頁功能錯誤，依赖缺失</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/24/what-really-matter/">什麼才是重要的</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/21/post-html-add-sidebar-about-recent-posts/">博文页增加Recent Posts等侧边栏</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/21/template-of-new-post/">新建post文件的“头文件”</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/18/life-is-pity/">生命悲凉</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/16/myself/">做自己，就…只…做自己</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/20/leave/">穷山恶水，离开吧</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/ubuntu-cannot-boot-windows/">ubuntu2022年无法添加引导windows，官方禁用OS Prober</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/sougou-is-xiugou/">搜狗输入法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/done-tired/">Ok 好累</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/model/">Post文件模板</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/fucking-hard/">好艰难---把Gemfile和Gemfile.lock文件删除</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/13/zhe-teng/">生命不息，折腾不止</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/13/jekyll-theme-config/">Jekyll Theme Octopress 博客的具体配置</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/12/new-blog/">新博客</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (106)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (64)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (16)</a></li>
+
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/qiuhaidong">@qiuhaidong</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'qiuhaidong',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2022 - 丘海东 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

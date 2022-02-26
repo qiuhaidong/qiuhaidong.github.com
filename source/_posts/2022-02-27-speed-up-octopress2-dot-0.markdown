@@ -2,15 +2,16 @@
 layout: post
 title: "加速Octopress2.0，太慢了"
 date: 2022-02-27 00:54:38 +0800
-tags: 
+tags: octopress2.0
 comments: true
 categories: tech-octopress
 ---
-## [原博](https://droidyue.com/blog/2014/06/22/fix-octopress-slow-loading-speed-issue-in-china-mainland/)  
-### 清理没用的服务  
+## [原博](https://droidyue.com/blog/2014/06/22/fix-octopress-slow-loading-speed-issue-in-china-mainland/) 
+## 清理没用的服务
 以下修改均修改`_config.yml`,以下可以根据自己的需要进行去除。  
-### 去除Disqus评论  
-打开文件找到`Disqus Comments`，按照下面在每一行前面加#注释掉即可
+
+**去除Disqus评论**  
+打开文件找到`Disqus Comments`，按照下面在每一行前面加#注释掉即可  
 
 ```
 # Disqus Comments
@@ -18,7 +19,7 @@ categories: tech-octopress
 #disqus_show_comment_count: true
 ```
 
-### 去掉Github仓库展示
+**去掉Github仓库展示**  
 
 ```
 # Github repositories
@@ -28,13 +29,13 @@ categories: tech-octopress
 #github_skip_forks: true
 ```
 
-### 去除Twitter按钮  
-### 去除Google+相关  
-### 去除Pinboard服务  
-### 去除Delicious评论,去除后可能没有评论系统  
-### 去除Facebook Like  
+**去除Twitter按钮**  
+**去除Google+相关**  
+**去除Pinboard服务**  
+**去除Delicious评论,去除后可能没有评论系统**  
+**去除Facebook Like**  
 
-### 替换快速的请求资源  
+## 替换快速的请求资源
 其实，真正解决加速的重要环节可能是这里，因为Octopress很多依赖于Google的库和资源。  
 
 ### 解决Google Analytics巨慢的问题

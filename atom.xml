@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-02-27T01:31:23+08:00</updated>
+  <updated>2022-02-27T01:32:24+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -115,15 +115,6 @@
 <h3>總結</h3>
 
 <p>导致网站慢的原因其实是加载Google的资源，当然我们不能怨Google.经过测试，使用数字公司的解决方法之后，国内国外访问速度都是可以的。这里还是推荐以下数字公司的这个解决方案<a href="http://libs.useso.com/">http://libs.useso.com/</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ttttttttttt]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/27/ttttttttttt/"/>
-    <updated>2022-02-27T00:24:35+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/27/ttttttttttt</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
@@ -526,6 +517,23 @@ theme<br/>
 <p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEMUFcGm9g7XE9f.fwXhEjR30nG7aiswalxP6Ywg3gXL0M95PSB.m8xx8UpxlTcm.R*BBTWREfGkrCrcndSaspsQ!/r">6</a></p>
 
 <p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEDw6.pSwRjPoCMVPlKqnitgykgEcoUEE0NkZ2XKCIsiXTx9gMTxcD2J6wujiIkfLV6RfO4AVxca.yqf9IyAzHzk!/r">7</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jekyll Theme Octopress 博客的具体配置]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/13/jekyll-theme-config/"/>
+    <updated>2022-01-13T00:58:31+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/13/jekyll-theme-config</id>
+    <content type="html"><![CDATA[<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 2.7.0  </span></code></pre></td></tr></table></div></figure>
+
+
+<p>_config.yml<br/>
+gemfile<br/>
+gemfile.lock</p>
+
+<p>一些问题看手机图片,在空间</p>
 ]]></content>
   </entry>
   

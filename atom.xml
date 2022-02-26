@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-02-27T00:21:32+08:00</updated>
+  <updated>2022-02-27T00:25:30+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ttttttttttt]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/27/ttttttttttt/"/>
+    <updated>2022-02-27T00:24:35+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/27/ttttttttttt</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ubuntu20.04 octopress2.0]]></title>
@@ -429,23 +438,6 @@ gemfile<br/>
 gemfile.lock</p>
 
 <p>一些问题看手机图片,在空间</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[新 舊博客]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/01/12/new-and-old-blog/"/>
-    <updated>2022-01-12T23:56:02+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/01/12/new-and-old-blog</id>
-    <content type="html"><![CDATA[<h3><a href="https://haydnyau.github.io/">新博客</a></h3>
-
-<h3><a href="https://qiuhaidong.github.io/">旧博客</a></h3>
-
-<p>折腾了好几天，终于迁移好了</p>
-
-<p><a href="https://gaohaoyang.github.io/">这是主题作者的Blog</a></p>
-
-<p><a href="https://github.com/Gaohaoyang">这是他的Github</a> 和 <a href="https://github.com/Gaohaoyang/gaohaoyang.github.io">仓库</a></p>
 ]]></content>
   </entry>
   

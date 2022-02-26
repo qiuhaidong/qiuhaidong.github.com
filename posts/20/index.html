@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>丘海东</title>g
+
+  
+  <meta name="description" content="Before You Begin Install Git don't need anymore: sudo apt-add-repository ppa:git-core/ppa
+don't need anymore: sudo apt-get update
+sudo apt-get &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="https://qiuhaidong.github.io/posts/20/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.useso.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">丘海东</a></h1>
+  
+    <h2>Haydn Yau</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.baidu.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="qiuhaidong.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/06/06/Setup-and-Start-Octopress/">Setup and Start Octopress</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-06-06T20:54:00+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>8:54 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><strong><em>Before You Begin</em></strong></p>
+
+<h3>Install Git</h3>
+
+<pre><code>don't need anymore: sudo apt-add-repository ppa:git-core/ppa
+don't need anymore: sudo apt-get update
+sudo apt-get install git
+</code></pre>
+
+<p>然后就应该跳到后面的<strong>Before Deploying to Github Pages, Set Up Git</strong></p>
+
+<p><strong>Install Ruby (the larest version) using either rbenv or RVM</strong></p>
+
+<p><strong>Install RVM:</strong></p>
+
+<pre><code>don't need anymore: curl -L https://get.rvm.io | bash -s stable --ruby
+use this: 
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable
+</code></pre>
+
+<p>maybe there is some other command come out, and it may ask you to run it, follow it, run: <code>curl -sSL https://get.rvm.io | bash -s stable</code>again. then it should be successed.</p>
+
+<p><em>Be sure to <strong>follow</strong> any subsequent instructions as guided by the installation process.</em></p>
+
+<p>2016-05-21:这里可能会报错，按照它的英文提示做（它会给出命令），能通过</p>
+
+<p><strong>Install Ruby lastest vesion</strong></p>
+
+<p>check for the curent (latest) version on the official website</p>
+
+<pre><code>rvm install 2.3.1
+rvm use 2.3.1
+rvm rubygems latest
+</code></pre>
+
+<p>Run<code>ruby --version</code>to be sure you’re using Ruby 2.3.1</p>
+
+<h3>Setup Octopress</h3>
+
+<pre><code>no more:  git clone git://github.com/imathis/octopress.git octopress
+git clone -b source git@github.com:qiuhaidong/qiuhaidong.github.com.git octopress
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+ruby --version  # Should report Ruby 1.9.3
+</code></pre>
+
+<p>git octopress</p>
+
+<pre><code>git clone git@github.com:qiuhaidong/qiuhaidong.github.com.git _deploy
+</code></pre>
+
+<p>if:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dong@Ubuntu:~/octopress$ git clone git@github.com:username/repositoryname.git _deploy
+</span><span class='line'>正克隆到 '_deploy'...
+</span><span class='line'>ERROR: Repository not found.
+</span><span class='line'>fatal: 无法读取远程仓库。
+</span><span class='line'>
+</span><span class='line'>请确认您有正确的访问权限并且仓库存在。</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://qiuhaidong.github.io/blog/2016/08/22/SSL-cannot-push-pull-keys-https-issue/">github官方访问权限认证方式更改ssh to https</a></p>
+
+<p>Next, install dependencies</p>
+
+<pre><code>gem install bundler
+sudo apt-get install rbenv
+rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+bundle install
+</code></pre>
+
+<p>Install the default Octopress theme.</p>
+
+<pre><code>rake install
+</code></pre>
+
+<h3>Next Steps</h3>
+
+<p><strong>1. Set up deployment</strong><br/>
+<strong>2. Configure your blog</strong><br/>
+<strong>3. Start blogging with Octopress</strong></p>
+
+<h2>Deploying to Github Pages</h2>
+
+<h3>Before Deploying to Github Pages,Set Up Git</h3>
+
+<p><strong>Username</strong></p>
+
+<p>First you need to tell git your name, so that it can properly label the commits you make.</p>
+
+<pre><code>git config --global user.name "Your Name Here"
+我的就是：git config --global user.name "qiuhaidong"
+# Sets the default name for git to use when you commit
+</code></pre>
+
+<p><strong>Email</strong></p>
+
+<p>Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.</p>
+
+<pre><code>git config --global user.email "your_email@example.com"
+我的就是：git config --global user.email "690982322@qq.com"
+# Sets the default email for git to use when you commit
+</code></pre>
+
+<p><strong>Password caching</strong></p>
+
+<p>To use this option, you need to turn on the credential helper so that git will save your password in memory for some time:</p>
+
+<pre><code>git config --global credential.helper cache
+# Set git to use the credential memory cache
+</code></pre>
+
+<h2>Generating SSH Keys</h2>
+
+<h3>Step 1: Check for SSH keys</h3>
+
+<p>First, we need to check for existing ssh keys on your computer. Open up Terminal and run:</p>
+
+<pre><code>cd ~/.ssh
+# Checks to see if there is a directory named ".ssh" in your user directory
+</code></pre>
+
+<p>If it says &ldquo;No such file or directory&rdquo; go to <strong>step 2</strong>. Otherwise, you already have an existing keypair, and you can skip to <strong>step 3</strong>.</p>
+
+<p>最好就是把 .shh 这个文件夹删除了，做step2</p>
+
+<h3>Step 2: Generate a new SSH key</h3>
+
+<p>To generate a new SSH key, enter the code below. We want the default settings so when asked to enter a file in which to save the key, just press enter.</p>
+
+<pre><code>ssh-keygen -t rsa -C "your_email@example.com"
+我的就是：ssh-keygen -t rsa -C "690982322@qq.com"
+</code></pre>
+
+<p>Now you need to enter a passphrase.</p>
+
+<p>Which should give you something like this:</p>
+
+<pre><code>Your identification has been saved in /home/you/.ssh/id_rsa.
+Your public key has been saved in /home/you/.ssh/id_rsa.pub.
+The key fingerprint is:
+01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
+</code></pre>
+
+<h3>Step 3: Add your SSH key to GitHub</h3>
+
+<pre><code>sudo apt-get install xclip
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+
+xclip -sel clip &lt; ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+</code></pre>
+
+<p><strong>Add your SSH key to GitHub</strong></p>
+
+<p>到github网站，登陆，头像，设置，SSH and GPG keys，把旧的SSH keys删除，添加新的，title不用管，粘贴到key就行了</p>
+
+<h3>Step 4: Test everything out</h3>
+
+<pre><code>ssh -T git@github.com
+</code></pre>
+
+<p>这里可能会还要按照提示做一下，不难，看英文做</p>
+
+<p>if cout&lt;&lt;</p>
+
+<pre><code>Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+</code></pre>
+
+<p>If that username is correct, you&rsquo;ve successfully set up your SSH key. Don&rsquo;t worry about the shell access thing, you don&rsquo;t want that anyway.</p>
+
+<p>If you see &ldquo;access denied&rdquo; please consider using HTTPS instead of SSH. If you need SSH start at these instructions for diagnosing the issue.</p>
+
+<h2>Now Go Back to：Deploying to Github Pages</h2>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p><strong><em>This will ask you for something</em></strong></p>
+
+<p>Next run:</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<p>This will generate your blog, copy the generated files into _deploy/, add them to git, commit and push them up to the master branch. In a few seconds you should get an email from Github telling you that your commit has been received and will be published on your site.</p>
+
+<p><strong><em>Don’t forget</em></strong> to commit the source for your blog.</p>
+
+<pre><code>git add .           # don't forget the "."
+git commit -m 'your message'
+git push origin source
+</code></pre>
+
+<h2>Configuring Octopress</h2>
+
+<h3><em>edit _config.yml</em></h3>
+
+<h3>Main Configs</h3>
+
+<pre><code>url:                # For rewriting urls for RSS, etc
+title:              # Used in the header and title tags
+subtitle:           # A description used in the header
+author:             # Your name, for RSS, Copyright, Metadata
+simple_search:      # Search engine for simple site search
+description:        # A default meta description for your site
+date_format:        # Format dates using Ruby's date strftime syntax
+subscribe_rss:      # Url for your blog's feed, defauts to /atom.xml
+subscribe_email:    # Url to subscribe by email (service required)
+category_feeds:     # Enable per category RSS feeds (defaults to false in 2.1)
+email:              # Email address for the RSS feed if you want it.
+</code></pre>
+
+<h2>Blogging Basics</h2>
+
+<h3>new blog：</h3>
+
+<pre><code>rake new_post["title"]
+</code></pre>
+
+<h3>Generate &amp; Preview(生成&amp;预览)</h3>
+
+<pre><code>rake generate   # Generates posts and pages into the public directory
+rake watch      # Watches source/ and sass/ for changes and regenerates
+rake preview    # Watches, and mounts a webserver at http://localhost:4000
+</code></pre>
+
+<p>If you want to work on posts without publishing them, you can add a <code>published: false</code> to your post’s YAML header. You can preview these posts with <code>rake preview</code> on your local server, but they won’t get published by <code>rake generate</code>.</p>
+
+<h3>发布：</h3>
+
+<pre><code>rake deploy
+</code></pre>
+
+<h3>OK！That&rsquo;s it.</h3>
+
+<p>2015-8-28<br/>
+<a href="http://justcoding.iteye.com/blog/1954645">这篇博文</a>讲得很好，推荐看看</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/posts/19">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2022/02/27/ttttttttttt/">Ttttttttttt</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/26/ubuntu20-dot-04-octopress2-dot-0/">ubuntu20.04 octopress2.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/26/be-a-good-man/">男人要有比欲望更高級的興趣愛好，和作為</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/24/octopress-3-0-is-faster-than-2-0/">Octopress3.0訪問速度比2.0快太多了</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/24/cat-catch/">被貓抓了一下</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/24/git-clone-not-master-branch/">Git 如何 Clone 非 Master 分支的代码</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/24/error-jekyll-paginate/">Error: Jekyll-paginate 分頁功能錯誤，依赖缺失</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/24/what-really-matter/">什麼才是重要的</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/21/post-html-add-sidebar-about-recent-posts/">博文页增加Recent Posts等侧边栏</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/21/template-of-new-post/">新建post文件的“头文件”</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/18/life-is-pity/">生命悲凉</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/16/myself/">做自己，就…只…做自己</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/20/leave/">穷山恶水，离开吧</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/ubuntu-cannot-boot-windows/">ubuntu2022年无法添加引导windows，官方禁用OS Prober</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/sougou-is-xiugou/">搜狗输入法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/done-tired/">Ok 好累</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/model/">Post文件模板</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/fucking-hard/">好艰难---把Gemfile和Gemfile.lock文件删除</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/13/zhe-teng/">生命不息，折腾不止</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/13/jekyll-theme-config/">Jekyll Theme Octopress 博客的具体配置</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (106)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (64)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (16)</a></li>
+
+  </ul>
+</section>
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2022 - 丘海东 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

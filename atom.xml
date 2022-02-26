@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-02-26T20:39:22+08:00</updated>
+  <updated>2022-02-26T21:33:44+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -432,13 +432,13 @@ gemfile.lock</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[新博客]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/01/12/new-blog/"/>
+    <title type="html"><![CDATA[新 舊博客]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/12/new-and-old-blog/"/>
     <updated>2022-01-12T23:56:02+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/01/12/new-blog</id>
-    <content type="html"><![CDATA[<h2><a href="https://qiuhaidong.github.io/">旧Blog</a></h2>
+    <id>https://qiuhaidong.github.io/blog/2022/01/12/new-and-old-blog</id>
+    <content type="html"><![CDATA[<h3><a href="https://haydnyau.github.io/">新博客</a></h3>
 
-<h3>热爱生活</h3>
+<h3><a href="https://qiuhaidong.github.io/">旧博客</a></h3>
 
 <p>折腾了好几天，终于迁移好了</p>
 

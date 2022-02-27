@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: octopress3.0 | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/tags/octopress3-dot-0/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2022-02-27T17:33:50+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ubuntu20.04 octopress2.0]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/26/ubuntu20-dot-04-octopress2-dot-0/"/>
+    <updated>2022-02-26T18:31:18+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/26/ubuntu20-dot-04-octopress2-dot-0</id>
+    <content type="html"><![CDATA[<p>有時候報錯，記得把<code>Gemfile.lock</code>文件刪除<br/>
+Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2版本<br/>
+<code>
+rvm use 2.2.6
+sudo apt install python2
+</code>
+test:<br/>
+0123456789<br/>
+010203040506070809 69</p>
+
+<h3>0123456789 69</h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[男人要有比欲望更高級的興趣愛好，和作為]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/26/be-a-good-man/"/>
+    <updated>2022-02-26T16:00:01+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/26/be-a-good-man</id>
+    <content type="html"><![CDATA[<p>過年在家期間，每天醒了吃，吃了玩手機電腦，玩累了睡。<br/>
+24號中午買車票，然後各種收拾，沒睡午覺，晚上12點1點多才睡着。4點半卻醒了，然後一直沒再睡着。6點半從家出發，9點大巴發車，下午2點到燕塘地鐵站，下車。<br/>
+這個時候已經開始頭痛了。<br/>
+到了租房，收拾，蒸熱2條<a href="https://bkimg.cdn.bcebos.com/pic/0df3d7ca7bcb0a4682b36d3a6b63f6246b60af24?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto">古粽</a>吃了。<br/>
+<img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/baike/g=0;w=268/sign=e56602fba786c91718035732be0042f9/0df3d7ca7bcb0a4682b36d3a6b63f6246b60af24.jpg" alt="古粽" /><br/>
+然後玩玩手機電腦。也沒有睡覺。<br/>
+晚上8點半，騎車拿古粽過去給梅。小坐20分鐘就回來。<br/>
+很累，頭很痛，但是卻睡不着覺，一直到兩三點，頭沒那麼痛了，才睡着。<br/>
+不到8點卻醒了。之後在床上翻來覆去，也沒能再睡着。<br/>
+玩手機，刷抖音，看到一句話：</p>
+
+<h3><strong>男人要有比欲望更高級的興趣愛好</strong></h3>
+
+<p>把自己的生活調整好。好好做人呀。<br/>
+每個人都有他的優缺點，要懂得，要放下，和自己和解。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress3.0訪問速度比2.0快太多了]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0/"/>
+    <updated>2022-02-24T16:53:49+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0</id>
+    <content type="html"><![CDATA[<p>真是快太多了，完全不是一個級別的，2.0有時候根本就訪問不了</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[被貓抓了一下]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/cat-catch/"/>
+    <updated>2022-02-24T04:20:49+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/cat-catch</id>
+    <content type="html"><![CDATA[<p>前幾天晚上，有一隻貓，據父親說是野貓、流浪貓，都會來我家討食，我們餵了它兩天。<br/>
+昨晚我想和它玩玩，把手伸到它面前，它抓了我一下，一道1厘米多點的抓痕，過了兩三分鐘，滲出一下血。<br/>
+我用熱水器的熱水沖洗了幾分鐘，擦洗了傷口。<br/>
+希望沒事。<br/>
+雖然愛貓，但因貓的性子，如若不熟悉，還是別逗它。<br/>
+有風險。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Git 如何 clone 非 master 分支的代码]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/24/git-clone-not-master-branch/"/>
+    <updated>2022-02-24T04:08:51+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/24/git-clone-not-master-branch</id>
+    <content type="html"><![CDATA[<h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>问题描述</h2>
+
+<p>我们每次使用命令</p>
+
+<pre><code>git clone git@gitlab.xxx.com:xxxxx.git
+</code></pre>
+
+<p>默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在<code>daily/1.4.1</code>分支上，我们希望拿到这个分支上的代码。</p>
+
+<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png" /></p>
+
+<h2>解决方法</h2>
+
+<p>直接使用命令</p>
+
+<pre><code>git branch -r #查看远程分支
+</code></pre>
+
+<p>或</p>
+
+<pre><code>git branch -a #查看所有分支
+</code></pre>
+
+<p>会显示</p>
+
+<pre><code>origin/HEAD -&gt; origin/master
+origin/daily/1.2.2
+origin/daily/1.3.0
+origin/daily/1.4.1
+origin/develop
+origin/feature/daily-1.0.0
+origin/master
+</code></pre>
+
+<p>然后直接</p>
+
+<pre><code>git checkout origin/daily/1.4.1
+</code></pre>
+
+<p>就好了。。。</p>
+]]></content>
+  </entry>
+  
+</feed>

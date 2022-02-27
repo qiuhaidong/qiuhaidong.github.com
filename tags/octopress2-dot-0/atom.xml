@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: octopress2.0 | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/tags/octopress2-dot-0/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2022-02-27T17:33:50+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[加速Octopress2.0，太慢了]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/27/speed-up-octopress2-dot-0/"/>
+    <updated>2022-02-27T00:54:38+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/27/speed-up-octopress2-dot-0</id>
+    <content type="html"><![CDATA[<h2><a href="https://droidyue.com/blog/2014/06/22/fix-octopress-slow-loading-speed-issue-in-china-mainland/">原博</a></h2>
+
+<h2>清理没用的服务</h2>
+
+<p>以下修改均修改<code>_config.yml</code>,以下可以根据自己的需要进行去除。</p>
+
+<p><strong>去除Disqus评论</strong><br/>
+打开文件找到<code>Disqus Comments</code>，按照下面在每一行前面加#注释掉即可</p>
+
+<pre><code># Disqus Comments
+#disqus_short_name: 
+#disqus_show_comment_count: true
+</code></pre>
+
+<p><strong>去掉Github仓库展示</strong></p>
+
+<pre><code># Github repositories
+#github_user: 
+#github_repo_count: 
+#github_show_profile_link: true
+#github_skip_forks: true
+</code></pre>
+
+<p><strong>去除Twitter按钮</strong><br/>
+<strong>去除Google+相关</strong><br/>
+<strong>去除Pinboard服务</strong><br/>
+<strong>去除Delicious评论，去除后可能没有评论系统</strong><br/>
+<strong>去除Facebook Like</strong></p>
+
+<h2>替换快速的请求资源</h2>
+
+<p>其实，真正解决加速的重要环节可能是这里，因为Octopress很多依赖于Google的库和资源。</p>
+
+<h3>解决Google Analytics巨慢的问题</h3>
+
+<p>对于使用Google Analytics来说，加在ga.js这个文件简直是要命的慢，这里我使用自己存放在七牛CDN上的js.  <a href="http://droidyue-tools.qiniudn.com/ga.js">http://droidyue-tools.qiniudn.com/ga.js</a> 已验证，完全可以正常收集数据。<br/>
+参考如下，修改<code>source/_includes/google_analytics.html</code></p>
+
+<pre><code> _gaq.push(['_trackPageview']);
+
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src='http://droidyue-tools.qiniudn.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+   &lt;/script&gt;
+</code></pre>
+
+<h3>解决fonts.googleapis.com蜗牛慢</h3>
+
+<p>这里我们使用数字公司提供的Google Fonts大陆解决方案，使用<code>fonts.useso.com</code>替换<code>fonts.googleapis.com</code>。<br/>
+修改文件<code>/source/_includes/custom/head.html</code></p>
+
+<pre><code> &lt;!--Fonts from Google"s Web font directory at http://google.com/webfonts --&gt;
+&lt;link href="http://fonts.useso.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"&gt;
+&lt;link href="http://fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"&gt;
+</code></pre>
+
+<h3>解决ajax.googleapis.com慢的问题</h3>
+
+<p>修改<code>source/_includes/head.html</code></p>
+
+<p>```</p>
+
+<script src="//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+
+<script src="https://qiuhaidong.github.io/javascripts/octopress.js" type="text/javascript"></script>
+
+
+<p>```</p>
+
+<h3>總結</h3>
+
+<p>导致网站慢的原因其实是加载Google的资源，当然我们不能怨Google.经过测试，使用数字公司的解决方法之后，国内国外访问速度都是可以的。这里还是推荐以下数字公司的这个解决方案<a href="http://libs.useso.com/">http://libs.useso.com/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[侧边栏增加分类 category]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/10/add-category/"/>
+    <updated>2022-01-10T23:00:59+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/10/add-category</id>
+    <content type="html"><![CDATA[<h3>三步</h3>
+
+<h2>Step 1</h2>
+
+<h3>添加 <code>category_list</code> 插件</h3>
+
+<p>在 <code>octopress\plugins\</code> 文件夹里面，新建一个文件，名为：<code>category_list_tag.rb</code>。并将下面的代码粘贴到里面。</p>
+
+<pre><code>module Jekyll
+  class CategoryListTag &lt; Liquid::Tag
+    def render(context)
+      html = ""
+      categories = context.registers[:site].categories.keys
+      categories.sort.each do |category|
+        posts_in_category = context.registers[:site].categories[category].size
+       category_dir = context.registers[:site].config['category_dir']
+        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
+        html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='https://qiuhaidong.github.io/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+      end
+      html
+    end
+  end
+end
+
+Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
+</code></pre>
+
+<p>这个插件会向<code>liquid</code>注册一个名为<code>category_list</code>的<code>tag</code>，该<code>tag</code>就是以<code>li</code>的形式将站点所有的<code>category</code>组织起来。如果要将<code>category</code>加入到侧边导航栏，需要增加一个<code>aside</code>。</p>
+
+<h2>Step 2</h2>
+
+<h3>增加 <code>aside</code></h3>
+
+<p>在 <code>octopress\source\_includes\asides\</code> 文件夹里面，新建一个文件，名为：<code>category_list.html</code> 。并粘贴下面的代码：</p>
+
+<p><strong>注意</strong>： 去掉 <code>%</code> 前面的2个 <code>\</code><br/>
+这里如果不加上<code>\</code>，markdown格式会显示<code>category_list</code>的内容。我是为了正确显示代码才加上的</p>
+
+<pre><code>&lt;section&gt;
+  &lt;h1&gt;Categories&lt;/h1&gt;
+  &lt;ul id="categories"&gt;
+    {\% category_list \%}
+  &lt;/ul&gt;
+&lt;/section&gt;
+</code></pre>
+
+<h2>Step 3</h2>
+
+<h3><code>_config.yml</code> 文件 ，修改 <code>default_asides</code></h3>
+
+<p>打开 <code>octopress\_config.yml</code> 文件，修改里面的 <code>default_asides</code> 这一行，将 <code>asides/category_list.html</code> 添加进去。</p>
+
+<pre><code>default_asides: [asides/category_list.html, ......]
+</code></pre>
+
+<p>这里可以修改侧边栏的顺序</p>
+
+<h2>ok</h2>
+
+<p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-categories-list-for-site-sidebar/">原博</a></p>
+]]></content>
+  </entry>
+  
+</feed>

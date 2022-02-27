@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://qiuhaidong.github.io/blog/2022/02/27/read-on/</loc>
+<lastmod>2022-02-27T16:45:06+08:00</lastmod>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/blog/2022/02/27/add-tags/</loc>
+<lastmod>2022-02-27T16:34:34+08:00</lastmod>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/blog/2022/02/27/ttttttttttt/</loc>
+<lastmod>2022-02-27T02:28:40+08:00</lastmod>
+</url>
+<url>
 <loc>https://qiuhaidong.github.io/blog/2022/02/27/speed-up-octopress2-dot-0/</loc>
 <lastmod>2022-02-27T00:54:38+08:00</lastmod>
 </url>
@@ -771,6 +783,12 @@
 <loc>https://qiuhaidong.github.io/blog/archives/</loc>
 </url>
 <url>
+<loc>https://qiuhaidong.github.io/categories/</loc>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/tag-cloud/</loc>
+</url>
+<url>
 <loc>https://qiuhaidong.github.io/blog/categories/tech/</loc>
 </url>
 <url>
@@ -784,5 +802,23 @@
 </url>
 <url>
 <loc>https://qiuhaidong.github.io/blog/categories/only-for-you/</loc>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/tags/octopress3-dot-0/</loc>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/tags/octopress2-dot-0/</loc>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/tags/octopress/</loc>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/tags/rough/</loc>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/tags/ubuntu/</loc>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/tags/windows/</loc>
 </url>
 </urlset>

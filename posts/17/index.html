@@ -8,8 +8,13 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="键盘布局出错，想打‘#’，却出现一个类似‘f’的符号，打‘|’却出现‘~’。
-run： sudo dpkg-reconfigure keyboard-configuration 会出现图形界面用以设置。
+  <meta name="description" content="尊重学识
+整洁精致美好
+教养、礼貌
+见识
+谈吐穿着
+审美
+探索，自知
 ">
   
 
@@ -59,6 +64,8 @@ run： sudo dpkg-reconfigure keyboard-configuration 会出现图形界面用以�
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/categories/">Categories</a></li>
+  <li><a href="/tag-cloud/">Tags</a></li>
 </ul>
 
 </nav>
@@ -66,6 +73,205 @@ run： sudo dpkg-reconfigure keyboard-configuration 会出现图形界面用以�
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/25/gentle/">做优雅的人</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-25T18:24:37+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:24 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>尊重学识<br/>
+整洁精致美好<br/>
+教养、礼貌<br/>
+见识<br/>
+谈吐穿着<br/>
+审美<br/>
+探索，自知</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/25/how-to-git-octopress/">How to ‘git’ Octopress</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-25T13:58:37+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:58 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>如何为已经存在于Github上的Octopress搭建本地环境<br/>
+大部分步骤和全新搭建时差不多，这里只列出不同的那几步<br/>
+···安装其他···<br/>
+clone <code>source</code> 分支：</p>
+
+<pre><code>git clone -b source git@github.com:username/repositoryname.git octopress
+</code></pre>
+
+<p>换成我的具体命令就是:</p>
+
+<pre><code>git clone -b source git@github.com:qiuhaidong/qiuhaidong.github.com.git octopress
+</code></pre>
+
+<p>clone <code>master</code> 分支：<br/>
+<code>master</code> 分支存放在 <code>_deploy</code>目录</p>
+
+<pre><code>cd octopress
+git clone git@github.com:username/repositoryname.git _deploy
+</code></pre>
+
+<p>具体命令：</p>
+
+<pre><code>git clone git@github.com:qiuhaidong/qiuhaidong.github.com.git _deploy
+</code></pre>
+
+<p>if<br/>
+<a href="https://qiuhaidong.github.io/blog/2016/08/22/SSL-cannot-push-pull-keys-https-issue/">路径权限错误，无法pull Push</a><br/>
+fix it:</p>
+
+<pre><code>gedit octopress/.git/config
+git https://github.com/qiuhaidong/qiuhaidong.github.com.git _deploy
+</code></pre>
+
+<p>···其他步骤···<br/>
+另个重要命令：<br/>
+拉取：</p>
+
+<pre><code>cd octopress
+git pull origin source
+cd _deploy
+git pull origin master
+</code></pre>
+
+<p>推送：</p>
+
+<pre><code>cd octopress
+git add .
+git commit -m 'my message'
+git push origin source
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/23/gfw-bundle-install/">GFW Rubygems Bundle Install</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-23T01:16:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:16 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2022-01-05:最新网址：<a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a><br/>
+<strong>这个不行了</strong>：2016-10-28:最新网址：<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a> <strong>这个不行了</strong><br/>
+封网，rubygems.org 不行了<br/>
+<code>bundle install</code>  自然也不行<br/>
+点算？<br/>
+<a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
+用法：</p>
+
+<pre><code>gem sources --remove https://rubygems.org/
+gem sources -a https://gems.ruby-china.com/
+gem sources -l
+</code></pre>
+
+<p>输出：</p>
+
+<pre><code>*** CURRENT SOURCES ***  
+
+https://gems.ruby-china.com  
+</code></pre>
+
+<p>确保只有 <a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a></p>
+
+<h3>但是这样也不行，还得到octopress文件夹，打开Gemfile文件，编辑：</h3>
+
+<pre><code>    source "https://gems.ruby-china.com"
+</code></pre>
+
+<p>Ubuntu 14.04，安装octopress,执行</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>一直提示缺少各种 gem 包，例如：</p>
+
+<pre><code>```
+Gem::RemoteFetcher::FetchError: SSL_connect SYSCALL returned=5 errno=0 state=unknown state (https://rubygems.global.ssl.fastly.net/gems/safe_yaml-1.0.4.gem)
+An error occurred while installing safe_yaml (1.0.4), and Bundler cannot continue.
+Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
+
+```
+</code></pre>
+
+<p>按提示输入命令 <code>gem install safe_yaml -v '1.0.4'</code> 安装依赖项，但是安装了一个又一个，一个又一个，实在太多太慢太麻烦了</p>
+
+<p>解决方法：</p>
+
+<p>修改octopress文件夹里的Gemfile文件：</p>
+
+<p>把：<br/>
+<code>source "https://rubygems.org"</code><br/>
+改为：<br/>
+<code>source "https://gems.ruby-china.com"</code><br/>
+再执行：</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>完美通过。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -390,223 +596,6 @@ dong@Ubuntu:~/octopress$
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/03/05/could-not-find-a-javascript-runtime/">Could Not Find a JavaScript Runtime</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-03-05T13:10:34+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:10 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>以下是两条命令的输出结果：<br/>
-第一条：</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ rake generate
-## Generating Site with Jekyll
-    write source/stylesheets/screen.css
-/home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:5:in `&lt;module:ExecJS&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:4:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `block in gracefully_require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `each'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `gracefully_require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll.rb:166:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `load'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `&lt;main&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
-</code></pre>
-
-<p>第二条：</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ rake preview
-Starting to watch source with Jekyll and Compass. Starting Rack on port 4000
-/home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:5:in `&lt;module:ExecJS&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:4:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `block in gracefully_require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `each'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `gracefully_require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll.rb:166:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `require'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `&lt;top (required)&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `load'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `&lt;main&gt;'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
-    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
-&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
-[2015-03-05 12:32:30] INFO  WEBrick 1.3.1
-[2015-03-05 12:32:30] INFO  ruby 1.9.3 (2014-11-13) [i686-linux]
-[2015-03-05 12:32:30] INFO  WEBrick::HTTPServer#start: pid=2889 port=4000
-    write public/stylesheets/screen.css
-127.0.0.1 - - [05/Mar/2015:12:32:49 +0800] "GET / HTTP/1.1" 404 - 0.0610
-127.0.0.1 - - [05/Mar/2015:12:32:50 +0800] "GET /favicon.ico HTTP/1.1" 404 - 0.0015
-127.0.0.1 - - [05/Mar/2015:12:32:53 +0800] "GET / HTTP/1.1" 404 - 0.0013
-127.0.0.1 - - [05/Mar/2015:12:37:50 +0800] "GET / HTTP/1.1" 404 - 0.0007
-127.0.0.1 - - [05/Mar/2015:12:37:51 +0800] "GET / HTTP/1.1" 404 - 0.0007
-^Z
-[1]+  已停止               rake preview
-</code></pre>
-
-<p>解决方法：<br/>
-执行命令：</p>
-
-<pre><code>gem install execjs
-gem install therubyracer
-</code></pre>
-
-<p>may fail,<a href="http://stackoverflow.com/questions/20888318/error-install-rubyracer-with-error-invalid-gem-package-is-corrupt">check this</a> ,<a href="https://qiuhaidong.github.io/blog/2016/11/10/failed-when-gem-install-therubyracer/">or</a></p>
-
-<pre><code>sudo apt-get install nodejs
-</code></pre>
-
-<p>done.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/02/22/running/">阿甘的奔跑</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-02-22T23:01:57+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>11:01 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>想起阿甘。<br/>
-阿甘有点傻，一点点傻。<br/>
-他经历了战友布巴的离世，丹中尉的悲怨起伏，母亲的离世，以及贯穿他整个生命的珍妮的美好而又若即若离触不可及。<br/>
-阿甘不孤单。<br/>
-童年时母亲和珍妮陪他。当兵时布巴陪他。在海上捕虾时丹中尉陪他。<br/>
-阿甘只是孤独。<br/>
-没有人走进阿甘的心里。<br/>
-没有人想走进阿甘的心里。<br/>
-或者说：<br/>
-珍妮没有走进阿甘心里。<br/>
-珍妮不想走进阿甘心里。<br/>
-当珍妮再次离开，所有孤独，清晰浮现。<br/>
-阿甘开始奔跑。<br/>
-跑到城边。<br/>
-跑遍县城。<br/>
-横越阿拉巴马州。<br/>
-跑到一个海角。<br/>
-跑到另一个海角。<br/>
-横越美国。<br/>
-在湖边奔跑。<br/>
-在麦田旁奔跑。<br/>
-在河流石桥上奔跑。<br/>
-在栅栏边奔跑。<br/>
-在牧场旁奔跑。<br/>
-在秋天黄叶林中奔跑。<br/>
-在沙漠奔跑。<br/>
-三年，两个半月。<br/>
-后来，珍妮问起，阿甘告诉她：<br/>
-战场雨停后的星空。<br/>
-海湾的日落。<br/>
-雪山旁湖面的倒影。<br/>
-沙漠的日出。<br/>
-那些属于阿甘的，一个人的一些瞬间。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/11/26/nightmares/">Nightmares</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-11-26T23:01:33+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:01 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2014年10月16日，4:59AM,在家，睡觉，做梦，醒。</p>
-
-<p>关于大学的梦。</p>
-
-<p>做这梦，不是第一次，估计也不会是最后一次。</p>
-
-<p>它是我生命的印记，不可磨灭。</p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3781293063682700/pid/780bc50fgw1emosmbfqn4j208w0dc759">2014-10-16-04-59，家里</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2014-10-16-04-59-22.png" alt="2014年10月16日家里" /></p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3817040303409178/pid/780bc50fgw1epuu3qc365j208w0dc0ud">2015-03-04-06-29，水汶</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2015-03-04-06-29-27.png" alt="2015年3月4日水汶" /></p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3854874397980519/pid/780bc50fgw1et7jbd7jejj208w0dcwgb">2015-06-17-05-44，水汶</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2015-06-17-05-44-27.png" alt="2015年6月17日水汶" /></p>
-
-<p>2016-01-20 again</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/18">&larr; Older</a>
@@ -622,6 +611,18 @@ gem install therubyracer
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2022/02/27/read-on/">Read on 阅读全文</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/27/add-tags/">添加tags</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/02/27/ttttttttttt/">Ttttttttttt</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2022/02/27/speed-up-octopress2-dot-0/">加速Octopress2.0，太慢了</a>
@@ -691,18 +692,6 @@ gem install therubyracer
         <a href="/blog/2022/01/15/model/">Post文件模板</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/01/15/fucking-hard/">好艰难---把Gemfile和Gemfile.lock文件删除</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/01/13/zhe-teng/">生命不息，折腾不止</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/01/13/jekyll-theme-config/">Jekyll Theme Octopress 博客的具体配置</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -712,7 +701,19 @@ gem install therubyracer
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
 <li class='category'><a href='/blog/categories/personal/'>personal (106)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (64)</a></li>
-<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (17)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (18)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Tags</h1>
+  <ul id="tag-cloud">
+    <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
+<li><a style="font-size: 129%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 138%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 120%" href="/tags/ubuntu/">ubuntu</a></li>
+<li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
 
   </ul>
 </section>

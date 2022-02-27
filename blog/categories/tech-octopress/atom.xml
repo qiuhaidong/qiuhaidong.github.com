@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-02-27T01:48:51+08:00</updated>
+  <updated>2022-02-27T17:33:50+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[添加tags]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/27/add-tags/"/>
+    <updated>2022-02-27T16:34:34+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/27/add-tags</id>
+    <content type="html"><![CDATA[<p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/">参考1</a><br/>
+<a href="http://pangyi.github.io/blog/20150125/rang-octopresszhi-chi-biao-qian-(tag">参考2</a><br/>
+<a href="https://blog.csdn.net/github_35160620/article/details/52793772?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-22-52793772.pc_agg_new_rank&amp;utm_term=atom+%E4%BE%A7%E8%BE%B9%E6%A0%8F&amp;spm=1000.2123.3001.4430">参考3</a><br/>
+<a href="https://www.jianshu.com/p/fe0e089a985c">参考4</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[加速Octopress2.0，太慢了]]></title>
@@ -174,42 +186,6 @@ origin/master
 </code></pre>
 
 <p>就好了。。。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Error: Jekyll-paginate 分頁功能錯誤，依赖缺失]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/24/error-jekyll-paginate/"/>
-    <updated>2022-02-24T04:02:35+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/24/error-jekyll-paginate</id>
-    <content type="html"><![CDATA[<h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
-
-<h2>jekyll-paginate 依赖缺失</h2>
-
-<p>因为 jekyll 3 中默认安装已经没有这个分页组件了，官方把这个分页组件插件化了，因此要独立安装。详情见 <a href="https://jekyllrb.com/docs/pagination/">https://jekyllrb.com/docs/pagination/</a>。</p>
-
-<h3>错误呈现</h3>
-
-<p>在启动 jekyll 服务的时候出现以下错误：</p>
-
-<pre><code>jekyll serve
-Configuration file: c:/gitWorkSpace/blog-based-on-jekyll-3/_config.yml
-  Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate' If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!
-jekyll 3.1.2 | Error:  jekyll-paginate
-</code></pre>
-
-<h3>解决方法</h3>
-
-<p>我们安装这个插件到本地即可。</p>
-
-<pre><code>gem install jekyll-paginate
-Fetching: jekyll-paginate-1.1.0.gem (100%)
-Successfully installed jekyll-paginate-1.1.0
-Parsing documentation for jekyll-paginate-1.1.0
-Installing ri documentation for jekyll-paginate-1.1.0
-Done installing documentation for jekyll-paginate after 3 seconds
-1 gem installed
-</code></pre>
 ]]></content>
   </entry>
   

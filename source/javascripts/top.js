@@ -1,7 +1,7 @@
 function goTop(acceleration, time)
 {
         acceleration = acceleration || 0.1;
-        time = time || 8;
+        time = time || 1;
 
         var x1 = 0;
         var y1 = 0;

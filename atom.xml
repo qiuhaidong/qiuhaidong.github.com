@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-02-27T18:41:49+08:00</updated>
+  <updated>2022-02-27T18:55:26+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Back to Top返回頂部按鈕]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/27/back-to-top/"/>
+    <updated>2022-02-27T18:52:33+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/02/27/back-to-top</id>
+    <content type="html"><![CDATA[<p><a href="https://www.jianshu.com/p/fe0e089a985c">1</a><br/>
+<a href="https://www.cnblogs.com/biglucky/p/4148867.html">2</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Read on 阅读全文]]></title>
@@ -475,33 +485,6 @@ tags: <br/>
 author: 丘海东<br/>
 comments: <br/>
 categories:</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[好艰难---把Gemfile和Gemfile.lock文件删除]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/01/15/fucking-hard/"/>
-    <updated>2022-01-15T02:48:34+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/01/15/fucking-hard</id>
-    <content type="html"><![CDATA[<p>怎么都不行<br/>
-用octopress3.0创建theme blog，可能因为</p>
-
-<h2>网络不行？</h2>
-
-<p>一直卡在那里，一动不动<br/>
-<code>bundle</code> 和 <code>bundle install</code> 也是一动不动<br/>
-这是没有成功的，后面会报错<br/>
-重复，直到ok</p>
-
-<h2>对了，我把Gemfile和Gemfile.lock文件删除，就没报错了</h2>
-
-<p>正常来说，rvm安装ruby就行了，如果还不行，再用<code>apt</code> ubuntu官方源安装一次</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install ruby</span></code></pre></td></tr></table></div></figure>
-
-
-
 ]]></content>
   </entry>
   

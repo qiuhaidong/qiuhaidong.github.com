@@ -13,6 +13,7 @@ categories: tech-octopress
 layout: {{ layout }}  
 title: "{{ title }}"  
 date: {{ date }}  
+author:  
 tags:   
 comments: true  
 categories:   

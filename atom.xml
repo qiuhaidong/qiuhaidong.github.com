@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-02-27T22:33:35+08:00</updated>
+  <updated>2022-03-02T16:10:40+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -372,6 +372,7 @@ Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
 <p>layout: <br/>
 title: &ldquo;&rdquo;<br/>
 date: <br/>
+author:<br/>
 tags: <br/>
 comments: true</p>
 

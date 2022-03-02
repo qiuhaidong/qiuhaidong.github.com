@@ -8,11 +8,10 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="怎么都不行
-用octopress3.0创建theme blog，可能因为 网络不行？ 一直卡在那里，一动不动
-bundle 和 bundle install 也是一动不动
-这是没有成功的，后面会报错
-重复，直到ok 对了，我把Gemfile和Gemfile.lock文件删除，就没报错了 正常来说， &hellip;">
+  <meta name="description" content="layout: post
+title: date: tags: author: 丘海东
+comments: categories:
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +69,41 @@ bundle 和 bundle install 也是一动不动
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/15/model/">Post文件模板</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-15T03:18:34+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:18 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>layout: post<br/>
+title: <br/>
+date: <br/>
+tags: <br/>
+author: 丘海东<br/>
+comments: <br/>
+categories:</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -633,345 +667,6 @@ Hard blocked: no
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-11T00:17:21+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:17 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>ubuntu20.04安装了几次2.0都失败<br/>
-ubuntu12.04已经无法安装系统本身的更新了，更别说安装其他软件<br/>
-强迫症发作，于是有了这次：</p>
-
-<h3>列出大致步骤吧，主要是有些error要如何解决</h3>
-
-<h2>git</h2>
-
-<h3>install git</h3>
-
-<pre><code>git --version
-sudo apt install git
-git --version
-</code></pre>
-
-<h3>set up git</h3>
-
-<h4>Username</h4>
-
-<p>github用户名</p>
-
-<pre><code>git config --global user.name "qiuhaidong"
-#or haydnyau
-</code></pre>
-
-<h4>Email</h4>
-
-<p>github登录帐号邮箱名</p>
-
-<pre><code>git config --global user.email "690982322@qq.com"
-#or 1148891016@qq.com
-</code></pre>
-
-<p>Password caching</p>
-
-<p>To use this option, you need to turn on the credential helper so that git will save your password in memory for some time:</p>
-
-<pre><code>git config --global credential.helper cache
-</code></pre>
-
-<h3>添加 SSH Keys</h3>
-
-<h4>Step 1: Check for SSH keys</h4>
-
-<p>First, we need to check for existing ssh keys on your computer. Open up Terminal and run:</p>
-
-<pre><code>cd ~/.ssh
-# Checks to see if there is a directory named ".ssh" in your user directory
-</code></pre>
-
-<p>If it says “No such file or directory” go to step 2. Otherwise, you already have an existing keypair, and you can skip to step 3.</p>
-
-<p><strong>最好就是把 .shh 这个文件夹删除了，做step 2</strong></p>
-
-<h4>Step 2: Generate a new SSH key</h4>
-
-<p>To generate a new SSH key, enter the code below. We want the default settings so when asked to enter a file in which to save the key, <strong>just press enter</strong>.不要输入文件名</p>
-
-<pre><code>ssh-keygen -t rsa -C "your_email@example.com"
-我的就是：ssh-keygen -t rsa -C "690982322@qq.com"
-#or 1148891016@qq.com
-</code></pre>
-
-<p>Now you need to enter a passphrase.设置密码。（有人是密码都不要的，再按两下enter就行了）</p>
-
-<p>Which should give you something like this:</p>
-
-<pre><code>Your identification has been saved in /home/you/.ssh/id_rsa.
-Your public key has been saved in /home/you/.ssh/id_rsa.pub.
-The key fingerprint is:
-01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
-</code></pre>
-
-<h3>Step 3: Add your SSH key to GitHub</h3>
-
-<p>ctrl+h，显示隐藏文件，这里其实可以打开这个<strong>id_rsa.pub</strong>文件，直接复制，不用安装下面的软件</p>
-
-<pre><code>sudo apt-get install xclip
-# Downloads and installs xclip.
-
-xclip -sel clip &lt; ~/.ssh/id_rsa.pub
-# Copies the contents of the id_rsa.pub file to your clipboard
-</code></pre>
-
-<h4>Add your SSH key to GitHub</h4>
-
-<p>到github网站，登陆，头像，设置，SSH and GPG keys，把旧的SSH keys删除，添加新的，title不用管，粘贴到key就行了</p>
-
-<h3>Step 4: Test</h3>
-
-<pre><code>ssh -T git@github.com
-</code></pre>
-
-<p>这里可能会还要按照提示做一下，不难，看英文做</p>
-
-<p>如果看到：</p>
-
-<pre><code>Hi qiuhaidong! You've successfully authenticated, but GitHub does not provide shell access.
-# or haydnyau
-</code></pre>
-
-<p>If that username is correct, you’ve successfully set up your SSH key. Don’t worry about the shell access thing, you don’t want that anyway.</p>
-
-<p>If you see “<strong>access denied</strong>” please consider using HTTPS instead of SSH. If you need SSH start at these instructions for diagnosing the issue.</p>
-
-<h4>如果不成功，用https的认证方式代替ssh，因为github觉得ssh不安全，认证方式有时会改变</h4>
-
-<h2>RVM</h2>
-
-<p>看官网命令</p>
-
-<pre><code>rvm --version
-gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-</code></pre>
-
-<p>会显示失败，先不管它<br/>
-Install RVM：命令</p>
-
-<pre><code>curl -sSL https://get.rvm.io | bash -s stable
-</code></pre>
-
-<p>如下：</p>
-
-<pre><code>dong@Ubuntu:~$ curl -sSL https://get.rvm.io | bash -s stable
-Downloading https://github.com/rvm/rvm/archive/1.29.12.tar.gz
-Downloading https://github.com/rvm/rvm/releases/download/1.29.12/1.29.12.tar.gz.asc
-gpg: 于 2021年01月16日 星期六 02时46分22秒 CST 创建的签名，使用 RSA，钥匙号 39499BDB
-gpg: 无法检查签名：没有公钥
-GPG signature verification failed for '/home/dong/.rvm/archives/rvm-1.29.12.tgz' - 'https://github.com/rvm/rvm/releases/download/1.29.12/1.29.12.tar.gz.asc'! Try to install GPG v2 and then fetch the public key:
-    gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-or if it fails:
-    command curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
-    command curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
-In case of further problems with validation please refer to https://rvm.io/rvm/security
-</code></pre>
-
-<p>这个提示错误，并且给出了解决方法：<br/>
-运行：<br/>
-命令1：</p>
-
-<pre><code>curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
-</code></pre>
-
-<p>命令2：</p>
-
-<pre><code>curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
-</code></pre>
-
-<p>再运行上一条命令安装rvm：</p>
-
-<pre><code>curl -L https://get.rvm.io | bash -s stable
-</code></pre>
-
-<p>输出：</p>
-
-<pre><code>  * To start using RVM you need to run `source /home/dong/.rvm/scripts/rvm`
-</code></pre>
-
-<p>安装成功，按照提示运行：</p>
-
-<pre><code>source /home/dong/.rvm/scripts/rvm
-</code></pre>
-
-<p>测试：</p>
-
-<pre><code>rvm --version
-git --version
-</code></pre>
-
-<p>安装ruby2.2.6（1.9.3太久了，无法安装）</p>
-
-<pre><code>rvm install 2.2.6
-</code></pre>
-
-<p>会提示输入本机密码</p>
-
-<pre><code>rvm use 2.2.6
-</code></pre>
-
-<h3>Setup Octopress</h3>
-
-<pre><code>git clone -b source git@github.com:qiuhaidong/qiuhaidong.github.com.git octopress
-# 或者 git clone git://github.com/imathis/octopress.git octopress
-# octopress  2.0 原码
-cd octopress
-</code></pre>
-
-<h4>install dependencies</h4>
-
-<pre><code>gem install bundler
-</code></pre>
-
-<h4>会提示失败，按提示加上版本号，安装适合本系统的</h4>
-
-<pre><code>bundle install
-</code></pre>
-
-<h4>Install the default Octopress theme</h4>
-
-<pre><code>rake install
-</code></pre>
-
-<h4>Deploying to Github Pages</h4>
-
-<pre><code>rake setup_github_pages
-</code></pre>
-
-<p>这里可能会要输入链接等，ssh，https</p>
-
-<p>The rake task will ask you for a URL of the Github repo. Copy the SSH or HTTPS URL from your newly created repository <br/>
-(e.g. git@github.com:username/username.github.io.git) <br/>
-git@github.com:qiuhaidong/qiuhaidong.github.com.git<br/>
-<a href="https://github.com/qiuhaidong/qiuhaidong.github.com.git">https://github.com/qiuhaidong/qiuhaidong.github.com.git</a><br/>
-or<br/>
-git@github.com:haydnyau/haydnyau.github.io.git<br/>
-<a href="https://github.com/haydnyau/haydnyau.github.io.git">https://github.com/haydnyau/haydnyau.github.io.git</a><br/>
-and paste it in as a response.</p>
-
-<p>This will:</p>
-
-<ol>
-<li>Ask for and store your Github Pages repository url.</li>
-<li>Rename the remote pointing to imathis/octopress from &lsquo;origin&rsquo; to &lsquo;octopress&rsquo;</li>
-<li>Add your Github Pages repository as the default origin remote.</li>
-<li>Switch the active branch from master to source.</li>
-<li>Configure your blog&rsquo;s url according to your repository.</li>
-<li>Setup a master branch in the _deploy directory for deployment.</li>
-</ol>
-
-
-<p>Next run:</p>
-
-<pre><code>rake generate
-rake deploy
-</code></pre>
-
-<p>This will generate your blog, copy the generated files into <code>_deploy/</code>, add them to git, commit and push them up to the master branch. In a few seconds you should get an email from Github telling you that your commit has been received and will be published on your site.</p>
-
-<hr />
-
-<hr />
-
-<p>来自官网<br/>
-<strong>下面这个不知道要不要做：</strong><br/>
-Now you have a place to commit the generated content for your site, but you should also set up repository to store the source for your blog. After you set up a repository for your blog source, add it as the origin remote.</p>
-
-<pre><code>git remote add origin (your repo url)
-# set your new origin as the default branch
-git config branch.master.remote origin
-</code></pre>
-
-<p>Now push your changes and you&rsquo;ll be all set.<br/>
-<strong>上面这个不知道要不要做：</strong><br/>
-来自官网</p>
-
-<hr />
-
-<hr />
-
-<p><strong>Don&rsquo;t forget</strong> to commit the source for your blog.</p>
-
-<pre><code>git add .
-git commit -m 'update'
-git push origin source
-</code></pre>
-
-<h3>Configuring Octopress</h3>
-
-<h4>edit _config.yml</h4>
-
-<pre><code>url:                # 不管
-title:              # 丘海东
-subtitle:           # Haydn Yau
-author:             # 丘海东
-paginate: 10          # 主页文章数
-recent_posts: 20       # 主页显示最近文字标题数
-
-# list each of the sidebar modules you want to include, in the order you want them to appear.
-# To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/category_list.html注意，这里添加侧边栏，看另一篇博文, asides/recent_posts.html, asides/github.html]
-
-github_user: haydnyau
-</code></pre>
-
-<h4>一些命令：</h4>
-
-<pre><code>rake new_post["title"]
-rake generate
-rake preview
-rake deploy
-</code></pre>
-
-<h4>pull.sh</h4>
-
-<pre><code>#!/bin/sh
-cd /home/dong/octopress
-git pull origin source
-rake generate deploy
-</code></pre>
-
-<h4>push.sh</h4>
-
-<pre><code>#!/bin/sh
-cd /home/dong/octopress
-rake generate deploy
-git add .
-git commit -m 'update'
-git push origin source
-</code></pre>
-
-<p><strong>记得右键，属性，权限，程序执行文件</strong></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/4">&larr; Older</a>
@@ -987,6 +682,10 @@ git push origin source
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2022/03/02/no-good-thing-ever-dies/">有功夫绝望，还不如吃点好吃的去睡觉呢</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2022/02/27/back-to-top/">Back to Top返回頂部按鈕</a>
@@ -1062,10 +761,6 @@ git push origin source
     
       <li class="post">
         <a href="/blog/2022/01/15/done-tired/">Ok 好累</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/01/15/model/">Post文件模板</a>
       </li>
     
   </ul>

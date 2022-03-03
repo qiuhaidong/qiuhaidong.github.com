@@ -7,8 +7,8 @@ tags:
 comments: true
 categories: tech-octopress
 ---
-[1](https://www.jianshu.com/p/fe0e089a985c)  
-[2](https://www.cnblogs.com/biglucky/p/4148867.html)  
+[教程1](https://www.jianshu.com/p/fe0e089a985c)  
+[教程2](https://www.cnblogs.com/biglucky/p/4148867.html)  
 
 ### 实现返回按钮功能
 首先创建`source/javascripts/top.js`，添加如下代码实现滑动返回顶部效果:  
@@ -16,7 +16,7 @@ categories: tech-octopress
 ``` javascript
 function goTop(acceleration, time)
 {
-        acceleration = acceleration || 0.1;  //加速度
+        acceleration = acceleration || 1;  //加速度
         time = time || 16;  //时间间隔 (毫秒)
 
         var x1 = 0;
@@ -62,22 +62,23 @@ function goTop(acceleration, time)
 其中的`width、height、right、bottom`为图片在网页中的位置，可根据图片大小自行设定，示例代码如下：  
 
 ``` html
-    <!--返回顶部开始-->
-    <div id="full" style="width:50px; height:50px; position:fixed; right:80px; bottom:100px; z-index:100; text-align:center; background-color:transparent; cursor:pointer;">
-    <a href="#" onclick="goTop();return false;"><img src="/images/top.png" border=0 alt="返回顶部"></a>
-    </div>
-    <script src="/javascripts/top.js" type="text/javascript"></script>
-    <!--返回顶部结束-->
+<!--返回顶部开始-->
+<div id="full" style="width:30px; height:30px; position:fixed; right:13px; bottom:13px; z-index:100; text-align:center; background-color:transparent; cursor:pointer;">
+<a href="#" onclick="goTop();return false;"><img src="/images/top.png" border=0 alt="返回顶部"></a>
+</div>
+<script src="/javascripts/top.js" type="text/javascript"></script>
+<!--返回顶部结束-->
 ```
 
 ### 选择按钮图片
-找到自己喜爱的返回按钮图片，命名为`top.png`后添加到`source/images`目录中（或修改`totop.html`中图片的路径）。  
+找到自己喜爱的返回按钮图片，命名为`top.png`后添加到`source/images`目录中（或修改`totop.html`中图片的路径），文件名和`totop.html`中的一致就可以了，可以自己命名。  
 
 然后把`totop.html` 引入到文件中，考虑到进到具体每一篇blog里面也有这个功能，我们把这个文件在`foot.html`中引入，修改:`octopress/source/_includes/custom/footer.html`：  
-```html
-        {% include custom/totop.html %}
-  </div>
-</div>
-
-{% include end_footer.html %}
+![octopress/source/_includes/custom/footer.html](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMHNMi9RBV8SPCiQjrpiIVqTO0oBBa1zGSTDwX1cxXY1I0xQDhEyJNc9d2jqFOe5QAet0C9GvAgWzpRjxvDQ7Sc!/r)  
+```
+<p> 注意，这里显示有问题，看原文件
+  {% include custom/totop.html %}
+  Copyright &copy; {{ site.time | date: "%Y" }} - {{ site.author }} -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
 ```

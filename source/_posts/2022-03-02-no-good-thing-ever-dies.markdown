@@ -8,7 +8,7 @@ comments: true
 categories: 
 ---
 ### 日劇《非自然死亡》，石原里美的經典台詞：  
-![1](http://tiebapic.baidu.com/forum/pic/item/0fb4cbd9f2d3572c1f898e0fcf13632763d0c35b.jpg)  
+![1](https://i0.hdslb.com/bfs/album/abec9703860a6f2dfb74fee98881dc5a7faecdce.png)  
 ···  
-![肖申克的救赎](http://tiebapic.baidu.com/forum/pic/item/eea11e4543a98226a7ed933cd782b9014a90eb67.jpg)
+![肖申克的救赎](https://i0.hdslb.com/bfs/album/62f8d24371562deedb82c66c9f36a9e5eab42ad7.png)
 

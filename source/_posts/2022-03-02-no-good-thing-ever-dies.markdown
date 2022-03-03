@@ -8,5 +8,5 @@ comments: true
 categories: personal
 ---
 ### 日劇《非自然死亡》，石原里美的經典台詞：  
-![1](https://wx4.sinaimg.cn/large/780bc50fgy1gzvuljuc1ij211y0lcju2.jpg)
+![1](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/master/images/%E9%9D%9E%E8%87%AA%E7%84%B6%E6%AD%BB%E4%BA%A1/011.png)
 

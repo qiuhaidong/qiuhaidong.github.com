@@ -8,7 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="日剧《非自然死亡》，石原里美的经典台词： ··· ">
+  <meta name="description" content="日劇《非自然死亡》，石原里美的經典台詞： ··· ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -72,41 +72,6 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/02/no-good-thing-ever-diesssssssssssssssss/">有功夫绝望，还不如吃点好吃的去睡觉呢</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-03-02T21:26:11+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2022</span></span> <span class='time'>9:26 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>日剧《非自然死亡》，石原里美的经典台词：</h3>
-
-<p><img src="http://tiebapic.baidu.com/forum/pic/item/0fb4cbd9f2d3572c1f898e0fcf13632763d0c35b.jpg" alt="1" /><br/>
-<img src="http://tiebapic.baidu.com/forum/pic/item/4e9e52edab64034f26e17a1df2c379310a551d66.jpg" alt="2" /><br/>
-<img src="http://tiebapic.baidu.com/forum/pic/item/7c54a355b319ebc4d254ce82df26cffc1e171666.jpg" alt="3" /><br/>
-···<br/>
-<img src="http://tiebapic.baidu.com/forum/pic/item/eea11e4543a98226a7ed933cd782b9014a90eb67.jpg" alt="肖申克的救赎" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
       <h1 class="entry-title"><a href="/blog/2022/03/02/no-good-thing-ever-dies/">有時間絕望，還不如吃點好吃的然後睡個覺</a></h1>
     
     
@@ -125,11 +90,11 @@
 
   <div class="entry-content"><h3>日劇《非自然死亡》，石原里美的經典台詞：</h3>
 
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E9%9D%9E%E8%87%AA%E7%84%B6%E6%AD%BB%E4%BA%A1/01.png" alt="1" /><br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E9%9D%9E%E8%87%AA%E7%84%B6%E6%AD%BB%E4%BA%A1/02.png" alt="2" /><br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E9%9D%9E%E8%87%AA%E7%84%B6%E6%AD%BB%E4%BA%A1/03.png" alt="3" /><br/>
+<p><img src="http://tiebapic.baidu.com/forum/pic/item/0fb4cbd9f2d3572c1f898e0fcf13632763d0c35b.jpg" alt="1" /><br/>
+<img src="http://tiebapic.baidu.com/forum/pic/item/4e9e52edab64034f26e17a1df2c379310a551d66.jpg" alt="2" /><br/>
+<img src="http://tiebapic.baidu.com/forum/pic/item/7c54a355b319ebc4d254ce82df26cffc1e171666.jpg" alt="3" /><br/>
 ···<br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E9%9D%9E%E8%87%AA%E7%84%B6%E6%AD%BB%E4%BA%A1/04.png" alt="肖申克的救赎" /></p>
+<img src="http://tiebapic.baidu.com/forum/pic/item/eea11e4543a98226a7ed933cd782b9014a90eb67.jpg" alt="肖申克的救赎" /></p>
 </div>
   
   
@@ -501,6 +466,87 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/24/git-clone-not-master-branch/">Git 如何 Clone 非 Master 分支的代码</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-24T04:08:51+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:08 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>问题描述</h2>
+
+<p>我们每次使用命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@gitlab.xxx.com:xxxxx.git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在<code>daily/1.4.1</code>分支上，我们希望拿到这个分支上的代码。</p>
+
+<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png" /></p>
+
+<h2>解决方法</h2>
+
+<p>直接使用命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -r #查看远程分支</span></code></pre></td></tr></table></div></figure>
+
+
+<p>或</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -a #查看所有分支</span></code></pre></td></tr></table></div></figure>
+
+
+<p>会显示</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>origin/HEAD -&gt; origin/master
+</span><span class='line'>origin/daily/1.2.2
+</span><span class='line'>origin/daily/1.3.0
+</span><span class='line'>origin/daily/1.4.1
+</span><span class='line'>origin/develop
+</span><span class='line'>origin/feature/daily-1.0.0
+</span><span class='line'>origin/master</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后直接</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git checkout origin/daily/1.4.1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>就好了。。。</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -514,10 +560,6 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2022/03/02/no-good-thing-ever-diesssssssssssssssss/">有功夫绝望，还不如吃点好吃的去睡觉呢</a>
-      </li>
     
       <li class="post">
         <a href="/blog/2022/03/02/no-good-thing-ever-dies/">有時間絕望，還不如吃點好吃的然後睡個覺</a>
@@ -593,6 +635,10 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
     
       <li class="post">
         <a href="/blog/2022/01/15/sougou-is-xiugou/">搜狗输入法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/01/15/done-tired/">Ok 好累</a>
       </li>
     
   </ul>

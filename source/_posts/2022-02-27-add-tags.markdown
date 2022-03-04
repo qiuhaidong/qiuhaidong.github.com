@@ -53,7 +53,7 @@ tags: [tag1, tag2, tag3]
 
  `rake generate` 出现问题：
 
-![Alt text](http://www.aobosir.com/images/2016-10-12-octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/1476211427887.png)
+![Alt text](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEBdI0C.SIjWT7xp6kxk44HtNtPC263DeEkNHJxhmSxZADk0hrbMx8wpKHzK5e5i3chf0lcEBpbc6HvuMur2Yj2M!/r)
 
 ```
   Liquid Exception: comparison of Array with Array failed in _layouts/page.html
@@ -90,11 +90,11 @@ end
 
 出现另一警告：
 
-![Alt text](http://www.aobosir.com/images/2016-10-12-octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/1476211894282.png)
+![Alt text](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEEVv9L5qdjCrWDNsdaae1gecrl4Dk5DfGovwzPBz4NGxy2YEcsjFTGZk9HPnZ4pdOW3MLz5JmXZtaeKeBaKa9YY!/r)
 
 `rake preview` ，标签云成功添加:
 
-![Alt text](http://www.aobosir.com/images/2016-10-12-octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/1476211997018.png)
+![Alt text](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMkifW2gJW9D*DOdH8mhfQXdNtXOdqE9gQNJ5cLGRw3mEOzZJ.eR*6x07lmQqrmSHEFlbcBrFrU*4FcTQePqHV0!/r)
 
 
 ### 解决 ` Build Warning: Layout 'nil' requested in tags/标签名/atom.xml does not exist.` 警告问题

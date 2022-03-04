@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-04T15:28:21+08:00</updated>
+  <updated>2022-03-04T15:33:43+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -99,6 +99,8 @@
 
 <p>  {\% include custom/totop.html \%}  //记得去除两个\号
 ```</p>
+
+<p>bug提醒：如果post文件中有上面这一行代码（没有\号），blog网站首页和这篇博文页，会有返回按钮图片错误</p>
 ]]></content>
   </entry>
   

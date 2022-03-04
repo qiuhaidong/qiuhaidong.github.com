@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress3.0 | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress3-dot-0/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-04T15:33:43+08:00</updated>
+  <updated>2022-03-04T16:40:51+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -60,7 +60,8 @@ test:<br/>
     <link href="https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0/"/>
     <updated>2022-02-24T16:53:49+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0</id>
-    <content type="html"><![CDATA[<p>真是快太多了，完全不是一個級別的，2.0有時候根本就訪問不了</p>
+    <content type="html"><![CDATA[<p>真是快太多了，完全不是一個級別的，2.0有時候根本就訪問不了<br/>
+<a href="https://qiuhaidong.github.io/blog/2022/02/27/speed-up-octopress2-dot-0/">加速Octopress2.0</a></p>
 ]]></content>
   </entry>
   

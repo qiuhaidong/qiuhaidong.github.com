@@ -73,12 +73,9 @@ function goTop(acceleration, time)
 ### 选择按钮图片
 找到自己喜爱的返回按钮图片，命名为`top.png`后添加到`source/images`目录中（或修改`totop.html`中图片的路径），文件名和`totop.html`中的一致就可以了，可以自己命名。  
 
-然后把`totop.html` 引入到文件中，考虑到进到具体每一篇blog里面也有这个功能，我们把这个文件在`foot.html`中引入，修改:`octopress/source/_includes/custom/footer.html`：  
+然后把`totop.html` 引入到文件中，考虑到进到具体每一篇blog里面也有这个功能，我们把这个文件在`foot.html`中引入，修改:`octopress/source/_includes/custom/footer.html`，添加一行：  
 ![octopress/source/_includes/custom/footer.html](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMHNMi9RBV8SPCiQjrpiIVqTO0oBBa1zGSTDwX1cxXY1I0xQDhEyJNc9d2jqFOe5QAet0C9GvAgWzpRjxvDQ7Sc!/r)  
-```
-<p> 注意，这里显示有问题，看原文件
-  {% include custom/totop.html %}
-  Copyright &copy; {{ site.time | date: "%Y" }} - {{ site.author }} -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
+
+``` html
+  {\% include custom/totop.html \%}  //记得去除两个\号
 ```

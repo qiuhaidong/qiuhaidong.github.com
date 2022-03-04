@@ -7,4 +7,5 @@ tags: octopress3.0
 comments: true
 categories: tech-octopress
 ---
-真是快太多了，完全不是一個級別的，2.0有時候根本就訪問不了
+真是快太多了，完全不是一個級別的，2.0有時候根本就訪問不了  
+[加速Octopress2.0](https://qiuhaidong.github.io/blog/2022/02/27/speed-up-octopress2-dot-0/)

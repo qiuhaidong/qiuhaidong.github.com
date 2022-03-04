@@ -232,25 +232,11 @@
 
 <p>找到自己喜爱的返回按钮图片，命名为<code>top.png</code>后添加到<code>source/images</code>目录中（或修改<code>totop.html</code>中图片的路径），文件名和<code>totop.html</code>中的一致就可以了，可以自己命名。</p>
 
-<p>然后把<code>totop.html</code> 引入到文件中，考虑到进到具体每一篇blog里面也有这个功能，我们把这个文件在<code>foot.html</code>中引入，修改:<code>octopress/source/_includes/custom/footer.html</code>：<br/>
+<p>然后把<code>totop.html</code> 引入到文件中，考虑到进到具体每一篇blog里面也有这个功能，我们把这个文件在<code>foot.html</code>中引入，修改:<code>octopress/source/_includes/custom/footer.html</code>，添加一行：<br/>
 <img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMHNMi9RBV8SPCiQjrpiIVqTO0oBBa1zGSTDwX1cxXY1I0xQDhEyJNc9d2jqFOe5QAet0C9GvAgWzpRjxvDQ7Sc!/r" alt="octopress/source/_includes/custom/footer.html" /></p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;p&gt;</span> 注意，这里显示有问题，看原文件
-</span><span class='line'>  <!--返回顶部开始-->
-<div id="full" style="width:30px; height:30px; position:fixed; right:13px; bottom:13px; z-index:100; text-align:center; background-color:transparent; cursor:pointer;">
-<a href="#" onclick="goTop();return false;"><img src="/images/top.png" border=0 alt="返回顶部"></a>
-</div>
-<script src="/javascripts/top.js" type="text/javascript"></script>
-<!--返回顶部结束-->
-
-</span><span class='line'>  Copyright <span class="ni">&amp;copy;</span> 2022-03-03 22:32:42 +0800 - 丘海东 -
-</span><span class='line'>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;credit&quot;</span><span class="nt">&gt;</span>Powered by <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://octopress.org&quot;</span><span class="nt">&gt;</span>Octopress<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;/p&gt;</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>  {\% include custom/totop.html \%}  //记得去除两个\号
 </span></code></pre></td></tr></table></div></figure>
 
 </div>
@@ -430,10 +416,10 @@
 <script src="/javascripts/top.js" type="text/javascript"></script>
 <!--返回顶部结束-->
 
+
   Copyright &copy; 2022 - 丘海东 -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
-
 
 </footer>
   

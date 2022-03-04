@@ -79,3 +79,5 @@ function goTop(acceleration, time)
 ``` html
   {\% include custom/totop.html \%}  //记得去除两个\号
 ```
+
+bug提醒：如果post文件中有上面这一行代码（没有\号），blog网站首页和这篇博文页，会有返回按钮图片错误

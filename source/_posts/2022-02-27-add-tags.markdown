@@ -27,7 +27,7 @@ categories: tech-octopress
 **2 .** 将下面的代码复制到 `octopress\source\_includes\custom\asides\tags.html`。（这个文件需要自己新建。）
 **注意：** 去掉 `%` 前面的反斜杠`\`。
 
-```
+``` html
 <section>
   <h1>Tags</h1>
   <ul id="tag-cloud">
@@ -63,7 +63,7 @@ tags: [tag1, tag2, tag3]
 
 `octopress\plugins\tag_cloud.rb` 第74行:  
 
-```
+``` ruby
 if @limit > 0 and @sort != 'rand'
     # sort the tag pairs by frequency in descending order
     weighted.sort! { |a,b| b[1] <=> a[1] }
@@ -76,13 +76,13 @@ end
 
 修改第74行为:
 
-```
+``` ruby
       if @limit > 0 and @sort != 'rand' and @limit < weighted.length
 ```
 
 修改第95行为:
 
-```
+``` ruby
         if @limit > 0 and @limit < weighted.length
 ```
 

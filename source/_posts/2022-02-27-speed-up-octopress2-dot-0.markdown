@@ -42,7 +42,7 @@ categories: tech-octopress
 对于使用Google Analytics来说，加在ga.js这个文件简直是要命的慢，这里我使用自己存放在七牛CDN上的js.  http://droidyue-tools.qiniudn.com/ga.js 已验证，完全可以正常收集数据。  
 参考如下，修改`source/_includes/google_analytics.html`  
 
-```
+``` html
  _gaq.push(['_trackPageview']);
 
  (function() {
@@ -57,7 +57,7 @@ categories: tech-octopress
 这里我们使用数字公司提供的Google Fonts大陆解决方案，使用`fonts.useso.com`替换`fonts.googleapis.com`。  
 修改文件`/source/_includes/custom/head.html`  
 
-```
+``` html
  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.useso.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@ categories: tech-octopress
 ### 解决ajax.googleapis.com慢的问题
 修改`source/_includes/head.html`  
 
-```
+``` html
 <script src="//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
 <script src="/javascripts/octopress.js" type="text/javascript"></script>

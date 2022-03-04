@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-04T16:40:51+08:00</updated>
+  <updated>2022-03-04T16:56:46+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -225,7 +225,7 @@
 
 <p> <code>rake generate</code> 出现问题：</p>
 
-<p><img src="http://www.aobosir.com/images/2016-10-12-octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/1476211427887.png" alt="Alt text" /></p>
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEBdI0C.SIjWT7xp6kxk44HtNtPC263DeEkNHJxhmSxZADk0hrbMx8wpKHzK5e5i3chf0lcEBpbc6HvuMur2Yj2M!/r" alt="Alt text" /></p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>  Liquid Exception: comparison of Array with Array failed in _layouts/page.html</span></code></pre></td></tr></table></div></figure>
@@ -267,11 +267,11 @@
 
 <p>出现另一警告：</p>
 
-<p><img src="http://www.aobosir.com/images/2016-10-12-octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/1476211894282.png" alt="Alt text" /></p>
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEEVv9L5qdjCrWDNsdaae1gecrl4Dk5DfGovwzPBz4NGxy2YEcsjFTGZk9HPnZ4pdOW3MLz5JmXZtaeKeBaKa9YY!/r" alt="Alt text" /></p>
 
 <p><code>rake preview</code> ，标签云成功添加:</p>
 
-<p><img src="http://www.aobosir.com/images/2016-10-12-octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/1476211997018.png" alt="Alt text" /></p>
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMkifW2gJW9D*DOdH8mhfQXdNtXOdqE9gQNJ5cLGRw3mEOzZJ.eR*6x07lmQqrmSHEFlbcBrFrU*4FcTQePqHV0!/r" alt="Alt text" /></p>
 
 <h3>解决 <code>Build Warning: Layout 'nil' requested in tags/标签名/atom.xml does not exist.</code> 警告问题</h3>
 

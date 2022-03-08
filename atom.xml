@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-05T00:16:03+08:00</updated>
+  <updated>2022-03-09T00:31:00+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Do Not Be Worthless]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/09/do-not-be-worthless/"/>
+    <updated>2022-03-09T00:28:51+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/09/do-not-be-worthless</id>
+    <content type="html"><![CDATA[<p>沒有人願意去扶持一個毫無價值的人，千萬別讓自己一文不值。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[有時間絕望，還不如吃點好吃的然後睡個覺]]></title>
@@ -714,15 +723,6 @@ comments: true</p>
     <updated>2022-01-15T14:51:13+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/01/15/sougou-is-xiugou</id>
     <content type="html"><![CDATA[<p>就是个坑，有时安装了就能用，有时搞到所有的输入法都用不了，要卸载了才能恢复之前的输入法</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ok 好累]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/01/15/done-tired/"/>
-    <updated>2022-01-15T03:23:36+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/01/15/done-tired</id>
-    <content type="html"><![CDATA[<p>睡觉</p>
 ]]></content>
   </entry>
   

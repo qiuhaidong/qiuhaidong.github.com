@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress3.0 | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress3-dot-0/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-09T00:31:00+08:00</updated>
+  <updated>2022-03-13T23:13:43+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -24,11 +24,9 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 rvm use 2.2.6
 sudo apt install python2
 </code>
-test:<br/>
-0123456789<br/>
-010203040506070809 69</p>
+test:</p>
 
-<h3>0123456789 69</h3>
+<h3>010203040506070809 69</h3>
 ]]></content>
   </entry>
   

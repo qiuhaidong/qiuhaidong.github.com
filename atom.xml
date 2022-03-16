@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-13T23:16:14+08:00</updated>
+  <updated>2022-03-16T23:22:40+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[一個人的信念]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/16/my-faith/"/>
+    <updated>2022-03-16T23:15:55+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/16/my-faith</id>
+    <content type="html"><![CDATA[<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF4ePIde/TmEUgtj9EK6.7V8ajmQrEKpFaFnUfr5bt.i*yDY017qNMt3AboIlXTkuH021rPma0F4F7W2BV1AsOBMyzExrKvsajC.WFxiBxDPmPGlvBpk!/r" alt="一個人的信念" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Don't Be Worthless]]></title>
@@ -713,15 +722,6 @@ comments: true</p>
 <p>Ubuntu 团队考虑的其他解决方案包括：创建一个新的 GRUB 模块，该模块只在用户查找系统时才执行 OS-Prober 的一些功能，用于增加一个链式启动选项专门处理用户需要启动 Windows 的需求；亦或是仅在安装系统时运行 OS-Prober，然后依靠该信息进行后续启动；最后一种可能性是，从以前的 Ubuntu 版本升级到 Ubuntu 22.04 时启用 OS-Prober。</p>
 
 <p>我们还不清楚 Ubuntu 团队在上述选择中最终会如何进行抉择，在 Ubuntu 22.04 正式推出之前还有充足的考虑时间，可以访问 ubuntu-devel 了解更多详情。我们也将关注 GRUB 上游在此期间是否也会推出相应的解决方案。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[搜狗输入法]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/01/15/sougou-is-xiugou/"/>
-    <updated>2022-01-15T14:51:13+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/01/15/sougou-is-xiugou</id>
-    <content type="html"><![CDATA[<p>就是个坑，有时安装了就能用，有时搞到所有的输入法都用不了，要卸载了才能恢复之前的输入法</p>
 ]]></content>
   </entry>
   

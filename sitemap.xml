@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://qiuhaidong.github.io/blog/2022/03/19/live-well/</loc>
+<lastmod>2022-03-19T20:05:33+08:00</lastmod>
+</url>
+<url>
 <loc>https://qiuhaidong.github.io/blog/2022/03/16/my-faith/</loc>
 <lastmod>2022-03-16T23:15:55+08:00</lastmod>
 </url>
@@ -814,6 +818,9 @@
 </url>
 <url>
 <loc>https://qiuhaidong.github.io/blog/categories/only-for-you/</loc>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/blog/categories/pwesonal/</loc>
 </url>
 <url>
 <loc>https://qiuhaidong.github.io/tags/octopress3-dot-0/</loc>

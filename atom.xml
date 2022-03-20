@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-20T10:27:47+08:00</updated>
+  <updated>2022-03-20T10:36:35+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Kex_exchange_identification: Read: Connection Reset by Peer]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer/"/>
+    <updated>2022-03-20T10:32:48+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer</id>
+    <content type="html"><![CDATA[<p>有時會出現標題的錯誤，ssh無法連接服務器，試過網上的幾種方法都不行，其實是國內網絡經常封鎖github，過段時間就好了。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[好好生活 | 自制力]]></title>
@@ -695,20 +704,6 @@ comments: true</p>
     <updated>2022-02-16T00:30:51+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/02/16/myself</id>
     <content type="html"><![CDATA[<h3>别被其他一切因素影响</h3>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[穷山恶水，离开吧]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/01/20/leave/"/>
-    <updated>2022-01-20T18:40:25+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/01/20/leave</id>
-    <content type="html"><![CDATA[<p>刚才父亲又因山林补贴争吵。<br/>
-风险太大。<br/>
-官场黑暗。邻里纷争。<br/>
-穷山恶水。<br/>
-走吧，早走为上。<br/>
-君子不立危墙之下。</p>
 ]]></content>
   </entry>
   

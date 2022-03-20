@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-20T10:27:47+08:00</updated>
+  <updated>2022-03-20T10:36:35+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Kex_exchange_identification: Read: Connection Reset by Peer]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer/"/>
+    <updated>2022-03-20T10:32:48+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer</id>
+    <content type="html"><![CDATA[<p>有時會出現標題的錯誤，ssh無法連接服務器，試過網上的幾種方法都不行，其實是國內網絡經常封鎖github，過段時間就好了。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Back to Top返回頂部按鈕]]></title>
@@ -302,16 +311,6 @@ sudo apt install python2
 test:</p>
 
 <h3>010203040506070809 69</h3>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Octopress3.0訪問速度比2.0快太多了]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0/"/>
-    <updated>2022-02-24T16:53:49+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0</id>
-    <content type="html"><![CDATA[<p>真是快太多了，完全不是一個級別的，2.0有時候根本就訪問不了<br/>
-<a href="https://qiuhaidong.github.io/blog/2022/02/27/speed-up-octopress2-dot-0/">加速Octopress2.0</a></p>
 ]]></content>
   </entry>
   

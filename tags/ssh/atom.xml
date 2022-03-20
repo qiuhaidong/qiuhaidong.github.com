@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: ssh | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/tags/ssh/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2022-03-20T10:36:35+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[kex_exchange_identification: read: Connection reset by peer]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer/"/>
+    <updated>2022-03-20T10:32:48+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer</id>
+    <content type="html"><![CDATA[<p>有時會出現標題的錯誤，ssh無法連接服務器，試過網上的幾種方法都不行，其實是國內網絡經常封鎖github，過段時間就好了。</p>
+]]></content>
+  </entry>
+  
+</feed>

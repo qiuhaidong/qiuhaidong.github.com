@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-22T01:09:28+08:00</updated>
+  <updated>2022-03-25T00:06:51+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[志氣]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/24/dont-pick-the-easy-path/"/>
+    <updated>2022-03-24T23:37:06+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/24/dont-pick-the-easy-path</id>
+    <content type="html"><![CDATA[<p>日常的平淡，能殺滅所有的志氣。<br/>
+做難事必有所得，做自己沒有做過的事。<br/>
+不被平淡淹沒。<br/>
+自我挑戰。<br/>
+生命在過程中綻放。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[人生无常]]></title>
@@ -704,26 +717,6 @@ Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
 <p>因为只复制一段老是有错，现在我是把<code>index.html</code>的<code>&lt;div class="right"&gt;</code>右边栏一直到最后的内容，代替了<code>_layouts/post.html</code>右边栏一直到最后的内容。</p>
 
 <h1>🤪😀</h1>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[新建post文件的“头文件”]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/21/template-of-new-post/"/>
-    <updated>2022-02-21T04:39:45+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/21/template-of-new-post</id>
-    <content type="html"><![CDATA[<p>在根目录新建一文件夹<code>_templates</code>，文件夹里建一个文件<code>post</code>，无后缀，内容是：</p>
-
-<h2><strong><em>注意，格式问题，显示有问题，参见原文件</em></strong>  </h2>
-
-<p>layout: <br/>
-title: &ldquo;&rdquo;<br/>
-date: <br/>
-author:<br/>
-tags: <br/>
-comments: true</p>
-
-<h2>categories:   </h2>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-25T00:23:07+08:00</updated>
+  <updated>2022-03-25T00:57:20+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/25/test/"/>
+    <updated>2022-03-25T00:55:40+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/25/test</id>
+    <content type="html"><![CDATA[<p>hello
+ruby 2.7.0</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[志氣]]></title>
@@ -701,27 +711,6 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 專注技術<br/>
 Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
 博文才重要</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[博文页增加Recent Posts等侧边栏]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/21/post-html-add-sidebar-about-recent-posts/"/>
-    <updated>2022-02-21T21:43:06+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/21/post-html-add-sidebar-about-recent-posts</id>
-    <content type="html"><![CDATA[<p>博客根目录，文件<code>index.html</code>，找到<code>Recent Posts</code>这一大段内容，复制，打开<code>_layouts/post.html</code>，找到：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;div class="right"&gt;
-</span><span class='line'>    &lt;div class="wrap"&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-<p>复制到其后面。</p>
-
-<p>因为只复制一段老是有错，现在我是把<code>index.html</code>的<code>&lt;div class="right"&gt;</code>右边栏一直到最后的内容，代替了<code>_layouts/post.html</code>右边栏一直到最后的内容。</p>
-
-<h1>🤪😀</h1>
 ]]></content>
   </entry>
   

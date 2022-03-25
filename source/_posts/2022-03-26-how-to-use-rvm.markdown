@@ -3,9 +3,9 @@ layout: post
 title: "RVM用法"
 date: 2022-03-26 02:37:09 +0800
 author: 丘海东 
-tags: rvm用法
+tags: rvm
 comments: true
-categories: rvm用法
+categories: rvm
 ---
 [原文](https://cloud.tencent.com/developer/ask/34591)  
 列出可用的ruby版本以安装类型：  

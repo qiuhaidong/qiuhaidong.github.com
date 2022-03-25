@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Rvm用法 | 丘海东]]></title>
-  <link href="https://qiuhaidong.github.io/blog/categories/rvmyong-fa/atom.xml" rel="self"/>
+  <title><![CDATA[Tag: rvm | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/tags/rvm/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-26T02:44:17+08:00</updated>
+  <updated>2022-03-26T02:50:23+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>

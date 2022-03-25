@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-25T20:34:34+08:00</updated>
+  <updated>2022-03-26T01:23:05+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[You Can Use the Sass-convert Command to Automatically Fix Most cases---Ruby 2.3.1]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/"/>
+    <updated>2022-03-26T01:05:55+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases</id>
+    <content type="html"><![CDATA[<p><a href="http://cache.baiducontent.com/c?m=Xxdd763vX7YjRNeeOiILGLerW1Lrc_ceIQ3hCNMB9gwdzDHZoy_PikcN75GYpR9DFB3vxBUcejQkaSvlN3gZEfAPpNN-08FVQIDyZHTNJgPwSgoB3NKL4_GS4nx_XrCC-BUaRNwAuECMpWgq8wxzkIpLErbpEqlwK68Qi6soQwepLTgid54lohbxMlnl6PQpNH2t__da7lDpAsRwCb6EY-y40SooyRN5jX-9ufBiajUS0lec_A47rZ0vRgOYP12W&amp;p=8d7d8e0285cc43dd08e297780f568f&amp;newp=c273c00586cc42a95aa9c7710f408f231610db2151d3da146b82c825d7331b001c3bbfb42220150ed3c6796204af4259e8f033783d0923a3dda5c91d9fb4c57479cc&amp;s=2a38a4a9316c49e5&amp;user=baidu&amp;fm=sc&amp;query=You+can+use+the+sass%2Dconvert+command+to+automatically+fix+most+cases%2E&amp;qid=c0e3498b0000d650&amp;p1=1">百度缓存网页</a></p>
+
+<p>I just installed and Compass &amp; Sass as described here.</p>
+
+<p>I got the following warning when I ran <code>compass watch</code> for the first time. What exactly does it mean? What should I do to fix it, do I need to do anything?</p>
+
+<pre><code>$ (master) compass watch
+&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
+DEPRECATION WARNING on line 87 of /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
+in a future version of Sass. To preserve the current behavior, use quotes:
+
+  unquote('"$moz-"#{$experimental-support-for-mozilla} "$webkit-"#{$experimental-support-for-webkit} "$opera-"#{$experimental-support-for-opera} "$microsoft-"#{$experimental-support-for-microsoft} "$khtml-"#{$experimental-support-for-khtml}')
+
+You can use the sass-convert command to automatically fix most cases.
+
+DEPRECATION WARNING on line 92 of /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
+in a future version of Sass. To preserve the current behavior, use quotes:
+
+  unquote('"$ie6-"#{$legacy-support-for-ie6} "$ie7-"#{$legacy-support-for-ie7} "$ie8-"#{$legacy-support-for-ie8}')
+
+You can use the sass-convert command to automatically fix most cases.
+
+    write css/styles.css
+</code></pre>
+
+<h4>1 Answer :</h4>
+
+<p>To fix the error message, just change the <strong><em>line 87</em></strong> from your &ldquo;<strong>_deprecated-support.scss</strong>&rdquo; file to this:</p>
+
+<pre><code>    // A debug tool for checking browser support
+@mixin debug-support-matrix($experimental: true, $ie: true) {
+    @debug '#{"$moz-"}$experimental-support-for-mozilla'
+                 '#{"$webkit-"}$experimental-support-for-webkit'
+                 '#{"$opera-"}$experimental-support-for-opera'
+                 '#{"$microsoft-"}$experimental-support-for-microsoft'
+                 '#{"$khtml-"}$experimental-support-for-khtml';
+    @debug '#{"$ie6-"}$legacy-support-for-ie6'
+                 '#{"$ie7-"}$legacy-support-for-ie7'
+                 '#{"$ie8-"}$legacy-support-for-ie8';
+}
+</code></pre>
+
+<p>The file can be found at your <strong>/home/dong/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ubuntu2022年无法添加引导windows，官方禁用OS Prober]]></title>
@@ -68,54 +119,6 @@ tags: <br/>
 author: 丘海东<br/>
 comments: <br/>
 categories:</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/"/>
-    <updated>2022-01-12T19:03:01+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6</id>
-    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
-
-<p>原博内容：</p>
-
-<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
-
-<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
-解决办法：</p>
-
-<ul>
-<li>运行</li>
-</ul>
-
-
-<pre><code>sudo gedit /etc/apt/sources.list
-</code></pre>
-
-<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
-
-<ul>
-<li>更新</li>
-</ul>
-
-
-<pre><code>sudo apt update
-</code></pre>
-
-<ul>
-<li>安装</li>
-</ul>
-
-
-<pre><code>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）
-</code></pre>
-
-<p>然后再安装<code>rvm install 2.2.6</code></p>
-
-<p>————————————————<br/>
-版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
 ]]></content>
   </entry>
   

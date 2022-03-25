@@ -13,5 +13,3 @@ categories: personal
 自我挑戰。  
 生命在過程中綻放。  
 ![](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMz29Wp5J31REEDaOBk6vMyqJkysnltBbC9Fm5zpbeL7mUYgGG7yb.OntLsWJot.D.fGVV8uP31if.85Zk557S0!/r)  
-![](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEFPHTSZLC1CCaduN2xF4aSWF.L288noa*XI7AnF3sdwAxU.C7vlsF6OIlfZ*ju4CnVOBchBvED855RQK1Dj3aeY!/r)  
-

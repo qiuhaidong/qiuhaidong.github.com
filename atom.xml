@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-26T02:10:44+08:00</updated>
+  <updated>2022-03-26T02:44:17+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RVM用法]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/26/how-to-use-rvm/"/>
+    <updated>2022-03-26T02:37:09+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/26/how-to-use-rvm</id>
+    <content type="html"><![CDATA[<p><a href="https://cloud.tencent.com/developer/ask/34591">原文</a><br/>
+列出可用的ruby版本以安装类型：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm list known</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后从已知的列表中安装，输入：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后使用你已经安装的ruby版本：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
+
+
+<p>你可以使一个特定的ruby版本成为你的默认系统版本：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use VERSION_NUMBER --default</span></code></pre></td></tr></table></div></figure>
+
+
+<p>要删除gem版本，保持gemsets：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm uninstall VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
+
+
+<p>删除ruby等：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm remove VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
+
+
+<p>要了解你的ruby环境以及它们的安装位置/别名：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm info</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[You Can Use the Sass-convert Command to Automatically Fix Most cases---Ruby 2.3.1]]></title>
@@ -767,18 +819,6 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[什麼才是重要的]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/24/what-really-matter/"/>
-    <updated>2022-02-24T00:45:30+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/24/what-really-matter</id>
-    <content type="html"><![CDATA[<p>專注內容<br/>
-專注技術<br/>
-Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
-博文才重要</p>
 ]]></content>
   </entry>
   

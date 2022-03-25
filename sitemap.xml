@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://qiuhaidong.github.io/blog/2022/03/26/how-to-use-rvm/</loc>
+<lastmod>2022-03-26T02:37:09+08:00</lastmod>
+</url>
+<url>
 <loc>https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/</loc>
 <lastmod>2022-03-26T01:05:55+08:00</lastmod>
 </url>
@@ -840,6 +844,9 @@
 <loc>https://qiuhaidong.github.io/blog/categories/only-for-you/</loc>
 </url>
 <url>
+<loc>https://qiuhaidong.github.io/blog/categories/rvmyong-fa/</loc>
+</url>
+<url>
 <loc>https://qiuhaidong.github.io/tags/octopress3-dot-0/</loc>
 </url>
 <url>
@@ -862,5 +869,8 @@
 </url>
 <url>
 <loc>https://qiuhaidong.github.io/tags/ruby2-dot-3-1/</loc>
+</url>
+<url>
+<loc>https://qiuhaidong.github.io/tags/rvmyong-fa/</loc>
 </url>
 </urlset>

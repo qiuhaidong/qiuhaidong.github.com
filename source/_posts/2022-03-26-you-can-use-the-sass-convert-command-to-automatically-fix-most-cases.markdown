@@ -7,6 +7,7 @@ tags: ruby2.3.1
 comments: true
 categories: tech
 ---
+[原网页](https://stackoverflow.com/questions/35949660/compass-sass-deprecation-warning)  
 [百度缓存网页](http://cache.baiducontent.com/c?m=Xxdd763vX7YjRNeeOiILGLerW1Lrc_ceIQ3hCNMB9gwdzDHZoy_PikcN75GYpR9DFB3vxBUcejQkaSvlN3gZEfAPpNN-08FVQIDyZHTNJgPwSgoB3NKL4_GS4nx_XrCC-BUaRNwAuECMpWgq8wxzkIpLErbpEqlwK68Qi6soQwepLTgid54lohbxMlnl6PQpNH2t__da7lDpAsRwCb6EY-y40SooyRN5jX-9ufBiajUS0lec_A47rZ0vRgOYP12W&p=8d7d8e0285cc43dd08e297780f568f&newp=c273c00586cc42a95aa9c7710f408f231610db2151d3da146b82c825d7331b001c3bbfb42220150ed3c6796204af4259e8f033783d0923a3dda5c91d9fb4c57479cc&s=2a38a4a9316c49e5&user=baidu&fm=sc&query=You+can+use+the+sass%2Dconvert+command+to+automatically+fix+most+cases%2E&qid=c0e3498b0000d650&p1=1)  
 
 I just installed and Compass & Sass as described here.  

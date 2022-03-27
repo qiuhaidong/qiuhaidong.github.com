@@ -4,10 +4,12 @@
 source "https://gems.ruby-china.com"
 
 group :development do
-#原来的：
+#ruby2.2.6的：
 #  gem 'rake', '~> 10.0'
 
+#ruby2.3.1，2.5.9，2.6.9的：
   gem 'rake', '~> 12.3'
+
   gem 'jekyll', '~> 2.0'
   gem 'octopress-hooks', '~> 2.2'
   gem 'octopress-date-format', '~>2.0'
@@ -22,3 +24,6 @@ group :development do
 end
 
 gem 'sinatra', '~> 1.4.2'
+
+#原来没有下面这行的，3.1.1運行?`bundle install webrick`?後才有的：
+#gem "webrick", "~> 1.7"

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress3.0 | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress3-dot-0/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-27T23:23:22+08:00</updated>
+  <updated>2022-03-28T18:39:11+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[ubuntu20.04 octopress2.0]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/26/ubuntu20-dot-04-octopress2-dot-0/"/>
+    <title type="html"><![CDATA[python2 ubuntu20.04 octopress2.0]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/02/26/python2-ubuntu20-dot-04-octopress2-dot-0/"/>
     <updated>2022-02-26T18:31:18+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/26/ubuntu20-dot-04-octopress2-dot-0</id>
+    <id>https://qiuhaidong.github.io/blog/2022/02/26/python2-ubuntu20-dot-04-octopress2-dot-0</id>
     <content type="html"><![CDATA[<p>有時候報錯，記得把<code>Gemfile.lock</code>文件刪除<br/>
 Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2版本<br/>
 <code>

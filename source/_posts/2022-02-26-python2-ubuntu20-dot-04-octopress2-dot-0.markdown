@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ubuntu20.04 octopress2.0"
+title: "python2 ubuntu20.04 octopress2.0"
 date: 2022-02-26 18:31:18 +0800
 author: 丘海东
 tags: octopress3.0

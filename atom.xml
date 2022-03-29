@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-28T18:39:11+08:00</updated>
+  <updated>2022-03-29T18:45:43+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[魔法满屋]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/29/mo-fa-man-wu/"/>
+    <updated>2022-03-29T18:37:42+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/29/mo-fa-man-wu</id>
+    <content type="html"><![CDATA[<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEM0khhjIcrT5.NR4En57TftokYLuvBNdoTs8pSE*a3dXDuchJGVkoKhhnZxDjZp3NSXj9e0JPn.fVxcuikrWnog!/r" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RVM用法]]></title>
@@ -782,55 +791,6 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 
 
 <p>就好了。。。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Error: Jekyll-paginate 分頁功能錯誤，依赖缺失]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/24/error-jekyll-paginate/"/>
-    <updated>2022-02-24T04:02:35+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/24/error-jekyll-paginate</id>
-    <content type="html"><![CDATA[<h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
-
-<h2>jekyll-paginate 依赖缺失</h2>
-
-<p>因为 jekyll 3 中默认安装已经没有这个分页组件了，官方把这个分页组件插件化了，因此要独立安装。详情见 <a href="https://jekyllrb.com/docs/pagination/">https://jekyllrb.com/docs/pagination/</a>。</p>
-
-<h3>错误呈现</h3>
-
-<p>在启动 jekyll 服务的时候出现以下错误：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>jekyll serve
-</span><span class='line'>Configuration file: c:/gitWorkSpace/blog-based-on-jekyll-3/_config.yml
-</span><span class='line'>  Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate' If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!
-</span><span class='line'>jekyll 3.1.2 | Error:  jekyll-paginate</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>解决方法</h3>
-
-<p>我们安装这个插件到本地即可。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem install jekyll-paginate
-</span><span class='line'>Fetching: jekyll-paginate-1.1.0.gem (100%)
-</span><span class='line'>Successfully installed jekyll-paginate-1.1.0
-</span><span class='line'>Parsing documentation for jekyll-paginate-1.1.0
-</span><span class='line'>Installing ri documentation for jekyll-paginate-1.1.0
-</span><span class='line'>Done installing documentation for jekyll-paginate after 3 seconds
-</span><span class='line'>1 gem installed</span></code></pre></td></tr></table></div></figure>
-
-
-
 ]]></content>
   </entry>
   

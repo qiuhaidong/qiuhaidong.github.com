@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "板凳匪徒，惊天逆转！火箭发带帮兄弟"
+title: "板凳匪徒，惊天逆转，发带帮兄弟"
 date: 2022-03-29 23:53:13 +0800
 author: 丘海东 
 tags: rough

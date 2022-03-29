@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-29T18:45:43+08:00</updated>
+  <updated>2022-03-29T18:53:36+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ttt]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/29/ttt/"/>
+    <updated>2022-03-29T18:53:25+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/29/ttt</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[魔法满屋]]></title>
@@ -730,67 +739,6 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 希望沒事。<br/>
 雖然愛貓，但因貓的性子，如若不熟悉，還是別逗它。<br/>
 有風險。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Git 如何 Clone 非 Master 分支的代码]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/24/git-clone-not-master-branch/"/>
-    <updated>2022-02-24T04:08:51+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/24/git-clone-not-master-branch</id>
-    <content type="html"><![CDATA[<h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
-
-<h2>问题描述</h2>
-
-<p>我们每次使用命令</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@gitlab.xxx.com:xxxxx.git</span></code></pre></td></tr></table></div></figure>
-
-
-<p>默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在<code>daily/1.4.1</code>分支上，我们希望拿到这个分支上的代码。</p>
-
-<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png" /></p>
-
-<h2>解决方法</h2>
-
-<p>直接使用命令</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -r #查看远程分支</span></code></pre></td></tr></table></div></figure>
-
-
-<p>或</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -a #查看所有分支</span></code></pre></td></tr></table></div></figure>
-
-
-<p>会显示</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>origin/HEAD -&gt; origin/master
-</span><span class='line'>origin/daily/1.2.2
-</span><span class='line'>origin/daily/1.3.0
-</span><span class='line'>origin/daily/1.4.1
-</span><span class='line'>origin/develop
-</span><span class='line'>origin/feature/daily-1.0.0
-</span><span class='line'>origin/master</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后直接</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git checkout origin/daily/1.4.1</span></code></pre></td></tr></table></div></figure>
-
-
-<p>就好了。。。</p>
 ]]></content>
   </entry>
   

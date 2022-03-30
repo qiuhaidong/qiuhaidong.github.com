@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-03-30T00:13:38+08:00</updated>
+  <updated>2022-03-30T09:05:03+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[张朝阳]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/30/zhang-zhao-yang/"/>
+    <updated>2022-03-30T08:28:34+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/30/zhang-zhao-yang</id>
+    <content type="html"><![CDATA[<p>看到张朝阳教物理课，去搜索了一下。<br/>
+张朝阳，清华物理系，麻省理工博士，创立搜狐，中国互联网教父，位列中国富豪榜。<br/>
+年少得志，生活潇洒风流，商海浮沉，抑郁过几年。<br/>
+2021年末，57岁，讲授物理课，关于力，牛顿定律，飞船的角速度，力学，光学，电磁场能量密度，狭义相对论，量子物理，量子力学，热力学，狭义相对论，质速关系，质能关系，推导质能方程，探讨太阳内部结构，估算常见天文常量等等等等。<br/>
+很多人三十来岁，已经连初中数学都不记得了。<br/>
+他还能讲授深奥的物理和数学知识。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[板凳匪徒，惊天逆转，发带帮兄弟]]></title>
@@ -770,20 +784,6 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
     <id>https://qiuhaidong.github.io/blog/2022/02/24/octopress-3-0-is-faster-than-2-0</id>
     <content type="html"><![CDATA[<p>真是快太多了，完全不是一個級別的，2.0有時候根本就訪問不了<br/>
 <a href="https://qiuhaidong.github.io/blog/2022/02/27/speed-up-octopress2-dot-0/">加速Octopress2.0</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[被貓抓了一下]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/24/cat-catch/"/>
-    <updated>2022-02-24T04:20:49+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/24/cat-catch</id>
-    <content type="html"><![CDATA[<p>前幾天晚上，有一隻貓，據父親說是野貓、流浪貓，都會來我家討食，我們餵了它兩天。<br/>
-昨晚我想和它玩玩，把手伸到它面前，它抓了我一下，一道1厘米多點的抓痕，過了兩三分鐘，滲出一下血。<br/>
-我用熱水器的熱水沖洗了幾分鐘，擦洗了傷口。<br/>
-希望沒事。<br/>
-雖然愛貓，但因貓的性子，如若不熟悉，還是別逗它。<br/>
-有風險。</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress2.0 | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress2-dot-0/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-05T22:41:59+08:00</updated>
+  <updated>2022-04-05T22:55:13+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -43,11 +43,13 @@ rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Ubuntu 22.04安装Octopress 2.0]]></title>
+    <title type="html"><![CDATA[Ubuntu 22.04安装Octopress 2.0和3.0]]></title>
     <link href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/"/>
     <updated>2022-04-05T22:03:16+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04</id>
-    <content type="html"><![CDATA[<pre><code>git --version
+    <content type="html"><![CDATA[<h3>Octopress 2.0</h3>
+
+<pre><code>git --version
 sudo apt install git
 </code></pre>
 
@@ -195,7 +197,15 @@ bundle install
 ......
 </code></pre>
 
-<p>之后的常规操作。</p>
+<p>之后就都是常规操作。</p>
+
+<h3>Octopress 3.0</h3>
+
+<p>安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：<br/>
+<code>
+gem install octopress
+</code>
+好了。</p>
 ]]></content>
   </entry>
   

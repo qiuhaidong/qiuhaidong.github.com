@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-05T22:40:08+08:00</updated>
+  <updated>2022-04-05T22:41:59+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Error Running __rvm_make -j4]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/04/05/error-running-rvm-make-j4/"/>
+    <title type="html"><![CDATA[安装ruby2.6.9,Error Running __rvm_make -j4]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/04/05/install-ruby2.6.9-error-running-rvm-make-j4/"/>
     <updated>2022-04-05T22:22:58+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/04/05/error-running-rvm-make-j4</id>
+    <id>https://qiuhaidong.github.io/blog/2022/04/05/install-ruby2.6.9-error-running-rvm-make-j4</id>
     <content type="html"><![CDATA[<pre><code>rvm install 2.6.9
 </code></pre>
 

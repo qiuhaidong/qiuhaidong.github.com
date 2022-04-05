@@ -284,7 +284,9 @@ multitask :push do
     puts "\n## Committing: #{message}"
     system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    Bundler.with_clean_env { system "git push origin #{deploy_branch}" }
+#以前的原文件
+#    Bundler.with_clean_env { system "git push origin #{deploy_branch}" }
+     Bundler.with_original_env { system "git push origin #{deploy_branch}" }
     puts "\n## Github Pages deploy complete"
   end
 end

@@ -7,6 +7,7 @@ tags: octopress2.0
 comments: true
 categories: tech-octopress
 ---
+以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。  
 ### Octopress 2.0
 ```
 git --version

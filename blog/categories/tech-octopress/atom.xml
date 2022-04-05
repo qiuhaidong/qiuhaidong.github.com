@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-05T22:56:04+08:00</updated>
+  <updated>2022-04-05T23:06:01+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[安装ruby2.6.9，Error Running __rvm_make -j4]]></title>
+    <title type="html"><![CDATA[安装Ruby2.6.9，Error Running '__rvm_make -j4']]></title>
     <link href="https://qiuhaidong.github.io/blog/2022/04/05/install-ruby2.6.9-error-running-rvm-make-j4/"/>
     <updated>2022-04-05T22:22:58+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/04/05/install-ruby2.6.9-error-running-rvm-make-j4</id>
@@ -47,7 +47,9 @@ rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
     <link href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/"/>
     <updated>2022-04-05T22:03:16+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04</id>
-    <content type="html"><![CDATA[<h3>Octopress 2.0</h3>
+    <content type="html"><![CDATA[<p>以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。</p>
+
+<h3>Octopress 2.0</h3>
 
 <pre><code>git --version
 sudo apt install git

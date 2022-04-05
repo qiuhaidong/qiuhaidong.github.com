@@ -8,7 +8,8 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="运行 dong@ubuntu:~/octopress$ gem install therubyracer 报错 ERROR: Error installing therubyracer: invalid gem: package is corrupt, exception while &hellip;">
+  <meta name="description" content="原博文 windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是： sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no 然而并没有什么效果，ubuntu16. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +67,112 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">windows10和Ubuntu双系统，时间不对</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-10T21:37:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:37 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.cnblogs.com/qf19910623/p/5559514.html">原博文</a></p>
+
+<p>windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：</p>
+
+<pre><code>sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no
+</code></pre>
+
+<p>然而并没有什么效果，ubuntu16.04里面根本就没有utc这一项！<br/>
+后来谷歌了半天找到了一个完美解决办法：<br/>
+先在ubuntu下更新一下时间，确保时间无误：</p>
+
+<pre><code>sudo apt-get install ntpdate
+sudo ntpdate time.windows.com
+</code></pre>
+
+<p>然后将时间更新到硬件上：</p>
+
+<pre><code>sudo hwclock --localtime --systohc
+</code></pre>
+
+<p>重新进入windows10，发现时间恢复正常了！</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/10/Voltage-change/">Voltage Change</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-10T15:03:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>3:03 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>MACHINE: fish hunting<br/>
+black pan: GND<br/>
+red pan:<br/>
+A: co1</p>
+
+<pre><code>press 100
+    voltage change from 3.36V to almost 0V,and then come back to 3.36V
+PRESS 10
+    3.36V,0.9V,3.36V
+</code></pre>
+
+<p>B: HP</p>
+
+<pre><code>press coin return
+    3.2V, 1.8V,3.2V
+</code></pre>
+
+<p>C: SSR</p>
+
+<pre><code>press coin return
+    5.0V, 0.48V, 5.0V
+</code></pre>
+
+<p>D: TF</p>
+
+<pre><code>press coin return
+    3.2V, 0V, 3.2V
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -382,75 +489,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/09/03/sql2000-install-hang-up/">SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-09-03T19:16:20+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>7:16 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ol>
-<li>在添加/删除程序中彻底删除sql server</li>
-<li>将没有删除的sql server目录也删除掉</li>
-<li>打开注册表编辑器，在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager中找到PendingFileRenameOperations项目，并删除它。这样就可以清除安装暂挂项目</li>
-<li>删除注册表中跟sql server相关的键</li>
-</ol>
-
-
-<p><em>或者使用:SQL安装挂起解决工具免安装版.exe</em><br/>
-<strong>DG：在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项——SQL2000安装挂起.reg</strong></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/08/30/eat-healthy/">Be Health</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-08-30T13:21:09+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:21 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2016-08-30 04:01<br/>
-这几天，没吃蔬菜，没定时定量，闹肚子了，凌晨3点多，在厕所蹲到脚麻，肚子痛到全身没力。
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/Screenshot_2016-08-30-04-01-40.png" alt="2016-08-30 04:01" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/14">&larr; Older</a>
@@ -466,6 +504,14 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2022/04/05/error-running-rvm-make-j4/">Error Running __rvm_make -j4</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">Ubuntu 22.04安装Octopress 2.0</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2022/04/01/action-confident-gratitude/">行动 自信 感恩</a>
@@ -539,14 +585,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
         <a href="/blog/2022/02/27/add-tags/">添加tags，導航欄，側邊欄</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/02/27/speed-up-octopress2-dot-0/">加速Octopress2.0，太慢了</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/02/26/python2-ubuntu20-dot-04-octopress2-dot-0/">Python2 ubuntu20.04 octopress2.0</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -557,7 +595,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 <li class='category'><a href='/blog/categories/personal/'>personal (118)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
-<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (20)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (22)</a></li>
 
   </ul>
 </section>
@@ -565,7 +603,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
   <h1>Tags</h1>
   <ul id="tag-cloud">
     <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
-<li><a style="font-size: 129%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 155%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/rouhg/">rouhg</a></li>

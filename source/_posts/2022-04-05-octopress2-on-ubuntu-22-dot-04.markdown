@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Ubuntu 22.04安装Octopress 2.0"
+title: "Ubuntu 22.04安装Octopress 2.0和3.0"
 date: 2022-04-05 22:03:16 +0800
 author: 丘海东 
 tags: octopress2.0
 comments: true
 categories: tech-octopress
 ---
+### Octopress 2.0
 ```
 git --version
 sudo apt install git
@@ -96,4 +97,14 @@ bundle install
 rake generate
 ......
 ```
-之后的常规操作。
+之后就都是常规操作。  
+
+
+
+### Octopress 3.0
+
+安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：  
+```
+gem install octopress
+```
+好了。

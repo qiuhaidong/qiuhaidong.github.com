@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Error running __rvm_make -j4"
+title: "安装ruby2.6.9,Error running __rvm_make -j4"
 date: 2022-04-05 22:22:58 +0800
 author: 丘海东 
 tags: octopress2.0

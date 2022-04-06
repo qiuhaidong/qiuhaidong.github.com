@@ -18,7 +18,7 @@ please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log
 There has been an error while running make. Halting the installation.
 ......
 ```
-
+[Error running '__rvm_make -j4' ruby 2.6.9 Ubuntu 22.04 ](https://github.com/rvm/rvm/issues/4370)  
 **解决：**  
 
 ```

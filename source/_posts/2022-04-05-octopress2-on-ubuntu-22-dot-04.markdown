@@ -13,7 +13,11 @@ categories: tech-octopress
 git --version
 sudo apt install git
 ```
-然后配置git，把之前的octopress-haydnyau和ssh2-ssh3文件夹和.gitconfig文件复制到主目录，改ssh文件夹名，`ssh -T git@github.com`，ok  
+然后配置git，把之前的octopress-haydnyau和ssh2-ssh3文件夹和.gitconfig文件复制到主目录，改ssh文件夹名  
+```
+ssh -T git@github.com
+```
+ok  
 ```
 python2 --version
 sudo apt install python2
@@ -21,7 +25,7 @@ sudo apt install python2
 ruby --version
 ```
 没有  
-到rvm官网  
+到rvm官网(下面的命令可能有更新，看官网)  
 ```
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 ```
@@ -79,6 +83,7 @@ There has been an error while running make. Halting the installation.
 ```
 
 **解决：**  
+[Error running '__rvm_make -j4' ruby 2.6.9 Ubuntu 22.04 ](https://github.com/rvm/rvm/issues/4370)  
 
 ```
 rvm pkg install openssl
@@ -92,7 +97,7 @@ rvm use 2.6.9 --default
 gem install bundler
 bundle install
 ```
-[更改sass-convert](https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/)
+[更改：You can use the sass-convert command to automatically fix most cases.](https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/)
   
 ```
 rake generate

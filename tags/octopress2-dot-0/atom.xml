@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress2.0 | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress2-dot-0/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-05T23:06:01+08:00</updated>
+  <updated>2022-04-06T15:31:29+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -31,9 +31,9 @@
 </span><span class='line'>please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log&lt;/p&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;p&gt;There has been an error while running make. Halting the installation.
-</span><span class='line'>&hellip;&hellip;</span></code></pre></td></tr></table></div></figure></p>
-
-<p><strong>解决：</strong></p>
+</span><span class='line'>&hellip;&hellip;</span></code></pre></td></tr></table></div></figure>
+<a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a><br/>
+<strong>解决：</strong></p>
 
 <pre><code>rvm pkg install openssl
 rvm remove 2.6.9
@@ -55,7 +55,11 @@ rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
 sudo apt install git
 </code></pre>
 
-<p>然后配置git，把之前的octopress-haydnyau和ssh2-ssh3文件夹和.gitconfig文件复制到主目录，改ssh文件夹名，<code>ssh -T git@github.com</code>，ok<br/>
+<p>然后配置git，把之前的octopress-haydnyau和ssh2-ssh3文件夹和.gitconfig文件复制到主目录，改ssh文件夹名<br/>
+<code>
+ssh -T git@github.com
+</code>
+ok<br/>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -123,7 +127,7 @@ sudo apt install git
 </span><span class='line'>&lt;p&gt;ruby &ndash;version
 </span><span class='line'>&lt;code&gt;
 </span><span class='line'>没有  
-</span><span class='line'>到rvm官网  
+</span><span class='line'>到rvm官网(下面的命令可能有更新，看官网)  
 </span><span class='line'>&lt;/code&gt;
 </span><span class='line'>gpg2 &ndash;recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 </span><span class='line'>&lt;code&gt;
@@ -179,7 +183,8 @@ sudo apt install git
 </span><span class='line'>&lt;p&gt;There has been an error while running make. Halting the installation.
 </span><span class='line'>&hellip;&hellip;</span></code></pre></td></tr></table></div></figure></p>
 
-<p><strong>解决：</strong></p>
+<p><strong>解决：</strong><br/>
+<a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a></p>
 
 <pre><code>rvm pkg install openssl
 rvm remove 2.6.9
@@ -193,7 +198,7 @@ gem install bundler
 bundle install
 </code></pre>
 
-<p><a href="https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/">更改sass-convert</a></p>
+<p><a href="https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/">更改：You can use the sass-convert command to automatically fix most cases.</a></p>
 
 <pre><code>rake generate
 ......

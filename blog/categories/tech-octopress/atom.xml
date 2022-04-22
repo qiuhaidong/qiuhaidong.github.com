@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-23T00:43:34+08:00</updated>
+  <updated>2022-04-23T02:08:25+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ssh: Connect to Host github.com Port 22: Connection Timed Out]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/"/>
+    <updated>2022-04-23T01:55:21+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out</id>
+    <content type="html"><![CDATA[<pre><code>dong@Ubuntu:~$ ssh -T git@github.com
+ssh: connect to host github.com port 22: Connection timed out
+</code></pre>
+
+<p><a href="https://segmentfault.com/a/1190000040896781">解决 ssh: connect to host github.com port 22: Connection timed out</a></p>
+
+<p><a href="https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out">ssh: connect to host github.com port 22: Connection timed out</a></p>
+
+<p>如果你电脑上的git能在大部分地方进行同步，但是在某处地方的网络下无法同步，并且运行git pull或git push长久没有反映，最后出现ssh: connect to host github.com port 22: Connection timed out，很可能是你的网络供应商（比如广电网）在出口防火墙上屏蔽了22端口，这意味着你将无法访问其他主机的22端口。<br/>
+对此，github提供了一种解决方案，允许你使用443端口进行ssh连接，因为443端口是访问https网站所必须的，大部分防火墙都会允许通过，但如果使用代理服务器可能产生干扰。如果连443端口都被屏蔽，那你应该无法浏览这篇文章。<br/>
+运行这段命令，看看是否有成功提示，如果成功，则可以使用这个解决方案。<br/>
+<code>
+ssh -T -p 443 git@ssh.github.com
+</code>
+简单地配置一下，让你每次ssh连接github都通过443端口。如果你使用Linux，在<code>~/.ssh/config</code>内(新建config文件，无后缀)，添加这些内容，指明ssh连接git@github.com或git@ssh.github.com走443端口。<br/>
+<code>
+Host github.com
+Hostname ssh.github.com
+Port 443
+User git #这行可能不需要也行
+</code>
+我的：把<code>config</code>文件复制到.ssh2和.ssh3文件夹<br/>
+改ssh2-3文件夹名，测试：<br/>
+<code>
+ssh -T git@github.com
+</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[安装Ruby2.6.9，Error Running '__rvm_make -j4']]></title>
@@ -354,104 +388,6 @@ fatal: 无法读取远程仓库。
 ```</p>
 
 <p>bug提醒：如果post文件中有上面这一行代码（没有\号），blog网站首页和这篇博文页，会有返回按钮图片错误</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[添加tags，導航欄，側邊欄]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/02/27/add-tags/"/>
-    <updated>2022-02-27T16:34:34+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/02/27/add-tags</id>
-    <content type="html"><![CDATA[<p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/">参考1</a></p>
-
-<h3>下载</h3>
-
-<p>首先到 <a href="https://github.com/robbyedwards/octopress-tag-pages">https://github.com/robbyedwards/octopress-tag-pages</a> 和 <a href="https://github.com/robbyedwards/octopress-tag-cloud">https://github.com/robbyedwards/octopress-tag-cloud</a> 下载这两个项目的代码。</p>
-
-<h3>octopress-tag-pages</h3>
-
-<p>把里面的文件复制到相应位置，之前已有的文件，看代码，把需要的代码加上去，<code>.md</code>文件先不用管</p>
-
-<h3>octopress-tag-cloud</h3>
-
-<p><strong>1 .</strong> 将 <code>octopress-tag-cloud\plugins</code>  路径里面的 <code>tag_cloud.rb</code>  文件复制到 <code>octopress\plugins\</code>  文件夹里面。</p>
-
-<p><strong>2 .</strong> 将下面的代码复制到 <code>octopress\source\_includes\custom\asides\tags.html</code>。（这个文件需要自己新建。）
-<strong>注意：</strong> 去掉 <code>%</code> 前面的反斜杠<code>\</code>。</p>
-
-<pre><code class="html">&lt;section&gt;
-  &lt;h1&gt;Tags&lt;/h1&gt;
-  &lt;ul id="tag-cloud"&gt;
-    {\% tag_cloud font-size: 120-160%, limit: 20 \%}
-  &lt;/ul&gt;
-&lt;/section&gt;
-</code></pre>
-
-<p>解释：</p>
-
-<p><code>tag_cloud</code> 的参数中， <code>font-size</code> 指定 <code>tag</code> 的大小范围；<code>limit</code> 限定 <code>20</code> 个 <code>tag</code> 。</p>
-
-<p><strong>3 .</strong> 在 <code>octopress\_config.yml</code> 中的 <code>default_asides</code> 中添加 <code>custom/asides/tags.html</code>，注意相应的位置。
-<code>
-default_asides: [custom/asides/tags.html, .....]
-</code></p>
-
-<p>博文写标签：</p>
-
-<pre><code>tags: [tag1, tag2, tag3]
-</code></pre>
-
-<p> <code>rake generate</code> 出现问题：</p>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEBdI0C.SIjWT7xp6kxk44HtNtPC263DeEkNHJxhmSxZADk0hrbMx8wpKHzK5e5i3chf0lcEBpbc6HvuMur2Yj2M!/r" alt="Alt text" /></p>
-
-<pre><code>  Liquid Exception: comparison of Array with Array failed in _layouts/page.html
-</code></pre>
-
-<h3>解决</h3>
-
-<p><code>octopress\plugins\tag_cloud.rb</code> 第74行:</p>
-
-<pre><code class="ruby">if @limit &gt; 0 and @sort != 'rand'
-    # sort the tag pairs by frequency in descending order
-    weighted.sort! { |a,b| b[1] &lt;=&gt; a[1] }
-    # then slice off the top @limit tag pairs
-    weighted = weighted[0,@limit]
-end
-</code></pre>
-
-<p><code>weighted = weighted[0,@limit]</code> 应该是取指定数目的标签。如果标签数量少于 <code>@limit</code> ，会报错。</p>
-
-<p>修改第74行为:</p>
-
-<pre><code class="ruby">      if @limit &gt; 0 and @sort != 'rand' and @limit &lt; weighted.length
-</code></pre>
-
-<p>修改第95行为:</p>
-
-<pre><code class="ruby">        if @limit &gt; 0 and @limit &lt; weighted.length
-</code></pre>
-
-<p><code>rake generate</code> ，不再出现错误</p>
-
-<p>出现另一警告：</p>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEEVv9L5qdjCrWDNsdaae1gecrl4Dk5DfGovwzPBz4NGxy2YEcsjFTGZk9HPnZ4pdOW3MLz5JmXZtaeKeBaKa9YY!/r" alt="Alt text" /></p>
-
-<p><code>rake preview</code> ，标签云成功添加:</p>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMkifW2gJW9D*DOdH8mhfQXdNtXOdqE9gQNJ5cLGRw3mEOzZJ.eR*6x07lmQqrmSHEFlbcBrFrU*4FcTQePqHV0!/r" alt="Alt text" /></p>
-
-<h3>解决 <code>Build Warning: Layout 'nil' requested in tags/标签名/atom.xml does not exist.</code> 警告问题</h3>
-
-<p>将 <code>octopress\source\_includes\custom\tag_feed.xml</code> 文件里面 <code>nil</code> 改为 <code>null</code> ：</p>
-
-<pre><code>---
-layout: null
----
-</code></pre>
-
-<h2>搞定</h2>
 ]]></content>
   </entry>
   

@@ -46,7 +46,26 @@ categories: tech
 执行：  
 
 	sudo netstat -tulpn |grep 4000
-
+	
+如果提示：  
+```
+sudo: netstat：找不到命令
+```
+运行：  
+```
+netstat -tulpn |grep 4000
+```
+然后：  
+```
+dong@Ubuntu:~/octopress$ netstat -tulpn |grep 4000
+Command 'netstat' not found, but can be installed with:
+sudo apt install net-tools
+dong@Ubuntu:~/octopress$ sudo apt install net-tools
+```
+再运行：  
+```
+sudo netstat -tulpn |grep 4000
+```
 得到：
 
 	dong@Ubuntu:~/octopress$ sudo netstat -tulpn | grep 4000

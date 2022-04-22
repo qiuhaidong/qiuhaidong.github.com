@@ -28,6 +28,24 @@ Hostname ssh.github.com
 Port 443
 User git #这行可能不需要也行
 ```
+
+或者这一段：  
+```
+Host github.com
+Hostname ssh.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+Port 443
+User git
+
+Host gitlab.com
+Hostname altssh.gitlab.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
+Port 443
+User git
+```
+
 我的：把`config`文件复制到.ssh2和.ssh3文件夹  
 改ssh2-3文件夹名，测试：  
 ```

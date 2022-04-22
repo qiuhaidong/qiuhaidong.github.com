@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-22T01:14:11+08:00</updated>
+  <updated>2022-04-22T17:58:20+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -193,8 +193,11 @@ rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
 
 <pre><code>ruby --version
 rvm use 2.6.9 --default
+</code></pre>
 
-gem install bundler
+<p>把 <code>/octopress/Gemfile</code> 文件里的源改回最初的：<code>source "https://rubygems.org/"</code></p>
+
+<pre><code>gem install bundler
 bundle install
 </code></pre>
 

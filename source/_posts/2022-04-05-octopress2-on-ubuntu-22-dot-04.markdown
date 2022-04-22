@@ -93,7 +93,11 @@ rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
 ```
 ruby --version
 rvm use 2.6.9 --default
+```
 
+把 `/octopress/Gemfile` 文件里的源改回最初的：`source "https://rubygems.org/"`
+
+```
 gem install bundler
 bundle install
 ```

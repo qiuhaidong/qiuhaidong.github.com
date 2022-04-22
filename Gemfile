@@ -1,7 +1,8 @@
 #原来的：
-#source "https://rubygems.org/"
+source "https://rubygems.org/"
 
-source "https://gems.ruby-china.com"
+#如果不行，就更改成国内的源
+#source "https://gems.ruby-china.com"
 
 group :development do
 #ruby2.2.6的：

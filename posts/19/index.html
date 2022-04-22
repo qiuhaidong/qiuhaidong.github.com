@@ -525,7 +525,9 @@ git push origin source
   </header>
 
 
-  <div class="entry-content"><p>在执行命令</p>
+  <div class="entry-content"><h4>停止<code>rake preview</code> 任务，用<code>ctrl+c</code>，别用<code>ctrl+z</code>，可以避免这个问题</h4>
+
+<p>在执行命令</p>
 
 <pre><code>rake preview
 </code></pre>
@@ -610,6 +612,7 @@ tcp        0      0 127.0.0.1:4000          0.0.0.0:*               LISTEN      
 <p>执行：</p>
 
 <pre><code>kill -9 2889
+#更改2889处对应的数字，前面的-9好像不变
 </code></pre>
 
 <p>得到：</p>

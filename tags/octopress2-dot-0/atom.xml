@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress2.0 | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress2-dot-0/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-22T17:58:20+08:00</updated>
+  <updated>2022-04-22T18:26:06+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -211,10 +211,22 @@ bundle install
 
 <h3>Octopress 3.0</h3>
 
-<p>安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：<br/>
+<pre><code>cd /haydnyau
+</code></pre>
+
+<pre><code>ruby --version
+rvm use 2.6.9 --default
+</code></pre>
+
+<pre><code>jekyll --version
+</code></pre>
+
+<p>确保安装正确<br/>
+安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：<br/>
 <code>
 gem install octopress
 </code>
+确保安装正确，成功，曾试过因为系统自带了ruby3.0,导致ruby版本不对，失败的<br/>
 好了。</p>
 ]]></content>
   </entry>

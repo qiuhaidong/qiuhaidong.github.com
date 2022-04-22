@@ -570,6 +570,36 @@ Configuration file: /home/dong/octopress/_config.yml
 <pre><code>sudo netstat -tulpn |grep 4000
 </code></pre>
 
+<p>如果提示：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo: netstat：找不到命令</span></code></pre></td></tr></table></div></figure>
+
+
+<p>运行：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>netstat -tulpn |grep 4000</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dong@Ubuntu:~/octopress$ netstat -tulpn |grep 4000
+</span><span class='line'>Command 'netstat' not found, but can be installed with:
+</span><span class='line'>sudo apt install net-tools
+</span><span class='line'>dong@Ubuntu:~/octopress$ sudo apt install net-tools</span></code></pre></td></tr></table></div></figure>
+
+
+<p>再运行：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo netstat -tulpn |grep 4000</span></code></pre></td></tr></table></div></figure>
+
+
 <p>得到：</p>
 
 <pre><code>dong@Ubuntu:~/octopress$ sudo netstat -tulpn | grep 4000

@@ -92,6 +92,11 @@ rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
 ```
 ```
 ruby --version
+```
+
+#### 记得：终端-首选项-未命名-命令-勾选‘以登陆shell方式运行命令’，重启所有终端
+
+```
 rvm use 2.6.9 --default
 ```
 

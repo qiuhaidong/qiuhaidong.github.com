@@ -5,6 +5,7 @@ date: 2015-03-05 13:29:29 +0800
 comments: true
 categories: tech
 ---
+#### 停止`rake preview` 任务，用`ctrl+c`，别用`ctrl+z`，可以避免这个问题
 在执行命令  
 
 	rake preview
@@ -75,6 +76,7 @@ sudo netstat -tulpn |grep 4000
 执行：  
 
 	kill -9 2889
+	#更改2889处对应的数字，前面的-9好像不变
 
 得到：  
 

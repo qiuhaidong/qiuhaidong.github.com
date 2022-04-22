@@ -132,5 +132,5 @@ jekyll --version
 ```
 gem install octopress
 ```
-确保安装正确，成功，曾试过因为系统自带了ruby3.0,导致ruby版本不对，失败的  
+确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的  
 好了。

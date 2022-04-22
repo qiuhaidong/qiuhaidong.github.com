@@ -112,9 +112,20 @@ rake generate
 
 
 ### Octopress 3.0
-
+```
+cd /haydnyau
+```
+```
+ruby --version
+rvm use 2.6.9 --default
+```
+```
+jekyll --version
+```
+确保安装正确  
 安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：  
 ```
 gem install octopress
 ```
+确保安装正确，成功，曾试过因为系统自带了ruby3.0,导致ruby版本不对，失败的  
 好了。

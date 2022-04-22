@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress2.0 | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress2-dot-0/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-22T18:31:19+08:00</updated>
+  <updated>2022-04-22T18:35:36+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -230,7 +230,7 @@ rvm use 2.6.9 --default
 <code>
 gem install octopress
 </code>
-确保安装正确，成功，曾试过因为系统自带了ruby3.0,导致ruby版本不对，失败的<br/>
+确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的<br/>
 好了。</p>
 ]]></content>
   </entry>

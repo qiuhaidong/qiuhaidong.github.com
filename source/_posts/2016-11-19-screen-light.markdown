@@ -16,4 +16,8 @@ categories: tech
 
 (东哥：13.04、16.04按Fn有效调节)  
 
+```
+GRUB_CMDLINE_LINUX="acpi_osi= acpi_backlight=vendor"        (东哥有效12.04，20.04，22.04)
+```
+
 	sudo update-grub

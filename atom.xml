@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-26T15:36:55+08:00</updated>
+  <updated>2022-04-27T00:57:02+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[日记]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/04/27/daily/"/>
+    <updated>2022-04-27T00:54:46+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/04/27/daily</id>
+    <content type="html"><![CDATA[<p>每天记录一下：<br/>
+现在的任务：洗澡洗衣服，尽早睡觉</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[一些好的 坏的]]></title>
@@ -708,16 +718,6 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
     <updated>2022-03-16T23:15:55+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/03/16/my-faith</id>
     <content type="html"><![CDATA[<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF0HxUKl/TmEUgtj9EK6.7V8ajmQrEKwFpMviO8W1E*JH4erI.jmNNlwKNTQArGB05cxXhuyatr8F.HTHZbG0Hx*r6W4GgfHHIITo3WNVZW.b*hffKgE!/r" alt="一個人的信念" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Don't Be Worthless]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/03/09/do-not-be-worthless/"/>
-    <updated>2022-03-09T00:28:51+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/03/09/do-not-be-worthless</id>
-    <content type="html"><![CDATA[<p>沒有人願意去扶持一個毫無價值的人，千萬別讓自己一文不值。<br/>
-<img src="http://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEBV5rT1fUzPY1kDqenVtnUecpxHZp3rt.W.B0sTA58l*YZBJltakoO5A31uhvEwKsrtc2izqI4BI5SMec*e3buE!/r" alt="肖申克的救赎" /></p>
 ]]></content>
   </entry>
   

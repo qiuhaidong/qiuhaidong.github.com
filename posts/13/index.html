@@ -8,9 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="2016-11-19
-ruby version:2.2.6
-">
+  <meta name="description" content="参见另一篇博文 sudo gedit /etc/default/grub 更改为：(斜黑体部分) GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" GRUB_CMDLINE_LINUX="***acpi_osi=Linux***" (东哥：13.04、16. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +66,53 @@ ruby version:2.2.6
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/19/screen-light/">屏幕亮度调节 Ubuntu13.04和16.04 Screen Light</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-19T11:53:44+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:53 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>参见另一篇博文</p>
+
+<pre><code>sudo gedit /etc/default/grub
+</code></pre>
+
+<p>更改为：(斜黑体部分)</p>
+
+<pre><code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"  
+GRUB_CMDLINE_LINUX="***acpi_osi=Linux***"  
+</code></pre>
+
+<p>(东哥：13.04、16.04按Fn有效调节)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>GRUB_CMDLINE_LINUX="acpi_osi= acpi_backlight=vendor"        (东哥有效12.04，20.04，22.04)</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>sudo update-grub
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -468,44 +513,6 @@ excerpt_separator: &ldquo;</div>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/10/28/install-again/">Install Again</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-10-28T02:22:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:22 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>something new:<br/>
-install git:</p>
-
-<pre><code>sudo apt-get install git
-</code></pre>
-
-<p>don&rsquo;t install from ppa anymore.<br/>
-install rvm: run the command from official website,the latest version,maybe not the stable version.<br/>
-install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official website，the latest version,for exemple:2.3.1  the old version may got some problem when install the gem package.<br/>
-<code>rubygems bundle install</code>its address has change,the latest version is<a href="https://gems.ruby-china.org">Ruby China</a>，we could check it out from the origin official website.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/14">&larr; Older</a>
@@ -521,6 +528,10 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2022/04/27/daily/">日记</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2022/04/23/man/">一些好的 坏的</a>
@@ -598,10 +609,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
         <a href="/blog/2022/03/16/my-faith/">一個人的信念</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/03/09/do-not-be-worthless/">Don't Be Worthless</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -609,7 +616,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (121)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (122)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (23)</a></li>

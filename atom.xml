@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-27T00:57:02+08:00</updated>
+  <updated>2022-04-28T02:25:12+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,12 +14,24 @@
 
   
   <entry>
-    <title type="html"><![CDATA[日记]]></title>
+    <title type="html"><![CDATA[日记2022-04-28，无用情绪]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/04/28/daily/"/>
+    <updated>2022-04-28T02:18:44+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/04/28/daily</id>
+    <content type="html"><![CDATA[<p>警惕：<br/>
+低级，劣质，无用，有害，无妄的，情绪满足或情绪伤害。<br/>
+用理性去克制，丢弃它。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[日记2022-04-27]]></title>
     <link href="https://qiuhaidong.github.io/blog/2022/04/27/daily/"/>
     <updated>2022-04-27T00:54:46+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/04/27/daily</id>
     <content type="html"><![CDATA[<p>每天记录一下：<br/>
-现在的任务：洗澡洗衣服，尽早睡觉</p>
+现在的任务：洗澡洗衣服，尽早睡觉<br/>
+tmd，刚说完就通宵了，淦</p>
 ]]></content>
   </entry>
   
@@ -709,15 +721,6 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 这几天父亲腰椎间盘之类的问题，股骨疼痛。<br/>
 我这些天也是晚上睡不着觉，生活作息混乱糟糕。<br/>
 好好生活，注意身体。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[一個人的信念]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/03/16/my-faith/"/>
-    <updated>2022-03-16T23:15:55+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/03/16/my-faith</id>
-    <content type="html"><![CDATA[<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF0HxUKl/TmEUgtj9EK6.7V8ajmQrEKwFpMviO8W1E*JH4erI.jmNNlwKNTQArGB05cxXhuyatr8F.HTHZbG0Hx*r6W4GgfHHIITo3WNVZW.b*hffKgE!/r" alt="一個人的信念" /></p>
 ]]></content>
   </entry>
   

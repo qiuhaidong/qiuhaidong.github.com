@@ -8,8 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="DIA,流程图绘制软件
-install: sudo apt-get install dia 关于输入中文: sudo vim /usr/bin/dia 把dia-normal --integrated "$@"注释掉，在前面加# 在下面添加: dia-normal "$@" ">
+  <meta name="description" content="前提:SQL Server 代理开机自启
+控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:自动
+Microsoft SQL Server Management Studio，192.168.0.250,1433，管理，维护计划，右键， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +68,39 @@ install: sudo apt-get install dia 关于输入中文: sudo vim /usr/bin/dia 把d
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/25/sql-server-autobackup/">SQL Server Autobackup</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-25T13:23:32+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:23 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>前提:<strong>SQL Server 代理</strong>开机自启<br/>
+控制面板，管理工具，服务，SQL Server 代理（MSSQLSERVER），右键，属性，启动类型:<strong>自动</strong><br/>
+Microsoft SQL Server Management Studio，<em>192.168.0.250,1433</em>，管理，维护计划，右键，维护计划向导……<br/>
+若要做多个备份，重复上个步骤<br/>
+Done.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -480,85 +514,6 @@ int main()
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/05/24/vim/">Vim</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-05-24T19:13:46+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>7:13 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>终端执行命令：</h3>
-
-<pre><code>vimtutor
-</code></pre>
-
-<p>查看《VIM教程》</p>
-
-<h3>基本操作：</h3>
-
-<p>光标移动：</p>
-
-<p>h：左<br/>
-j：下<br/>
-k：上<br/>
-l：右</p>
-
-<h3>正常模式==>输入模式：</h3>
-
-<p>i：左边输入<br/>
-I：行首输入（In the front）<br/>
-a：右边输入（after）<br/>
-A：行尾输入（After）<br/>
-o：下面输入一新行<br/>
-O：上面输入一新行<br/>
-s：删除字符再输入<br/>
-S：删除行再输入</p>
-
-<h3>其他模式==>正常模式：</h3>
-
-<p>Esc</p>
-
-<h3>正常模式==>命令模式：</h3>
-
-<p>:</p>
-
-<p>(shift加分号，英文输入法下)</p>
-
-<h3>正常模式==>可视模式：</h3>
-
-<p>v：可视模式<br/>
-V:可视块模式</p>
-
-<h3>常用命令：</h3>
-
-<p>:w<enter> 保存</p>
-
-<p>:q<enter> 退出</p>
-
-<p>:wq<enter> 保存后退出</p>
-
-<p>:q!<enter> 不保存，强制退出</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/16">&larr; Older</a>
@@ -574,6 +529,10 @@ V:可视块模式</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2022/04/29/daily/">日记2022-04-29-目标</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2022/04/28/daily/">日记2022-04-28，无用情绪</a>
@@ -651,10 +610,6 @@ V:可视块模式</p>
         <a href="/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer/">Kex_exchange_identification: Read: Connection Reset by Peer</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/03/19/live-well/">好好生活 | 自制力</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -662,7 +617,7 @@ V:可视块模式</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (123)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (124)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (23)</a></li>

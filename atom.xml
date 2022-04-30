@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-29T17:04:38+08:00</updated>
+  <updated>2022-04-30T14:34:09+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[日记2022-04-30]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/04/30/daily/"/>
+    <updated>2022-04-30T14:32:44+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/04/30/daily</id>
+    <content type="html"><![CDATA[<p>李健：接受缺点，接受不完美，因为你是人</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[日记2022-04-29，目标]]></title>
@@ -677,50 +686,6 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
     <updated>2022-03-21T04:16:04+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/03/21/limitless</id>
     <content type="html"><![CDATA[<p>人生不設限，不念過往，不畏開始，不懼未來。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Kex_exchange_identification: Read: Connection Reset by Peer]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer/"/>
-    <updated>2022-03-20T10:32:48+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer</id>
-    <content type="html"><![CDATA[<p>有時會出現標題的錯誤，ssh無法連接服務器，試過網上的幾種方法都不行，其實是國內網絡經常封鎖github，過段時間就好了。<br/>
-update:</p>
-
-<h4>1. 收到邮件：</h4>
-
-<p>GitGuardian检测到您的GitHub帐户中暴露了以下OpenSSH私钥。<br/>
-GitGuardian has detected the following OpenSSH Private Key exposed within your GitHub account.<br/>
-新建key即可。</p>
-
-<h4>2. 如果把SSH key上传到仓库，会提示安全验证：</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ERROR: We're doing an SSH key audit.
-</span><span class='line'>Reason: unverified automatically (private key found in a public repository)
-</span><span class='line'>Please visit https://github.com/settings/keys/********
-</span><span class='line'>to approve this key so we know it's safe.
-</span><span class='line'>
-</span><span class='line'>Fingerprint:
-</span><span class='line'>SHA256:***********************************************
-</span><span class='line'>
-</span><span class='line'>fatal: 无法读取远程仓库。
-</span><span class='line'>
-</span><span class='line'>请确认您有正确的访问权限并且仓库存在。</span></code></pre></td></tr></table></div></figure>
-
-
-
 ]]></content>
   </entry>
   

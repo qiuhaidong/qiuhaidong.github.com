@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-04-30T14:34:09+08:00</updated>
+  <updated>2022-05-01T01:40:25+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[日记2022-05-01，目标]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/05/01/daily/"/>
+    <updated>2022-05-01T01:37:02+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/05/01/daily</id>
+    <content type="html"><![CDATA[<p>1、按时作息：11点半睡觉，8点起床。<br/>
+2、合理饮食：戒糖戒可乐，定时定量吃饭。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[日记2022-04-30]]></title>
@@ -677,15 +687,6 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
 人生无常，真的是，你永远不知道明天和意外谁先到来。<br/>
 生死面前，都是小事。<br/>
 珍惜。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[不設限]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/03/21/limitless/"/>
-    <updated>2022-03-21T04:16:04+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/03/21/limitless</id>
-    <content type="html"><![CDATA[<p>人生不設限，不念過往，不畏開始，不懼未來。</p>
 ]]></content>
   </entry>
   

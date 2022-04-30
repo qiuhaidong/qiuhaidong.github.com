@@ -1,0 +1,11 @@
+---
+layout: post
+title: "日记2022-05-01，目标"
+date: 2022-05-01 01:37:02 +0800
+author: 丘海东 
+tags: 
+comments: true
+categories: personal
+---
+1、按时作息：11点半睡觉，8点起床。  
+2、合理饮食：戒糖戒可乐，定时定量吃饭。  

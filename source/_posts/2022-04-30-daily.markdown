@@ -1,0 +1,10 @@
+---
+layout: post
+title: "日记2022-04-30"
+date: 2022-04-30 14:32:44 +0800
+author: 丘海东 
+tags: 
+comments: true
+categories: personal
+---
+李健：接受缺点，接受不完美，因为你是人

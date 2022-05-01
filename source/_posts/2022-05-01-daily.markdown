@@ -3,7 +3,7 @@ layout: post
 title: "日记2022-05-01，目标"
 date: 2022-05-01 01:37:02 +0800
 author: 丘海东 
-tags: 
+tags: daily
 comments: true
 categories: personal
 ---

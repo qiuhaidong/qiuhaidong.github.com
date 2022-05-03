@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-05-03T17:30:13+08:00</updated>
+  <updated>2022-05-03T17:33:53+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,13 +14,21 @@
 
   
   <entry>
+    <title type="html"><![CDATA[小丑，why So Serious]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/05/03/joker/"/>
+    <updated>2022-05-03T17:32:29+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/05/03/joker</id>
+    <content type="html"><![CDATA[<p>爲什麼開始喜歡小丑，因爲做不了蝙蝠俠。<br/>
+<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqcW*oB.axXGMYzmKAC1wAhxK.PPKNk4*48hNdXT*PBVqlA31stR0czw0UAj9UOviJyQocUMicoLQnV7sFf8hkt4!/r" alt="why so serious" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Daily，2022-05-03，v2]]></title>
     <link href="https://qiuhaidong.github.io/blog/2022/05/03/daily-v2/"/>
     <updated>2022-05-03T16:52:39+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/05/03/daily-v2</id>
-    <content type="html"><![CDATA[<p>不是所有的問題都有答案，不是所有的答案都有對錯。<br/>
-爲什麼開始喜歡小丑，因爲做不了蝙蝠俠。<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqcW*oB.axXGMYzmKAC1wAhxK.PPKNk4*48hNdXT*PBVqlA31stR0czw0UAj9UOviJyQocUMicoLQnV7sFf8hkt4!/r" alt="why so serious" /></p>
+    <content type="html"><![CDATA[<p>不是所有的問題都有答案，不是所有的答案都有對錯。</p>
 ]]></content>
   </entry>
   
@@ -563,58 +571,6 @@ my step becomes lighter</p>
     <updated>2022-03-29T18:37:42+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/03/29/mo-fa-man-wu</id>
     <content type="html"><![CDATA[<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEM0khhjIcrT5.NR4En57TftokYLuvBNdoTs8pSE*a3dXDuchJGVkoKhhnZxDjZp3NSXj9e0JPn.fVxcuikrWnog!/r" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RVM用法]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/03/26/how-to-use-rvm/"/>
-    <updated>2022-03-26T02:37:09+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/03/26/how-to-use-rvm</id>
-    <content type="html"><![CDATA[<p><a href="https://cloud.tencent.com/developer/ask/34591">原文</a><br/>
-列出可用的ruby版本以安装类型：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm list known</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后从已知的列表中安装，输入：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后使用你已经安装的ruby版本：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
-
-
-<p>你可以使一个特定的ruby版本成为你的默认系统版本：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use VERSION_NUMBER --default</span></code></pre></td></tr></table></div></figure>
-
-
-<p>要删除gem版本，保持gemsets：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm uninstall VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
-
-
-<p>删除ruby等：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm remove VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
-
-
-<p>要了解你的ruby环境以及它们的安装位置/别名：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm info</span></code></pre></td></tr></table></div></figure>
-
-
-
 ]]></content>
   </entry>
   

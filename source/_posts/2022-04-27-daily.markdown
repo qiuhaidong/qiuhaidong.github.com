@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "日记2022-04-27"
+title: "日记2022-04-27，记录"
 date: 2022-04-27 00:54:46 +0800
 author: 丘海东 
 tags: daily

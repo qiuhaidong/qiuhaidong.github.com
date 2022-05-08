@@ -8,4 +8,4 @@ comments: true
 categories: personal
 ---
 什么时候拼，什么时候量力而行，度  
-刚柔并济
+进退，刚柔，坚持，放弃

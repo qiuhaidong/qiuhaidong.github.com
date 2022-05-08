@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-05-07T22:50:04+08:00</updated>
+  <updated>2022-05-08T16:44:53+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Daily，2022-05-08]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/05/08/daily/"/>
+    <updated>2022-05-08T16:42:52+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/05/08/daily</id>
+    <content type="html"><![CDATA[<p>什么时候拼，什么时候量力而行，度<br/>
+刚柔并济</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Daily，2022-05-07，强者之道]]></title>
@@ -524,17 +534,6 @@ greatness from small beginnings(英译)<br/>
 
 <p>确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的<br/>
 好了。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[行动 自信 感恩]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/04/01/action-confident-gratitude/"/>
-    <updated>2022-04-01T00:29:49+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/04/01/action-confident-gratitude</id>
-    <content type="html"><![CDATA[<p>如题<br/>
-比如打篮球，很多人对我是很好的，感恩，我不是个很差的人，自信<br/>
-行动</p>
 ]]></content>
   </entry>
   

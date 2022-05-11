@@ -2,6 +2,8 @@
 layout: post
 title: "C on linux"
 date: 2016-06-27 09:18:14 +0800
+author: 丘海东 
+tags: c
 comments: true
 categories: tech
 ---

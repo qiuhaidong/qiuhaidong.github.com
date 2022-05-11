@@ -2,9 +2,13 @@
 layout: post
 title: "c++ on linux"
 date: 2016-06-28 17:19:52 +0800
+author: 丘海东 
+tags: c++
 comments: true
 categories: tech
 ---
+`g++ --version`  
+
 编译：  
 
     g++ -o hello hello.cpp

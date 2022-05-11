@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: c | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/tags/c/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2022-05-11T15:48:26+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[C on linux]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/06/27/c-on-linux/"/>
+    <updated>2016-06-27T09:18:14+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/06/27/c-on-linux</id>
+    <content type="html"><![CDATA[<p>linux下用gcc，系统自带有，用<code>gcc --version</code>查看一下即可，若没有，安装编译环境：</p>
+
+<pre><code>sudo apt-get install build-essential
+</code></pre>
+
+<p>新建test.c文件：</p>
+
+<pre><code>sudo gedit /…/…/…/test.c
+</code></pre>
+
+<p>然后开始编程：</p>
+
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    printf("hello,world!\n");
+    return 0;
+}
+</code></pre>
+
+<p>保存后编译：</p>
+
+<pre><code>gcc -o test test.c
+</code></pre>
+
+<p>生产可执行文件test，运行：</p>
+
+<pre><code>./test
+</code></pre>
+
+<p>完成。</p>
+]]></content>
+  </entry>
+  
+</feed>

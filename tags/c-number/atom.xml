@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: C# | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/tags/c-number/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2022-05-11T15:48:26+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[C# on Linux]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2016/08/20/C%23-on-Linux/"/>
+    <updated>2016-08-20T14:18:00+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2016/08/20/C#-on-Linux</id>
+    <content type="html"><![CDATA[<p><a href="http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives">参考官方说明</a></p>
+
+<p>attention:有些commend不适合ubuntu，要区分</p>
+
+<p><a href="http://blog.csdn.net/caspiansea/article/details/50585025">参见另一篇blog</a></p>
+
+<p>install mono,(mono-complete and monodevelop):</p>
+
+<pre><code>sudo apt-get install mono-complete monodevelop
+</code></pre>
+
+<p>edit:</p>
+
+<pre><code>vim helloworld.cs
+</code></pre>
+
+<p>build:</p>
+
+<pre><code>mcs helloworld.cd
+</code></pre>
+
+<p>run:</p>
+
+<pre><code>./helloworld.exe
+</code></pre>
+
+<p>done.</p>
+]]></content>
+  </entry>
+  
+</feed>

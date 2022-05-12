@@ -2,7 +2,9 @@
 using namespace std;
 int main()
 {
+	// ¿ÉÄÜÒª·­Ç½
 	//http://www.dooccn.com/cpp/
+	//http://www.dooccn.com/cpp/#id/cb3d7a6c0b494630500501225b41e3fb
 	float length,width,number;
 	float boardcost,boardprice,sumboardprice;
 	float papercost,paperprice,sumpaperprice;

@@ -2,7 +2,9 @@
 using namespace std;
 int main()
 {
+	// 可能要翻墙
 	//http://www.dooccn.com/cpp/
+	//http://www.dooccn.com/cpp/#id/5edfeedb26a095bb3e774893e209a69e
 	float length,width,number,wholeweight;
     cout << "    重量计算 " << endl;
     

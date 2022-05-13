@@ -8,9 +8,8 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="博客根目录，文件index.html，找到Recent Posts这一大段内容，复制，打开_layouts/post.html，找到： 1
-2
-&lt;div class="right"&gt; &lt;div class="wrap"&gt; 复制到其后面。 因为只复制一段老是有错， &hellip;">
+  <meta name="description" content="原博： 问题描述 我们每次使用命令 1
+git clone git@gitlab.xxx.com:xxxxx.git 默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在daily/1.4.1分支上， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +67,188 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/24/git-clone-not-master-branch/">Git 如何 Clone 非 Master 分支的代码</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-24T04:08:51+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:08 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>问题描述</h2>
+
+<p>我们每次使用命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@gitlab.xxx.com:xxxxx.git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在<code>daily/1.4.1</code>分支上，我们希望拿到这个分支上的代码。</p>
+
+<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png" /></p>
+
+<h2>解决方法</h2>
+
+<p>直接使用命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -r #查看远程分支</span></code></pre></td></tr></table></div></figure>
+
+
+<p>或</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -a #查看所有分支</span></code></pre></td></tr></table></div></figure>
+
+
+<p>会显示</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>origin/HEAD -&gt; origin/master
+</span><span class='line'>origin/daily/1.2.2
+</span><span class='line'>origin/daily/1.3.0
+</span><span class='line'>origin/daily/1.4.1
+</span><span class='line'>origin/develop
+</span><span class='line'>origin/feature/daily-1.0.0
+</span><span class='line'>origin/master</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后直接</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git checkout origin/daily/1.4.1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>就好了。。。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/24/error-jekyll-paginate/">Error: Jekyll-paginate 分頁功能錯誤，依赖缺失</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-24T04:02:35+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:02 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>jekyll-paginate 依赖缺失</h2>
+
+<p>因为 jekyll 3 中默认安装已经没有这个分页组件了，官方把这个分页组件插件化了，因此要独立安装。详情见 <a href="https://jekyllrb.com/docs/pagination/">https://jekyllrb.com/docs/pagination/</a>。</p>
+
+<h3>错误呈现</h3>
+
+<p>在启动 jekyll 服务的时候出现以下错误：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>jekyll serve
+</span><span class='line'>Configuration file: c:/gitWorkSpace/blog-based-on-jekyll-3/_config.yml
+</span><span class='line'>  Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate' If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!
+</span><span class='line'>jekyll 3.1.2 | Error:  jekyll-paginate</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>解决方法</h3>
+
+<p>我们安装这个插件到本地即可。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install jekyll-paginate
+</span><span class='line'>Fetching: jekyll-paginate-1.1.0.gem (100%)
+</span><span class='line'>Successfully installed jekyll-paginate-1.1.0
+</span><span class='line'>Parsing documentation for jekyll-paginate-1.1.0
+</span><span class='line'>Installing ri documentation for jekyll-paginate-1.1.0
+</span><span class='line'>Done installing documentation for jekyll-paginate after 3 seconds
+</span><span class='line'>1 gem installed</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/24/what-really-matter/">什麼才是重要的</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-24T00:45:30+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:45 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>專注內容<br/>
+專注技術<br/>
+Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
+博文才重要</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -335,117 +516,6 @@ comments: true</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/15/done-tired/">Ok 好累</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-15T03:23:36+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:23 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>睡觉</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/15/model/">Post文件模板</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-15T03:18:34+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:18 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>layout: post<br/>
-title: <br/>
-date: <br/>
-tags: <br/>
-author: 丘海东<br/>
-comments: <br/>
-categories:</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/15/fucking-hard/">好艰难---把Gemfile和Gemfile.lock文件删除</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-15T02:48:34+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:48 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>怎么都不行<br/>
-用octopress3.0创建theme blog，可能因为</p>
-
-<h2>网络不行？</h2>
-
-<p>一直卡在那里，一动不动<br/>
-<code>bundle</code> 和 <code>bundle install</code> 也是一动不动<br/>
-这是没有成功的，后面会报错<br/>
-重复，直到ok</p>
-
-<h2>对了，我把Gemfile和Gemfile.lock文件删除，就没报错了</h2>
-
-<p>正常来说，rvm安装ruby就行了，如果还不行，再用<code>apt</code> ubuntu官方源安装一次</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install ruby</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/7">&larr; Older</a>
@@ -464,6 +534,18 @@ categories:</p>
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/from-the-internet/">网上看到的</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/one-hundred-years-of-solitude/">百年孤独</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/be-a-bad-man/">做一个反派</a>
       </li>
     
       <li class="post">
@@ -530,18 +612,6 @@ categories:</p>
         <a href="/blog/2022/04/28/daily/">Daily，2022-04-28，无用情绪</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/04/27/daily/">Daily，2022-04-27，记录</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/04/23/man/">一些好的 坏的</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">Ssh: Connect to Host github.com Port 22: Connection Timed Out</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -549,7 +619,7 @@ categories:</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (138)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (141)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (66)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (23)</a></li>
@@ -564,7 +634,9 @@ categories:</p>
 <li><a style="font-size: 120%" href="/tags/c/">c</a></li>
 <li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
-<li><a style="font-size: 153%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 155%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 120%" href="/tags/from/">from</a></li>
+<li><a style="font-size: 120%" href="/tags/internet/">internet</a></li>
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
@@ -573,6 +645,7 @@ categories:</p>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 120%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
+<li><a style="font-size: 120%" href="/tags/the/">the</a></li>
 <li><a style="font-size: 120%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
 

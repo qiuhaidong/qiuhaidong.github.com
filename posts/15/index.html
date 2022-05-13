@@ -8,9 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="原帖
-DG works：
-打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。 &hellip;">
+  <meta name="description" content="参见另一篇博文 sudo gedit /etc/default/grub 更改为：(斜黑体部分) GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" GRUB_CMDLINE_LINUX="***acpi_osi=Linux***" (东哥：13.04、16. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +66,116 @@ DG works：
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/19/screen-light/">屏幕亮度调节 Ubuntu13.04和16.04 Screen Light</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-19T11:53:44+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:53 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>参见另一篇博文</p>
+
+<pre><code>sudo gedit /etc/default/grub
+</code></pre>
+
+<p>更改为：(斜黑体部分)</p>
+
+<pre><code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"  
+GRUB_CMDLINE_LINUX="***acpi_osi=Linux***"  
+</code></pre>
+
+<p>(东哥：13.04、16.04按Fn有效调节)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>GRUB_CMDLINE_LINUX="acpi_osi= acpi_backlight=vendor"        (东哥有效12.04，20.04，22.04)</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>sudo update-grub
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/19/ruby-version/">Ruby Version</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-19T11:52:18+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:52 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-11-19<br/>
+ruby version:2.2.6</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/19/halfwidth-and-fullwidth-forms/">Halfwidth and Fullwidth Forms</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-19T02:13:01+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:13 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ctrl+A，格式,更改大小写<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/halfwidth%20and%20fullwidth%20forms/1.jpg" alt="格式" /><br/>
+ 全角or半角<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/halfwidth%20and%20fullwidth%20forms/2.jpg" alt="全角半角" /><br/>
+<a href="https://en.wikipedia.org/wiki/Halfwidth_and_fullwidth_forms">维基百科关于全角半角的介绍</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -405,103 +513,6 @@ excerpt_separator: &ldquo;</div>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/10/28/install-again/">Install Again</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-10-28T02:22:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:22 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>something new:<br/>
-install git:</p>
-
-<pre><code>sudo apt-get install git
-</code></pre>
-
-<p>don&rsquo;t install from ppa anymore.<br/>
-install rvm: run the command from official website,the latest version,maybe not the stable version.<br/>
-install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official website，the latest version,for exemple:2.3.1  the old version may got some problem when install the gem package.<br/>
-<code>rubygems bundle install</code>its address has change,the latest version is<a href="https://gems.ruby-china.org">Ruby China</a>，we could check it out from the origin official website.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/10/28/zai-lai-liu-pan-shui/">Come Liupanshui Again</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-10-28T02:10:25+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:10 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>世事难料。<br/>
-坚守本心。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/09/05/display-icon-error/">Icon Display Error</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-09-05T13:26:50+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:26 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>控制面板，显示，更改大小，应用，注销，再把大小改回来。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/16">&larr; Older</a>
@@ -520,6 +531,18 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/from-the-internet/">网上看到的</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/one-hundred-years-of-solitude/">百年孤独</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/be-a-bad-man/">做一个反派</a>
       </li>
     
       <li class="post">
@@ -586,18 +609,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
         <a href="/blog/2022/04/28/daily/">Daily，2022-04-28，无用情绪</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/04/27/daily/">Daily，2022-04-27，记录</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/04/23/man/">一些好的 坏的</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">Ssh: Connect to Host github.com Port 22: Connection Timed Out</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -605,7 +616,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (138)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (141)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (66)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (23)</a></li>
@@ -620,7 +631,9 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 <li><a style="font-size: 120%" href="/tags/c/">c</a></li>
 <li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
-<li><a style="font-size: 153%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 155%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 120%" href="/tags/from/">from</a></li>
+<li><a style="font-size: 120%" href="/tags/internet/">internet</a></li>
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
@@ -629,6 +642,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 120%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
+<li><a style="font-size: 120%" href="/tags/the/">the</a></li>
 <li><a style="font-size: 120%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
 

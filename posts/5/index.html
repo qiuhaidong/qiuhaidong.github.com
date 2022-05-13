@@ -8,7 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="如果正文太长，不希望在首页直接显示完整内容，可以在适当的位置加上一句&lt;!--more--&gt;，后面的内容就会被按钮Read on→所替代，点击阅读全文。 ">
+  <meta name="description" content="沒有人願意去扶持一個毫無價值的人，千萬別讓自己一文不值。 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,220 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/03/09/do-not-be-worthless/">Don't Be Worthless</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-03-09T00:28:51+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:28 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>沒有人願意去扶持一個毫無價值的人，千萬別讓自己一文不值。<br/>
+<img src="http://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEBV5rT1fUzPY1kDqenVtnUecpxHZp3rt.W.B0sTA58l*YZBJltakoO5A31uhvEwKsrtc2izqI4BI5SMec*e3buE!/r" alt="肖申克的救赎" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/03/02/no-good-thing-ever-dies/">有時間絕望，還不如吃點好吃的然後睡個覺</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-03-02T21:26:11+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2022</span></span> <span class='time'>9:26 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>日劇《非自然死亡》，石原里美的經典台詞：</h3>
+
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEPMAzCkpOgy5tCy3tTQ3OyKRNUeV6.9vL0xbD4ehX3kSfXse0GFc5y1t4paxnyymqnq24kw..dtLIAjvznsA7ts!/r" alt="1" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/27/back-to-top/">Back to Top返回頂部按鈕</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-27T18:52:33+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:52 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://www.jianshu.com/p/fe0e089a985c">教程1</a><br/>
+<a href="https://www.cnblogs.com/biglucky/p/4148867.html">教程2</a></p>
+
+<h3>实现返回按钮功能</h3>
+
+<p>首先创建<code>source/javascripts/top.js</code>，添加如下代码实现滑动返回顶部效果:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">goTop</span><span class="p">(</span><span class="nx">acceleration</span><span class="p">,</span> <span class="nx">time</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>        <span class="nx">acceleration</span> <span class="o">=</span> <span class="nx">acceleration</span> <span class="o">||</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">//加速度</span>
+</span><span class='line'>        <span class="nx">time</span> <span class="o">=</span> <span class="nx">time</span> <span class="o">||</span> <span class="mi">16</span><span class="p">;</span>  <span class="c1">//时间间隔 (毫秒)</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">x1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">y1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">x2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">y2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">x3</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">y3</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">{</span>
+</span><span class='line'>                <span class="nx">x1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">scrollLeft</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>                <span class="nx">y1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">scrollTop</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">{</span>
+</span><span class='line'>                <span class="nx">x2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">scrollLeft</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>                <span class="nx">y2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">scrollTop</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">x3</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">scrollX</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">y3</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">scrollY</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="c1">// 滚动条到页面顶部的水平距离</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">x1</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">x2</span><span class="p">,</span> <span class="nx">x3</span><span class="p">));</span>
+</span><span class='line'>        <span class="c1">// 滚动条到页面顶部的垂直距离</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">y1</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">y2</span><span class="p">,</span> <span class="nx">y3</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="c1">// 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">speed</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="nx">acceleration</span><span class="p">;</span>
+</span><span class='line'>        <span class="nb">window</span><span class="p">.</span><span class="nx">scrollTo</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">x</span> <span class="o">/</span> <span class="nx">speed</span><span class="p">),</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">y</span> <span class="o">/</span> <span class="nx">speed</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="c1">// 如果距离不为零, 继续调用迭代本函数</span>
+</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+</span><span class='line'>        <span class="p">{</span>
+</span><span class='line'>                <span class="kd">var</span> <span class="nx">invokeFunction</span> <span class="o">=</span> <span class="s2">&quot;goTop(&quot;</span> <span class="o">+</span> <span class="nx">acceleration</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="nx">time</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span><span class="p">;</span>
+</span><span class='line'>                <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">invokeFunction</span><span class="p">,</span> <span class="nx">time</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>自定义返回按钮格式</h3>
+
+<p>创建<code>source/_includes/custom/totop.html</code>，设置返回顶部按钮样式和位置<br/>
+其中的<code>width、height、right、bottom</code>为图片在网页中的位置，可根据图片大小自行设定，示例代码如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!--返回顶部开始--&gt;</span>
+</span><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;full&quot;</span> <span class="na">style=</span><span class="s">&quot;width:30px; height:30px; position:fixed; right:13px; bottom:13px; z-index:100; text-align:center; background-color:transparent; cursor:pointer;&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;goTop();return false;&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/top.png&quot;</span> <span class="na">border=</span><span class="s">0</span> <span class="na">alt=</span><span class="s">&quot;返回顶部&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
+</span><span class='line'><span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/javascripts/top.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class='line'><span class="c">&lt;!--返回顶部结束--&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>选择按钮图片</h3>
+
+<p>找到自己喜爱的返回按钮图片，命名为<code>top.png</code>后添加到<code>source/images</code>目录中（或修改<code>totop.html</code>中图片的路径），文件名和<code>totop.html</code>中的一致就可以了，可以自己命名。</p>
+
+<p>然后把<code>totop.html</code> 引入到文件中，考虑到进到具体每一篇blog里面也有这个功能，我们把这个文件在<code>foot.html</code>中引入，修改:<code>octopress/source/_includes/custom/footer.html</code>，添加一行：<br/>
+<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMHNMi9RBV8SPCiQjrpiIVqTO0oBBa1zGSTDwX1cxXY1I0xQDhEyJNc9d2jqFOe5QAet0C9GvAgWzpRjxvDQ7Sc!/r" alt="octopress/source/_includes/custom/footer.html" /></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>  {\% include custom/totop.html \%}  //记得去除两个\号
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>bug提醒：如果post文件中有上面这一行代码（没有\号），blog网站首页和这篇博文页，会有返回按钮图片错误</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -517,188 +731,6 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/24/git-clone-not-master-branch/">Git 如何 Clone 非 Master 分支的代码</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-24T04:08:51+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:08 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
-
-<h2>问题描述</h2>
-
-<p>我们每次使用命令</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@gitlab.xxx.com:xxxxx.git</span></code></pre></td></tr></table></div></figure>
-
-
-<p>默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在<code>daily/1.4.1</code>分支上，我们希望拿到这个分支上的代码。</p>
-
-<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png" /></p>
-
-<h2>解决方法</h2>
-
-<p>直接使用命令</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -r #查看远程分支</span></code></pre></td></tr></table></div></figure>
-
-
-<p>或</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -a #查看所有分支</span></code></pre></td></tr></table></div></figure>
-
-
-<p>会显示</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>origin/HEAD -&gt; origin/master
-</span><span class='line'>origin/daily/1.2.2
-</span><span class='line'>origin/daily/1.3.0
-</span><span class='line'>origin/daily/1.4.1
-</span><span class='line'>origin/develop
-</span><span class='line'>origin/feature/daily-1.0.0
-</span><span class='line'>origin/master</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后直接</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git checkout origin/daily/1.4.1</span></code></pre></td></tr></table></div></figure>
-
-
-<p>就好了。。。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/24/error-jekyll-paginate/">Error: Jekyll-paginate 分頁功能錯誤，依赖缺失</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-24T04:02:35+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:02 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
-
-<h2>jekyll-paginate 依赖缺失</h2>
-
-<p>因为 jekyll 3 中默认安装已经没有这个分页组件了，官方把这个分页组件插件化了，因此要独立安装。详情见 <a href="https://jekyllrb.com/docs/pagination/">https://jekyllrb.com/docs/pagination/</a>。</p>
-
-<h3>错误呈现</h3>
-
-<p>在启动 jekyll 服务的时候出现以下错误：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>jekyll serve
-</span><span class='line'>Configuration file: c:/gitWorkSpace/blog-based-on-jekyll-3/_config.yml
-</span><span class='line'>  Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate' If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!
-</span><span class='line'>jekyll 3.1.2 | Error:  jekyll-paginate</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>解决方法</h3>
-
-<p>我们安装这个插件到本地即可。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem install jekyll-paginate
-</span><span class='line'>Fetching: jekyll-paginate-1.1.0.gem (100%)
-</span><span class='line'>Successfully installed jekyll-paginate-1.1.0
-</span><span class='line'>Parsing documentation for jekyll-paginate-1.1.0
-</span><span class='line'>Installing ri documentation for jekyll-paginate-1.1.0
-</span><span class='line'>Done installing documentation for jekyll-paginate after 3 seconds
-</span><span class='line'>1 gem installed</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/24/what-really-matter/">什麼才是重要的</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-24T00:45:30+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:45 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>專注內容<br/>
-專注技術<br/>
-Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
-博文才重要</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/6">&larr; Older</a>
@@ -717,6 +749,18 @@ Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/from-the-internet/">网上看到的</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/one-hundred-years-of-solitude/">百年孤独</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/be-a-bad-man/">做一个反派</a>
       </li>
     
       <li class="post">
@@ -783,18 +827,6 @@ Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
         <a href="/blog/2022/04/28/daily/">Daily，2022-04-28，无用情绪</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/04/27/daily/">Daily，2022-04-27，记录</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/04/23/man/">一些好的 坏的</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">Ssh: Connect to Host github.com Port 22: Connection Timed Out</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -802,7 +834,7 @@ Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (138)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (141)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (66)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (23)</a></li>
@@ -817,7 +849,9 @@ Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
 <li><a style="font-size: 120%" href="/tags/c/">c</a></li>
 <li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
-<li><a style="font-size: 153%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 155%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 120%" href="/tags/from/">from</a></li>
+<li><a style="font-size: 120%" href="/tags/internet/">internet</a></li>
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
@@ -826,6 +860,7 @@ Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 120%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
+<li><a style="font-size: 120%" href="/tags/the/">the</a></li>
 <li><a style="font-size: 120%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
 

@@ -8,15 +8,11 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="想起阿甘。
-阿甘有点傻，一点点傻。
-他经历了战友布巴的离世，丹中尉的悲怨起伏，母亲的离世，以及贯穿他整个生命的珍妮的美好而又若即若离触不可及。
-阿甘不孤单。
-童年时母亲和珍妮陪他。当兵时布巴陪他。在海上捕虾时丹中尉陪他。
-阿甘只是孤独。
-没有人走进阿甘的心里。
-没有人想走进阿甘的心里。
-或者说： &hellip;">
+  <meta name="description" content="2016-01-09 goagent的github仓库已经全部删除，it&rsquo;s gone. 新网址
+压缩包下载地址
+简易教程 部署 申请 Google Appengine 并创建 appid。
+下载 goagent
+修改 local\proxy.ini 中的 [gae] 下的 appid &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -74,6 +70,293 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/06/goagent/">GoAgent</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-06T15:01:31+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-01-09  goagent的github仓库已经全部删除，it&rsquo;s gone.</p>
+
+<p><a href="https://github.com/goagent/goagent">新网址</a><br/>
+<a href="http://git.io/goa">压缩包下载地址</a><br/>
+<a href="https://github.com/goagent/goagent/blob/wiki/SimpleGuide.md">简易教程</a></p>
+
+<p><strong>部署</strong></p>
+
+<ol>
+<li>申请 Google Appengine 并创建 appid。</li>
+<li>下载 <a href="https://github.com/goagent/goagent">goagent</a></li>
+<li>修改 local\proxy.ini 中的 [gae] 下的 appid = 你的appid(多appid请用|隔开)</li>
+<li>运行 uploader.bat 或 uploader.py 开始上传, 成功后即可使用了。</li>
+</ol>
+
+
+<p><strong>使用</strong></p>
+
+<ul>
+<li>Windows 用户推荐使用 goagent.exe 托盘图标设置 IE 代理(对其它浏览器也有效)。</li>
+<li>Chrome/Opera 请安装 SwitchyOmega 插件(下载到本地然后拖放文件到扩展设置)，导入 SwitchyOptions.bak</li>
+<li>Firefox 请安装 FoxyProxy ，Firefox需要导入证书，方法请见 FAQ</li>
+<li>出现连接不上的情况可以尝试使用 gscan 或 GoGo Tester 测速。</li>
+</ul>
+
+
+<p><a href="https://github.com/goagent/goagent/blob/wiki/InstallGuide.md">图文教程</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/05/tcpserver-error-address-already-in-use-bind-2/">TCPServer Error: Address Already in Use - Bind(2)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-05T13:29:29+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:29 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>停止<code>rake preview</code> 任务，用<code>ctrl+c</code>，别用<code>ctrl+z</code>，可以避免这个问题</h4>
+
+<p>在执行命令</p>
+
+<pre><code>rake preview
+</code></pre>
+
+<p>时，输出：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake preview  
+Starting to watch source with Jekyll and Compass. Starting Rack on port 4000  
+&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.  
+Configuration file: /home/dong/octopress/_config.yml  
+[2015-03-05 13:22:19] INFO  WEBrick 1.3.1  
+[2015-03-05 13:22:19] INFO  ruby 1.9.3 (2014-11-13) [i686-linux]  
+[2015-03-05 13:22:19] WARN  TCPServer Error: Address already in use - bind(2)  
+/home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `initialize': Address already in use - bind(2) (Errno::EADDRINUSE)
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `new'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `block in create_listeners'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:82:in `each'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:82:in `create_listeners'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:82:in `listen'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:70:in `initialize'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:45:in `initialize'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/handler/webrick.rb:32:in `new'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/handler/webrick.rb:32:in `run'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/server.rb:286:in `start'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/server.rb:147:in `start'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/bin/rackup:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/rackup:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/rackup:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+        Source: source
+   Destination: public
+      Generating... 
+                done.
+    write public/stylesheets/screen.css
+ Auto-regeneration: enabled for 'source'
+</code></pre>
+
+<p>解决方法：<br/>
+执行：</p>
+
+<pre><code>sudo netstat -tulpn |grep 4000
+</code></pre>
+
+<p>如果提示：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo: netstat：找不到命令</span></code></pre></td></tr></table></div></figure>
+
+
+<p>运行：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>netstat -tulpn |grep 4000</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dong@Ubuntu:~/octopress$ netstat -tulpn |grep 4000
+</span><span class='line'>Command 'netstat' not found, but can be installed with:
+</span><span class='line'>sudo apt install net-tools
+</span><span class='line'>dong@Ubuntu:~/octopress$ sudo apt install net-tools</span></code></pre></td></tr></table></div></figure>
+
+
+<p>再运行：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo netstat -tulpn |grep 4000</span></code></pre></td></tr></table></div></figure>
+
+
+<p>得到：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ sudo netstat -tulpn | grep 4000
+[sudo] password for dong: 
+tcp        0      0 127.0.0.1:4000          0.0.0.0:*               LISTEN      2889/rackup  
+</code></pre>
+
+<p>执行：</p>
+
+<pre><code>kill -9 2889
+#更改2889处对应的数字，前面的-9好像不变
+</code></pre>
+
+<p>得到：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ kill -9 2889
+dong@Ubuntu:~/octopress$
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/05/could-not-find-a-javascript-runtime/">Could Not Find a JavaScript Runtime</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-05T13:10:34+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:10 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>以下是两条命令的输出结果：<br/>
+第一条：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+## Generating Site with Jekyll
+    write source/stylesheets/screen.css
+/home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:5:in `&lt;module:ExecJS&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `block in gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `each'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll.rb:166:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+</code></pre>
+
+<p>第二条：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake preview
+Starting to watch source with Jekyll and Compass. Starting Rack on port 4000
+/home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs/runtimes.rb:45:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:5:in `&lt;module:ExecJS&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/execjs-2.3.0/lib/execjs.rb:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee_script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/coffee-script-2.3.0/lib/coffee-script.rb:1:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-coffeescript-1.0.1/lib/jekyll-coffeescript.rb:2:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:46:in `block in gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `each'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll/deprecator.rb:44:in `gracefully_require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/lib/jekyll.rb:166:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `require'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/jekyll-2.5.3/bin/jekyll:6:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
+[2015-03-05 12:32:30] INFO  WEBrick 1.3.1
+[2015-03-05 12:32:30] INFO  ruby 1.9.3 (2014-11-13) [i686-linux]
+[2015-03-05 12:32:30] INFO  WEBrick::HTTPServer#start: pid=2889 port=4000
+    write public/stylesheets/screen.css
+127.0.0.1 - - [05/Mar/2015:12:32:49 +0800] "GET / HTTP/1.1" 404 - 0.0610
+127.0.0.1 - - [05/Mar/2015:12:32:50 +0800] "GET /favicon.ico HTTP/1.1" 404 - 0.0015
+127.0.0.1 - - [05/Mar/2015:12:32:53 +0800] "GET / HTTP/1.1" 404 - 0.0013
+127.0.0.1 - - [05/Mar/2015:12:37:50 +0800] "GET / HTTP/1.1" 404 - 0.0007
+127.0.0.1 - - [05/Mar/2015:12:37:51 +0800] "GET / HTTP/1.1" 404 - 0.0007
+^Z
+[1]+  已停止               rake preview
+</code></pre>
+
+<p>解决方法：<br/>
+执行命令：</p>
+
+<pre><code>gem install execjs
+gem install therubyracer
+</code></pre>
+
+<p>may fail,<a href="http://stackoverflow.com/questions/20888318/error-install-rubyracer-with-error-invalid-gem-package-is-corrupt">check this</a> ,<a href="https://qiuhaidong.github.io/blog/2016/11/10/failed-when-gem-install-therubyracer/">or</a></p>
+
+<pre><code>sudo apt-get install nodejs
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -402,148 +685,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/21/tobaowen/">致宝文</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-09-21T19:50:53+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>7:50 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>严正声明：事关宝文个人隐私，未经宝文允许，不得传出宿舍外！</h4>
-
-<p>昨天，秋风冷起。</p>
-
-<p>昨天，得知宝文又谈恋爱。</p>
-
-<p>都是昨天，万事万物皆有关联，这说明：宝文的恋爱和秋风一样让人感到冰冷。</p>
-
-<p>你想，全宿舍最猥琐的宝文居然谈恋爱了，而且是又谈恋爱了，而帅得血了呼啦潮得犀了马哈的东哥，却只配做个好人，我呸！</p>
-
-<p>然后我的反应是：难道这几天又有天文奇观天狗食月？</p>
-
-<p>插叙下：宝文上个女朋友，表白那天，下午，宝文和我去轮滑，到了鼎湖山，再去九龙湖。回来后，天黑了，我们在校门口吃了5块钱炒粉，宝文还打包多一份回宿舍，然后他没有冲凉，就约小宇出来表白，然后那天还遇上N年难得一遇的天狗食月。</p>
-
-<p>说到这我得简略小结一下：又累、又饿、又满身臭汗没冲凉、又月食，表白……</p>
-
-<p>么蛋，别说女生拒绝你，是我我也拒绝你啦！</p>
-
-<p>果然失败了。哈哈哈。</p>
-
-<p>过了段时间，我记得是寒假，中午，宝文发信息给我，说他成功了，小宇答应了。</p>
-
-<p>擦，女人真的是个奇怪的物种。</p>
-
-<p>再后来，我看到小宇，挺好的一个女生，就是眼神不好。</p>
-
-<p>我们曾无数次在宿舍卧谈会嘲笑宝文月食之夜表白的糗事，有时候我会想：这样赤裸裸地嘲笑自己的舍友会不会不好？宝文会不会想不开做自由落体运动？然后我想明白了，在情在理，我们嘲笑宝文，都是好的。</p>
-
-<p>理：宝文这么猥琐，如果被人笑笑就受不了，早就瓜老衬了。</p>
-
-<p>情：宝文这么猥琐，就应该被人嘲笑。</p>
-
-<p>毕业不久，他们分手了，感情上我也不好接受，挺好的女生，宝文可惜了，而理智告诉我，没被宝文糟蹋，也是好事。</p>
-
-<p>所以现在听到宝文又谈恋爱的消息，简直是晴天霹雳万里无云，唉……现在的许多小女生，就是喜欢猥琐屌丝、美女配野兽，啊不，禽兽！真希望下次聚会，约他们出来，谈谈小宇。</p>
-
-<p>对于宝文这个猥琐男，我只能说：希望宝文早日踏入婚姻的殿堂爱情的坟墓，然后买到穿孔的避孕套，生几个孩子向他讨债！</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/16/dgs-classroom/">东哥学堂1</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-09-16T16:08:10+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:08 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>新人入职，别太出风头，不然容易被排挤。</p>
-
-<p>当然也要适当表现自己的能力给老板看到。</p>
-
-<p>两者之间的度要把握好。</p>
-
-<p>小时候在学校在家里接受的很多教育都是错的，比如说：知错能改就是好孩子。社会上，错了，要负责任！</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/26/install-chrome/">Install Chrome</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-04-26T18:09:48+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>6:09 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在tweak里安装，chromium偶尔有问题，还是用 chrome stable好</p>
-
-<p>2015.3.6</p>
-
-<pre><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
-sudo dpkg -i google-chrome-stable_current_i386.deb
-</code></pre>
-
-<p>如果提示缺失依赖包，执行：</p>
-
-<pre><code>sudo apt-get install -f
-</code></pre>
-
-<p>done.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/23">&larr; Older</a>
@@ -562,6 +703,18 @@ sudo dpkg -i google-chrome-stable_current_i386.deb
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/from-the-internet/">网上看到的</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/one-hundred-years-of-solitude/">百年孤独</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/be-a-bad-man/">做一个反派</a>
       </li>
     
       <li class="post">
@@ -628,18 +781,6 @@ sudo dpkg -i google-chrome-stable_current_i386.deb
         <a href="/blog/2022/04/28/daily/">Daily，2022-04-28，无用情绪</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/04/27/daily/">Daily，2022-04-27，记录</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/04/23/man/">一些好的 坏的</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">Ssh: Connect to Host github.com Port 22: Connection Timed Out</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -647,7 +788,7 @@ sudo dpkg -i google-chrome-stable_current_i386.deb
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (138)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (141)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (66)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (23)</a></li>
@@ -662,7 +803,9 @@ sudo dpkg -i google-chrome-stable_current_i386.deb
 <li><a style="font-size: 120%" href="/tags/c/">c</a></li>
 <li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
-<li><a style="font-size: 153%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 155%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 120%" href="/tags/from/">from</a></li>
+<li><a style="font-size: 120%" href="/tags/internet/">internet</a></li>
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
@@ -671,6 +814,7 @@ sudo dpkg -i google-chrome-stable_current_i386.deb
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 120%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
+<li><a style="font-size: 120%" href="/tags/the/">the</a></li>
 <li><a style="font-size: 120%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-05-12T23:45:55+08:00</updated>
+  <updated>2022-05-13T16:01:38+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,32 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[煮饭禁忌]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/05/13/cook/"/>
+    <updated>2022-05-13T15:49:34+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/05/13/cook</id>
+    <content type="html"><![CDATA[<p>以下食物<strong>不要直接炒</strong><br/>
+鲜竹笋、菠菜、苋菜、苦瓜，焯水5-10秒，去除草酸<br/>
+四季豆、扁豆、长豆角，焯水5分钟，去除皂素<br/>
+西兰花，菜花，焯水1-2分钟，去除农药残留和小虫子<br/>
+香椿，焯水1分钟左右，去除亚硝酸盐</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Daily，2022-05-13，过分自省，周全，冒险]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/05/13/daily/"/>
+    <updated>2022-05-13T15:42:47+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/05/13/daily</id>
+    <content type="html"><![CDATA[<p>一个人不该过分自省，这会使他变得软弱。<br/>
+理智的做法，只有在做很小的决定时才有效。<br/>
+至于改变人生的事情，你必须冒险。<br/>
+意义非凡的事情，总是碰巧发生的。<br/>
+只有不重要的事，才有周全的计划。</p>
 ]]></content>
   </entry>
   
@@ -321,25 +347,6 @@ greatness from small beginnings(英译)<br/>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>ssh -T git@github.com</span></code></pre></td></tr></table></div></figure>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[成年人]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/04/22/grow-up/"/>
-    <updated>2022-04-22T01:07:13+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/04/22/grow-up</id>
-    <content type="html"><![CDATA[<p>拆穿一个人多没意思，年纪大了就喜欢看别人演戏，精彩的地方还可以鼓鼓掌<br/>
-不拆穿但会远离，不动声色地淘汰你，成年人的世界只做选择，从不教育，你有你的立场，我有我的底线，你出局了，在悄无声息之中</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[人无远虑，必有近忧]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/04/17/bigger-picture/"/>
-    <updated>2022-04-17T15:29:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/04/17/bigger-picture</id>
-    <content type="html"><![CDATA[<p>别纠结那些琐事</p>
 ]]></content>
   </entry>
   

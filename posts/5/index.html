@@ -8,12 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="原博 清理没用的服务 以下修改均修改_config.yml,以下可以根据自己的需要进行去除。 去除Disqus评论
-打开文件找到Disqus Comments，按照下面在每一行前面加#注释掉即可 1
-2
-3
-# Disqus Comments
-#disqus_short_name: # &hellip;">
+  <meta name="description" content="如果正文太长，不希望在首页直接显示完整内容，可以在适当的位置加上一句&lt;!--more--&gt;，后面的内容就会被按钮Read on→所替代，点击阅读全文。 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +66,186 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/27/read-on/">Read on 阅读全文</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-27T16:45:06+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:45 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>如果正文太长，不希望在首页直接显示完整内容，可以在适当的位置加上一句<code>&lt;!--more--&gt;</code>，后面的内容就会被按钮<code>Read on→</code>所替代，点击阅读全文。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2022/02/27/read-on/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/27/add-tags/">添加tags，導航欄，側邊欄</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-27T16:34:34+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:34 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/">参考1</a></p>
+
+<h3>下载</h3>
+
+<p>首先到 <a href="https://github.com/robbyedwards/octopress-tag-pages">https://github.com/robbyedwards/octopress-tag-pages</a> 和 <a href="https://github.com/robbyedwards/octopress-tag-cloud">https://github.com/robbyedwards/octopress-tag-cloud</a> 下载这两个项目的代码。</p>
+
+<h3>octopress-tag-pages</h3>
+
+<p>把里面的文件复制到相应位置，之前已有的文件，看代码，把需要的代码加上去，<code>.md</code>文件先不用管</p>
+
+<h3>octopress-tag-cloud</h3>
+
+<p><strong>1 .</strong> 将 <code>octopress-tag-cloud\plugins</code>  路径里面的 <code>tag_cloud.rb</code>  文件复制到 <code>octopress\plugins\</code>  文件夹里面。</p>
+
+<p><strong>2 .</strong> 将下面的代码复制到 <code>octopress\source\_includes\custom\asides\tags.html</code>。（这个文件需要自己新建。）
+<strong>注意：</strong> 去掉 <code>%</code> 前面的反斜杠<code>\</code>。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;section&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;h1&gt;</span>Tags<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;tag-cloud&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    {\% tag_cloud font-size: 120-160%, limit: 20 \%}
+</span><span class='line'>  <span class="nt">&lt;/ul&gt;</span>
+</span><span class='line'><span class="nt">&lt;/section&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>解释：</p>
+
+<p><code>tag_cloud</code> 的参数中， <code>font-size</code> 指定 <code>tag</code> 的大小范围；<code>limit</code> 限定 <code>20</code> 个 <code>tag</code> 。</p>
+
+<p><strong>3 .</strong> 在 <code>octopress\_config.yml</code> 中的 <code>default_asides</code> 中添加 <code>custom/asides/tags.html</code>，注意相应的位置。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>default_asides: [custom/asides/tags.html, .....]
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>博文写标签：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>tags: [tag1, tag2, tag3]
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> <code>rake generate</code> 出现问题：</p>
+
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEBdI0C.SIjWT7xp6kxk44HtNtPC263DeEkNHJxhmSxZADk0hrbMx8wpKHzK5e5i3chf0lcEBpbc6HvuMur2Yj2M!/r" alt="Alt text" /></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>  Liquid Exception: comparison of Array with Array failed in _layouts/page.html
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>解决</h3>
+
+<p><code>octopress\plugins\tag_cloud.rb</code> 第74行:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">if</span> <span class="vi">@limit</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="vi">@sort</span> <span class="o">!=</span> <span class="s1">&#39;rand&#39;</span>
+</span><span class='line'>    <span class="c1"># sort the tag pairs by frequency in descending order</span>
+</span><span class='line'>    <span class="n">weighted</span><span class="o">.</span><span class="n">sort!</span> <span class="p">{</span> <span class="o">|</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">|</span> <span class="n">b</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">&lt;=&gt;</span> <span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="p">}</span>
+</span><span class='line'>    <span class="c1"># then slice off the top @limit tag pairs</span>
+</span><span class='line'>    <span class="n">weighted</span> <span class="o">=</span> <span class="n">weighted</span><span class="o">[</span><span class="mi">0</span><span class="p">,</span><span class="vi">@limit</span><span class="o">]</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>weighted = weighted[0,@limit]</code> 应该是取指定数目的标签。如果标签数量少于 <code>@limit</code> ，会报错。</p>
+
+<p>修改第74行为:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>  <span class="k">if</span> <span class="vi">@limit</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="vi">@sort</span> <span class="o">!=</span> <span class="s1">&#39;rand&#39;</span> <span class="ow">and</span> <span class="vi">@limit</span> <span class="o">&lt;</span> <span class="n">weighted</span><span class="o">.</span><span class="n">length</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>修改第95行为:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="k">if</span> <span class="vi">@limit</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="vi">@limit</span> <span class="o">&lt;</span> <span class="n">weighted</span><span class="o">.</span><span class="n">length</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>rake generate</code> ，不再出现错误</p>
+
+<p>出现另一警告：</p>
+
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEEVv9L5qdjCrWDNsdaae1gecrl4Dk5DfGovwzPBz4NGxy2YEcsjFTGZk9HPnZ4pdOW3MLz5JmXZtaeKeBaKa9YY!/r" alt="Alt text" /></p>
+
+<p><code>rake preview</code> ，标签云成功添加:</p>
+
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMkifW2gJW9D*DOdH8mhfQXdNtXOdqE9gQNJ5cLGRw3mEOzZJ.eR*6x07lmQqrmSHEFlbcBrFrU*4FcTQePqHV0!/r" alt="Alt text" /></p>
+
+<h3>解决 <code>Build Warning: Layout 'nil' requested in tags/标签名/atom.xml does not exist.</code> 警告问题</h3>
+
+<p>将 <code>octopress\source\_includes\custom\tag_feed.xml</code> 文件里面 <code>nil</code> 改为 <code>null</code> ：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">---</span>
+</span><span class='line'><span class="ss">layout</span><span class="p">:</span> <span class="n">null</span>
+</span><span class='line'><span class="o">---</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>搞定</h2>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -524,87 +699,6 @@ Octopress2.0、3.0、jekyll官方、其他主題，都不重要<br/>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/21/post-html-add-sidebar-about-recent-posts/">博文页增加Recent Posts等侧边栏</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-21T21:43:06+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2022</span></span> <span class='time'>9:43 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>博客根目录，文件<code>index.html</code>，找到<code>Recent Posts</code>这一大段内容，复制，打开<code>_layouts/post.html</code>，找到：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;div class="right"&gt;
-</span><span class='line'>    &lt;div class="wrap"&gt;</span></code></pre></td></tr></table></div></figure>
-
-
-<p>复制到其后面。</p>
-
-<p>因为只复制一段老是有错，现在我是把<code>index.html</code>的<code>&lt;div class="right"&gt;</code>右边栏一直到最后的内容，代替了<code>_layouts/post.html</code>右边栏一直到最后的内容。</p>
-
-<h1>🤪😀</h1>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/21/template-of-new-post/">新建post文件的“头文件”</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-21T04:39:45+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2022</span></span> <span class='time'>4:39 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>在根目录新建一文件夹<code>_templates</code>，文件夹里建一个文件<code>post</code>，无后缀，内容是：</p>
-
-<h2><strong><em>注意，格式问题，显示有问题，参见原文件</em></strong>  </h2>
-
-<p>layout: <br/>
-title: &ldquo;&rdquo;<br/>
-date: <br/>
-author:<br/>
-tags: <br/>
-comments: true</p>
-
-<h2>categories:   </h2>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/6">&larr; Older</a>
@@ -623,6 +717,14 @@ comments: true</p>
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/cook/">煮饭禁忌</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/daily/">Daily，2022-05-13，过分自省，周全，冒险</a>
       </li>
     
       <li class="post">
@@ -693,14 +795,6 @@ comments: true</p>
         <a href="/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">Ssh: Connect to Host github.com Port 22: Connection Timed Out</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/04/22/grow-up/">成年人</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/04/17/bigger-picture/">人无远虑，必有近忧</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -708,7 +802,7 @@ comments: true</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (136)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (138)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (66)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (23)</a></li>
@@ -722,7 +816,8 @@ comments: true</p>
 <li><a style="font-size: 120%" href="/tags/lts/">LTS</a></li>
 <li><a style="font-size: 120%" href="/tags/c/">c</a></li>
 <li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
-<li><a style="font-size: 152%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
+<li><a style="font-size: 153%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>

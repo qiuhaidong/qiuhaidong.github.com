@@ -7,36 +7,21 @@ tags: lightdm
 comments: true
 categories: tech
 ---
+[ubuntu中lightdm以及不能看到界面的一些解决方案](https://www.cnblogs.com/SimbaBao/p/5791458.html)  
+
+在解决了我的ubuntu界面密码登录无限循环的问题后，终于可以用google深入的了解一下了，从之前的了解得知，ubuntu在X版本后使用了lightDM一个全新的linux桌面显示管理器，在wiki中对LightDM的描述中，LightDM配置在以下文件夹中：  
+（1）`/usr/share/lightdm/lightdm.conf.d/*.conf`  
+（此为系统提供的配置文件，用户不可编辑）  
+（2）`/etc/lightdm/lightdm.conf.d/*.conf`  
+（3）`/etc/lightdm/lightdm.conf`  
+（2、3这两个配置文件，系统管理员可以覆写）  
+在此之后看到了一个关于解决不能看见界面的办法：  
+（1）使用`Ctrl+alt+F1`，进入文本终端  
+（2）`sudo stop lightdm` ，停止lightdm界面  
+（3）`sudo start lightdm` ，开始lightdm界面  
+（4）`sudo start gdm` ，登录gdm管理器  
+（5）`sudo dpkg-reconfigure lightdm` ，设置管理器的系统默认值  
+注：本文部分资料参阅https://wiki.ubuntu.com/LightDM  
+
+2016.8.20  
 转载于:https://www.cnblogs.com/SimbaBao/p/5791458.html  
-
-在解决了我的ubuntu界面密码登录无限循环的问题后，终于可以用google深入的了解一下了，从之前的了解得知，ubuntu在X版本后使用了lightDM一个全新的linux桌面显示管理器，在wiki中对LightDM的描述中，LightDM配置在以下文件夹中：
-
-（1）/usr/share/lightdm/lightdm.conf.d/*.conf（此为系统提供的配置文件，用户不可编辑）
-
-（2）/etc/lightdm/lightdm.conf.d/*.conf
-
-（3）/etc/lightdm/lightdm.conf
-
-（2、3这两个配置文件，系统管理员可以覆写）
-
-在此之后看到了一个关于解决不能看见界面的办法：
-
-（1）使用Ctrl+alt+F1，进入文本终端
-
-（2）sudo stop lightdm ，停止lightdm界面
-
-（3）sudo start lightdm ，开始lightdm界面
-
-（4）sudo start gdm ，登录gdm管理器
-
-（5）sudo dpkg-reconfigure lightdm ，设置管理器的系统默认值
-
-注：本文部分资料参阅https://wiki.ubuntu.com/LightDM
-
-由于本人菜鸟，能力有限，文中错误之处，敬请大神指出、、、
-
-2016.8.20
-
- 
-
-转载于:https://www.cnblogs.com/SimbaBao/p/5791458.html

@@ -3,9 +3,9 @@ layout: post
 title: "lightdm  ubuntu 桌面显示管理器"
 date: 2022-05-20 14:17:18 +0800
 author: 丘海东 
-tags: tech
+tags: lightdm
 comments: true
-categories: personal
+categories: tech
 ---
 转载于:https://www.cnblogs.com/SimbaBao/p/5791458.html  
 

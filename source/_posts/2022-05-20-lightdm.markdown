@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "lightdm"
-date: 2022-05-19 00:58:14 +0800
+title: "lightdm  ubuntu 桌面显示管理器"
+date: 2022-05-20 14:17:18 +0800
 author: 丘海东 
-tags: daily
+tags: tech
 comments: true
 categories: personal
 ---

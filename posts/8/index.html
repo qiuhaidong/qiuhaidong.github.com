@@ -8,7 +8,10 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="新博客 旧博客 折腾了好几天，终于迁移好了 这是主题作者的Blog 这是他的Github 和 仓库
+  <meta name="description" content="1
+rvm use 2.7.0 _config.yml
+gemfile
+gemfile.lock 一些问题看手机图片,在空间
 ">
   
 
@@ -67,6 +70,43 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/13/jekyll-theme-config/">Jekyll Theme Octopress 博客的具体配置</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-13T00:58:31+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:58 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 2.7.0  </span></code></pre></td></tr></table></div></figure>
+
+
+<p>_config.yml<br/>
+gemfile<br/>
+gemfile.lock</p>
+
+<p>一些问题看手机图片,在空间</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -966,66 +1006,6 @@ Please make sure you have the correct access rights and the repository exists.
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-07T06:34:42+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:34 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>preview.sh代码</p>
-
-<pre><code>#!/bin/sh
-cd /home/dong/haydnyau
-jekyll build #生成
-jekyll serve
-</code></pre>
-
-<hr />
-
-<p>deploy.sh代码</p>
-
-<pre><code>#!/bin/sh
-cd /home/dong/haydnyau
-jekyll build
-octopress deploy
-</code></pre>
-
-<hr />
-
-<p>（不行，这个会造成有些blog页面头尾显示不全）发布，并上传/_posts/源文件，deploy.sh 代码</p>
-
-<pre><code>#!/bin/sh
-cd /home/dong/haydnyau
-jekyll build
-mv _posts/ _site/
-octopress deploy
-mv _site/_posts/ .
-</code></pre>
-
-<p>注意这个点 &ldquo;.&rdquo;
-<code>.</code> 或者 <code>./</code> 表示当前目录</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/9">&larr; Older</a>
@@ -1044,6 +1024,10 @@ mv _site/_posts/ .
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/20/lightdm/">Lightdm Ubuntu 桌面显示管理器</a>
       </li>
     
       <li class="post">
@@ -1118,10 +1102,6 @@ mv _site/_posts/ .
         <a href="/blog/2022/05/03/daily-v2/">Daily，2022-05-03，問題-答案-對錯</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/05/03/daily/">Daily，2022-05-03，卸载</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -1131,7 +1111,7 @@ mv _site/_posts/ .
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
 <li class='category'><a href='/blog/categories/personal/'>personal (146)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
-<li class='category'><a href='/blog/categories/tech/'>tech (66)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (67)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (23)</a></li>
 
   </ul>
@@ -1145,6 +1125,7 @@ mv _site/_posts/ .
 <li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
 <li><a style="font-size: 159%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>

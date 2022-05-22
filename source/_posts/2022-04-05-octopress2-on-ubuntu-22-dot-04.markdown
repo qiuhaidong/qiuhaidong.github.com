@@ -8,6 +8,7 @@ comments: true
 categories: tech-octopress
 ---
 以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。  
+依赖：python2，ruby2.6.9  
 ### Octopress 2.0
 ```
 git --version

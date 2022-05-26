@@ -3,7 +3,7 @@ layout: post
 title: "ssh: connect to host github.com port 22: Connection timed out"
 date: 2022-04-23 01:55:21 +0800
 author: 丘海东 
-tags: 
+tags: ssh
 comments: true
 categories: tech-octopress
 ---

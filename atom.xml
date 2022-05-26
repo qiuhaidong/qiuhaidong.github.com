@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-05-26T14:12:04+08:00</updated>
+  <updated>2022-05-26T14:39:55+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,25 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ssh: Connect to Host ssh.github.com Port 443: Connection Refused]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/"/>
+    <updated>2022-05-26T14:21:22+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused</id>
+    <content type="html"><![CDATA[<p>出现标题问题，打开：<a href="https://www.ipaddress.com/">https://www.ipaddress.com/</a> ，输入：ssh.github.com，得到IP地址：140.82.113.36<br/>
+修改本地hosts：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd /etc
+</span><span class='line'>sudo gedit hosts</span></code></pre></td></tr></table></div></figure>
+
+
+<p>添加：<br/>
+140.82.113.36          ssh.github.com</p>
 ]]></content>
   </entry>
   
@@ -295,19 +314,6 @@ Because the people who are crazy enough to think that they can change the world,
     <updated>2022-05-11T02:02:44+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/05/11/daily</id>
     <content type="html"><![CDATA[<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF14kYiO/bqQfVz5yrrGYSXMvKr.cqeN91hRjdJcbqTOP3EZ47z46dHpZ5lDujH8WIha..LYAuplBgNFAJXQckAtHRqOL9Iyvlfg7OoyL9YR4MspZz*0!/r" alt="石原里美" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Daily，2022-05-08，读书干净]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/05/08/daily/"/>
-    <updated>2022-05-08T20:49:24+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/05/08/daily</id>
-    <content type="html"><![CDATA[<p>读书不是为了记住，而是为了让人干净。</p>
-
-<p>一本书可能读了就忘，就像竹篮打水，但你一直读下去，竹篮就一次次被放进水里，时间长了，竹篮就变得干净。看似空空，内在的快乐不足为外人道也。</p>
-
-<p>—— 范雨素 ​​​​</p>
 ]]></content>
   </entry>
   

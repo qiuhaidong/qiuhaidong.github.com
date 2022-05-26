@@ -19,5 +19,5 @@ sudo gedit hosts
 ```
 ![](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqWdkQXFWB88lLNe9b.pKPd.bOkeCQ1XnXqIwv6SR2DItDkSBuzvyRWfXmXV4k8yccpRrk38TrDNSADQdQqoUnfE!/r)
 
-#### 22端口错误
+#### 22端口无法连接：
 [ssh: connect to host github.com port 22: Connection timed out](https://qiuhaidong.github.io/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/)

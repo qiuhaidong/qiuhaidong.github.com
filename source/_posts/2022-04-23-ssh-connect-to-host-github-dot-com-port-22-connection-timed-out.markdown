@@ -51,3 +51,6 @@ User git
 ```
 ssh -T git@github.com
 ```
+#### 如果443端口也失败，试试改hosts
+
+[ssh: connect to host ssh.github.com port 443: Connection refused](https://qiuhaidong.github.io/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/)

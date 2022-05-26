@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: ssh | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/ssh/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-05-26T14:39:55+08:00</updated>
+  <updated>2022-05-26T14:43:45+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -25,7 +25,10 @@ cd /etc
 sudo gedit hosts
 </code>
 添加：<br/>
-140.82.113.36          ssh.github.com</p>
+<code>
+140.82.113.36          ssh.github.com
+</code>
+<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqZo6WH1X5zq1scrqswOm8fS9l09Mi6H.MbrsVf*fxbUulZKAQcvk4*w7*HR1XLeSYSUhil9pvoSNH*DWt32gRPw!/r" alt="" /></p>
 ]]></content>
   </entry>
   

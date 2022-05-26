@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-05-26T14:39:55+08:00</updated>
+  <updated>2022-05-26T14:43:45+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -36,8 +36,13 @@
 </span><span class='line'>sudo gedit hosts</span></code></pre></td></tr></table></div></figure>
 
 
-<p>添加：<br/>
-140.82.113.36          ssh.github.com</p>
+<p>添加：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>140.82.113.36          ssh.github.com</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqZo6WH1X5zq1scrqswOm8fS9l09Mi6H.MbrsVf*fxbUulZKAQcvk4*w7*HR1XLeSYSUhil9pvoSNH*DWt32gRPw!/r" alt="" /></p>
 ]]></content>
   </entry>
   

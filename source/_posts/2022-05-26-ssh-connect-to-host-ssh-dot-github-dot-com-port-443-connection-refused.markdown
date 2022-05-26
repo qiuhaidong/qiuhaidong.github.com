@@ -14,4 +14,7 @@ cd /etc
 sudo gedit hosts
 ```
 添加：  
-140.82.113.36          ssh.github.com  
+```
+140.82.113.36          ssh.github.com
+```
+![](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqZo6WH1X5zq1scrqswOm8fS9l09Mi6H.MbrsVf*fxbUulZKAQcvk4*w7*HR1XLeSYSUhil9pvoSNH*DWt32gRPw!/r)

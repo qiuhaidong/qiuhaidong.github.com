@@ -7,7 +7,9 @@ tags: ssh
 comments: true
 categories: tech-octopress
 ---
-出现标题问题，打开：https://www.ipaddress.com/ ，有时会出现403禁止访问的错误，要点一下`go to homepage`才行。输入：ssh.github.com，得到IP地址：140.82.113.36  140.82.114.35  
+出现标题问题，打开：[IPAddress.com](https://www.ipaddress.com/) ，有时会出现403禁止访问的错误，要点一下`Go to Homepage`才行。输入：`ssh.github.com`，得到IP地址：  
+`140.82.113.36`  
+`140.82.114.35`  
 修改本地hosts：  
 ```
 cd /etc

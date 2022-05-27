@@ -102,6 +102,52 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2022/05/27/curl-7-failed-to-connect-to-raw-dot-githubusercontent-dot-com-port-443-after-28-ms-ju-jue-lian-jie/">Curl: (7) Failed to Connect to raw.githubusercontent.com Port 443 After 28 Ms: 拒绝连接</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-05-27T15:19:28+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:19 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://blog.csdn.net/u014375643/article/details/115826506">问题解决：curl: (7) Failed to connect to raw.githubusercontent.com port 443: 拒绝连接</a><br/>
+<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/</a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install curl
+</span><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
+
+
+<p>提示：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 28 ms: 拒绝连接</span></code></pre></td></tr></table></div></figure>
+
+
+<p>解决：<br/>
+<a href="https://blog.csdn.net/u014375643/article/details/115826506">Failed to connect to raw.githubusercontent.com</a><br/>
+到这个网址：<code>https://www.ipaddress.com/</code>，输入：<code>raw.githubusercontent.com</code>，查询，得到IP地址，选择其中一个或多个，修改本地HOSTS：Ubuntu下打开/etc/hosts，添加 IP地址：<code>185.199.108.133 raw.githubusercontent.com</code>，重试，不行就重启再试。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/">Ssh: Connect to Host ssh.github.com Port 443: Connection Refused</a></h1>
     
     
@@ -142,6 +188,8 @@
 <h4>22端口无法连接：</h4>
 
 <p><a href="https://qiuhaidong.github.io/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">ssh: connect to host github.com port 22: Connection timed out</a></p>
+
+<p><a href="https://blog.csdn.net/u014375643/article/details/115826506">curl: (7) Failed to connect to raw.githubusercontent.com port 443: 拒绝连接</a></p>
 </div>
   
   
@@ -405,39 +453,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/05/14/daily/">Daily，2022-05-14</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-05-14T23:01:35+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:01 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>每一個獨自從深淵裏爬出來的人<br/>
-都默默地爲自己換了一種性格<br/>
-隱藏了純良和無邪<br/>
-靈魂從此一半慈悲，一半兇狠<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqd6Qtnnb9eCsnh5TXmH9lHVl1PwyVav9mJE943BkNxukfyG2EmQ3Skqb7nTvpMLHpRvff8WuYxHM*GcDN32qeB4!/r" alt="爱琳诗篇乌特伽" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -454,6 +469,10 @@
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/27/curl-7-failed-to-connect-to-raw-dot-githubusercontent-dot-com-port-443-after-28-ms-ju-jue-lian-jie/">Curl: (7) Failed to Connect to raw.githubusercontent.com Port 443 After 28 Ms: 拒绝连接</a>
       </li>
     
       <li class="post">
@@ -528,10 +547,6 @@
         <a href="/blog/2022/05/11/think-different/">Think Different 不同凡响</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/05/11/daily/">Daily，2022-05-11</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -542,7 +557,7 @@
 <li class='category'><a href='/blog/categories/personal/'>personal (149)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (67)</a></li>
-<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (24)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (25)</a></li>
 
   </ul>
 </section>
@@ -557,7 +572,7 @@
 <li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
-<li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 141%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 157%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>

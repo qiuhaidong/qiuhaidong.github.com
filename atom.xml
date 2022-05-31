@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-05-30T15:09:14+08:00</updated>
+  <updated>2022-06-01T01:25:53+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,15 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[又梦见你]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/05/31/you-in-my-dream-again/"/>
+    <updated>2022-05-31T13:36:18+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/05/31/you-in-my-dream-again</id>
+    <content type="html"><![CDATA[<p>贫困潦倒，何以又入梦</p>
 ]]></content>
   </entry>
   
@@ -304,19 +313,6 @@
     <id>https://qiuhaidong.github.io/blog/2022/05/13/be-a-bad-man</id>
     <content type="html"><![CDATA[<p>反派的心态永远乐观，遇到挫折的第一反应永远是：<br/>
 哈哈，事情开始变得有趣了</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[煮饭禁忌]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/05/13/cook/"/>
-    <updated>2022-05-13T15:49:34+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/05/13/cook</id>
-    <content type="html"><![CDATA[<p>以下食物<strong>不要直接炒</strong><br/>
-鲜竹笋、菠菜、苋菜、苦瓜，焯水5-10秒，去除草酸<br/>
-四季豆、扁豆、长豆角，焯水5分钟，去除皂素<br/>
-西兰花，菜花，焯水1-2分钟，去除农药残留和小虫子<br/>
-香椿，焯水1分钟左右，去除亚硝酸盐</p>
 ]]></content>
   </entry>
   

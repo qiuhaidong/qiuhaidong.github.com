@@ -1,0 +1,11 @@
+---
+layout: post
+title: "daily，2022-05-03，問題-答案-對錯"
+date: 2022-05-03 16:52:39 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+---
+不是所有的問題都有答案，不是所有的答案都有對錯。  
+

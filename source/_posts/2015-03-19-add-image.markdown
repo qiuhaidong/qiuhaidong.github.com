@@ -1,0 +1,21 @@
+---
+layout: post
+title: "add image"
+date: 2015-03-19 14:13:28 +0800
+comments: true
+categories: tech
+---
+方法略繁复  
+把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）  
+把图片上传到github repository托管  
+
+	git add .           # don't forget the "."
+	git commit -m 'your message'
+	git push origin source
+
+进入github抓取图片链接地址（先打开图片，然后鼠标右击图片，在新标签页中打开图片=或者=查看图片）  
+示例地址：  
+https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png  
+使用 \!\[描述](图片链接地址) 插入图像  
+示例：  
+![image test](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png)

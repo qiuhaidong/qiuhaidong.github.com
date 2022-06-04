@@ -1,0 +1,7 @@
+---
+layout: post
+title: "文字"
+date: 2016-02-11 16:16:00 +0800
+categories: personal
+---
+文字让人在柴米油盐里摸爬滚打之余，还有一丝灵气。

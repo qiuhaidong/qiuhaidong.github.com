@@ -1,0 +1,30 @@
+---
+layout: post
+title: "ubuntu 14.04"
+date: 2014-04-26 17:50:35 +0800
+comments: true
+categories: tech
+---
+中文输入法太差了  
+
+试用时就不行，以为安装了会好点，呵呵……  
+
+看来以后得观望为主呀，没什么特别吸引人的新东西，不更新  
+
+说什么性能提升，都是虚的  
+
+2015.3.5  
+
+**到了14.04.2，才好点**  
+
+前两天，重装ubuntu 12.04，在setup octopress时，install RVM（命令为：）  
+
+	curl -L https://get.rvm.io | bash -s stable --ruby
+
+失败，因为ubuntu 12.04的rvm的库太老并且已损坏了。  
+
+用ubuntu 14.04才行。  
+
+2015-8-22  
+
+又出错失败，不过有提示输入另一个命令，照做，行了。

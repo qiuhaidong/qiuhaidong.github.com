@@ -1,0 +1,9 @@
+---
+layout: post
+title: "计划"
+date: 2015-09-13 23:17:27 +0800
+comments: true
+categories: personal
+---
+早早就必须计划好所有事情，所有细节。  
+拖延症害死人。

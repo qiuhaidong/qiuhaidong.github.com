@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Windows本地浏览器没有启动 Explorer Do Not Start Up on Windows - 丘海东</title>g
+
+  
+  <meta name="description" content="原帖
+DG works：
+打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2016/11/13/explorer-do-not-start-up-on-windows/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.useso.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">丘海东</a></h1>
+  
+    <h2>读书写字  热爱生活</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.baidu.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="qiuhaidong.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/categories/">Categories</a></li>
+  <li><a href="/tag-cloud/">Tags</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Windows本地浏览器没有启动 Explorer Do Not Start Up on Windows</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-13T18:51:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>6:51 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="https://zhidao.baidu.com/question/588254618.html">原帖</a><br/>
+<strong>DG works：</strong><br/>
+<strong>打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。这样在登录时系统会再加载一次Explorer.exe就可以显示出桌面了。但也有如我的状况，gpedit.msc打不开。</strong></p>
+
+<p>关于explorer.exe加载不了 无法显示任务栏与桌面解决办法<br/>
+Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.exe。说明系统启动时候没有加载Explorer.exe。(explorer是Windows程序管理器或者Windows资源管理器，它用于管理Windows图形壳，包括开始菜单、任务栏、桌面和文件管理。删除该程序会导致Windows图形界面无法适用。)<br/>
+点击“Windows任务管理器”&ndash;>“文件”&ndash;>“新建任务（运行……）”敲入Explorer.exe看看是否能够执行，如果不能执行说明系统的winnt目录下没有Explorer.exe这个文件或者Explorer.exe文件损坏。<br/>
+首先尝试下面的方法：<br/>
+1<br/>
+<strong>打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。这样在登录时系统会再加载一次Explorer.exe就可以显示出桌面了。但也有如我的状况，gpedit.msc打不开。</strong><br/>
+2<br/>
+打开注册表，找到子键“HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer”，新建“DWORD”值“NoDesktop”，其值为“1”。（这个是我在网上搜索的方法，为什么要使用这个健值我不清楚。）再检查注册表&hellip;.HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell
+看是否为explorer.exe，不是的话自己改.</p>
+
+<p>第一个，把Explorer加入进程：<br/>
+开始菜单→运行→输入“regedit”，回车→打开注册表内的HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\项，在该项下新建一个名称为“Explorer.exe”的新字符串值，编辑该值，数据为你系统中Explorer.exe的位置。<br/>
+第二个，取消开机项目<br/>
+开始菜单→运行→输入“msconfig”，回车→在『启动』选项卡中，找到那个安装程序的对应的值（如果不知道就把一些没有必要的全部去掉），去掉前面的“√”，保存，退出。<br/>
+重启电脑。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">丘海东</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-11-13T18:51:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>6:51 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/tech/'>tech</a>
+  
+</span>
+
+
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2016/11/13/sql-edit-more-than-200-item/" title="Previous Post: SQL: edit more than 200 item">&laquo; SQL: edit more than 200 item</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2016/11/19/halfwidth-and-fullwidth-forms/" title="Next Post: Halfwidth and Fullwidth Forms">Halfwidth and Fullwidth Forms &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/05/daily/">Daily，2022-06-05</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/04/never-stop/">Never Stop</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/04/kindle-stop-service/">Kindle国区停服，电子书备份</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/03/zui-quan-2/">醉拳2，弱肉强食</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/02/daily/">Daily，2022-06-02，误解，理解</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/02/be-valuable/">永不停止学习，让自己有价值</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/01/daily/">Daily，2022-06-01，种树</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/31/you-in-my-dream-again/">又梦见你</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/30/dont-like-family-anymore/">不再喜欢家庭</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/28/daily-liaozhaixinzhi/">Daily，2022-05-29，聊齋新志</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/28/daily/">Daily，2022-05-28，接受</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/27/daily/">Daily，2022-05-27，篮球废物</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/27/curl-7-failed-to-connect-to-raw-dot-githubusercontent-dot-com-port-443-after-28-ms-ju-jue-lian-jie/">Curl: (7) Failed to Connect to raw.githubusercontent.com Port 443 After 28 Ms: 拒绝连接</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/">Ssh: Connect to Host ssh.github.com Port 443: Connection Refused</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/26/huili-xie/">回力鞋</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/23/daily/">Daily，2022-05-23，行动</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/21/you-in-my-dream-again/">又梦见你</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/20/lightdm/">Lightdm Ubuntu 桌面显示管理器</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/19/daily-v2/">Daily，2022-05-19，無望時見本質</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (161)</a></li>
+<li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (67)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (25)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Tags</h1>
+  <ul id="tag-cloud">
+    <li><a style="font-size: 120%" href="/tags/c-number/">C#</a></li>
+<li><a style="font-size: 120%" href="/tags/lts/">LTS</a></li>
+<li><a style="font-size: 120%" href="/tags/c/">c</a></li>
+<li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
+<li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
+<li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
+<li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
+<li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 155%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 153%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
+<li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
+<li><a style="font-size: 128%" href="/tags/she/">she</a></li>
+<li><a style="font-size: 133%" href="/tags/ssh/">ssh</a></li>
+<li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
+<li><a style="font-size: 120%" href="/tags/ubuntu/">ubuntu</a></li>
+<li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
+
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/qiuhaidong">@qiuhaidong</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'qiuhaidong',
+            count: 1,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  <!--返回顶部开始-->
+<div id="full" style="width:30px; height:30px; position:fixed; right:13px; bottom:13px; z-index:100; text-align:center; background-color:transparent; cursor:pointer;">
+<a href="#" onclick="goTop();return false;"><img src="/images/top.png" border=0 alt="返回顶部"></a>
+</div>
+<script src="/javascripts/top.js" type="text/javascript"></script>
+<!--返回顶部结束-->
+
+
+  Copyright &copy; 2022 - 丘海东 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

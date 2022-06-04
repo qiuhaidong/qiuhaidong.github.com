@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: cook | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/tags/cook/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2022-06-05T01:00:07+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[煮饭禁忌]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/05/13/cook/"/>
+    <updated>2022-05-13T15:49:34+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/05/13/cook</id>
+    <content type="html"><![CDATA[<p>以下食物<strong>不要直接炒</strong><br/>
+鲜竹笋、菠菜、苋菜、苦瓜，焯水5-10秒，去除草酸<br/>
+四季豆、扁豆、长豆角，焯水5分钟，去除皂素<br/>
+西兰花，菜花，焯水1-2分钟，去除农药残留和小虫子<br/>
+香椿，焯水1分钟左右，去除亚硝酸盐</p>
+]]></content>
+  </entry>
+  
+</feed>

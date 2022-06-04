@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Rvm | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/blog/categories/rvm/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2022-06-05T01:00:07+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[RVM用法]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/03/26/how-to-use-rvm/"/>
+    <updated>2022-03-26T02:37:09+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/03/26/how-to-use-rvm</id>
+    <content type="html"><![CDATA[<p><a href="https://cloud.tencent.com/developer/ask/34591">原文</a><br/>
+列出可用的ruby版本以安装类型：</p>
+
+<pre><code>rvm list known
+</code></pre>
+
+<p>然后从已知的列表中安装，输入：</p>
+
+<pre><code>rvm install VERSION_NUMBER
+</code></pre>
+
+<p>然后使用你已经安装的ruby版本：</p>
+
+<pre><code>rvm use VERSION_NUMBER
+</code></pre>
+
+<p>你可以使一个特定的ruby版本成为你的默认系统版本：</p>
+
+<pre><code>rvm use VERSION_NUMBER --default
+</code></pre>
+
+<p>要删除gem版本，保持gemsets：</p>
+
+<pre><code>rvm uninstall VERSION_NUMBER
+</code></pre>
+
+<p>删除ruby等：</p>
+
+<pre><code>rvm remove VERSION_NUMBER
+</code></pre>
+
+<p>要了解你的ruby环境以及它们的安装位置/别名：</p>
+
+<pre><code>rvm info
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

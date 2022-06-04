@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: octopress | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/tags/octopress/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2022-06-05T01:00:07+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/"/>
+    <updated>2022-01-12T19:03:01+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6</id>
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
+
+<p>原博内容：</p>
+
+<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
+
+<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
+解决办法：</p>
+
+<ul>
+<li>运行</li>
+</ul>
+
+
+<pre><code>sudo gedit /etc/apt/sources.list
+</code></pre>
+
+<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
+
+<ul>
+<li>更新</li>
+</ul>
+
+
+<pre><code>sudo apt update
+</code></pre>
+
+<ul>
+<li>安装</li>
+</ul>
+
+
+<pre><code>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）
+</code></pre>
+
+<p>然后再安装<code>rvm install 2.2.6</code></p>
+
+<p>————————————————<br/>
+版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
+]]></content>
+  </entry>
+  
+</feed>

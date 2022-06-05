@@ -8,9 +8,11 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="键盘布局出错，想打‘#’，却出现一个类似‘f’的符号，打‘|’却出现‘~’。
-run： sudo dpkg-reconfigure keyboard-configuration 会出现图形界面用以设置。
-">
+  <meta name="description" content="2022-01-05:最新网址：https://gems.ruby-china.com/
+这个不行了：2016-10-28:最新网址：https://gems.ruby-china.org 这个不行了
+封网，rubygems.org 不行了
+bundle install 自然也不行
+点算？ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +70,92 @@ run： sudo dpkg-reconfigure keyboard-configuration 会出现图形界面用以�
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/23/gfw-bundle-install/">GFW Rubygems Bundle Install</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-23T01:16:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:16 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2022-01-05:最新网址：<a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a><br/>
+<strong>这个不行了</strong>：2016-10-28:最新网址：<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a> <strong>这个不行了</strong><br/>
+封网，rubygems.org 不行了<br/>
+<code>bundle install</code>  自然也不行<br/>
+点算？<br/>
+<a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
+用法：</p>
+
+<pre><code>gem sources --remove https://rubygems.org/
+gem sources -a https://gems.ruby-china.com/
+gem sources -l
+</code></pre>
+
+<p>输出：</p>
+
+<pre><code>*** CURRENT SOURCES ***  
+
+https://gems.ruby-china.com  
+</code></pre>
+
+<p>确保只有 <a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a></p>
+
+<h3>但是这样也不行，还得到octopress文件夹，打开Gemfile文件，编辑：</h3>
+
+<pre><code>    source "https://gems.ruby-china.com"
+</code></pre>
+
+<p>Ubuntu 14.04，安装octopress,执行</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>一直提示缺少各种 gem 包，例如：</p>
+
+<pre><code>```
+Gem::RemoteFetcher::FetchError: SSL_connect SYSCALL returned=5 errno=0 state=unknown state (https://rubygems.global.ssl.fastly.net/gems/safe_yaml-1.0.4.gem)
+An error occurred while installing safe_yaml (1.0.4), and Bundler cannot continue.
+Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
+
+```
+</code></pre>
+
+<p>按提示输入命令 <code>gem install safe_yaml -v '1.0.4'</code> 安装依赖项，但是安装了一个又一个，一个又一个，实在太多太慢太麻烦了</p>
+
+<p>解决方法：</p>
+
+<p>修改octopress文件夹里的Gemfile文件：</p>
+
+<p>把：<br/>
+<code>source "https://rubygems.org"</code><br/>
+改为：<br/>
+<code>source "https://gems.ruby-china.com"</code><br/>
+再执行：</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>完美通过。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -593,55 +681,6 @@ gem install therubyracer
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/11/26/nightmares/">Nightmares</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-11-26T23:01:33+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:01 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2014年10月16日，4:59AM,在家，睡觉，做梦，醒。</p>
-
-<p>关于大学的梦。</p>
-
-<p>做这梦，不是第一次，估计也不会是最后一次。</p>
-
-<p>它是我生命的印记，不可磨灭。</p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3781293063682700/pid/780bc50fgw1emosmbfqn4j208w0dc759">2014-10-16-04-59，家里</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2014-10-16-04-59-22.png" alt="2014年10月16日家里" /></p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3817040303409178/pid/780bc50fgw1epuu3qc365j208w0dc0ud">2015-03-04-06-29，水汶</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2015-03-04-06-29-27.png" alt="2015年3月4日水汶" /></p>
-
-<p><a href="http://photo.weibo.com/2014037263/wbphotos/large/mid/3854874397980519/pid/780bc50fgw1et7jbd7jejj208w0dcwgb">2015-06-17-05-44，水汶</a></p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/bad-dream/Screenshot_2015-06-17-05-44-27.png" alt="2015年6月17日水汶" /></p>
-
-<p>2016-01-20 again</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/25">&larr; Older</a>
@@ -660,6 +699,10 @@ gem install therubyracer
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/06/rurumu-x-ray/">Rurumu (X-Ray)</a>
       </li>
     
       <li class="post">
@@ -734,10 +777,6 @@ gem install therubyracer
         <a href="/blog/2022/05/23/daily/">Daily，2022-05-23，行动</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/05/21/you-in-my-dream-again/">又梦见你</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -745,7 +784,7 @@ gem install therubyracer
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (163)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (164)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (67)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (25)</a></li>
@@ -765,7 +804,7 @@ gem install therubyracer
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 155%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
-<li><a style="font-size: 153%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 152%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 128%" href="/tags/she/">she</a></li>

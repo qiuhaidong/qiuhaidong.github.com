@@ -7,6 +7,12 @@ tags: daily
 comments: true
 categories: personal
 ---
+16、iPhone 13系列，2021年9月15日凌晨1点，在Apple Park发布。iPhone 13 mini，iPhone 13，iPhone 13 Pro，iPhone 13 Pro Max。A15，台积电第二代5nm  
+A15仿生芯片，6核CPU，具有2个性能核心和4个能效核心，数字系列4核GPU（Pro系列5核），16核NPU，数字系列4G运存，Pro系列6G运存  
+Pro系列首次使用可变刷新率，10-120Hz自由调节
+
+<!--more-->
+
 1、2007年1月9日，乔布斯在旧金山马士孔尼会展中心的 Macworld 2007中发布第一代iPhone，于当地时间2007年6月29日下午6时正在美国正式发售。
 
 2、2008年7月11日，苹果公司在全球22个国家及地区发售iPhone3G，当中包括原有的6个地区，最终增至80个国家及地区。

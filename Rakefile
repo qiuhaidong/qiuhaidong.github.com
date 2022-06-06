@@ -124,6 +124,7 @@ task :new_post, :title do |t, args|
     post.puts "tags: daily"
     post.puts "comments: true"
     post.puts "categories: personal"
+    post.puts "published: true"
     post.puts "---"
   end
   

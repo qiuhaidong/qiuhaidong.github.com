@@ -8,10 +8,13 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="更改了/home/dong/haydnyau/_templates/post
-增加了： categories: ps: {}里面有代码: categories: {{ categories }}
-因为格式问题没有显示，参见原文件
-">
+  <meta name="description" content="preview.sh代码 #!/bin/sh
+cd /home/dong/haydnyau
+jekyll build #生成
+jekyll serve deploy.sh代码 #!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+octopress &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,6 +72,66 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-07T06:34:42+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:34 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>preview.sh代码</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build #生成
+jekyll serve
+</code></pre>
+
+<hr />
+
+<p>deploy.sh代码</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+octopress deploy
+</code></pre>
+
+<hr />
+
+<p>（不行，这个会造成有些blog页面头尾显示不全）发布，并上传/_posts/源文件，deploy.sh 代码</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+mv _posts/ _site/
+octopress deploy
+mv _site/_posts/ .
+</code></pre>
+
+<p>注意这个点 &ldquo;.&rdquo;
+<code>.</code> 或者 <code>./</code> 表示当前目录</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -892,40 +955,6 @@ git_branch: master                        # Git branch where static site files a
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/06/02/crash/">崩溃</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-06-02T00:46:18+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2021</span></span> <span class='time'>12:46 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>刚刚楼下，有个年轻人崩溃了。<br/>
-我听到一阵激烈的嘈杂声，到阳台一看，一个年轻男人向远处走去，情绪激动，动作夸张，锤着踢着路经的墙面，喊了一句：你可以穷，我不可以……一个女生在后面跟着。<br/>
-其实今天中午，我也是很接近边缘的情绪，我妈跟我说买房的事，呵呵，没有钱，我能怎么回应？！这两年我没有工作，之前那点积蓄也用了大半了。<br/>
-我很想把这些问题都告诉她。可是，这样能带给我什么？又会带给她什么？<br/>
-还好，我选择​了沉默。<br/>
-遇到这些事情，别说话，别做事，自己走开，一个人安静地待一会。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/12">&larr; Older</a>
@@ -944,6 +973,10 @@ git_branch: master                        # Git branch where static site files a
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/08/daily/">Daily，2022-06-08</a>
       </li>
     
       <li class="post">
@@ -1018,10 +1051,6 @@ git_branch: master                        # Git branch where static site files a
         <a href="/blog/2022/05/23/daily/">Daily，2022-05-23，行动</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/05/21/you-in-my-dream-again/">又梦见你</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -1029,7 +1058,7 @@ git_branch: master                        # Git branch where static site files a
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (163)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (164)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (67)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (25)</a></li>
@@ -1049,7 +1078,7 @@ git_branch: master                        # Git branch where static site files a
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 155%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
-<li><a style="font-size: 153%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 152%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 128%" href="/tags/she/">she</a></li>

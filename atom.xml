@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-06-09T01:39:30+08:00</updated>
+  <updated>2022-06-09T23:05:19+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,18 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[身体健康]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/06/09/health/"/>
+    <updated>2022-06-09T22:58:21+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/06/09/health</id>
+    <content type="html"><![CDATA[<p>这几天姑丈心肌梗塞，做了心脏支架手术。<br/>
+希望他身体恢复健康，顺顺利利。<br/>
+别再做伤害自己身体的事情了，<strong>健康</strong>比什么都重要。<br/>
+<strong>而且我是有过突发性耳聋的情况，身体已经敲响过警钟。</strong></p>
 ]]></content>
   </entry>
   
@@ -291,40 +303,6 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
 <p>解决：<br/>
 <a href="https://blog.csdn.net/u014375643/article/details/115826506">Failed to connect to raw.githubusercontent.com</a><br/>
 到这个网址：<code>https://www.ipaddress.com/</code>，输入：<code>raw.githubusercontent.com</code>，查询，得到IP地址，选择其中一个或多个，修改本地HOSTS：Ubuntu下打开/etc/hosts，添加 IP地址：<code>185.199.108.133 raw.githubusercontent.com</code>，重试，不行就重启再试。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ssh: Connect to Host ssh.github.com Port 443: Connection Refused]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/"/>
-    <updated>2022-05-26T14:21:22+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused</id>
-    <content type="html"><![CDATA[<p>出现标题问题，打开：<a href="https://www.ipaddress.com/">IPAddress.com</a> ，有时会出现403禁止访问的错误，要点一下<code>Go to Homepage</code>才行。输入：<code>ssh.github.com</code>，得到IP地址：<br/>
-<code>140.82.113.36</code><br/>
-<code>140.82.114.35</code><br/>
-修改本地hosts：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd /etc
-</span><span class='line'>sudo gedit hosts</span></code></pre></td></tr></table></div></figure>
-
-
-<p>添加：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>140.82.113.36          ssh.github.com
-</span><span class='line'>140.82.114.35          ssh.github.com</span></code></pre></td></tr></table></div></figure>
-
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqWdkQXFWB88lLNe9b.pKPd.bOkeCQ1XnXqIwv6SR2DItDkSBuzvyRWfXmXV4k8yccpRrk38TrDNSADQdQqoUnfE!/r" alt="" /></p>
-
-<h4>22端口无法连接：</h4>
-
-<p><a href="https://qiuhaidong.github.io/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">ssh: connect to host github.com port 22: Connection timed out</a></p>
-
-<p><a href="https://blog.csdn.net/u014375643/article/details/115826506">curl: (7) Failed to connect to raw.githubusercontent.com port 443: 拒绝连接</a></p>
 ]]></content>
   </entry>
   

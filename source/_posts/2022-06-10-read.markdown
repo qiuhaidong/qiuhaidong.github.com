@@ -1,0 +1,13 @@
+---
+layout: post
+title: "read"
+date: 2022-06-10 12:33:24 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+钱越多，俯视世界，读书少，仰视世界。  
+追求平视世界。  
+知识会弥补对物质的无止境的渴望，不断修正观念。

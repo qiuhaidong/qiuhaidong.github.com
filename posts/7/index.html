@@ -8,11 +8,20 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。
-依赖：python2，ruby2.6.9 Octopress 2.0 1
-2
-git --version
-sudo apt install git 然后配置git， &hellip;">
+  <meta name="description" content="农历正月十八
+有时雨，有时雾
+破烂的旧房子
+天花板不时剥落残渣
+雨水漏下，打在铁谷柜上，在这寂静中，尤为响动 我父亲是可怜的
+我母亲是可怜的
+时代给他们的无知
+身处巨大变革而无能为力
+求而不得
+我是可怜可悲的
+这是时代的安排
+宿命的印记
+是知识见闻和无能的无奈和残酷
+如果我是一样的无知就好了 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,7 +85,7 @@ sudo apt install git 然后配置git， &hellip;">
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">Ubuntu 22.04安装Octopress 2.0和3.0</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/02/18/life-is-pity/">生命悲凉</a></h1>
     
     
       <p class="meta">
@@ -85,195 +94,33 @@ sudo apt install git 然后配置git， &hellip;">
 
 
 
-<time class='entry-date' datetime='2022-04-05T22:03:16+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:03 pm</span></time>
+<time class='entry-date' datetime='2022-02-18T18:09:40+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>18</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:09 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。<br/>
-依赖：python2，ruby2.6.9</p>
-
-<h3>Octopress 2.0</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git --version
-</span><span class='line'>sudo apt install git</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后配置git，把之前的octopress-haydnyau和ssh2-ssh3文件夹和.gitconfig文件复制到主目录，改ssh文件夹名</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -T git@github.com</span></code></pre></td></tr></table></div></figure>
-
-
-<p>ok</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>python2 --version
-</span><span class='line'>sudo apt install python2
-</span><span class='line'>
-</span><span class='line'>ruby --version</span></code></pre></td></tr></table></div></figure>
-
-
-<p>没有<br/>
-到rvm官网(下面的命令可能有更新，看官网)</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Command 'gpg2' not found, but can be installed with:
-</span><span class='line'>sudo apt install gnupg2</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install gnupg2
-</span><span class='line'>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-</span><span class='line'>
-</span><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Command 'curl' not found, but can be installed with:
-</span><span class='line'>sudo apt install curl</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install curl
-</span><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 28 ms: 拒绝连接</span></code></pre></td></tr></table></div></figure>
-
-
-<p>解决：<br/>
-<a href="https://blog.csdn.net/u014375643/article/details/115826506">Failed to connect to raw.githubusercontent.com</a><br/>
-到这个网址：<code>https://www.ipaddress.com/</code>，输入：<code>raw.githubusercontent.com</code>，查询，得到IP地址，选择其中一个或多个，修改本地HOSTS：Ubuntu下打开/etc/hosts，添加 IP地址：<code>185.199.108.133 raw.githubusercontent.com</code>，重试，不行就重启再试。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>* To start using RVM you need to run `source /home/dong/.rvm/scripts/rvm`
-</span><span class='line'>    in all your open shell windows, in rare cases you need to reopen all shell windows.
-</span><span class='line'>Thanks for installing RVM</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>source /home/dong/.rvm/scripts/rvm</span></code></pre></td></tr></table></div></figure>
-
-
-<p>重启命令行</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm --version
-</span><span class='line'>rvm install 2.6.9</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示错误：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Error running '__rvm_make -j4',
-</span><span class='line'>please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log
-</span><span class='line'>
-</span><span class='line'>There has been an error while running make. Halting the installation.
-</span><span class='line'>......</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>解决：</strong><br/>
-<a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm pkg install openssl
-</span><span class='line'>rvm remove 2.6.9
-</span><span class='line'>rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ruby --version</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>记得：终端-首选项-未命名-命令-勾选‘以登陆shell方式运行命令’，重启所有终端</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 2.6.9 --default</span></code></pre></td></tr></table></div></figure>
-
-
-<p>把 <code>/octopress/Gemfile</code> 文件里的源改回最初的：<code>source "https://rubygems.org/"</code></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler
-</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
-
-
-<p><a href="https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/">更改：You can use the sass-convert command to automatically fix most cases.</a></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
-</span><span class='line'>......</span></code></pre></td></tr></table></div></figure>
-
-
-<p>之后就都是常规操作。</p>
-
-<h3>Octopress 3.0</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd /haydnyau</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ruby --version
-</span><span class='line'>rvm use 2.6.9 --default</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>jekyll --version</span></code></pre></td></tr></table></div></figure>
-
-
-<p>确保安装正确<br/>
-安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem install octopress</span></code></pre></td></tr></table></div></figure>
-
-
-<p>确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的<br/>
-好了。</p>
+  <div class="entry-content"><p>农历正月十八<br/>
+有时雨，有时雾<br/>
+破烂的旧房子<br/>
+天花板不时剥落残渣<br/>
+雨水漏下，打在铁谷柜上，在这寂静中，尤为响动</p>
+
+<p>我父亲是可怜的<br/>
+我母亲是可怜的<br/>
+时代给他们的无知<br/>
+身处巨大变革而无能为力<br/>
+求而不得<br/>
+我是可怜可悲的<br/>
+这是时代的安排<br/>
+宿命的印记<br/>
+是知识见闻和无能的无奈和残酷<br/>
+如果我是一样的无知就好了<br/>
+只可惜我的另一个区域的无知和无能<br/>
+如果我没那么的无能就好了<br/>
+如果我……<br/>
+深深的无力</p>
 </div>
   
   
@@ -286,7 +133,7 @@ sudo apt install git 然后配置git， &hellip;">
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/04/01/action-confident-gratitude/">行动 自信 感恩</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/02/16/myself/">做自己，就…只…做自己</a></h1>
     
     
       <p class="meta">
@@ -295,16 +142,14 @@ sudo apt install git 然后配置git， &hellip;">
 
 
 
-<time class='entry-date' datetime='2022-04-01T00:29:49+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2022</span></span> <span class='time'>12:29 am</span></time>
+<time class='entry-date' datetime='2022-02-16T00:30:51+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:30 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>如题<br/>
-比如打篮球，很多人对我是很好的，感恩，我不是个很差的人，自信<br/>
-行动</p>
+  <div class="entry-content"><h3>别被其他一切因素影响</h3>
 </div>
   
   
@@ -317,7 +162,7 @@ sudo apt install git 然后配置git， &hellip;">
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/31/burned-all-memory/">烧毁记忆</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/20/leave/">穷山恶水，离开吧</a></h1>
     
     
       <p class="meta">
@@ -326,24 +171,19 @@ sudo apt install git 然后配置git， &hellip;">
 
 
 
-<time class='entry-date' datetime='2022-03-31T14:04:59+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>31</span><span class='date-suffix'>st</span>, <span class='date-year'>2022</span></span> <span class='time'>2:04 pm</span></time>
+<time class='entry-date' datetime='2022-01-20T18:40:25+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:40 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>After the night I burned all memory<br/>
-my dream becomes transparent<br/>
-as I trashed all yesterdays<br/>
-my step becomes lighter</p>
-
-<p>有一夜我烧掉了所有的故事<br/>
-从此我的梦变透明了<br/>
-有个早晨我扔掉了所有的记忆<br/>
-从此我的脚步就轻盈了</p>
-
-<p>——《飞鸟集》  泰戈尔</p>
+  <div class="entry-content"><p>刚才父亲又因山林补贴争吵。<br/>
+风险太大。<br/>
+官场黑暗。邻里纷争。<br/>
+穷山恶水。<br/>
+走吧，早走为上。<br/>
+君子不立危墙之下。</p>
 </div>
   
   
@@ -356,7 +196,7 @@ my step becomes lighter</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/30/zhang-zhao-yang/">张朝阳</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/15/ubuntu-cannot-boot-windows/">ubuntu2022年无法添加引导windows，官方禁用OS Prober</a></h1>
     
     
       <p class="meta">
@@ -365,20 +205,30 @@ my step becomes lighter</p>
 
 
 
-<time class='entry-date' datetime='2022-03-30T08:28:34+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>8:28 am</span></time>
+<time class='entry-date' datetime='2022-01-15T15:34:36+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:34 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>看到张朝阳的物理课，查了下。<br/>
-张朝阳，清华物理系，麻省理工博士，创立搜狐，中国互联网教父，位列中国富豪榜。<br/>
-年少得志，生活潇洒风流，商海浮沉，抑郁过几年。<br/>
-2021年末，57岁，讲授物理课，各种深奥晦涩的知识。<br/>
-很多人三十来岁，已经连初中数学都不记得了。<br/>
-他还能讲授深奥的物理和数学知识，在讲台上意气风发。<br/>
-抑郁时，他从佛学明白： 心有所依处。</p>
+  <div class="entry-content"><h3><a href="https://www.oschina.net/news/174751/ubuntu-22.04-multi-boot-changes">原博：OS Prober 被禁用，Ubuntu 正在考虑新的多重引导方案</a></h3>
+
+<p>GNU GRUB（GRUB）是一个来自 GNU 项目的启动引导程序。它允许用户在计算机内同时拥有多个操作系统，并在计算机启动时选择希望运行的操作系统。</p>
+
+<p>今年 6 月，由于上游 GRUB 引导程序在发布 2.06 版本时禁用 OS_Prober 后所带来的一些变化，Ubuntu 的开发者正在考虑如何在 Ubuntu 22.04 LTS 中管理双引导/多引导方案。</p>
+
+<p>Ubuntu 依靠 OS-Prober 来检查其他已安装的操作系统，以便能够方便地在 GRUB 引导程序中显示它们。这意味着随着 Ubuntu 22.04 转向 GRUB 2.06，非 UEFI BIOS 用户不能再启动任何其他操作系统，而基于 UEFI 的系统如果通过 UEFI 引导程序，则仍然可以启动其他操作系统。这个问题主要是会阻碍那些仍然运行传统 BIOS 启动程序的用户使用已安装的系统。</p>
+
+<p>默认禁用OS-Prober旨在通过操作系统检测功能解决潜在的安全问题，因为它在检查其他操作系统时，会检查并挂载系统上的所有分区，如果利用文件系统的漏洞，启用该功能会引发一个能被黑客利用的安全问题。</p>
+
+<p>因此，面对安全和用户体验这个两难的选择下，Ubuntu 开发者也不得不考虑是否要重新启用 OS-Prober。</p>
+
+<p>因为 OS_Prober 存在潜在安全风险，所以重新启用它并不是一个理想的解决方案，目前 Ubuntu 团队内部也在仔细思考这个问题，但不排除这个可能性。</p>
+
+<p>Ubuntu 团队考虑的其他解决方案包括：创建一个新的 GRUB 模块，该模块只在用户查找系统时才执行 OS-Prober 的一些功能，用于增加一个链式启动选项专门处理用户需要启动 Windows 的需求；亦或是仅在安装系统时运行 OS-Prober，然后依靠该信息进行后续启动；最后一种可能性是，从以前的 Ubuntu 版本升级到 Ubuntu 22.04 时启用 OS-Prober。</p>
+
+<p>我们还不清楚 Ubuntu 团队在上述选择中最终会如何进行抉择，在 Ubuntu 22.04 正式推出之前还有充足的考虑时间，可以访问 ubuntu-devel 了解更多详情。我们也将关注 GRUB 上游在此期间是否也会推出相应的解决方案。</p>
 </div>
   
   
@@ -391,7 +241,7 @@ my step becomes lighter</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/29/houston-rockets/">板凳匪徒，发带兄弟，惊天逆转</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/15/sougou-is-xiugou/">搜狗输入法</a></h1>
     
     
       <p class="meta">
@@ -400,50 +250,14 @@ my step becomes lighter</p>
 
 
 
-<time class='entry-date' datetime='2022-03-29T23:53:13+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:53 pm</span></time>
+<time class='entry-date' datetime='2022-01-15T14:51:13+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:51 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEGakdk9T6a7l9Ezbq.CwrwWDc5ZHAHvBYXbWNYIOI.gGx*ePguAbaoOWxgT4uQ1TDGFmIoKC83OMtaia2ee61.g!/r" alt="火箭发带帮兄弟" /></p>
-
-<p><a href="https://baijiahao.baidu.com/s?id=1611220223436452666&amp;wfr=spider&amp;for=pc">经典：2015年火箭VS快船G6 火箭上演惊天逆转 快船打懵了！</a></p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2022/03/29/houston-rockets/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/03/29/mo-fa-man-wu/">魔法满屋</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-03-29T18:37:42+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:37 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEM0khhjIcrT5.NR4En57TftokYLuvBNdoTs8pSE*a3dXDuchJGVkoKhhnZxDjZp3NSXj9e0JPn.fVxcuikrWnog!/r" alt="" /></p>
+  <div class="entry-content"><p>就是个坑，有时安装了就能用，有时搞到所有的输入法都用不了，要卸载了才能恢复之前的输入法</p>
 </div>
   
   
@@ -456,7 +270,7 @@ my step becomes lighter</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/26/how-to-use-rvm/">RVM用法</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/15/done-tired/">Ok 好累</a></h1>
     
     
       <p class="meta">
@@ -465,54 +279,93 @@ my step becomes lighter</p>
 
 
 
-<time class='entry-date' datetime='2022-03-26T02:37:09+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:37 am</span></time>
+<time class='entry-date' datetime='2022-01-15T03:23:36+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:23 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><a href="https://cloud.tencent.com/developer/ask/34591">原文</a><br/>
-列出可用的ruby版本以安装类型：</p>
+  <div class="entry-content"><p>睡觉</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/15/model/">Post文件模板</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-15T03:18:34+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:18 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>layout: post<br/>
+title: <br/>
+date: <br/>
+tags: <br/>
+author: 丘海东<br/>
+comments: <br/>
+categories:</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/15/fucking-hard/">好艰难---把Gemfile和Gemfile.lock文件删除</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-15T02:48:34+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:48 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>怎么都不行<br/>
+用octopress3.0创建theme blog，可能因为</p>
+
+<h2>网络不行？</h2>
+
+<p>一直卡在那里，一动不动<br/>
+<code>bundle</code> 和 <code>bundle install</code> 也是一动不动<br/>
+这是没有成功的，后面会报错<br/>
+重复，直到ok</p>
+
+<h2>对了，我把Gemfile和Gemfile.lock文件删除，就没报错了</h2>
+
+<p>正常来说，rvm安装ruby就行了，如果还不行，再用<code>apt</code> ubuntu官方源安装一次</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm list known</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后从已知的列表中安装，输入：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后使用你已经安装的ruby版本：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
-
-
-<p>你可以使一个特定的ruby版本成为你的默认系统版本：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use VERSION_NUMBER --default</span></code></pre></td></tr></table></div></figure>
-
-
-<p>要删除gem版本，保持gemsets：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm uninstall VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
-
-
-<p>删除ruby等：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm remove VERSION_NUMBER</span></code></pre></td></tr></table></div></figure>
-
-
-<p>要了解你的ruby环境以及它们的安装位置/别名：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm info</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install ruby</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -528,7 +381,7 @@ my step becomes lighter</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/">You Can Use the Sass-convert Command to Automatically Fix Most cases---Ruby 不同版本</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/13/zhe-teng/">生命不息，折腾不止</a></h1>
     
     
       <p class="meta">
@@ -537,99 +390,41 @@ my step becomes lighter</p>
 
 
 
-<time class='entry-date' datetime='2022-03-26T01:05:55+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>1:05 am</span></time>
+<time class='entry-date' datetime='2022-01-13T07:45:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:45 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>octopress-2.0，ruby-<strong>2.3.1</strong>，ubuntu20.04，可以运行（修改这里后）<br/>
-octopress-2.0，ruby-<strong>2.5.9</strong>，ubuntu20.04，可以运行（修改这里后）<br/>
-octopress-2.0，ruby-<strong>2.6.9</strong>，ubuntu20.04，可以运行（修改这里后）<br/>
-octopress-<strong>3.0</strong>，ruby-<strong>2.5.9</strong>，ubuntu20.04，可以运行（無需修改）<br/>
-octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可以运行（無需修改）</p>
+  <div class="entry-content"><p>强迫症发作<br/>
+Ubuntu<br/>
+20.04  21.10  12.04  16.04  18.04  20.04<br/>
+Ocotpress<br/>
+2.0  3.0<br/>
+jekyll<br/>
+theme<br/>
+折腾了好几天，没日没夜，不眠不休，吃喝不管，性格使然<br/>
+好了，好好吃个早餐，睡觉<br/>
+买票，回家<br/>
+过年<br/>
+又一年</p>
 
-<p>換了版本要重新安裝octopress3.0：</p>
+<p><img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF4SNHNw/TmEUgtj9EK6.7V8ajmQrED*vOD1GW9P6z*YHWzdix5ugnQZhaqS7C.z080deNWFg4xOMjEHv1aasu8tzxYvAtb1t9yau2Mq4OpNK*fQIgtU!/r" alt="qq" /></p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem install octopress</span></code></pre></td></tr></table></div></figure>
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEBBt8qnK74UlxjsyjJazHjsofXQG0rneEceE2fxJ0iYoev1qV8XUkGa4f3zBfsnMgFIYBE1jz*MnTX.pIZ3Q*vM!/r">1</a></p>
 
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEMvM6fKWWIQv6JDPdRrBOJqFS4uUzBy0m8XBjGOIoiZXMSoI.HdGAy.rkrSc5UI8Z*ysJrYVi0R.4DY*u*OrPQE!/r">2</a></p>
 
-<p>octopress-2.0-3.0，ruby-<strong>3.1.1</strong>，ubuntu20.04，都無法运行。</p>
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEAw6qMrx.DeMqYhYPoEnryZ2mTrcAJOnMc9Xx2iSdXrgYHFg4sZN5ZGinn5jCvWIvCcJjldvIixNDk52hLvjZn8!/r">3</a></p>
 
-<p><a href="https://stackoverflow.com/questions/35949660/compass-sass-deprecation-warning">原网页</a><br/>
-<a href="http://cache.baiducontent.com/c?m=Xxdd763vX7YjRNeeOiILGLerW1Lrc_ceIQ3hCNMB9gwdzDHZoy_PikcN75GYpR9DFB3vxBUcejQkaSvlN3gZEfAPpNN-08FVQIDyZHTNJgPwSgoB3NKL4_GS4nx_XrCC-BUaRNwAuECMpWgq8wxzkIpLErbpEqlwK68Qi6soQwepLTgid54lohbxMlnl6PQpNH2t__da7lDpAsRwCb6EY-y40SooyRN5jX-9ufBiajUS0lec_A47rZ0vRgOYP12W&amp;p=8d7d8e0285cc43dd08e297780f568f&amp;newp=c273c00586cc42a95aa9c7710f408f231610db2151d3da146b82c825d7331b001c3bbfb42220150ed3c6796204af4259e8f033783d0923a3dda5c91d9fb4c57479cc&amp;s=2a38a4a9316c49e5&amp;user=baidu&amp;fm=sc&amp;query=You+can+use+the+sass%2Dconvert+command+to+automatically+fix+most+cases%2E&amp;qid=c0e3498b0000d650&amp;p1=1">百度缓存网页</a></p>
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEG.2u5LO7ccw90DKotmv7RsLQgumBc.mg5E5KTLsM.Fg99Fhnb9DK0Ses.zLtoernJRx3brpcsyNMPD0RVJRaq8!/r">4</a></p>
 
-<p>I just installed and Compass &amp; Sass as described here.</p>
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEFlB5ERIdlKsfngVuoiz21Qj4tdrizVtkIJ0ua4Xq9SfOVPBzKif3gRqpfZEbyjsP3R8CwlHEt.Xm8iJyuz2nGw!/r">5</a></p>
 
-<p>I got the following warning when I ran <code>compass watch</code> for the first time. What exactly does it mean? What should I do to fix it, do I need to do anything?</p>
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEMUFcGm9g7XE9f.fwXhEjR30nG7aiswalxP6Ywg3gXL0M95PSB.m8xx8UpxlTcm.R*BBTWREfGkrCrcndSaspsQ!/r">6</a></p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ (master) compass watch
-</span><span class='line'>&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
-</span><span class='line'>DEPRECATION WARNING on line 87 of /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
-</span><span class='line'>in a future version of Sass. To preserve the current behavior, use quotes:
-</span><span class='line'>
-</span><span class='line'>  unquote('"$moz-"#{$experimental-support-for-mozilla} "$webkit-"#{$experimental-support-for-webkit} "$opera-"#{$experimental-support-for-opera} "$microsoft-"#{$experimental-support-for-microsoft} "$khtml-"#{$experimental-support-for-khtml}')
-</span><span class='line'>
-</span><span class='line'>You can use the sass-convert command to automatically fix most cases.
-</span><span class='line'>
-</span><span class='line'>DEPRECATION WARNING on line 92 of /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
-</span><span class='line'>in a future version of Sass. To preserve the current behavior, use quotes:
-</span><span class='line'>
-</span><span class='line'>  unquote('"$ie6-"#{$legacy-support-for-ie6} "$ie7-"#{$legacy-support-for-ie7} "$ie8-"#{$legacy-support-for-ie8}')
-</span><span class='line'>
-</span><span class='line'>You can use the sass-convert command to automatically fix most cases.
-</span><span class='line'>
-</span><span class='line'>    write css/styles.css</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>1 Answer :</h4>
-
-<p>To fix the error message, just change the <strong><em>line 87</em></strong> from your &ldquo;<strong>_deprecated-support.scss</strong>&rdquo; file to this:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>// A debug tool for checking browser support
-</span><span class='line'>@mixin debug-support-matrix($experimental: true, $ie: true) {
-</span><span class='line'>@debug '#{"$moz-"}$experimental-support-for-mozilla'
-</span><span class='line'>             '#{"$webkit-"}$experimental-support-for-webkit'
-</span><span class='line'>             '#{"$opera-"}$experimental-support-for-opera'
-</span><span class='line'>             '#{"$microsoft-"}$experimental-support-for-microsoft'
-</span><span class='line'>             '#{"$khtml-"}$experimental-support-for-khtml';
-</span><span class='line'>@debug '#{"$ie6-"}$legacy-support-for-ie6'
-</span><span class='line'>             '#{"$ie7-"}$legacy-support-for-ie7'
-</span><span class='line'>             '#{"$ie8-"}$legacy-support-for-ie8';
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The file can be found at your <strong>/home/dong/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss</strong></p>
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEDw6.pSwRjPoCMVPlKqnitgykgEcoUEE0NkZ2XKCIsiXTx9gMTxcD2J6wujiIkfLV6RfO4AVxca.yqf9IyAzHzk!/r">7</a></p>
 </div>
   
   
@@ -642,7 +437,7 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/24/dont-pick-the-easy-path/">志氣</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/13/jekyll-theme-config/">Jekyll Theme Octopress 博客的具体配置</a></h1>
     
     
       <p class="meta">
@@ -651,52 +446,22 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
 
 
 
-<time class='entry-date' datetime='2022-03-24T23:37:06+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:37 pm</span></time>
+<time class='entry-date' datetime='2022-01-13T00:58:31+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:58 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>日常的平淡，能殺滅所有的志氣。<br/>
-做難事必有所得，做自己沒有做過的事。<br/>
-不被平淡淹沒。<br/>
-自我挑戰。<br/>
-生命在過程中綻放。<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMz29Wp5J31REEDaOBk6vMyqJkysnltBbC9Fm5zpbeL7mUYgGG7yb.OntLsWJot.D.fGVV8uP31if.85Zk557S0!/r" alt="" /></p>
-</div>
-  
-  
+  <div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 2.7.0  </span></code></pre></td></tr></table></div></figure>
 
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/03/22/life-is-impermanent/">人生无常</a></h1>
-    
-    
-      <p class="meta">
-        
+<p>_config.yml<br/>
+gemfile<br/>
+gemfile.lock</p>
 
-
-
-
-<time class='entry-date' datetime='2022-03-22T00:32:43+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2022</span></span> <span class='time'>12:32 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2022年3月21日下午，一架飞机在广西梧州滕县失事，132人，惨烈。<br/>
-飞行数据显示，MU5735航班从昆明机场起飞后，一直在约8869米高度进行巡航。下午2点19分，飞机突然从巡航高度下降，同时飞行速度从约每小时845公里开始下降。机头垂直向下，2点21分，MU5735航班丢失ADS-B雷达信号，同地面失联。<br/>
-人生无常，真的是，你永远不知道明天和意外谁先到来。<br/>
-生死面前，都是小事。<br/>
-珍惜。</p>
+<p>一些问题看手机图片,在空间</p>
 </div>
   
   
@@ -725,19 +490,7 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
       </li>
     
       <li class="post">
-        <a href="/blog/2022/06/12/daily/">Daily，奎迪，独自变强</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/11/daily/">Daily，2022-06-11</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2022/06/10/hannibal/">Hannibal汉尼拔</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/10/read/">读书</a>
       </li>
     
       <li class="post">
@@ -749,27 +502,11 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
       </li>
     
       <li class="post">
-        <a href="/blog/2022/06/09/self-discipline/">Self-discipline，自律</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2022/06/08/yi-qi-tong-guo-chuang/">一起同过窗</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/06/08/daily/">Daily，2022-06-08</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/05/let-go/">释怀</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2022/06/05/iphone/">iPhone</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/05/daily/">Daily，2022-06-05</a>
       </li>
     
       <li class="post">
@@ -781,23 +518,51 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
       </li>
     
       <li class="post">
-        <a href="/blog/2022/06/03/zui-quan-2/">醉拳2，弱肉强食</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/02/daily/">Daily，2022-06-02，误解，理解</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/02/be-valuable/">永不停止学习，让自己有价值</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/01/daily/">Daily，2022-06-01，种树</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2022/05/31/you-in-my-dream-again/">又梦见你</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/30/dont-like-family-anymore/">不再喜欢家庭</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/28/daily-liaozhaixinzhi/">Daily，2022-05-29，聊齋新志</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/27/daily/">Daily，2022-05-27，篮球废物</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/27/curl-7-failed-to-connect-to-raw-dot-githubusercontent-dot-com-port-443-after-28-ms-ju-jue-lian-jie/">Curl: (7) Failed to Connect to raw.githubusercontent.com Port 443 After 28 Ms: 拒绝连接</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/">Ssh: Connect to Host ssh.github.com Port 443: Connection Refused</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/26/huili-xie/">回力鞋</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/21/you-in-my-dream-again/">又梦见你</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/20/lightdm/">Lightdm Ubuntu 桌面显示管理器</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/19/daily/">Daily，2022-05-19，活着時才能說說話聊聊天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/14/do-what-you-love-love-what-you-do/">Do What You Love, Love What You Do</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/cook/">煮饭禁忌</a>
       </li>
     
   </ul>
@@ -807,7 +572,7 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (172)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (143)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (67)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (25)</a></li>
@@ -822,16 +587,16 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
 <li><a style="font-size: 120%" href="/tags/c/">c</a></li>
 <li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
-<li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 159%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
-<li><a style="font-size: 137%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
-<li><a style="font-size: 153%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
-<li><a style="font-size: 151%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 141%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 156%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
-<li><a style="font-size: 127%" href="/tags/she/">she</a></li>
-<li><a style="font-size: 132%" href="/tags/ssh/">ssh</a></li>
+<li><a style="font-size: 129%" href="/tags/she/">she</a></li>
+<li><a style="font-size: 134%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
 <li><a style="font-size: 120%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>

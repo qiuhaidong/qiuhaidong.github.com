@@ -8,7 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="人生不設限，不念過往，不畏開始，不懼未來。
+  <meta name="description" content="新博客 旧博客 折腾了好几天，终于迁移好了 这是主题作者的Blog 这是他的Github 和 仓库
 ">
   
 
@@ -73,7 +73,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/21/limitless/">不設限</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/12/new-and-old-blog/">新 舊博客</a></h1>
     
     
       <p class="meta">
@@ -82,14 +82,22 @@
 
 
 
-<time class='entry-date' datetime='2022-03-21T04:16:04+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2022</span></span> <span class='time'>4:16 am</span></time>
+<time class='entry-date' datetime='2022-01-12T23:56:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:56 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>人生不設限，不念過往，不畏開始，不懼未來。</p>
+  <div class="entry-content"><h3><a href="https://haydnyau.github.io/">新博客</a></h3>
+
+<h3><a href="https://qiuhaidong.github.io/">旧博客</a></h3>
+
+<p>折腾了好几天，终于迁移好了</p>
+
+<p><a href="https://gaohaoyang.github.io/">这是主题作者的Blog</a></p>
+
+<p><a href="https://github.com/Gaohaoyang">这是他的Github</a> 和 <a href="https://github.com/Gaohaoyang/gaohaoyang.github.io">仓库</a></p>
 </div>
   
   
@@ -102,7 +110,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer/">Kex_exchange_identification: Read: Connection Reset by Peer</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/">No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6</a></h1>
     
     
       <p class="meta">
@@ -111,46 +119,155 @@
 
 
 
-<time class='entry-date' datetime='2022-03-20T10:32:48+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:32 am</span></time>
+<time class='entry-date' datetime='2022-01-12T19:03:01+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:03 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>有時會出現標題的錯誤，ssh無法連接服務器，試過網上的幾種方法都不行，其實是國內網絡經常封鎖github，過段時間就好了。<br/>
-update:</p>
+  <div class="entry-content"><p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
 
-<h4>1. 收到邮件：</h4>
+<p>原博内容：</p>
 
-<p>GitGuardian检测到您的GitHub帐户中暴露了以下OpenSSH私钥。<br/>
-GitGuardian has detected the following OpenSSH Private Key exposed within your GitHub account.<br/>
-新建key即可。</p>
+<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
 
-<h4>2. 如果把SSH key上传到仓库，会提示安全验证：</h4>
+<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
+解决办法：</p>
+
+<ul>
+<li>运行</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/apt/sources.list</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
+
+<ul>
+<li>更新</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt update</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>安装</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后再安装<code>rvm install 2.2.6</code></p>
+
+<p>————————————————<br/>
+版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/12/write-them-all/">好记性不如烂笔头</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-12T00:37:26+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:37 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>很多以前做过的事，细节步骤都不记得了，多写字吧，详细地记录下来，以后也有个回忆。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress2.0 自动打开文件 插入本地图片 程序</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T22:42:33+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:42 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://blog.lessfun.com/blog/2013/12/05/config-the-octopress-blog-after-deployed/">教程</a></p>
+
+<h3>添加功能：自动打开文件编辑</h3>
+
+<p><code>rake new_post["file name"]</code> 后自动打开博客文件<br/>
+编辑<code>Rakefile</code>文件，上面位置，添加定义：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>editor = "gedit"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后在<code>new_post</code>命令后面添加：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if #{editor}
+</span><span class='line'>  system "#{editor} #{filename}"
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>插入本地图片</h3>
+
+<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中可直接引用，用法：</p>
+
+<p><img src="https://qiuhaidong.github.io/images/%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80-%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87-%E7%A8%8B%E5%BA%8F.png" alt="语法冲突，不能显示正确代码，看图片" /></p>
+
+<p><img src="https://qiuhaidong.github.io/images/%E9%BA%A6%E8%BF%AA%E7%A7%91%E6%AF%94.jpg" alt="kobi t-mac" /></p>
+
+<h4>前后行3个```显示代码，且有显示行数</h4>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ERROR: We're doing an SSH key audit.
-</span><span class='line'>Reason: unverified automatically (private key found in a public repository)
-</span><span class='line'>Please visit https://github.com/settings/keys/********
-</span><span class='line'>to approve this key so we know it's safe.
-</span><span class='line'>
-</span><span class='line'>Fingerprint:
-</span><span class='line'>SHA256:***********************************************
-</span><span class='line'>
-</span><span class='line'>fatal: 无法读取远程仓库。
-</span><span class='line'>
-</span><span class='line'>请确认您有正确的访问权限并且仓库存在。</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>c++
+</span><span class='line'>int main()
+</span><span class='line'>{
+</span><span class='line'>  cout&lt;&lt;"hello world"&lt;&lt;endl;
+</span><span class='line'>};
+</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -166,7 +283,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/19/live-well/">好好生活 | 自制力</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a></h1>
     
     
       <p class="meta">
@@ -175,17 +292,110 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 
 
 
-<time class='entry-date' datetime='2022-03-19T20:05:33+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>8:05 pm</span></time>
+<time class='entry-date' datetime='2022-01-11T07:52:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:52 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>自制力<br/>
-这几天父亲腰椎间盘之类的问题，股骨疼痛。<br/>
-我这些天也是晚上睡不着觉，生活作息混乱糟糕。<br/>
-好好生活，注意身体。</p>
+  <div class="entry-content"><pre><code>rvm install 2.3.1  
+</code></pre>
+
+<p>失败<br/>
+.</p>
+
+<pre><code>cd octopress
+</code></pre>
+
+<p>.</p>
+
+<pre><code>ruby --version
+</code></pre>
+
+<p>.</p>
+
+<pre><code>rvm use 2.7.0
+Required ruby-2.7.0 is not installed.
+To install do: 'rvm install "ruby-2.7.0"'  
+</code></pre>
+
+<h1>记得是用2.7.0</h1>
+
+<p> .</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rvm install "ruby-2.7.0"  
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ ruby --version
+ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+Could not find rake-10.5.0 in any of the sources
+Run `bundle install` to install missing gems.
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ bundle install
+Traceback (most recent call last):
+4: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/ruby_executable_hooks:22:in `&lt;main&gt;'
+3: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/ruby_executable_hooks:22:in `eval'
+2: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/bundle:23:in `&lt;main&gt;'
+1: from /home/dong/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/rubygems.rb:294:in `activate_bin_path'
+/home/dong/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/rubygems.rb:275:in `find_spec_for_exe': Could not find 'bundler' (1.17.3) required by your /home/dong/octopress/Gemfile.lock. (Gem::GemNotFoundException)
+To update to the latest version installed on your system, run `bundle update --bundler`.
+To install the missing version, run `gem install bundler:1.17.3`
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ gem install bundler:1.17.3
+Fetching bundler-1.17.3.gem
+Successfully installed bundler-1.17.3
+Parsing documentation for bundler-1.17.3
+Installing ri documentation for bundler-1.17.3
+Done installing documentation for bundler after 3 seconds
+1 gem installed
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+Could not find rake-10.5.0 in any of the sources
+Run `bundle install` to install missing gems.
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ bundle install
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+rake aborted!
+Gem::LoadError: You have already activated rake 13.0.1, but your Gemfile requires rake 10.5.0. Prepending `bundle exec` to your command may solve this.
+/home/dong/octopress/Rakefile:2:in `&lt;top (required)&gt;'
+(See full trace by running task with --trace)
+</code></pre>
+
+<p>提示失败，<br/>
+但是可以加上<code>bundle exec</code></p>
+
+<pre><code>dong@Ubuntu:~/octopress$bundle exec rake generate
+</code></pre>
+
+<p>很多警告，但是成了，<br/>
+下面也一样：</p>
+
+<pre><code>bundle exec rake preview
+</code></pre>
 </div>
   
   
@@ -198,7 +408,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/16/my-faith/">一個人的信念</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a></h1>
     
     
       <p class="meta">
@@ -207,14 +417,72 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 
 
 
-<time class='entry-date' datetime='2022-03-16T23:15:55+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:15 pm</span></time>
+<time class='entry-date' datetime='2022-01-11T04:38:50+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:38 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF0HxUKl/TmEUgtj9EK6.7V8ajmQrEKwFpMviO8W1E*JH4erI.jmNNlwKNTQArGB05cxXhuyatr8F.HTHZbG0Hx*r6W4GgfHHIITo3WNVZW.b*hffKgE!/r" alt="一個人的信念" /></p>
+  <div class="entry-content"><h3>原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容</h3>
+
+<p>首先利用<code>rfkill</code>命令查看目前无线传输设备的状态，<code>rfkill</code>是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。</p>
+
+<p>rfkill的常用方法为:</p>
+
+<pre><code>rfkill list all
+#  获得设备列表
+
+rfkill block [index|type]
+#  通过索引或类型禁用设备
+
+rfkill unblock [index|type]
+#  通过索引或类型启用设备
+</code></pre>
+
+<p>当前设备状态如下：</p>
+
+<pre><code>rfkill list all
+输出：
+0: phy0: Wireless LAN
+    Soft blocked: no
+    Hard blocked: yes
+1: acer-wireless: Wireless LAN
+    Soft blocked: no
+    Hard blocked: no
+</code></pre>
+
+<p>通过rfkill启用/禁用设备无法对硬件阻塞产生作用。</p>
+
+<p>由于笔记本只有一个无线网卡，这两个模块应该是有冲突</p>
+
+<p>使用命令lsmod | grep acer可以看出系统启动了acer_wmi模块</p>
+
+<p>通过查找资料后，解决方法为禁用acer_wmi模块。</p>
+
+<p>解决方法：</p>
+
+<p>通过在/etc/modprobe.d/文件夹下，编辑blacklist.conf文件，最后一行添加内容：  <code>blacklist acer_wmi</code></p>
+
+<pre><code>sudo gedit /etc/modprobe.d/blacklist.conf
+</code></pre>
+
+<p>重启<br/>
+wifi自动为打开状态，此时rfkill list all命令结果如下:</p>
+
+<pre><code>rfkill list all
+
+0: phy0: Wireless LAN
+Soft blocked: no
+Hard blocked: no
+</code></pre>
+
+<p>版权声明：本文为CSDN博主「Monkey_D_Shuai」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/ls12165/article/details/68189943">https://blog.csdn.net/ls12165/article/details/68189943</a></p>
+
+<p><a href="https://blog.csdn.net/ls12165/article/details/68189943?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;utm_relevant_index=2">原文链接</a></p>
+
+<p><a href="https://blog.csdn.net/weixin_34305091/article/details/116951261?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;utm_relevant_index=2">另一篇博文</a></p>
 </div>
   
   
@@ -227,7 +495,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/09/do-not-be-worthless/">Don't Be Worthless</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a></h1>
     
     
       <p class="meta">
@@ -236,15 +504,324 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 
 
 
-<time class='entry-date' datetime='2022-03-09T00:28:51+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:28 am</span></time>
+<time class='entry-date' datetime='2022-01-11T00:17:21+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:17 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>沒有人願意去扶持一個毫無價值的人，千萬別讓自己一文不值。<br/>
-<img src="http://r.photo.store.qq.com/psc?/V13NDf2z0er9V4/TmEUgtj9EK6.7V8ajmQrEBV5rT1fUzPY1kDqenVtnUecpxHZp3rt.W.B0sTA58l*YZBJltakoO5A31uhvEwKsrtc2izqI4BI5SMec*e3buE!/r" alt="肖申克的救赎" /></p>
+  <div class="entry-content"><p>ubuntu20.04安装了几次2.0都失败<br/>
+ubuntu12.04已经无法安装系统本身的更新了，更别说安装其他软件<br/>
+强迫症发作，于是有了这次：</p>
+
+<h3>列出大致步骤吧，主要是有些error要如何解决</h3>
+
+<h2>git</h2>
+
+<h3>install git</h3>
+
+<pre><code>git --version
+sudo apt install git
+git --version
+</code></pre>
+
+<h3>set up git</h3>
+
+<h4>Username</h4>
+
+<p>github用户名</p>
+
+<pre><code>git config --global user.name "qiuhaidong"
+#or haydnyau
+</code></pre>
+
+<h4>Email</h4>
+
+<p>github登录帐号邮箱名</p>
+
+<pre><code>git config --global user.email "690982322@qq.com"
+#or 1148891016@qq.com
+</code></pre>
+
+<p>Password caching</p>
+
+<p>To use this option, you need to turn on the credential helper so that git will save your password in memory for some time:</p>
+
+<pre><code>git config --global credential.helper cache
+</code></pre>
+
+<h3>添加 SSH Keys</h3>
+
+<h4>Step 1: Check for SSH keys</h4>
+
+<p>First, we need to check for existing ssh keys on your computer. Open up Terminal and run:</p>
+
+<pre><code>cd ~/.ssh
+# Checks to see if there is a directory named ".ssh" in your user directory
+</code></pre>
+
+<p>If it says “No such file or directory” go to step 2. Otherwise, you already have an existing keypair, and you can skip to step 3.</p>
+
+<p><strong>最好就是把 .shh 这个文件夹删除了，做step 2</strong></p>
+
+<h4>Step 2: Generate a new SSH key</h4>
+
+<p>To generate a new SSH key, enter the code below. We want the default settings so when asked to enter a file in which to save the key, <strong>just press enter</strong>.不要输入文件名</p>
+
+<pre><code>ssh-keygen -t rsa -C "your_email@example.com"
+我的就是：ssh-keygen -t rsa -C "690982322@qq.com"
+#or 1148891016@qq.com
+</code></pre>
+
+<p>Now you need to enter a passphrase.设置密码。（有人是密码都不要的，再按两下enter就行了）</p>
+
+<p>Which should give you something like this:</p>
+
+<pre><code>Your identification has been saved in /home/you/.ssh/id_rsa.
+Your public key has been saved in /home/you/.ssh/id_rsa.pub.
+The key fingerprint is:
+01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
+</code></pre>
+
+<h3>Step 3: Add your SSH key to GitHub</h3>
+
+<p>ctrl+h，显示隐藏文件，这里其实可以打开这个<strong>id_rsa.pub</strong>文件，直接复制，不用安装下面的软件</p>
+
+<pre><code>sudo apt-get install xclip
+# Downloads and installs xclip.
+
+xclip -sel clip &lt; ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+</code></pre>
+
+<h4>Add your SSH key to GitHub</h4>
+
+<p>到github网站，登陆，头像，设置，SSH and GPG keys，把旧的SSH keys删除，添加新的，title不用管，粘贴到key就行了</p>
+
+<h3>Step 4: Test</h3>
+
+<pre><code>ssh -T git@github.com
+</code></pre>
+
+<p>这里可能会还要按照提示做一下，不难，看英文做</p>
+
+<p>如果看到：</p>
+
+<pre><code>Hi qiuhaidong! You've successfully authenticated, but GitHub does not provide shell access.
+# or haydnyau
+</code></pre>
+
+<p>If that username is correct, you’ve successfully set up your SSH key. Don’t worry about the shell access thing, you don’t want that anyway.</p>
+
+<p>If you see “<strong>access denied</strong>” please consider using HTTPS instead of SSH. If you need SSH start at these instructions for diagnosing the issue.</p>
+
+<h4>如果不成功，用https的认证方式代替ssh，因为github觉得ssh不安全，认证方式有时会改变</h4>
+
+<h2>RVM</h2>
+
+<p>看官网命令</p>
+
+<pre><code>rvm --version
+gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+</code></pre>
+
+<p>会显示失败，先不管它<br/>
+Install RVM：命令</p>
+
+<pre><code>curl -sSL https://get.rvm.io | bash -s stable
+</code></pre>
+
+<p>如下：</p>
+
+<pre><code>dong@Ubuntu:~$ curl -sSL https://get.rvm.io | bash -s stable
+Downloading https://github.com/rvm/rvm/archive/1.29.12.tar.gz
+Downloading https://github.com/rvm/rvm/releases/download/1.29.12/1.29.12.tar.gz.asc
+gpg: 于 2021年01月16日 星期六 02时46分22秒 CST 创建的签名，使用 RSA，钥匙号 39499BDB
+gpg: 无法检查签名：没有公钥
+GPG signature verification failed for '/home/dong/.rvm/archives/rvm-1.29.12.tgz' - 'https://github.com/rvm/rvm/releases/download/1.29.12/1.29.12.tar.gz.asc'! Try to install GPG v2 and then fetch the public key:
+    gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+or if it fails:
+    command curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
+    command curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
+In case of further problems with validation please refer to https://rvm.io/rvm/security
+</code></pre>
+
+<p>这个提示错误，并且给出了解决方法：<br/>
+运行：<br/>
+命令1：</p>
+
+<pre><code>curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
+</code></pre>
+
+<p>命令2：</p>
+
+<pre><code>curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
+</code></pre>
+
+<p>再运行上一条命令安装rvm：</p>
+
+<pre><code>curl -L https://get.rvm.io | bash -s stable
+</code></pre>
+
+<p>输出：</p>
+
+<pre><code>  * To start using RVM you need to run `source /home/dong/.rvm/scripts/rvm`
+</code></pre>
+
+<p>安装成功，按照提示运行：</p>
+
+<pre><code>source /home/dong/.rvm/scripts/rvm
+</code></pre>
+
+<p>测试：</p>
+
+<pre><code>rvm --version
+git --version
+</code></pre>
+
+<p>安装ruby2.2.6（1.9.3太久了，无法安装）</p>
+
+<pre><code>rvm install 2.2.6
+</code></pre>
+
+<p>会提示输入本机密码</p>
+
+<pre><code>rvm use 2.2.6
+</code></pre>
+
+<h3>Setup Octopress</h3>
+
+<pre><code>git clone -b source git@github.com:qiuhaidong/qiuhaidong.github.com.git octopress
+# 或者 git clone git://github.com/imathis/octopress.git octopress
+# octopress  2.0 原码
+cd octopress
+</code></pre>
+
+<h4>install dependencies</h4>
+
+<pre><code>gem install bundler
+</code></pre>
+
+<h4>会提示失败，按提示加上版本号，安装适合本系统的</h4>
+
+<pre><code>bundle install
+</code></pre>
+
+<h4>Install the default Octopress theme</h4>
+
+<pre><code>rake install
+</code></pre>
+
+<h4>Deploying to Github Pages</h4>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p>这里可能会要输入链接等，ssh，https</p>
+
+<p>The rake task will ask you for a URL of the Github repo. Copy the SSH or HTTPS URL from your newly created repository <br/>
+(e.g. git@github.com:username/username.github.io.git) <br/>
+git@github.com:qiuhaidong/qiuhaidong.github.com.git<br/>
+<a href="https://github.com/qiuhaidong/qiuhaidong.github.com.git">https://github.com/qiuhaidong/qiuhaidong.github.com.git</a><br/>
+or<br/>
+git@github.com:haydnyau/haydnyau.github.io.git<br/>
+<a href="https://github.com/haydnyau/haydnyau.github.io.git">https://github.com/haydnyau/haydnyau.github.io.git</a><br/>
+and paste it in as a response.</p>
+
+<p>This will:</p>
+
+<ol>
+<li>Ask for and store your Github Pages repository url.</li>
+<li>Rename the remote pointing to imathis/octopress from &lsquo;origin&rsquo; to &lsquo;octopress&rsquo;</li>
+<li>Add your Github Pages repository as the default origin remote.</li>
+<li>Switch the active branch from master to source.</li>
+<li>Configure your blog&rsquo;s url according to your repository.</li>
+<li>Setup a master branch in the _deploy directory for deployment.</li>
+</ol>
+
+
+<p>Next run:</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<p>This will generate your blog, copy the generated files into <code>_deploy/</code>, add them to git, commit and push them up to the master branch. In a few seconds you should get an email from Github telling you that your commit has been received and will be published on your site.</p>
+
+<hr />
+
+<hr />
+
+<p>来自官网<br/>
+<strong>下面这个不知道要不要做：</strong><br/>
+Now you have a place to commit the generated content for your site, but you should also set up repository to store the source for your blog. After you set up a repository for your blog source, add it as the origin remote.</p>
+
+<pre><code>git remote add origin (your repo url)
+# set your new origin as the default branch
+git config branch.master.remote origin
+</code></pre>
+
+<p>Now push your changes and you&rsquo;ll be all set.<br/>
+<strong>上面这个不知道要不要做：</strong><br/>
+来自官网</p>
+
+<hr />
+
+<hr />
+
+<p><strong>Don&rsquo;t forget</strong> to commit the source for your blog.</p>
+
+<pre><code>git add .
+git commit -m 'update'
+git push origin source
+</code></pre>
+
+<h3>Configuring Octopress</h3>
+
+<h4>edit _config.yml</h4>
+
+<pre><code>url:                # 不管
+title:              # 丘海东
+subtitle:           # Haydn Yau
+author:             # 丘海东
+paginate: 10          # 主页文章数
+recent_posts: 20       # 主页显示最近文字标题数
+
+# list each of the sidebar modules you want to include, in the order you want them to appear.
+# To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
+default_asides: [asides/category_list.html注意，这里添加侧边栏，看另一篇博文, asides/recent_posts.html, asides/github.html]
+
+github_user: haydnyau
+</code></pre>
+
+<h4>一些命令：</h4>
+
+<pre><code>rake new_post["title"]
+rake generate
+rake preview
+rake deploy
+</code></pre>
+
+<h4>pull.sh</h4>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+git pull origin source
+rake generate deploy
+</code></pre>
+
+<h4>push.sh</h4>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+rake generate deploy
+git add .
+git commit -m 'update'
+git push origin source
+</code></pre>
+
+<p><strong>记得右键，属性，权限，程序执行文件</strong></p>
 </div>
   
   
@@ -257,7 +834,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/03/02/no-good-thing-ever-dies/">有時間絕望，還不如吃點好吃的然後睡個覺</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/10/add-category/">侧边栏增加分类 Category</a></h1>
     
     
       <p class="meta">
@@ -266,16 +843,73 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 
 
 
-<time class='entry-date' datetime='2022-03-02T21:26:11+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2022</span></span> <span class='time'>9:26 pm</span></time>
+<time class='entry-date' datetime='2022-01-10T23:00:59+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:00 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h3>日劇《非自然死亡》，石原里美的經典台詞：</h3>
+  <div class="entry-content"><h3>三步</h3>
 
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEPMAzCkpOgy5tCy3tTQ3OyKRNUeV6.9vL0xbD4ehX3kSfXse0GFc5y1t4paxnyymqnq24kw..dtLIAjvznsA7ts!/r" alt="1" /></p>
+<h2>Step 1</h2>
+
+<h3>添加 <code>category_list</code> 插件</h3>
+
+<p>在 <code>octopress\plugins\</code> 文件夹里面，新建一个文件，名为：<code>category_list_tag.rb</code>。并将下面的代码粘贴到里面。</p>
+
+<pre><code>module Jekyll
+  class CategoryListTag &lt; Liquid::Tag
+    def render(context)
+      html = ""
+      categories = context.registers[:site].categories.keys
+      categories.sort.each do |category|
+        posts_in_category = context.registers[:site].categories[category].size
+       category_dir = context.registers[:site].config['category_dir']
+        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
+        html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+      end
+      html
+    end
+  end
+end
+
+Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
+</code></pre>
+
+<p>这个插件会向<code>liquid</code>注册一个名为<code>category_list</code>的<code>tag</code>，该<code>tag</code>就是以<code>li</code>的形式将站点所有的<code>category</code>组织起来。如果要将<code>category</code>加入到侧边导航栏，需要增加一个<code>aside</code>。</p>
+
+<h2>Step 2</h2>
+
+<h3>增加 <code>aside</code></h3>
+
+<p>在 <code>octopress\source\_includes\asides\</code> 文件夹里面，新建一个文件，名为：<code>category_list.html</code> 。并粘贴下面的代码：</p>
+
+<p><strong>注意</strong>： 去掉 <code>%</code> 前面的2个 <code>\</code><br/>
+这里如果不加上<code>\</code>，markdown格式会显示<code>category_list</code>的内容。我是为了正确显示代码才加上的</p>
+
+<pre><code>&lt;section&gt;
+  &lt;h1&gt;Categories&lt;/h1&gt;
+  &lt;ul id="categories"&gt;
+    {\% category_list \%}
+  &lt;/ul&gt;
+&lt;/section&gt;
+</code></pre>
+
+<h2>Step 3</h2>
+
+<h3><code>_config.yml</code> 文件 ，修改 <code>default_asides</code></h3>
+
+<p>打开 <code>octopress\_config.yml</code> 文件，修改里面的 <code>default_asides</code> 这一行，将 <code>asides/category_list.html</code> 添加进去。</p>
+
+<pre><code>default_asides: [asides/category_list.html, ......]
+</code></pre>
+
+<p>这里可以修改侧边栏的顺序</p>
+
+<h2>ok</h2>
+
+<p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-categories-list-for-site-sidebar/">原博</a></p>
 </div>
   
   
@@ -288,7 +922,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/02/27/back-to-top/">Back to Top返回頂部按鈕</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/10/can-not-push/">没有正确路径或权限上传，push</a></h1>
     
     
       <p class="meta">
@@ -297,138 +931,34 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 
 
 
-<time class='entry-date' datetime='2022-02-27T18:52:33+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:52 pm</span></time>
+<time class='entry-date' datetime='2022-01-10T22:42:18+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:42 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><a href="https://www.jianshu.com/p/fe0e089a985c">教程1</a><br/>
-<a href="https://www.cnblogs.com/biglucky/p/4148867.html">教程2</a></p>
+  <div class="entry-content"><p>代码如下：</p>
 
-<h3>实现返回按钮功能</h3>
+<pre><code>dong@Ubuntu:~/octopress$ git push origin source
 
-<p>首先创建<code>source/javascripts/top.js</code>，添加如下代码实现滑动返回顶部效果:</p>
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">goTop</span><span class="p">(</span><span class="nx">acceleration</span><span class="p">,</span> <span class="nx">time</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>        <span class="nx">acceleration</span> <span class="o">=</span> <span class="nx">acceleration</span> <span class="o">||</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">//加速度</span>
-</span><span class='line'>        <span class="nx">time</span> <span class="o">=</span> <span class="nx">time</span> <span class="o">||</span> <span class="mi">16</span><span class="p">;</span>  <span class="c1">//时间间隔 (毫秒)</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">x1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">y1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">x2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">y2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">x3</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">y3</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">)</span>
-</span><span class='line'>        <span class="p">{</span>
-</span><span class='line'>                <span class="nx">x1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">scrollLeft</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>                <span class="nx">y1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">scrollTop</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">)</span>
-</span><span class='line'>        <span class="p">{</span>
-</span><span class='line'>                <span class="nx">x2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">scrollLeft</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>                <span class="nx">y2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">scrollTop</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">x3</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">scrollX</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">y3</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">scrollY</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="c1">// 滚动条到页面顶部的水平距离</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">x1</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">x2</span><span class="p">,</span> <span class="nx">x3</span><span class="p">));</span>
-</span><span class='line'>        <span class="c1">// 滚动条到页面顶部的垂直距离</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">y1</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">y2</span><span class="p">,</span> <span class="nx">y3</span><span class="p">));</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="c1">// 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小</span>
-</span><span class='line'>        <span class="kd">var</span> <span class="nx">speed</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="nx">acceleration</span><span class="p">;</span>
-</span><span class='line'>        <span class="nb">window</span><span class="p">.</span><span class="nx">scrollTo</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">x</span> <span class="o">/</span> <span class="nx">speed</span><span class="p">),</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">y</span> <span class="o">/</span> <span class="nx">speed</span><span class="p">));</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="c1">// 如果距离不为零, 继续调用迭代本函数</span>
-</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
-</span><span class='line'>        <span class="p">{</span>
-</span><span class='line'>                <span class="kd">var</span> <span class="nx">invokeFunction</span> <span class="o">=</span> <span class="s2">&quot;goTop(&quot;</span> <span class="o">+</span> <span class="nx">acceleration</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="nx">time</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span><span class="p">;</span>
-</span><span class='line'>                <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">invokeFunction</span><span class="p">,</span> <span class="nx">time</span><span class="p">);</span>
-</span><span class='line'>        <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
 
+<p>打开文件~/octopress/.git/config，查看</p>
 
-<h3>自定义返回按钮格式</h3>
+<pre><code>[remote "origin"]
+    url = git@github.com:haydnyau/haydnyau.github.io.git
+</code></pre>
 
-<p>创建<code>source/_includes/custom/totop.html</code>，设置返回顶部按钮样式和位置<br/>
-其中的<code>width、height、right、bottom</code>为图片在网页中的位置，可根据图片大小自行设定，示例代码如下：</p>
+<p>我是改了几次，com.git和io.git搞错了</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!--返回顶部开始--&gt;</span>
-</span><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;full&quot;</span> <span class="na">style=</span><span class="s">&quot;width:30px; height:30px; position:fixed; right:13px; bottom:13px; z-index:100; text-align:center; background-color:transparent; cursor:pointer;&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick=</span><span class="s">&quot;goTop();return false;&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;/images/top.png&quot;</span> <span class="na">border=</span><span class="s">0</span> <span class="na">alt=</span><span class="s">&quot;返回顶部&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
-</span><span class='line'><span class="nt">&lt;/div&gt;</span>
-</span><span class='line'><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/javascripts/top.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class='line'><span class="c">&lt;!--返回顶部结束--&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+<p><a href="https://blog.csdn.net/weixin_40886892/article/details/80725071">和我同样问题的网友</a></p>
 
-
-<h3>选择按钮图片</h3>
-
-<p>找到自己喜爱的返回按钮图片，命名为<code>top.png</code>后添加到<code>source/images</code>目录中（或修改<code>totop.html</code>中图片的路径），文件名和<code>totop.html</code>中的一致就可以了，可以自己命名。</p>
-
-<p>然后把<code>totop.html</code> 引入到文件中，考虑到进到具体每一篇blog里面也有这个功能，我们把这个文件在<code>foot.html</code>中引入，修改:<code>octopress/source/_includes/custom/footer.html</code>，添加一行：<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMHNMi9RBV8SPCiQjrpiIVqTO0oBBa1zGSTDwX1cxXY1I0xQDhEyJNc9d2jqFOe5QAet0C9GvAgWzpRjxvDQ7Sc!/r" alt="octopress/source/_includes/custom/footer.html" /></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>  {\% include custom/totop.html \%}  //记得去除两个\号
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>bug提醒：如果post文件中有上面这一行代码（没有\号），blog网站首页和这篇博文页，会有返回按钮图片错误</p>
+<p><a href="https://blog.csdn.net/meng_lemon/article/details/88963157">另一个网友的类似问题</a></p>
 </div>
   
   
@@ -441,7 +971,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/02/27/read-on/">Read on 阅读全文</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a></h1>
     
     
       <p class="meta">
@@ -450,288 +980,45 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 
 
 
-<time class='entry-date' datetime='2022-02-27T16:45:06+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:45 pm</span></time>
+<time class='entry-date' datetime='2022-01-07T06:34:42+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:34 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>如果正文太长，不希望在首页直接显示完整内容，可以在适当的位置加上一句<code>&lt;!--more--&gt;</code>，后面的内容就会被按钮<code>Read on→</code>所替代，点击阅读全文。</p>
+  <div class="entry-content"><p>preview.sh代码</p>
 
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2022/02/27/read-on/">Read on &rarr;</a>
-    </footer>
-  
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build #生成
+jekyll serve
+</code></pre>
 
+<hr />
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/27/add-tags/">添加tags，導航欄，側邊欄</a></h1>
-    
-    
-      <p class="meta">
-        
+<p>deploy.sh代码</p>
 
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+octopress deploy
+</code></pre>
 
+<hr />
 
+<p>（不行，这个会造成有些blog页面头尾显示不全）发布，并上传/_posts/源文件，deploy.sh 代码</p>
 
-<time class='entry-date' datetime='2022-02-27T16:34:34+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:34 pm</span></time>
-        
-      </p>
-    
-  </header>
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+mv _posts/ _site/
+octopress deploy
+mv _site/_posts/ .
+</code></pre>
 
-
-  <div class="entry-content"><p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/">参考1</a></p>
-
-<h3>下载</h3>
-
-<p>首先到 <a href="https://github.com/robbyedwards/octopress-tag-pages">https://github.com/robbyedwards/octopress-tag-pages</a> 和 <a href="https://github.com/robbyedwards/octopress-tag-cloud">https://github.com/robbyedwards/octopress-tag-cloud</a> 下载这两个项目的代码。</p>
-
-<h3>octopress-tag-pages</h3>
-
-<p>把里面的文件复制到相应位置，之前已有的文件，看代码，把需要的代码加上去，<code>.md</code>文件先不用管</p>
-
-<h3>octopress-tag-cloud</h3>
-
-<p><strong>1 .</strong> 将 <code>octopress-tag-cloud\plugins</code>  路径里面的 <code>tag_cloud.rb</code>  文件复制到 <code>octopress\plugins\</code>  文件夹里面。</p>
-
-<p><strong>2 .</strong> 将下面的代码复制到 <code>octopress\source\_includes\custom\asides\tags.html</code>。（这个文件需要自己新建。）
-<strong>注意：</strong> 去掉 <code>%</code> 前面的反斜杠<code>\</code>。</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;section&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;h1&gt;</span>Tags<span class="nt">&lt;/h1&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;tag-cloud&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    {\% tag_cloud font-size: 120-160%, limit: 20 \%}
-</span><span class='line'>  <span class="nt">&lt;/ul&gt;</span>
-</span><span class='line'><span class="nt">&lt;/section&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>解释：</p>
-
-<p><code>tag_cloud</code> 的参数中， <code>font-size</code> 指定 <code>tag</code> 的大小范围；<code>limit</code> 限定 <code>20</code> 个 <code>tag</code> 。</p>
-
-<p><strong>3 .</strong> 在 <code>octopress\_config.yml</code> 中的 <code>default_asides</code> 中添加 <code>custom/asides/tags.html</code>，注意相应的位置。</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>default_asides: [custom/asides/tags.html, .....]
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>博文写标签：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>tags: [tag1, tag2, tag3]
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p> <code>rake generate</code> 出现问题：</p>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEBdI0C.SIjWT7xp6kxk44HtNtPC263DeEkNHJxhmSxZADk0hrbMx8wpKHzK5e5i3chf0lcEBpbc6HvuMur2Yj2M!/r" alt="Alt text" /></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>  Liquid Exception: comparison of Array with Array failed in _layouts/page.html
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>解决</h3>
-
-<p><code>octopress\plugins\tag_cloud.rb</code> 第74行:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">if</span> <span class="vi">@limit</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="vi">@sort</span> <span class="o">!=</span> <span class="s1">&#39;rand&#39;</span>
-</span><span class='line'>    <span class="c1"># sort the tag pairs by frequency in descending order</span>
-</span><span class='line'>    <span class="n">weighted</span><span class="o">.</span><span class="n">sort!</span> <span class="p">{</span> <span class="o">|</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">|</span> <span class="n">b</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">&lt;=&gt;</span> <span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="p">}</span>
-</span><span class='line'>    <span class="c1"># then slice off the top @limit tag pairs</span>
-</span><span class='line'>    <span class="n">weighted</span> <span class="o">=</span> <span class="n">weighted</span><span class="o">[</span><span class="mi">0</span><span class="p">,</span><span class="vi">@limit</span><span class="o">]</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><code>weighted = weighted[0,@limit]</code> 应该是取指定数目的标签。如果标签数量少于 <code>@limit</code> ，会报错。</p>
-
-<p>修改第74行为:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>  <span class="k">if</span> <span class="vi">@limit</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="vi">@sort</span> <span class="o">!=</span> <span class="s1">&#39;rand&#39;</span> <span class="ow">and</span> <span class="vi">@limit</span> <span class="o">&lt;</span> <span class="n">weighted</span><span class="o">.</span><span class="n">length</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>修改第95行为:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="k">if</span> <span class="vi">@limit</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="vi">@limit</span> <span class="o">&lt;</span> <span class="n">weighted</span><span class="o">.</span><span class="n">length</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><code>rake generate</code> ，不再出现错误</p>
-
-<p>出现另一警告：</p>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEEVv9L5qdjCrWDNsdaae1gecrl4Dk5DfGovwzPBz4NGxy2YEcsjFTGZk9HPnZ4pdOW3MLz5JmXZtaeKeBaKa9YY!/r" alt="Alt text" /></p>
-
-<p><code>rake preview</code> ，标签云成功添加:</p>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMkifW2gJW9D*DOdH8mhfQXdNtXOdqE9gQNJ5cLGRw3mEOzZJ.eR*6x07lmQqrmSHEFlbcBrFrU*4FcTQePqHV0!/r" alt="Alt text" /></p>
-
-<h3>解决 <code>Build Warning: Layout 'nil' requested in tags/标签名/atom.xml does not exist.</code> 警告问题</h3>
-
-<p>将 <code>octopress\source\_includes\custom\tag_feed.xml</code> 文件里面 <code>nil</code> 改为 <code>null</code> ：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">---</span>
-</span><span class='line'><span class="ss">layout</span><span class="p">:</span> <span class="n">null</span>
-</span><span class='line'><span class="o">---</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>搞定</h2>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/27/speed-up-octopress2-dot-0/">加速Octopress2.0，太慢了</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-27T00:54:38+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:54 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2><a href="https://droidyue.com/blog/2014/06/22/fix-octopress-slow-loading-speed-issue-in-china-mainland/">原博</a></h2>
-
-<h2>清理没用的服务</h2>
-
-<p>以下修改均修改<code>_config.yml</code>,以下可以根据自己的需要进行去除。</p>
-
-<p><strong>去除Disqus评论</strong><br/>
-打开文件找到<code>Disqus Comments</code>，按照下面在每一行前面加#注释掉即可</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># Disqus Comments
-</span><span class='line'>#disqus_short_name: 
-</span><span class='line'>#disqus_show_comment_count: true</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>去掉Github仓库展示</strong></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># Github repositories
-</span><span class='line'>#github_user: 
-</span><span class='line'>#github_repo_count: 
-</span><span class='line'>#github_show_profile_link: true
-</span><span class='line'>#github_skip_forks: true</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>去除Twitter按钮</strong><br/>
-<strong>去除Google+相关</strong><br/>
-<strong>去除Pinboard服务</strong><br/>
-<strong>去除Delicious评论，去除后可能没有评论系统</strong><br/>
-<strong>去除Facebook Like</strong></p>
-
-<h2>替换快速的请求资源</h2>
-
-<p>其实，真正解决加速的重要环节可能是这里，因为Octopress很多依赖于Google的库和资源。</p>
-
-<h3>解决Google Analytics巨慢的问题</h3>
-
-<p>对于使用Google Analytics来说，加在ga.js这个文件简直是要命的慢，这里我使用自己存放在七牛CDN上的js.  <a href="http://droidyue-tools.qiniudn.com/ga.js">http://droidyue-tools.qiniudn.com/ga.js</a> 已验证，完全可以正常收集数据。<br/>
-参考如下，修改<code>source/_includes/google_analytics.html</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'> _gaq.push([&#39;_trackPageview&#39;]);
-</span><span class='line'>
-</span><span class='line'> (function() {
-</span><span class='line'> var ga = document.createElement(&#39;script&#39;); ga.type = &#39;text/javascript&#39;; ga.async = true;
-</span><span class='line'> ga.src=&#39;http://droidyue-tools.qiniudn.com/ga.js&#39;;
-</span><span class='line'> var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(ga, s);
-</span><span class='line'> })();
-</span><span class='line'>   <span class="nt">&lt;/script&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>解决fonts.googleapis.com蜗牛慢</h3>
-
-<p>这里我们使用数字公司提供的Google Fonts大陆解决方案，使用<code>fonts.useso.com</code>替换<code>fonts.googleapis.com</code>。<br/>
-修改文件<code>/source/_includes/custom/head.html</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'> <span class="c">&lt;!--Fonts from Google&quot;s Web font directory at http://google.com/webfonts --&gt;</span>
-</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.useso.com/css?family=PT+Serif:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>解决ajax.googleapis.com慢的问题</h3>
-
-<p>修改<code>source/_includes/head.html</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class='line'><span class="nt">&lt;script&gt;</span><span class="o">!</span><span class="nb">window</span><span class="p">.</span><span class="nx">jQuery</span> <span class="o">&amp;&amp;</span> <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">unescape</span><span class="p">(</span><span class="s1">&#39;%3Cscript src=&quot;./javascripts/lib/jquery.min.js&quot;%3E%3C/script%3E&#39;</span><span class="p">))</span><span class="nt">&lt;/script&gt;</span>
-</span><span class='line'><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/javascripts/octopress.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>總結</h3>
-
-<p>导致网站慢的原因其实是加载Google的资源，当然我们不能怨Google.经过测试，使用数字公司的解决方法之后，国内国外访问速度都是可以的。这里还是推荐以下数字公司的这个解决方案<a href="http://libs.useso.com/">http://libs.useso.com/</a></p>
+<p>注意这个点 &ldquo;.&rdquo;
+<code>.</code> 或者 <code>./</code> 表示当前目录</p>
 </div>
   
   
@@ -760,19 +1047,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
       </li>
     
       <li class="post">
-        <a href="/blog/2022/06/12/daily/">Daily，奎迪，独自变强</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/11/daily/">Daily，2022-06-11</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2022/06/10/hannibal/">Hannibal汉尼拔</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/10/read/">读书</a>
       </li>
     
       <li class="post">
@@ -784,27 +1059,11 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
       </li>
     
       <li class="post">
-        <a href="/blog/2022/06/09/self-discipline/">Self-discipline，自律</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2022/06/08/yi-qi-tong-guo-chuang/">一起同过窗</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2022/06/08/daily/">Daily，2022-06-08</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/05/let-go/">释怀</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2022/06/05/iphone/">iPhone</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/05/daily/">Daily，2022-06-05</a>
       </li>
     
       <li class="post">
@@ -816,23 +1075,51 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
       </li>
     
       <li class="post">
-        <a href="/blog/2022/06/03/zui-quan-2/">醉拳2，弱肉强食</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/02/daily/">Daily，2022-06-02，误解，理解</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/02/be-valuable/">永不停止学习，让自己有价值</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/06/01/daily/">Daily，2022-06-01，种树</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2022/05/31/you-in-my-dream-again/">又梦见你</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/30/dont-like-family-anymore/">不再喜欢家庭</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/28/daily-liaozhaixinzhi/">Daily，2022-05-29，聊齋新志</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/27/daily/">Daily，2022-05-27，篮球废物</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/27/curl-7-failed-to-connect-to-raw-dot-githubusercontent-dot-com-port-443-after-28-ms-ju-jue-lian-jie/">Curl: (7) Failed to Connect to raw.githubusercontent.com Port 443 After 28 Ms: 拒绝连接</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/">Ssh: Connect to Host ssh.github.com Port 443: Connection Refused</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/26/huili-xie/">回力鞋</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/21/you-in-my-dream-again/">又梦见你</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/20/lightdm/">Lightdm Ubuntu 桌面显示管理器</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/19/daily/">Daily，2022-05-19，活着時才能說說話聊聊天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/14/do-what-you-love-love-what-you-do/">Do What You Love, Love What You Do</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/05/13/cook/">煮饭禁忌</a>
       </li>
     
   </ul>
@@ -842,7 +1129,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (172)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (143)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (67)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (25)</a></li>
@@ -857,16 +1144,16 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 <li><a style="font-size: 120%" href="/tags/c/">c</a></li>
 <li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
-<li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 159%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
-<li><a style="font-size: 137%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
-<li><a style="font-size: 153%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
-<li><a style="font-size: 151%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 141%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 160%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 156%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
-<li><a style="font-size: 127%" href="/tags/she/">she</a></li>
-<li><a style="font-size: 132%" href="/tags/ssh/">ssh</a></li>
+<li><a style="font-size: 129%" href="/tags/she/">she</a></li>
+<li><a style="font-size: 134%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
 <li><a style="font-size: 120%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>

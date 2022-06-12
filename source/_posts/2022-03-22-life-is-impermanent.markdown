@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "人生无常"
+title: "人生无常，广西飞机失事"
 date: 2022-03-22 00:32:43 +0800
 author: 丘海东 
 tags: rough

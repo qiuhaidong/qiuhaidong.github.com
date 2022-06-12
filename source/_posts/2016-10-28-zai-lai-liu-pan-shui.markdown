@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "come liupanshui again"
+title: "又出差六盘水"
 date: 2016-10-28 02:10:25 +0800
 comments: true
 categories: personal

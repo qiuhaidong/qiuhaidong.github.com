@@ -13,6 +13,3 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 rvm use 2.2.6
 sudo apt install python2
 ```
-test:  
-### 010203040506070809 69  
-

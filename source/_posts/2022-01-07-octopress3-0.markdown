@@ -23,6 +23,8 @@ categories: tech
 
 [博文2，Octopress 3.0博客搭建教程](https://jingsam.github.io/2015/10/21/blogging-with-octopress-3-0.html)  
 
+<!--more-->  
+
 安装git  
 设置好用户名，email等等，参见之前的blog  
 添加ssh钥匙到github  

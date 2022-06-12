@@ -7,4 +7,6 @@ categories: personal
 ---
 生活是什么？生活应该怎么过？  
 小森林给了一种答案。在一个小森林里，一个小山村里，简单的房子，简单的家具，大事小事都亲力亲为，每天干农活，耘田，割草，珍惜每一件用具，烤面包，酿甜酒，邀请朋友一起饮尝，吃不知名的小果子，果子可能是酸，苦，涩的，但是还可以试着做果酱。  
-日出而作，日落而息，一日三餐。没有远大高尚的理想，但平凡生活中却也不缺小精致、小情趣。不奔波于都市的繁华，也不刻意避世，在世间找到自己的所在。
+日出而作，日落而息，一日三餐。没有远大高尚的理想，但平凡生活中却也不缺小精致、小情趣。不奔波于都市的繁华，也不刻意避世，在世间找到自己的所在。  
+
+![](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqZs41kGwGQg*cL4.8OJQ5HNyPTRXXA9hFk2mAskR7T49f6r1upNXzD189O1c7osksqJYbqLb3uVbqjQJnlbNrsk!/r)

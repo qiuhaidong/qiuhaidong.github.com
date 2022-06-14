@@ -8,8 +8,10 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="别纠结那些琐事
-">
+  <meta name="description" content="1
+2
+dong@Ubuntu:~$ ssh -T git@github.com
+ssh: connect to host github.com port 22: Connection timed out 解决 ssh: connect to host github.com port 22: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +69,104 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">Ssh: Connect to Host github.com Port 22: Connection Timed Out</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-04-23T01:55:21+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2022</span></span> <span class='time'>1:55 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dong@Ubuntu:~$ ssh -T git@github.com
+</span><span class='line'>ssh: connect to host github.com port 22: Connection timed out</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://segmentfault.com/a/1190000040896781">解决 ssh: connect to host github.com port 22: Connection timed out</a></p>
+
+<p><a href="https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out">ssh: connect to host github.com port 22: Connection timed out</a></p>
+
+<p>如果你电脑上的git能在大部分地方进行同步，但是在某处地方的网络下无法同步，并且运行git pull或git push长久没有反映，最后出现ssh: connect to host github.com port 22: Connection timed out，很可能是你的网络供应商（比如广电网）在出口防火墙上屏蔽了22端口，这意味着你将无法访问其他主机的22端口。<br/>
+对此，github提供了一种解决方案，允许你使用443端口进行ssh连接，因为443端口是访问https网站所必须的，大部分防火墙都会允许通过，但如果使用代理服务器可能产生干扰。如果连443端口都被屏蔽，那你应该无法浏览这篇文章。<br/>
+运行这段命令，看看是否有成功提示，如果成功，则可以使用这个解决方案。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -T -p 443 git@ssh.github.com</span></code></pre></td></tr></table></div></figure>
+
+
+<p>简单地配置一下，让你每次ssh连接github都通过443端口。如果你使用Linux，在<code>~/.ssh/config</code>内(新建config文件，无后缀)，添加这些内容，指明ssh连接git@github.com或git@ssh.github.com走443端口。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Host github.com
+</span><span class='line'>Hostname ssh.github.com
+</span><span class='line'>Port 443
+</span><span class='line'>User git #这行可能不需要也行</span></code></pre></td></tr></table></div></figure>
+
+
+<p>或者这一段：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Host github.com
+</span><span class='line'>Hostname ssh.github.com
+</span><span class='line'>PreferredAuthentications publickey
+</span><span class='line'>IdentityFile ~/.ssh/id_rsa
+</span><span class='line'>Port 443
+</span><span class='line'>User git
+</span><span class='line'>
+</span><span class='line'>Host gitlab.com
+</span><span class='line'>Hostname altssh.gitlab.com
+</span><span class='line'>PreferredAuthentications publickey
+</span><span class='line'>IdentityFile ~/.ssh/id_rsa
+</span><span class='line'>Port 443
+</span><span class='line'>User git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>我的：把<code>config</code>文件复制到.ssh2和.ssh3文件夹<br/>
+改ssh2-3文件夹名，测试：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -T git@github.com</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>如果443端口也无法连接，试试改hosts：</h4>
+
+<p><a href="https://qiuhaidong.github.io/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/">ssh: connect to host ssh.github.com port 443: Connection refused</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -680,40 +780,6 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/03/24/dont-pick-the-easy-path/">志氣</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-03-24T23:37:06+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:37 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>日常的平淡，能殺滅所有的志氣。<br/>
-做難事必有所得，做自己沒有做過的事。<br/>
-不被平淡淹沒。<br/>
-自我挑戰。<br/>
-生命在過程中綻放。<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMz29Wp5J31REEDaOBk6vMyqJkysnltBbC9Fm5zpbeL7mUYgGG7yb.OntLsWJot.D.fGVV8uP31if.85Zk557S0!/r" alt="" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/5">&larr; Older</a>
@@ -732,6 +798,10 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️📱️14 Max</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/15/riding/">骑行-徐云流浪中国</a>
       </li>
     
       <li class="post">
@@ -806,10 +876,6 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
         <a href="/blog/2022/05/14/do-what-you-love-love-what-you-do/">Do What You Love, Love What You Do</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/05/13/cook/">煮饭禁忌</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -817,7 +883,7 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (143)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (144)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (63)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (25)</a></li>

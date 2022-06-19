@@ -8,8 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="也好久没读书。
-捡起来。
+  <meta name="description" content="
 ">
   
 
@@ -68,6 +67,35 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2017/01/01/run-after-6-months/">Run After 6 Months</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2017-01-01T00:08:44+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2017</span></span> <span class='time'>12:08 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="http://ww1.sinaimg.cn/large/780bc50fgw1fbaf710jhcj21ci0qothf.jpg" alt="run after 6 months" /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -398,53 +426,6 @@ ruby version:2.2.6</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/11/13/explorer-do-not-start-up-on-windows/">Windows本地浏览器没有启动 Explorer Do Not Start Up on Windows</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-11-13T18:51:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>6:51 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="https://zhidao.baidu.com/question/588254618.html">原帖</a><br/>
-<strong>DG works：</strong><br/>
-<strong>打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。这样在登录时系统会再加载一次Explorer.exe就可以显示出桌面了。但也有如我的状况，gpedit.msc打不开。</strong></p>
-
-<p>关于explorer.exe加载不了 无法显示任务栏与桌面解决办法<br/>
-Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.exe。说明系统启动时候没有加载Explorer.exe。(explorer是Windows程序管理器或者Windows资源管理器，它用于管理Windows图形壳，包括开始菜单、任务栏、桌面和文件管理。删除该程序会导致Windows图形界面无法适用。)<br/>
-点击“Windows任务管理器”&ndash;>“文件”&ndash;>“新建任务（运行……）”敲入Explorer.exe看看是否能够执行，如果不能执行说明系统的winnt目录下没有Explorer.exe这个文件或者Explorer.exe文件损坏。<br/>
-首先尝试下面的方法：<br/>
-1<br/>
-<strong>打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。这样在登录时系统会再加载一次Explorer.exe就可以显示出桌面了。但也有如我的状况，gpedit.msc打不开。</strong><br/>
-2<br/>
-打开注册表，找到子键“HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer”，新建“DWORD”值“NoDesktop”，其值为“1”。（这个是我在网上搜索的方法，为什么要使用这个健值我不清楚。）再检查注册表&hellip;.HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell
-看是否为explorer.exe，不是的话自己改.</p>
-
-<p>第一个，把Explorer加入进程：<br/>
-开始菜单→运行→输入“regedit”，回车→打开注册表内的HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\项，在该项下新建一个名称为“Explorer.exe”的新字符串值，编辑该值，数据为你系统中Explorer.exe的位置。<br/>
-第二个，取消开机项目<br/>
-开始菜单→运行→输入“msconfig”，回车→在『启动』选项卡中，找到那个安装程序的对应的值（如果不知道就把一些没有必要的全部去掉），去掉前面的“√”，保存，退出。<br/>
-重启电脑。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/16">&larr; Older</a>
@@ -463,6 +444,10 @@ Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.e
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️📱️14 Max</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/20/be-smart/">开窍吧-折腾音箱</a>
       </li>
     
       <li class="post">
@@ -537,10 +522,6 @@ Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.e
         <a href="/blog/2022/05/19/daily/">Daily，2022-05-19，活着時才能說說話聊聊天</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/05/14/do-what-you-love-love-what-you-do/">Do What You Love, Love What You Do</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -548,7 +529,7 @@ Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.e
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (144)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (145)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (63)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (25)</a></li>
@@ -563,7 +544,7 @@ Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.e
 <li><a style="font-size: 120%" href="/tags/c/">c</a></li>
 <li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
-<li><a style="font-size: 159%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 120%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 141%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>

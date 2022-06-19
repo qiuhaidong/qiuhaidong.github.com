@@ -1,0 +1,13 @@
+---
+layout: post
+title: "开窍吧-折腾音箱"
+date: 2022-06-20 00:32:16 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+十几块钱的音箱，几块钱的蓝牙模块、功放模块，折腾一天干嘛呢？！  
+去工作两天，挣个四百来块钱，买一个音质品质都上等的，多好呀！  
+可以有这方面的兴趣，DIY找点乐子可以，但是要合理分配时间精力。

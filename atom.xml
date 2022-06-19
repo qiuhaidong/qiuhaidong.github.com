@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-06-20T00:46:35+08:00</updated>
+  <updated>2022-06-20T01:24:25+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,17 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[开窍吧，drop the Bads]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/06/20/kai-qiao-ba-,drop-the-bads/"/>
+    <updated>2022-06-20T01:15:48+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/06/20/kai-qiao-ba-,drop-the-bads</id>
+    <content type="html"><![CDATA[<p>我是个惜物的人， 有些东西很久了还在，如大学时的音箱，手机，皮带头，高中时的衬衫牛仔裤，初中时的核桃石头……<br/>
+这些有用且在用的，留着很合理，但是其他的很多东西，我须果敢地丢弃了。<br/>
+有一些过往，情绪，思维，想法，我要割断！</p>
 ]]></content>
   </entry>
   
@@ -374,17 +385,6 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
 （4）<code>sudo start gdm</code> ，登录gdm管理器<br/>
 （5）<code>sudo dpkg-reconfigure lightdm</code> ，设置管理器的系统默认值<br/>
 注：本文部分资料参阅<a href="https://wiki.ubuntu.com/LightDM">https://wiki.ubuntu.com/LightDM</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Daily，2022-05-19，活着時才能說說話聊聊天]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/05/19/daily/"/>
-    <updated>2022-05-19T00:58:14+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/05/19/daily</id>
-    <content type="html"><![CDATA[<p>《非自然死亡》，第8集<br/>
-兒子年輕時犯錯入獄，父母親和他斷絕關係，出獄後也不再見麵，兒子雖然改過，也自知無顏見父母，隻在喝醉後才敢說出對父母的思唸，隻在和朋友相處時才找到家人的感覺。一次火災，兒子拼命救朋友，無奈隻救出一個，火情就蔓延到無法出去的地步了，隻能把剩下的朋友們背到樓上，最終沒能等到救援。父母知道後原諒了他，可惜已經天人相隔。<br/>
-<img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqRzC5Lm.54UkYqOqSrpAaIW0o707ztMP1ut6J*bXbynwzkda*xuciTShS57lwYILKzqrvAbBnEFlejLCiqGkySI!/r" alt="活着時才能說說話聊聊天" /></p>
 ]]></content>
   </entry>
   

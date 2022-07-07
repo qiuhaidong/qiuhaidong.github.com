@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-07-04T13:50:59+08:00</updated>
+  <updated>2022-07-08T07:44:51+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,23 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[爱否科技FView]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/07/08/fview/"/>
+    <updated>2022-07-08T07:35:24+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/07/08/fview</id>
+    <content type="html"><![CDATA[<p>看到现象，说出真相，是媒体人的责任<br/>
+至于后果，不是我该想的，也不是我能控制的<br/>
+随着年龄的增长，我们会变得越来越不敢说话，不敢决策，患得患失<br/>
+其实，别忘了：<br/>
+我 就是我<br/>
+只需要去想，心里那个理想中的我，遇到这样的事情会怎么做<br/>
+然后去做，就行了<br/>
+至于后果，不用后悔，不用遗憾，调整好自己，充满激情，因为永远，有下一次<br/>
+<img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqS.GDGZUtPZvps.jAtQOD53xQ1rrNosZPbUsY9*8keoK6RlcDy36tQSNVlgMv3LfjSjErb7LmbzAyMpbOwEhOdY!/r" alt="爱否科技FView" /></p>
 ]]></content>
   </entry>
   
@@ -294,32 +311,6 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
 
 <p>我是不厉害呀，但是我的兄弟，马的比我还菜，真服了，哈哈哈哈哈<br/>
 唐斯=软蛋，恩比德=软蛋，但是恩比德vs唐斯=硬汉对决，因为都想证明对方才是联盟最软的</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Curl: (7) Failed to Connect to raw.githubusercontent.com Port 443 After 28 Ms: 拒绝连接]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/05/27/curl-7-failed-to-connect-to-raw-dot-githubusercontent-dot-com-port-443-after-28-ms-ju-jue-lian-jie/"/>
-    <updated>2022-05-27T15:19:28+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/05/27/curl-7-failed-to-connect-to-raw-dot-githubusercontent-dot-com-port-443-after-28-ms-ju-jue-lian-jie</id>
-    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/u014375643/article/details/115826506">问题解决：curl: (7) Failed to connect to raw.githubusercontent.com port 443: 拒绝连接</a><br/>
-<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/</a></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install curl
-</span><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 28 ms: 拒绝连接</span></code></pre></td></tr></table></div></figure>
-
-
-<p>解决：<br/>
-<a href="https://blog.csdn.net/u014375643/article/details/115826506">Failed to connect to raw.githubusercontent.com</a><br/>
-到这个网址：<code>https://www.ipaddress.com/</code>，输入：<code>raw.githubusercontent.com</code>，查询，得到IP地址，选择其中一个或多个，修改本地HOSTS：Ubuntu下打开/etc/hosts，添加 IP地址：<code>185.199.108.133 raw.githubusercontent.com</code>，重试，不行就重启再试。</p>
 ]]></content>
   </entry>
   

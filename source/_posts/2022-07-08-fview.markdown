@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "爱否科技FView"
+title: "天涯海角，后会有期"
 date: 2022-07-08 07:35:24 +0800
 author: 丘海东 
 tags: daily
@@ -8,6 +8,7 @@ comments: true
 categories: personal
 published: true
 ---
+——爱否科技FView  
 看到现象，说出真相，是媒体人的责任  
 至于后果，不是我该想的，也不是我能控制的  
 随着年龄的增长，我们会变得越来越不敢说话，不敢决策，患得患失  

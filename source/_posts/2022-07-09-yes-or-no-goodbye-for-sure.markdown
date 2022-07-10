@@ -15,5 +15,6 @@ published: true
 如果毕十三和林洛雪没有完美，我会难过。  
 就是他们的起点过程结果任意有一点不完美，都遗憾。  
 ……  
+![](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqcoQ23A.LJuuB66OpOFkTjVX6W55wu3jwRVO1sty2YeRIbkmy9VEqplWwkh2DdoVfUW87rAJTDZOnVpWv9fexoY!/r)  
 三十岁前，很多相遇  
 三十岁后，很多分别

@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-07-17T18:23:59+08:00</updated>
+  <updated>2022-08-02T01:17:42+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -23,7 +23,18 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[好好做人]]></title>
+    <title type="html"><![CDATA[放开胸怀，无所畏惧]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/08/02/got-no-fear/"/>
+    <updated>2022-08-02T01:13:48+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/08/02/got-no-fear</id>
+    <content type="html"><![CDATA[<p>逢山开路<br/>
+遇水架桥<br/>
+别怕，别慌，开干</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[好好做]]></title>
     <link href="https://qiuhaidong.github.io/blog/2022/07/17/be-a-better-man/"/>
     <updated>2022-07-17T17:57:50+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/07/17/be-a-better-man</id>
@@ -316,15 +327,6 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
     <updated>2022-05-31T13:36:18+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/05/31/you-in-my-dream-again</id>
     <content type="html"><![CDATA[<p>贫困潦倒，何以胆敢又梦见你？！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[不再喜欢家庭]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/05/30/dont-like-family-anymore/"/>
-    <updated>2022-05-30T15:07:18+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/05/30/dont-like-family-anymore</id>
-    <content type="html"><![CDATA[<p>做家人，也要讲究缘分的，我已经不再喜欢家庭了，太累了</p>
 ]]></content>
   </entry>
   

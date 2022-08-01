@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "好好做人"
+title: "好好做"
 date: 2022-07-17 17:57:50 +0800
 author: 丘海东 
 tags: daily

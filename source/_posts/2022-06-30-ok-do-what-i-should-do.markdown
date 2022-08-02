@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "好吧，做我该做的"
+title: "做自己该做的"
 date: 2022-06-30 00:57:24 +0800
 author: 丘海东 
 tags: daily

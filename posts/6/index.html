@@ -8,11 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="日常的平淡，能殺滅所有的志氣。
-做難事必有所得，做自己沒有做過的事。
-不被平淡淹沒。
-自我挑戰。
-生命在過程中綻放。 ">
+  <meta name="description" content="octopress-2.0，ruby-2.3.1，ubuntu20.04，可以运行（修改这里后）
+octopress-2.0，ruby-2.5.9，ubuntu20.04，可以运行（修改这里后）
+octopress-2.0，ruby-2.6.9，ubuntu20.04，可以运行（修改这里后） &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +68,120 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/">You Can Use the Sass-convert Command to Automatically Fix Most cases---Ruby 不同版本</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-03-26T01:05:55+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>1:05 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>octopress-2.0，ruby-<strong>2.3.1</strong>，ubuntu20.04，可以运行（修改这里后）<br/>
+octopress-2.0，ruby-<strong>2.5.9</strong>，ubuntu20.04，可以运行（修改这里后）<br/>
+octopress-2.0，ruby-<strong>2.6.9</strong>，ubuntu20.04，可以运行（修改这里后）<br/>
+octopress-<strong>3.0</strong>，ruby-<strong>2.5.9</strong>，ubuntu20.04，可以运行（無需修改）<br/>
+octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可以运行（無需修改）</p>
+
+<p>換了版本要重新安裝octopress3.0：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install octopress</span></code></pre></td></tr></table></div></figure>
+
+
+<p>octopress-2.0-3.0，ruby-<strong>3.1.1</strong>，ubuntu20.04，都無法运行。</p>
+
+<p><a href="https://stackoverflow.com/questions/35949660/compass-sass-deprecation-warning">原网页</a><br/>
+<a href="http://cache.baiducontent.com/c?m=Xxdd763vX7YjRNeeOiILGLerW1Lrc_ceIQ3hCNMB9gwdzDHZoy_PikcN75GYpR9DFB3vxBUcejQkaSvlN3gZEfAPpNN-08FVQIDyZHTNJgPwSgoB3NKL4_GS4nx_XrCC-BUaRNwAuECMpWgq8wxzkIpLErbpEqlwK68Qi6soQwepLTgid54lohbxMlnl6PQpNH2t__da7lDpAsRwCb6EY-y40SooyRN5jX-9ufBiajUS0lec_A47rZ0vRgOYP12W&amp;p=8d7d8e0285cc43dd08e297780f568f&amp;newp=c273c00586cc42a95aa9c7710f408f231610db2151d3da146b82c825d7331b001c3bbfb42220150ed3c6796204af4259e8f033783d0923a3dda5c91d9fb4c57479cc&amp;s=2a38a4a9316c49e5&amp;user=baidu&amp;fm=sc&amp;query=You+can+use+the+sass%2Dconvert+command+to+automatically+fix+most+cases%2E&amp;qid=c0e3498b0000d650&amp;p1=1">百度缓存网页</a></p>
+
+<p>I just installed and Compass &amp; Sass as described here.</p>
+
+<p>I got the following warning when I ran <code>compass watch</code> for the first time. What exactly does it mean? What should I do to fix it, do I need to do anything?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ (master) compass watch
+</span><span class='line'>&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
+</span><span class='line'>DEPRECATION WARNING on line 87 of /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
+</span><span class='line'>in a future version of Sass. To preserve the current behavior, use quotes:
+</span><span class='line'>
+</span><span class='line'>  unquote('"$moz-"#{$experimental-support-for-mozilla} "$webkit-"#{$experimental-support-for-webkit} "$opera-"#{$experimental-support-for-opera} "$microsoft-"#{$experimental-support-for-microsoft} "$khtml-"#{$experimental-support-for-khtml}')
+</span><span class='line'>
+</span><span class='line'>You can use the sass-convert command to automatically fix most cases.
+</span><span class='line'>
+</span><span class='line'>DEPRECATION WARNING on line 92 of /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
+</span><span class='line'>in a future version of Sass. To preserve the current behavior, use quotes:
+</span><span class='line'>
+</span><span class='line'>  unquote('"$ie6-"#{$legacy-support-for-ie6} "$ie7-"#{$legacy-support-for-ie7} "$ie8-"#{$legacy-support-for-ie8}')
+</span><span class='line'>
+</span><span class='line'>You can use the sass-convert command to automatically fix most cases.
+</span><span class='line'>
+</span><span class='line'>    write css/styles.css</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>1 Answer :</h4>
+
+<p>To fix the error message, just change the <strong><em>line 87</em></strong> from your &ldquo;<strong>_deprecated-support.scss</strong>&rdquo; file to this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>// A debug tool for checking browser support
+</span><span class='line'>@mixin debug-support-matrix($experimental: true, $ie: true) {
+</span><span class='line'>@debug '#{"$moz-"}$experimental-support-for-mozilla'
+</span><span class='line'>             '#{"$webkit-"}$experimental-support-for-webkit'
+</span><span class='line'>             '#{"$opera-"}$experimental-support-for-opera'
+</span><span class='line'>             '#{"$microsoft-"}$experimental-support-for-microsoft'
+</span><span class='line'>             '#{"$khtml-"}$experimental-support-for-khtml';
+</span><span class='line'>@debug '#{"$ie6-"}$legacy-support-for-ie6'
+</span><span class='line'>             '#{"$ie7-"}$legacy-support-for-ie7'
+</span><span class='line'>             '#{"$ie8-"}$legacy-support-for-ie8';
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The file can be found at your <strong>/home/dong/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss</strong></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -507,40 +619,6 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/27/read-on/">Read on 阅读全文</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-27T16:45:06+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:45 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>如果正文太长，不希望在首页直接显示完整内容，可以在适当的位置加上一句<code>&lt;!--more--&gt;</code>，后面的内容就会被按钮<code>Read on→</code>所替代，点击阅读全文。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2022/02/27/read-on/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/7">&larr; Older</a>
@@ -559,6 +637,10 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️📱️14 Max</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/08/13/%5B%3F%5D-qi-tong-guo-chuang-di-san-ji/">一起同过窗第三季</a>
       </li>
     
       <li class="post">
@@ -633,10 +715,6 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
         <a href="/blog/2022/06/04/kindle-stop-service/">Kindle国区停服，电子书备份</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/05/31/you-in-my-dream-again/">又梦见你</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -644,7 +722,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (154)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (155)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (63)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (25)</a></li>

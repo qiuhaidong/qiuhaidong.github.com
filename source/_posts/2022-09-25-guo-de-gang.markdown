@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "郭德纲"
+title: "郭德纲的处世之道"
 date: 2022-09-25 16:16:43 +0800
 author: 丘海东 
 tags: daily

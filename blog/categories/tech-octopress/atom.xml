@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-10-07T17:09:56+08:00</updated>
+  <updated>2022-10-07T18:07:00+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[添加音乐]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2022/10/07/add-music/"/>
+    <updated>2022-10-07T17:23:48+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2022/10/07/add-music</id>
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1452476987&auto=1&height=66"></iframe>
+
+
+<p>
+到<a href="https://music.163.com/">网易云音乐</a>，搜索喜欢的音乐，点击<strong>生成外链播放器</strong>，复制代码直接放到博文即可。<br/>
+<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqX60ljgLDpTIv7z2qbqMyb8U7bqeX*4yox6K9xgib7.MieS7SlW5GEBANTMmsI.NAC.6i6QySgW3U6S0GC0.SGE!/r" alt="" /><br/>
+<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqbC9NmutSXcW6DjQZhsPIzOB415iXQO8oBKF.sfEKmTdPCpqkbzCEwYJBzGRoiDDIc1LDhjbHWNTiXudPiUCW0w!/r" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Curl: (7) Failed to Connect to raw.githubusercontent.com Port 443 After 28 Ms: 拒绝连接]]></title>
@@ -155,200 +170,6 @@ ssh -T git@github.com
 rvm remove 2.6.9
 rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu 22.04安装Octopress 2.0和3.0]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/"/>
-    <updated>2022-04-05T22:03:16+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04</id>
-    <content type="html"><![CDATA[<p>以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。<br/>
-依赖：python2，ruby2.6.9</p>
-
-<h3>Octopress 2.0</h3>
-
-<pre><code>git --version
-sudo apt install git
-</code></pre>
-
-<p>然后配置git，把之前的octopress-haydnyau和ssh2-ssh3文件夹和.gitconfig文件复制到主目录，改ssh文件夹名<br/>
-<code>
-ssh -T git@github.com
-</code>
-ok<br/>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>python2 &ndash;version
-</span><span class='line'>sudo apt install python2&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;ruby &ndash;version
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>没有  
-</span><span class='line'>到rvm官网(下面的命令可能有更新，看官网)  
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>gpg2 &ndash;recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>提示：  
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>Command &lsquo;gpg2&rsquo; not found, but can be installed with:
-</span><span class='line'>sudo apt install gnupg2
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>sudo apt install gnupg2
-</span><span class='line'>gpg2 &ndash;recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;curl -sSL &lt;a href="https://get.rvm.io"&gt;https://get.rvm.io&lt;/a&gt; | bash -s stable
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>提示：  
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>Command &lsquo;curl&rsquo; not found, but can be installed with:
-</span><span class='line'>sudo apt install curl
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>sudo apt install curl
-</span><span class='line'>curl -sSL &lt;a href="https://get.rvm.io"&gt;https://get.rvm.io&lt;/a&gt; | bash -s stable
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>提示：  
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 28 ms: 拒绝连接
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>解决：  
-</span><span class='line'>[Failed to connect to raw.githubusercontent.com](https://blog.csdn.net/u014375643/article/details/115826506)  
-</span><span class='line'>到这个网址：`https://www.ipaddress.com/`，输入：`raw.githubusercontent.com`，查询，得到IP地址，选择其中一个或多个，修改本地HOSTS：Ubuntu下打开/etc/hosts，添加 IP地址：`185.199.108.133 raw.githubusercontent.com`，重试，不行就重启再试。  
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>curl -sSL &lt;a href="https://get.rvm.io"&gt;https://get.rvm.io&lt;/a&gt; | bash -s stable
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>提示：  
-</span><span class='line'>&lt;/code&gt;&lt;br/&gt;
-</span><span class='line'>* To start using RVM you need to run &lt;code&gt;source /home/dong/.rvm/scripts/rvm&lt;/code&gt;
-</span><span class='line'>    in all your open shell windows, in rare cases you need to reopen all shell windows.
-</span><span class='line'>Thanks for installing RVM
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>source /home/dong/.rvm/scripts/rvm
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>重启命令行  
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>rvm &ndash;version
-</span><span class='line'>rvm install 2.6.9
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>提示错误：  
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>Error running &lsquo;__rvm_make -j4&rsquo;,
-</span><span class='line'>please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;There has been an error while running make. Halting the installation.
-</span><span class='line'>&hellip;&hellip;</span></code></pre></td></tr></table></div></figure></p>
-
-<p><strong>解决：</strong><br/>
-<a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a></p>
-
-<pre><code>rvm pkg install openssl
-rvm remove 2.6.9
-rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
-</code></pre>
-
-<pre><code>ruby --version
-</code></pre>
-
-<h4>记得：终端-首选项-未命名-命令-勾选‘以登陆shell方式运行命令’，重启所有终端</h4>
-
-<pre><code>rvm use 2.6.9 --default
-</code></pre>
-
-<p>把 <code>/octopress/Gemfile</code> 文件里的源改回最初的：<code>source "https://rubygems.org/"</code></p>
-
-<pre><code>gem install bundler
-bundle install
-</code></pre>
-
-<p><a href="https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/">更改：You can use the sass-convert command to automatically fix most cases.</a></p>
-
-<pre><code>rake generate
-......
-</code></pre>
-
-<p>之后就都是常规操作。</p>
-
-<h3>Octopress 3.0</h3>
-
-<pre><code>cd /haydnyau
-</code></pre>
-
-<pre><code>ruby --version
-rvm use 2.6.9 --default
-</code></pre>
-
-<pre><code>jekyll --version
-</code></pre>
-
-<p>确保安装正确<br/>
-安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：<br/>
-<code>
-gem install octopress
-</code>
-确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的<br/>
-好了。</p>
 ]]></content>
   </entry>
   

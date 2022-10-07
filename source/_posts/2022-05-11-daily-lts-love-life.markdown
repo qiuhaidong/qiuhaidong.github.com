@@ -7,8 +7,11 @@ tags: LTS
 comments: true
 categories: personal
 ---
-###彻底解决熬夜晚睡
-###尿酸高-痛风
-###耳朵突聋
-###脱发-记忆力差
-###起红点-免疫力差-各种皮肤问题
+**奶头乐**  
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1452476987&auto=0&height=66"></iframe>  
+**彻底-禁止-熬夜晚睡**  
+**尿酸高-痛风**  
+**耳朵突聋**  
+**脱发**  
+**记忆力差-免疫力差-皮肤红点等问题**  
+

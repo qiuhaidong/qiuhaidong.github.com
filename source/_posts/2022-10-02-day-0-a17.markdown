@@ -8,4 +8,4 @@ comments: true
 categories: personal
 published: true
 ---
-A17，iPhone 15 Pro Max，3nm工艺，8G RAM
+A17，3nm，8G RAM，120Hz，4300+ mAh，6.7英寸

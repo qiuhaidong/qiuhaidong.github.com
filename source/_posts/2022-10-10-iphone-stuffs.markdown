@@ -11,7 +11,7 @@ published: true
 毋庸置疑，iPhone 是行内第一，整体而言，遥遥领先，完全没有竞品能撼动它的位置。  
 但是，iPhone 绝对不是完美的，其实，iPhone 有着很多的槽点，缺陷，无奈。  
 以 iPhone 14 Pro Max 举例：  
-
+<!--more-->  
 ![](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqaaplv9QRPMX7qsOrbnw08PIY1b3lup6qp7xy54qjvbuNt4mDmSOtUGP*gSbyTnipslgO7RNMVJ3AwtokCXQDvA!/r)  
 
 即使已经用了设计去欺骗视觉，但相机模块的凸起，依旧是到了恶劣的程度。而且即使是这样，iPhone 的拍照还是比不过安卓，成像风格、发色倾向、夜间拍照、高光压制、镜头眩光鬼影，都不行。  
@@ -40,7 +40,7 @@ iPhone 14 Pro Max 部分参数：
 A16 仿生芯片 ，4nm 台积电工艺  
 120Hz ProMotion 自适应刷新率技术  
 6.7 英寸  
-<!--more-->
+
 2796 x 1290 像素分辨率，460 ppi  
 2000000:1 对比度 (典型)  
 1000 尼特最大亮度 (典型)  

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-10-11T13:57:54+08:00</updated>
+  <updated>2022-10-11T14:34:24+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -31,6 +31,15 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Day 0, A17]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/10/02/day-0-a17/"/>
+    <updated>2023-10-02T16:26:26+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/10/02/day-0-a17</id>
+    <content type="html"><![CDATA[<p>A17，3nm，8G RAM，120Hz，4300+ mAh，6.7英寸</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[聊聊 iPhone 的矛盾，困境，和恶心]]></title>
     <link href="https://qiuhaidong.github.io/blog/2022/10/10/iphone-stuffs/"/>
     <updated>2022-10-10T22:14:00+08:00</updated>
@@ -38,6 +47,9 @@
     <content type="html"><![CDATA[<p>毋庸置疑，iPhone 是行内第一，整体而言，遥遥领先，完全没有竞品能撼动它的位置。<br/>
 但是，iPhone 绝对不是完美的，其实，iPhone 有着很多的槽点，缺陷，无奈。<br/>
 以 iPhone 14 Pro Max 举例：</p>
+
+<!--more-->
+
 
 <p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqaaplv9QRPMX7qsOrbnw08PIY1b3lup6qp7xy54qjvbuNt4mDmSOtUGP*gSbyTnipslgO7RNMVJ3AwtokCXQDvA!/r" alt="" /></p>
 
@@ -67,9 +79,6 @@ A16 仿生芯片 ，4nm 台积电工艺<br/>
 120Hz ProMotion 自适应刷新率技术<br/>
 6.7 英寸</p>
 
-<!--more-->
-
-
 <p>2796 x 1290 像素分辨率，460 ppi<br/>
 2000000:1 对比度 (典型)<br/>
 1000 尼特最大亮度 (典型)<br/>
@@ -96,15 +105,6 @@ A16 仿生芯片 ，4nm 台积电工艺<br/>
     <id>https://qiuhaidong.github.io/blog/2022/10/09/bishisanlinluoxue</id>
     <content type="html"><![CDATA[<p>我有点明白大家为什么喜欢嗑CP了，那是我们对剧中人物的祝福，还有更重要的，是我们自己对爱情的向往。<br/>
 <img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqQFTqKWDpsUS9S3RH8Fc9hDyaIGKguipX5C8SSjunK.GreNZDV558zcHI3O6M4naCl9T8XN1KVYHYacCJqVO*Ac!/r" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 0, A17]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/10/02/day-0-a17/"/>
-    <updated>2022-10-02T16:26:26+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/10/02/day-0-a17</id>
-    <content type="html"><![CDATA[<p>A17，3nm，8G RAM，120Hz，4300+ mAh，6.7英寸</p>
 ]]></content>
   </entry>
   

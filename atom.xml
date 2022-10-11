@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2022-10-11T13:57:54+08:00</updated>
+  <updated>2022-10-11T14:34:24+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -31,6 +31,15 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Day 0, A17]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/10/02/day-0-a17/"/>
+    <updated>2023-10-02T16:26:26+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/10/02/day-0-a17</id>
+    <content type="html"><![CDATA[<p>A17，3nm，8G RAM，120Hz，4300+ mAh，6.7英寸</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[聊聊 iPhone 的矛盾，困境，和恶心]]></title>
     <link href="https://qiuhaidong.github.io/blog/2022/10/10/iphone-stuffs/"/>
     <updated>2022-10-10T22:14:00+08:00</updated>
@@ -38,6 +47,9 @@
     <content type="html"><![CDATA[<p>毋庸置疑，iPhone 是行内第一，整体而言，遥遥领先，完全没有竞品能撼动它的位置。<br/>
 但是，iPhone 绝对不是完美的，其实，iPhone 有着很多的槽点，缺陷，无奈。<br/>
 以 iPhone 14 Pro Max 举例：</p>
+
+<!--more-->
+
 
 <p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqaaplv9QRPMX7qsOrbnw08PIY1b3lup6qp7xy54qjvbuNt4mDmSOtUGP*gSbyTnipslgO7RNMVJ3AwtokCXQDvA!/r" alt="" /></p>
 
@@ -66,9 +78,6 @@ NFC 功能限制<br/>
 A16 仿生芯片 ，4nm 台积电工艺<br/>
 120Hz ProMotion 自适应刷新率技术<br/>
 6.7 英寸</p>
-
-<!--more-->
-
 
 <p>2796 x 1290 像素分辨率，460 ppi<br/>
 2000000:1 对比度 (典型)<br/>
@@ -108,18 +117,13 @@ A16 仿生芯片 ，4nm 台积电工艺<br/>
 
 
 <p>
-到<a href="https://music.163.com/">网易云音乐</a>，搜索喜欢的音乐，点击<strong>生成外链播放器</strong>，复制代码直接放到博文即可。<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqX60ljgLDpTIv7z2qbqMyb8U7bqeX*4yox6K9xgib7.MieS7SlW5GEBANTMmsI.NAC.6i6QySgW3U6S0GC0.SGE!/r" alt="" /><br/>
+到<a href="https://music.163.com/">网易云音乐</a>，搜索喜欢的音乐，点击<strong>生成外链播放器</strong>，复制代码直接放到博文即可。</p>
+
+<!--more-->  
+
+
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqX60ljgLDpTIv7z2qbqMyb8U7bqeX*4yox6K9xgib7.MieS7SlW5GEBANTMmsI.NAC.6i6QySgW3U6S0GC0.SGE!/r" alt="" /><br/>
 <img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqbC9NmutSXcW6DjQZhsPIzOB415iXQO8oBKF.sfEKmTdPCpqkbzCEwYJBzGRoiDDIc1LDhjbHWNTiXudPiUCW0w!/r" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 0, A17]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/10/02/day-0-a17/"/>
-    <updated>2022-10-02T16:26:26+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/10/02/day-0-a17</id>
-    <content type="html"><![CDATA[<p>A17，3nm，8G RAM，120Hz，4300+ mAh，6.7英寸</p>
 ]]></content>
   </entry>
   
@@ -141,8 +145,12 @@ A16 仿生芯片 ，4nm 台积电工艺<br/>
     <link href="https://qiuhaidong.github.io/blog/2022/09/20/daily/"/>
     <updated>2022-09-20T00:06:36+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2022/09/20/daily</id>
-    <content type="html"><![CDATA[<p>如果有一天，我不再是独自一人，和她一起看《老友记》、《一起同过窗》，会很好<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqYYSIGCIoSoeo61E32BZa9E7jAarS7rISzhDnpdzwYLYcK5cNp6aVte2dkF5RjSdaDCZVHrFmHMM4CWZIysTw3Q!/r" alt="" /><br/>
+    <content type="html"><![CDATA[<p>如果有一天，我不再是独自一人，和她一起看《老友记》、《一起同过窗》，会很好</p>
+
+<!--more-->  
+
+
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqYYSIGCIoSoeo61E32BZa9E7jAarS7rISzhDnpdzwYLYcK5cNp6aVte2dkF5RjSdaDCZVHrFmHMM4CWZIysTw3Q!/r" alt="" /><br/>
 <img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqcRzPJDd3TFTiyw47wMn.tbrJy2cc7l.wchaLZMQoohpsgS7DStAeE1Rm*z1EjCpZb07XUC.EnDrR8gksCJHBOc!/r" alt="" /></p>
 ]]></content>
   </entry>
@@ -226,8 +234,12 @@ A16 仿生芯片 ，4nm 台积电工艺<br/>
 我 就是我<br/>
 只需要去想，心里那个理想中的我，遇到这样的事情会怎么做<br/>
 然后去做，就行了<br/>
-至于后果，不用后悔，不用遗憾，调整好自己，充满激情，因为永远，有下一次<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqb6rxDStaLHN1TgOCfEgSXVmthz5k3Ua2Z9dMYaOMLg8IT12SzUNIRXFfjikU*YSP3LBTFjhneOVLjCTf1Q7qSs!/r" alt="彭林FView" /><br/>
+至于后果，不用后悔，不用遗憾，调整好自己，充满激情，因为永远，有下一次</p>
+
+<!--more-->  
+
+
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqb6rxDStaLHN1TgOCfEgSXVmthz5k3Ua2Z9dMYaOMLg8IT12SzUNIRXFfjikU*YSP3LBTFjhneOVLjCTf1Q7qSs!/r" alt="彭林FView" /><br/>
 <img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqS.GDGZUtPZvps.jAtQOD53xQ1rrNosZPbUsY9*8keoK6RlcDy36tQSNVlgMv3LfjSjErb7LmbzAyMpbOwEhOdY!/r" alt="爱否科技FView" /></p>
 ]]></content>
   </entry>

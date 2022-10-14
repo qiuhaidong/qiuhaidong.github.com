@@ -13,5 +13,5 @@ categories: personal
 **耳朵突聋**  
 **脱发**  
 **记忆力差-免疫力差-皮肤红点等问题**  
-Day 0： A17，3nm，8G RAM，120Hz，4300+ mAh，6.7英寸  
+Day 0: A17, 3nm, 8G RAM, 120Hz, 4300+mAh, 6.7inch  
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=169309&auto=0&height=66"></iframe>

@@ -6,6 +6,6 @@ author: 丘海东
 tags: daily
 comments: true
 categories: personal
-published: true
+published: false
 ---
-摆烂太久，老天可是会收回你的天赋的。
+摆烂太久，老天会收回你的天赋

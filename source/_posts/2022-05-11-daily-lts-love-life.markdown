@@ -7,7 +7,7 @@ tags: LTS
 comments: true
 categories: personal
 ---
-**Day 0: A17, 3nm, 8G RAM, 120Hz, 4300+mAh, 6.7inch**  
+**Day 0: A17, 8G RAM, 120Hz, PC, 下代工艺**  
 奶头乐- -熬夜-尿酸-痛风-突聋-脱发-记忆-免疫-皮肤红点  
 摆烂太久，老天会收回你的天赋  
 所有的美德中，勇敢是最稀缺的  

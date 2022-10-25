@@ -8,9 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="在添加/删除程序中彻底删除sql server
-将没有删除的sql server目录也删除掉
-打开注册表编辑器，在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session &hellip;">
+  <meta name="description" content="
+三辊闸，淘气堡，后台终端管理，扣费由场地决定，投币数设置为1即可。若扣费50，投币50，会导致三辊闸打开时间过长，比如连续20秒～～～
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,75 +68,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/09/03/sql2000-install-hang-up/">SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-09-03T19:16:20+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>7:16 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ol>
-<li>在添加/删除程序中彻底删除sql server</li>
-<li>将没有删除的sql server目录也删除掉</li>
-<li>打开注册表编辑器，在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager中找到PendingFileRenameOperations项目，并删除它。这样就可以清除安装暂挂项目</li>
-<li>删除注册表中跟sql server相关的键</li>
-</ol>
-
-
-<p><em>或者使用:SQL安装挂起解决工具免安装版.exe</em><br/>
-<strong>DG：在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项——SQL2000安装挂起.reg</strong></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/08/30/eat-healthy/">Be Health</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-08-30T13:21:09+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:21 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2016-08-30 04:01 在贵州六盘水<br/>
-这几天，没吃蔬菜，没定时定量，闹肚子了，凌晨3点多，在厕所蹲到脚麻，肚子痛到全身没力。
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/Screenshot_2016-08-30-04-01-40.png" alt="2016-08-30 04:01" /></p>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -462,6 +393,121 @@ win+r：shell:startup
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/06/28/c-plus-plus-under-linux/">C++ on Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-06-28T17:19:52+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:19 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><code>g++ --version</code></p>
+
+<p>编译：</p>
+
+<pre><code>g++ -o hello hello.cpp
+</code></pre>
+
+<p>或：</p>
+
+<pre><code>g++ hello.cpp -o hello
+</code></pre>
+
+<p>或：</p>
+
+<pre><code>g++ hello.cpp
+</code></pre>
+
+<p>生成hello或a.out</p>
+
+<p>运行：</p>
+
+<pre><code>./hello
+</code></pre>
+
+<p>或：</p>
+
+<pre><code>./a.out
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/06/27/c-on-linux/">C on Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-06-27T09:18:14+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:18 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>linux下用gcc，系统自带有，用<code>gcc --version</code>查看一下即可，若没有，安装编译环境：</p>
+
+<pre><code>sudo apt-get install build-essential
+</code></pre>
+
+<p>新建test.c文件：</p>
+
+<pre><code>sudo gedit /…/…/…/test.c
+</code></pre>
+
+<p>然后开始编程：</p>
+
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    printf("hello,world!\n");
+    return 0;
+}
+</code></pre>
+
+<p>保存后编译：</p>
+
+<pre><code>gcc -o test test.c
+</code></pre>
+
+<p>生产可执行文件test，运行：</p>
+
+<pre><code>./test
+</code></pre>
+
+<p>完成。</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/posts/20">&larr; Older</a>
@@ -480,14 +526,6 @@ win+r：shell:startup
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/10/25/brave/">在所有的美德中，勇敢是最稀缺的</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/10/14/talent/">Talent</a>
       </li>
     
       <li class="post">
@@ -558,6 +596,14 @@ win+r：shell:startup
         <a href="/blog/2022/06/20/be-smart/">开窍吧-折腾音箱</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/2022/06/15/riding/">骑行-徐云流浪中国</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/14/feng-xian-he-ge-ren-ke-qiu-man-zu/">奉献和个人渴求满足</a>
+      </li>
+    
   </ul>
 </section>
 <section>
@@ -565,7 +611,7 @@ win+r：shell:startup
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (162)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (160)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (63)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -585,7 +631,7 @@ win+r：shell:startup
 <li><a style="font-size: 128%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 154%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
-<li><a style="font-size: 150%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 151%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 128%" href="/tags/she/">she</a></li>

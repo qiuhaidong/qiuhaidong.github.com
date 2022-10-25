@@ -8,7 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="新博客 旧博客 折腾了好几天，终于迁移好了 这是主题作者的Blog 这是他的Github 和 仓库
+  <meta name="description" content="很多以前做过的事，细节步骤都不记得了，多写字吧，详细地记录下来，以后也有个回忆。
 ">
   
 
@@ -67,114 +67,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/12/new-and-old-blog/">新 舊博客</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-12T23:56:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:56 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3><a href="https://haydnyau.github.io/">新博客</a></h3>
-
-<h3><a href="https://qiuhaidong.github.io/">旧博客</a></h3>
-
-<p>折腾了好几天，终于迁移好了</p>
-
-<p><a href="https://gaohaoyang.github.io/">这是主题作者的Blog</a></p>
-
-<p><a href="https://github.com/Gaohaoyang">这是他的Github</a> 和 <a href="https://github.com/Gaohaoyang/gaohaoyang.github.io">仓库</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/">No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-12T19:03:01+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:03 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
-
-<p>原博内容：</p>
-
-<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
-
-<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
-解决办法：</p>
-
-<ul>
-<li>运行</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/apt/sources.list</span></code></pre></td></tr></table></div></figure>
-
-
-<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
-
-<ul>
-<li>更新</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt update</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>安装</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后再安装<code>rvm install 2.2.6</code></p>
-
-<p>————————————————<br/>
-版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -725,6 +617,92 @@ mv _site/_posts/ .
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/07/change-templates--post-if-error/">更改了文件_templates/post，以后若出错改回来</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-07T06:19:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:19 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>更改了/home/dong/haydnyau/_templates/post
+增加了：</p>
+
+<pre><code>categories: 
+</code></pre>
+
+<h3>ps: {}里面有代码:</h3>
+
+<p>categories: {{ categories }}<br/>
+因为格式问题没有显示，参见原文件</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-07T06:02:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:02 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>注意，下面的有些步骤不适合</h3>
+
+<h4>先到jekyll官网，用它的方法安装好本地博客，再看几个octopress3.0的教程，比如官方github的和<a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a>  ，安装octopress，用它来上传blog，结合下面的前面几步，git，rvm，ruby，bundler，bundle install(or bundle)</h4>
+
+<p>重装octopress 2.0 博客失败<br/>
+很多新旧的软件，依赖，都不兼容了<br/>
+算了，世界在发展，有的旧事物必然被淘汰<br/>
+毕竟连作者都不维护了<br/>
+而且连3.0都不维护了</p>
+
+<hr />
+
+<p><a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a></p>
+
+<p><a href="https://jingsam.github.io/2015/10/21/blogging-with-octopress-3-0.html">博文2，Octopress 3.0博客搭建教程</a></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2022/01/07/octopress3-0/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/posts/11">&larr; Older</a>
@@ -743,14 +721,6 @@ mv _site/_posts/ .
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/10/25/brave/">在所有的美德中，勇敢是最稀缺的</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2022/10/14/talent/">Talent</a>
       </li>
     
       <li class="post">
@@ -821,6 +791,14 @@ mv _site/_posts/ .
         <a href="/blog/2022/06/20/be-smart/">开窍吧-折腾音箱</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/2022/06/15/riding/">骑行-徐云流浪中国</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/06/14/feng-xian-he-ge-ren-ke-qiu-man-zu/">奉献和个人渴求满足</a>
+      </li>
+    
   </ul>
 </section>
 <section>
@@ -828,7 +806,7 @@ mv _site/_posts/ .
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (162)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (160)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (63)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -848,7 +826,7 @@ mv _site/_posts/ .
 <li><a style="font-size: 128%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 138%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 154%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
-<li><a style="font-size: 150%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 151%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 128%" href="/tags/she/">she</a></li>

@@ -8,11 +8,10 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="2022-01-05:最新网址：https://gems.ruby-china.com/
-这个不行了：2016-10-28:最新网址：https://gems.ruby-china.org 这个不行了
-封网，rubygems.org 不行了
-bundle install 自然也不行
-点算？ &hellip;">
+  <meta name="description" content="如何为已经存在于Github上的Octopress搭建本地环境
+大部分步骤和全新搭建时差不多，这里只列出不同的那几步
+···安装其他···
+clone source 分支： git clone -b source git@github.com:username/repositoryname.git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +69,84 @@ bundle install 自然也不行
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/08/25/how-to-git-octopress/">How to ‘git’ Octopress</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-08-25T13:58:37+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:58 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>如何为已经存在于Github上的Octopress搭建本地环境<br/>
+大部分步骤和全新搭建时差不多，这里只列出不同的那几步<br/>
+···安装其他···<br/>
+clone <code>source</code> 分支：</p>
+
+<pre><code>git clone -b source git@github.com:username/repositoryname.git octopress
+</code></pre>
+
+<p>换成我的具体命令就是:</p>
+
+<pre><code>git clone -b source git@github.com:qiuhaidong/qiuhaidong.github.com.git octopress
+</code></pre>
+
+<p>clone <code>master</code> 分支：<br/>
+<code>master</code> 分支存放在 <code>_deploy</code>目录</p>
+
+<pre><code>cd octopress
+git clone git@github.com:username/repositoryname.git _deploy
+</code></pre>
+
+<p>具体命令：</p>
+
+<pre><code>git clone git@github.com:qiuhaidong/qiuhaidong.github.com.git _deploy
+</code></pre>
+
+<p>if<br/>
+<a href="https://qiuhaidong.github.io/blog/2016/08/22/SSL-cannot-push-pull-keys-https-issue/">路径权限错误，无法pull Push</a><br/>
+fix it:</p>
+
+<pre><code>gedit octopress/.git/config
+git https://github.com/qiuhaidong/qiuhaidong.github.com.git _deploy
+</code></pre>
+
+<p>···其他步骤···<br/>
+另个重要命令：<br/>
+拉取：</p>
+
+<pre><code>cd octopress
+git pull origin source
+cd _deploy
+git pull origin master
+</code></pre>
+
+<p>推送：</p>
+
+<pre><code>cd octopress
+git add .
+git commit -m 'my message'
+git push origin source
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -620,67 +697,6 @@ gem install therubyracer
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/02/22/running/">阿甘的奔跑</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-02-22T23:01:57+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2015</span></span> <span class='time'>11:01 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>想起阿甘。<br/>
-阿甘有点傻，一点点傻。<br/>
-他经历了战友布巴的离世，丹中尉的悲怨起伏，母亲的离世，以及贯穿他整个生命的珍妮的美好而又若即若离触不可及。<br/>
-阿甘不孤单。<br/>
-童年时母亲和珍妮陪他。当兵时布巴陪他。在海上捕虾时丹中尉陪他。<br/>
-阿甘只是孤独。<br/>
-没有人走进阿甘的心里。<br/>
-没有人想走进阿甘的心里。<br/>
-或者说：<br/>
-珍妮没有走进阿甘心里。<br/>
-珍妮不想走进阿甘心里。<br/>
-当珍妮再次离开，所有孤独，清晰浮现。<br/>
-阿甘开始奔跑。<br/>
-跑到城边。<br/>
-跑遍县城。<br/>
-横越阿拉巴马州。<br/>
-跑到一个海角。<br/>
-跑到另一个海角。<br/>
-横越美国。<br/>
-在湖边奔跑。<br/>
-在麦田旁奔跑。<br/>
-在河流石桥上奔跑。<br/>
-在栅栏边奔跑。<br/>
-在牧场旁奔跑。<br/>
-在秋天黄叶林中奔跑。<br/>
-在沙漠奔跑。<br/>
-三年，两个半月。<br/>
-后来，珍妮问起，阿甘告诉她：<br/>
-战场雨停后的星空。<br/>
-海湾的日落。<br/>
-雪山旁湖面的倒影。<br/>
-沙漠的日出。<br/>
-那些属于阿甘的，一个人的一些瞬间。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/25">&larr; Older</a>
@@ -699,6 +715,10 @@ gem install therubyracer
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2022/11/18/sleepless/">失眠</a>
       </li>
     
       <li class="post">
@@ -773,10 +793,6 @@ gem install therubyracer
         <a href="/blog/2022/06/28/dont-die/">别在最好的时光里死去</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/06/20/kai-qiao-ba-,drop-the-bads/">开窍吧，drop the Bads</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -784,7 +800,7 @@ gem install therubyracer
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (163)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (164)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (63)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -801,13 +817,13 @@ gem install therubyracer
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
 <li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
-<li><a style="font-size: 128%" href="/tags/octopress/">octopress</a></li>
+<li><a style="font-size: 127%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 137%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
-<li><a style="font-size: 154%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 153%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 150%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
-<li><a style="font-size: 128%" href="/tags/she/">she</a></li>
+<li><a style="font-size: 127%" href="/tags/she/">she</a></li>
 <li><a style="font-size: 132%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
 <li><a style="font-size: 120%" href="/tags/ubuntu/">ubuntu</a></li>

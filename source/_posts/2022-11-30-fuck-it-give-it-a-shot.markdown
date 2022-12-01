@@ -9,5 +9,5 @@ categories: personal
 published: true
 ---
 改变自己！  
-[sy](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/Fuck%20it!%20Give%20it%20a%20shot!.jpeg)  
-![](https://wx1.sinaimg.cn/large/780bc50fgy1h8nmu7prjrj20pp0ppgny.jpg)
+![](http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqYF2tgzqXOKz7lvDWDMCbDHlpOu*9UGRlwbNsTLIMcdMugE*D2YmDXbspDwsRQeTs0hw4oC4Lj8mcuuENhMTSqg!/r)  
+[1](https://wx1.sinaimg.cn/large/780bc50fgy1h8nmu7prjrj20pp0ppgny.jpg)

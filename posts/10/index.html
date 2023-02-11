@@ -8,9 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="layout: post
-title: date: tags: author: 丘海东
-comments: categories:
+  <meta name="description" content="睡觉
 ">
   
 
@@ -69,6 +67,35 @@ comments: categories:
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/15/done-tired/">Ok 好累</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-15T03:23:36+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:23 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>睡觉</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -580,93 +607,6 @@ Gem::LoadError: You have already activated rake 13.0.1, but your Gemfile require
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-11T04:38:50+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:38 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容</h3>
-
-<p>首先利用<code>rfkill</code>命令查看目前无线传输设备的状态，<code>rfkill</code>是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。</p>
-
-<p>rfkill的常用方法为:</p>
-
-<pre><code>rfkill list all
-#  获得设备列表
-
-rfkill block [index|type]
-#  通过索引或类型禁用设备
-
-rfkill unblock [index|type]
-#  通过索引或类型启用设备
-</code></pre>
-
-<p>当前设备状态如下：</p>
-
-<pre><code>rfkill list all
-输出：
-0: phy0: Wireless LAN
-    Soft blocked: no
-    Hard blocked: yes
-1: acer-wireless: Wireless LAN
-    Soft blocked: no
-    Hard blocked: no
-</code></pre>
-
-<p>通过rfkill启用/禁用设备无法对硬件阻塞产生作用。</p>
-
-<p>由于笔记本只有一个无线网卡，这两个模块应该是有冲突</p>
-
-<p>使用命令lsmod | grep acer可以看出系统启动了acer_wmi模块</p>
-
-<p>通过查找资料后，解决方法为禁用acer_wmi模块。</p>
-
-<p>解决方法：</p>
-
-<p>通过在/etc/modprobe.d/文件夹下，编辑blacklist.conf文件，最后一行添加内容：  <code>blacklist acer_wmi</code></p>
-
-<pre><code>sudo gedit /etc/modprobe.d/blacklist.conf
-</code></pre>
-
-<p>重启<br/>
-wifi自动为打开状态，此时rfkill list all命令结果如下:</p>
-
-<pre><code>rfkill list all
-
-0: phy0: Wireless LAN
-Soft blocked: no
-Hard blocked: no
-</code></pre>
-
-<p>版权声明：本文为CSDN博主「Monkey_D_Shuai」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：<a href="https://blog.csdn.net/ls12165/article/details/68189943">https://blog.csdn.net/ls12165/article/details/68189943</a></p>
-
-<p><a href="https://blog.csdn.net/ls12165/article/details/68189943?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;utm_relevant_index=2">原文链接</a></p>
-
-<p><a href="https://blog.csdn.net/weixin_34305091/article/details/116951261?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;utm_relevant_index=2">另一篇博文</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/11">&larr; Older</a>
@@ -685,6 +625,10 @@ Hard blocked: no
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/02/11/sleep-health/">早睡早起身体好</a>
       </li>
     
       <li class="post">
@@ -759,10 +703,6 @@ Hard blocked: no
         <a href="/blog/2022/07/04/gao-du-he-ge-ju/">高度和格局</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/07/02/china-vs-taibei-basketball/">男篮世界杯预选赛中国vs台北</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -770,7 +710,7 @@ Hard blocked: no
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (166)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (167)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (63)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -846,7 +786,7 @@ Hard blocked: no
 <!--返回顶部结束-->
 
 
-  Copyright &copy; 2022 - 丘海东 -
+  Copyright &copy; 2023 - 丘海东 -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

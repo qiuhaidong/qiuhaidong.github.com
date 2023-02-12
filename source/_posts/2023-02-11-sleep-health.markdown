@@ -8,4 +8,5 @@ comments: true
 categories: personal
 published: true
 ---
-11点睡觉，8点起床。
+11点睡觉，8点起床。  
+晚睡会毁了那两三天的。

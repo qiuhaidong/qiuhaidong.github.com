@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-06-14T21:39:03+08:00</updated>
+  <updated>2023-06-16T01:48:58+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,68 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu安装deb文件]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/06/16/install-deb/"/>
+    <updated>2023-06-16T01:38:49+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/06/16/install-deb</id>
+    <content type="html"><![CDATA[<p>Ubuntu下安装deb包的命令总结</p>
+
+<p><a href="https://blog.csdn.net/cui_shuang_xi/article/details/90904929">原文链接</a></p>
+
+<p>在Ubuntu下安装deb包需要使用dpkg命令.</p>
+
+<p>Dpkg 的普通用法：</p>
+
+<pre><code>sudo dpkg -i &lt;package.deb&gt;  
+</code></pre>
+
+<p>安装一个 Debian 软件包，如你手动下载的文件。</p>
+
+<pre><code>sudo dpkg -c &lt;package.deb&gt;  
+</code></pre>
+
+<p>列出 &lt;package.deb> 的内容。</p>
+
+<pre><code>sudo dpkg -I &lt;package.deb&gt;  
+</code></pre>
+
+<p>从 &lt;package.deb> 中提取包裹信息。</p>
+
+<pre><code>sudo dpkg -r  
+</code></pre>
+
+<p>移除一个已安装的包裹。</p>
+
+<pre><code>sudo dpkg -P  
+</code></pre>
+
+<p>完全清除一个已安装的包裹。和 remove 不同的是，remove 只是删掉数据和可执行文件，purge 另外还删除所有的配制文件。</p>
+
+<pre><code>sudo dpkg -L  
+</code></pre>
+
+<p>列出 安装的所有文件清单。同时请看 dpkg -c 来检查一个 .deb 文件的内容。</p>
+
+<pre><code>sudo dpkg -s  
+</code></pre>
+
+<p>显示已安装包裹的信息。同时请看 apt-cache 显示 Debian 存档中的包裹信息，以及 dpkg -I 来显示从一个 .deb 文件中提取的包裹信息。</p>
+
+<pre><code>sudo dpkg-reconfigure  
+</code></pre>
+
+<p>重新配制一个已经安装的包裹，如果它使用的是 debconf (debconf 为包裹安装提供了一个统一的配制界面)。</p>
+
+<p>如果安装过程中出现问题,可以先使用命令:</p>
+
+<pre><code>sudo apt-get update  
+</code></pre>
+
+<p>更新后再执行上面的命令.</p>
 ]]></content>
   </entry>
   
@@ -64,17 +126,6 @@
     <id>https://qiuhaidong.github.io/blog/2023/02/11/sleep-health</id>
     <content type="html"><![CDATA[<p>11点睡觉，8点起床。<br/>
 晚睡会毁了那两三天的。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Fuck It! Give It a Shot!]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/11/30/fuck-it-give-it-a-shot/"/>
-    <updated>2022-11-30T23:30:08+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/11/30/fuck-it-give-it-a-shot</id>
-    <content type="html"><![CDATA[<p>改变自己！<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqYF2tgzqXOKz7lvDWDMCbDHlpOu*9UGRlwbNsTLIMcdMugE*D2YmDXbspDwsRQeTs0hw4oC4Lj8mcuuENhMTSqg!/r" alt="" /><br/>
-<a href="https://wx1.sinaimg.cn/large/780bc50fgy1h8nmu7prjrj20pp0ppgny.jpg">1</a></p>
 ]]></content>
   </entry>
   

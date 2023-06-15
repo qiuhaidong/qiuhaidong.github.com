@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-06-14T21:39:03+08:00</updated>
+  <updated>2023-06-16T01:48:58+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,68 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu安装deb文件]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/06/16/install-deb/"/>
+    <updated>2023-06-16T01:38:49+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/06/16/install-deb</id>
+    <content type="html"><![CDATA[<p>Ubuntu下安装deb包的命令总结</p>
+
+<p><a href="https://blog.csdn.net/cui_shuang_xi/article/details/90904929">原文链接</a></p>
+
+<p>在Ubuntu下安装deb包需要使用dpkg命令.</p>
+
+<p>Dpkg 的普通用法：</p>
+
+<pre><code>sudo dpkg -i &lt;package.deb&gt;  
+</code></pre>
+
+<p>安装一个 Debian 软件包，如你手动下载的文件。</p>
+
+<pre><code>sudo dpkg -c &lt;package.deb&gt;  
+</code></pre>
+
+<p>列出 &lt;package.deb> 的内容。</p>
+
+<pre><code>sudo dpkg -I &lt;package.deb&gt;  
+</code></pre>
+
+<p>从 &lt;package.deb> 中提取包裹信息。</p>
+
+<pre><code>sudo dpkg -r  
+</code></pre>
+
+<p>移除一个已安装的包裹。</p>
+
+<pre><code>sudo dpkg -P  
+</code></pre>
+
+<p>完全清除一个已安装的包裹。和 remove 不同的是，remove 只是删掉数据和可执行文件，purge 另外还删除所有的配制文件。</p>
+
+<pre><code>sudo dpkg -L  
+</code></pre>
+
+<p>列出 安装的所有文件清单。同时请看 dpkg -c 来检查一个 .deb 文件的内容。</p>
+
+<pre><code>sudo dpkg -s  
+</code></pre>
+
+<p>显示已安装包裹的信息。同时请看 apt-cache 显示 Debian 存档中的包裹信息，以及 dpkg -I 来显示从一个 .deb 文件中提取的包裹信息。</p>
+
+<pre><code>sudo dpkg-reconfigure  
+</code></pre>
+
+<p>重新配制一个已经安装的包裹，如果它使用的是 debconf (debconf 为包裹安装提供了一个统一的配制界面)。</p>
+
+<p>如果安装过程中出现问题,可以先使用命令:</p>
+
+<pre><code>sudo apt-get update  
+</code></pre>
+
+<p>更新后再执行上面的命令.</p>
 ]]></content>
   </entry>
   
@@ -307,24 +369,6 @@ Happy ending<br/>
 ——<strong>危机感</strong>。<br/>
 ——<strong>感恩</strong>。感谢阿海给的机会。<br/>
 ——<strong>自知</strong>。得到和付出什么。不行就撤。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[分别]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/07/09/yes-or-no-goodbye-for-sure/"/>
-    <updated>2022-07-09T03:57:12+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/07/09/yes-or-no-goodbye-for-sure</id>
-    <content type="html"><![CDATA[<p>这是个分别的时日。<br/>
-爱否科技彭总分别了。<br/>
-一起同过窗也分别了很多。<br/>
-资本、疫情、时间等等的原因，换了一些演员，换了最重要的——故事来源、灵感、编剧、导演。这部剧已经是有些不堪入目了。<br/>
-如果毕十三和林洛雪没有完美，我会难过。<br/>
-就是他们的起点过程结果任意有一点不完美，都遗憾。<br/>
-……<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqcoQ23A.LJuuB66OpOFkTjVX6W55wu3jwRVO1sty2YeRIbkmy9VEqplWwkh2DdoVfUW87rAJTDZOnVpWv9fexoY!/r" alt="" /><br/>
-三十岁前，很多相遇<br/>
-三十岁后，很多分别</p>
 ]]></content>
   </entry>
   

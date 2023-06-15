@@ -3,9 +3,9 @@ layout: post
 title: "ubuntu安装deb文件"
 date: 2023-06-16 01:38:49 +0800
 author: 丘海东 
-tags: daily
+tags: ubuntu
 comments: true
-categories: personal
+categories: tech
 published: true
 ---
 Ubuntu下安装deb包的命令总结  

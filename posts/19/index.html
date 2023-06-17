@@ -8,11 +8,8 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="MACHINE: fish hunting
-black pan: GND
-red pan:
-A: co1 press 100 voltage change from 3.36V to almost 0V,and then come back to 3.36V
-PRESS 10 3.36V,0.9V &hellip;">
+  <meta name="description" content="原博文 windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是： sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no 然而并没有什么效果，ubuntu16. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +67,56 @@ PRESS 10 3.36V,0.9V &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">windows10和Ubuntu双系统，时间不对</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-10T21:37:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:37 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.cnblogs.com/qf19910623/p/5559514.html">原博文</a></p>
+
+<p>windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：</p>
+
+<pre><code>sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no
+</code></pre>
+
+<p>然而并没有什么效果，ubuntu16.04里面根本就没有utc这一项！<br/>
+后来谷歌了半天找到了一个完美解决办法：<br/>
+先在ubuntu下更新一下时间，确保时间无误：</p>
+
+<pre><code>sudo apt-get install ntpdate
+sudo ntpdate time.windows.com
+</code></pre>
+
+<p>然后将时间更新到硬件上：</p>
+
+<pre><code>sudo hwclock --localtime --systohc
+</code></pre>
+
+<p>重新进入windows10，发现时间恢复正常了！</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -442,44 +489,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/09/03/sql2000-install-hang-up/">SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-09-03T19:16:20+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>7:16 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ol>
-<li>在添加/删除程序中彻底删除sql server</li>
-<li>将没有删除的sql server目录也删除掉</li>
-<li>打开注册表编辑器，在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager中找到PendingFileRenameOperations项目，并删除它。这样就可以清除安装暂挂项目</li>
-<li>删除注册表中跟sql server相关的键</li>
-</ol>
-
-
-<p><em>或者使用:SQL安装挂起解决工具免安装版.exe</em><br/>
-<strong>DG：在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项——SQL2000安装挂起.reg</strong></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/20">&larr; Older</a>
@@ -498,6 +507,10 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/06/17/fuck-off-sb/">远离SB</a>
       </li>
     
       <li class="post">
@@ -572,10 +585,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
         <a href="/blog/2022/08/13/yi-qi-tong-guo-chuang-di-san-ji/">一起同过窗第三季</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/08/02/got-no-fear/">放开胸怀，无所畏惧</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -583,7 +592,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (170)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (171)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (64)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

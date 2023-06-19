@@ -1,0 +1,14 @@
+---
+layout: post
+title: "我的愚蠢错误"
+date: 2023-06-20 00:33:29 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+刘总前几天就说过，我的缺点，嘴巴没门。  
+刚刚我就犯了这个错误，说错了话。  
+慎言慎行，说话做事，先过过脑子。  
+宁愿不说话让自己看起来像个傻子，也别乱说话去证明自己是个傻子。

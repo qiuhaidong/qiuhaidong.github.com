@@ -8,8 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="《非自然死亡》，第8集
-兒子年輕時犯錯入獄，父母親和他斷絕關係，出獄後也不再見麵，兒子雖然改過，也自知無顏見父母，隻在喝醉後才敢說出對父母的思唸，隻在和朋友相處時才找到家人的感覺。一次火災，兒子拼命救朋友，無奈隻救出一個，火情就蔓延到無法出去的地步了，隻能把剩下的朋友們背到樓上，最終沒能等到救援。 &hellip;">
+  <meta name="description" content="转载于：ubuntu中lightdm以及不能看到界面的一些解决方案 在解决了我的ubuntu界面密码登录无限循环的问题后，终于可以用google深入的了解一下了，从之前的了解得知，ubuntu在X版本后使用了lightDM一个全新的linux桌面显示管理器，在wiki中对LightDM的描述中， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +66,49 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/05/20/lightdm/">Lightdm Ubuntu 桌面显示管理器</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-05-20T14:17:18+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:17 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>转载于：<a href="https://www.cnblogs.com/SimbaBao/p/5791458.html">ubuntu中lightdm以及不能看到界面的一些解决方案</a></p>
+
+<p>在解决了我的ubuntu界面密码登录无限循环的问题后，终于可以用google深入的了解一下了，从之前的了解得知，ubuntu在X版本后使用了lightDM一个全新的linux桌面显示管理器，在wiki中对LightDM的描述中，LightDM配置在以下文件夹中：<br/>
+（1）<code>/usr/share/lightdm/lightdm.conf.d/*.conf</code><br/>
+（此为系统提供的配置文件，用户不可编辑）<br/>
+（2）<code>/etc/lightdm/lightdm.conf.d/*.conf</code><br/>
+（3）<code>/etc/lightdm/lightdm.conf</code><br/>
+（2、3这两个配置文件，系统管理员可以覆写）<br/>
+在此之后看到了一个关于解决不能看见界面的办法：<br/>
+（1）使用<code>Ctrl+alt+F1</code>，进入文本终端<br/>
+（2）<code>sudo stop lightdm</code> ，停止lightdm界面<br/>
+（3）<code>sudo start lightdm</code> ，开始lightdm界面<br/>
+（4）<code>sudo start gdm</code> ，登录gdm管理器<br/>
+（5）<code>sudo dpkg-reconfigure lightdm</code> ，设置管理器的系统默认值<br/>
+注：本文部分资料参阅<a href="https://wiki.ubuntu.com/LightDM">https://wiki.ubuntu.com/LightDM</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -378,36 +420,6 @@ Because the people who are crazy enough to think that they can change the world,
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/04/29/daily/">Daily，2022-04-29，目标</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-04-29T10:33:36+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:33 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>做事得有目标。<br/>
-就算是去打球，也得有，每次试试不同的处理方式,如投篮假动作突破，变向突破，胯下转身突破，运球一步投篮，看别人的防守方式和移动重心处理进攻，学习别人的打球方法，想想自己哪里可以改进等等</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/7">&larr; Older</a>
@@ -426,6 +438,10 @@ Because the people who are crazy enough to think that they can change the world,
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/06/22/daily/">Daily，2023-06-22</a>
       </li>
     
       <li class="post">
@@ -500,10 +516,6 @@ Because the people who are crazy enough to think that they can change the world,
         <a href="/blog/2022/10/07/add-music/">添加音乐</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2022/09/25/guo-de-gang/">郭德纲的处世之道</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -511,7 +523,7 @@ Because the people who are crazy enough to think that they can change the world,
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (174)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (175)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (64)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

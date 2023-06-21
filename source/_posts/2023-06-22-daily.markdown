@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Daily，2023-06-22"
+date: 2023-06-22 00:56:38 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+前提环境：公司又意调我去处理业务前期定方案、展厅、协助开发做测试,且还要兼顾生产部的工作  
+做好职场，是否先要承担额外的责任  
+如何面对、处理琐事、麻烦事  
+不管如何，提升自己的能力

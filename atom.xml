@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-06-24T03:04:45+08:00</updated>
+  <updated>2023-06-25T22:56:37+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,20 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Daily，2023-06-25]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/06/25/daily/"/>
+    <updated>2023-06-25T22:52:31+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/06/25/daily</id>
+    <content type="html"><![CDATA[<p>烦躁的时候千万不要说话<br/>
+也不要做任何决定<br/>
+安静地待会<br/>
+你已经长大了<br/>
+一些难过的情绪<br/>
+要学会自己消化</p>
 ]]></content>
   </entry>
   
@@ -294,65 +308,6 @@
 <del>胸怀天下，明台不染</del><br/>
 哲观内查，悲观入世<br/>
 立身行道</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[聊聊 iPhone 的矛盾，困境，和恶心]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/10/10/iphone-stuffs/"/>
-    <updated>2022-10-10T22:14:00+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/10/10/iphone-stuffs</id>
-    <content type="html"><![CDATA[<p>毋庸置疑，iPhone 是行内第一，整体而言，遥遥领先，完全没有竞品能撼动它的位置。<br/>
-但是，iPhone 绝对不是完美的，其实，iPhone 有着很多的槽点，缺陷，无奈。<br/>
-以 iPhone 14 Pro Max 举例：</p>
-
-<!--more-->  
-
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqaaplv9QRPMX7qsOrbnw08PIY1b3lup6qp7xy54qjvbuNt4mDmSOtUGP*gSbyTnipslgO7RNMVJ3AwtokCXQDvA!/r" alt="" /></p>
-
-<p>即使已经用了设计去欺骗视觉，但相机模块的凸起，依旧是到了恶劣的程度。而且即使是这样，iPhone 的拍照还是比不过安卓，成像风格、发色倾向、夜间拍照、高光压制、镜头眩光鬼影，都不行。<br/>
-当然，拍视频是无敌的。<br/>
-但是，视频文件巨大，iPhone 的数据接口还是非常落后的 USB2.0 ，蜗牛一样慢的数据传输速度，根本满足不了苹果宣传的生产力需求。<br/>
-换用 TYPE-C 接口，问题马上解决，也没有任何技术障碍，但是，为了利润，苹果一直置之不理。<br/>
-这是公司利润和先进技术、用户体验的矛盾。<br/>
-而苹果一直宣传的公司文化就是用户体验，事实是，当用户体验和利润有冲突时，苹果毫不犹豫地抛弃了用户体验。<br/>
-公司就是要赚取利润的，我明白，它完全有权利做自己的选择，我也没有资格去反对。我的看法是：你如果做不到，就不要说，你选择了当婊子，就不要立牌坊。又当又立，真的很恶心。<br/>
-再说说其他恶心的点，我就列出来，不细说了。<br/>
-数字系列阉割高刷。<br/>
-到了这个年代，LPDDR5 规格的 RAM 不会有 8GB 以下的版本，而苹果搞了个 6G 的。可以理解为，苹果加钱定制了低容量的 RAM ，以降低用户的使用年限。<br/>
-没有长截图<br/>
-没有通话录音<br/>
-没有骚扰拦截<br/>
-没有应用多开<br/>
-NFC 功能限制<br/>
-打压第三方输入法<br/>
-传输管理文件及其麻烦<br/>
-散热差<br/>
-信号差</p>
-
-<p>iPhone 14 Pro Max 部分参数：<br/>
-6 G RAM，4325 mAh电池<br/>
-A16 仿生芯片 ，4nm 台积电工艺<br/>
-120Hz ProMotion 自适应刷新率技术<br/>
-6.7 英寸</p>
-
-<p>2796 x 1290 像素分辨率，460 ppi<br/>
-2000000:1 对比度 (典型)<br/>
-1000 尼特最大亮度 (典型)<br/>
-1600 尼特峰值亮度 (HDR)<br/>
-2000 尼特峰值亮度 (户外)<br/>
-主摄 4800 万像素，RAW格式 <br/>
-超广角、长焦 1200 万像素<br/>
-6 倍光学变焦范围<br/>
-视频播放最长可达 29 小时<br/>
-6 核中央处理器<br/>
-5 核图形处理器<br/>
-16 核神经网络引擎<br/>
-5G 蜂窝网络<br/>
-超瓷晶面板，手术级不锈钢边框<br/>
-抗水性能：在 6 米深的水下停留时间最长可达 30 分钟<br/>
-160.7 x 77.6 x 7.85 mm，240 g</p>
 ]]></content>
   </entry>
   

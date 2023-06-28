@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Daily"
+date: 2023-06-29 00:45:22 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+人在江湖，到处是江湖，烦事避不了的。  
+熬得住无人问津的寂寞，才配得上诗和远方。

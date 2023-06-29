@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Daily 02"
+date: 2023-06-29 22:32:08 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+江湖路远，总有可能再见，不是万不得已，别撕破脸，别掀桌子。  
+眼光毒，胆子大，脑子活，嘴巴甜，脸皮厚，手段狠，心肠硬，城府深。  
+别分享自己的状况，你好，招人妒忌，你不好，招人鄙视。  
+以上自己考虑考虑，适时适当使用。

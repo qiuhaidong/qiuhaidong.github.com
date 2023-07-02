@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Daily"
+date: 2023-07-02 23:15:21 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+嘿，深圳的7通道安卓，本来以为要明天才有可能搞定的，没想到今天就搞好回来了。

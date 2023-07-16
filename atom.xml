@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-07-15T02:26:22+08:00</updated>
+  <updated>2023-07-16T13:20:16+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,19 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Daily，诗词，逢雪宿芙蓉山主人]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/07/16/daily/"/>
+    <updated>2023-07-16T13:09:47+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/07/16/daily</id>
+    <content type="html"><![CDATA[<p>刘长卿<br/>
+日暮苍山远<br/>
+天寒白屋贫<br/>
+柴门闻犬吠<br/>
+风雪夜归人</p>
 ]]></content>
   </entry>
   
@@ -302,17 +315,6 @@ yīn sī dù líng mèng fú yàn mǎn huí táng<br/>
 </code></pre>
 
 <p>更新后再执行上面的命令.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Daily，2023-06-14，提高]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/06/14/daily-2023-06-14/"/>
-    <updated>2023-06-14T21:28:35+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/06/14/daily-2023-06-14</id>
-    <content type="html"><![CDATA[<p>多看书，提高效率，沟通能力，说服力<br/>
-别给自己找麻烦，别给他人擦屁股<br/>
-严格作息</p>
 ]]></content>
   </entry>
   

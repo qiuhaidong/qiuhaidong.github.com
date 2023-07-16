@@ -8,7 +8,13 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="参见另一篇博文 sudo gedit /etc/default/grub 更改为：(斜黑体部分) GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" GRUB_CMDLINE_LINUX="***acpi_osi=Linux***" (东哥：13.04、16. &hellip;">
+  <meta name="description" content="sudo apt-get purge ***
+sudo apt-get remove ***
+sudo apt-get autoremove
+sudo apt-get clean
+sudo apt-get update
+sudo apt list --upgradable
+sudo apt &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +72,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/20/uninstall-and-update-command/">Uninstall and Update Command</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-20T13:35:45+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:35 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>sudo apt-get purge ***
+sudo apt-get remove ***
+sudo apt-get autoremove
+sudo apt-get clean
+sudo apt-get update
+sudo apt list --upgradable
+sudo apt upgrade
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -434,85 +476,6 @@ Got to carry on.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/10/29/config-dot-yml/">config.yml</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-10-29T00:19:30+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:19 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
-.#      Main Configs       #<br/>
-.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
-
-<p>url: <a href="https://qiuhaidong.github.io">https://qiuhaidong.github.io</a><br/>
-title: Haydn Yau<br/>
-subtitle:<br/>
-author: 丘海东<br/>
-simple_search: <a href="https://www.google.com/search">https://www.google.com/search</a><br/>
-description:</p>
-
-<p>.# Default date format is &ldquo;ordinal&rdquo; (resulting in &ldquo;July 22nd 2007&rdquo;)<br/>
-.# You can customize the format as defined in<br/>
-.# <a href="http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime">http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime</a><br/>
-.# Additionally, %o will give you the ordinal representation of the day<br/>
-date_format: &ldquo;ordinal&rdquo;</p>
-
-<p>.# RSS / Email (optional) subscription links (change if using something like Feedburner)<br/>
-subscribe_rss: /atom.xml<br/>
-subscribe_email:<br/>
-.# RSS feeds can list your email address if you like<br/>
-email:</p>
-
-<p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
-.#    Jekyll &amp; Plugins     #<br/>
-.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
-
-<p>.# If publishing to a subdirectory as in <a href="http://site.com/project">http://site.com/project</a> set &lsquo;root: /project&rsquo;<br/>
-root: /<br/>
-permalink: /blog/:year/:month/:day/:title/<br/>
-source: source<br/>
-destination: public<br/>
-plugins: plugins<br/>
-code_dir: downloads/code<br/>
-category_dir: blog/categories<br/>
-markdown: rdiscount<br/>
-rdiscount:<br/>
-  extensions:<br/>
-    - autolink<br/>
-    - footnotes<br/>
-    - smart<br/>
-highlighter: pygments # default python pygments have been replaced by pygments.rb</p>
-
-<p>paginate: 5                     # Posts per page on the blog index<br/>
-paginate_path: &ldquo;posts/:num&rdquo;     # Directory base for pagination URLs eg. /posts/2/<br/>
-recent_posts: 5               # Posts in the sidebar Recent Posts section<br/>
-excerpt_link: &ldquo;Read on &rarr;&rdquo;  # &ldquo;Continue reading&rdquo; link text at the bottom of excerpted articles<br/>
-excerpt_separator: &ldquo;</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2016/10/29/config-dot-yml/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/21">&larr; Older</a>
@@ -531,6 +494,10 @@ excerpt_separator: &ldquo;</div>
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/07/16/daily/">Daily，诗词，逢雪宿芙蓉山主人</a>
       </li>
     
       <li class="post">
@@ -605,10 +572,6 @@ excerpt_separator: &ldquo;</div>
         <a href="/blog/2023/06/16/install-deb/">Ubuntu安装deb文件</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/06/14/daily-2023-06-14/">Daily，2023-06-14，提高</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -616,7 +579,7 @@ excerpt_separator: &ldquo;</div>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (186)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (187)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (64)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -634,7 +597,7 @@ excerpt_separator: &ldquo;</div>
 <li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 127%" href="/tags/octopress/">octopress</a></li>
-<li><a style="font-size: 136%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 135%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 150%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 147%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>

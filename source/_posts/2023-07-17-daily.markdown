@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Daily，诗词，渡荆门送别"
+date: 2023-07-17 20:40:23 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+唐代，李白  
+渡远荆门外，来从楚国游。  
+山随平野尽，江入大荒流。  
+月下飞天镜，云生结海楼。  
+仍怜故乡水，万里送行舟。

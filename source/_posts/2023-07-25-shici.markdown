@@ -1,0 +1,12 @@
+---
+layout: post
+title: "诗词，《出塞》，唐朝，王昌龄"
+date: 2023-07-25 22:38:22 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+秦时明月汉时关，万里长征人未还  
+但使龙城飞将在，不教胡马度阴山

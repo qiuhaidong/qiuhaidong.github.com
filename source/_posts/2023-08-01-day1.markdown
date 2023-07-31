@@ -1,0 +1,12 @@
+---
+layout: post
+title: "day 1"
+date: 2023-08-01 00:13:19 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+做减法。  
+删除抖音。

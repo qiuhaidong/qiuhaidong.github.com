@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-08-01T01:09:15+08:00</updated>
+  <updated>2023-08-01T01:26:52+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ERROR: We're doing an SSH key audit.Please visit to approve this key so we know it's safe.]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/08/01/SSH%20key%20audit/"/>
+    <updated>2023-08-01T01:16:09+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/08/01/SSH key audit</id>
+    <content type="html"><![CDATA[<p>错误代码：</p>
+
+<pre><code>dong@Ubuntu:~$ ./launch.sh 
+ERROR: We're doing an SSH key audit.
+Reason: unverified automatically (private key found in a public repository)
+Please visit https://github.com/settings/keys/………………
+to approve this key so we know it's safe.
+
+Fingerprint:
+SHA256:………………
+
+fatal: 无法读取远程仓库。
+
+请确认您有正确的访问权限并且仓库存在。
+</code></pre>
+
+<p>解决方法：<br/>
+重新生成 ssh key<br/>
+或者<br/>
+到Github账号里，<a href="https://github.com/settings/keys/%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%EF%BC%8C">https://github.com/settings/keys/%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%EF%BC%8C</a> Approve 验证原来的 ssh key</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[添加音乐]]></title>

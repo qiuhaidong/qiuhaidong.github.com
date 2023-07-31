@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-08-01T01:09:15+08:00</updated>
+  <updated>2023-08-01T01:26:52+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,34 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ERROR: We're Doing an SSH Key audit.Please Visit to Approve This Key So We Know It's Safe.]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/08/01/SSH%20key%20audit/"/>
+    <updated>2023-08-01T01:16:09+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/08/01/SSH key audit</id>
+    <content type="html"><![CDATA[<p>错误代码：</p>
+
+<pre><code>dong@Ubuntu:~$ ./launch.sh 
+ERROR: We're doing an SSH key audit.
+Reason: unverified automatically (private key found in a public repository)
+Please visit https://github.com/settings/keys/………………
+to approve this key so we know it's safe.
+
+Fingerprint:
+SHA256:………………
+
+fatal: 无法读取远程仓库。
+
+请确认您有正确的访问权限并且仓库存在。
+</code></pre>
+
+<p>解决方法：<br/>
+重新生成 ssh key<br/>
+或者<br/>
+到Github账号里，<a href="https://github.com/settings/keys/%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%EF%BC%8C">https://github.com/settings/keys/%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%EF%BC%8C</a> Approve 验证原来的 ssh key</p>
 ]]></content>
   </entry>
   
@@ -259,16 +287,6 @@ yīn sī dù líng mèng fú yàn mǎn huí táng<br/>
     <id>https://qiuhaidong.github.io/blog/2023/06/21/carry</id>
     <content type="html"><![CDATA[<p>也不知道是好还是坏，有些委屈，我也默默承受，不作解释了。<br/>
 应该是我也了解了一些人性，解释没有作用，我也懒得浪费时间，口舌，和情绪。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每天进步]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/06/20/make-a-move/"/>
-    <updated>2023-06-20T00:38:36+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/06/20/make-a-move</id>
-    <content type="html"><![CDATA[<p>书写，总结，每天进步，时间不多。<br/>
-如果你是个没用的人，如果你得过且过，别人也不会和你做朋友、共事，根本不愿搭理你。</p>
 ]]></content>
   </entry>
   

@@ -8,5 +8,11 @@ comments: true
 categories: personal
 published: true
 ---
+Blue  
 做减法。  
-删除抖音。
+删除抖音。  
+错误：  
+1. 玩了一晚上手机  
+2. 10点的洗澡闹钟到了，没有按时行动  
+导致：  
+没能完成工作预习，然后熬夜工作，损害明天的精神，恶性循环。

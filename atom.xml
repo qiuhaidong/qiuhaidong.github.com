@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-08-01T21:31:02+08:00</updated>
+  <updated>2023-08-01T21:38:35+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -49,7 +49,7 @@ Please visit https://github.com/settings/keys/………………
 to approve this key so we know it's safe.
 
 Fingerprint:
-SHA256:………………
+SHA256:......
 
 fatal: 无法读取远程仓库。
 
@@ -59,7 +59,7 @@ fatal: 无法读取远程仓库。
 <p>解决方法：<br/>
 重新生成 ssh key<br/>
 或者<br/>
-到Github账号里，<a href="https://github.com/settings/keys/%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%EF%BC%8C">https://github.com/settings/keys/%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%E2%80%A6%EF%BC%8C</a> Approve 验证原来的 ssh key</p>
+到Github账号里，<a href="https://github.com/settings/keys/...">https://github.com/settings/keys/...</a>  Approve 验证原来的 ssh key</p>
 ]]></content>
   </entry>
   

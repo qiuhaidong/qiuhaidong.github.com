@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-08-01T01:26:52+08:00</updated>
+  <updated>2023-08-01T21:31:02+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,19 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day2]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/08/01/day2/"/>
+    <updated>2023-08-01T21:08:49+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/08/01/day2</id>
+    <content type="html"><![CDATA[<p>Blue<br/>
+我应该做几个月装机，这样才能熟悉公司的软件硬件。<br/>
+但是：<br/>
+现实中我不会有这么理想的条件，我只能边做份内的工作，边在间隙中学习。<br/>
+时间紧迫，机会不多。</p>
 ]]></content>
   </entry>
   
@@ -52,9 +65,9 @@ fatal: 无法读取远程仓库。
   
   <entry>
     <title type="html"><![CDATA[Day 1]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/08/01/day1/"/>
-    <updated>2023-08-01T00:13:19+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/08/01/day1</id>
+    <link href="https://qiuhaidong.github.io/blog/2023/07/31/day1/"/>
+    <updated>2023-07-31T23:59:19+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/07/31/day1</id>
     <content type="html"><![CDATA[<p>Blue<br/>
 做减法。<br/>
 删除抖音。<br/>
@@ -277,16 +290,6 @@ yīn sī dù líng mèng fú yàn mǎn huí táng<br/>
 做好职场，是否先要承担额外的责任<br/>
 如何面对、处理琐事、麻烦事<br/>
 不管如何，提升自己的能力</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[度量都是委屈撑出来的]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/06/21/carry/"/>
-    <updated>2023-06-21T01:28:46+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/06/21/carry</id>
-    <content type="html"><![CDATA[<p>也不知道是好还是坏，有些委屈，我也默默承受，不作解释了。<br/>
-应该是我也了解了一些人性，解释没有作用，我也懒得浪费时间，口舌，和情绪。</p>
 ]]></content>
   </entry>
   

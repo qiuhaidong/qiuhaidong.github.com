@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-08-01T01:26:52+08:00</updated>
+  <updated>2023-08-01T21:31:02+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -23,10 +23,23 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Day2]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/08/01/day2/"/>
+    <updated>2023-08-01T21:08:49+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/08/01/day2</id>
+    <content type="html"><![CDATA[<p>Blue<br/>
+我应该做几个月装机，这样才能熟悉公司的软件硬件。<br/>
+但是：<br/>
+现实中我不会有这么理想的条件，我只能边做份内的工作，边在间隙中学习。<br/>
+时间紧迫，机会不多。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Day 1]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/08/01/day1/"/>
-    <updated>2023-08-01T00:13:19+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/08/01/day1</id>
+    <link href="https://qiuhaidong.github.io/blog/2023/07/31/day1/"/>
+    <updated>2023-07-31T23:59:19+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/07/31/day1</id>
     <content type="html"><![CDATA[<p>Blue<br/>
 做减法。<br/>
 删除抖音。<br/>
@@ -54,19 +67,6 @@
     <updated>2023-07-25T22:29:29+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2023/07/25/plan</id>
     <content type="html"><![CDATA[<p>每天列：计划表，事务表</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Daily，诗词，渡荆门送别]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/07/17/daily/"/>
-    <updated>2023-07-17T20:40:23+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/07/17/daily</id>
-    <content type="html"><![CDATA[<p>唐代，李白<br/>
-渡远荆门外，来从楚国游。<br/>
-山随平野尽，江入大荒流。<br/>
-月下飞天镜，云生结海楼。<br/>
-仍怜故乡水，万里送行舟。</p>
 ]]></content>
   </entry>
   

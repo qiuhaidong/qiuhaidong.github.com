@@ -1,0 +1,15 @@
+---
+layout: post
+title: "day2"
+date: 2023-08-01 21:08:49 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+Blue  
+我应该做几个月装机，这样才能熟悉公司的软件硬件。  
+但是：  
+现实中我不会有这么理想的条件，我只能边做份内的工作，边在间隙中学习。  
+时间紧迫，机会不多。

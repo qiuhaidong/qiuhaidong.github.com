@@ -17,7 +17,7 @@ published: true
 	to approve this key so we know it's safe.
 	
 	Fingerprint:
-	SHA256:………………
+	SHA256:......
 	
 	fatal: 无法读取远程仓库。
 
@@ -26,7 +26,7 @@ published: true
 解决方法：  
 重新生成 ssh key  
 或者  
-到Github账号里，https://github.com/settings/keys/………………， Approve 验证原来的 ssh key
+到Github账号里，https://github.com/settings/keys/...  Approve 验证原来的 ssh key
 
 
 

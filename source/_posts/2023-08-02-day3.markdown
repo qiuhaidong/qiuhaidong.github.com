@@ -1,0 +1,15 @@
+---
+layout: post
+title: "day3"
+date: 2023-08-02 22:36:50 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+Blue  
+快速反应，否则被市场***淘汰***！  
+自己也被淘汰！  
+别怕出错，认真总结。  
+记录问题，就事论事，不是得罪人。

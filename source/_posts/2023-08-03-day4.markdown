@@ -1,0 +1,13 @@
+---
+layout: post
+title: "day4"
+date: 2023-08-03 22:58:11 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+Blue  
+如果你不懂，就保持沉默。  
+城门失火，可能会殃及池鱼，但只能听天由命。

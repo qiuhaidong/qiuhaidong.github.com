@@ -8,9 +8,10 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="ubuntu20.04安装了几次2.0都失败
-ubuntu12.04已经无法安装系统本身的更新了，更别说安装其他软件
-强迫症发作，于是有了这次： 列出大致步骤吧，主要是有些error要如何解决 ">
+  <meta name="description" content="rvm install 2.3.1 失败
+. cd octopress . ruby --version . rvm use 2.7.0
+Required ruby-2.7.0 is not installed.
+To install do: 'rvm install "ruby-2.7.0"' &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +69,218 @@ ubuntu12.04已经无法安装系统本身的更新了，更别说安装其他软
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T07:52:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:52 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>rvm install 2.3.1  
+</code></pre>
+
+<p>失败<br/>
+.</p>
+
+<pre><code>cd octopress
+</code></pre>
+
+<p>.</p>
+
+<pre><code>ruby --version
+</code></pre>
+
+<p>.</p>
+
+<pre><code>rvm use 2.7.0
+Required ruby-2.7.0 is not installed.
+To install do: 'rvm install "ruby-2.7.0"'  
+</code></pre>
+
+<h1>记得是用2.7.0</h1>
+
+<p> .</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rvm install "ruby-2.7.0"  
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ ruby --version
+ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+Could not find rake-10.5.0 in any of the sources
+Run `bundle install` to install missing gems.
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ bundle install
+Traceback (most recent call last):
+4: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/ruby_executable_hooks:22:in `&lt;main&gt;'
+3: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/ruby_executable_hooks:22:in `eval'
+2: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/bundle:23:in `&lt;main&gt;'
+1: from /home/dong/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/rubygems.rb:294:in `activate_bin_path'
+/home/dong/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/rubygems.rb:275:in `find_spec_for_exe': Could not find 'bundler' (1.17.3) required by your /home/dong/octopress/Gemfile.lock. (Gem::GemNotFoundException)
+To update to the latest version installed on your system, run `bundle update --bundler`.
+To install the missing version, run `gem install bundler:1.17.3`
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ gem install bundler:1.17.3
+Fetching bundler-1.17.3.gem
+Successfully installed bundler-1.17.3
+Parsing documentation for bundler-1.17.3
+Installing ri documentation for bundler-1.17.3
+Done installing documentation for bundler after 3 seconds
+1 gem installed
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+Could not find rake-10.5.0 in any of the sources
+Run `bundle install` to install missing gems.
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ bundle install
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+rake aborted!
+Gem::LoadError: You have already activated rake 13.0.1, but your Gemfile requires rake 10.5.0. Prepending `bundle exec` to your command may solve this.
+/home/dong/octopress/Rakefile:2:in `&lt;top (required)&gt;'
+(See full trace by running task with --trace)
+</code></pre>
+
+<p>提示失败，<br/>
+但是可以加上<code>bundle exec</code></p>
+
+<pre><code>dong@Ubuntu:~/octopress$bundle exec rake generate
+</code></pre>
+
+<p>很多警告，但是成了，<br/>
+下面也一样：</p>
+
+<pre><code>bundle exec rake preview
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T04:38:50+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:38 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容</h3>
+
+<p>首先利用<code>rfkill</code>命令查看目前无线传输设备的状态，<code>rfkill</code>是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。</p>
+
+<p>rfkill的常用方法为:</p>
+
+<pre><code>rfkill list all
+#  获得设备列表
+
+rfkill block [index|type]
+#  通过索引或类型禁用设备
+
+rfkill unblock [index|type]
+#  通过索引或类型启用设备
+</code></pre>
+
+<p>当前设备状态如下：</p>
+
+<pre><code>rfkill list all
+输出：
+0: phy0: Wireless LAN
+    Soft blocked: no
+    Hard blocked: yes
+1: acer-wireless: Wireless LAN
+    Soft blocked: no
+    Hard blocked: no
+</code></pre>
+
+<p>通过rfkill启用/禁用设备无法对硬件阻塞产生作用。</p>
+
+<p>由于笔记本只有一个无线网卡，这两个模块应该是有冲突</p>
+
+<p>使用命令lsmod | grep acer可以看出系统启动了acer_wmi模块</p>
+
+<p>通过查找资料后，解决方法为禁用acer_wmi模块。</p>
+
+<p>解决方法：</p>
+
+<p>通过在/etc/modprobe.d/文件夹下，编辑blacklist.conf文件，最后一行添加内容：  <code>blacklist acer_wmi</code></p>
+
+<pre><code>sudo gedit /etc/modprobe.d/blacklist.conf
+</code></pre>
+
+<p>重启<br/>
+wifi自动为打开状态，此时rfkill list all命令结果如下:</p>
+
+<pre><code>rfkill list all
+
+0: phy0: Wireless LAN
+Soft blocked: no
+Hard blocked: no
+</code></pre>
+
+<p>版权声明：本文为CSDN博主「Monkey_D_Shuai」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/ls12165/article/details/68189943">https://blog.csdn.net/ls12165/article/details/68189943</a></p>
+
+<p><a href="https://blog.csdn.net/ls12165/article/details/68189943?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;utm_relevant_index=2">原文链接</a></p>
+
+<p><a href="https://blog.csdn.net/weixin_34305091/article/details/116951261?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;utm_relevant_index=2">另一篇博文</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -479,90 +692,6 @@ mv _site/_posts/ .
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/12/15/jd3/">京東3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-12-15T19:09:42+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>7:09 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>day 68<br/>
-今天休假<br/>
-昨天耳朵又听到低沉的发动机的轰隆隆的声音，我以为是耳鸣，现在基本可以确定，这就是附近道路晚上泥头车汽車发动机或者工廠機器運转的声音。<br/>
-在京东时也常常听到。<br/>
-我<strong>感冒鼻塞</strong>时，耳朵<strong>对这些声音特别敏感</strong>。<br/>
-就这样。<br/>
-昨天上班时，没搞清情况，情绪又崩溃了……<br/>
-<strong><em>補充</em></strong>：<br/>
-工作沒勁頭，好想打電話給媽，和她坦白這一切，想讓她接受我的平庸，我的失敗，我的不婚，想發泄所有的不安、恐懼、負面情緒。<br/>
-幸好，我還懂得衝動憤怒情緒不穩定時，別做決定，別做事。<br/>
-休息了一天，現在知道不是耳鳴，是感冒鼻塞或者咽鼓管堵塞或者其他的聽力系統的某一部分出了問題，而引起的狀況，感冒好了，整個聽力系統自然就沒事了。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/12/07/grateful/">感恩</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-12-07T16:50:35+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>4:50 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>此一時彼一時，我又回京東上班了。<br/>
-總不能閒着不做事，沒有收入是不行的。<br/>
-不過我有保護自己，現在上日班，一天只需要工作6小時，活也不是很忙，挺好的。<br/>
-<strong>保護自己</strong>呀，一定要！</p>
-
-<h3>感恩</h3>
-
-<p>很多時候，挺多人，都對我很好的。很照顧我，甚至我不要臉地說，他們有時簡直是寵我。<br/>
-比如老大喻胡龍，人手足夠時，叫我不用幹活，讓別人做了我的那份工作，他會罵別人，但是不會說我我。還有他老婆，給東西我吃。<br/>
-比如潤峯大哥，旁邊的人工作比我更忙，但是他卻是幫我。<br/>
-比如？韋亦凡？（音譯，不知道是不是這個名字），其實不是很熟悉，但是京東發的小零食，他經常給我吃。<br/>
-還有大劉，老李，光頭大哥，光頭二哥，肥佬，肥仔老楊，胖子……還有很多我不知道名字的人。<br/>
-所以：<br/>
-<strong>越努力越幸運</strong>。<br/>
-我是個認真做事的人，別人看在眼裏，自然在條件允許時幫助我。<br/>
--別人幫我，是證明了別人是好人，自己<strong>別得瑟</strong>，<strong>得意不忘形</strong>。<br/>
-一直以來，都是很多人幫助我，加油吧，中年人，<strong>別辜負了那麼多的善意</strong>。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/15">&larr; Older</a>
@@ -581,6 +710,14 @@ mv _site/_posts/ .
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/08/05/day6/">Day6</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/08/04/day5/">Day5</a>
       </li>
     
       <li class="post">
@@ -651,14 +788,6 @@ mv _site/_posts/ .
         <a href="/blog/2023/06/27/daily/">Daily,2023-06-27</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/06/25/daily/">Daily，2023-06-25</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2023/06/24/kaiqiao/">开窍</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -666,7 +795,7 @@ mv _site/_posts/ .
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (194)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (196)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -689,10 +818,10 @@ mv _site/_posts/ .
 <li><a style="font-size: 146%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
-<li><a style="font-size: 127%" href="/tags/she/">she</a></li>
+<li><a style="font-size: 126%" href="/tags/she/">she</a></li>
 <li><a style="font-size: 130%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
-<li><a style="font-size: 127%" href="/tags/ubuntu/">ubuntu</a></li>
+<li><a style="font-size: 126%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
 
   </ul>

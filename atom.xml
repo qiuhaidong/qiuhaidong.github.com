@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-08-13T22:25:41+08:00</updated>
+  <updated>2023-08-15T08:44:37+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,17 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 11]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/08/15/day-11/"/>
+    <updated>2023-08-15T08:43:40+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/08/15/day-11</id>
+    <content type="html"><![CDATA[<p><strong><em>lue</em></strong><br/>
+不设限<br/>
+不破不立</p>
 ]]></content>
   </entry>
   
@@ -251,23 +262,6 @@ fatal: 无法读取远程仓库。
     <updated>2023-07-02T23:15:21+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2023/07/02/daily</id>
     <content type="html"><![CDATA[<p>嘿，深圳的7通道安卓，本来以为要明天才有可能搞定的，没想到今天就搞好回来了。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Daily，春有百花秋有月]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/07/01/daily/"/>
-    <updated>2023-07-01T00:33:25+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/07/01/daily</id>
-    <content type="html"><![CDATA[<p>南宋僧人，慧开<br/>
-春有百花秋有月<br/>
-夏有凉风冬有雪<br/>
-如无闲事挂心头<br/>
-便是人间好时节</p>
-
-<p>工作都是挺烦的，没办法<br/>
-放开胸怀大胆干<br/>
-早点睡觉</p>
 ]]></content>
   </entry>
   

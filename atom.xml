@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-08-15T12:21:14+08:00</updated>
+  <updated>2023-08-16T19:03:07+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,6 +19,16 @@
     <updated>2222-02-22T22:22:22+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
     <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 12]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/08/16/day-12/"/>
+    <updated>2023-08-16T19:01:04+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/08/16/day-12</id>
+    <content type="html"><![CDATA[<p><strong><em>熬夜</em></strong><br/>
+学习老板的高效率和多线程处理的能力</p>
 ]]></content>
   </entry>
   
@@ -253,15 +263,6 @@ fatal: 无法读取远程仓库。
     <id>https://qiuhaidong.github.io/blog/2023/07/02/daily-shici</id>
     <content type="html"><![CDATA[<p>危楼高百尺，手可摘星辰。<br/>
 不敢高声语，恐惊天上人。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Daily]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/07/02/daily/"/>
-    <updated>2023-07-02T23:15:21+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/07/02/daily</id>
-    <content type="html"><![CDATA[<p>嘿，深圳的7通道安卓，本来以为要明天才有可能搞定的，没想到今天就搞好回来了。</p>
 ]]></content>
   </entry>
   

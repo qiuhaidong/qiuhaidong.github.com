@@ -1,0 +1,11 @@
+---
+layout: post
+title: "day 13"
+date: 2023-08-17 22:49:39 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+看穿表象、假象，抓住本质。

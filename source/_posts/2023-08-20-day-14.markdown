@@ -1,0 +1,13 @@
+---
+layout: post
+title: "day 14 开窍"
+date: 2023-08-20 00:34:07 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+开窍。  
+从高处看，从全局看。  
+屏蔽力，忽视力，专注力。

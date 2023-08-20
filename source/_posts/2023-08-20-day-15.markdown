@@ -1,0 +1,11 @@
+---
+layout: post
+title: "day 15"
+date: 2023-08-20 22:42:54 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+该休息就休息，该摸鱼就摸鱼，不疲劳作战。

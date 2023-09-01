@@ -102,7 +102,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2023/09/01/123/">123</a></h1>
+      <h1 class="entry-title"><a href="/blog/2023/09/01/install-curl/">安装新版本的curl</a></h1>
     
     
       <p class="meta">
@@ -118,7 +118,18 @@
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><p>安装新版本的<code>curl</code>:</p>
+
+<pre><code>dong@dong-Ubuntu:~$ curl -V
+
+
+找不到命令 “curl”，但可以通过以下软件包安装它：
+sudo snap install curl  # version 8.1.2, or
+sudo apt  install curl  # version 7.81.0-1ubuntu1.13
+输入 “snap info curl” 以查看更多版本。
+
+dong@dong-Ubuntu:~$ sudo snap install curl
+</code></pre>
 </div>
   
   
@@ -393,7 +404,7 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2023/09/01/123/">123</a>
+        <a href="/blog/2023/09/01/install-curl/">安装新版本的curl</a>
       </li>
     
       <li class="post">

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-01T22:33:52+08:00</updated>
+  <updated>2023-09-01T22:42:44+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -23,11 +23,22 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[123]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/09/01/123/"/>
+    <title type="html"><![CDATA[安装新版本的curl]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/01/install-curl/"/>
     <updated>2023-09-01T22:19:43+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/09/01/123</id>
-    <content type="html"><![CDATA[
+    <id>https://qiuhaidong.github.io/blog/2023/09/01/install-curl</id>
+    <content type="html"><![CDATA[<p>安装新版本的<code>curl</code>:</p>
+
+<pre><code>dong@dong-Ubuntu:~$ curl -V
+
+
+找不到命令 “curl”，但可以通过以下软件包安装它：
+sudo snap install curl  # version 8.1.2, or
+sudo apt  install curl  # version 7.81.0-1ubuntu1.13
+输入 “snap info curl” 以查看更多版本。
+
+dong@dong-Ubuntu:~$ sudo snap install curl
+</code></pre>
 ]]></content>
   </entry>
   

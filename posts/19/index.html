@@ -8,11 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="无法验证此文件的数字签名
-进入bios
-1. security选项，secure boot control这类的选项，设置为disabled。
-2. boot选项，launch csm 设置为enabled。
-">
+  <meta name="description" content="参见原博：error : no symbol table
+升级到ubuntu18.04后，开机出现： error：no symbol table
+press any key to continue&hellip; sudo fdisk -l This will list all &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +68,54 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2018/09/05/error-no-symbol-table/">Ubuntu启动问题 : No Symbol Table</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2018-09-05T09:17:32+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>9:17 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://askubuntu.com/questions/965070/no-symbol-table-error-after-upgrading-to-17-04">参见原博：error : no symbol table</a><br/>
+升级到ubuntu18.04后，开机出现：</p>
+
+<p><strong><em>error：no symbol table</em></strong><br/>
+<strong><em>press any key to continue&hellip;</em></strong></p>
+
+<pre><code>sudo fdisk -l  
+</code></pre>
+
+<p>This will list all partitions on your HDD (find under Type section the Ubuntu or Linux and its Device (like <code>/dev/sda</code>)) then, do:</p>
+
+<pre><code>sudo grub-install /dev/sda  
+</code></pre>
+
+<p>note that is sda and NOT sda1</p>
+
+<pre><code>sudo update-grub  
+
+sudo reboot  
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -354,41 +400,6 @@ rake generate preview
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2018/03/26/what-we-live-for/">活着——抉择</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2018-03-26T20:43:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>8:43 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>活着是为了什么？<br/>
-我想要什么？<br/>
-每个人的追求都不同，有人喜欢安稳，有人喜欢闯荡，四海为家。<br/>
-我们都在忙着挣钱，为了让自己和家人过更好的生活。为什么想过更好的生活？开心。<br/>
-对，开心。衣食住行，我们都在追求更好的物质，最终转化为精神上的满足。<br/>
-不是所有人都喜欢呆在家，但所有人都希望家人生活得好好的，希望家人开心，但我们是否有想过这样一个问题：我们拼命在外工作，给家里寄钱，一年也没回家两天，父母是否开心？在外打拼一辈子，临老回家乡过晚年，这时候，父母是否还在？幸运的还在，我们又能享受多少时光的天伦之乐？<br/>
-活着是一个个的抉择，一个个的决定和选择。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/20">&larr; Older</a>
@@ -407,6 +418,10 @@ rake generate preview
     
       <li class="post">
         <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/09/01/test/">Test</a>
       </li>
     
       <li class="post">
@@ -481,10 +496,6 @@ rake generate preview
         <a href="/blog/2023/07/25/shici/">诗词，《出塞》，唐朝，王昌龄</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/07/25/plan/">计划</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -492,7 +503,7 @@ rake generate preview
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (206)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (207)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

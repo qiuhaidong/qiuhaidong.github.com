@@ -47,7 +47,9 @@ Command 'curl' not found, but can be installed with:
 sudo apt install curl
 ```
 
-### 注意，安装新版本的curl，否则会出错  
+### 注意: [安装新版本的curl](https://qiuhaidong.github.io/blog/2023/09/01/install-curl/)  
+
+###否则会出错  
 
 ```
 dong@dong-Ubuntu:~$ curl -V
@@ -60,7 +62,7 @@ sudo apt  install curl  # version 7.81.0-1ubuntu1.13
 dong@dong-Ubuntu:~$ sudo snap install curl
 ```
 
-### 不要下面这个了
+### 不要下面这个了: 
 ```
 sudo apt install curl
 curl -sSL https://get.rvm.io | bash -s stable

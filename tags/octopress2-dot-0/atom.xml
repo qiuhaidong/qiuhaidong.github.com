@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress2.0 | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress2-dot-0/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-01T23:32:47+08:00</updated>
+  <updated>2023-09-02T00:21:26+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -133,7 +133,9 @@ ok<br/>
 </span><span class='line'>Command &lsquo;curl&rsquo; not found, but can be installed with:
 </span><span class='line'>sudo apt install curl</span></code></pre></td></tr></table></div></figure></p>
 
-<h3>注意，安装新版本的curl，否则会出错</h3>
+<h3>注意: <a href="https://qiuhaidong.github.io/blog/2023/09/01/install-curl/">安装新版本的curl</a></h3>
+
+<h3>否则会出错</h3>
 
 <pre><code>dong@dong-Ubuntu:~$ curl -V
 
@@ -145,7 +147,7 @@ sudo apt  install curl  # version 7.81.0-1ubuntu1.13
 dong@dong-Ubuntu:~$ sudo snap install curl
 </code></pre>
 
-<h3>不要下面这个了</h3>
+<h3>不要下面这个了:</h3>
 
 <pre><code>sudo apt install curl
 curl -sSL https://get.rvm.io | bash -s stable

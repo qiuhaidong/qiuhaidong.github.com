@@ -19,5 +19,3 @@ published: true
 	输入 “snap info curl” 以查看更多版本。
 	
 	dong@dong-Ubuntu:~$ sudo snap install curl
-	
-test

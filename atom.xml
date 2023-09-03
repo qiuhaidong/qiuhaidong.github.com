@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-04T02:13:54+08:00</updated>
+  <updated>2023-09-04T02:28:31+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life/"/>
-    <updated>2222-02-22T22:22:22+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2222/02/22/daily-lts-love-life</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Day 17]]></title>
@@ -270,6 +261,16 @@ fatal: 无法读取远程仓库。
 2. 10点的洗澡闹钟到了，没有按时行动<br/>
 导致：<br/>
 没能完成工作预习，然后熬夜工作，损害明天的精神，恶性循环。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[诗词，《出塞》，唐朝，王昌龄]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/07/25/shici/"/>
+    <updated>2023-07-25T22:38:22+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/07/25/shici</id>
+    <content type="html"><![CDATA[<p>秦时明月汉时关，万里长征人未还<br/>
+但使龙城飞将在，不教胡马度阴山</p>
 ]]></content>
   </entry>
   

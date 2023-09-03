@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "生活很复杂"
+title: "day 16：生活很复杂"
 date: 2023-09-03 01:21:28 +0800
 author: 丘海东 
 tags: daily

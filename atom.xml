@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-03T01:32:15+08:00</updated>
+  <updated>2023-09-04T02:13:54+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -23,7 +23,18 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[生活很复杂]]></title>
+    <title type="html"><![CDATA[Day 17]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/04/day-17/"/>
+    <updated>2023-09-04T02:08:01+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/04/day-17</id>
+    <content type="html"><![CDATA[<p>自己的工作表现越来越差，生活作息也乱了。<br/>
+如果一份工作让自己抗拒，说明确实不合适，还是得准备离开。<br/>
+不是冲动，不是其他原因，只从自己的角度考虑就行了，别带入乱七八糟的、无谓的。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 16：生活很复杂]]></title>
     <link href="https://qiuhaidong.github.io/blog/2023/09/03/life-is-complicated/"/>
     <updated>2023-09-03T01:21:28+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2023/09/03/life-is-complicated</id>
@@ -259,16 +270,6 @@ fatal: 无法读取远程仓库。
 2. 10点的洗澡闹钟到了，没有按时行动<br/>
 导致：<br/>
 没能完成工作预习，然后熬夜工作，损害明天的精神，恶性循环。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[诗词，《出塞》，唐朝，王昌龄]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/07/25/shici/"/>
-    <updated>2023-07-25T22:38:22+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/07/25/shici</id>
-    <content type="html"><![CDATA[<p>秦时明月汉时关，万里长征人未还<br/>
-但使龙城飞将在，不教胡马度阴山</p>
 ]]></content>
   </entry>
   

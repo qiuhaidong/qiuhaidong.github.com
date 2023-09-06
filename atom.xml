@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-05T02:24:49+08:00</updated>
+  <updated>2023-09-06T22:31:19+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Day 0，别轻信、心存侥幸，清醒看本质]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/06/day-0/"/>
+    <updated>2023-09-06T22:09:13+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/06/day-0</id>
+    <content type="html"><![CDATA[<p>公司的老板，对新来的直属上司说，要辞退我，那么我在这家公司的日子，<strong>毫无疑问走到尽头</strong>。<br/>
+别因为今天上司和我们闲聊了几句，说一些好像有用又好像无用的话，就忘记了这事。<br/>
+别心情一好，就变傻。<br/>
+别听人说，要看人做。<br/>
+比如：加班前说调休，加班后就没声音了。甚至下班之后，晚上10点了，叫我做售后，而且这还不是我的工作内容。<br/>
+在我知道了这事之后，公司在没有人手的情况下，在有人手又把人派出去的情况下，要办活动，我还加班加点把事情办好。<br/>
+这是看在和公司副总，和龙哥，对我的情分上，我才做的。<br/>
+我已经仁至义尽，不亏欠任何人。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Day 00000000000000000000000]]></title>
@@ -268,22 +284,6 @@ fatal: 无法读取远程仓库。
 重新生成 ssh key<br/>
 或者<br/>
 到Github账号里，<a href="https://github.com/settings/keys/...">https://github.com/settings/keys/...</a>  Approve 验证原来的 ssh key</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 1]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/07/31/day1/"/>
-    <updated>2023-07-31T23:59:19+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/07/31/day1</id>
-    <content type="html"><![CDATA[<p>Blue<br/>
-做减法。<br/>
-删除抖音。<br/>
-错误：<br/>
-1. 玩了一晚上手机<br/>
-2. 10点的洗澡闹钟到了，没有按时行动<br/>
-导致：<br/>
-没能完成工作预习，然后熬夜工作，损害明天的精神，恶性循环。</p>
 ]]></content>
   </entry>
   

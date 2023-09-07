@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: daily | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/daily/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-06T22:31:19+08:00</updated>
+  <updated>2023-09-07T23:09:21+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Day 1]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/07/day-1/"/>
+    <updated>2023-09-07T23:04:54+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/07/day-1</id>
+    <content type="html"><![CDATA[<p>正视自己，改正缺点。<br/>
+罗翔老师：<br/>
+珍惜你的低谷，你会看到很多真相。<br/>
+ 时间能渡的都是愿意自渡的人，没有谁的人生一帆风顺，低谷期的苦难，就是为了积蓄力量，哪怕是裂缝里透出的光，也要牢牢抓住，然后生出向阳而生的勇气。<br/>
+ 请你务必，一而再，再而三，三而不竭。 千次万次拯救自己，永远不要放弃自己，就算没有人帮助自己，自己也要做自己唯一的光，照亮自己的路。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[day 0，别轻信、心存侥幸，清醒看本质]]></title>
@@ -72,26 +85,6 @@
 这种情况，记住：<br/>
 静静地待会。<br/>
 祸从口出，慎言慎行。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[安装新版本的curl]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/09/01/install-curl/"/>
-    <updated>2023-09-01T22:19:43+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/09/01/install-curl</id>
-    <content type="html"><![CDATA[<p>安装新版本的<code>curl</code>:</p>
-
-<pre><code>dong@dong-Ubuntu:~$ curl -V
-
-
-找不到命令 “curl”，但可以通过以下软件包安装它：
-sudo snap install curl  # version 8.1.2, or
-sudo apt  install curl  # version 7.81.0-1ubuntu1.13
-输入 “snap info curl” 以查看更多版本。
-
-dong@dong-Ubuntu:~$ sudo snap install curl
-</code></pre>
 ]]></content>
   </entry>
   

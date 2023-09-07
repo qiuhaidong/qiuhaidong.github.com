@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-06T22:31:19+08:00</updated>
+  <updated>2023-09-07T23:09:21+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Day 1]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/07/day-1/"/>
+    <updated>2023-09-07T23:04:54+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/07/day-1</id>
+    <content type="html"><![CDATA[<p>正视自己，改正缺点。<br/>
+罗翔老师：<br/>
+珍惜你的低谷，你会看到很多真相。<br/>
+ 时间能渡的都是愿意自渡的人，没有谁的人生一帆风顺，低谷期的苦难，就是为了积蓄力量，哪怕是裂缝里透出的光，也要牢牢抓住，然后生出向阳而生的勇气。<br/>
+ 请你务必，一而再，再而三，三而不竭。 千次万次拯救自己，永远不要放弃自己，就算没有人帮助自己，自己也要做自己唯一的光，照亮自己的路。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Day 0，别轻信、心存侥幸，清醒看本质]]></title>
@@ -256,34 +269,6 @@ dong@dong-Ubuntu:~$ sudo snap install curl
 
 <p>领悟点：<br/>
 如何通过标准化，规范化，流程化，让新人快速上手，和避免低级的、基础的错误。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ERROR: We're Doing an SSH Key audit.Please Visit to Approve This Key So We Know It's Safe.]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/08/01/SSH%20key%20audit/"/>
-    <updated>2023-08-01T01:16:09+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/08/01/SSH key audit</id>
-    <content type="html"><![CDATA[<p>错误代码：</p>
-
-<pre><code>dong@Ubuntu:~$ ./launch.sh 
-ERROR: We're doing an SSH key audit.
-Reason: unverified automatically (private key found in a public repository)
-Please visit https://github.com/settings/keys/………………
-to approve this key so we know it's safe.
-
-Fingerprint:
-SHA256:......
-
-fatal: 无法读取远程仓库。
-
-请确认您有正确的访问权限并且仓库存在。
-</code></pre>
-
-<p>解决方法：<br/>
-重新生成 ssh key<br/>
-或者<br/>
-到Github账号里，<a href="https://github.com/settings/keys/...">https://github.com/settings/keys/...</a>  Approve 验证原来的 ssh key</p>
 ]]></content>
   </entry>
   

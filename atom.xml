@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-07T23:12:04+08:00</updated>
+  <updated>2023-09-09T01:11:18+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Day 2：眼光，主动]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/09/day-2/"/>
+    <updated>2023-09-09T00:45:35+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/09/day-2</id>
+    <content type="html"><![CDATA[<p>眼光看长远：<br/>
+回看志胜公司的产品，就是缺少一个足够了解所有产品细节，同时了解市场的人，去做一个整体的梳理，整理，规划。把过时的产品、功能去除，把冲突的（例如F8键有两种功能，宴会厅视频加密播放器的两台电脑同步用网线直连，但还要连接wifi用于平板操作视频播放，还要用到中控，无线和有线的ip就容易造成冲突或识别错误）解决，而且在完成对过往的梳理后，要结合对市场的预测，去规划，不跟着市场走，而是引领市场。化被动跟随，为主动引领。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Day 1]]></title>
@@ -253,22 +263,6 @@ dong@dong-Ubuntu:~$ sudo snap install curl
 自己也被淘汰！<br/>
 别怕出错，认真总结。<br/>
 记录问题，就事论事，不是得罪人。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 2]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/08/01/day2/"/>
-    <updated>2023-08-01T21:08:49+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/08/01/day2</id>
-    <content type="html"><![CDATA[<p>Blue<br/>
-我应该做几个月装机，这样才能熟悉公司的软件硬件。<br/>
-但是：<br/>
-现实中我不会有这么理想的条件，我只能边做份内的工作，边在间隙中学习。<br/>
-时间紧迫，机会不多。</p>
-
-<p>领悟点：<br/>
-如何通过标准化，规范化，流程化，让新人快速上手，和避免低级的、基础的错误。</p>
 ]]></content>
   </entry>
   

@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Day 4"
+date: 2023-09-13 22:14:21 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+1. 实力。  
+2. 人品。  
+3. 破圈。

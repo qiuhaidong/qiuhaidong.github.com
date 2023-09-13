@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-12T08:41:24+08:00</updated>
+  <updated>2023-09-13T22:18:00+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Day 4]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/13/day-4/"/>
+    <updated>2023-09-13T22:14:21+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/13/day-4</id>
+    <content type="html"><![CDATA[<ol>
+<li>实力。</li>
+<li>人品。</li>
+<li>破圈。</li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Day 3：不破不立]]></title>
@@ -251,17 +265,6 @@ dong@dong-Ubuntu:~$ sudo snap install curl
     <id>https://qiuhaidong.github.io/blog/2023/08/04/day5</id>
     <content type="html"><![CDATA[<p><strong><em>lue</em></strong><br/>
 效率还是不行。努力呀！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 4]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/08/03/day4/"/>
-    <updated>2023-08-03T22:58:11+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/08/03/day4</id>
-    <content type="html"><![CDATA[<p>Blue<br/>
-如果你不懂，就保持沉默。<br/>
-城门失火，可能会殃及池鱼，但只能听天由命。</p>
 ]]></content>
   </entry>
   

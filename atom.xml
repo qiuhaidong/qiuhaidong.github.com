@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-13T22:24:53+08:00</updated>
+  <updated>2023-09-14T23:11:47+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Day 5：把身体养好]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/14/day-5/"/>
+    <updated>2023-09-14T23:05:53+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/14/day-5</id>
+    <content type="html"><![CDATA[<p>身体是一切的载体：<br/>
+体力，耐力，活力，动力，记忆力，思维的活跃，精神面貌，所有所有！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Day 4]]></title>
@@ -257,16 +267,6 @@ dong@dong-Ubuntu:~$ sudo snap install curl
 沟通的能力。<br/>
 准确点：<br/>
 让人信服的能力。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 5]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/08/04/day5/"/>
-    <updated>2023-08-04T23:28:19+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/08/04/day5</id>
-    <content type="html"><![CDATA[<p><strong><em>lue</em></strong><br/>
-效率还是不行。努力呀！</p>
 ]]></content>
   </entry>
   

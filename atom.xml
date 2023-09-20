@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-19T23:58:23+08:00</updated>
+  <updated>2023-09-20T12:09:25+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Day 12：警醒]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/20/day-12/"/>
+    <updated>2023-09-20T12:06:55+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/20/day-12</id>
+    <content type="html"><![CDATA[<p>很现实的一段话：<br/>
+告诉你一个残酷的真相，出身底层的聪明人，大多数是非常可悲的。因为这类人都有着清醒的头脑、正确的认知，以及远大的理想和抱负，现实中却无能为力。<br/>
+他们缺乏资源、缺少关系背景，更没有可以试错的本钱，一旦一步走错，后面会举步维艰，甚至会持续很长一段时间无法翻身，最终在现实的一次次打击中，选择了躺平。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Day 11：乐观积极]]></title>
@@ -266,16 +277,6 @@ dong@dong-Ubuntu:~$ sudo snap install curl
     <updated>2023-08-17T22:49:39+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2023/08/17/day-13</id>
     <content type="html"><![CDATA[<p>看穿表象、假象，抓住本质。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 12]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/08/16/day-12/"/>
-    <updated>2023-08-16T19:01:04+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/08/16/day-12</id>
-    <content type="html"><![CDATA[<p><strong><em>熬夜</em></strong><br/>
-学习老板的高效率和多线程处理的能力</p>
 ]]></content>
   </entry>
   

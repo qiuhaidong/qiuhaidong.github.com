@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Day 16"
+date: 2023-09-21 15:23:27 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+好起来的从来不是生活，而是你自己，坦然面对，欣然接受，就是自己成长的开始。  
+人间纵使万般不值得，  
+但你值得。

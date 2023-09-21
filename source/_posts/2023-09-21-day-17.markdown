@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 17"
+date: 2023-09-21 15:27:03 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+尴尬也是一种可贵的能力。  
+不惊慌，不逃避，莫如由他惊扰良知，质问信仰，激活思想。

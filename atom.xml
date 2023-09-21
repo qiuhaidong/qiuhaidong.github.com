@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-09-20T23:00:54+08:00</updated>
+  <updated>2023-09-21T15:43:35+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Day 18]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/21/day-18/"/>
+    <updated>2023-09-21T15:30:01+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/21/day-18</id>
+    <content type="html"><![CDATA[<p>反内耗建议你这样做<br/>
+当你感到迷茫，事业不顺，感情破裂，健康亦有问题，好像全世界都跟你过不去，于是你怀疑、焦虑、抱怨、自责，甚至有点抑郁。但请你一定要坚持下去，相信否极泰来。<br/>
+但是很多人都在这转运的几年里不堪重负，斗志全无，一蹶不振，错过了转运的时机点。<br/>
+所以啊，你一定要转变心态，把低谷当成磨练，把人生当成战场。<br/>
+你可以哭，可以恨，但是不可以不坚强，尽管眼下举步维艰，也请你一定要振作起来。<br/>
+做好眼前的事，干好手里的活，千万不要觉得自己很平庸，可能生活不会按照你想要的方式进行下去，也许你孤独，但当你熬过低谷期，那些独处的时光就能照亮你前行的路。<br/>
+只要你内心不慌乱，整个世界都影响不了你。<br/>
+我们不可能一下子变得很优秀。<br/>
+忙着生活的同时，记得去感受日常生活的小细节，不要觉得人生是那么无望。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 17]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/21/day-17/"/>
+    <updated>2023-09-21T15:27:03+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/21/day-17</id>
+    <content type="html"><![CDATA[<p>尴尬也是一种可贵的能力。<br/>
+不惊慌，不逃避，莫如由他惊扰良知，质问信仰，激活思想。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 16]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/09/21/day-16/"/>
+    <updated>2023-09-21T15:23:27+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/09/21/day-16</id>
+    <content type="html"><![CDATA[<p>好起来的从来不是生活，而是你自己，坦然面对，欣然接受，就是自己成长的开始。<br/>
+人间纵使万般不值得，<br/>
+但你值得。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Day 15]]></title>
@@ -257,49 +295,6 @@
 当然人无完人，我也看到了混乱，挣扎，拖延，懒惰，知错不改，饮鸩止渴。<br/>
 市场是残酷的，公司也不得不在市场的影响下，被迫做出不得不为的事。<br/>
 做是错的，不做也是错的。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 17]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/09/04/day-17/"/>
-    <updated>2023-09-04T02:08:01+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/09/04/day-17</id>
-    <content type="html"><![CDATA[<p>自己的工作表现越来越差，生活作息也乱了。<br/>
-如果一份工作让自己抗拒，说明确实不合适，还是得准备离开。<br/>
-不是冲动，不是其他原因，只从自己的角度考虑就行了，别带入乱七八糟的、无谓的。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 16：生活很复杂]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/09/03/life-is-complicated/"/>
-    <updated>2023-09-03T01:21:28+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/09/03/life-is-complicated</id>
-    <content type="html"><![CDATA[<p>这几天情绪糟糕，烦躁。<br/>
-这种情况，记住：<br/>
-静静地待会。<br/>
-祸从口出，慎言慎行。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[安装新版本的curl]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/09/01/install-curl/"/>
-    <updated>2023-09-01T22:19:43+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/09/01/install-curl</id>
-    <content type="html"><![CDATA[<p>安装新版本的<code>curl</code>:</p>
-
-<pre><code>dong@dong-Ubuntu:~$ curl -V
-
-
-找不到命令 “curl”，但可以通过以下软件包安装它：
-sudo snap install curl  # version 8.1.2, or
-sudo apt  install curl  # version 7.81.0-1ubuntu1.13
-输入 “snap info curl” 以查看更多版本。
-
-dong@dong-Ubuntu:~$ sudo snap install curl
-</code></pre>
 ]]></content>
   </entry>
   

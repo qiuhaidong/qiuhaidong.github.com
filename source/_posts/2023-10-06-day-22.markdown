@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 22：宁生穷命，莫生穷相"
+date: 2023-10-06 09:27:07 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+面相是自己给自己的

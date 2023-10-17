@@ -8,19 +8,11 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="强迫症发作
-Ubuntu
-20.04 21.10 12.04 16.04 18.04 20.04
-Ocotpress
-2.0 3.0
-jekyll
-theme
-折腾了好几天，没日没夜，不眠不休，吃喝不管，性格使然
-好了，好好吃个早餐，睡觉
-买票，回家
-过年
-又一年 1 2 3 4 5 6 7
-">
+  <meta name="description" content="怎么都不行
+用octopress3.0创建theme blog，可能因为 网络不行？ 一直卡在那里，一动不动
+bundle 和 bundle install 也是一动不动
+这是没有成功的，后面会报错
+重复，直到ok 对了，我把Gemfile和Gemfile.lock文件删除，就没报错了 正常来说， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +70,53 @@ theme
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/15/fucking-hard/">好艰难---把Gemfile和Gemfile.lock文件删除</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-15T02:48:34+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:48 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>怎么都不行<br/>
+用octopress3.0创建theme blog，可能因为</p>
+
+<h2>网络不行？</h2>
+
+<p>一直卡在那里，一动不动<br/>
+<code>bundle</code> 和 <code>bundle install</code> 也是一动不动<br/>
+这是没有成功的，后面会报错<br/>
+重复，直到ok</p>
+
+<h2>对了，我把Gemfile和Gemfile.lock文件删除，就没报错了</h2>
+
+<p>正常来说，rvm安装ruby就行了，如果还不行，再用<code>apt</code> ubuntu官方源安装一次</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install ruby</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -632,94 +671,6 @@ ubuntu12.04已经无法安装系统本身的更新了，更别说安装其他软
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/10/add-category/">侧边栏增加分类 Category</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-10T23:00:59+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:00 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>三步</h3>
-
-<h2>Step 1</h2>
-
-<h3>添加 <code>category_list</code> 插件</h3>
-
-<p>在 <code>octopress\plugins\</code> 文件夹里面，新建一个文件，名为：<code>category_list_tag.rb</code>。并将下面的代码粘贴到里面。</p>
-
-<pre><code>module Jekyll
-  class CategoryListTag &lt; Liquid::Tag
-    def render(context)
-      html = ""
-      categories = context.registers[:site].categories.keys
-      categories.sort.each do |category|
-        posts_in_category = context.registers[:site].categories[category].size
-       category_dir = context.registers[:site].config['category_dir']
-        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
-        html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
-      end
-      html
-    end
-  end
-end
-
-Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
-</code></pre>
-
-<p>这个插件会向<code>liquid</code>注册一个名为<code>category_list</code>的<code>tag</code>，该<code>tag</code>就是以<code>li</code>的形式将站点所有的<code>category</code>组织起来。如果要将<code>category</code>加入到侧边导航栏，需要增加一个<code>aside</code>。</p>
-
-<h2>Step 2</h2>
-
-<h3>增加 <code>aside</code></h3>
-
-<p>在 <code>octopress\source\_includes\asides\</code> 文件夹里面，新建一个文件，名为：<code>category_list.html</code> 。并粘贴下面的代码：</p>
-
-<p><strong>注意</strong>： 去掉 <code>%</code> 前面的2个 <code>\</code><br/>
-这里如果不加上<code>\</code>，markdown格式会显示<code>category_list</code>的内容。我是为了正确显示代码才加上的</p>
-
-<pre><code>&lt;section&gt;
-  &lt;h1&gt;Categories&lt;/h1&gt;
-  &lt;ul id="categories"&gt;
-    {\% category_list \%}
-  &lt;/ul&gt;
-&lt;/section&gt;
-</code></pre>
-
-<h2>Step 3</h2>
-
-<h3><code>_config.yml</code> 文件 ，修改 <code>default_asides</code></h3>
-
-<p>打开 <code>octopress\_config.yml</code> 文件，修改里面的 <code>default_asides</code> 这一行，将 <code>asides/category_list.html</code> 添加进去。</p>
-
-<pre><code>default_asides: [asides/category_list.html, ......]
-</code></pre>
-
-<p>这里可以修改侧边栏的顺序</p>
-
-<h2>ok</h2>
-
-<p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-categories-list-for-site-sidebar/">原博</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/19">&larr; Older</a>
@@ -735,6 +686,10 @@ Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2023/10/17/day-32/">Day 32：牧马城市</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2023/10/17/day-31/">Day 31</a>
@@ -812,10 +767,6 @@ Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
         <a href="/blog/2023/09/20/day-15/">Day 15</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/09/20/day-14/">Day 14</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -823,7 +774,7 @@ Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (242)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (243)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

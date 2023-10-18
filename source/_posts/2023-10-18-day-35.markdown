@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 35"
+date: 2023-10-18 22:56:33 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+电影《荒野生存》，成长际遇，会让你作出选择，享受以及承受随之而来的后续。  
+不要提前焦虑，生活无非就是见招拆招。

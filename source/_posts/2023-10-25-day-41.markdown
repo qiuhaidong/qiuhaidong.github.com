@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Day 41"
+date: 2023-10-25 02:30:35 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+得意时淡定  
+失意时反省  
+日常的思考  
+关键时清醒

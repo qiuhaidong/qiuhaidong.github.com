@@ -8,9 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="2016-11-19
-ruby version:2.2.6
-">
+  <meta name="description" content="原博
+安装win7或win8经常会出现这种提示：Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘。
+前几天装系统的时候，遇到一个问题：官方下载的windows 8 pro中文版镜像，使用UltraISO写进U盘后， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +68,175 @@ ruby version:2.2.6
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/25/win10-can-not-install-mbr-gpt/">Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-25T00:37:39+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:37 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://blog.sina.cn/dpool/blog/s/blog_a6079ee00101mlfv.html?vt=4">原博</a><br/>
+安装win7或win8经常会出现这种提示：Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘。<br/>
+前几天装系统的时候，遇到一个问题：官方下载的windows 8 pro中文版镜像，使用UltraISO写进U盘后，使用U盘启动安装方式安装系统，当安装到选择磁盘的地方时，点一下步，竟然出现以下提示“Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘。“Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表”的处理X<br/>
+<img src="http://s2.sinaimg.cn/bmiddle/a6079ee0gx6BJOK4LHb71&amp;690" alt="mbr" /><br/>
+出现这种情况主要是因为U盘启动时，默认使用EFI引导启动，而不是常见的MBR引导，所以会发生这种情况。这种情况常常出现在原来安装32位系统、现在改安64位系统的过程中。<br/>
+解决方法一：出现上述问题后，直接把U盘拔掉插到其它电脑，把U盘里的efi文件夹和bootmgr.efi文件删掉，问题就搞定了，然后，再用这个U盘启动盘去装系统，就不会出现这种问题了。<br/>
+删掉这两个文件夹跟文件的原因是因为从U盘安装会默认使用efi引导启动，删掉之后没有efi，就默认用mbr启动了。<br/>
+另外，我之前用光盘刻录过win8，给朋友安装的时候，也一样出现这种问题，但是问题是我的光盘是一次读写的，无法像U盘一样进去把那两个文件夹删掉，所以对于光盘我也不知道怎样弄。但是，奇怪的是，我自己的电脑也是用U盘安装的windows 8 pro，却没出现上述问题，我个人觉得是因为我的电脑比较老（09年底买的），不支持EFI启动的原因。什么是EFI呢？这是一种很重要的技术，统治电脑20多年的BIOS启动技术将来会被EFI代替，那时，在BIOS设置界面（严格来说应该是EFI界面）装可以使用鼠标，也可以是中文，不再是晦涩难懂的英文，也不再是只能使用键盘操作了。<br/>
+<img src="http://s14.sinaimg.cn/bmiddle/6db312f1gd1cb40b9337d&amp;690" alt="2" /><br/>
+“Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表”的处理<br/>
+解决方法二：非预装win8机型出厂时，硬盘默认为MBR分区表格式，而UEFI模式仅支持在GPT分区表的硬盘上安装系统。<br/>
+如果系统安装光盘中包含了UEFI信息，启动时可能会自动加载并进入UEFI模式，因此便会出现“ windows无法安装到这个磁盘，选中的磁盘具有MBR分区表，在EFI系统上，windows只能安装到GFT磁盘”的提示。<br/>
+建议您尝试以下方法：<br/>
+开机按ESC键，会显示两个光驱或者U盘的选项，选择光驱名称前没有UEFI的选项启动，即可正常把系统安装在MBR分区表硬盘上。<br/>
+解决方法三：进入主板选择启动的项目、比如F8、F11之类、u盘启动里有2项、一个是EFI启动、一个是普通启动、安装64位系统、选了EFI启动，就会出错，应该选普通启动。如果光盘安装，进BIOS看看， EFI进入bios看到UEFI状态时，Enabled 如果是启用状态，那么把他禁用掉看看（改为disabled），保存重启，选择光驱启动。但不能选择第uefi的光驱模式。<br/>
+<img src="http://www.45it.com/picture/allimg/130123/1449462291-1.jpg" alt="3" /><br/>
+<img src="http://www.45it.com/picture/allimg/130123/14494Ac2-2.jpg" alt="4" /><br/>
+<img src="http://www.45it.com/picture/allimg/130123/1449464146-3.jpg" alt="5" /><br/>
+解决方法四：使用windows8 的分区工具来重分区安装。或者用diskgenius最新版的来建立GPT分区。提示，使用这种方法前请把硬盘数据进行拷贝，以免造成损失。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/23/i-ran-the-red-light/">我闯了红灯</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-23T22:49:38+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>10:49 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>太危险！</h3>
+
+<h3>为了自己，为了开车的人！</h3>
+
+<h3>愚蠢！</h3>
+
+<h3>永远别闯红灯!</h3>
+
+<h1>11-24</h1>
+
+<h1>昨天刚说完，今天就有星力的人出车祸了！</h1>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/20/uninstall-and-update-command/">Uninstall and Update Command</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-20T13:35:45+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>1:35 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>sudo apt-get purge ***
+sudo apt-get remove ***
+sudo apt-get autoremove
+sudo apt-get clean
+sudo apt-get update
+sudo apt list --upgradable
+sudo apt upgrade
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/19/screen-light/">屏幕亮度调节 Ubuntu13.04和16.04 Screen Light</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-19T11:53:44+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:53 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>参见另一篇博文</p>
+
+<pre><code>sudo gedit /etc/default/grub
+</code></pre>
+
+<p>更改为：(斜黑体部分)</p>
+
+<pre><code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"  
+GRUB_CMDLINE_LINUX="***acpi_osi=Linux***"  
+</code></pre>
+
+<p>(东哥：13.04、16.04按Fn有效调节)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>GRUB_CMDLINE_LINUX="acpi_osi= acpi_backlight=vendor"        (东哥有效12.04，20.04，22.04)</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>sudo update-grub
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -314,198 +483,6 @@ PRESS 10
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/11/10/failed-when-gem-install-therubyracer/">Failed When: Gem Install Therubyracer</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-11-10T00:55:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:55 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>运行</p>
-
-<pre><code>dong@ubuntu:~/octopress$ gem install therubyracer  
-</code></pre>
-
-<p>报错</p>
-
-<pre><code>ERROR:  Error installing therubyracer:
-    invalid gem: package is corrupt, exception while verifying: undefined method `size' for nil:NilClass (NoMethodError) in /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem
-</code></pre>
-
-<p>corrupt:broken<br/>
-the package is broken<br/>
-so remove /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem<br/>
-then redownload and reinstall<br/>
-successed.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/10/31/bad-night/">Bad Night</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-10-31T03:02:55+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>31</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>3:02 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Got a lot of nightmares on those days.<br/>
-So many bad things,bad days.<br/>
-Got to carry on.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/10/29/config-dot-yml/">config.yml</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-10-29T00:19:30+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:19 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
-.#      Main Configs       #<br/>
-.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
-
-<p>url: <a href="https://qiuhaidong.github.io">https://qiuhaidong.github.io</a><br/>
-title: Haydn Yau<br/>
-subtitle:<br/>
-author: 丘海东<br/>
-simple_search: <a href="https://www.google.com/search">https://www.google.com/search</a><br/>
-description:</p>
-
-<p>.# Default date format is &ldquo;ordinal&rdquo; (resulting in &ldquo;July 22nd 2007&rdquo;)<br/>
-.# You can customize the format as defined in<br/>
-.# <a href="http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime">http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime</a><br/>
-.# Additionally, %o will give you the ordinal representation of the day<br/>
-date_format: &ldquo;ordinal&rdquo;</p>
-
-<p>.# RSS / Email (optional) subscription links (change if using something like Feedburner)<br/>
-subscribe_rss: /atom.xml<br/>
-subscribe_email:<br/>
-.# RSS feeds can list your email address if you like<br/>
-email:</p>
-
-<p>.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #<br/>
-.#    Jekyll &amp; Plugins     #<br/>
-.# &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; #</p>
-
-<p>.# If publishing to a subdirectory as in <a href="http://site.com/project">http://site.com/project</a> set &lsquo;root: /project&rsquo;<br/>
-root: /<br/>
-permalink: /blog/:year/:month/:day/:title/<br/>
-source: source<br/>
-destination: public<br/>
-plugins: plugins<br/>
-code_dir: downloads/code<br/>
-category_dir: blog/categories<br/>
-markdown: rdiscount<br/>
-rdiscount:<br/>
-  extensions:<br/>
-    - autolink<br/>
-    - footnotes<br/>
-    - smart<br/>
-highlighter: pygments # default python pygments have been replaced by pygments.rb</p>
-
-<p>paginate: 5                     # Posts per page on the blog index<br/>
-paginate_path: &ldquo;posts/:num&rdquo;     # Directory base for pagination URLs eg. /posts/2/<br/>
-recent_posts: 5               # Posts in the sidebar Recent Posts section<br/>
-excerpt_link: &ldquo;Read on &rarr;&rdquo;  # &ldquo;Continue reading&rdquo; link text at the bottom of excerpted articles<br/>
-excerpt_separator: &ldquo;</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2016/10/29/config-dot-yml/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/10/28/install-again/">Install Again</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-10-28T02:22:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:22 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>something new:<br/>
-install git:</p>
-
-<pre><code>sudo apt-get install git
-</code></pre>
-
-<p>don&rsquo;t install from ppa anymore.<br/>
-install rvm: run the command from official website,the latest version,maybe not the stable version.<br/>
-install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official website，the latest version,for exemple:2.3.1  the old version may got some problem when install the gem package.<br/>
-<code>rubygems bundle install</code>its address has change,the latest version is<a href="https://gems.ruby-china.org">Ruby China</a>，we could check it out from the origin official website.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/28">&larr; Older</a>
@@ -521,6 +498,22 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2023/10/29/day-47/">Day 47</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/10/29/day-46/">Day 46：破心中贼</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/10/29/day-45/">Day 45</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/10/29/day-44/">Day 44</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2023/10/25/day-43/">Day 43：最难的不是到达，而是出发</a>
@@ -586,22 +579,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
         <a href="/blog/2023/10/12/day-28/">Day 28</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/10/12/day-27/">Day 27</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2023/10/12/day-26/">Day 26</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2023/10/11/day-25/">Day 25</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2023/10/11/day-24/">Day 24：自律</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -609,7 +586,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (254)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (258)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

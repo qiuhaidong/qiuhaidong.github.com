@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 44"
+date: 2023-10-29 12:40:24 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+当你看清了人性，颠覆了三观，崩塌了信仰，社会这一课就毕业了。

@@ -8,11 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="2016-06-17 14:47 面对真实的自己
-一无所有之后
-写字楼、身光颈靓的表象与本质
-用法律、警察解决问题
-天哥V5 ">
+  <meta name="description" content="linux下用gcc，系统自带有，用gcc --version查看一下即可，若没有，安装编译环境： sudo apt-get install build-essential 新建test.c文件： sudo gedit /…/…/…/test.c 然后开始编程： #include &lt; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +66,65 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/06/27/c-on-linux/">C on Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-06-27T09:18:14+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:18 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>linux下用gcc，系统自带有，用<code>gcc --version</code>查看一下即可，若没有，安装编译环境：</p>
+
+<pre><code>sudo apt-get install build-essential
+</code></pre>
+
+<p>新建test.c文件：</p>
+
+<pre><code>sudo gedit /…/…/…/test.c
+</code></pre>
+
+<p>然后开始编程：</p>
+
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    printf("hello,world!\n");
+    return 0;
+}
+</code></pre>
+
+<p>保存后编译：</p>
+
+<pre><code>gcc -o test test.c
+</code></pre>
+
+<p>生产可执行文件test，运行：</p>
+
+<pre><code>./test
+</code></pre>
+
+<p>完成。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -581,65 +636,6 @@ S7 Edge：弧形屏幕的误触问题</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/03/23/make-a-good-conversatin/">如何聊天</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-03-23T11:42:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>11:42 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://weibo.com/1742566624/Dnxr5ho01?type=comment#_rnd14587044733760">参见这条微博</a></p>
-
-<ol>
-<li><p>话题</p>
-
-<p>   大家都能参与的话题，观点别绝对（佛教就是迷信，日本人全部都坏）<br/>
-   说编程bug不如说电脑小技巧<br/>
-   说手机硬件不如说手机卡死后长按重启<br/>
-   话题观点要有多角度，别绝对<br/>
-   聊风土，人情，名人，影视歌，娇气，美食，幻想……</p></li>
-<li><p>态度</p>
-
-<p>   平和，微笑，身体动作要少，情绪要相符对应</p></li>
-<li><p>声音</p>
-
-<p>   大小，高低，快慢，语调，语气</p></li>
-<li><p>非线性对话</p>
-
-<p>   思维别一根筋，别一直追问（你多大？28。哪里人？广东。广东哪里？茂名。茂名哪里？信宜。信宜哪里？……），别有压迫感<br/>
-   要曲线，不要直线，多个话题结合，多路多线程</p></li>
-<li><p>合理的短悬念</p>
-
-<p>   别一股脑说结果<br/>
-   别太长
-   重要的事别设悬念</p></li>
-<li><p>不经意的幽默</p>
-
-<p>  别故意讲段子梗</p></li>
-<li><p>重复别人的关键词</p></li>
-</ol>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/31">&larr; Older</a>
@@ -655,6 +651,10 @@ S7 Edge：弧形屏幕的误触问题</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2023/10/31/day-48/">Day 48</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2023/10/29/day-47/">Day 47</a>
@@ -732,10 +732,6 @@ S7 Edge：弧形屏幕的误触问题</p>
         <a href="/blog/2023/10/14/day-29/">Day 29</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/10/12/day-28/">Day 28</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -743,7 +739,7 @@ S7 Edge：弧形屏幕的误触问题</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (258)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (259)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

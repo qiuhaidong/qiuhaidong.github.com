@@ -8,7 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="三步 Step 1 添加 category_list 插件 在 octopress\plugins\ 文件夹里面，新建一个文件，名为：category_list_tag.rb。并将下面的代码粘贴到里面。 module Jekyll class CategoryListTag &lt; Liquid &hellip;">
+  <meta name="description" content="原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容 首先利用rfkill命令查看目前无线传输设备的状态，rfkill是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。 rfkill的常用方法为 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,131 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T04:38:50+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:38 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容</h3>
+
+<p>首先利用<code>rfkill</code>命令查看目前无线传输设备的状态，<code>rfkill</code>是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。</p>
+
+<p>rfkill的常用方法为:</p>
+
+<pre><code>rfkill list all
+#  获得设备列表
+
+rfkill block [index|type]
+#  通过索引或类型禁用设备
+
+rfkill unblock [index|type]
+#  通过索引或类型启用设备
+</code></pre>
+
+<p>当前设备状态如下：</p>
+
+<pre><code>rfkill list all
+输出：
+0: phy0: Wireless LAN
+    Soft blocked: no
+    Hard blocked: yes
+1: acer-wireless: Wireless LAN
+    Soft blocked: no
+    Hard blocked: no
+</code></pre>
+
+<p>通过rfkill启用/禁用设备无法对硬件阻塞产生作用。</p>
+
+<p>由于笔记本只有一个无线网卡，这两个模块应该是有冲突</p>
+
+<p>使用命令lsmod | grep acer可以看出系统启动了acer_wmi模块</p>
+
+<p>通过查找资料后，解决方法为禁用acer_wmi模块。</p>
+
+<p>解决方法：</p>
+
+<p>通过在/etc/modprobe.d/文件夹下，编辑blacklist.conf文件，最后一行添加内容：  <code>blacklist acer_wmi</code></p>
+
+<pre><code>sudo gedit /etc/modprobe.d/blacklist.conf
+</code></pre>
+
+<p>重启<br/>
+wifi自动为打开状态，此时rfkill list all命令结果如下:</p>
+
+<pre><code>rfkill list all
+
+0: phy0: Wireless LAN
+Soft blocked: no
+Hard blocked: no
+</code></pre>
+
+<p>版权声明：本文为CSDN博主「Monkey_D_Shuai」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/ls12165/article/details/68189943">https://blog.csdn.net/ls12165/article/details/68189943</a></p>
+
+<p><a href="https://blog.csdn.net/ls12165/article/details/68189943?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;utm_relevant_index=2">原文链接</a></p>
+
+<p><a href="https://blog.csdn.net/weixin_34305091/article/details/116951261?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;utm_relevant_index=2">另一篇博文</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T00:17:21+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:17 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ubuntu20.04安装了几次2.0都失败<br/>
+ubuntu12.04已经无法安装系统本身的更新了，更别说安装其他软件<br/>
+强迫症发作，于是有了这次：</p>
+
+<h3>列出大致步骤吧，主要是有些error要如何解决</h3>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -478,92 +603,6 @@ mv _site/_posts/ .
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/12/07/grateful/">感恩</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-12-07T16:50:35+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>4:50 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>此一時彼一時，我又回京東上班了。<br/>
-總不能閒着不做事，沒有收入是不行的。<br/>
-不過我有保護自己，現在上日班，一天只需要工作6小時，活也不是很忙，挺好的。<br/>
-<strong>保護自己</strong>呀，一定要！</p>
-
-<h3>感恩</h3>
-
-<p>很多時候，挺多人，都對我很好的。很照顧我，甚至我不要臉地說，他們有時簡直是寵我。<br/>
-比如老大喻胡龍，人手足夠時，叫我不用幹活，讓別人做了我的那份工作，他會罵別人，但是不會說我我。還有他老婆，給東西我吃。<br/>
-比如潤峯大哥，旁邊的人工作比我更忙，但是他卻是幫我。<br/>
-比如？韋亦凡？（音譯，不知道是不是這個名字），其實不是很熟悉，但是京東發的小零食，他經常給我吃。<br/>
-還有大劉，老李，光頭大哥，光頭二哥，肥佬，肥仔老楊，胖子……還有很多我不知道名字的人。<br/>
-所以：<br/>
-<strong>越努力越幸運</strong>。<br/>
-我是個認真做事的人，別人看在眼裏，自然在條件允許時幫助我。<br/>
--別人幫我，是證明了別人是好人，自己<strong>別得瑟</strong>，<strong>得意不忘形</strong>。<br/>
-一直以來，都是很多人幫助我，加油吧，中年人，<strong>別辜負了那麼多的善意</strong>。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2021/11/26/I-AM-GOOD/">耳朵好了|饮鸩止渴|当断则断</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2021-11-26T09:22:11+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>9:22 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>劳逸结合</h3>
-
-<p>何同学说的：你通过熬夜，不规律的生活，随意而为得来的东西，总有一天，要<strong>连本带利</strong>还回去</p>
-
-<p>我倒是没有熬夜，生活也挺规律的，也没有随意，但就是<strong>对自己太狠了</strong>，<strong>过犹不及</strong>，可能我的躯体受得了繁重的体力劳动，我的意志也顶得住冬日早晨的冷水澡，但是我的<strong>血管</strong>，我的<strong>眼睛</strong>，<strong>耳朵</strong>，这些柔弱的，脆弱的，<strong>不能修复的</strong>，不行呀</p>
-
-<h3>身体健康</h3>
-
-<h3>好好生活</h3>
-
-<h3>饮鸩止渴</h3>
-
-<h3>当断则断</h3>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/22">&larr; Older</a>
@@ -579,6 +618,14 @@ mv _site/_posts/ .
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2023/11/03/day-54/">Day 54</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/11/03/day-53/">Day 53</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2023/11/02/day-52/">Day 52</a>
@@ -652,14 +699,6 @@ mv _site/_posts/ .
         <a href="/blog/2023/10/18/day-35/">Day 35</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/10/17/day-34/">Day 34</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2023/10/17/day-33/">Day 33：大学生</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -667,7 +706,7 @@ mv _site/_posts/ .
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (263)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (265)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

@@ -8,8 +8,11 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="图文版 WPS：
+选中1个单元格，菜单栏选择：插入，特殊符号，数字符号，选择“√”，打上英文逗号，再选择“×”，然后复制。
+数据，有效性，（允许）序列，（来源）粘贴，完成。
+Excel：
+（来源步骤处）可以选择插入，符号。 ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +70,106 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/05/excel-da-gou-x/">Excel表格设置可选择输入√或×</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-05T10:47:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>10:47 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://jingyan.baidu.com/article/5d6edee210ba8099eadeecb5.html">图文版</a></p>
+
+<p>WPS：<br/>
+选中1个单元格，菜单栏选择：插入，特殊符号，数字符号，选择“√”，打上英文逗号，再选择“×”，然后复制。<br/>
+数据，有效性，（允许）序列，（来源）粘贴，完成。<br/>
+Excel：<br/>
+（来源步骤处）可以选择插入，符号。<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E5%A6%82%E4%BD%95%E5%9C%A8Excel%202003%E9%87%8C%E8%AE%BE%E7%BD%AE%E4%B8%80%E5%88%97%E5%8F%AF%E9%80%89%E6%8B%A9%E8%BE%93%E5%85%A5%E5%8B%BE%E6%88%96%E5%8F%89.png" alt="Excel" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/02/commands-about-linux/">Commands About Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-02T21:26:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>9:26 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-03-02 21:26<br/>
+shell: 命令行解释器<br/>
+Linux<strong>命令格式</strong>: 命令名 [选项] [参数1] [参数2] …… <br/>
+命令与参数之间，参数与参数之间用空格隔开<br/>
+立即<strong>关机</strong>:  <code>sudo shutdown-h now</code> 或者 <code>sudo halt</code> （Ubuntu不行，在最后画面不动,停机但不关电源）或者<code>sudo poweroff</code><br/>
+立即<strong>重启</strong>:  <code>sudo shutdown-r now</code> (Ubuntu不行)或者 <code>sudo reboot</code>（行）<br/>
+<code>ls</code><br/>
+<code>cd  dir</code><br/>
+<strong>复制</strong>: <code>cp /.../.../sourcefile /.../.../targetfile</code> 有重命名的功能<br/>
+<code>cp file1 file2</code> #在当前目录为file1创建一个副本file2<br/>
+<code>cp file ~/target/</code> #复制当前目录下的file到主目录下的target目录中，保持原文件名<br/>
+<code>cp file1 file2 ~/target/</code> #把file1、file2俩个文件复制到target目录，保持原文件名<br/>
+-p: 保持文件属性 <code>cp -p file ~/target/</code><br/>
+-R: 若被复制对象有目录，则把该目录下的子目录和子目录下的文件都复制<br/>
+<strong>移动</strong>: <code>mv</code> #有重命名的功能<br/>
+<code>mv file1 file2</code> #把file1重命名为file2<br/>
+<code>mv file1 file2 ~/target/</code> 把这两个文件都移动到…… #最后一个参数（/target/）必须是目录<br/>
+<strong>创建目录</strong>: <code>mkdir dir</code><br/>
+<strong>删除目录</strong>: <code>rmdir dir</code>  (空目录)<br/>
+<strong>删除文件</strong>: <code>rm file</code><br/>
+<code>rm</code>用于删除文件，若使用参数<code>-r</code>或<code>-R</code>，则可删除目录<br/>
+<code>-r</code>,<code>-R</code>:递归删除，无论目录下是否有东西<br/>
+<code>-i</code>: 删除前先询问<br/>
+<code>-f</code>: 强制删除<br/>
+<code>rm -i test*</code>: 删除所有文件名以test开头的文件<br/>
+<code>rm -rf test/</code>: 删除目录test,无论是否是空目录<br/>
+<strong>超级用户</strong>:<code>sudo su -</code><br/>
+统计文件信息: <code>wc [-l] [-w] [-c] filename</code> (行数，单词数，字符数)<br/>
+<code>--version</code><br/>
+<code>--help</code><br/>
+<code>man</code><br/>
+Linux中，一个文件是一组数据的集合，可理解为一个字符流或字节流，Linux并不为文件设计内部结构，而是把文件都理解为无结构的数据集合。<br/>
+所以:新建并打开文件可直接说编辑该文件即可（test.c文件之前并未存在）:</p>
+
+<pre><code>sudo gedit test.c
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -313,72 +416,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/02/08/to-myself/">致自己</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-02-08T00:00:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>这几年，我黯然无光，落魄至极。<br/>
-好像风里的一条狗。<br/>
-但有些东西，还在。<br/>
-祝你不在你不适合的舞台上跳舞，祝你就算孤独也过得生龙活虎，祝你不被那些大大小小的不如意打败。别人眼里的你一点也不重要，如果要努力，就努力为你喜欢的生活而活吧。—— 张晓晗<br/>
-<img src="http://r.photo.store.qq.com/psb?/V13NDf2z3Ltdij/heg0qGDHvGzcVIsO5MycFjpIze6Lip1azHJOzTcqKRE!/r/dFcBAAAAAAAA" alt="0" /><br/>
-<img src="http://r.photo.store.qq.com/psb?/V13NDf2z3Ltdij/WEwWMUc5nr1utRZHGRtBhKTh0t7IDwN7nRPCLJWfPXE!/r/dFoBAAAAAAAA" alt="1" /><br/>
-<img src="http://r.photo.store.qq.com/psb?/V13NDf2z3Ltdij/38jM363FbPiGoKd7VhCvtD1rCmOLXt9ZhtGsJmogguY!/r/dFkBAAAAAAAA" alt="2" /><br/>
-<img src="http://r.photo.store.qq.com/psb?/V13NDf2z3Ltdij/A7*9GLN3b0ZKYrd16GH3egofAeY3m4Pq*sIl1P3Mx.M!/r/dFoBAAAAAAAA" alt="3" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/02/07/you-are-different/">格格不入</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-02-07T17:20:05+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:20 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>理所当然。  <br/>
-你不会沦落至此。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/33">&larr; Older</a>
@@ -394,6 +431,14 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2023/11/03/day-54/">Day 54</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2023/11/03/day-53/">Day 53</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2023/11/02/day-52/">Day 52</a>
@@ -467,14 +512,6 @@
         <a href="/blog/2023/10/18/day-35/">Day 35</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/10/17/day-34/">Day 34</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2023/10/17/day-33/">Day 33：大学生</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -482,7 +519,7 @@
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (263)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (265)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

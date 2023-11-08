@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress2.0 | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress2-dot-0/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-11-09T04:03:45+08:00</updated>
+  <updated>2023-11-09T04:05:00+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -43,16 +43,13 @@ curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 28 ms: �
 </code></pre>
 
 <p>提示错误：<br/>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Error running &lsquo;__rvm_make -j4&rsquo;,
-</span><span class='line'>please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;There has been an error while running make. Halting the installation.
-</span><span class='line'>&hellip;&hellip;</span></code></pre></td></tr></table></div></figure>
+```
+Error running &lsquo;__rvm_make -j4&rsquo;,
+please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log</p>
+
+<p>There has been an error while running make. Halting the installation.
+&hellip;&hellip;
+```
 <a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a><br/>
 <strong>解决：</strong></p>
 
@@ -82,56 +79,33 @@ sudo apt install git
 ssh -T git@github.com
 </code>
 ok<br/>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>python2 &ndash;version
-</span><span class='line'>sudo apt install python2&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;ruby &ndash;version
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>没有  
-</span><span class='line'>到rvm官网(下面的命令可能有更新，看官网)  
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>gpg2 &ndash;recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>提示：  
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>Command &lsquo;gpg2&rsquo; not found, but can be installed with:
-</span><span class='line'>sudo apt install gnupg2
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>sudo apt install gnupg2
-</span><span class='line'>gpg2 &ndash;recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;curl -sSL &lt;a href="https://get.rvm.io"&gt;https://get.rvm.io&lt;/a&gt; | bash -s stable
-</span><span class='line'>&lt;code&gt;
-</span><span class='line'>提示：  
-</span><span class='line'>&lt;/code&gt;
-</span><span class='line'>Command &lsquo;curl&rsquo; not found, but can be installed with:
-</span><span class='line'>sudo apt install curl</span></code></pre></td></tr></table></div></figure></p>
+```
+python2 &ndash;version
+sudo apt install python2</p>
+
+<p>ruby &ndash;version
+<code>
+没有  
+到rvm官网(下面的命令可能有更新，看官网)  
+</code>
+gpg2 &ndash;recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+<code>
+提示：  
+</code>
+Command &lsquo;gpg2&rsquo; not found, but can be installed with:
+sudo apt install gnupg2
+<code>
+</code>
+sudo apt install gnupg2
+gpg2 &ndash;recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB</p>
+
+<p>curl -sSL <a href="https://get.rvm.io">https://get.rvm.io</a> | bash -s stable
+<code>
+提示：  
+</code>
+Command &lsquo;curl&rsquo; not found, but can be installed with:
+sudo apt install curl
+```</p>
 
 <h3>注意: <a href="https://qiuhaidong.github.io/blog/2023/09/01/install-curl/">安装新版本的curl</a></h3>
 
@@ -178,16 +152,13 @@ rvm --version
 rvm install 2.6.9
 </code>
 提示错误：<br/>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Error running &lsquo;__rvm_make -j4&rsquo;,
-</span><span class='line'>please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;There has been an error while running make. Halting the installation.
-</span><span class='line'>&hellip;&hellip;</span></code></pre></td></tr></table></div></figure></p>
+```
+Error running &lsquo;__rvm_make -j4&rsquo;,
+please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log</p>
+
+<p>There has been an error while running make. Halting the installation.
+&hellip;&hellip;
+```</p>
 
 <p><strong>解决：</strong><br/>
 <a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a></p>

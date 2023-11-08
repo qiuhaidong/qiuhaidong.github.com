@@ -8,8 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="太危险！ 为了自己，为了开车的人！ 愚蠢！ 永远别闯红灯! 11-24 昨天刚说完，今天就有星力的人出车祸了！
-">
+  <meta name="description" content="原博
+安装win7或win8经常会出现这种提示：Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘。
+前几天装系统的时候，遇到一个问题：官方下载的windows 8 pro中文版镜像，使用UltraISO写进U盘后， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +68,53 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/25/win10-can-not-install-mbr-gpt/">Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-25T00:37:39+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:37 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://blog.sina.cn/dpool/blog/s/blog_a6079ee00101mlfv.html?vt=4">原博</a><br/>
+安装win7或win8经常会出现这种提示：Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘。<br/>
+前几天装系统的时候，遇到一个问题：官方下载的windows 8 pro中文版镜像，使用UltraISO写进U盘后，使用U盘启动安装方式安装系统，当安装到选择磁盘的地方时，点一下步，竟然出现以下提示“Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表。在 EFI 系统上，Windows 只能安装到 GPT 磁盘。“Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表”的处理X<br/>
+<img src="http://s2.sinaimg.cn/bmiddle/a6079ee0gx6BJOK4LHb71&amp;690" alt="mbr" /><br/>
+出现这种情况主要是因为U盘启动时，默认使用EFI引导启动，而不是常见的MBR引导，所以会发生这种情况。这种情况常常出现在原来安装32位系统、现在改安64位系统的过程中。<br/>
+解决方法一：出现上述问题后，直接把U盘拔掉插到其它电脑，把U盘里的efi文件夹和bootmgr.efi文件删掉，问题就搞定了，然后，再用这个U盘启动盘去装系统，就不会出现这种问题了。<br/>
+删掉这两个文件夹跟文件的原因是因为从U盘安装会默认使用efi引导启动，删掉之后没有efi，就默认用mbr启动了。<br/>
+另外，我之前用光盘刻录过win8，给朋友安装的时候，也一样出现这种问题，但是问题是我的光盘是一次读写的，无法像U盘一样进去把那两个文件夹删掉，所以对于光盘我也不知道怎样弄。但是，奇怪的是，我自己的电脑也是用U盘安装的windows 8 pro，却没出现上述问题，我个人觉得是因为我的电脑比较老（09年底买的），不支持EFI启动的原因。什么是EFI呢？这是一种很重要的技术，统治电脑20多年的BIOS启动技术将来会被EFI代替，那时，在BIOS设置界面（严格来说应该是EFI界面）装可以使用鼠标，也可以是中文，不再是晦涩难懂的英文，也不再是只能使用键盘操作了。<br/>
+<img src="http://s14.sinaimg.cn/bmiddle/6db312f1gd1cb40b9337d&amp;690" alt="2" /><br/>
+“Windows 无法安装到这个磁盘。选中的磁盘具有MBR分区表”的处理<br/>
+解决方法二：非预装win8机型出厂时，硬盘默认为MBR分区表格式，而UEFI模式仅支持在GPT分区表的硬盘上安装系统。<br/>
+如果系统安装光盘中包含了UEFI信息，启动时可能会自动加载并进入UEFI模式，因此便会出现“ windows无法安装到这个磁盘，选中的磁盘具有MBR分区表，在EFI系统上，windows只能安装到GFT磁盘”的提示。<br/>
+建议您尝试以下方法：<br/>
+开机按ESC键，会显示两个光驱或者U盘的选项，选择光驱名称前没有UEFI的选项启动，即可正常把系统安装在MBR分区表硬盘上。<br/>
+解决方法三：进入主板选择启动的项目、比如F8、F11之类、u盘启动里有2项、一个是EFI启动、一个是普通启动、安装64位系统、选了EFI启动，就会出错，应该选普通启动。如果光盘安装，进BIOS看看， EFI进入bios看到UEFI状态时，Enabled 如果是启用状态，那么把他禁用掉看看（改为disabled），保存重启，选择光驱启动。但不能选择第uefi的光驱模式。<br/>
+<img src="http://www.45it.com/picture/allimg/130123/1449462291-1.jpg" alt="3" /><br/>
+<img src="http://www.45it.com/picture/allimg/130123/14494Ac2-2.jpg" alt="4" /><br/>
+<img src="http://www.45it.com/picture/allimg/130123/1449464146-3.jpg" alt="5" /><br/>
+解决方法四：使用windows8 的分区工具来重分区安装。或者用diskgenius最新版的来建立GPT分区。提示，使用这种方法前请把硬盘数据进行拷贝，以免造成损失。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -435,50 +483,6 @@ PRESS 10
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/11/10/failed-when-gem-install-therubyracer/">Failed When: Gem Install Therubyracer</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-11-10T00:55:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:55 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>运行</p>
-
-<pre><code>dong@ubuntu:~/octopress$ gem install therubyracer  
-</code></pre>
-
-<p>报错</p>
-
-<pre><code>ERROR:  Error installing therubyracer:
-    invalid gem: package is corrupt, exception while verifying: undefined method `size' for nil:NilClass (NoMethodError) in /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem
-</code></pre>
-
-<p>corrupt:broken<br/>
-the package is broken<br/>
-so remove /home/dong/.rvm/gems/ruby-2.3.1/cache/libv8-3.16.14.15-x86_64-linux.gem<br/>
-then redownload and reinstall<br/>
-successed.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/29">&larr; Older</a>
@@ -494,6 +498,10 @@ successed.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2023/11/09/day-57/">Day 57</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2023/11/06/day-56/">Day 56：时间会让事物展现得更全面</a>
@@ -571,10 +579,6 @@ successed.</p>
         <a href="/blog/2023/10/21/day-38/">Day 38</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/10/21/day-37/">Day 37</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -582,7 +586,7 @@ successed.</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (267)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (268)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

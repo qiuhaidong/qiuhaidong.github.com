@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech-octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech-octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-11-09T04:05:00+08:00</updated>
+  <updated>2023-11-09T04:06:36+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -109,21 +109,32 @@ User git #这行可能不需要也行
 </code></p>
 
 <p>或者这一段：<br/>
-```
-Host github.com
-Hostname ssh.github.com
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/id_rsa
-Port 443
-User git</p>
-
-<p>Host gitlab.com
-Hostname altssh.gitlab.com
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/id_rsa
-Port 443
-User git
-```</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Host github.com
+</span><span class='line'>Hostname ssh.github.com
+</span><span class='line'>PreferredAuthentications publickey
+</span><span class='line'>IdentityFile ~/.ssh/id_rsa
+</span><span class='line'>Port 443
+</span><span class='line'>User git&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;Host gitlab.com
+</span><span class='line'>Hostname altssh.gitlab.com
+</span><span class='line'>PreferredAuthentications publickey
+</span><span class='line'>IdentityFile ~/.ssh/id_rsa
+</span><span class='line'>Port 443
+</span><span class='line'>User git</span></code></pre></td></tr></table></div></figure></p>
 
 <p>我的：把<code>config</code>文件复制到.ssh2和.ssh3文件夹<br/>
 改ssh2-3文件夹名，测试：<br/>
@@ -146,13 +157,16 @@ ssh -T git@github.com
 </code></pre>
 
 <p>提示错误：<br/>
-```
-Error running &lsquo;__rvm_make -j4&rsquo;,
-please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log</p>
-
-<p>There has been an error while running make. Halting the installation.
-&hellip;&hellip;
-```
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Error running &lsquo;__rvm_make -j4&rsquo;,
+</span><span class='line'>please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;There has been an error while running make. Halting the installation.
+</span><span class='line'>&hellip;&hellip;</span></code></pre></td></tr></table></div></figure>
 <a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a><br/>
 <strong>解决：</strong></p>
 

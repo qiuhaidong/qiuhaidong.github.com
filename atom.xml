@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-12-02T16:08:38+08:00</updated>
+  <updated>2023-12-02T16:18:14+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/12/02/test/"/>
-    <updated>2023-12-02T16:08:15+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/12/02/test</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Day 65：决策疲劳]]></title>
@@ -244,6 +235,17 @@
     <id>https://qiuhaidong.github.io/blog/2023/10/29/day-47</id>
     <content type="html"><![CDATA[<p>王阳明：<br/>
 人很多时候，看起来是在处理许多各不相同的事情，但归根结底，其实不过是在处理自己的情绪和感受。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 46：破心中贼]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2023/10/29/day-46/"/>
+    <updated>2023-10-29T12:51:22+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2023/10/29/day-46</id>
+    <content type="html"><![CDATA[<p>坐中静，破焦虑之贼<br/>
+舍中得，破欲望之贼<br/>
+事上练，破犹豫之贼</p>
 ]]></content>
   </entry>
   

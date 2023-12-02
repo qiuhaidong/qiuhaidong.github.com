@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 38"
+date: 2023-10-21 23:20:34 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+鳄鱼的眼泪。

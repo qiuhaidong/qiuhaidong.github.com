@@ -1,0 +1,13 @@
+---
+layout: post
+title: "day 17"
+date: 2023-09-04 02:08:01 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+自己的工作表现越来越差，生活作息也乱了。  
+如果一份工作让自己抗拒，说明确实不合适，还是得准备离开。  
+不是冲动，不是其他原因，只从自己的角度考虑就行了，别带入乱七八糟的、无谓的。

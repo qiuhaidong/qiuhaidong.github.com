@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 52"
+date: 2023-11-02 12:27:48 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+幸福常被解读为“有”：有房，有车，有钱，有权。  
+其实幸福是“无”：无病，无灾，无忧，无虑。

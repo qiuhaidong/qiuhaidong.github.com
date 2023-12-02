@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 30：电影《雏妓》"
+date: 2023-10-16 01:55:58 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+人的一生，都在寻找和救赎自己。

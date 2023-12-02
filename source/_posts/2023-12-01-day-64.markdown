@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 64：戒抖音"
+date: 2023-12-01 22:45:51 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+抖音的算法，让人上瘾，戒了。

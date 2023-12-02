@@ -1,0 +1,12 @@
+---
+layout: post
+title: "放松"
+date: 2023-09-25 12:39:15 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+别时刻都崩得那么紧  
+张弛有道

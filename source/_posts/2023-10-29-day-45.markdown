@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 45"
+date: 2023-10-29 12:43:13 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+有些人明明处在社会最底层，受着各种剥削压迫，却拥有统治者的思维，动物界找这么低能的东西都不可能。  
+——林语堂

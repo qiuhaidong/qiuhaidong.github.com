@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 49"
+date: 2023-10-31 14:23:55 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+要是三言两语就能击垮我，那这些年的路算我白走

@@ -8,8 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="16、iPhone 13系列，2021年9月15日凌晨1点，在Apple Park发布。iPhone 13 mini，iPhone 13，iPhone 13 Pro，iPhone 13 Pro Max。A15，台积电第二代5nm
-A15仿生芯片，6核CPU，具有2个性能核心和4个能效核心， &hellip;">
+  <meta name="description" content="原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容 首先利用rfkill命令查看目前无线传输设备的状态，rfkill是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。 rfkill的常用方法为 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -38,7 +37,7 @@ A15仿生芯片，6核CPU，具有2个性能核心和4个能效核心， &hellip
   <header role="banner"><hgroup>
   <h1><a href="/">丘海东</a></h1>
   
-    <h2>读书写字  热爱生活  ⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</h2>
+    <h2>读书写字  热爱生活</h2>
   
 </hgroup>
 
@@ -73,7 +72,7 @@ A15仿生芯片，6核CPU，具有2个性能核心和4个能效核心， &hellip
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/06/05/iphone/">iPhone</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-wifi-do-not-work/">Ubuntu 安装后wifi无法使用</a></h1>
     
     
       <p class="meta">
@@ -82,22 +81,111 @@ A15仿生芯片，6核CPU，具有2个性能核心和4个能效核心， &hellip
 
 
 
-<time class='entry-date' datetime='2022-06-05T12:21:42+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:21 pm</span></time>
+<time class='entry-date' datetime='2022-01-11T04:38:50+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:38 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>16、iPhone 13系列，2021年9月15日凌晨1点，在Apple Park发布。iPhone 13 mini，iPhone 13，iPhone 13 Pro，iPhone 13 Pro Max。A15，台积电第二代5nm<br/>
-A15仿生芯片，6核CPU，具有2个性能核心和4个能效核心，数字系列4核GPU（Pro系列5核），16核NPU，数字系列4G运存，Pro系列6G运存<br/>
-Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
+  <div class="entry-content"><h3>原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容</h3>
+
+<p>首先利用<code>rfkill</code>命令查看目前无线传输设备的状态，<code>rfkill</code>是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。</p>
+
+<p>rfkill的常用方法为:</p>
+
+<pre><code>rfkill list all
+#  获得设备列表
+
+rfkill block [index|type]
+#  通过索引或类型禁用设备
+
+rfkill unblock [index|type]
+#  通过索引或类型启用设备
+</code></pre>
+
+<p>当前设备状态如下：</p>
+
+<pre><code>rfkill list all
+输出：
+0: phy0: Wireless LAN
+    Soft blocked: no
+    Hard blocked: yes
+1: acer-wireless: Wireless LAN
+    Soft blocked: no
+    Hard blocked: no
+</code></pre>
+
+<p>通过rfkill启用/禁用设备无法对硬件阻塞产生作用。</p>
+
+<p>由于笔记本只有一个无线网卡，这两个模块应该是有冲突</p>
+
+<p>使用命令lsmod | grep acer可以看出系统启动了acer_wmi模块</p>
+
+<p>通过查找资料后，解决方法为禁用acer_wmi模块。</p>
+
+<p>解决方法：</p>
+
+<p>通过在/etc/modprobe.d/文件夹下，编辑blacklist.conf文件，最后一行添加内容：  <code>blacklist acer_wmi</code></p>
+
+<pre><code>sudo gedit /etc/modprobe.d/blacklist.conf
+</code></pre>
+
+<p>重启<br/>
+wifi自动为打开状态，此时rfkill list all命令结果如下:</p>
+
+<pre><code>rfkill list all
+
+0: phy0: Wireless LAN
+Soft blocked: no
+Hard blocked: no
+</code></pre>
+
+<p>版权声明：本文为CSDN博主「Monkey_D_Shuai」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/ls12165/article/details/68189943">https://blog.csdn.net/ls12165/article/details/68189943</a></p>
+
+<p><a href="https://blog.csdn.net/ls12165/article/details/68189943?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&amp;utm_relevant_index=2">原文链接</a></p>
+
+<p><a href="https://blog.csdn.net/weixin_34305091/article/details/116951261?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;utm_relevant_index=2">另一篇博文</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Ubuntu 16.04 Install Octopress 2.0</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T00:17:21+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:17 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ubuntu20.04安装了几次2.0都失败<br/>
+ubuntu12.04已经无法安装系统本身的更新了，更别说安装其他软件<br/>
+强迫症发作，于是有了这次：</p>
+
+<h3>列出大致步骤吧，主要是有些error要如何解决</h3>
 
 </div>
   
   
     <footer>
-      <a rel="full-article" href="/blog/2022/06/05/iphone/">Read on &rarr;</a>
+      <a rel="full-article" href="/blog/2022/01/11/ubuntu-16.04-install-octopress-2.0/">Read on &rarr;</a>
     </footer>
   
 
@@ -109,7 +197,7 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/06/04/never-stop/">Never Stop</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/10/add-category/">侧边栏增加分类 Category</a></h1>
     
     
       <p class="meta">
@@ -118,14 +206,73 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
 
 
 
-<time class='entry-date' datetime='2022-06-04T23:42:41+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:42 pm</span></time>
+<time class='entry-date' datetime='2022-01-10T23:00:59+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:00 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqTrmV0FGghNFiZ7c*9aIpE6e3Etui9kTYD0kRW4Yz3.WfiNLNeZP13FUC7q9wNt3NddHWPf35H.et7OoWiFTonQ!/r" alt="" /></p>
+  <div class="entry-content"><h3>三步</h3>
+
+<h2>Step 1</h2>
+
+<h3>添加 <code>category_list</code> 插件</h3>
+
+<p>在 <code>octopress\plugins\</code> 文件夹里面，新建一个文件，名为：<code>category_list_tag.rb</code>。并将下面的代码粘贴到里面。</p>
+
+<pre><code>module Jekyll
+  class CategoryListTag &lt; Liquid::Tag
+    def render(context)
+      html = ""
+      categories = context.registers[:site].categories.keys
+      categories.sort.each do |category|
+        posts_in_category = context.registers[:site].categories[category].size
+       category_dir = context.registers[:site].config['category_dir']
+        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
+        html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+      end
+      html
+    end
+  end
+end
+
+Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
+</code></pre>
+
+<p>这个插件会向<code>liquid</code>注册一个名为<code>category_list</code>的<code>tag</code>，该<code>tag</code>就是以<code>li</code>的形式将站点所有的<code>category</code>组织起来。如果要将<code>category</code>加入到侧边导航栏，需要增加一个<code>aside</code>。</p>
+
+<h2>Step 2</h2>
+
+<h3>增加 <code>aside</code></h3>
+
+<p>在 <code>octopress\source\_includes\asides\</code> 文件夹里面，新建一个文件，名为：<code>category_list.html</code> 。并粘贴下面的代码：</p>
+
+<p><strong>注意</strong>： 去掉 <code>%</code> 前面的2个 <code>\</code><br/>
+这里如果不加上<code>\</code>，markdown格式会显示<code>category_list</code>的内容。我是为了正确显示代码才加上的</p>
+
+<pre><code>&lt;section&gt;
+  &lt;h1&gt;Categories&lt;/h1&gt;
+  &lt;ul id="categories"&gt;
+    {\% category_list \%}
+  &lt;/ul&gt;
+&lt;/section&gt;
+</code></pre>
+
+<h2>Step 3</h2>
+
+<h3><code>_config.yml</code> 文件 ，修改 <code>default_asides</code></h3>
+
+<p>打开 <code>octopress\_config.yml</code> 文件，修改里面的 <code>default_asides</code> 这一行，将 <code>asides/category_list.html</code> 添加进去。</p>
+
+<pre><code>default_asides: [asides/category_list.html, ......]
+</code></pre>
+
+<p>这里可以修改侧边栏的顺序</p>
+
+<h2>ok</h2>
+
+<p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-categories-list-for-site-sidebar/">原博</a></p>
 </div>
   
   
@@ -138,7 +285,7 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/06/04/kindle-stop-service/">Kindle国区停服，电子书备份</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/10/can-not-push/">没有正确路径或权限上传，push</a></h1>
     
     
       <p class="meta">
@@ -147,15 +294,34 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
 
 
 
-<time class='entry-date' datetime='2022-06-04T12:36:41+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:36 pm</span></time>
+<time class='entry-date' datetime='2022-01-10T22:42:18+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:42 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Amazon Kindle，中国区将停止服务，Amazon官方提供的正版免费书，我已经上传到百度网盘和阿里云盘，单个和打包的都有上传，以后要看书，搜索即可。样章和个人文档是无法下载到电脑的，个人文档可以到邮箱里搜索。<br/>
-<img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqZpIT8fRKwUi3x77tcE8lHZgdTrMb.rjCraz.msgOZBuDF2Lsg7frdcydzoapQvd3qa0ihoLnTlJOIzVctYNHFo!/r" alt="kindle" /></p>
+  <div class="entry-content"><p>代码如下：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ git push origin source
+
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
+
+<p>打开文件~/octopress/.git/config，查看</p>
+
+<pre><code>[remote "origin"]
+    url = git@github.com:haydnyau/haydnyau.github.io.git
+</code></pre>
+
+<p>我是改了几次，com.git和io.git搞错了</p>
+
+<p><a href="https://blog.csdn.net/weixin_40886892/article/details/80725071">和我同样问题的网友</a></p>
+
+<p><a href="https://blog.csdn.net/meng_lemon/article/details/88963157">另一个网友的类似问题</a></p>
 </div>
   
   
@@ -168,7 +334,7 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/05/31/you-in-my-dream-again/">又梦见你</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress-3-preview-deploy-push-posts-sh/">Octopress 3.0 脚本运行 Build Preview Deploy Push-posts .sh文件</a></h1>
     
     
       <p class="meta">
@@ -177,14 +343,45 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
 
 
 
-<time class='entry-date' datetime='2022-05-31T13:36:18+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>31</span><span class='date-suffix'>st</span>, <span class='date-year'>2022</span></span> <span class='time'>1:36 pm</span></time>
+<time class='entry-date' datetime='2022-01-07T06:34:42+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:34 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>贫困潦倒，何以胆敢又梦见你？！</p>
+  <div class="entry-content"><p>preview.sh代码</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build #生成
+jekyll serve
+</code></pre>
+
+<hr />
+
+<p>deploy.sh代码</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+octopress deploy
+</code></pre>
+
+<hr />
+
+<p>（不行，这个会造成有些blog页面头尾显示不全）发布，并上传/_posts/源文件，deploy.sh 代码</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/haydnyau
+jekyll build
+mv _posts/ _site/
+octopress deploy
+mv _site/_posts/ .
+</code></pre>
+
+<p>注意这个点 &ldquo;.&rdquo;
+<code>.</code> 或者 <code>./</code> 表示当前目录</p>
 </div>
   
   
@@ -197,7 +394,7 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/05/30/dont-like-family-anymore/">不再喜欢家庭</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/07/change-templates--post-if-error/">更改了文件_templates/post，以后若出错改回来</a></h1>
     
     
       <p class="meta">
@@ -206,14 +403,23 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
 
 
 
-<time class='entry-date' datetime='2022-05-30T15:07:18+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:07 pm</span></time>
+<time class='entry-date' datetime='2022-01-07T06:19:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:19 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>做家人，也要讲究缘分的，我已经不再喜欢家庭了，太累了</p>
+  <div class="entry-content"><p>更改了/home/dong/haydnyau/_templates/post
+增加了：</p>
+
+<pre><code>categories: 
+</code></pre>
+
+<h3>ps: {}里面有代码:</h3>
+
+<p>categories: {{ categories }}<br/>
+因为格式问题没有显示，参见原文件</p>
 </div>
   
   
@@ -226,7 +432,7 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2022/05/28/daily-liaozhaixinzhi/">Daily，2022-05-29，聊齋新志</a></h1>
+      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a></h1>
     
     
       <p class="meta">
@@ -235,190 +441,163 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
 
 
 
-<time class='entry-date' datetime='2022-05-28T00:38:47+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:38 am</span></time>
+<time class='entry-date' datetime='2022-01-07T06:02:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:02 am</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>如有凌雲壯志，當在白雲深處憶佳人&hellip;&hellip;<br/>
-<img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqcwRFfR5mZXwpaimDZg2ujCUO3uiPH*PesY9EZTTFvSOcgNfgcq9N4GbmMjFBMpo.STRHfY8zQ5XHQfcnqRHuNc!/r" alt="" /></p>
+  <div class="entry-content"><h3>注意，下面的有些步骤不适合</h3>
 
-<p>以前上選修課時看的，這次在B站重溫，愈髮覺得精妙絶倫，融匯古今中外，粵劇和流行樂結合，太好聽了。當然第一幕可能讓人有點怕，但你看完整劇，就算不喜歡這種類型，你也會覺得這是精品。<br/>
-<a href="https://www.bilibili.com/video/BV1ys411B7TC?spm_id_from=333.851.header_right.fav_list.click">【音樂劇】【香港】【2001】聊齋新誌/The Dark Tales 【鄭少秋/李麗珍/鐘景輝/焦媛】【音樂顧問】黃霑</a></p>
-</div>
-  
-  
+<h4>先到jekyll官网，用它的方法安装好本地博客，再看几个octopress3.0的教程，比如官方github的和<a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a>  ，安装octopress，用它来上传blog，结合下面的前面几步，git，rvm，ruby，bundler，bundle install(or bundle)</h4>
 
+<p>重装octopress 2.0 博客失败<br/>
+很多新旧的软件，依赖，都不兼容了<br/>
+算了，世界在发展，有的旧事物必然被淘汰<br/>
+毕竟连作者都不维护了<br/>
+而且连3.0都不维护了</p>
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/05/27/daily/">Daily，2022-05-27，篮球废物</a></h1>
-    
-    
-      <p class="meta">
-        
+<hr />
 
+<p><a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a></p>
 
-
-
-<time class='entry-date' datetime='2022-05-27T17:55:36+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>5:55 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>昨天打篮球，我们几个<strong>熟悉</strong>的，<strong>笑称</strong>我们<strong>自己</strong>是<strong>废物5人组</strong>，然后提议要成立球队，准备去印队服。哈哈哈哈哈</p>
-
-<p>我是不厉害呀，但是我的兄弟，马的比我还菜，真服了，哈哈哈哈哈<br/>
-唐斯=软蛋，恩比德=软蛋，但是恩比德vs唐斯=硬汉对决，因为都想证明对方才是联盟最软的</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/05/27/curl-7-failed-to-connect-to-raw-dot-githubusercontent-dot-com-port-443-after-28-ms-ju-jue-lian-jie/">Curl: (7) Failed to Connect to raw.githubusercontent.com Port 443 After 28 Ms: 拒绝连接</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-05-27T15:19:28+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:19 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="https://blog.csdn.net/u014375643/article/details/115826506">问题解决：curl: (7) Failed to connect to raw.githubusercontent.com port 443: 拒绝连接</a><br/>
-<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/</a></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install curl
-</span><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 28 ms: 拒绝连接</span></code></pre></td></tr></table></div></figure>
-
-
-<p>解决：<br/>
-<a href="https://blog.csdn.net/u014375643/article/details/115826506">Failed to connect to raw.githubusercontent.com</a><br/>
-到这个网址：<code>https://www.ipaddress.com/</code>，输入：<code>raw.githubusercontent.com</code>，查询，得到IP地址，选择其中一个或多个，修改本地HOSTS：Ubuntu下打开/etc/hosts，添加 IP地址：<code>185.199.108.133 raw.githubusercontent.com</code>，重试，不行就重启再试。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/">Ssh: Connect to Host ssh.github.com Port 443: Connection Refused</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-05-26T14:21:22+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:21 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>出现标题问题，打开：<a href="https://www.ipaddress.com/">IPAddress.com</a> ，有时会出现403禁止访问的错误，要点一下<code>Go to Homepage</code>才行。输入：<code>ssh.github.com</code>，得到IP地址：<br/>
-<code>140.82.113.36</code><br/>
-<code>140.82.114.35</code><br/>
-修改本地hosts：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd /etc
-</span><span class='line'>sudo gedit hosts</span></code></pre></td></tr></table></div></figure>
-
-
-<p>添加：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>140.82.113.36          ssh.github.com
-</span><span class='line'>140.82.114.35          ssh.github.com</span></code></pre></td></tr></table></div></figure>
-
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqWdkQXFWB88lLNe9b.pKPd.bOkeCQ1XnXqIwv6SR2DItDkSBuzvyRWfXmXV4k8yccpRrk38TrDNSADQdQqoUnfE!/r" alt="" /></p>
-
-<h4>22端口无法连接：</h4>
-
-<p><a href="https://qiuhaidong.github.io/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">ssh: connect to host github.com port 22: Connection timed out</a></p>
-
-<p><a href="https://blog.csdn.net/u014375643/article/details/115826506">curl: (7) Failed to connect to raw.githubusercontent.com port 443: 拒绝连接</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/05/26/huili-xie/">回力鞋</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-05-26T00:00:16+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>初中时我就穿过回力鞋，红色经典款。</p>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqXVZjyw.Io6CrdJc0fWHXnr3q4dUHaR0xPc646NIEVQCcQiSgJvYmzbq2gFBxRjPOkSIs9e4fG7ZXca4doqIegU!/r" alt="" /></p>
-
-<p>刚上高中时，体育课，穿这红色款，我还不好意思，怕别人笑我。</p>
+<p><a href="https://jingsam.github.io/2015/10/21/blogging-with-octopress-3-0.html">博文2，Octopress 3.0博客搭建教程</a></p>
 
 </div>
   
   
     <footer>
-      <a rel="full-article" href="/blog/2022/05/26/huili-xie/">Read on &rarr;</a>
+      <a rel="full-article" href="/blog/2022/01/07/octopress3-0/">Read on &rarr;</a>
     </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-02T23:27:35+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2022</span></span> <span class='time'>11:27 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今晚<br/>
+并不是说命中率最高、速度最快，而是心态最好，进入境界。<br/>
+就像麦迪说的，35秒13分并不是他的最好，他的最好是进入了“in the zone”的境界。<br/>
+我今晚也一样。<br/>
+具体这样说吧：<br/>
+心跳如常，不为任何情况所动，该怎样怎样。<br/>
+<strong>进攻</strong>：<br/>
+该跑跑，该停停，该切切，该快快，该慢慢。<br/>
+该投投，不犹豫。<br/>
+该晃晃，该突突，该传传，该断断。<br/>
+<strong>防守</strong>：<br/>
+该紧紧，该松松。<br/>
+被背打就被背打，不懊恼。<br/>
+能帽帽，不喜不惧。<br/>
+<strong>其他</strong>：<br/>
+投不进就不进，不懊恼，不可惜，继续。<br/>
+失误就失误，继续。<br/>
+开场还是抢七，该怎样怎样。<br/>
+不怕强劲的对手，不怕拖累队友。<br/>
+心态控制体能，微汗。<br/>
+如李小龙说的：<strong>从心所欲,一心一意，表达自己</strong>。<br/>
+<strong>心态如常，张弛有道，不为所动</strong>。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2021/12/31/my-2021/">我的2021</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2021-12-31T22:27:13+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>31</span><span class='date-suffix'>st</span>, <span class='date-year'>2021</span></span> <span class='time'>10:27 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这一年，三件事：到京东<strong>打工</strong>，学<strong>做饭</strong>，耳朵<strong>生病</strong>。<br/>
+<strong>打工</strong><br/>
+是做苦力，卖力气，很丢人，但，荒废了两年，终于动了。具体的，以前写过，不重复。<br/>
+<strong>做饭</strong><br/>
+很有门道，比如炒青菜，刚下锅，有的马上熟了，有的还没炒到，心慌。淡定，正常翻炒，就行了。还有先炒猪肉，再放面去炒，再放青菜，看起来一大锅，怕青菜在上面炒不熟，慌了。淡定，正常翻炒，就行了。<br/>
+淡定，正常地做，就行了。<br/>
+<strong>生病</strong><br/>
+对自己太狠。秋冬，连续俩月通宵夜班，噪声大，有压力，情绪不稳定，早上洗冷水澡，重糖，重淀粉（米面主食），重油，重盐，吃辣椒，估计血糖高，血脂高，血压高，血粘稠，睡眠严重不足，內耳供血不足，听觉神经长期疲累不堪。免疫力下降，感冒，鼻塞，咽鼓管之类的不通畅。<br/>
+种种原因，祸不单行，差点聋了。<br/>
+就这三件事。<br/>
+吸取教训，放下执念，放过自己，好好生活。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2021/12/15/jd3/">京東3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2021-12-15T19:09:42+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>7:09 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>day 68<br/>
+今天休假<br/>
+昨天耳朵又听到低沉的发动机的轰隆隆的声音，我以为是耳鸣，现在基本可以确定，这就是附近道路晚上泥头车汽車发动机或者工廠機器運转的声音。<br/>
+在京东时也常常听到。<br/>
+我<strong>感冒鼻塞</strong>时，耳朵<strong>对这些声音特别敏感</strong>。<br/>
+就这样。<br/>
+昨天上班时，没搞清情况，情绪又崩溃了……<br/>
+<strong><em>補充</em></strong>：<br/>
+工作沒勁頭，好想打電話給媽，和她坦白這一切，想讓她接受我的平庸，我的失敗，我的不婚，想發泄所有的不安、恐懼、負面情緒。<br/>
+幸好，我還懂得衝動憤怒情緒不穩定時，別做決定，別做事。<br/>
+休息了一天，現在知道不是耳鳴，是感冒鼻塞或者咽鼓管堵塞或者其他的聽力系統的某一部分出了問題，而引起的狀況，感冒好了，整個聽力系統自然就沒事了。</p>
+</div>
+  
   
 
 
@@ -441,83 +620,83 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2023/12/01/day-64/">Day 64：戒抖音</a>
+        <a href="/blog/2222/02/22/daily-lts-love-life/">⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/28/day-63/">Day 63：篮球，库里，不放弃</a>
+        <a href="/blog/2023/08/20/day-15/">Day 15</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/25/day-62/">Day 62：贫穷的本质</a>
+        <a href="/blog/2023/08/20/day-14/">Day 14 开窍</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/22/day-61/">Day 61：天雨大不润无根草</a>
+        <a href="/blog/2023/08/17/day-13/">Day 13</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/18/day-60/">Day 60：35岁，给自己耐心和宽容</a>
+        <a href="/blog/2023/08/16/day-12/">Day 12</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/13/day-59/">Day 59</a>
+        <a href="/blog/2023/08/15/day-11/">Day 11</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/09/day-58/">Day 58：过于早熟</a>
+        <a href="/blog/2023/08/13/day-10/">Day 10 不要在情绪不稳定时做决定</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/09/day-57/">Day 57：别害怕成功</a>
+        <a href="/blog/2023/08/13/day9/">Day 9</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/06/day-56/">Day 56：时间会让事物展现得更全面</a>
+        <a href="/blog/2023/08/07/day-8/">Day 8</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/04/day-55/">Day 55：对毕鑫业导演的敬佩又增加了</a>
+        <a href="/blog/2023/08/06/day-7/">Day 7</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/03/day-54/">Day 54</a>
+        <a href="/blog/2023/08/05/day6/">Day 6</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/03/day-53/">Day 53</a>
+        <a href="/blog/2023/08/04/day5/">Day 5</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/02/day-52/">Day 52</a>
+        <a href="/blog/2023/08/03/day4/">Day 4</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/02/day-51/">Day 51</a>
+        <a href="/blog/2023/08/02/day3/">Day 3</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/11/01/day-50/">Day 50：管好自己，莫渡他人</a>
+        <a href="/blog/2023/08/01/day2/">Day 2</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/10/31/day-49/">Day 49</a>
+        <a href="/blog/2023/08/01/SSH%20key%20audit/">ERROR: We're Doing an SSH Key audit.Please Visit to Approve This Key So We Know It's Safe.</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/10/31/day-48/">Day 48</a>
+        <a href="/blog/2023/07/31/day1/">Day 1</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/10/29/day-47/">Day 47</a>
+        <a href="/blog/2023/07/25/shici/">诗词，《出塞》，唐朝，王昌龄</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/10/29/day-46/">Day 46：破心中贼</a>
+        <a href="/blog/2023/07/25/plan/">计划</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2023/10/29/day-45/">Day 45</a>
+        <a href="/blog/2023/07/17/daily/">Daily，诗词，渡荆门送别</a>
       </li>
     
   </ul>
@@ -527,7 +706,7 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (275)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (205)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -538,19 +717,20 @@ Pro系列首次使用可变刷新率，10-120Hz自由调节</p>
   <h1>Tags</h1>
   <ul id="tag-cloud">
     <li><a style="font-size: 120%" href="/tags/c-number/">C#</a></li>
+<li><a style="font-size: 120%" href="/tags/lts/">LTS</a></li>
 <li><a style="font-size: 120%" href="/tags/c/">c</a></li>
 <li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
 <li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
-<li><a style="font-size: 129%" href="/tags/octopress/">octopress</a></li>
-<li><a style="font-size: 133%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
-<li><a style="font-size: 145%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
-<li><a style="font-size: 142%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 130%" href="/tags/octopress/">octopress</a></li>
+<li><a style="font-size: 135%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 148%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 145%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 126%" href="/tags/she/">she</a></li>
-<li><a style="font-size: 129%" href="/tags/ssh/">ssh</a></li>
+<li><a style="font-size: 130%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
 <li><a style="font-size: 126%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>

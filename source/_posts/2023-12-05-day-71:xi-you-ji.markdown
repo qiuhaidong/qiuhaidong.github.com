@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 71：张卫健版《西游记》"
+date: 2023-12-05 23:25:52 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+张卫健版《西游记》，虽然是以现代人的方式去演绎，有着浓浓的港风，但其内核是忠于原著的，犹如散文，形散而神不散，而且黄金年代的香港影视人，对文学和影视的思考，绝对值得信赖。

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: ubuntu | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/ubuntu/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2023-12-05T08:30:18+08:00</updated>
+  <updated>2023-12-05T08:33:19+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -34,12 +34,12 @@
 <pre><code>sudo dpkg -c &lt;package.deb&gt;  
 </code></pre>
 
-<p>列出 &lt;package.deb> 的内容。</p>
+<p>列出 <package.deb> 的内容。</p>
 
 <pre><code>sudo dpkg -I &lt;package.deb&gt;  
 </code></pre>
 
-<p>从 &lt;package.deb> 中提取包裹信息。</p>
+<p>从 <package.deb> 中提取包裹信息。</p>
 
 <pre><code>sudo dpkg -r  
 </code></pre>

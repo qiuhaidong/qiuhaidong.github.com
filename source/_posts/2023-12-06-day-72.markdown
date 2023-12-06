@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 72"
+date: 2023-12-06 11:59:34 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+你永远不可能准备到100%，不可能万无一失。  
+中国千年朝代推行的儒家以及其他思想，都是为了维护他们的统治地位，所以要客观辨证的看待和学习。

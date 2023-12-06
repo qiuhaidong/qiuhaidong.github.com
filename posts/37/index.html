@@ -8,10 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="以下是两条命令的输出结果：
-第一条： dong@Ubuntu:~/octopress$ rake generate
-## Generating Site with Jekyll write source/stylesheets/screen.css
-/home/dong/.rvm/gems/ &hellip;">
+  <meta name="description" content="停止rake preview 任务，用ctrl+c，别用ctrl+z，可以避免这个问题 在执行命令 rake preview 时，输出： dong@Ubuntu:~/octopress$ rake preview Starting to watch source with Jekyll and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,6 +66,131 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/05/tcpserver-error-address-already-in-use-bind-2/">TCPServer Error: Address Already in Use - Bind(2)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-05T13:29:29+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:29 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>停止<code>rake preview</code> 任务，用<code>ctrl+c</code>，别用<code>ctrl+z</code>，可以避免这个问题</h4>
+
+<p>在执行命令</p>
+
+<pre><code>rake preview
+</code></pre>
+
+<p>时，输出：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake preview  
+Starting to watch source with Jekyll and Compass. Starting Rack on port 4000  
+&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.  
+Configuration file: /home/dong/octopress/_config.yml  
+[2015-03-05 13:22:19] INFO  WEBrick 1.3.1  
+[2015-03-05 13:22:19] INFO  ruby 1.9.3 (2014-11-13) [i686-linux]  
+[2015-03-05 13:22:19] WARN  TCPServer Error: Address already in use - bind(2)  
+/home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `initialize': Address already in use - bind(2) (Errno::EADDRINUSE)
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `new'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:85:in `block in create_listeners'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:82:in `each'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/utils.rb:82:in `create_listeners'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:82:in `listen'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:70:in `initialize'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:45:in `initialize'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/handler/webrick.rb:32:in `new'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/handler/webrick.rb:32:in `run'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/server.rb:286:in `start'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/lib/rack/server.rb:147:in `start'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/gems/rack-1.6.0/bin/rackup:4:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/rackup:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/rackup:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p551/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+        Source: source
+   Destination: public
+      Generating... 
+                done.
+    write public/stylesheets/screen.css
+ Auto-regeneration: enabled for 'source'
+</code></pre>
+
+<p>解决方法：<br/>
+执行：</p>
+
+<pre><code>sudo netstat -tulpn |grep 4000
+</code></pre>
+
+<p>如果提示：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo: netstat：找不到命令</span></code></pre></td></tr></table></div></figure>
+
+
+<p>运行：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>netstat -tulpn |grep 4000</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dong@Ubuntu:~/octopress$ netstat -tulpn |grep 4000
+</span><span class='line'>Command 'netstat' not found, but can be installed with:
+</span><span class='line'>sudo apt install net-tools
+</span><span class='line'>dong@Ubuntu:~/octopress$ sudo apt install net-tools</span></code></pre></td></tr></table></div></figure>
+
+
+<p>再运行：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo netstat -tulpn |grep 4000</span></code></pre></td></tr></table></div></figure>
+
+
+<p>得到：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ sudo netstat -tulpn | grep 4000
+[sudo] password for dong: 
+tcp        0      0 127.0.0.1:4000          0.0.0.0:*               LISTEN      2889/rackup  
+</code></pre>
+
+<p>执行：</p>
+
+<pre><code>kill -9 2889
+#更改2889处对应的数字，前面的-9好像不变
+</code></pre>
+
+<p>得到：</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ kill -9 2889
+dong@Ubuntu:~/octopress$
+</code></pre>
+
+<p>done.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -569,41 +691,6 @@ gem install therubyracer
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/16/dgs-classroom/">东哥学堂1</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-09-16T16:08:10+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:08 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>新人入职，别太出风头，不然容易被排挤。</p>
-
-<p>当然也要适当表现自己的能力给老板看到。</p>
-
-<p>两者之间的度要把握好。</p>
-
-<p>小时候在学校在家里接受的很多教育都是错的，比如说：知错能改就是好孩子。社会上，错了，要负责任！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/38">&larr; Older</a>
@@ -619,6 +706,10 @@ gem install therubyracer
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2023/12/06/day-73/">Day 73：情绪处理和学习</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2023/12/06/day-72/">Day 72</a>
@@ -696,10 +787,6 @@ gem install therubyracer
         <a href="/blog/2023/11/03/day-54/">Day 54</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/11/03/day-53/">Day 53</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -707,7 +794,7 @@ gem install therubyracer
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (283)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (284)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

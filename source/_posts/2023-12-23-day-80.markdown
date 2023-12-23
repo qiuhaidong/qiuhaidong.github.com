@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 80"
+date: 2023-12-23 22:35:44 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+这个世界只是个草台班子，别太在意  
+完美主义不可取

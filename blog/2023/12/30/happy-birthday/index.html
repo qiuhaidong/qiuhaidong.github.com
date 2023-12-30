@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ssh: Connect to Host github.com Port 22: Connection Timed Out - 丘海东</title>g
+  <title>生日快乐 - 丘海东</title>g
 
   
-  <meta name="description" content="1
-2
-dong@Ubuntu:~$ ssh -T git@github.com
-ssh: connect to host github.com port 22: Connection timed out 解决 ssh: connect to host github.com port 22: &hellip;">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ ssh: connect to host github.com port 22: Connection timed out 解决 ssh: connec
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2023/12/30/happy-birthday/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
@@ -72,7 +70,7 @@ ssh: connect to host github.com port 22: Connection timed out 解决 ssh: connec
   
   <header>
     
-      <h1 class="entry-title">Ssh: Connect to Host github.com Port 22: Connection Timed Out</h1>
+      <h1 class="entry-title">生日快乐</h1>
     
     
       <p class="meta">
@@ -81,83 +79,14 @@ ssh: connect to host github.com port 22: Connection timed out 解决 ssh: connec
 
 
 
-<time class='entry-date' datetime='2022-04-23T01:55:21+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2022</span></span> <span class='time'>1:55 am</span></time>
+<time class='entry-date' datetime='2023-12-30T23:17:28+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2023</span></span> <span class='time'>11:17 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>dong@Ubuntu:~$ ssh -T git@github.com
-</span><span class='line'>ssh: connect to host github.com port 22: Connection timed out</span></code></pre></td></tr></table></div></figure>
-
-
-<p><a href="https://segmentfault.com/a/1190000040896781">解决 ssh: connect to host github.com port 22: Connection timed out</a></p>
-
-<p><a href="https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out">ssh: connect to host github.com port 22: Connection timed out</a></p>
-
-<p>如果你电脑上的git能在大部分地方进行同步，但是在某处地方的网络下无法同步，并且运行git pull或git push长久没有反映，最后出现ssh: connect to host github.com port 22: Connection timed out，很可能是你的网络供应商（比如广电网）在出口防火墙上屏蔽了22端口，这意味着你将无法访问其他主机的22端口。<br/>
-对此，github提供了一种解决方案，允许你使用443端口进行ssh连接，因为443端口是访问https网站所必须的，大部分防火墙都会允许通过，但如果使用代理服务器可能产生干扰。如果连443端口都被屏蔽，那你应该无法浏览这篇文章。<br/>
-运行这段命令，看看是否有成功提示，如果成功，则可以使用这个解决方案。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -T -p 443 git@ssh.github.com</span></code></pre></td></tr></table></div></figure>
-
-
-<p>简单地配置一下，让你每次ssh连接github都通过443端口。如果你使用Linux，在<code>~/.ssh/config</code>内(新建config文件，无后缀)，添加这些内容，指明ssh连接git@github.com或git@ssh.github.com走443端口。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Host github.com
-</span><span class='line'>Hostname ssh.github.com
-</span><span class='line'>Port 443
-</span><span class='line'>User git #这行可能不需要也行</span></code></pre></td></tr></table></div></figure>
-
-
-<p>或者这一段：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Host github.com
-</span><span class='line'>Hostname ssh.github.com
-</span><span class='line'>PreferredAuthentications publickey
-</span><span class='line'>IdentityFile ~/.ssh/id_rsa
-</span><span class='line'>Port 443
-</span><span class='line'>User git
-</span><span class='line'>
-</span><span class='line'>Host gitlab.com
-</span><span class='line'>Hostname altssh.gitlab.com
-</span><span class='line'>PreferredAuthentications publickey
-</span><span class='line'>IdentityFile ~/.ssh/id_rsa
-</span><span class='line'>Port 443
-</span><span class='line'>User git</span></code></pre></td></tr></table></div></figure>
-
-
-<p>我的：把<code>config</code>文件复制到.ssh2和.ssh3文件夹<br/>
-改ssh2-3文件夹名，测试：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -T git@github.com</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>如果443端口也无法连接，试试改hosts：</h4>
-
-<p><a href="https://qiuhaidong.github.io/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/">ssh: connect to host ssh.github.com port 443: Connection refused</a></p>
+<div class="entry-content">
 </div>
 
 
@@ -173,12 +102,12 @@ ssh: connect to host github.com port 22: Connection timed out 解决 ssh: connec
 
 
 
-<time class='entry-date' datetime='2022-04-23T01:55:21+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2022</span></span> <span class='time'>1:55 am</span></time>
+<time class='entry-date' datetime='2023-12-30T23:17:28+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2023</span></span> <span class='time'>11:17 pm</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/tech-octopress/'>tech-octopress</a>
+    <a class='category' href='/blog/categories/personal/'>personal</a>
   
 </span>
 
@@ -187,7 +116,7 @@ ssh: connect to host github.com port 22: Connection timed out 解决 ssh: connec
 
 <span class="tags">
   
-    <a class='tag' href='/tags/ssh/'>ssh</a>
+    <a class='tag' href='/tags/daily/'>daily</a>
   
 </span>
 
@@ -203,10 +132,10 @@ ssh: connect to host github.com port 22: Connection timed out 解决 ssh: connec
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2022/04/17/bigger-picture/" title="Previous Post: 人无远虑，必有近忧">&laquo; 人无远虑，必有近忧</a>
+        <a class="basic-alignment left" href="/blog/2023/12/30/day-83/" title="Previous Post: Day 83：修心修德">&laquo; Day 83：修心修德</a>
       
       
-        <a class="basic-alignment right" href="/blog/2022/04/27/daily/" title="Next Post: daily，2022-04-27，记录">daily，2022-04-27，记录 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2223/12/21/day-79/" title="Next Post: 知自己，识世界">知自己，识世界 &raquo;</a>
       
     </p>
   </footer>

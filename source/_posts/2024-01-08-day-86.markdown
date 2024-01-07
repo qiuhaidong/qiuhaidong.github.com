@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 86"
+date: 2024-01-08 00:22:20 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+不要失去爱自己，爱别人的能力。

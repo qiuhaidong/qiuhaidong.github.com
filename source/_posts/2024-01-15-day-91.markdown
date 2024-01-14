@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 91：守正出奇"
+date: 2024-01-15 00:32:03 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+《孙子兵法》之：凡战者，以正合，以奇胜  
+恪守正义是道，出奇制胜是术

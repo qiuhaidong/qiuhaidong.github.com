@@ -8,8 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="if cout&lt;&lt; Could not find syntax-1.0.0 in any of the sources
-Run `bundle install` to install missing gems. run rvm use 1.9.3 ">
+  <meta name="description" content="出现错误要先看提示代码，知道错在哪里，如： dong@ubuntu:~/octopress$ rake generate
+## Generating Site with Jekyll
+identical source/stylesheets/screen.css /home/dong/.rvm/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +68,56 @@ Run `bundle install` to install missing gems. run rvm use 1.9.3 ">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/07/error-could-not-find-expected/">Error: Could Not Find Expected ':'</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-10-07T11:14:00+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2013</span></span> <span class='time'>11:14 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>出现错误要先看提示代码，知道错在哪里，如：</h4>
+
+<pre><code>dong@ubuntu:~/octopress$ rake generate
+## Generating Site with Jekyll
+identical source/stylesheets/screen.css 
+/home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse': (/home/dong/octopress/_config.yml): could not find expected ':' while scanning a simple key at line 10 column 1 (Psych::SyntaxError)
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:203:in `parse_stream'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:151:in `parse'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:127:in `load'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `block in load_file'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `open'
+    from /home/dong/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/psych.rb:297:in `load_file'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/gems/jekyll-0.12.0/lib/jekyll.rb:130:in `configuration'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/gems/jekyll-0.12.0/bin/jekyll:221:in `&lt;top (required)&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/jekyll:23:in `load'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/jekyll:23:in `&lt;main&gt;'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `eval'
+    from /home/dong/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+</code></pre>
+
+<p>代码已经说得很清楚了，就是<strong><em>/home/dong/octopress/_config.yml</em></strong>，这个文件，<strong><em>could not find expected &lsquo;:&rsquo;</em></strong> while scanning a simple key <strong><em>at line 10 column 1</em></strong> (Psych::SyntaxError)<br/>
+<strong>就是'：'后面忘了加空格</strong></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -517,6 +568,10 @@ rake preview    # Watches, and mounts a webserver at http://localhost:4000
       </li>
     
       <li class="post">
+        <a href="/blog/2024/01/16/day-92/">Day 92：程前怼周鸿祎</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2024/01/15/day-91/">Day 91：守正出奇</a>
       </li>
     
@@ -588,10 +643,6 @@ rake preview    # Watches, and mounts a webserver at http://localhost:4000
         <a href="/blog/2023/12/13/day-77/">Day 77：晋通父母子女的悲哀</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2023/12/13/day-76/">Day 76：底层人的出路</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -599,7 +650,7 @@ rake preview    # Watches, and mounts a webserver at http://localhost:4000
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (306)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (307)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

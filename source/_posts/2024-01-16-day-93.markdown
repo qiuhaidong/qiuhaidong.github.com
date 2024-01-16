@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 93"
+date: 2024-01-16 18:23:18 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+情绪是用来影响他人的，不是左右自己的  
+公开的言论是用来维护立场和利益的，不是表达自己思想和认知的

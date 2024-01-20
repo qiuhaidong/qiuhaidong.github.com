@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 97"
+date: 2024-01-21 05:40:58 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+成大功者，不谋于众  
+愚者暗于事，智者睹未形

@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 99：用好习惯替代坏习惯"
+date: 2024-01-24 18:33:54 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+要改变，不应想怎样把坏习惯摘出去，而是想怎样把好习惯加进来，以此让注意力放在有正反馈的事物上面，这样不容易有挫败的感觉，才更快成功。

@@ -8,8 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="很多以前做过的事，细节步骤都不记得了，多写字吧，详细地记录下来，以后也有个回忆。
-">
+  <meta name="description" content="No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev 原博内容： &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +66,77 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/">No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-12T19:03:01+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:03 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
+
+<p>原博内容：</p>
+
+<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
+
+<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
+解决办法：</p>
+
+<ul>
+<li>运行</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/apt/sources.list</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
+
+<ul>
+<li>更新</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt update</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>安装</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后再安装<code>rvm install 2.2.6</code></p>
+
+<p>————————————————<br/>
+版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -655,54 +725,6 @@ mv _site/_posts/ .
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-07T06:02:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:02 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>注意，下面的有些步骤不适合</h3>
-
-<h4>先到jekyll官网，用它的方法安装好本地博客，再看几个octopress3.0的教程，比如官方github的和<a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a>  ，安装octopress，用它来上传blog，结合下面的前面几步，git，rvm，ruby，bundler，bundle install(or bundle)</h4>
-
-<p>重装octopress 2.0 博客失败<br/>
-很多新旧的软件，依赖，都不兼容了<br/>
-算了，世界在发展，有的旧事物必然被淘汰<br/>
-毕竟连作者都不维护了<br/>
-而且连3.0都不维护了</p>
-
-<hr />
-
-<p><a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a></p>
-
-<p><a href="https://jingsam.github.io/2015/10/21/blogging-with-octopress-3-0.html">博文2，Octopress 3.0博客搭建教程</a></p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2022/01/07/octopress3-0/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/27">&larr; Older</a>
@@ -721,6 +743,10 @@ mv _site/_posts/ .
     
       <li class="post">
         <a href="/blog/2223/12/21/day-79/">知自己，识世界</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/03/day-104/">Day 104</a>
       </li>
     
       <li class="post">
@@ -795,10 +821,6 @@ mv _site/_posts/ .
         <a href="/blog/2024/01/08/day-86/">Day 86</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/01/07/day-85/">Day 85</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -806,7 +828,7 @@ mv _site/_posts/ .
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (318)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (319)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

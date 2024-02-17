@@ -8,8 +8,10 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="文字让人在柴米油盐里摸爬滚打之余，还有一丝灵气。
-">
+  <meta name="description" content="2016-03-02 21:26
+shell: 命令行解释器
+Linux命令格式: 命令名 [选项] [参数1] [参数2] …… 命令与参数之间，参数与参数之间用空格隔开
+立即关机: sudo shutdown-h now 或者 sudo halt （Ubuntu不行，在最后画面不动, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +69,192 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/02/commands-about-linux/">Commands About Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-02T21:26:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>9:26 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-03-02 21:26<br/>
+shell: 命令行解释器<br/>
+Linux<strong>命令格式</strong>: 命令名 [选项] [参数1] [参数2] …… <br/>
+命令与参数之间，参数与参数之间用空格隔开<br/>
+立即<strong>关机</strong>:  <code>sudo shutdown-h now</code> 或者 <code>sudo halt</code> （Ubuntu不行，在最后画面不动,停机但不关电源）或者<code>sudo poweroff</code><br/>
+立即<strong>重启</strong>:  <code>sudo shutdown-r now</code> (Ubuntu不行)或者 <code>sudo reboot</code>（行）<br/>
+<code>ls</code><br/>
+<code>cd  dir</code><br/>
+<strong>复制</strong>: <code>cp /.../.../sourcefile /.../.../targetfile</code> 有重命名的功能<br/>
+<code>cp file1 file2</code> #在当前目录为file1创建一个副本file2<br/>
+<code>cp file ~/target/</code> #复制当前目录下的file到主目录下的target目录中，保持原文件名<br/>
+<code>cp file1 file2 ~/target/</code> #把file1、file2俩个文件复制到target目录，保持原文件名<br/>
+-p: 保持文件属性 <code>cp -p file ~/target/</code><br/>
+-R: 若被复制对象有目录，则把该目录下的子目录和子目录下的文件都复制<br/>
+<strong>移动</strong>: <code>mv</code> #有重命名的功能<br/>
+<code>mv file1 file2</code> #把file1重命名为file2<br/>
+<code>mv file1 file2 ~/target/</code> 把这两个文件都移动到…… #最后一个参数（/target/）必须是目录<br/>
+<strong>创建目录</strong>: <code>mkdir dir</code><br/>
+<strong>删除目录</strong>: <code>rmdir dir</code>  (空目录)<br/>
+<strong>删除文件</strong>: <code>rm file</code><br/>
+<code>rm</code>用于删除文件，若使用参数<code>-r</code>或<code>-R</code>，则可删除目录<br/>
+<code>-r</code>,<code>-R</code>:递归删除，无论目录下是否有东西<br/>
+<code>-i</code>: 删除前先询问<br/>
+<code>-f</code>: 强制删除<br/>
+<code>rm -i test*</code>: 删除所有文件名以test开头的文件<br/>
+<code>rm -rf test/</code>: 删除目录test,无论是否是空目录<br/>
+<strong>超级用户</strong>:<code>sudo su -</code><br/>
+统计文件信息: <code>wc [-l] [-w] [-c] filename</code> (行数，单词数，字符数)<br/>
+<code>--version</code><br/>
+<code>--help</code><br/>
+<code>man</code><br/>
+Linux中，一个文件是一组数据的集合，可理解为一个字符流或字节流，Linux并不为文件设计内部结构，而是把文件都理解为无结构的数据集合。<br/>
+所以:新建并打开文件可直接说编辑该文件即可（test.c文件之前并未存在）:</p>
+
+<pre><code>sudo gedit test.c
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/01/wheat-field-with-crows/">麦田群鸦</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-03-01T16:01:00+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>4:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/wheat_field_with_crows.png" alt="麦田群鸦" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/26/pain/">两代人，城乡之间的矛盾</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-26T17:26:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:26 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我认为我母亲这一代人和我这一代人是相当矛盾的。<br/>
+母亲是61年，我是89年。她经历了文革、饥荒这些国家非常动乱艰难的时期。而我成长时是国家改革开放，与西方国家接触的时期。我们都处在老旧传统与新世界新思维的夹缝中。同时我是农村的，现在是我们国家农村城镇化的过程。<br/>
+一个新旧思维，一个城乡差距，把我们掐得够呛。<br/>
+比如我，我是能接受西方思维观念的，关于晚婚，不结婚，丁克，性开放，同性恋这些，我都是司空见惯的了。而我母亲这一代人，能接受么？我不认为。<br/>
+农村城镇化这一点，也是压着我们这一代的许多人，说白了，就是在城市买房。这几年的房价的飞涨……<br/>
+希望下一代人，不必承受这些。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/26/for-someone/">For Someone</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-26T17:00:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:00 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>我们都会想许多东西，把一部分写下了，有一些公开，有一些只给自己看。因为我们知道，这些文字充满了稚嫩与羞涩。<br/>
+而其实我们希望，有一天，有一个人说：我看完了你写的文字，我觉得你还有一些没有公开。我想看。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/24/secret/">不能说的秘密</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-24T23:41:00+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:41 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/secret.jpg" alt="secret" /></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -227,199 +415,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/02/07/you-are-different/">格格不入</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-02-07T17:20:05+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:20 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>理所当然。  <br/>
-你不会沦落至此。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/01/29/she/">She</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-01-29T12:15:05+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:15 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>You made her cried,can you make her smile?</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/01/11/man-without-warm-shoes/">一个顾客</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-01-11T00:00:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>这几天挺冷的，今天阴天，偶尔起风，下午5点多。<br/>
-一个中年男子，来买了条皮带，49块。<br/>
-他约三四十岁，一双手都是黑色的，估计是沾了机油，做维修之类的工作。头发浓密而略蓬乱，一脸的胡渣。<br/>
-出门的时候，我看了看，他穿一条破旧起皱的裤子，一双胶拖鞋。<br/>
-我想到这类的男人，中年，要负担一家人的开支，疲于挣钱，没有时间与精力拾腾自己。<br/>
-我还想到再多一些东西。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/01/09/shell-script/">Pull push.sh Shell脚本</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-01-09T17:08:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:08 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="https://github.com/qinjx/30min_guides/blob/master/shell.md">参见原博</a></p>
-
-<p>新建文本，扩展名为sh，扩展名并不影响脚本的执行，见名知意即可，若是用PHP编写，扩展名就用php<br/>
-终端下先执行：</p>
-
-<pre><code>rvm use 1.9.3
-</code></pre>
-
-<p>再执行脚本<br/>
-代码：</p>
-
-<pre><code>#!/bin/sh
-cd /home/dong/octopress
-git pull origin source
-rake generate deploy
-</code></pre>
-
-<p>保存即可(文件名为pull.sh)<br/>
-运行脚本，终端命令：</p>
-
-<pre><code>chmod +x pull.sh
-./pull.sh
-</code></pre>
-
-<p>别漏了前面的符号.</p>
-
-<p>push.sh</p>
-
-<pre><code>#!/bin/sh
-cd /home/dong/octopress
-rake generate deploy
-git add .
-git commit -m 'update'
-git push origin source
-</code></pre>
-
-<p>或者建好后修改文件属性，权限，允许作为程序执行文件（ubuntu16.04）</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/01/08/lantern/">Lantern</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-01-08T14:56:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:56 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="https://github.com/getlantern/lantern">下载页面</a><br/>
-<a href="https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta.exe">Windows版</a><br/>
-<a href="https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta-32-bit.deb">Ubuntu（32位）版</a><br/>
-<a href="https://s3.amazonaws.com/lantern-android/lantern-android-beta.apk">android</a><br/>
-一键安装，双击即可<br/>
-<a href="https://getlantern.org">Lantern官网</a><br/>
-官网自然受到GFW的特殊照顾，要翻了墙才能访问到</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/39">&larr; Older</a>
@@ -438,6 +433,26 @@ git push origin source
     
       <li class="post">
         <a href="/blog/2223/12/21/day-79/">知自己，识世界</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/17/day-109/">Day 109：过年期间遇到的让我不开心的人和事</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/16/day-108/">Day 108：篮球可以学到很多东西</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/11/day-107/">Day 107：处理冲突</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/10/day-106/">Day 106</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/06/day-105/">Day 105：终身事业</a>
       </li>
     
       <li class="post">
@@ -496,26 +511,6 @@ git push origin source
         <a href="/blog/2024/01/15/day-91/">Day 91：守正出奇</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/01/14/day-90/">Day 90：莫言</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/10/day-89/">Day 89</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/09/day-88/">Day 88</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/08/day-87/">Day 87</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/08/day-86/">Day 86</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -523,7 +518,7 @@ git push origin source
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (319)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (324)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

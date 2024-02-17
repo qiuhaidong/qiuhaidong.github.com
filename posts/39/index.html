@@ -8,11 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="得到一个小电筒，晚上照亮东西
-捡到两石头，黑暗中打出火花
-买了个新橡皮
-拿根小水管，如图，在小溪边玩了半天 到山上收集松香，砍竹子，找棉线，自制蜡烛，拿着蜡烛去钻排水渠
-河溪边捉鱼，虾，螃蟹，钓鱼，钓青蛙
+  <meta name="description" content="理所当然。 你不会沦落至此。
 ">
   
 
@@ -71,6 +67,199 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/02/07/you-are-different/">格格不入</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-07T17:20:05+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:20 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>理所当然。  <br/>
+你不会沦落至此。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/29/she/">She</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-29T12:15:05+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:15 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>You made her cried,can you make her smile?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/11/man-without-warm-shoes/">一个顾客</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-11T00:00:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这几天挺冷的，今天阴天，偶尔起风，下午5点多。<br/>
+一个中年男子，来买了条皮带，49块。<br/>
+他约三四十岁，一双手都是黑色的，估计是沾了机油，做维修之类的工作。头发浓密而略蓬乱，一脸的胡渣。<br/>
+出门的时候，我看了看，他穿一条破旧起皱的裤子，一双胶拖鞋。<br/>
+我想到这类的男人，中年，要负担一家人的开支，疲于挣钱，没有时间与精力拾腾自己。<br/>
+我还想到再多一些东西。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/09/shell-script/">Pull push.sh Shell脚本</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-09T17:08:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:08 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://github.com/qinjx/30min_guides/blob/master/shell.md">参见原博</a></p>
+
+<p>新建文本，扩展名为sh，扩展名并不影响脚本的执行，见名知意即可，若是用PHP编写，扩展名就用php<br/>
+终端下先执行：</p>
+
+<pre><code>rvm use 1.9.3
+</code></pre>
+
+<p>再执行脚本<br/>
+代码：</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+git pull origin source
+rake generate deploy
+</code></pre>
+
+<p>保存即可(文件名为pull.sh)<br/>
+运行脚本，终端命令：</p>
+
+<pre><code>chmod +x pull.sh
+./pull.sh
+</code></pre>
+
+<p>别漏了前面的符号.</p>
+
+<p>push.sh</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+rake generate deploy
+git add .
+git commit -m 'update'
+git push origin source
+</code></pre>
+
+<p>或者建好后修改文件属性，权限，允许作为程序执行文件（ubuntu16.04）</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/08/lantern/">Lantern</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-08T14:56:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>2:56 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://github.com/getlantern/lantern">下载页面</a><br/>
+<a href="https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta.exe">Windows版</a><br/>
+<a href="https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta-32-bit.deb">Ubuntu（32位）版</a><br/>
+<a href="https://s3.amazonaws.com/lantern-android/lantern-android-beta.apk">android</a><br/>
+一键安装，双击即可<br/>
+<a href="https://getlantern.org">Lantern官网</a><br/>
+官网自然受到GFW的特殊照顾，要翻了墙才能访问到</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -254,270 +443,6 @@ hold on，7/8/9/10<br/>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/08/27/sport/">运动，感动</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-08-27T22:47:57+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:47 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>NBA带给我们的感动，参看<a href="http://weibo.com/1742566624/Cpx4edoXw?type=comment#_rnd1440750564076">这条微博</a><br/>
-还有其他的众多运动，羽毛球，林丹，斯诺克，奥沙利文等等</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/08/25/gentle/">做优雅的人</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-08-25T18:24:37+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:24 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>尊重学识<br/>
-整洁精致美好<br/>
-教养、礼貌<br/>
-见识<br/>
-谈吐穿着<br/>
-审美<br/>
-探索，自知</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/08/25/how-to-git-octopress/">How to ‘git’ Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-08-25T13:58:37+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:58 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>如何为已经存在于Github上的Octopress搭建本地环境<br/>
-大部分步骤和全新搭建时差不多，这里只列出不同的那几步<br/>
-···安装其他···<br/>
-clone <code>source</code> 分支：</p>
-
-<pre><code>git clone -b source git@github.com:username/repositoryname.git octopress
-</code></pre>
-
-<p>换成我的具体命令就是:</p>
-
-<pre><code>git clone -b source git@github.com:qiuhaidong/qiuhaidong.github.com.git octopress
-</code></pre>
-
-<p>clone <code>master</code> 分支：<br/>
-<code>master</code> 分支存放在 <code>_deploy</code>目录</p>
-
-<pre><code>cd octopress
-git clone git@github.com:username/repositoryname.git _deploy
-</code></pre>
-
-<p>具体命令：</p>
-
-<pre><code>git clone git@github.com:qiuhaidong/qiuhaidong.github.com.git _deploy
-</code></pre>
-
-<p>if<br/>
-<a href="https://qiuhaidong.github.io/blog/2016/08/22/SSL-cannot-push-pull-keys-https-issue/">路径权限错误，无法pull Push</a><br/>
-fix it:</p>
-
-<pre><code>gedit octopress/.git/config
-git https://github.com/qiuhaidong/qiuhaidong.github.com.git _deploy
-</code></pre>
-
-<p>···其他步骤···<br/>
-另个重要命令：<br/>
-拉取：</p>
-
-<pre><code>cd octopress
-git pull origin source
-cd _deploy
-git pull origin master
-</code></pre>
-
-<p>推送：</p>
-
-<pre><code>cd octopress
-git add .
-git commit -m 'my message'
-git push origin source
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/08/23/gfw-bundle-install/">GFW Rubygems Bundle Install</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-08-23T01:16:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:16 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2022-01-05:最新网址：<a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a><br/>
-<strong>这个不行了</strong>：2016-10-28:最新网址：<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a> <strong>这个不行了</strong><br/>
-封网，rubygems.org 不行了<br/>
-<code>bundle install</code>  自然也不行<br/>
-点算？<br/>
-<a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
-用法：</p>
-
-<pre><code>gem sources --remove https://rubygems.org/
-gem sources -a https://gems.ruby-china.com/
-gem sources -l
-</code></pre>
-
-<p>输出：</p>
-
-<pre><code>*** CURRENT SOURCES ***  
-
-https://gems.ruby-china.com  
-</code></pre>
-
-<p>确保只有 <a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a></p>
-
-<h3>但是这样也不行，还得到octopress文件夹，打开Gemfile文件，编辑：</h3>
-
-<pre><code>    source "https://gems.ruby-china.com"
-</code></pre>
-
-<p>Ubuntu 14.04，安装octopress,执行</p>
-
-<pre><code>bundle install
-</code></pre>
-
-<p>一直提示缺少各种 gem 包，例如：</p>
-
-<pre><code>```
-Gem::RemoteFetcher::FetchError: SSL_connect SYSCALL returned=5 errno=0 state=unknown state (https://rubygems.global.ssl.fastly.net/gems/safe_yaml-1.0.4.gem)
-An error occurred while installing safe_yaml (1.0.4), and Bundler cannot continue.
-Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
-
-```
-</code></pre>
-
-<p>按提示输入命令 <code>gem install safe_yaml -v '1.0.4'</code> 安装依赖项，但是安装了一个又一个，一个又一个，实在太多太慢太麻烦了</p>
-
-<p>解决方法：</p>
-
-<p>修改octopress文件夹里的Gemfile文件：</p>
-
-<p>把：<br/>
-<code>source "https://rubygems.org"</code><br/>
-改为：<br/>
-<code>source "https://gems.ruby-china.com"</code><br/>
-再执行：</p>
-
-<pre><code>bundle install
-</code></pre>
-
-<p>完美通过。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/07/20/keyboard-configuration/">更改键盘布局</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-07-20T22:24:02+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:24 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>键盘布局出错，想打‘#’，却出现一个类似‘f’的符号，打‘|’却出现‘~’。<br/>
-run：</p>
-
-<pre><code>sudo dpkg-reconfigure keyboard-configuration
-</code></pre>
-
-<p>会出现图形界面用以设置。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/40">&larr; Older</a>
@@ -536,6 +461,26 @@ run：</p>
     
       <li class="post">
         <a href="/blog/2223/12/21/day-79/">知自己，识世界</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/17/day-109/">Day 109：过年期间遇到的让我不开心的人和事</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/16/day-108/">Day 108：篮球可以学到很多东西</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/11/day-107/">Day 107：处理冲突</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/10/day-106/">Day 106</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/06/day-105/">Day 105：终身事业</a>
       </li>
     
       <li class="post">
@@ -594,26 +539,6 @@ run：</p>
         <a href="/blog/2024/01/15/day-91/">Day 91：守正出奇</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/01/14/day-90/">Day 90：莫言</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/10/day-89/">Day 89</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/09/day-88/">Day 88</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/08/day-87/">Day 87</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/08/day-86/">Day 86</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -621,7 +546,7 @@ run：</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (319)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (324)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

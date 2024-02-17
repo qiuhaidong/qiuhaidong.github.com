@@ -8,8 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="和世界交手这么多年，你是否光彩依旧，兴趣盎然？
-">
+  <meta name="description" content="转载于：ubuntu中lightdm以及不能看到界面的一些解决方案 在解决了我的ubuntu界面密码登录无限循环的问题后，终于可以用google深入的了解一下了，从之前的了解得知，ubuntu在X版本后使用了lightDM一个全新的linux桌面显示管理器，在wiki中对LightDM的描述中， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +66,175 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/05/20/lightdm/">Lightdm Ubuntu 桌面显示管理器</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-05-20T14:17:18+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:17 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>转载于：<a href="https://www.cnblogs.com/SimbaBao/p/5791458.html">ubuntu中lightdm以及不能看到界面的一些解决方案</a></p>
+
+<p>在解决了我的ubuntu界面密码登录无限循环的问题后，终于可以用google深入的了解一下了，从之前的了解得知，ubuntu在X版本后使用了lightDM一个全新的linux桌面显示管理器，在wiki中对LightDM的描述中，LightDM配置在以下文件夹中：<br/>
+（1）<code>/usr/share/lightdm/lightdm.conf.d/*.conf</code><br/>
+（此为系统提供的配置文件，用户不可编辑）<br/>
+（2）<code>/etc/lightdm/lightdm.conf.d/*.conf</code><br/>
+（3）<code>/etc/lightdm/lightdm.conf</code><br/>
+（2、3这两个配置文件，系统管理员可以覆写）<br/>
+在此之后看到了一个关于解决不能看见界面的办法：<br/>
+（1）使用<code>Ctrl+alt+F1</code>，进入文本终端<br/>
+（2）<code>sudo stop lightdm</code> ，停止lightdm界面<br/>
+（3）<code>sudo start lightdm</code> ，开始lightdm界面<br/>
+（4）<code>sudo start gdm</code> ，登录gdm管理器<br/>
+（5）<code>sudo dpkg-reconfigure lightdm</code> ，设置管理器的系统默认值<br/>
+注：本文部分资料参阅<a href="https://wiki.ubuntu.com/LightDM">https://wiki.ubuntu.com/LightDM</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/05/19/daily/">Daily，2022-05-19，活着時才能說說話聊聊天</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-05-19T00:58:14+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:58 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>《非自然死亡》，第8集<br/>
+兒子年輕時犯錯入獄，父母親和他斷絕關係，出獄後也不再見麵，兒子雖然改過，也自知無顏見父母，隻在喝醉後才敢說出對父母的思唸，隻在和朋友相處時才找到家人的感覺。一次火災，兒子拼命救朋友，無奈隻救出一個，火情就蔓延到無法出去的地步了，隻能把剩下的朋友們背到樓上，最終沒能等到救援。父母知道後原諒了他，可惜已經天人相隔。<br/>
+<img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqRzC5Lm.54UkYqOqSrpAaIW0o707ztMP1ut6J*bXbynwzkda*xuciTShS57lwYILKzqrvAbBnEFlejLCiqGkySI!/r" alt="活着時才能說說話聊聊天" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/05/14/do-what-you-love-love-what-you-do/">Do What You Love, Love What You Do</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-05-14T02:42:22+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:42 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqbg0brft8j2OoIl4mzJiEzcZLP02LyFuxmuw.GBB1U.XzjgZUTmofFAQQP7R.4VmDQKOgTmni5lRzcw8EgLrTso!/r" alt="do what you love, love what you do" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/05/13/cook/">煮饭禁忌</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-05-13T15:49:34+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:49 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>以下食物<strong>不要直接炒</strong><br/>
+鲜竹笋、菠菜、苋菜、苦瓜，焯水5-10秒，去除草酸<br/>
+四季豆、扁豆、长豆角，焯水5分钟，去除皂素<br/>
+西兰花，菜花，焯水1-2分钟，去除农药残留和小虫子<br/>
+香椿，焯水1分钟左右，去除亚硝酸盐</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/05/12/sony-xperia-1-iv/">SONY Xperia 1 IV</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-05-12T23:32:47+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:32 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>設計，做工，質感</h3>
+
+<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqROdOmbClZ*DMdJPsPnN1L5YrvF2xOQnc.Eeikb6M7zu4Cf8WHI2W5cq1htROaCNLuGCktplDnxcKGziF2wcajo!/r" alt="SONY Xperia 1 IV" /></p>
+
+<p><a href="https://video.sonystyle.com.cn/customerTrans/5c3f07699e9c757a4d576bb240fa61e0/efe5091-180a8436cc4-0003-cd2e-0e7-91d59.mp4">SONY Xperia 1 IV 官方宣傳視頻</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -252,225 +420,6 @@ Because the people who are crazy enough to think that they can change the world,
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/04/29/daily/">Daily，2022-04-29，目标</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-04-29T10:33:36+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:33 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>做事得有目标。<br/>
-就算是去打球，也得有，每次试试不同的处理方式,如投篮假动作突破，变向突破，胯下转身突破，运球一步投篮，看别人的防守方式和移动重心处理进攻，学习别人的打球方法，想想自己哪里可以改进等等</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/04/28/daily/">Daily，2022-04-28，无用情绪</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-04-28T02:18:44+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:18 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>警惕：<br/>
-低级，劣质，无用，有害，无妄的，情绪满足或情绪伤害。<br/>
-用理性去克制，丢弃它。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/04/27/daily/">Daily，2022-04-27，记录</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-04-27T00:54:46+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:54 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>每天记录一下：<br/>
-现在的任务：洗澡洗衣服，尽早睡觉<br/>
-tmd，刚说完就通宵了，淦</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/04/23/ssh-connect-to-host-github-dot-com-port-22-connection-timed-out/">Ssh: Connect to Host github.com Port 22: Connection Timed Out</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-04-23T01:55:21+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2022</span></span> <span class='time'>1:55 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>dong@Ubuntu:~$ ssh -T git@github.com
-</span><span class='line'>ssh: connect to host github.com port 22: Connection timed out</span></code></pre></td></tr></table></div></figure>
-
-
-<p><a href="https://segmentfault.com/a/1190000040896781">解决 ssh: connect to host github.com port 22: Connection timed out</a></p>
-
-<p><a href="https://stackoverflow.com/questions/15589682/ssh-connect-to-host-github-com-port-22-connection-timed-out">ssh: connect to host github.com port 22: Connection timed out</a></p>
-
-<p>如果你电脑上的git能在大部分地方进行同步，但是在某处地方的网络下无法同步，并且运行git pull或git push长久没有反映，最后出现ssh: connect to host github.com port 22: Connection timed out，很可能是你的网络供应商（比如广电网）在出口防火墙上屏蔽了22端口，这意味着你将无法访问其他主机的22端口。<br/>
-对此，github提供了一种解决方案，允许你使用443端口进行ssh连接，因为443端口是访问https网站所必须的，大部分防火墙都会允许通过，但如果使用代理服务器可能产生干扰。如果连443端口都被屏蔽，那你应该无法浏览这篇文章。<br/>
-运行这段命令，看看是否有成功提示，如果成功，则可以使用这个解决方案。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -T -p 443 git@ssh.github.com</span></code></pre></td></tr></table></div></figure>
-
-
-<p>简单地配置一下，让你每次ssh连接github都通过443端口。如果你使用Linux，在<code>~/.ssh/config</code>内(新建config文件，无后缀)，添加这些内容，指明ssh连接git@github.com或git@ssh.github.com走443端口。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Host github.com
-</span><span class='line'>Hostname ssh.github.com
-</span><span class='line'>Port 443
-</span><span class='line'>User git #这行可能不需要也行</span></code></pre></td></tr></table></div></figure>
-
-
-<p>或者这一段：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Host github.com
-</span><span class='line'>Hostname ssh.github.com
-</span><span class='line'>PreferredAuthentications publickey
-</span><span class='line'>IdentityFile ~/.ssh/id_rsa
-</span><span class='line'>Port 443
-</span><span class='line'>User git
-</span><span class='line'>
-</span><span class='line'>Host gitlab.com
-</span><span class='line'>Hostname altssh.gitlab.com
-</span><span class='line'>PreferredAuthentications publickey
-</span><span class='line'>IdentityFile ~/.ssh/id_rsa
-</span><span class='line'>Port 443
-</span><span class='line'>User git</span></code></pre></td></tr></table></div></figure>
-
-
-<p>我的：把<code>config</code>文件复制到.ssh2和.ssh3文件夹<br/>
-改ssh2-3文件夹名，测试：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -T git@github.com</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>如果443端口也无法连接，试试改hosts：</h4>
-
-<p><a href="https://qiuhaidong.github.io/blog/2022/05/26/ssh-connect-to-host-ssh-dot-github-dot-com-port-443-connection-refused/">ssh: connect to host ssh.github.com port 443: Connection refused</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/04/17/bigger-picture/">人无远虑，必有近忧</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-04-17T15:29:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>17</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:29 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>别纠结那些琐事</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/22">&larr; Older</a>
@@ -489,6 +438,26 @@ tmd，刚说完就通宵了，淦</p>
     
       <li class="post">
         <a href="/blog/2223/12/21/day-79/">知自己，识世界</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/17/day-109/">Day 109：过年期间遇到的让我不开心的人和事</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/16/day-108/">Day 108：篮球可以学到很多东西</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/11/day-107/">Day 107：处理冲突</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/10/day-106/">Day 106</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/06/day-105/">Day 105：终身事业</a>
       </li>
     
       <li class="post">
@@ -547,26 +516,6 @@ tmd，刚说完就通宵了，淦</p>
         <a href="/blog/2024/01/15/day-91/">Day 91：守正出奇</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/01/14/day-90/">Day 90：莫言</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/10/day-89/">Day 89</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/09/day-88/">Day 88</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/08/day-87/">Day 87</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/01/08/day-86/">Day 86</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -574,7 +523,7 @@ tmd，刚说完就通宵了，淦</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (319)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (324)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

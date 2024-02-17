@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Day 106"
+date: 2024-02-10 20:00:33 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+这几天睡得不好，因为6点钟吃了饭，就躺床上玩，然后睡着2小时，晚上就睡不着了。  
+要改。不能过早睡。  
+11日update：如果三四点醒了，干脆起来学习。

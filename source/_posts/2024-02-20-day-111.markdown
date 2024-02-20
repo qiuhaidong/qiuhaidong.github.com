@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Day 111"
+date: 2024-02-20 21:58:00 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+气度、情商（智商在某一方面的表达），都是在你**不舒服的情境**下练就出来的。

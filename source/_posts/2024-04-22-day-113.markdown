@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Day 113：别熬夜"
+date: 2024-04-22 22:26:40 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+昨天熬夜看球赛，今天睡了一天还是觉得头晕，没有精神。  
+年龄段不同了，熬一天，三天也恢复不来。  
+以后不能熬夜了。

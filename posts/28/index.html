@@ -8,7 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev 原博内容： &hellip;">
+  <meta name="description" content="原文件是ubuntu16.04安装了octopress2.0，升级到ubuntu18.04，新建此文件，可以运行，没报错，然后改成这个内容 首先利用rfkill命令查看目前无线传输设备的状态，rfkill是一个命令行工具，可使用它查询和更改系统中启用了RFKill的设备。 rfkill的常用方法为 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,304 +66,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/">No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-12T19:03:01+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:03 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
-
-<p>原博内容：</p>
-
-<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
-
-<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
-解决办法：</p>
-
-<ul>
-<li>运行</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/apt/sources.list</span></code></pre></td></tr></table></div></figure>
-
-
-<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
-
-<ul>
-<li>更新</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt update</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>安装</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后再安装<code>rvm install 2.2.6</code></p>
-
-<p>————————————————<br/>
-版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/12/write-them-all/">好记性不如烂笔头</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-12T00:37:26+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:37 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>很多以前做过的事，细节步骤都不记得了，多写字吧，详细地记录下来，以后也有个回忆。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress2.0 自动打开文件 插入本地图片 程序</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-11T22:42:33+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:42 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://blog.lessfun.com/blog/2013/12/05/config-the-octopress-blog-after-deployed/">教程</a></p>
-
-<h3>添加功能：自动打开文件编辑</h3>
-
-<p><code>rake new_post["file name"]</code> 后自动打开博客文件<br/>
-编辑<code>Rakefile</code>文件，上面位置，添加定义：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>editor = "gedit"</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后在<code>new_post</code>命令后面添加：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>if #{editor}
-</span><span class='line'>  system "#{editor} #{filename}"
-</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>插入本地图片</h3>
-
-<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中可直接引用，用法：</p>
-
-<p><img src="https://qiuhaidong.github.io/images/%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80-%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87-%E7%A8%8B%E5%BA%8F.png" alt="语法冲突，不能显示正确代码，看图片" /></p>
-
-<p><img src="https://qiuhaidong.github.io/images/%E9%BA%A6%E8%BF%AA%E7%A7%91%E6%AF%94.jpg" alt="kobi t-mac" /></p>
-
-<h4>前后行3个```显示代码，且有显示行数</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>c++
-</span><span class='line'>int main()
-</span><span class='line'>{
-</span><span class='line'>  cout&lt;&lt;"hello world"&lt;&lt;endl;
-</span><span class='line'>};
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-11T07:52:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:52 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><pre><code>rvm install 2.3.1  
-</code></pre>
-
-<p>失败<br/>
-.</p>
-
-<pre><code>cd octopress
-</code></pre>
-
-<p>.</p>
-
-<pre><code>ruby --version
-</code></pre>
-
-<p>.</p>
-
-<pre><code>rvm use 2.7.0
-Required ruby-2.7.0 is not installed.
-To install do: 'rvm install "ruby-2.7.0"'  
-</code></pre>
-
-<h1>记得是用2.7.0</h1>
-
-<p> .</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ rvm install "ruby-2.7.0"  
-</code></pre>
-
-<p>.</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ ruby --version
-ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
-</code></pre>
-
-<p>.</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ rake generate
-Could not find rake-10.5.0 in any of the sources
-Run `bundle install` to install missing gems.
-</code></pre>
-
-<p>.</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ bundle install
-Traceback (most recent call last):
-4: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/ruby_executable_hooks:22:in `&lt;main&gt;'
-3: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/ruby_executable_hooks:22:in `eval'
-2: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/bundle:23:in `&lt;main&gt;'
-1: from /home/dong/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/rubygems.rb:294:in `activate_bin_path'
-/home/dong/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/rubygems.rb:275:in `find_spec_for_exe': Could not find 'bundler' (1.17.3) required by your /home/dong/octopress/Gemfile.lock. (Gem::GemNotFoundException)
-To update to the latest version installed on your system, run `bundle update --bundler`.
-To install the missing version, run `gem install bundler:1.17.3`
-</code></pre>
-
-<p>.</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ gem install bundler:1.17.3
-Fetching bundler-1.17.3.gem
-Successfully installed bundler-1.17.3
-Parsing documentation for bundler-1.17.3
-Installing ri documentation for bundler-1.17.3
-Done installing documentation for bundler after 3 seconds
-1 gem installed
-</code></pre>
-
-<p>.</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ rake generate
-Could not find rake-10.5.0 in any of the sources
-Run `bundle install` to install missing gems.
-</code></pre>
-
-<p>.</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ bundle install
-</code></pre>
-
-<p>.</p>
-
-<pre><code>dong@Ubuntu:~/octopress$ rake generate
-rake aborted!
-Gem::LoadError: You have already activated rake 13.0.1, but your Gemfile requires rake 10.5.0. Prepending `bundle exec` to your command may solve this.
-/home/dong/octopress/Rakefile:2:in `&lt;top (required)&gt;'
-(See full trace by running task with --trace)
-</code></pre>
-
-<p>提示失败，<br/>
-但是可以加上<code>bundle exec</code></p>
-
-<pre><code>dong@Ubuntu:~/octopress$bundle exec rake generate
-</code></pre>
-
-<p>很多警告，但是成了，<br/>
-下面也一样：</p>
-
-<pre><code>bundle exec rake preview
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -725,6 +427,182 @@ mv _site/_posts/ .
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/07/octopress3-0/">创建octopress3.0简单说明</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-07T06:02:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>6:02 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>注意，下面的有些步骤不适合</h3>
+
+<h4>先到jekyll官网，用它的方法安装好本地博客，再看几个octopress3.0的教程，比如官方github的和<a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a>  ，安装octopress，用它来上传blog，结合下面的前面几步，git，rvm，ruby，bundler，bundle install(or bundle)</h4>
+
+<p>重装octopress 2.0 博客失败<br/>
+很多新旧的软件，依赖，都不兼容了<br/>
+算了，世界在发展，有的旧事物必然被淘汰<br/>
+毕竟连作者都不维护了<br/>
+而且连3.0都不维护了</p>
+
+<hr />
+
+<p><a href="https://www.sitepoint.com/octopress-3-arrives-to-make-blog-generation-crazy-simple/">博文1，Octopress 3 Arrives to Make Blog Generation Crazy Simple</a></p>
+
+<p><a href="https://jingsam.github.io/2015/10/21/blogging-with-octopress-3-0.html">博文2，Octopress 3.0博客搭建教程</a></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2022/01/07/octopress3-0/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/02/basketball-in-the-zone/">篮球境界</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-02T23:27:35+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2022</span></span> <span class='time'>11:27 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今晚<br/>
+并不是说命中率最高、速度最快，而是心态最好，进入境界。<br/>
+就像麦迪说的，35秒13分并不是他的最好，他的最好是进入了“in the zone”的境界。<br/>
+我今晚也一样。<br/>
+具体这样说吧：<br/>
+心跳如常，不为任何情况所动，该怎样怎样。<br/>
+<strong>进攻</strong>：<br/>
+该跑跑，该停停，该切切，该快快，该慢慢。<br/>
+该投投，不犹豫。<br/>
+该晃晃，该突突，该传传，该断断。<br/>
+<strong>防守</strong>：<br/>
+该紧紧，该松松。<br/>
+被背打就被背打，不懊恼。<br/>
+能帽帽，不喜不惧。<br/>
+<strong>其他</strong>：<br/>
+投不进就不进，不懊恼，不可惜，继续。<br/>
+失误就失误，继续。<br/>
+开场还是抢七，该怎样怎样。<br/>
+不怕强劲的对手，不怕拖累队友。<br/>
+心态控制体能，微汗。<br/>
+如李小龙说的：<strong>从心所欲,一心一意，表达自己</strong>。<br/>
+<strong>心态如常，张弛有道，不为所动</strong>。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2021/12/31/my-2021/">我的2021</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2021-12-31T22:27:13+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>31</span><span class='date-suffix'>st</span>, <span class='date-year'>2021</span></span> <span class='time'>10:27 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这一年，三件事：到京东<strong>打工</strong>，学<strong>做饭</strong>，耳朵<strong>生病</strong>。<br/>
+<strong>打工</strong><br/>
+是做苦力，卖力气，很丢人，但，荒废了两年，终于动了。具体的，以前写过，不重复。<br/>
+<strong>做饭</strong><br/>
+很有门道，比如炒青菜，刚下锅，有的马上熟了，有的还没炒到，心慌。淡定，正常翻炒，就行了。还有先炒猪肉，再放面去炒，再放青菜，看起来一大锅，怕青菜在上面炒不熟，慌了。淡定，正常翻炒，就行了。<br/>
+淡定，正常地做，就行了。<br/>
+<strong>生病</strong><br/>
+对自己太狠。秋冬，连续俩月通宵夜班，噪声大，有压力，情绪不稳定，早上洗冷水澡，重糖，重淀粉（米面主食），重油，重盐，吃辣椒，估计血糖高，血脂高，血压高，血粘稠，睡眠严重不足，內耳供血不足，听觉神经长期疲累不堪。免疫力下降，感冒，鼻塞，咽鼓管之类的不通畅。<br/>
+种种原因，祸不单行，差点聋了。<br/>
+就这三件事。<br/>
+吸取教训，放下执念，放过自己，好好生活。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2021/12/15/jd3/">京東3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2021-12-15T19:09:42+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2021</span></span> <span class='time'>7:09 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>day 68<br/>
+今天休假<br/>
+昨天耳朵又听到低沉的发动机的轰隆隆的声音，我以为是耳鸣，现在基本可以确定，这就是附近道路晚上泥头车汽車发动机或者工廠機器運转的声音。<br/>
+在京东时也常常听到。<br/>
+我<strong>感冒鼻塞</strong>时，耳朵<strong>对这些声音特别敏感</strong>。<br/>
+就这样。<br/>
+昨天上班时，没搞清情况，情绪又崩溃了……<br/>
+<strong><em>補充</em></strong>：<br/>
+工作沒勁頭，好想打電話給媽，和她坦白這一切，想讓她接受我的平庸，我的失敗，我的不婚，想發泄所有的不安、恐懼、負面情緒。<br/>
+幸好，我還懂得衝動憤怒情緒不穩定時，別做決定，別做事。<br/>
+休息了一天，現在知道不是耳鳴，是感冒鼻塞或者咽鼓管堵塞或者其他的聽力系統的某一部分出了問題，而引起的狀況，感冒好了，整個聽力系統自然就沒事了。</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/posts/29">&larr; Older</a>
@@ -747,22 +625,6 @@ mv _site/_posts/ .
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/05/08/24-dot-04/">24.04</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/05/07/buxing/">Buxing</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/05/07/test-open/">Test Open</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/05/07/test-23-dot-10/">Test 23.10</a>
       </li>
     
       <li class="post">
@@ -821,6 +683,22 @@ mv _site/_posts/ .
         <a href="/blog/2024/02/10/day-106/">Day 106</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/2024/02/06/day-105/">Day 105：终身事业</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/02/03/day-104/">Day 104</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/01/31/day-103/">Day 103</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/01/30/day-102/">Day 102：好好睡觉</a>
+      </li>
+    
   </ul>
 </section>
 <section>
@@ -828,7 +706,7 @@ mv _site/_posts/ .
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (339)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (335)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

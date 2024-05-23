@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Day 118"
+date: 2024-05-23 17:02:12 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+藏锋，则无敌  
+隐智，则保身  
+戒欲，则无缚  
+省身，则自知  
+求实，则无虚  
+慎言，则无祸  
+节情，则少悲  
+向善，则正身

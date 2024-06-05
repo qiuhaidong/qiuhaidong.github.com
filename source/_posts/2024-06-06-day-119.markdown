@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 119：术、势"
+date: 2024-06-06 00:19:10 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+富在术数，不在劳身  
+利在势局，不在力耕

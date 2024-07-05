@@ -8,8 +8,8 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="人生不設限，不念過往，不畏開始，不懼未來。
-">
+  <meta name="description" content="2022年3月21日下午，一架飞机在广西梧州滕县失事，132人，惨烈。
+飞行数据显示，MU5735航班从昆明机场起飞后，一直在约8869米高度进行巡航。下午2点19分，飞机突然从巡航高度下降，同时飞行速度从约每小时845公里开始下降。机头垂直向下，2点21分，MU5735航班丢失ADS-B雷达信号 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +67,39 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/03/22/life-is-impermanent/">人生无常，广西飞机失事</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-03-22T00:32:43+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2022</span></span> <span class='time'>12:32 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2022年3月21日下午，一架飞机在广西梧州滕县失事，132人，惨烈。<br/>
+飞行数据显示，MU5735航班从昆明机场起飞后，一直在约8869米高度进行巡航。下午2点19分，飞机突然从巡航高度下降，同时飞行速度从约每小时845公里开始下降。机头垂直向下，2点21分，MU5735航班丢失ADS-B雷达信号，同地面失联。<br/>
+人生无常，真的是，你永远不知道明天和意外谁先到来。<br/>
+生死面前，都是小事。<br/>
+珍惜。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -617,129 +650,6 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/27/speed-up-octopress2-dot-0/">加速Octopress2.0，太慢了</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-27T00:54:38+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:54 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2><a href="https://droidyue.com/blog/2014/06/22/fix-octopress-slow-loading-speed-issue-in-china-mainland/">原博</a></h2>
-
-<h2>清理没用的服务</h2>
-
-<p>以下修改均修改<code>_config.yml</code>,以下可以根据自己的需要进行去除。</p>
-
-<p><strong>去除Disqus评论</strong><br/>
-打开文件找到<code>Disqus Comments</code>，按照下面在每一行前面加#注释掉即可</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># Disqus Comments
-</span><span class='line'>#disqus_short_name: 
-</span><span class='line'>#disqus_show_comment_count: true</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>去掉Github仓库展示</strong></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># Github repositories
-</span><span class='line'>#github_user: 
-</span><span class='line'>#github_repo_count: 
-</span><span class='line'>#github_show_profile_link: true
-</span><span class='line'>#github_skip_forks: true</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>去除Twitter按钮</strong><br/>
-<strong>去除Google+相关</strong><br/>
-<strong>去除Pinboard服务</strong><br/>
-<strong>去除Delicious评论，去除后可能没有评论系统</strong><br/>
-<strong>去除Facebook Like</strong></p>
-
-<h2>替换快速的请求资源</h2>
-
-<p>其实，真正解决加速的重要环节可能是这里，因为Octopress很多依赖于Google的库和资源。</p>
-
-<h3>解决Google Analytics巨慢的问题</h3>
-
-<p>对于使用Google Analytics来说，加在ga.js这个文件简直是要命的慢，这里我使用自己存放在七牛CDN上的js.  <a href="http://droidyue-tools.qiniudn.com/ga.js">http://droidyue-tools.qiniudn.com/ga.js</a> 已验证，完全可以正常收集数据。<br/>
-参考如下，修改<code>source/_includes/google_analytics.html</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'> _gaq.push([&#39;_trackPageview&#39;]);
-</span><span class='line'>
-</span><span class='line'> (function() {
-</span><span class='line'> var ga = document.createElement(&#39;script&#39;); ga.type = &#39;text/javascript&#39;; ga.async = true;
-</span><span class='line'> ga.src=&#39;http://droidyue-tools.qiniudn.com/ga.js&#39;;
-</span><span class='line'> var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(ga, s);
-</span><span class='line'> })();
-</span><span class='line'>   <span class="nt">&lt;/script&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>解决fonts.googleapis.com蜗牛慢</h3>
-
-<p>这里我们使用数字公司提供的Google Fonts大陆解决方案，使用<code>fonts.useso.com</code>替换<code>fonts.googleapis.com</code>。<br/>
-修改文件<code>/source/_includes/custom/head.html</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'> <span class="c">&lt;!--Fonts from Google&quot;s Web font directory at http://google.com/webfonts --&gt;</span>
-</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.useso.com/css?family=PT+Serif:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>解决ajax.googleapis.com慢的问题</h3>
-
-<p>修改<code>source/_includes/head.html</code></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class='line'><span class="nt">&lt;script&gt;</span><span class="o">!</span><span class="nb">window</span><span class="p">.</span><span class="nx">jQuery</span> <span class="o">&amp;&amp;</span> <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">unescape</span><span class="p">(</span><span class="s1">&#39;%3Cscript src=&quot;./javascripts/lib/jquery.min.js&quot;%3E%3C/script%3E&#39;</span><span class="p">))</span><span class="nt">&lt;/script&gt;</span>
-</span><span class='line'><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/javascripts/octopress.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>總結</h3>
-
-<p>导致网站慢的原因其实是加载Google的资源，当然我们不能怨Google.经过测试，使用数字公司的解决方法之后，国内国外访问速度都是可以的。这里还是推荐以下数字公司的这个解决方案<a href="http://libs.useso.com/">http://libs.useso.com/</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/26">&larr; Older</a>
@@ -762,6 +672,10 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/07/06/day-122/">Day 122：改变自己</a>
       </li>
     
       <li class="post">
@@ -832,10 +746,6 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
         <a href="/blog/2024/02/11/day-107/">Day 107：处理冲突</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/02/10/day-106/">Day 106</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -843,7 +753,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (339)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (340)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

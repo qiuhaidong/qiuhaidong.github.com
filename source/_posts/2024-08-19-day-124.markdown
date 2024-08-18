@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Day 124：健身"
+date: 2024-08-19 02:18:49 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+耐心，恒心，改错，重头再来，正确的方法论。  
+之前的错：  
+心血来潮，拼命练，受伤，停。  
+方法论：  
+小量开始，劳逸结合，等适应了，再调整适量。

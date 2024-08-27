@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Day 126：去做，去犯错，去改正"
+date: 2024-08-27 15:03:45 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+行动最重要。  
+不用怕犯错，人肯定会犯错，别怂。  
+犯了错，才知道哪些方向是错的，才可能找到正确的方向。

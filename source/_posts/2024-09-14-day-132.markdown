@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Day 132：自制力、执行力变差了，调回来"
+title: "Day 132"
 date: 2024-09-14 04:19:20 +0800
 author: 丘海东 
 tags: daily
@@ -8,3 +8,6 @@ comments: true
 categories: personal
 published: true
 ---
+自制力、执行力，变得很差了，调整回来。  
+做减法。  
+先清理硬盘吧，每天减去2部电影。

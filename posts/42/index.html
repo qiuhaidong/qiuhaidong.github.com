@@ -8,14 +8,12 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="下载页面
-Windows版
-Ubuntu（32位）版
-android
-一键安装，双击即可
-Lantern官网
-官网自然受到GFW的特殊照顾，要翻了墙才能访问到
-">
+  <meta name="description" content="参见原博 新建文本，扩展名为sh，扩展名并不影响脚本的执行，见名知意即可，若是用PHP编写，扩展名就用php
+终端下先执行： rvm use 1.9.3 再执行脚本
+代码： #!/bin/sh
+cd /home/dong/octopress
+git pull origin source
+rake &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +71,71 @@ Lantern官网
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/01/09/shell-script/">Pull push.sh Shell脚本</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-01-09T17:08:00+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>5:08 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://github.com/qinjx/30min_guides/blob/master/shell.md">参见原博</a></p>
+
+<p>新建文本，扩展名为sh，扩展名并不影响脚本的执行，见名知意即可，若是用PHP编写，扩展名就用php<br/>
+终端下先执行：</p>
+
+<pre><code>rvm use 1.9.3
+</code></pre>
+
+<p>再执行脚本<br/>
+代码：</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+git pull origin source
+rake generate deploy
+</code></pre>
+
+<p>保存即可(文件名为pull.sh)<br/>
+运行脚本，终端命令：</p>
+
+<pre><code>chmod +x pull.sh
+./pull.sh
+</code></pre>
+
+<p>别漏了前面的符号.</p>
+
+<p>push.sh</p>
+
+<pre><code>#!/bin/sh
+cd /home/dong/octopress
+rake generate deploy
+git add .
+git commit -m 'update'
+git push origin source
+</code></pre>
+
+<p>或者建好后修改文件属性，权限，允许作为程序执行文件（ubuntu16.04）</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -434,92 +497,6 @@ git push origin source
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/08/23/gfw-bundle-install/">GFW Rubygems Bundle Install</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-08-23T01:16:00+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>1:16 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2022-01-05:最新网址：<a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a><br/>
-<strong>这个不行了</strong>：2016-10-28:最新网址：<a href="https://gems.ruby-china.org">https://gems.ruby-china.org</a> <strong>这个不行了</strong><br/>
-封网，rubygems.org 不行了<br/>
-<code>bundle install</code>  自然也不行<br/>
-点算？<br/>
-<a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a> 是一个完整的 rubygems.org 镜像，用以代替官网<br/>
-用法：</p>
-
-<pre><code>gem sources --remove https://rubygems.org/
-gem sources -a https://gems.ruby-china.com/
-gem sources -l
-</code></pre>
-
-<p>输出：</p>
-
-<pre><code>*** CURRENT SOURCES ***  
-
-https://gems.ruby-china.com  
-</code></pre>
-
-<p>确保只有 <a href="https://gems.ruby-china.com/">https://gems.ruby-china.com/</a></p>
-
-<h3>但是这样也不行，还得到octopress文件夹，打开Gemfile文件，编辑：</h3>
-
-<pre><code>    source "https://gems.ruby-china.com"
-</code></pre>
-
-<p>Ubuntu 14.04，安装octopress,执行</p>
-
-<pre><code>bundle install
-</code></pre>
-
-<p>一直提示缺少各种 gem 包，例如：</p>
-
-<pre><code>```
-Gem::RemoteFetcher::FetchError: SSL_connect SYSCALL returned=5 errno=0 state=unknown state (https://rubygems.global.ssl.fastly.net/gems/safe_yaml-1.0.4.gem)
-An error occurred while installing safe_yaml (1.0.4), and Bundler cannot continue.
-Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
-
-```
-</code></pre>
-
-<p>按提示输入命令 <code>gem install safe_yaml -v '1.0.4'</code> 安装依赖项，但是安装了一个又一个，一个又一个，实在太多太慢太麻烦了</p>
-
-<p>解决方法：</p>
-
-<p>修改octopress文件夹里的Gemfile文件：</p>
-
-<p>把：<br/>
-<code>source "https://rubygems.org"</code><br/>
-改为：<br/>
-<code>source "https://gems.ruby-china.com"</code><br/>
-再执行：</p>
-
-<pre><code>bundle install
-</code></pre>
-
-<p>完美通过。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/43">&larr; Older</a>
@@ -542,6 +519,10 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/09/15/day-133/">Day 133：中秋</a>
       </li>
     
       <li class="post">
@@ -612,10 +593,6 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
         <a href="/blog/2024/05/01/day-117/">Day 117：别让平淡的生活，耗尽你对所有的向往</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/04/25/day-116/">Day 116：术与道，偶然和必然</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -623,7 +600,7 @@ Make sure that `gem install safe_yaml -v '1.0.4'` succeeds before bundling.
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (350)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (351)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

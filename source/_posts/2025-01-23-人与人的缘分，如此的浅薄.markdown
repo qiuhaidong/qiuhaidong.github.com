@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Day 147：人与人的缘分，如此的浅薄"
-date: 2025-01-27 21:21:33 +0800
+title: "人与人的缘分，如此的浅薄"
+date: 2025-01-23 21:21:33 +0800
 author: 丘海东 
 tags: daily
 comments: true

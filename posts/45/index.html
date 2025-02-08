@@ -8,7 +8,11 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="停止rake preview 任务，用ctrl+c，别用ctrl+z，可以避免这个问题 在执行命令 rake preview 时，输出： dong@Ubuntu:~/octopress$ rake preview Starting to watch source with Jekyll and &hellip;">
+  <meta name="description" content="方法略繁复
+把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）
+把图片上传到github repository托管 git add . # don't forget the "."
+git commit -m 'your message'
+git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +70,104 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/19/add-image/">Add Image</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-19T14:13:28+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>2:13 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>方法略繁复<br/>
+把图像复制到/……/octopress/source/images目录下。（也可再建立子文件夹）<br/>
+把图片上传到github repository托管</p>
+
+<pre><code>git add .           # don't forget the "."
+git commit -m 'your message'
+git push origin source
+</code></pre>
+
+<p>进入github抓取图片链接地址（先打开图片，然后鼠标右击图片，在新标签页中打开图片=或者=查看图片）<br/>
+示例地址：<br/>
+<a href="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png">https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png</a><br/>
+使用 ![描述](图片链接地址) 插入图像<br/>
+示例：<br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/123.png" alt="image test" /></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/06/goagent/">GoAgent</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-06T15:01:31+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>3:01 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2016-01-09  goagent的github仓库已经全部删除，it&rsquo;s gone.</p>
+
+<p><a href="https://github.com/goagent/goagent">新网址</a><br/>
+<a href="http://git.io/goa">压缩包下载地址</a><br/>
+<a href="https://github.com/goagent/goagent/blob/wiki/SimpleGuide.md">简易教程</a></p>
+
+<p><strong>部署</strong></p>
+
+<ol>
+<li>申请 Google Appengine 并创建 appid。</li>
+<li>下载 <a href="https://github.com/goagent/goagent">goagent</a></li>
+<li>修改 local\proxy.ini 中的 [gae] 下的 appid = 你的appid(多appid请用|隔开)</li>
+<li>运行 uploader.bat 或 uploader.py 开始上传, 成功后即可使用了。</li>
+</ol>
+
+
+<p><strong>使用</strong></p>
+
+<ul>
+<li>Windows 用户推荐使用 goagent.exe 托盘图标设置 IE 代理(对其它浏览器也有效)。</li>
+<li>Chrome/Opera 请安装 SwitchyOmega 插件(下载到本地然后拖放文件到扩展设置)，导入 SwitchyOptions.bak</li>
+<li>Firefox 请安装 FoxyProxy ，Firefox需要导入证书，方法请见 FAQ</li>
+<li>出现连接不上的情况可以尝试使用 gscan 或 GoGo Tester 测速。</li>
+</ul>
+
+
+<p><a href="https://github.com/goagent/goagent/blob/wiki/InstallGuide.md">图文教程</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -589,108 +691,6 @@ gem install therubyracer
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/10/09/dgs-legend1/">东哥传1</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-10-09T22:23:31+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:23 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>开篇</h4>
-
-<p>我读完4年大学，离校路上，有感，萌生写传念头。拖拉至今，起笔。</p>
-
-<p>鉴于我水平低，先给自己一个台阶：本传毫无章法，无所限制，不讲顺序，完全是想到什么写什么！</p>
-
-<p>有此念头，一方面是我喜欢文学，另一方面是看到我的高中同学彪哥也给他自己写了传，写得很好，令我也想试一试，在此感谢<strong>彪哥</strong>，<strong>李彪</strong>。</p>
-
-<p>写写我这个人，我的事，我遇到的人，我遇到的事，也好。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/09/21/tobaowen/">致宝文</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-09-21T19:50:53+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2014</span></span> <span class='time'>7:50 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>严正声明：事关宝文个人隐私，未经宝文允许，不得传出宿舍外！</h4>
-
-<p>昨天，秋风冷起。</p>
-
-<p>昨天，得知宝文又谈恋爱。</p>
-
-<p>都是昨天，万事万物皆有关联，这说明：宝文的恋爱和秋风一样让人感到冰冷。</p>
-
-<p>你想，全宿舍最猥琐的宝文居然谈恋爱了，而且是又谈恋爱了，而帅得血了呼啦潮得犀了马哈的东哥，却只配做个好人，我呸！</p>
-
-<p>然后我的反应是：难道这几天又有天文奇观天狗食月？</p>
-
-<p>插叙下：宝文上个女朋友，表白那天，下午，宝文和我去轮滑，到了鼎湖山，再去九龙湖。回来后，天黑了，我们在校门口吃了5块钱炒粉，宝文还打包多一份回宿舍，然后他没有冲凉，就约小宇出来表白，然后那天还遇上N年难得一遇的天狗食月。</p>
-
-<p>说到这我得简略小结一下：又累、又饿、又满身臭汗没冲凉、又月食，表白……</p>
-
-<p>么蛋，别说女生拒绝你，是我我也拒绝你啦！</p>
-
-<p>果然失败了。哈哈哈。</p>
-
-<p>过了段时间，我记得是寒假，中午，宝文发信息给我，说他成功了，小宇答应了。</p>
-
-<p>擦，女人真的是个奇怪的物种。</p>
-
-<p>再后来，我看到小宇，挺好的一个女生，就是眼神不好。</p>
-
-<p>我们曾无数次在宿舍卧谈会嘲笑宝文月食之夜表白的糗事，有时候我会想：这样赤裸裸地嘲笑自己的舍友会不会不好？宝文会不会想不开做自由落体运动？然后我想明白了，在情在理，我们嘲笑宝文，都是好的。</p>
-
-<p>理：宝文这么猥琐，如果被人笑笑就受不了，早就瓜老衬了。</p>
-
-<p>情：宝文这么猥琐，就应该被人嘲笑。</p>
-
-<p>毕业不久，他们分手了，感情上我也不好接受，挺好的女生，宝文可惜了，而理智告诉我，没被宝文糟蹋，也是好事。</p>
-
-<p>所以现在听到宝文又谈恋爱的消息，简直是晴天霹雳万里无云，唉……现在的许多小女生，就是喜欢猥琐屌丝、美女配野兽，啊不，禽兽！真希望下次聚会，约他们出来，谈谈小宇。</p>
-
-<p>对于宝文这个猥琐男，我只能说：希望宝文早日踏入婚姻的殿堂爱情的坟墓，然后买到穿孔的避孕套，生几个孩子向他讨债！</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/46">&larr; Older</a>
@@ -713,6 +713,14 @@ gem install therubyracer
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/01/27/day-148/">Day 148：很多世事都是悲哀和无奈</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/01/27/day-147/">Day 147：人与人的缘分，如此的浅薄</a>
       </li>
     
       <li class="post">
@@ -779,14 +787,6 @@ gem install therubyracer
         <a href="/blog/2024/09/12/day-131/">Day 131：睡觉误事</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/09/12/day-130/">Day 130：判断是否适合做生意</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2024/08/30/day-129/">Day 129：没有情绪</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -794,7 +794,7 @@ gem install therubyracer
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (364)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (366)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -812,7 +812,7 @@ gem install therubyracer
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 128%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 132%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
-<li><a style="font-size: 143%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 142%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 140%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
@@ -869,7 +869,7 @@ gem install therubyracer
 <!--返回顶部结束-->
 
 
-  Copyright &copy; 2024 - 丘海东 -
+  Copyright &copy; 2025 - 丘海东 -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

@@ -8,11 +8,14 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。
-依赖：python2，ruby2.6.9 Octopress 2.0 1
+  <meta name="description" content="1
+rvm install 2.6.9 提示错误： 1
 2
-git --version
-sudo apt install git 然后配置git， &hellip;">
+3
+4
+5
+Error running '__rvm_make -j4',
+please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log There has been an &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +73,62 @@ sudo apt install git 然后配置git， &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/04/05/install-ruby2.6.9-error-running-rvm-make-j4/">安装Ruby2.6.9，Error Running '__rvm_make -j4'</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-04-05T22:22:58+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:22 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install 2.6.9</span></code></pre></td></tr></table></div></figure>
+
+
+<p>提示错误：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Error running '__rvm_make -j4',
+</span><span class='line'>please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log
+</span><span class='line'>
+</span><span class='line'>There has been an error while running make. Halting the installation.
+</span><span class='line'>......</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a><br/>
+<strong>解决：</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm pkg install openssl
+</span><span class='line'>rvm remove 2.6.9
+</span><span class='line'>rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -689,35 +748,6 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/03/21/limitless/">不設限</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-03-21T04:16:04+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2022</span></span> <span class='time'>4:16 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>人生不設限，不念過往，不畏開始，不懼未來。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/28">&larr; Older</a>
@@ -740,6 +770,10 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/02/test/">Test</a>
       </li>
     
       <li class="post">
@@ -810,10 +844,6 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
         <a href="/blog/2024/09/16/day-134/">Day 134：生活</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/09/15/day-133/">Day 133：中秋</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -821,7 +851,7 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (368)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (369)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

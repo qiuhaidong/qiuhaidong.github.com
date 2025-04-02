@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-02T21:02:20+08:00</updated>
+  <updated>2025-04-02T21:12:07+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -41,11 +41,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Test]]></title>
+    <title type="html"><![CDATA[老ACER，还是没有任何错误的]]></title>
     <link href="https://qiuhaidong.github.io/blog/2025/04/02/test/"/>
-    <updated>2025-04-02T18:14:21+08:00</updated>
+    <updated>2025-04-02T21:00:21+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2025/04/02/test</id>
-    <content type="html"><![CDATA[<p>同步测试，老acer</p>
+    <content type="html"><![CDATA[<p>octopress2.0，和3.0</p>
 ]]></content>
   </entry>
   

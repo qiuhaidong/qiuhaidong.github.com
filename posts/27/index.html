@@ -8,11 +8,10 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。
-依赖：python2，ruby2.6.9 Octopress 2.0 1
-2
-git --version
-sudo apt install git 然后配置git， &hellip;">
+  <meta name="description" content="如题
+比如打篮球，很多人对我是很好的，感恩，我不是个很差的人，自信
+行动
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,240 +69,6 @@ sudo apt install git 然后配置git， &hellip;">
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">Ubuntu 22.04安装Octopress 2.0和3.0</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-04-05T22:03:16+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:03 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。<br/>
-依赖：python2，ruby2.6.9</p>
-
-<h3>Octopress 2.0</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git --version
-</span><span class='line'>sudo apt install git</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后配置git，把之前的octopress-haydnyau和ssh2-ssh3文件夹和.gitconfig文件复制到主目录，改ssh文件夹名</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -T git@github.com</span></code></pre></td></tr></table></div></figure>
-
-
-<p>ok</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>python2 --version
-</span><span class='line'>sudo apt install python2
-</span><span class='line'>
-</span><span class='line'>ruby --version</span></code></pre></td></tr></table></div></figure>
-
-
-<p>没有<br/>
-到rvm官网(下面的命令可能有更新，看官网)</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Command 'gpg2' not found, but can be installed with:
-</span><span class='line'>sudo apt install gnupg2</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install gnupg2
-</span><span class='line'>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-</span><span class='line'>
-</span><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Command 'curl' not found, but can be installed with:
-</span><span class='line'>sudo apt install curl</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>注意: <a href="https://qiuhaidong.github.io/blog/2023/09/01/install-curl/">安装新版本的curl</a></h3>
-
-<h3>否则会出错</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>dong@dong-Ubuntu:~$ curl -V
-</span><span class='line'>
-</span><span class='line'>找不到命令 “curl”，但可以通过以下软件包安装它：
-</span><span class='line'>sudo snap install curl  # version 8.1.2, or
-</span><span class='line'>sudo apt  install curl  # version 7.81.0-1ubuntu1.13
-</span><span class='line'>输入 “snap info curl” 以查看更多版本。
-</span><span class='line'>
-</span><span class='line'>dong@dong-Ubuntu:~$ sudo snap install curl</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>不要下面这个了:</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install curl
-</span><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 28 ms: 拒绝连接</span></code></pre></td></tr></table></div></figure>
-
-
-<p>解决：<br/>
-<a href="https://blog.csdn.net/u014375643/article/details/115826506">Failed to connect to raw.githubusercontent.com</a><br/>
-到这个网址：<code>https://www.ipaddress.com/</code>，输入：<code>raw.githubusercontent.com</code>，查询，得到IP地址，选择其中一个或多个，修改本地HOSTS：Ubuntu下打开/etc/hosts，添加 IP地址：<code>185.199.108.133 raw.githubusercontent.com</code>，重试，不行就重启再试。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>* To start using RVM you need to run `source /home/dong/.rvm/scripts/rvm`
-</span><span class='line'>    in all your open shell windows, in rare cases you need to reopen all shell windows.
-</span><span class='line'>Thanks for installing RVM</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>source /home/dong/.rvm/scripts/rvm</span></code></pre></td></tr></table></div></figure>
-
-
-<p>重启命令行</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm --version
-</span><span class='line'>rvm install 2.6.9</span></code></pre></td></tr></table></div></figure>
-
-
-<p>提示错误：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Error running '__rvm_make -j4',
-</span><span class='line'>please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log
-</span><span class='line'>
-</span><span class='line'>There has been an error while running make. Halting the installation.
-</span><span class='line'>......</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong>解决：</strong><br/>
-<a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm pkg install openssl
-</span><span class='line'>rvm remove 2.6.9
-</span><span class='line'>rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ruby --version</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>记得：终端-首选项-未命名-命令-勾选‘以登陆shell方式运行命令’，重启所有终端</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 2.6.9 --default</span></code></pre></td></tr></table></div></figure>
-
-
-<p>把 <code>/octopress/Gemfile</code> 文件里的源改回最初的：<code>source "https://rubygems.org/"</code></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler
-</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
-
-
-<p><a href="https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/">更改：You can use the sass-convert command to automatically fix most cases.</a></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
-</span><span class='line'>......</span></code></pre></td></tr></table></div></figure>
-
-
-<p>之后就都是常规操作。</p>
-
-<h3>Octopress 3.0</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd /haydnyau</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ruby --version
-</span><span class='line'>rvm use 2.6.9 --default</span></code></pre></td></tr></table></div></figure>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>jekyll --version</span></code></pre></td></tr></table></div></figure>
-
-
-<p>确保安装正确<br/>
-安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem install octopress</span></code></pre></td></tr></table></div></figure>
-
-
-<p>确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的<br/>
-好了。</p>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -718,6 +483,70 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer/">Kex_exchange_identification: Read: Connection Reset by Peer</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-03-20T10:32:48+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:32 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>有時會出現標題的錯誤，ssh無法連接服務器，試過網上的幾種方法都不行，其實是國內網絡經常封鎖github，過段時間就好了。<br/>
+update:</p>
+
+<h4>1. 收到邮件：</h4>
+
+<p>GitGuardian检测到您的GitHub帐户中暴露了以下OpenSSH私钥。<br/>
+GitGuardian has detected the following OpenSSH Private Key exposed within your GitHub account.<br/>
+新建key即可。</p>
+
+<h4>2. 如果把SSH key上传到仓库，会提示安全验证：</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ERROR: We're doing an SSH key audit.
+</span><span class='line'>Reason: unverified automatically (private key found in a public repository)
+</span><span class='line'>Please visit https://github.com/settings/keys/********
+</span><span class='line'>to approve this key so we know it's safe.
+</span><span class='line'>
+</span><span class='line'>Fingerprint:
+</span><span class='line'>SHA256:***********************************************
+</span><span class='line'>
+</span><span class='line'>fatal: 无法读取远程仓库。
+</span><span class='line'>
+</span><span class='line'>请确认您有正确的访问权限并且仓库存在。</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/posts/28">&larr; Older</a>
@@ -740,10 +569,6 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2025/04/07/day-148/">Day 148：又成功了</a>
       </li>
     
       <li class="post">
@@ -814,6 +639,10 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
         <a href="/blog/2024/09/15/day-133/">Day 133：中秋</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/2024/09/14/day-132/">Day 132：调整，做减法</a>
+      </li>
+    
   </ul>
 </section>
 <section>
@@ -821,7 +650,7 @@ octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (368)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (367)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

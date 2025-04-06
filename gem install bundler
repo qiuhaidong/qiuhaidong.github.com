@@ -1,0 +1,20 @@
+dong@dong-Ubuntu:~/octopress$ gem install bundler
+Fetching bundler-2.6.7.gem
+ERROR:  Error installing bundler:
+	The last version of bundler (>= 0) to support your Ruby & RubyGems was 2.4.22. Try installing it with `gem install bundler -v 2.4.22`
+	bundler requires Ruby version >= 3.1.0. The current ruby version is 2.6.9.207.
+dong@dong-Ubuntu:~/octopress$ gem install bundler -v 2.4.22
+Fetching bundler-2.4.22.gem
+Successfully installed bundler-2.4.22
+Parsing documentation for bundler-2.4.22
+Installing ri documentation for bundler-2.4.22
+Done installing documentation for bundler after 0 seconds
+1 gem installed
+dong@dong-Ubuntu:~/octopress$ 
+
+另外可以试试，把这个文件Gemfile.lock，最后一行的：BUNDLED WITH
+   2.4.19
+   
+   改为之前命令终端的提示：
+   Fetching bundler-2.6.7.gem
+   对应的版本号

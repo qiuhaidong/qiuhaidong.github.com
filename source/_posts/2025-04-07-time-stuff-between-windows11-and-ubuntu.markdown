@@ -15,10 +15,8 @@ published: true
 
     sudo apt-get install ntpdate
     sudo ntpdate time.windows.com
-    
 
 简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 因此我们可以在联网状态中使用下列代码实现Ubuntu与Windows的时间同步。  
 
-
     sudo timedatectl set-local-rtc 1
-    
+

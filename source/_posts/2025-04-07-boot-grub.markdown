@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Ubuntu开机引导项"
+date: 2025-04-07 07:32:27 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+[配置 Ubuntu 24.04 中默认引导的操作系统或内核](https://cn.linux-terminal.com/?p=8402)  
+
+选项 2：使用图形工具  
+对于那些不喜欢 Linux 命令的人，有一个流行的免费开放工具 Grub Customizer，它提供了完成这项工作的图形选项。  
+
+许多 Linux（例如 Arch、Debian、Fedora 和 RHEL 9）在其系统存储库中包含 Grub 定制器。然而，由于脚本编写问题（尽管现已修复），Ubuntu 自 22.04 以来已将其从系统存储库中删除。  
+
+要在 Ubuntu 中安装 Grub 定制器，请打开终端（Ctrl+Alt+T）并一一运行以下命令，从开发者的 PPA 中获取它。  
+
+	sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+	sudo apt-get update
+	sudo apt-get install grub-customizer
+	
+然后，启动该工具并导航到“常规设置”选项卡。接下来，选择预定义条目或先前启动的条目作为默认值。最后，单击“保存”按钮应用更改。   
+
+***还可以设置等待的秒数***  
+
+![使用图形工具修改Ubuntu开机引导项](https://linux-terminal.com/common-images/os-kernel-boot-default-ubuntu-linux/grubcustomizer-defaultos.webp)

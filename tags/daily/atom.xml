@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: daily | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/daily/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-07T06:47:32+08:00</updated>
+  <updated>2025-04-07T07:02:57+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -41,6 +41,26 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[windows11和Ubuntu24.04双系统，时间不对]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/"/>
+    <updated>2025-04-07T06:59:28+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu</id>
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a></p>
+
+<p>先在ubuntu下更新一下时间，确保时间无误：</p>
+
+<pre><code>sudo apt-get install ntpdate
+sudo ntpdate time.windows.com
+</code></pre>
+
+<p>简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 因此我们可以在联网状态中使用下列代码实现Ubuntu与Windows的时间同步。</p>
+
+<pre><code>sudo timedatectl set-local-rtc 1
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Day 148：又成功了]]></title>
     <link href="https://qiuhaidong.github.io/blog/2025/04/07/day-148/"/>
     <updated>2025-04-07T05:28:17+08:00</updated>
@@ -60,17 +80,6 @@
 现在只剩acer这台老破的电脑还能写博客，等它不能用了，也就这样了。</p>
 
 <h3>好好生活，人到中年，人生已过半</h3>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 147：这三个月节奏都错了]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/03/17/day-147/"/>
-    <updated>2025-03-17T22:01:16+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/03/17/day-147</id>
-    <content type="html"><![CDATA[<p>去年12月开始，节奏都错了。<br/>
-一个错误，引发后续的<strong>连续</strong>错误。<br/>
-同时变得没有<strong>耐心</strong>，应该进场重仓持股<strong>等待</strong>的时机，不敢进，没耐心。</p>
 ]]></content>
   </entry>
   

@@ -141,6 +141,46 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/">windows11和Ubuntu24.04双系统，时间不对</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2025-04-07T06:59:28+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2025</span></span> <span class='time'>6:59 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a></p>
+
+<p>先在ubuntu下更新一下时间，确保时间无误：</p>
+
+<pre><code>sudo apt-get install ntpdate
+sudo ntpdate time.windows.com
+</code></pre>
+
+<p>简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 因此我们可以在联网状态中使用下列代码实现Ubuntu与Windows的时间同步。</p>
+
+<pre><code>sudo timedatectl set-local-rtc 1
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2025/04/07/day-148/">Day 148：又成功了</a></h1>
     
     
@@ -395,36 +435,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2024/12/13/day-144/">Day 144：步步错，步步悟</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2024-12-13T04:06:29+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2024</span></span> <span class='time'>4:06 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>有了阅历会发现，人生中很多东西，可有可无，可去可留。<br/>
-一生很短，其实<strong>没有什么大彻大悟</strong>，无非是<strong>步步错，步步悟</strong>，边走边治愈你的，从来不是时间，而是心里的那份平静和释怀。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -445,6 +455,10 @@
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/">windows11和Ubuntu24.04双系统，时间不对</a>
       </li>
     
       <li class="post">
@@ -515,10 +529,6 @@
         <a href="/blog/2024/09/19/day-135/">Day 135：中秋节</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/09/16/day-134/">Day 134：生活</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -526,7 +536,7 @@
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (369)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (370)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

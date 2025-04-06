@@ -23,3 +23,13 @@ windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装
     sudo hwclock --localtime --systohc
 
 重新进入windows10，发现时间恢复正常了！
+
+
+[新博文](https://blog.csdn.net/weixin_42066135/article/details/144369653)  
+
+### 但是在ubuntu24.04中，更新：  
+
+简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 因此我们可以在联网状态中使用下列代码实现Ubuntu与Windows的时间同步。  
+
+
+    sudo timedatectl set-local-rtc 1

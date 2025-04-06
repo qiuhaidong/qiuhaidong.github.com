@@ -108,6 +108,15 @@ sudo ntpdate time.windows.com
 </code></pre>
 
 <p>重新进入windows10，发现时间恢复正常了！</p>
+
+<p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a></p>
+
+<h3>但是在ubuntu24.04中，更新：</h3>
+
+<p>简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 因此我们可以在联网状态中使用下列代码实现Ubuntu与Windows的时间同步。</p>
+
+<pre><code>sudo timedatectl set-local-rtc 1
+</code></pre>
 </div>
 
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-08T01:04:52+08:00</updated>
+  <updated>2025-04-08T02:20:27+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -37,6 +37,23 @@
 <li><p><strong>学习</strong>：股市、金融知识，关注世事、时局，了解行业、公司。</p></li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 150：但行好事，莫问前程]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/08/day-150/"/>
+    <updated>2025-04-08T02:03:26+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/08/day-150</id>
+    <content type="html"><![CDATA[<p>过年时，我们和大坡队打篮球赛，学生先打第一节，落后十几分，在总得分才四十来分的情况下，大概率都是追不回来了。<br/>
+但是，之后我们这几个人上场，第二第三节，就追回来了，而且最后还赢了。</p>
+
+<p><img src="https://wx1.sinaimg.cn/mw690/780bc50fgy1hy2i2wf9q0j20u013y7e6.jpg" alt="但行好事，莫问前程" /></p>
+
+<p>我也是常常觉得我的家境，看不到希望。<br/>
+确实也是。<br/>
+我妈，就什么结果也不想，该怎么做就怎么做。<br/>
+那么，我也应以无所谓的心态，去面对，去做事，无心插柳，坦然面对一切结果。</p>
 ]]></content>
   </entry>
   
@@ -82,26 +99,6 @@ sudo apt-get install grub-customizer
 <p><strong><em>还可以设置等待的秒数</em></strong></p>
 
 <p><img src="https://linux-terminal.com/common-images/os-kernel-boot-default-ubuntu-linux/grubcustomizer-defaultos.webp" alt="使用图形工具修改Ubuntu开机引导项" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[windows11和Ubuntu24.04双系统，时间不对]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/"/>
-    <updated>2025-04-07T06:59:28+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu</id>
-    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a></p>
-
-<p>先在ubuntu下更新一下时间，确保时间无误：</p>
-
-<pre><code>sudo apt-get install ntpdate
-sudo ntpdate time.windows.com
-</code></pre>
-
-<p>简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 因此我们可以在联网状态中使用下列代码实现Ubuntu与Windows的时间同步。</p>
-
-<pre><code>sudo timedatectl set-local-rtc 1
-</code></pre>
 ]]></content>
   </entry>
   

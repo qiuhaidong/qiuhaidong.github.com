@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: daily | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/daily/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-07T07:40:13+08:00</updated>
+  <updated>2025-04-08T01:00:16+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -41,59 +41,43 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Ubuntu开机引导项]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/07/boot-grub/"/>
-    <updated>2025-04-07T07:32:27+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/07/boot-grub</id>
-    <content type="html"><![CDATA[<p><a href="https://cn.linux-terminal.com/?p=8402">配置 Ubuntu 24.04 中默认引导的操作系统或内核</a></p>
-
-<p>选项 2：使用图形工具<br/>
-对于那些不喜欢 Linux 命令的人，有一个流行的免费开放工具 Grub Customizer，它提供了完成这项工作的图形选项。</p>
-
-<p>许多 Linux（例如 Arch、Debian、Fedora 和 RHEL 9）在其系统存储库中包含 Grub 定制器。然而，由于脚本编写问题（尽管现已修复），Ubuntu 自 22.04 以来已将其从系统存储库中删除。</p>
-
-<p>要在 Ubuntu 中安装 Grub 定制器，请打开终端（Ctrl+Alt+T）并一一运行以下命令，从开发者的 PPA 中获取它。</p>
-
-<pre><code>sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-sudo apt-get update
-sudo apt-get install grub-customizer
-</code></pre>
-
-<p>然后，启动该工具并导航到“常规设置”选项卡。接下来，选择预定义条目或先前启动的条目作为默认值。最后，单击“保存”按钮应用更改。</p>
-
-<p><strong><em>还可以设置等待的秒数</em></strong></p>
-
-<p><img src="https://linux-terminal.com/common-images/os-kernel-boot-default-ubuntu-linux/grubcustomizer-defaultos.webp" alt="使用图形工具修改Ubuntu开机引导项" /></p>
+    <title type="html"><![CDATA[Day 149：事物是复杂、多面的]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/08/day-149/"/>
+    <updated>2025-04-08T00:25:38+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/08/day-149</id>
+    <content type="html"><![CDATA[<p><a href="https://qiuhaidong.github.io/blog/2025/01/27/henduoshishidushibeiaihewunai/">很多世事都是悲哀和无奈</a><br/>
+我承认，我埋怨我父亲，我虽然不奢望他给我留下财产，或者给我人脉和认知上的帮助，也就是说，我不求他帮我，但是，我确实希望他别给我阻力。而实际上，他在挺多事情和挺长时间上，都给我阻力，让我内耗。<br/>
+挺多时候，他在我心中一文不值。<br/>
+确实，我有这些阴暗心理。<br/>
+我也很无奈。<br/>
+人不是能那么轻易说服自己的。<br/>
+我只能对自己说，他的出身、成长环境、性格等，注定了他就是这样，而且到了这个年纪，和现在的身体精神条件，是不可能改的了。<br/>
+我不能把他贬得一无是处，他生我养我，熬过，他青中年时，也懂挺多，做成过挺多。<br/>
+事物，人性，世界，是复杂、多面的。</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[windows11和Ubuntu24.04双系统，时间不对]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/"/>
-    <updated>2025-04-07T06:59:28+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu</id>
-    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a></p>
+    <title type="html"><![CDATA[好好生活：这个博客不定时停更]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/03/maybe-call-it-the-end/"/>
+    <updated>2025-04-03T01:39:38+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/03/maybe-call-it-the-end</id>
+    <content type="html"><![CDATA[<p>每过一段时间，很多的依赖，库，软件包，等等，都会被删除，要花大量的时间去解决，但是又没有意义。<br/>
+不在无意义的事情上浪费时间，浪费生命。<br/>
+现在只剩acer这台老破的电脑还能写博客，等它不能用了，也就这样了。</p>
 
-<p>先在ubuntu下更新一下时间，确保时间无误：</p>
-
-<pre><code>sudo apt-get install ntpdate
-sudo ntpdate time.windows.com
-</code></pre>
-
-<p>简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 因此我们可以在联网状态中使用下列代码实现Ubuntu与Windows的时间同步。</p>
-
-<pre><code>sudo timedatectl set-local-rtc 1
-</code></pre>
+<h3>好好生活，人到中年，人生已过半</h3>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Day 148：又成功了]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/07/day-148/"/>
-    <updated>2025-04-07T05:28:17+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/07/day-148</id>
-    <content type="html"><![CDATA[<p>心平气和，不急不躁。<br/>
-按照提示，搜索解决。</p>
+    <title type="html"><![CDATA[Day 147：这三个月节奏都错了]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/03/17/day-147/"/>
+    <updated>2025-03-17T22:01:16+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/03/17/day-147</id>
+    <content type="html"><![CDATA[<p>去年12月开始，节奏都错了。<br/>
+一个错误，引发后续的<strong>连续</strong>错误。<br/>
+同时变得没有<strong>耐心</strong>，应该进场重仓持股<strong>等待</strong>的时机，不敢进，没耐心。</p>
 ]]></content>
   </entry>
   

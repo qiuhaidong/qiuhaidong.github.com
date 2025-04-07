@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-07T07:40:13+08:00</updated>
+  <updated>2025-04-08T01:00:16+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -37,6 +37,23 @@
 <li><p><strong>学习</strong>：股市、金融知识，关注世事、时局，了解行业、公司。</p></li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 149：事物是复杂、多面的]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/08/day-149/"/>
+    <updated>2025-04-08T00:25:38+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/08/day-149</id>
+    <content type="html"><![CDATA[<p><a href="https://qiuhaidong.github.io/blog/2025/01/27/henduoshishidushibeiaihewunai/">很多世事都是悲哀和无奈</a><br/>
+我承认，我埋怨我父亲，我虽然不奢望他给我留下财产，或者给我人脉和认知上的帮助，也就是说，我不求他帮我，但是，我确实希望他别给我阻力。而实际上，他在挺多事情和挺长时间上，都给我阻力，让我内耗。<br/>
+挺多时候，他在我心中一文不值。<br/>
+确实，我有这些阴暗心理。<br/>
+我也很无奈。<br/>
+人不是能那么轻易说服自己的。<br/>
+我只能对自己说，他的出身、成长环境、性格等，注定了他就是这样，而且到了这个年纪，和现在的身体精神条件，是不可能改的了。<br/>
+我不能把他贬得一无是处，他生我养我，熬过，他青中年时，也懂挺多，做成过挺多。<br/>
+事物，人性，世界，是复杂、多面的。</p>
 ]]></content>
   </entry>
   
@@ -84,16 +101,6 @@ sudo ntpdate time.windows.com
 
 <pre><code>sudo timedatectl set-local-rtc 1
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 148：又成功了]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/07/day-148/"/>
-    <updated>2025-04-07T05:28:17+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/07/day-148</id>
-    <content type="html"><![CDATA[<p>心平气和，不急不躁。<br/>
-按照提示，搜索解决。</p>
 ]]></content>
   </entry>
   

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Day 148：又成功了"
+title: "Day 148：博客又成功了"
 date: 2025-04-07 05:28:17 +0800
 author: 丘海东 
-tags: daily
+tags: ubuntu
 comments: true
 categories: personal
 published: true

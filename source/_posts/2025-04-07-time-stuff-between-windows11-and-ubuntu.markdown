@@ -3,7 +3,7 @@ layout: post
 title: "windows11和Ubuntu24.04双系统，时间不对"
 date: 2025-04-07 06:59:28 +0800
 author: 丘海东 
-tags: daily
+tags: ubuntu
 comments: true
 categories: personal
 published: true

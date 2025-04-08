@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-08T18:36:58+08:00</updated>
+  <updated>2025-04-08T23:39:52+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -37,6 +37,168 @@
 <li><p><strong>学习</strong>：股市、金融知识，关注世事、时局，了解行业、公司。</p></li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Install Python 2.7 on Ubuntu 24.04]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/"/>
+    <updated>2025-04-08T23:14:16+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04</id>
+    <content type="html"><![CDATA[<p>机翻的文章，可能有错，建议看原文，链接：</p>
+
+<p><a href="https://linux.how2shout.com/how-to-install-python-2-7-on-ubuntu-24-04-noble-lts-linux/">How to install Python 2.7 on Ubuntu 24.04</a></p>
+
+<p>Canonical 在长期 Ubuntu 20.04 Focal 之后放弃了对 Python 版本 2.x 的支持，以便为最新的 Python 3 版本腾出空间。这就是为什么我们没有使用其官方系统存储库在 Ubuntu 24.04 上安装 Python 2 的原因。此外，Python 开发人员也不再支持版本 2，但是，如果您的一些旧项目需要 Python 版本 2，那么在本文中，我们将学习如何在 Ubuntu 24.04上安装它来运行一些旧的应用程序。</p>
+
+<p>第 1 步：打开命令终端<br/>
+第 2 步：安装依赖项<br/>
+第 3 步：下载 Python 2.7 源代码<br/>
+第 4 步：在 Ubuntu 2.7 上编译和安装 Python 24.04<br/>
+第 5 步：验证安装<br/>
+<del>第 6 步：为 Python 2.7 设置 pip</del><br/>
+第 7 步：更改默认 Python 优先级<br/>
+第 8 步：从 Ubuntu 2.7 卸载 Python 24.04</p>
+
+<h3>第 1 步：打开命令终端</h3>
+
+<p>在您的 Ubuntu 上访问终端，因为我们需要它来安装软件包，因此您应该对它以及命令行的工作原理有所了解。进入终端后，运行 system update 命令：</p>
+
+<pre><code>sudo apt update 
+(dg不要后面这一步，以防新版本的ubuntu有问题，安装不了博客)sudo apt upgrade
+</code></pre>
+
+<h3>第 2 步：安装依赖项</h3>
+
+<p>众所周知，Python 2.7 不再通过 Ubuntu 的默认系统存储库甚至流行的 PPA Dead Snake 存储库获得，因此在本文中，我们将使用其源文件对其进行编译。但是，在此之前，请安装一些基本的开发人员工具。</p>
+
+<pre><code>sudo apt install -y build-essential checkinstall libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev
+</code></pre>
+
+<h3>第 3 步：下载 Python 2.7 源代码</h3>
+
+<p>现在，使用 wget 工具并从其官方网站下载 Python 2.7 的源代码，2.7 可用的最新版本是 2.7.18。</p>
+
+<pre><code>wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
+</code></pre>
+
+<p>解压 ：</p>
+
+<pre><code>tar -xvf Python-2.7.18.tgz
+</code></pre>
+
+<h3>第 4 步：在 Ubuntu 2.7 上编译和安装 Python 24.04</h3>
+
+<p>解压后，首先切换到解压后的目录，然后按照给定的过程编译源码。</p>
+
+<pre><code>cd Python-2.7.18
+
+./configure --enable-optimizations
+</code></pre>
+
+<p>编译安装 Python：</p>
+
+<p>编译过程需要一些时间，所以请坐下来，让它完成。</p>
+
+<pre><code>make -j16
+
+sudo make install
+</code></pre>
+
+<h3>第 5 步：验证安装</h3>
+
+<p>安装“make”文件后，您的 Ubuntu 24.04 系统将安装 Python 2.7。要确认，只需通过运行给定的命令来检查版本：</p>
+
+<pre><code>python -V
+</code></pre>
+
+<h3><del>第 6 步：为 Python 2.7 设置 pip</del></h3>
+
+<p><del>在 Ubuntu 24.04 上安装 Python 2.7 后，您可能还需要 PIP 来管理库和包，因此要获取它，以下是命令：</del></p>
+
+<pre><code>~~sudo apt install curl~~  
+
+~~curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py~~  
+
+~~sudo python2.7 get-pip.py~~  
+</code></pre>
+
+<p><del>验证 pip 安装：</del></p>
+
+<pre><code>~~pip2.7 --version~~
+</code></pre>
+
+<h3>第 7 步：更改默认 Python 优先级</h3>
+
+<p>如果您的 Ubuntu 2.7 Linux 上同时有 Python 3 和 24.04，则默认情况下系统会优先考虑 Python3，这就是为什么当我们运行“命令时，它会给出错误：</p>
+
+<pre><code>Command 'python' not found, did you mean:
+command 'python 3' from deb python3
+command 'python' from deb python-is-python3
+</code></pre>
+
+<p>因此，我们将更改优先级并将 Python2 设置在顶部，以便应用程序可以将其作为默认版本调用。而 Python3 将位居第二。</p>
+
+<p>设置替代方案：</p>
+
+<pre><code>sudo update-alternatives --install /usr/bin/python python /usr/local/lib/python2.7 1
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
+</code></pre>
+
+<p>现在，检查默认版本：</p>
+
+<pre><code>python -V
+</code></pre>
+
+<p>将来，如果您想将 Python 3 设置为优先级列表中的默认版本或第一个版本，只需使用以下命令更新替代列表：</p>
+
+<pre><code>sudo update-alternatives --config python
+</code></pre>
+
+<p>您将获得类似于以下屏幕截图的内容，并可选择将一个设置为优先级。要进行选择，请在 Selection 列下输入与每个版本路径对应的数字，然后按 Enter 键。</p>
+
+<p>将 Python 2.7 或 3 设置为 Ubuntu 24.04 上的默认值</p>
+
+<h3>第 8 步：从 Ubuntu 2.7 卸载 Python 24.04</h3>
+
+<p>如果您的系统上不需要 Python 2.7，那么以下是将其完全删除的命令：</p>
+
+<pre><code>sudo rm -rf /usr/local/bin/python2.7
+sudo rm -rf /usr/local/bin/python2.7-config
+sudo rm -rf /usr/local/lib/python2.7
+sudo rm -rf /usr/local/include/python2.7
+sudo rm -rf /usr/local/share/man/man1/python2.7.1
+</code></pre>
+
+<p>删除在安装过程中创建的符号链接：</p>
+
+<pre><code>sudo rm /usr/local/bin/python2
+sudo rm /usr/local/bin/python
+</code></pre>
+
+<p>更新 update-alternatives 系统</p>
+
+<pre><code>sudo update-alternatives --remove python /usr/local/bin/python2.7
+</code></pre>
+
+<p>您可能希望将另一个 Python 版本设置为默认版本：</p>
+
+<pre><code>sudo update-alternatives --config python
+</code></pre>
+
+<p>删除 Python 2.7 pip 和其他相关工具</p>
+
+<pre><code>sudo rm /usr/local/bin/pip2.7
+sudo rm -rf /usr/local/lib/python2.7/site-packages
+</code></pre>
+
+<p>清理剩余文件</p>
+
+<pre><code>rm -rf ~/.local/lib/python2.7
+rm -rf ~/.local/bin/pip2
+rm -rf ~/.cache/pip
+</code></pre>
 ]]></content>
   </entry>
   
@@ -347,26 +509,6 @@ sudo ntpdate time.windows.com
 怂个几把，人生还能更坏吗？<br/>
 如果再不改变的话，就这样了，变不了了。<br/>
 干他妈的！艹！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 139]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2024/10/30/day-139/"/>
-    <updated>2024-10-30T17:48:02+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2024/10/30/day-139</id>
-    <content type="html"><![CDATA[<p>事态不利之时，<strong>静心为吉</strong>之象，不乱则不错。<br/>
-人要觉醒，就要经历这九关：<br/>
-怨天尤人，<br/>
-急于求成，<br/>
-孤立无援，<br/>
-深度思考，<br/>
-改变自己，<br/>
-接纳一切，<br/>
-倾尽全力，<br/>
-顺其自然，<br/>
-心如止水。<br/>
-想变厉害，要学会钝感力，屏蔽力，与自己和解，尽快把支离破碎的自己拼起来，从自卑、社恐、精神内耗的深渊中走出来。</p>
 ]]></content>
   </entry>
   

@@ -1,0 +1,145 @@
+---
+layout: post
+title: "How to install Python 2.7 on Ubuntu 24.04"
+date: 2025-04-08 23:14:16 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+机翻的文章，可能有错，建议看原文，链接：  
+
+[How to install Python 2.7 on Ubuntu 24.04](https://linux.how2shout.com/how-to-install-python-2-7-on-ubuntu-24-04-noble-lts-linux/)  
+
+Canonical 在长期 Ubuntu 20.04 Focal 之后放弃了对 Python 版本 2.x 的支持，以便为最新的 Python 3 版本腾出空间。这就是为什么我们没有使用其官方系统存储库在 Ubuntu 24.04 上安装 Python 2 的原因。此外，Python 开发人员也不再支持版本 2，但是，如果您的一些旧项目需要 Python 版本 2，那么在本文中，我们将学习如何在 Ubuntu 24.04上安装它来运行一些旧的应用程序。  
+
+
+第 1 步：打开命令终端  
+第 2 步：安装依赖项  
+第 3 步：下载 Python 2.7 源代码  
+第 4 步：在 Ubuntu 2.7 上编译和安装 Python 24.04  
+第 5 步：验证安装  
+~~第 6 步：为 Python 2.7 设置 pip~~  
+第 7 步：更改默认 Python 优先级  
+第 8 步：从 Ubuntu 2.7 卸载 Python 24.04  
+
+### 第 1 步：打开命令终端  
+在您的 Ubuntu 上访问终端，因为我们需要它来安装软件包，因此您应该对它以及命令行的工作原理有所了解。进入终端后，运行 system update 命令：  
+
+	sudo apt update 
+	(dg不要后面这一步，以防新版本的ubuntu有问题，安装不了博客)sudo apt upgrade
+
+### 第 2 步：安装依赖项  
+
+众所周知，Python 2.7 不再通过 Ubuntu 的默认系统存储库甚至流行的 PPA Dead Snake 存储库获得，因此在本文中，我们将使用其源文件对其进行编译。但是，在此之前，请安装一些基本的开发人员工具。  
+
+	sudo apt install -y build-essential checkinstall libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev
+
+
+### 第 3 步：下载 Python 2.7 源代码  
+现在，使用 wget 工具并从其官方网站下载 Python 2.7 的源代码，2.7 可用的最新版本是 2.7.18。
+
+	wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
+
+解压 ：  
+
+	tar -xvf Python-2.7.18.tgz
+	
+### 第 4 步：在 Ubuntu 2.7 上编译和安装 Python 24.04  
+解压后，首先切换到解压后的目录，然后按照给定的过程编译源码。  
+
+	cd Python-2.7.18
+
+	./configure --enable-optimizations
+
+编译安装 Python：  
+
+编译过程需要一些时间，所以请坐下来，让它完成。  
+
+	make -j16
+
+	sudo make install
+
+### 第 5 步：验证安装  
+安装“make”文件后，您的 Ubuntu 24.04 系统将安装 Python 2.7。要确认，只需通过运行给定的命令来检查版本：
+
+	python -V
+
+
+### ~~第 6 步：为 Python 2.7 设置 pip~~  
+~~在 Ubuntu 24.04 上安装 Python 2.7 后，您可能还需要 PIP 来管理库和包，因此要获取它，以下是命令：~~
+
+	~~sudo apt install curl~~  
+
+	~~curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py~~  
+
+	~~sudo python2.7 get-pip.py~~  
+
+~~验证 pip 安装：~~
+
+	~~pip2.7 --version~~
+
+
+### 第 7 步：更改默认 Python 优先级  
+如果您的 Ubuntu 2.7 Linux 上同时有 Python 3 和 24.04，则默认情况下系统会优先考虑 Python3，这就是为什么当我们运行“命令时，它会给出错误：  
+
+	Command 'python' not found, did you mean:
+	command 'python 3' from deb python3
+	command 'python' from deb python-is-python3
+	
+因此，我们将更改优先级并将 Python2 设置在顶部，以便应用程序可以将其作为默认版本调用。而 Python3 将位居第二。  
+
+设置替代方案：  
+
+	sudo update-alternatives --install /usr/bin/python python /usr/local/lib/python2.7 1
+
+	sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
+	
+现在，检查默认版本：  
+
+	python -V
+
+将来，如果您想将 Python 3 设置为优先级列表中的默认版本或第一个版本，只需使用以下命令更新替代列表：  
+
+	sudo update-alternatives --config python
+
+您将获得类似于以下屏幕截图的内容，并可选择将一个设置为优先级。要进行选择，请在 Selection 列下输入与每个版本路径对应的数字，然后按 Enter 键。  
+
+将 Python 2.7 或 3 设置为 Ubuntu 24.04 上的默认值  
+
+### 第 8 步：从 Ubuntu 2.7 卸载 Python 24.04  
+如果您的系统上不需要 Python 2.7，那么以下是将其完全删除的命令：
+
+	sudo rm -rf /usr/local/bin/python2.7
+	sudo rm -rf /usr/local/bin/python2.7-config
+	sudo rm -rf /usr/local/lib/python2.7
+	sudo rm -rf /usr/local/include/python2.7
+	sudo rm -rf /usr/local/share/man/man1/python2.7.1
+	
+删除在安装过程中创建的符号链接：  
+
+	sudo rm /usr/local/bin/python2
+	sudo rm /usr/local/bin/python
+
+更新 update-alternatives 系统  
+
+	sudo update-alternatives --remove python /usr/local/bin/python2.7
+
+您可能希望将另一个 Python 版本设置为默认版本：  
+
+	sudo update-alternatives --config python
+
+删除 Python 2.7 pip 和其他相关工具  
+
+	sudo rm /usr/local/bin/pip2.7
+	sudo rm -rf /usr/local/lib/python2.7/site-packages
+
+清理剩余文件  
+
+	rm -rf ~/.local/lib/python2.7
+	rm -rf ~/.local/bin/pip2
+	rm -rf ~/.cache/pip
+
+
+

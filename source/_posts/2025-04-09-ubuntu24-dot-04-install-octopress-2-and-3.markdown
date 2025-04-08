@@ -21,7 +21,7 @@ published: true
     ssh -T git@github.com
     
 [安装Python 2](https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/)  
-
+<!--more-->
 
     sudo apt update 
     

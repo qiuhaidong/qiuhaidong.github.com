@@ -17,7 +17,7 @@ published: true
 
 	/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
 
-
+<!--more-->
 安装 TLP：**虽然我试过没什么作用**，***只能用来看看充电状态***  
 
     sudo apt install tlp

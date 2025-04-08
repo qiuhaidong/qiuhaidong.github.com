@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: ubuntu-charge-protect | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/tags/ubuntu-charge-protect/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2025-04-08T18:36:58+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu24.04 设置充电保护]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/08/ubuntu-charge-protect/"/>
+    <updated>2025-04-08T18:11:10+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/08/ubuntu-charge-protect</id>
+    <content type="html"><![CDATA[<p>参考：</p>
+
+<p><a href="https://cn.linux-terminal.com/?p=7554">如何在 Ubuntu 22.04 和 24.04 中设置电池充电限制</a><br/>
+<a href="https://bbs.deepin.org/post/253376">笔记本充电阈值限制（以联想拯救者Y7000P2020H为例）</a></p>
+
+<p><strong>编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存</strong></p>
+
+<pre><code>/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+</code></pre>
+
+<p>安装 TLP：<strong>虽然我试过没什么作用</strong>，<strong><em>只能用来看看充电状态</em></strong></p>
+
+<pre><code>sudo apt install tlp
+sudo gedit /etc/tlp.conf
+</code></pre>
+
+<p>找到以下两行（Ctrl+F），取消注释（删除开头的#），然后根据需要更改数字(充电到百分之几)。<br/>
+<strong>DG：改了也没什么作用</strong></p>
+
+<pre><code>START_CHARGE_THRESH_BAT0=70
+STOP_CHARGE_THRESH_BAT0=80
+</code></pre>
+
+<p>保存<br/>
+运行命令<strong>检查充电状态</strong> ：</p>
+
+<pre><code>sudo tlp-stat -b
+</code></pre>
+
+<p><img src="https://storage.deepin.org/thread/202303052303521160_image.png" alt="" /></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,170 @@
+---
+layout: post
+title: "Ubuntu24.04 安装 Octopress2.0和3.0"
+date: 2025-04-09 03:07:13 +0800
+author: 丘海东 
+tags: Ubuntu24 Octopress
+comments: true
+categories: personal
+published: true
+---
+
+
+软件源是：主服务器  
+
+    git --version
+    sudo apt install git
+    git --version
+
+.ssh2和.ssh3（密码dg's nlsr）文件夹分别改名.shh，验证  
+
+    ssh -T git@github.com
+    
+[安装Python 2](https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/)  
+
+
+    sudo apt update 
+    
+    sudo apt install -y build-essential checkinstall libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev
+    
+    
+很长的一段命令执行提示  
+    
+    wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
+    
+或者自己已经下载保存了文件包  
+
+    tar -xvf Python-2.7.18.tgz
+    
+    cd Python-2.7.18
+    
+    ./configure --enable-optimizations
+    
+    make -j16
+    
+很长的一段，时间也很长，10分钟左右，耐心等待  
+
+    sudo make install
+    
+    python -V
+    
+返回上级目录  
+
+    cd ``
+    
+    
+更改优先级并将 Python2 设置在顶部，以便应用程序可以将其作为默认版本调用。而 Python3 将位居第二。  
+
+    sudo update-alternatives --install /usr/bin/python python /usr/local/lib/python2.7 1
+
+    sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
+    
+    python -V
+    
+    
+安装ruby  
+
+    ruby --version
+    
+到rvm官网(下面的命令可能有更新，看官网)  
+
+    sudo apt install gnupg2
+
+    gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    
+    sudo snap install curl #(注意，不要apt，要snap)
+    
+要很长时间，输出很多  
+    
+    
+先安装编辑器：  
+
+    sudo apt install gedit
+
+到这个网址：https://www.ipaddress.com/  
+去 Lookup any IP Address or Website 项，找到这个网址 raw.githubusercontent.com 的IP：
+以下面的格式，添加到这个文件 /etc/hosts。  
+
+    185.199.108.133  raw.githubusercontent.com
+    185.199.109.133  raw.githubusercontent.com
+    185.199.110.133  raw.githubusercontent.com
+    185.199.111.133  raw.githubusercontent.com
+    
+    
+    sudo gedit /etc/hosts
+    
+    
+    curl -sSL https://get.rvm.io | bash -s stable
+    
+安装完成，看看提示  
+
+    source /home/dong/.rvm/scripts/rvm
+    
+    rvm --version
+    
+ 
+    rvm pkg install openssl
+
+有可能会失败，估计是网络翻墙等的问题，看提示，多试几次，直到成功为止  
+
+    rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
+    
+    ruby --version
+    
+记得：终端-首选项-未命名-命令-勾选‘以登陆shell方式运行命令’，重启所有终端  
+
+    rvm use 2.6.9 --default
+    
+    
+    cd octopress/
+    
+    完整复制下面这行，要安装指定版本
+    gem install bundler -v 2.4.22
+    
+    
+dg，看提示，版本问题对应  
+    
+    
+    bundle install
+    
+    
+到这个文件，/home/dong/.rvm/gems/ruby-2.6.9/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss  
+
+    gedit /home/dong/.rvm/gems/ruby-2.6.9/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss
+
+
+改文件87行，To fix the error message, just change the line 87 from your “_deprecated-support.scss” file to this:  
+
+
+```
+    // A debug tool for checking browser support
+@mixin debug-support-matrix($experimental: true, $ie: true) {
+    @debug '#{"$moz-"}$experimental-support-for-mozilla'
+                 '#{"$webkit-"}$experimental-support-for-webkit'
+                 '#{"$opera-"}$experimental-support-for-opera'
+                 '#{"$microsoft-"}$experimental-support-for-microsoft'
+                 '#{"$khtml-"}$experimental-support-for-khtml';
+    @debug '#{"$ie6-"}$legacy-support-for-ie6'
+                 '#{"$ie7-"}$legacy-support-for-ie7'
+                 '#{"$ie8-"}$legacy-support-for-ie8';
+}
+```
+
+### Octopress 3.0
+```
+cd /haydnyau
+```
+```
+ruby --version
+rvm use 2.6.9 --default
+```
+```
+jekyll --version
+```
+确保安装正确  
+安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：  
+```
+gem install octopress
+```
+有时网络问题，多试几次，确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的  
+好了。

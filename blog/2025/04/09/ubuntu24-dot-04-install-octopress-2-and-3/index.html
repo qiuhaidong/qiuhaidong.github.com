@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Ubuntu24.04 安装 Octopress2.0和3.0 - 丘海东</title>g
+
+  
+  <meta name="description" content="软件源是：主服务器 git --version
+sudo apt install git
+git --version .ssh2和.ssh3（密码dg&rsquo;s nlsr）文件夹分别改名.shh，验证 ssh -T git@github.com 安装Python 2 sudo apt &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.useso.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">丘海东</a></h1>
+  
+    <h2>读书写字  热爱生活  ⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.baidu.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="qiuhaidong.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/categories/">Categories</a></li>
+  <li><a href="/tag-cloud/">Tags</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Ubuntu24.04 安装 Octopress2.0和3.0</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2025-04-09T03:07:13+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2025</span></span> <span class='time'>3:07 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>软件源是：主服务器</p>
+
+<pre><code>git --version
+sudo apt install git
+git --version
+</code></pre>
+
+<p>.ssh2和.ssh3（密码dg&rsquo;s nlsr）文件夹分别改名.shh，验证</p>
+
+<pre><code>ssh -T git@github.com
+</code></pre>
+
+<p><a href="https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/">安装Python 2</a></p>
+
+<pre><code>sudo apt update 
+
+sudo apt install -y build-essential checkinstall libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev
+</code></pre>
+
+<p>很长的一段命令执行提示</p>
+
+<pre><code>wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
+</code></pre>
+
+<p>或者自己已经下载保存了文件包</p>
+
+<pre><code>tar -xvf Python-2.7.18.tgz
+
+cd Python-2.7.18
+
+./configure --enable-optimizations
+
+make -j16
+</code></pre>
+
+<p>很长的一段，时间也很长，10分钟左右，耐心等待</p>
+
+<pre><code>sudo make install
+
+python -V
+</code></pre>
+
+<p>返回上级目录</p>
+
+<pre><code>cd ``
+</code></pre>
+
+<p>更改优先级并将 Python2 设置在顶部，以便应用程序可以将其作为默认版本调用。而 Python3 将位居第二。</p>
+
+<pre><code>sudo update-alternatives --install /usr/bin/python python /usr/local/lib/python2.7 1
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
+
+python -V
+</code></pre>
+
+<p>安装ruby</p>
+
+<pre><code>ruby --version
+</code></pre>
+
+<p>到rvm官网(下面的命令可能有更新，看官网)</p>
+
+<pre><code>sudo apt install gnupg2
+
+gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+sudo snap install curl #(注意，不要apt，要snap)
+</code></pre>
+
+<p>要很长时间，输出很多</p>
+
+<p>先安装编辑器：</p>
+
+<pre><code>sudo apt install gedit
+</code></pre>
+
+<p>到这个网址：<a href="https://www.ipaddress.com/">https://www.ipaddress.com/</a><br/>
+去 Lookup any IP Address or Website 项，找到这个网址 raw.githubusercontent.com 的IP：
+以下面的格式，添加到这个文件 /etc/hosts。</p>
+
+<pre><code>185.199.108.133  raw.githubusercontent.com
+185.199.109.133  raw.githubusercontent.com
+185.199.110.133  raw.githubusercontent.com
+185.199.111.133  raw.githubusercontent.com
+
+
+sudo gedit /etc/hosts
+
+
+curl -sSL https://get.rvm.io | bash -s stable
+</code></pre>
+
+<p>安装完成，看看提示</p>
+
+<pre><code>source /home/dong/.rvm/scripts/rvm
+
+rvm --version
+
+
+rvm pkg install openssl
+</code></pre>
+
+<p>有可能会失败，估计是网络翻墙等的问题，看提示，多试几次，直到成功为止</p>
+
+<pre><code>rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
+
+ruby --version
+</code></pre>
+
+<p>记得：终端-首选项-未命名-命令-勾选‘以登陆shell方式运行命令’，重启所有终端</p>
+
+<pre><code>rvm use 2.6.9 --default
+
+
+cd octopress/
+
+完整复制下面这行，要安装指定版本
+gem install bundler -v 2.4.22
+</code></pre>
+
+<p>dg，看提示，版本问题对应</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>到这个文件，/home/dong/.rvm/gems/ruby-2.6.9/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss</p>
+
+<pre><code>gedit /home/dong/.rvm/gems/ruby-2.6.9/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss
+</code></pre>
+
+<p>改文件87行，To fix the error message, just change the line 87 from your “_deprecated-support.scss” file to this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>// A debug tool for checking browser support
+</span><span class='line'>@mixin debug-support-matrix($experimental: true, $ie: true) {
+</span><span class='line'>@debug '#{"$moz-"}$experimental-support-for-mozilla'
+</span><span class='line'>             '#{"$webkit-"}$experimental-support-for-webkit'
+</span><span class='line'>             '#{"$opera-"}$experimental-support-for-opera'
+</span><span class='line'>             '#{"$microsoft-"}$experimental-support-for-microsoft'
+</span><span class='line'>             '#{"$khtml-"}$experimental-support-for-khtml';
+</span><span class='line'>@debug '#{"$ie6-"}$legacy-support-for-ie6'
+</span><span class='line'>             '#{"$ie7-"}$legacy-support-for-ie7'
+</span><span class='line'>             '#{"$ie8-"}$legacy-support-for-ie8';
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Octopress 3.0</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd /haydnyau</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby --version
+</span><span class='line'>rvm use 2.6.9 --default</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>jekyll --version</span></code></pre></td></tr></table></div></figure>
+
+
+<p>确保安装正确<br/>
+安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install octopress</span></code></pre></td></tr></table></div></figure>
+
+
+<p>有时网络问题，多试几次，确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的<br/>
+好了。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">丘海东</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2025-04-09T03:07:13+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2025</span></span> <span class='time'>3:07 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/personal/'>personal</a>
+  
+</span>
+
+
+      
+
+<span class="tags">
+  
+    <a class='tag' href='/tags/octopress/'>Octopress</a>, <a class='tag' href='/tags/ubuntu24/'>Ubuntu24</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/" title="Previous Post: How to install Python 2.7 on Ubuntu 24.04">&laquo; How to install Python 2.7 on Ubuntu 24.04</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2124/03/19/stock-market/" title="Next Post: 股市">股市 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2223/12/21/day-79/">知自己，识世界</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/">Ubuntu24.04 安装 Octopress2.0和3.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/">How to Install Python 2.7 on Ubuntu 24.04</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/08/ubuntu-charge-protect/">Ubuntu24.04 设置充电保护</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/08/day-150/">Day 150：但行好事，莫问前程</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/08/day-149/">Day 149：事物是复杂、多面的</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/07/boot-grub/">Ubuntu开机引导项</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/">windows11和Ubuntu24.04双系统，时间不对</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/07/day-148/">Day 148：博客又成功了</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/03/maybe-call-it-the-end/">好好生活：这个博客不定时停更</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/03/17/day-147/">Day 147：这三个月节奏都错了</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/01/27/henduoshishidushibeiaihewunai/">很多世事都是悲哀和无奈</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/01/23/renyurendeyuanfen-rucideqianbao/">人与人的缘分，如此的浅薄</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/12/23/day-146/">Day 146：获利和被套的心态、处理能力</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/12/19/day-145/">Day 145：第一性原理——本质</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/12/13/day-144/">Day 144：步步错，步步悟</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/11/23/day-143/">Day 143</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/11/20/day-142/">Day 142：对于“苦难”</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/11/11/day-141/">Day 141</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (376)</a></li>
+<li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Tags</h1>
+  <ul id="tag-cloud">
+    <li><a style="font-size: 120%" href="/tags/c-number/">C#</a></li>
+<li><a style="font-size: 120%" href="/tags/octopress/">Octopress</a></li>
+<li><a style="font-size: 120%" href="/tags/c/">c</a></li>
+<li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
+<li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
+<li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
+<li><a style="font-size: 128%" href="/tags/octopress/">octopress</a></li>
+<li><a style="font-size: 132%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 142%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 120%" href="/tags/python2-ubuntu/">python2-ubuntu</a></li>
+<li><a style="font-size: 140%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
+<li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
+<li><a style="font-size: 125%" href="/tags/she/">she</a></li>
+<li><a style="font-size: 128%" href="/tags/ssh/">ssh</a></li>
+<li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
+<li><a style="font-size: 132%" href="/tags/ubuntu/">ubuntu</a></li>
+<li><a style="font-size: 120%" href="/tags/ubuntu-charge-protect/">ubuntu-charge-protect</a></li>
+<li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
+
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/qiuhaidong">@qiuhaidong</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'qiuhaidong',
+            count: 1,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  <!--返回顶部开始-->
+<div id="full" style="width:30px; height:30px; position:fixed; right:13px; bottom:13px; z-index:100; text-align:center; background-color:transparent; cursor:pointer;">
+<a href="#" onclick="goTop();return false;"><img src="/images/top.png" border=0 alt="返回顶部"></a>
+</div>
+<script src="/javascripts/top.js" type="text/javascript"></script>
+<!--返回顶部结束-->
+
+
+  Copyright &copy; 2025 - 丘海东 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

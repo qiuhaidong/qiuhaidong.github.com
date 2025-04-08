@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-09T00:23:14+08:00</updated>
+  <updated>2025-04-09T03:23:14+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -37,6 +37,179 @@
 <li><p><strong>学习</strong>：股市、金融知识，关注世事、时局，了解行业、公司。</p></li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu24.04 安装 Octopress2.0和3.0]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/"/>
+    <updated>2025-04-09T03:07:13+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3</id>
+    <content type="html"><![CDATA[<p>软件源是：主服务器</p>
+
+<pre><code>git --version
+sudo apt install git
+git --version
+</code></pre>
+
+<p>.ssh2和.ssh3（密码dg&rsquo;s nlsr）文件夹分别改名.shh，验证</p>
+
+<pre><code>ssh -T git@github.com
+</code></pre>
+
+<p><a href="https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/">安装Python 2</a></p>
+
+<pre><code>sudo apt update 
+
+sudo apt install -y build-essential checkinstall libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev
+</code></pre>
+
+<p>很长的一段命令执行提示</p>
+
+<pre><code>wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
+</code></pre>
+
+<p>或者自己已经下载保存了文件包</p>
+
+<pre><code>tar -xvf Python-2.7.18.tgz
+
+cd Python-2.7.18
+
+./configure --enable-optimizations
+
+make -j16
+</code></pre>
+
+<p>很长的一段，时间也很长，10分钟左右，耐心等待</p>
+
+<pre><code>sudo make install
+
+python -V
+</code></pre>
+
+<p>返回上级目录</p>
+
+<pre><code>cd ``
+</code></pre>
+
+<p>更改优先级并将 Python2 设置在顶部，以便应用程序可以将其作为默认版本调用。而 Python3 将位居第二。</p>
+
+<pre><code>sudo update-alternatives --install /usr/bin/python python /usr/local/lib/python2.7 1
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
+
+python -V
+</code></pre>
+
+<p>安装ruby</p>
+
+<pre><code>ruby --version
+</code></pre>
+
+<p>到rvm官网(下面的命令可能有更新，看官网)</p>
+
+<pre><code>sudo apt install gnupg2
+
+gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+sudo snap install curl #(注意，不要apt，要snap)
+</code></pre>
+
+<p>要很长时间，输出很多</p>
+
+<p>先安装编辑器：</p>
+
+<pre><code>sudo apt install gedit
+</code></pre>
+
+<p>到这个网址：<a href="https://www.ipaddress.com/">https://www.ipaddress.com/</a><br/>
+去 Lookup any IP Address or Website 项，找到这个网址 raw.githubusercontent.com 的IP：
+以下面的格式，添加到这个文件 /etc/hosts。</p>
+
+<pre><code>185.199.108.133  raw.githubusercontent.com
+185.199.109.133  raw.githubusercontent.com
+185.199.110.133  raw.githubusercontent.com
+185.199.111.133  raw.githubusercontent.com
+
+
+sudo gedit /etc/hosts
+
+
+curl -sSL https://get.rvm.io | bash -s stable
+</code></pre>
+
+<p>安装完成，看看提示</p>
+
+<pre><code>source /home/dong/.rvm/scripts/rvm
+
+rvm --version
+
+
+rvm pkg install openssl
+</code></pre>
+
+<p>有可能会失败，估计是网络翻墙等的问题，看提示，多试几次，直到成功为止</p>
+
+<pre><code>rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
+
+ruby --version
+</code></pre>
+
+<p>记得：终端-首选项-未命名-命令-勾选‘以登陆shell方式运行命令’，重启所有终端</p>
+
+<pre><code>rvm use 2.6.9 --default
+
+
+cd octopress/
+
+完整复制下面这行，要安装指定版本
+gem install bundler -v 2.4.22
+</code></pre>
+
+<p>dg，看提示，版本问题对应</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>到这个文件，/home/dong/.rvm/gems/ruby-2.6.9/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss</p>
+
+<pre><code>gedit /home/dong/.rvm/gems/ruby-2.6.9/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss
+</code></pre>
+
+<p>改文件87行，To fix the error message, just change the line 87 from your “_deprecated-support.scss” file to this:</p>
+
+<pre><code>    // A debug tool for checking browser support
+@mixin debug-support-matrix($experimental: true, $ie: true) {
+    @debug '#{"$moz-"}$experimental-support-for-mozilla'
+                 '#{"$webkit-"}$experimental-support-for-webkit'
+                 '#{"$opera-"}$experimental-support-for-opera'
+                 '#{"$microsoft-"}$experimental-support-for-microsoft'
+                 '#{"$khtml-"}$experimental-support-for-khtml';
+    @debug '#{"$ie6-"}$legacy-support-for-ie6'
+                 '#{"$ie7-"}$legacy-support-for-ie7'
+                 '#{"$ie8-"}$legacy-support-for-ie8';
+}
+</code></pre>
+
+<h3>Octopress 3.0</h3>
+
+<pre><code>cd /haydnyau
+</code></pre>
+
+<pre><code>ruby --version
+rvm use 2.6.9 --default
+</code></pre>
+
+<pre><code>jekyll --version
+</code></pre>
+
+<p>确保安装正确<br/>
+安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：<br/>
+<code>
+gem install octopress
+</code>
+有时网络问题，多试几次，确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的<br/>
+好了。</p>
 ]]></content>
   </entry>
   
@@ -237,23 +410,6 @@ STOP_CHARGE_THRESH_BAT0=80
 </code></pre>
 
 <p><img src="https://storage.deepin.org/thread/202303052303521160_image.png" alt="" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 150：但行好事，莫问前程]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/08/day-150/"/>
-    <updated>2025-04-08T02:03:26+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/08/day-150</id>
-    <content type="html"><![CDATA[<p>过年时，我们和大坡队打篮球赛，学生先打第一节，落后十几分，在总得分才四十来分的情况下，大概率都是追不回来了。<br/>
-但是，之后我们这几个人上场，第二第三节，就追回来了，而且最后还赢了。</p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/refs/heads/source/source/images/%E4%BD%86%E8%A1%8C%E5%A5%BD%E4%BA%8B%EF%BC%8C%E8%8E%AB%E9%97%AE%E5%89%8D%E7%A8%8B.jpg" alt="但行好事，莫问前程" /></p>
-
-<p>我也是常常觉得我的家境，看不到希望。<br/>
-确实也是。<br/>
-我妈，就什么结果也不想，该怎么做就怎么做。<br/>
-那么，我也应以无所谓的心态，去面对，去做事，无心插柳，坦然面对一切结果。</p>
 ]]></content>
   </entry>
   

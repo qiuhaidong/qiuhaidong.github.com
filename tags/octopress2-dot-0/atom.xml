@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: octopress2.0 | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress2-dot-0/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-09T00:23:14+08:00</updated>
+  <updated>2025-04-09T03:23:14+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -131,7 +131,7 @@ ok<br/>
 </span><span class='line'>提示：  
 </span><span class='line'>&lt;/code&gt;
 </span><span class='line'>Command &lsquo;curl&rsquo; not found, but can be installed with:
-</span><span class='line'>sudo apt install curl</span></code></pre></td></tr></table></div></figure></p>
+</span><span class='line'>dg不要这样安装sudo apt install curl</span></code></pre></td></tr></table></div></figure></p>
 
 <h3>注意: <a href="https://qiuhaidong.github.io/blog/2023/09/01/install-curl/">安装新版本的curl</a></h3>
 
@@ -141,7 +141,7 @@ ok<br/>
 
 找不到命令 “curl”，但可以通过以下软件包安装它：
 sudo snap install curl  # version 8.1.2, or
-sudo apt  install curl  # version 7.81.0-1ubuntu1.13
+dg不要这样安装sudo apt  install curl  # version 7.81.0-1ubuntu1.13
 输入 “snap info curl” 以查看更多版本。
 
 dong@dong-Ubuntu:~$ sudo snap install curl
@@ -149,7 +149,7 @@ dong@dong-Ubuntu:~$ sudo snap install curl
 
 <h3>不要下面这个了:</h3>
 
-<pre><code>sudo apt install curl
+<pre><code>dg不要这样安装sudo apt install curl
 curl -sSL https://get.rvm.io | bash -s stable
 </code></pre>
 

@@ -3,7 +3,7 @@ layout: post
 title: "How to install Python 2.7 on Ubuntu 24.04"
 date: 2025-04-08 23:14:16 +0800
 author: 丘海东 
-tags: daily
+tags: python2-ubuntu
 comments: true
 categories: personal
 published: true

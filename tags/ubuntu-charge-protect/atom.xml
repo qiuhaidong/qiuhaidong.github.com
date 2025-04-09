@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: ubuntu-charge-protect | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/ubuntu-charge-protect/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-09T17:33:30+08:00</updated>
+  <updated>2025-04-09T17:47:28+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -18,12 +18,7 @@
     <link href="https://qiuhaidong.github.io/blog/2025/04/08/ubuntu-charge-protect/"/>
     <updated>2025-04-08T18:11:10+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2025/04/08/ubuntu-charge-protect</id>
-    <content type="html"><![CDATA[<p>参考：</p>
-
-<p><a href="https://cn.linux-terminal.com/?p=7554">如何在 Ubuntu 22.04 和 24.04 中设置电池充电限制</a><br/>
-<a href="https://bbs.deepin.org/post/253376">笔记本充电阈值限制（以联想拯救者Y7000P2020H为例）</a></p>
-
-<p><strong>编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存</strong></p>
+    <content type="html"><![CDATA[<p><strong>编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存</strong></p>
 
 <pre><code>/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
 </code></pre>
@@ -58,6 +53,10 @@ STOP_CHARGE_THRESH_BAT0=80
 </code></pre>
 
 <p><img src="https://storage.deepin.org/thread/202303052303521160_image.png" alt="" /></p>
+
+<p>参考：
+<a href="https://cn.linux-terminal.com/?p=7554">如何在 Ubuntu 22.04 和 24.04 中设置电池充电限制</a><br/>
+<a href="https://bbs.deepin.org/post/253376">笔记本充电阈值限制（以联想拯救者Y7000P2020H为例）</a></p>
 ]]></content>
   </entry>
   

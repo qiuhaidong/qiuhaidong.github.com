@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-09T17:33:30+08:00</updated>
+  <updated>2025-04-09T17:47:28+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,11 +14,17 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Ubuntu24.04 安装 Octopress2.0和3.0]]></title>
+    <title type="html"><![CDATA[Ubuntu 24.04 安装 Octopress2.0和3.0]]></title>
     <link href="https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/"/>
     <updated>2025-04-09T03:07:13+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3</id>
-    <content type="html"><![CDATA[<p>软件源是：主服务器</p>
+    <content type="html"><![CDATA[<p>软件源是：主服务器<br/>
+参考<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">Ubuntu22.04的安装</a><br/>
+把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig、及其他.sh脚本文件等，复制过来。<br/>
+依赖：python2，ruby2.6.9</p>
+
+<!--more-->
+
 
 <pre><code>git --version
 sudo apt install git
@@ -31,9 +37,6 @@ git --version
 </code></pre>
 
 <p><a href="https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/">安装Python 2</a></p>
-
-<!--more-->
-
 
 <pre><code>sudo apt update 
 

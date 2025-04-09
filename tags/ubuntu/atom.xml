@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: ubuntu | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/ubuntu/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-09T17:33:30+08:00</updated>
+  <updated>2025-04-09T17:47:28+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -22,6 +22,9 @@
 
 <p>选项 2：使用图形工具<br/>
 对于那些不喜欢 Linux 命令的人，有一个流行的免费开放工具 Grub Customizer，它提供了完成这项工作的图形选项。</p>
+
+<!--more-->
+
 
 <p>许多 Linux（例如 Arch、Debian、Fedora 和 RHEL 9）在其系统存储库中包含 Grub 定制器。然而，由于脚本编写问题（尽管现已修复），Ubuntu 自 22.04 以来已将其从系统存储库中删除。</p>
 
@@ -45,9 +48,8 @@ sudo apt-get install grub-customizer
     <link href="https://qiuhaidong.github.io/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/"/>
     <updated>2025-04-07T06:59:28+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu</id>
-    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a></p>
-
-<p>先在ubuntu下更新一下时间，确保时间无误：</p>
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a><br/>
+先在ubuntu下更新一下时间，确保时间无误：</p>
 
 <pre><code>sudo apt-get install ntpdate
 sudo ntpdate time.windows.com

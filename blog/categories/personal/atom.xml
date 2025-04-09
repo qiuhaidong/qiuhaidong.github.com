@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-09T17:33:30+08:00</updated>
+  <updated>2025-04-09T17:47:28+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -41,11 +41,17 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Ubuntu24.04 安装 Octopress2.0和3.0]]></title>
+    <title type="html"><![CDATA[Ubuntu 24.04 安装 Octopress2.0和3.0]]></title>
     <link href="https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/"/>
     <updated>2025-04-09T03:07:13+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3</id>
-    <content type="html"><![CDATA[<p>软件源是：主服务器</p>
+    <content type="html"><![CDATA[<p>软件源是：主服务器<br/>
+参考<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">Ubuntu22.04的安装</a><br/>
+把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig、及其他.sh脚本文件等，复制过来。<br/>
+依赖：python2，ruby2.6.9</p>
+
+<!--more-->
+
 
 <pre><code>git --version
 sudo apt install git
@@ -58,9 +64,6 @@ git --version
 </code></pre>
 
 <p><a href="https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/">安装Python 2</a></p>
-
-<!--more-->
-
 
 <pre><code>sudo apt update 
 
@@ -225,10 +228,10 @@ gem install octopress
 
 <p><a href="https://linux.how2shout.com/how-to-install-python-2-7-on-ubuntu-24-04-noble-lts-linux/">How to install Python 2.7 on Ubuntu 24.04</a></p>
 
-<p>Canonical 在长期 Ubuntu 20.04 Focal 之后放弃了对 Python 版本 2.x 的支持，以便为最新的 Python 3 版本腾出空间。这就是为什么我们没有使用其官方系统存储库在 Ubuntu 24.04 上安装 Python 2 的原因。此外，Python 开发人员也不再支持版本 2，但是，如果您的一些旧项目需要 Python 版本 2，那么在本文中，我们将学习如何在 Ubuntu 24.04上安装它来运行一些旧的应用程序。</p>
-
 <!--more-->
 
+
+<p>Canonical 在长期 Ubuntu 20.04 Focal 之后放弃了对 Python 版本 2.x 的支持，以便为最新的 Python 3 版本腾出空间。这就是为什么我们没有使用其官方系统存储库在 Ubuntu 24.04 上安装 Python 2 的原因。此外，Python 开发人员也不再支持版本 2，但是，如果您的一些旧项目需要 Python 版本 2，那么在本文中，我们将学习如何在 Ubuntu 24.04上安装它来运行一些旧的应用程序。</p>
 
 <p>第 1 步：打开命令终端<br/>
 第 2 步：安装依赖项<br/>
@@ -386,12 +389,7 @@ rm -rf ~/.cache/pip
     <link href="https://qiuhaidong.github.io/blog/2025/04/08/ubuntu-charge-protect/"/>
     <updated>2025-04-08T18:11:10+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2025/04/08/ubuntu-charge-protect</id>
-    <content type="html"><![CDATA[<p>参考：</p>
-
-<p><a href="https://cn.linux-terminal.com/?p=7554">如何在 Ubuntu 22.04 和 24.04 中设置电池充电限制</a><br/>
-<a href="https://bbs.deepin.org/post/253376">笔记本充电阈值限制（以联想拯救者Y7000P2020H为例）</a></p>
-
-<p><strong>编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存</strong></p>
+    <content type="html"><![CDATA[<p><strong>编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存</strong></p>
 
 <pre><code>/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
 </code></pre>
@@ -426,6 +424,10 @@ STOP_CHARGE_THRESH_BAT0=80
 </code></pre>
 
 <p><img src="https://storage.deepin.org/thread/202303052303521160_image.png" alt="" /></p>
+
+<p>参考：
+<a href="https://cn.linux-terminal.com/?p=7554">如何在 Ubuntu 22.04 和 24.04 中设置电池充电限制</a><br/>
+<a href="https://bbs.deepin.org/post/253376">笔记本充电阈值限制（以联想拯救者Y7000P2020H为例）</a></p>
 ]]></content>
   </entry>
   

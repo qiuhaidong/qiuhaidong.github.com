@@ -141,7 +141,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/">Ubuntu24.04 安装 Octopress2.0和3.0</a></h1>
+      <h1 class="entry-title"><a href="/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/">Ubuntu 24.04 安装 Octopress2.0和3.0</a></h1>
     
     
       <p class="meta">
@@ -157,19 +157,10 @@
   </header>
 
 
-  <div class="entry-content"><p>软件源是：主服务器</p>
-
-<pre><code>git --version
-sudo apt install git
-git --version
-</code></pre>
-
-<p>.ssh2和.ssh3（密码dg&rsquo;s nlsr）文件夹分别改名.shh，验证</p>
-
-<pre><code>ssh -T git@github.com
-</code></pre>
-
-<p><a href="https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/">安装Python 2</a></p>
+  <div class="entry-content"><p>软件源是：主服务器<br/>
+参考<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">Ubuntu22.04的安装</a><br/>
+把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig、及其他.sh脚本文件等，复制过来。<br/>
+依赖：python2，ruby2.6.9</p>
 
 </div>
   
@@ -207,8 +198,6 @@ git --version
 
 <p><a href="https://linux.how2shout.com/how-to-install-python-2-7-on-ubuntu-24-04-noble-lts-linux/">How to install Python 2.7 on Ubuntu 24.04</a></p>
 
-<p>Canonical 在长期 Ubuntu 20.04 Focal 之后放弃了对 Python 版本 2.x 的支持，以便为最新的 Python 3 版本腾出空间。这就是为什么我们没有使用其官方系统存储库在 Ubuntu 24.04 上安装 Python 2 的原因。此外，Python 开发人员也不再支持版本 2，但是，如果您的一些旧项目需要 Python 版本 2，那么在本文中，我们将学习如何在 Ubuntu 24.04上安装它来运行一些旧的应用程序。</p>
-
 </div>
   
   
@@ -241,12 +230,7 @@ git --version
   </header>
 
 
-  <div class="entry-content"><p>参考：</p>
-
-<p><a href="https://cn.linux-terminal.com/?p=7554">如何在 Ubuntu 22.04 和 24.04 中设置电池充电限制</a><br/>
-<a href="https://bbs.deepin.org/post/253376">笔记本充电阈值限制（以联想拯救者Y7000P2020H为例）</a></p>
-
-<p><strong>编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存</strong></p>
+  <div class="entry-content"><p><strong>编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存</strong></p>
 
 <pre><code>/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
 </code></pre>
@@ -370,22 +354,12 @@ git --version
 <p>选项 2：使用图形工具<br/>
 对于那些不喜欢 Linux 命令的人，有一个流行的免费开放工具 Grub Customizer，它提供了完成这项工作的图形选项。</p>
 
-<p>许多 Linux（例如 Arch、Debian、Fedora 和 RHEL 9）在其系统存储库中包含 Grub 定制器。然而，由于脚本编写问题（尽管现已修复），Ubuntu 自 22.04 以来已将其从系统存储库中删除。</p>
-
-<p>要在 Ubuntu 中安装 Grub 定制器，请打开终端（Ctrl+Alt+T）并一一运行以下命令，从开发者的 PPA 中获取它。</p>
-
-<pre><code>sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-sudo apt-get update
-sudo apt-get install grub-customizer
-</code></pre>
-
-<p>然后，启动该工具并导航到“常规设置”选项卡。接下来，选择预定义条目或先前启动的条目作为默认值。最后，单击“保存”按钮应用更改。</p>
-
-<p><strong><em>还可以设置等待的秒数</em></strong></p>
-
-<p><img src="https://linux-terminal.com/common-images/os-kernel-boot-default-ubuntu-linux/grubcustomizer-defaultos.webp" alt="使用图形工具修改Ubuntu开机引导项" /></p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2025/04/07/boot-grub/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -412,9 +386,8 @@ sudo apt-get install grub-customizer
   </header>
 
 
-  <div class="entry-content"><p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a></p>
-
-<p>先在ubuntu下更新一下时间，确保时间无误：</p>
+  <div class="entry-content"><p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a><br/>
+先在ubuntu下更新一下时间，确保时间无误：</p>
 
 <pre><code>sudo apt-get install ntpdate
 sudo ntpdate time.windows.com
@@ -484,7 +457,7 @@ sudo ntpdate time.windows.com
       </li>
     
       <li class="post">
-        <a href="/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/">Ubuntu24.04 安装 Octopress2.0和3.0</a>
+        <a href="/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/">Ubuntu 24.04 安装 Octopress2.0和3.0</a>
       </li>
     
       <li class="post">

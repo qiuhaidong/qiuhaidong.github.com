@@ -16,7 +16,7 @@ published: true
 
     sudo gedit /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
 
-把脚本添加到启动应用程序里（系统自带的，按win键找到），之后开机时，改数值为1  
+之后开机时，执行，改数值为1  
 <!--more-->
 
 

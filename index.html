@@ -251,6 +251,13 @@ git --version
 <pre><code>/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
 </code></pre>
 
+<p>编写一个battery-protect.sh脚本（名字随便），添加命令：</p>
+
+<pre><code>sudo gedit /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+</code></pre>
+
+<p>把脚本添加到启动应用程序里（系统自带的，按win键找到），之后开机时，改数值为1</p>
+
 </div>
   
   

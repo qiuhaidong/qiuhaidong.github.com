@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-09T17:47:28+08:00</updated>
+  <updated>2025-04-09T23:47:59+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -399,7 +399,7 @@ rm -rf ~/.cache/pip
 <pre><code>sudo gedit /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
 </code></pre>
 
-<p>把脚本添加到启动应用程序里（系统自带的，按win键找到），之后开机时，改数值为1</p>
+<p>之后开机时，执行，改数值为1</p>
 
 <!--more-->
 

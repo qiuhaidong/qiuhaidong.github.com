@@ -16,8 +16,16 @@ published: true
 **编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存**  
 
 	/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+	
+编写一个battery-protect.sh脚本（名字随便），添加命令：  
 
+    sudo gedit /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+
+把脚本添加到启动应用程序里（系统自带的，按win键找到），之后开机时，改数值为1  
 <!--more-->
+
+
+
 安装 TLP：**虽然我试过没什么作用**，***只能用来看看充电状态***  
 
     sudo apt install tlp

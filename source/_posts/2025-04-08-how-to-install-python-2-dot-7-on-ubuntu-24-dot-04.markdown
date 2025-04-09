@@ -11,9 +11,9 @@ published: true
 机翻的文章，可能有错，建议看原文，链接：  
 
 [How to install Python 2.7 on Ubuntu 24.04](https://linux.how2shout.com/how-to-install-python-2-7-on-ubuntu-24-04-noble-lts-linux/)  
-
-Canonical 在长期 Ubuntu 20.04 Focal 之后放弃了对 Python 版本 2.x 的支持，以便为最新的 Python 3 版本腾出空间。这就是为什么我们没有使用其官方系统存储库在 Ubuntu 24.04 上安装 Python 2 的原因。此外，Python 开发人员也不再支持版本 2，但是，如果您的一些旧项目需要 Python 版本 2，那么在本文中，我们将学习如何在 Ubuntu 24.04上安装它来运行一些旧的应用程序。  
 <!--more-->
+Canonical 在长期 Ubuntu 20.04 Focal 之后放弃了对 Python 版本 2.x 的支持，以便为最新的 Python 3 版本腾出空间。这就是为什么我们没有使用其官方系统存储库在 Ubuntu 24.04 上安装 Python 2 的原因。此外，Python 开发人员也不再支持版本 2，但是，如果您的一些旧项目需要 Python 版本 2，那么在本文中，我们将学习如何在 Ubuntu 24.04上安装它来运行一些旧的应用程序。  
+
 
 第 1 步：打开命令终端  
 第 2 步：安装依赖项  

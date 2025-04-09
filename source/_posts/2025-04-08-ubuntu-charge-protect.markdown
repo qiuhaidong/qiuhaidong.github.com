@@ -8,11 +8,6 @@ comments: true
 categories: personal
 published: true
 ---
-参考：
-
-[如何在 Ubuntu 22.04 和 24.04 中设置电池充电限制](https://cn.linux-terminal.com/?p=7554)  
-[笔记本充电阈值限制（以联想拯救者Y7000P2020H为例）](https://bbs.deepin.org/post/253376)  
-
 **编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存**  
 
 	/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
@@ -44,4 +39,7 @@ published: true
 	
 ![](https://storage.deepin.org/thread/202303052303521160_image.png)  
 
+参考：
+[如何在 Ubuntu 22.04 和 24.04 中设置电池充电限制](https://cn.linux-terminal.com/?p=7554)  
+[笔记本充电阈值限制（以联想拯救者Y7000P2020H为例）](https://bbs.deepin.org/post/253376)  
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubuntu24.04 安装 Octopress2.0和3.0"
+title: "Ubuntu 24.04 安装 Octopress2.0和3.0"
 date: 2025-04-09 03:07:13 +0800
 author: 丘海东 
 tags: Ubuntu24 Octopress
@@ -8,9 +8,11 @@ comments: true
 categories: personal
 published: true
 ---
-
-
 软件源是：主服务器  
+参考[Ubuntu22.04的安装](https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/)  
+把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig、及其他.sh脚本文件等，复制过来。  
+依赖：python2，ruby2.6.9  
+<!--more-->
 
     git --version
     sudo apt install git
@@ -21,7 +23,7 @@ published: true
     ssh -T git@github.com
     
 [安装Python 2](https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/)  
-<!--more-->
+
 
     sudo apt update 
     

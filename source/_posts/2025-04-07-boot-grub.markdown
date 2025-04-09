@@ -12,7 +12,7 @@ published: true
 
 选项 2：使用图形工具  
 对于那些不喜欢 Linux 命令的人，有一个流行的免费开放工具 Grub Customizer，它提供了完成这项工作的图形选项。  
-
+<!--more-->
 许多 Linux（例如 Arch、Debian、Fedora 和 RHEL 9）在其系统存储库中包含 Grub 定制器。然而，由于脚本编写问题（尽管现已修复），Ubuntu 自 22.04 以来已将其从系统存储库中删除。  
 
 要在 Ubuntu 中安装 Grub 定制器，请打开终端（Ctrl+Alt+T）并一一运行以下命令，从开发者的 PPA 中获取它。  

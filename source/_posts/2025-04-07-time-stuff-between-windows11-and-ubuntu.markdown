@@ -8,9 +8,7 @@ comments: true
 categories: personal
 published: true
 ---
-
 [新博文](https://blog.csdn.net/weixin_42066135/article/details/144369653)  
-
 先在ubuntu下更新一下时间，确保时间无误：  
 
     sudo apt-get install ntpdate

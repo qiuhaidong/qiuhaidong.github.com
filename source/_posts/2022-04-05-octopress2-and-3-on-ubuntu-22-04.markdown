@@ -7,6 +7,7 @@ tags: octopress2.0
 comments: true
 categories: tech-octopress
 ---
+[Ubuntu24.04安装](https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/)  
 以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。  
 依赖：python2，ruby2.6.9  
 ### Octopress 2.0

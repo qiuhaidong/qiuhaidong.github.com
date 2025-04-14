@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-09T23:47:59+08:00</updated>
+  <updated>2025-04-14T23:25:12+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -37,6 +37,20 @@
 <li><p><strong>学习</strong>：股市、金融知识，关注世事、时局，了解行业、公司。</p></li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[股市，错过两个大机会]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/14/lost-two-chances/"/>
+    <updated>2025-04-14T23:13:35+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/14/lost-two-chances</id>
+    <content type="html"><![CDATA[<p><a href="https://wx1.sinaimg.cn/large/780bc50fgy1i0gqu8iu2pj21401mhqd6.jpg"></a><br/>
+过年时股灾（经常过年时股市都不好，以后注意提前躲避），因为没有下跌到深指的极限支撑，之后反弹了，我没有跟进，错过了。<br/>
+前几天，中美（全球）关税战，全球股市大跌，我把纳指提前出了，但是没敢接回，又错过了一个绝佳的机会。当然还有一个原因，我这些天生活作息不行，日夜颠倒，白天睡觉，没看盘。<br/>
+还是得加强执行力。<br/>
+<strong>1. 空仓等股灾。</strong><br/>
+<strong>2. 股灾敢进场。</strong></p>
 ]]></content>
   </entry>
   
@@ -381,53 +395,6 @@ sudo rm -rf /usr/local/lib/python2.7/site-packages
 rm -rf ~/.local/bin/pip2
 rm -rf ~/.cache/pip
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu24.04 设置充电保护]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/08/ubuntu-charge-protect/"/>
-    <updated>2025-04-08T18:11:10+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/08/ubuntu-charge-protect</id>
-    <content type="html"><![CDATA[<p><strong>编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存</strong></p>
-
-<pre><code>/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
-</code></pre>
-
-<p>编写一个battery-protect.sh脚本（名字随便），添加命令：</p>
-
-<pre><code>sudo gedit /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
-</code></pre>
-
-<p>之后开机时，执行，改数值为1</p>
-
-<!--more-->
-
-
-<p>安装 TLP：<strong>虽然我试过没什么作用</strong>，<strong><em>只能用来看看充电状态</em></strong></p>
-
-<pre><code>sudo apt install tlp
-sudo gedit /etc/tlp.conf
-</code></pre>
-
-<p>找到以下两行（Ctrl+F），取消注释（删除开头的#），然后根据需要更改数字(充电到百分之几)。<br/>
-<strong>DG：改了也没什么作用</strong></p>
-
-<pre><code>START_CHARGE_THRESH_BAT0=70
-STOP_CHARGE_THRESH_BAT0=80
-</code></pre>
-
-<p>保存<br/>
-运行命令<strong>检查充电状态</strong> ：</p>
-
-<pre><code>sudo tlp-stat -b
-</code></pre>
-
-<p><img src="https://storage.deepin.org/thread/202303052303521160_image.png" alt="" /></p>
-
-<p>参考：
-<a href="https://cn.linux-terminal.com/?p=7554">如何在 Ubuntu 22.04 和 24.04 中设置电池充电限制</a><br/>
-<a href="https://bbs.deepin.org/post/253376">笔记本充电阈值限制（以联想拯救者Y7000P2020H为例）</a></p>
 ]]></content>
   </entry>
   

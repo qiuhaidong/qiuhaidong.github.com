@@ -9,6 +9,7 @@ categories: personal
 published: true
 ---
 ![](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/refs/heads/source/source/images/%E8%82%A1%E5%B8%82.jpg)  
+![](https://wx2.sinaimg.cn/mw690/780bc50fgy1i0gxgcxd0pj21401mhn1i.jpg)  
 
 
 **过年时股灾**（经常过年时股市都不好，以后注意提前躲避），因为没有下跌到深指的极限支撑，我**贪心还会下跌**，之后反弹了，我觉得价格升了，没有跟进，错过了。  

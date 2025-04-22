@@ -9,10 +9,12 @@ categories: personal
 published: true
 ---
 [原文：Ubuntu引导修复grub](https://shuyeidc.com/wp/75597.html)  
-1. 制作一个Ubuntu系统盘，try Ubuntu  
+制作一个Ubuntu系统盘，try Ubuntu  
 
 	sudo add-apt-repository ppa:yannubuntu/boot-repair
+	
 	sudo apt-get update
+	
 	sudo apt-get install boot-repair
 	
 注意，添加软件源才能安装  

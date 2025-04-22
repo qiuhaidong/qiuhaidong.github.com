@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-23T04:55:44+08:00</updated>
+  <updated>2025-04-23T04:58:49+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -65,8 +65,9 @@
 打开软件，选择“推荐修复”，等待完成<br/>
 好了，开机</p>
 
-<pre><code>sudo update-grub
-</code></pre>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-grub</span></code></pre></td></tr></table></div></figure>
+
 
 <p>用grub customizer，调整一下</p>
 ]]></content>

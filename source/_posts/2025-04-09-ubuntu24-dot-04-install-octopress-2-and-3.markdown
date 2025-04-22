@@ -9,7 +9,7 @@ categories: personal
 published: true
 ---
 软件源是：主服务器  
-参考[Ubuntu22.04的安装](https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/)  
+参考[Ubuntu22.04的安装](https://qiuhaidong.github.io/blog/2022/04/05/octopress2-and-3-on-ubuntu-22-04/)  
 把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig、及其他.sh脚本文件等，复制过来。  
 依赖：python2，ruby2.6.9  
 <!--more-->

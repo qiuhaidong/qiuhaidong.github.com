@@ -145,6 +145,50 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2025/04/23/ubuntu-24-04-boot-repair/">Ubuntu24.04 修复引导</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2025-04-23T04:26:33+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2025</span></span> <span class='time'>4:26 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://shuyeidc.com/wp/75597.html">原文：Ubuntu引导修复grub</a><br/>
+1. 制作一个Ubuntu系统盘，try Ubuntu</p>
+
+<pre><code>sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install boot-repair
+</code></pre>
+
+<p>注意，添加软件源才能安装<br/>
+打开软件，选择“推荐修复”，等待完成<br/>
+好了，开机</p>
+
+<pre><code>sudo update-grub
+</code></pre>
+
+<p>用grub customizer，调整一下</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2025/04/22/ubuntu-25-dot-04/">Ubuntu25.04</a></h1>
     
     
@@ -381,50 +425,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2025/04/08/ubuntu-charge-protect/">Ubuntu24.04 设置充电保护</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2025-04-08T18:11:10+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2025</span></span> <span class='time'>6:11 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><strong>编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存</strong></p>
-
-<pre><code>/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
-</code></pre>
-
-<p>编写一个battery-protect.sh脚本（名字随便），添加命令：</p>
-
-<pre><code>sudo gedit /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
-</code></pre>
-
-<p>之后开机时，执行，改数值为1</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2025/04/08/ubuntu-charge-protect/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -445,6 +445,10 @@
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/23/ubuntu-24-04-boot-repair/">Ubuntu24.04 修复引导</a>
       </li>
     
       <li class="post">
@@ -515,10 +519,6 @@
         <a href="/blog/2025/01/23/renyurendeyuanfen-rucideqianbao/">人与人的缘分，如此的浅薄</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/12/23/day-146/">Day 146：获利和被套的心态、处理能力</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -526,7 +526,7 @@
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (381)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (382)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

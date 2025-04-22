@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-22T14:57:07+08:00</updated>
+  <updated>2025-04-23T04:40:58+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -46,6 +46,30 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Ubuntu24.04 修复引导]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/23/ubuntu-24-04-boot-repair/"/>
+    <updated>2025-04-23T04:26:33+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/23/ubuntu-24-04-boot-repair</id>
+    <content type="html"><![CDATA[<p><a href="https://shuyeidc.com/wp/75597.html">原文：Ubuntu引导修复grub</a><br/>
+1. 制作一个Ubuntu系统盘，try Ubuntu</p>
+
+<pre><code>sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install boot-repair
+</code></pre>
+
+<p>注意，添加软件源才能安装<br/>
+打开软件，选择“推荐修复”，等待完成<br/>
+好了，开机</p>
+
+<pre><code>sudo update-grub
+</code></pre>
+
+<p>用grub customizer，调整一下</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Ubuntu25.04]]></title>
     <link href="https://qiuhaidong.github.io/blog/2025/04/22/ubuntu-25-dot-04/"/>
     <updated>2025-04-22T14:52:44+08:00</updated>
@@ -67,28 +91,6 @@
 <p>回想过去，犯了挺多错误，承认、反省，但不沉溺懊恼，放下，前行。<br/>
 世界复杂多面。<br/>
 确定目标，做事。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 152]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/19/day-152/"/>
-    <updated>2025-04-19T03:15:54+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/19/day-152</id>
-    <content type="html"><![CDATA[<p>守相，藏拙，凝神，扩型，藏锋，控语，修心，慎独，惜时</p>
-
-<!--more-->
-
-
-<p>守相，不随便笑，表情管理<br/>
-藏拙<br/>
-藏锋，私事不说<br/>
-凝神，眼神坚定<br/>
-扩型，抬头挺胸<br/>
-控语，不乱说，先思考<br/>
-修心，内心平和，不被打扰<br/>
-慎独，独处也行为良好<br/>
-惜时</p>
 ]]></content>
   </entry>
   

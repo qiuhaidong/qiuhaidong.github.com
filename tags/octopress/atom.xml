@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Octopress | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/octopress/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-23T04:46:37+08:00</updated>
+  <updated>2025-04-23T04:55:44+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -19,7 +19,7 @@
     <updated>2025-04-09T03:07:13+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3</id>
     <content type="html"><![CDATA[<p>软件源是：主服务器<br/>
-参考<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">Ubuntu22.04的安装</a><br/>
+参考<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-and-3-on-ubuntu-22-04/">Ubuntu22.04的安装</a><br/>
 把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig、及其他.sh脚本文件等，复制过来。<br/>
 依赖：python2，ruby2.6.9</p>
 

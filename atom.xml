@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-23T04:46:37+08:00</updated>
+  <updated>2025-04-23T04:55:44+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -53,12 +53,13 @@
     <content type="html"><![CDATA[<p><a href="https://shuyeidc.com/wp/75597.html">原文：Ubuntu引导修复grub</a><br/>
 制作一个Ubuntu系统盘，try Ubuntu</p>
 
-<pre><code>sudo add-apt-repository ppa:yannubuntu/boot-repair
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:yannubuntu/boot-repair
+</span><span class='line'>sudo apt-get update   
+</span><span class='line'>sudo apt-get install boot-repair</span></code></pre></td></tr></table></div></figure>
 
-sudo apt-get update
-
-sudo apt-get install boot-repair
-</code></pre>
 
 <p>注意，添加软件源才能安装<br/>
 打开软件，选择“推荐修复”，等待完成<br/>
@@ -155,7 +156,7 @@ sudo apt-get install boot-repair
     <updated>2025-04-09T03:07:13+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3</id>
     <content type="html"><![CDATA[<p>软件源是：主服务器<br/>
-参考<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">Ubuntu22.04的安装</a><br/>
+参考<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-and-3-on-ubuntu-22-04/">Ubuntu22.04的安装</a><br/>
 把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig、及其他.sh脚本文件等，复制过来。<br/>
 依赖：python2，ruby2.6.9</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-23T04:46:37+08:00</updated>
+  <updated>2025-04-23T04:55:44+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -51,16 +51,13 @@
     <updated>2025-04-23T04:26:33+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2025/04/23/ubuntu-24-04-boot-repair</id>
     <content type="html"><![CDATA[<p><a href="https://shuyeidc.com/wp/75597.html">原文：Ubuntu引导修复grub</a><br/>
-制作一个Ubuntu系统盘，try Ubuntu</p>
-
-<pre><code>sudo add-apt-repository ppa:yannubuntu/boot-repair
-
-sudo apt-get update
-
-sudo apt-get install boot-repair
-</code></pre>
-
-<p>注意，添加软件源才能安装<br/>
+制作一个Ubuntu系统盘，try Ubuntu<br/>
+<code>
+    sudo add-apt-repository ppa:yannubuntu/boot-repair
+    sudo apt-get update
+    sudo apt-get install boot-repair
+</code>
+注意，添加软件源才能安装<br/>
 打开软件，选择“推荐修复”，等待完成<br/>
 好了，开机</p>
 

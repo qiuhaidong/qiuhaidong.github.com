@@ -8,7 +8,11 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="参考官方说明 attention:有些commend不适合ubuntu，要区分 参见另一篇blog install mono,(mono-complete and monodevelop): sudo apt-get install mono-complete monodevelop edit: &hellip;">
+  <meta name="description" content="感谢教我帮我的老总和黎先生
+要用到Windows Server的ISO文件
+管理服务器，添加角色和功能 选择服务器角色：AD域，DNS，.NET Framework 指定备用源路径 \…ISO…\sources\sxs
+done.
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +70,101 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/23/install-net-framework-on-windows-server/">Install .NET Framework on Windows Server</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-23T10:47:01+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>10:47 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>感谢教我帮我的老总和黎先生<br/>
+要用到Windows Server的ISO文件<br/>
+管理服务器，添加角色和功能</p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E6%B7%BB%E5%8A%A0%E8%A7%92%E8%89%B2%E5%92%8C%E5%8A%9F%E8%83%BD.png" alt="添加角色和功能" /></p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E5%9F%BA%E4%BA%8E%E8%A7%92%E8%89%B2%E6%88%96%E5%9F%BA%E4%BA%8E%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%89%E8%A3%85.png" alt="基于角色或功能的安装" /></p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B1%A0%E9%80%89%E6%8B%A9%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="从服务器池中选择服务器" /></p>
+
+<p>选择服务器角色：AD域，DNS，.NET Framework</p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/AD%E5%9F%9F%2CDNS%2C.NET.png" alt="选择服务器角色AD域DNS" /></p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/NET%20Framework.png" alt=".NET Framework" /></p>
+
+<p>指定备用源路径</p>
+
+<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/windows%20server%20net/%E6%8C%87%E5%AE%9A%E5%A4%87%E7%94%A8%E6%BA%90%E8%B7%AF%E5%BE%84.png" alt="指定备用源路径" /></p>
+
+<p>\…ISO…\sources\sxs<br/>
+done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/22/SSL-cannot-push-pull-keys-https-issue/">路径权限错误，无法pull Push: Not Read From Remote Repository. Correct Access Rights and the Repository Exists.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-22T16:58:26+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>4:58 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS认证方式改动</a>
+关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
+
+<pre><code>fatal: Could not read from remote repository. 
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
+
+<p>SSH keys不用动</p>
+
+<pre><code>gedit octopress/.git/config
+</code></pre>
+
+<p>把<code>url = git@github.com:qiuhaidong/qiuhaidong.github.com.git</code><br/>
+改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code><br/>
+<a href="http://bbs.csdn.net/topics/390909877">参见此Blog，9楼</a><br/>
+done.<br/>
+<code>pull</code>or<code>push</code>时或会报错，但不影响功能，多用几次就好了。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -505,105 +604,6 @@ S7 Edge：弧形屏幕的误触问题</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/04/12/enjoy-alone/">一个人的醇享时光</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-04-12T15:25:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>3:25 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>不记得是谁写的了</h1>
-
-<p>人群之外的生活<br/>
-也能过得优雅有品味<br/>
-就算每个人都是一座孤岛<br/>
-也要是鸟语花香的那座</p>
-
-<p>一个人看电影<br/>
-因为喜欢<br/>
-所以不一定需要人陪伴<br/>
-不同于两个人闹腾腾的约会<br/>
-时刻上演激烈的爆米花争夺战<br/>
-一个人看的<br/>
-那才叫电影嘛</p>
-
-<p>一个人吃饭<br/>
-都说聚餐是一群人的狂欢<br/>
-其实哪有什么孤单不孤单<br/>
-一个人吃饭<br/>
-不用吵嚷着争执谁做什么晚餐<br/>
-把锅碗瓢盆都掀翻<br/>
-也不用神烦邻座的忌辣厌酸<br/>
-好好享受美食<br/>
-就是对生活的尊重</p>
-
-<p>一个人的周末旅行<br/>
-穿上最美的行头<br/>
-选个最喜欢的地方<br/>
-穷游<br/>
-暴走<br/>
-拒绝为与同伴路径不一致发飙<br/>
-拒绝在美好的风景里吵吵闹闹<br/>
-也不牵谁的手<br/>
-在路上感受不一样的风景<br/>
-经历什么都是人生的收获</p>
-
-<p>一个人的下午<br/>
-拆开心爱的零食<br/>
-一口清脆的“咔嚓”<br/>
-这个丢掉高跟鞋<br/>
-不理会手机来电的下午<br/>
-好像变得有点不一样</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/04/01/be-alone/">习惯一个人</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-04-01T20:29:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>8:29 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>独自面对自己的世界。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/43">&larr; Older</a>
@@ -626,6 +626,14 @@ S7 Edge：弧形屏幕的误触问题</p>
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/23/day-154/">Day 154：因为睡觉错过交易点</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/23/mans-status/">男人的状态</a>
       </li>
     
       <li class="post">
@@ -692,14 +700,6 @@ S7 Edge：弧形屏幕的误触问题</p>
         <a href="/blog/2025/03/17/day-147/">Day 147：这三个月节奏都错了</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/01/27/henduoshishidushibeiaihewunai/">很多世事都是悲哀和无奈</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2025/01/23/renyurendeyuanfen-rucideqianbao/">人与人的缘分，如此的浅薄</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -707,7 +707,7 @@ S7 Edge：弧形屏幕的误触问题</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (382)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (384)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (65)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

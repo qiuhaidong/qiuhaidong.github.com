@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: ubuntu | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/ubuntu/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-24T10:05:45+08:00</updated>
+  <updated>2025-04-24T13:32:21+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -63,21 +63,14 @@ sudo ntpdate time.windows.com
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Day 148：博客又成功了]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/07/day-148/"/>
-    <updated>2025-04-07T05:28:17+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/07/day-148</id>
-    <content type="html"><![CDATA[<p>心平气和，不急不躁。<br/>
-按照提示，搜索解决。</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[ubuntu安装deb文件]]></title>
     <link href="https://qiuhaidong.github.io/blog/2023/06/16/install-deb/"/>
     <updated>2023-06-16T01:38:49+08:00</updated>
     <id>https://qiuhaidong.github.io/blog/2023/06/16/install-deb</id>
     <content type="html"><![CDATA[<p>Ubuntu下安装deb包的命令总结</p>
+
+<!--more-->
+
 
 <p><a href="https://blog.csdn.net/cui_shuang_xi/article/details/90904929">原文链接</a></p>
 

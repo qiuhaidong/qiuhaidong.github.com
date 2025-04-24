@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-24T10:05:45+08:00</updated>
+  <updated>2025-04-24T13:32:21+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[知自己，识世界]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2223/12/21/day-79/"/>
+    <link href="https://qiuhaidong.github.io/blog/2223/12/21/day-2223/"/>
     <updated>2223-12-21T01:37:47+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2223/12/21/day-79</id>
+    <id>https://qiuhaidong.github.io/blog/2223/12/21/day-2223</id>
     <content type="html"><![CDATA[<p><strong>正视缺点  付诸行动  做人简单  积极  有趣</strong><br/>
 <strong>饮食 作息 运动 生活 工作 - 回归正常</strong></p>
 
@@ -64,17 +64,6 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[男人的状态]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/23/mans-status/"/>
-    <updated>2025-04-23T17:24:47+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/23/mans-status</id>
-    <content type="html"><![CDATA[<p>钱、工作、朋友、爱情，没有了还可以再找，生来本一无所有，何惧从头再来。<br/>
-在繁华中自律，在落魄中自愈，谋生的路上不抛弃良知，谋爱的路上不放弃尊严。<br/>
-可以低头认错，但不能认输，在崩溃中前行，在泥泞中重生，这才是男人最好的状态。</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Ubuntu24.04 修复引导]]></title>
     <link href="https://qiuhaidong.github.io/blog/2025/04/23/ubuntu-24-04-boot-repair/"/>
     <updated>2025-04-23T04:26:33+08:00</updated>
@@ -93,6 +82,22 @@ sudo apt-get install boot-repair
 sudo update-grub
 </code>
 用grub customizer，调整一下</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 153：行动]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/21/day-153/"/>
+    <updated>2025-04-21T01:16:58+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/21/day-153</id>
+    <content type="html"><![CDATA[<p>为自己的欲望付诸行动。</p>
+
+<!--more-->
+
+
+<p>回想过去，犯了挺多错误，承认、反省，但不沉溺懊恼，放下，前行。<br/>
+世界复杂多面。<br/>
+确定目标，做事。</p>
 ]]></content>
   </entry>
   

@@ -6,5 +6,5 @@ author: 丘海东
 tags: daily
 comments: true
 categories: personal
-published: false
+published: true
 ---

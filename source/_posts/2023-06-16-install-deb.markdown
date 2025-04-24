@@ -9,6 +9,7 @@ categories: tech
 published: true
 ---
 Ubuntu下安装deb包的命令总结  
+<!--more-->
 
 [原文链接](https://blog.csdn.net/cui_shuang_xi/article/details/90904929)  
 

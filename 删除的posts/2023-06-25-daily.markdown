@@ -14,5 +14,5 @@ published: true
 你已经长大了  
 一些难过的情绪  
 要学会自己消化  
-![](https://wx4.sinaimg.cn/large/780bc50fgy1hfav91cf0dj23k02cyhdt.jpg)  
+
 ![](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/master/images/control.jpg)

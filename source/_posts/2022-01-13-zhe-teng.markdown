@@ -6,17 +6,11 @@ tags: rough octopress3.0
 categories: personal
 ---
 强迫症发作  
-Ubuntu  
-20.04  21.10  12.04  16.04  18.04  20.04  
-Ocotpress  
-2.0  3.0  
-jekyll  
-theme  
+Ubuntu：20.04  21.10  12.04  16.04  18.04  
+Ocotpress：2.0  3.0  ， jekyll：theme  
 折腾了好几天，没日没夜，不眠不休，吃喝不管，性格使然  
 好了，好好吃个早餐，睡觉  
-买票，回家  
-过年  
-又一年  
+买票，回家  过年  又一年  
   
 ![qq](https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF4SNHNw/TmEUgtj9EK6.7V8ajmQrED*vOD1GW9P6z*YHWzdix5ugnQZhaqS7C.z080deNWFg4xOMjEHv1aasu8tzxYvAtb1t9yau2Mq4OpNK*fQIgtU!/r)  
 

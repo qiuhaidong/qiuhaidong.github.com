@@ -5,7 +5,7 @@ date: 2025-04-09 03:07:13 +0800
 author: 丘海东 
 tags: Ubuntu24 Octopress
 comments: true
-categories: personal
+categories: tech
 published: true
 ---
 软件源是：主服务器  

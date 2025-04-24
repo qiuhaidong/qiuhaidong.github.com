@@ -5,7 +5,7 @@ date: 2025-04-08 18:11:10 +0800
 author: 丘海东 
 tags: ubuntu-charge-protect
 comments: true
-categories: personal
+categories: tech
 published: true
 ---
 **编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存**  

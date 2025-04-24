@@ -5,7 +5,7 @@ date: 2025-04-23 04:26:33 +0800
 author: 丘海东 
 tags: ubuntu-boot-repair
 comments: true
-categories: personal
+categories: tech
 published: true
 ---
 [原文：Ubuntu引导修复grub](https://shuyeidc.com/wp/75597.html)  

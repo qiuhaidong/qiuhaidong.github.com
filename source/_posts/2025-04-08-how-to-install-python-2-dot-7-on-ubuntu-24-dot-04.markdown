@@ -5,7 +5,7 @@ date: 2025-04-08 23:14:16 +0800
 author: 丘海东 
 tags: python2-ubuntu
 comments: true
-categories: personal
+categories: tech
 published: true
 ---
 机翻的文章，可能有错，建议看原文，链接：  

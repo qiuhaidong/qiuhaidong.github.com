@@ -5,7 +5,7 @@ date: 2025-04-07 06:59:28 +0800
 author: 丘海东 
 tags: ubuntu
 comments: true
-categories: personal
+categories: tech
 published: true
 ---
 [新博文](https://blog.csdn.net/weixin_42066135/article/details/144369653)  

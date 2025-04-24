@@ -5,7 +5,7 @@ date: 2025-04-07 07:32:27 +0800
 author: 丘海东 
 tags: ubuntu
 comments: true
-categories: personal
+categories: tech
 published: true
 ---
 [配置 Ubuntu 24.04 中默认引导的操作系统或内核](https://cn.linux-terminal.com/?p=8402)  

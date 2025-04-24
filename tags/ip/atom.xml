@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: ip | 丘海东]]></title>
+  <link href="https://qiuhaidong.github.io/tags/ip/atom.xml" rel="self"/>
+  <link href="https://qiuhaidong.github.io/"/>
+  <updated>2025-04-25T00:07:03+08:00</updated>
+  <id>https://qiuhaidong.github.io/</id>
+  <author>
+    <name><![CDATA[丘海东]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[改hosts文件，指定IP]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/24/ipaddress/"/>
+    <updated>2025-04-24T23:47:10+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/24/ipaddress</id>
+    <content type="html"><![CDATA[<p>网站无法访问，则改hosts文件，指定IP<br/>
+到：<a href="https://www.ipaddress.com/">https://www.ipaddress.com</a>，找到网站的IP<br/>
+<code>
+sudo gedit /etc/hosts
+</code>
+格式：IP (空格) 域名，如：<code>140.82.114.36      ssh.github.com</code></p>
+]]></content>
+  </entry>
+  
+</feed>

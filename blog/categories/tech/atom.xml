@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tech | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-04-24T23:45:45+08:00</updated>
+  <updated>2025-04-25T00:07:03+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -14,181 +14,184 @@
 
   
   <entry>
-    <title type="html"><![CDATA[ERROR: We're Doing an SSH Key audit.Please Visit to Approve This Key So We Know It's Safe.]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/08/01/SSH%20key%20audit/"/>
-    <updated>2023-08-01T01:16:09+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/08/01/SSH key audit</id>
-    <content type="html"><![CDATA[<p>错误代码：</p>
-
-<pre><code>dong@Ubuntu:~$ ./launch.sh 
-ERROR: We're doing an SSH key audit.
-Reason: unverified automatically (private key found in a public repository)
-Please visit https://github.com/settings/keys/………………
-to approve this key so we know it's safe.
-
-Fingerprint:
-SHA256:......
-
-fatal: 无法读取远程仓库。
-
-请确认您有正确的访问权限并且仓库存在。
-</code></pre>
-
-<p>解决方法：<br/>
-重新生成 ssh key<br/>
-或者<br/>
-到Github账号里，<a href="https://github.com/settings/keys/...">https://github.com/settings/keys/...</a>  Approve 验证原来的 ssh key</p>
+    <title type="html"><![CDATA[改hosts文件，指定IP]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/24/ipaddress/"/>
+    <updated>2025-04-24T23:47:10+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/24/ipaddress</id>
+    <content type="html"><![CDATA[<p>网站无法访问，则改hosts文件，指定IP<br/>
+到：<a href="https://www.ipaddress.com/">https://www.ipaddress.com</a>，找到网站的IP<br/>
+<code>
+sudo gedit /etc/hosts
+</code>
+格式：IP (空格) 域名，如：<code>140.82.114.36      ssh.github.com</code></p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Ubuntu安装deb文件]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2023/06/16/install-deb/"/>
-    <updated>2023-06-16T01:38:49+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2023/06/16/install-deb</id>
-    <content type="html"><![CDATA[<p>Ubuntu下安装deb包的命令总结</p>
+    <title type="html"><![CDATA[Ubuntu24.04 修复引导]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/23/ubuntu-24-04-boot-repair/"/>
+    <updated>2025-04-23T04:26:33+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/23/ubuntu-24-04-boot-repair</id>
+    <content type="html"><![CDATA[<p><a href="https://shuyeidc.com/wp/75597.html">原文：Ubuntu引导修复grub</a><br/>
+制作一个Ubuntu系统盘，try Ubuntu<br/>
+<code>
+sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install boot-repair
+</code>
+注意，添加软件源才能安装<br/>
+打开软件，选择“推荐修复”，等待完成<br/>
+好了，开机<br/>
+<code>
+sudo update-grub
+</code>
+用grub customizer，调整一下</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu 24.04 安装 Octopress2.0和3.0]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/"/>
+    <updated>2025-04-09T03:07:13+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3</id>
+    <content type="html"><![CDATA[<p>软件源是：主服务器<br/>
+参考<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-and-3-on-ubuntu-22-04/">Ubuntu22.04的安装</a><br/>
+把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig、及其他.sh脚本文件等，复制过来。<br/>
+依赖：python2，ruby2.6.9</p>
 
 <!--more-->
 
 
-<p><a href="https://blog.csdn.net/cui_shuang_xi/article/details/90904929">原文链接</a></p>
-
-<p>在Ubuntu下安装deb包需要使用dpkg命令.</p>
-
-<p>Dpkg 的普通用法：</p>
-
-<pre><code>sudo dpkg -i &lt;package.deb&gt;  
+<pre><code>git --version
+sudo apt install git
+git --version
 </code></pre>
 
-<p>安装一个 Debian 软件包，如你手动下载的文件。</p>
+<p>.ssh2和.ssh3（密码dg&rsquo;s nlsr）文件夹分别改名.shh，验证</p>
 
-<pre><code>sudo dpkg -c &lt;package.deb&gt;  
+<pre><code>ssh -T git@github.com
 </code></pre>
 
-<p>列出 <package.deb> 的内容。</p>
+<p><a href="https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/">安装Python 2</a></p>
 
-<pre><code>sudo dpkg -I &lt;package.deb&gt;  
+<pre><code>sudo apt update 
+
+sudo apt install -y build-essential checkinstall libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev
 </code></pre>
 
-<p>从 <package.deb> 中提取包裹信息。</p>
+<p>很长的一段命令执行提示</p>
 
-<pre><code>sudo dpkg -r  
+<pre><code>wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
 </code></pre>
 
-<p>移除一个已安装的包裹。</p>
+<p>或者自己已经下载保存了文件包</p>
 
-<pre><code>sudo dpkg -P  
+<pre><code>tar -xvf Python-2.7.18.tgz
+
+cd Python-2.7.18
+
+./configure --enable-optimizations
+
+make -j16
 </code></pre>
 
-<p>完全清除一个已安装的包裹。和 remove 不同的是，remove 只是删掉数据和可执行文件，purge 另外还删除所有的配制文件。</p>
+<p>很长的一段，时间也很长，10分钟左右，耐心等待</p>
 
-<pre><code>sudo dpkg -L  
+<pre><code>sudo make install
+
+python -V
 </code></pre>
 
-<p>列出 安装的所有文件清单。同时请看 dpkg -c 来检查一个 .deb 文件的内容。</p>
+<p>返回上级目录</p>
 
-<pre><code>sudo dpkg -s  
+<pre><code>cd ``
 </code></pre>
 
-<p>显示已安装包裹的信息。同时请看 apt-cache 显示 Debian 存档中的包裹信息，以及 dpkg -I 来显示从一个 .deb 文件中提取的包裹信息。</p>
+<p>更改优先级并将 Python2 设置在顶部，以便应用程序可以将其作为默认版本调用。而 Python3 将位居第二。</p>
 
-<pre><code>sudo dpkg-reconfigure  
+<pre><code>sudo update-alternatives --install /usr/bin/python python /usr/local/lib/python2.7 1
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
+
+python -V
 </code></pre>
 
-<p>重新配制一个已经安装的包裹，如果它使用的是 debconf (debconf 为包裹安装提供了一个统一的配制界面)。</p>
+<p>安装ruby</p>
 
-<p>如果安装过程中出现问题,可以先使用命令:</p>
-
-<pre><code>sudo apt-get update  
+<pre><code>ruby --version
 </code></pre>
 
-<p>更新后再执行上面的命令.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Lightdm Ubuntu 桌面显示管理器]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/05/20/lightdm/"/>
-    <updated>2022-05-20T14:17:18+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/05/20/lightdm</id>
-    <content type="html"><![CDATA[<p>转载于：<a href="https://www.cnblogs.com/SimbaBao/p/5791458.html">ubuntu中lightdm以及不能看到界面的一些解决方案</a></p>
+<p>到rvm官网(下面的命令可能有更新，看官网)</p>
 
-<p>在解决了我的ubuntu界面密码登录无限循环的问题后，终于可以用google深入的了解一下了，从之前的了解得知，ubuntu在X版本后使用了lightDM一个全新的linux桌面显示管理器，在wiki中对LightDM的描述中，LightDM配置在以下文件夹中：<br/>
-（1）<code>/usr/share/lightdm/lightdm.conf.d/*.conf</code><br/>
-（此为系统提供的配置文件，用户不可编辑）<br/>
-（2）<code>/etc/lightdm/lightdm.conf.d/*.conf</code><br/>
-（3）<code>/etc/lightdm/lightdm.conf</code><br/>
-（2、3这两个配置文件，系统管理员可以覆写）<br/>
-在此之后看到了一个关于解决不能看见界面的办法：<br/>
-（1）使用<code>Ctrl+alt+F1</code>，进入文本终端<br/>
-（2）<code>sudo stop lightdm</code> ，停止lightdm界面<br/>
-（3）<code>sudo start lightdm</code> ，开始lightdm界面<br/>
-（4）<code>sudo start gdm</code> ，登录gdm管理器<br/>
-（5）<code>sudo dpkg-reconfigure lightdm</code> ，设置管理器的系统默认值<br/>
-注：本文部分资料参阅<a href="https://wiki.ubuntu.com/LightDM">https://wiki.ubuntu.com/LightDM</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SONY Xperia 1 IV]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/05/12/sony-xperia-1-iv/"/>
-    <updated>2022-05-12T23:32:47+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/05/12/sony-xperia-1-iv</id>
-    <content type="html"><![CDATA[<h3>設計，做工，質感</h3>
+<pre><code>sudo apt install gnupg2
 
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/bqQfVz5yrrGYSXMvKr.cqROdOmbClZ*DMdJPsPnN1L5YrvF2xOQnc.Eeikb6M7zu4Cf8WHI2W5cq1htROaCNLuGCktplDnxcKGziF2wcajo!/r" alt="SONY Xperia 1 IV" /></p>
+gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
-<p><a href="https://video.sonystyle.com.cn/customerTrans/5c3f07699e9c757a4d576bb240fa61e0/efe5091-180a8436cc4-0003-cd2e-0e7-91d59.mp4">SONY Xperia 1 IV 官方宣傳視頻</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[You Can Use the Sass-convert Command to Automatically Fix Most cases---Ruby 不同版本]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/"/>
-    <updated>2022-03-26T01:05:55+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases</id>
-    <content type="html"><![CDATA[<p>octopress-2.0，ruby-<strong>2.3.1</strong>，ubuntu20.04，可以运行（修改这里后）<br/>
-octopress-2.0，ruby-<strong>2.5.9</strong>，ubuntu20.04，可以运行（修改这里后）<br/>
-octopress-2.0，ruby-<strong>2.6.9</strong>，ubuntu20.04，可以运行（修改这里后）<br/>
-octopress-<strong>3.0</strong>，ruby-<strong>2.5.9</strong>，ubuntu20.04，可以运行（無需修改）<br/>
-octopress-<strong>3.0</strong>，ruby-<strong>2.6.9</strong>，ubuntu20.04，可以运行（無需修改）</p>
-
-<p>換了版本要重新安裝octopress3.0：</p>
-
-<pre><code>gem install octopress
+sudo snap install curl #(注意，不要apt，要snap)
 </code></pre>
 
-<p>octopress-2.0-3.0，ruby-<strong>3.1.1</strong>，ubuntu20.04，都無法运行。</p>
+<p>要很长时间，输出很多</p>
 
-<p><a href="https://stackoverflow.com/questions/35949660/compass-sass-deprecation-warning">原网页</a><br/>
-<a href="http://cache.baiducontent.com/c?m=Xxdd763vX7YjRNeeOiILGLerW1Lrc_ceIQ3hCNMB9gwdzDHZoy_PikcN75GYpR9DFB3vxBUcejQkaSvlN3gZEfAPpNN-08FVQIDyZHTNJgPwSgoB3NKL4_GS4nx_XrCC-BUaRNwAuECMpWgq8wxzkIpLErbpEqlwK68Qi6soQwepLTgid54lohbxMlnl6PQpNH2t__da7lDpAsRwCb6EY-y40SooyRN5jX-9ufBiajUS0lec_A47rZ0vRgOYP12W&amp;p=8d7d8e0285cc43dd08e297780f568f&amp;newp=c273c00586cc42a95aa9c7710f408f231610db2151d3da146b82c825d7331b001c3bbfb42220150ed3c6796204af4259e8f033783d0923a3dda5c91d9fb4c57479cc&amp;s=2a38a4a9316c49e5&amp;user=baidu&amp;fm=sc&amp;query=You+can+use+the+sass%2Dconvert+command+to+automatically+fix+most+cases%2E&amp;qid=c0e3498b0000d650&amp;p1=1">百度缓存网页</a></p>
+<p>先安装编辑器：</p>
 
-<p>I just installed and Compass &amp; Sass as described here.</p>
-
-<p>I got the following warning when I ran <code>compass watch</code> for the first time. What exactly does it mean? What should I do to fix it, do I need to do anything?</p>
-
-<pre><code>$ (master) compass watch
-&gt;&gt;&gt; Compass is watching for changes. Press Ctrl-C to Stop.
-DEPRECATION WARNING on line 87 of /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
-in a future version of Sass. To preserve the current behavior, use quotes:
-
-  unquote('"$moz-"#{$experimental-support-for-mozilla} "$webkit-"#{$experimental-support-for-webkit} "$opera-"#{$experimental-support-for-opera} "$microsoft-"#{$experimental-support-for-microsoft} "$khtml-"#{$experimental-support-for-khtml}')
-
-You can use the sass-convert command to automatically fix most cases.
-
-DEPRECATION WARNING on line 92 of /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss: #{} interpolation near operators will be simplified
-in a future version of Sass. To preserve the current behavior, use quotes:
-
-  unquote('"$ie6-"#{$legacy-support-for-ie6} "$ie7-"#{$legacy-support-for-ie7} "$ie8-"#{$legacy-support-for-ie8}')
-
-You can use the sass-convert command to automatically fix most cases.
-
-    write css/styles.css
+<pre><code>sudo apt install gedit
 </code></pre>
 
-<h4>1 Answer :</h4>
+<p>到这个网址：<a href="https://www.ipaddress.com/">https://www.ipaddress.com/</a><br/>
+去 Lookup any IP Address or Website 项，找到这个网址 raw.githubusercontent.com 的IP：
+以下面的格式，添加到这个文件 /etc/hosts。</p>
 
-<p>To fix the error message, just change the <strong><em>line 87</em></strong> from your &ldquo;<strong>_deprecated-support.scss</strong>&rdquo; file to this:</p>
+<pre><code>185.199.108.133  raw.githubusercontent.com
+185.199.109.133  raw.githubusercontent.com
+185.199.110.133  raw.githubusercontent.com
+185.199.111.133  raw.githubusercontent.com
+
+
+sudo gedit /etc/hosts
+
+
+curl -sSL https://get.rvm.io | bash -s stable
+</code></pre>
+
+<p>安装完成，看看提示</p>
+
+<pre><code>source /home/dong/.rvm/scripts/rvm
+
+rvm --version
+
+
+rvm pkg install openssl
+</code></pre>
+
+<p>有可能会失败，估计是网络翻墙等的问题，看提示，多试几次，直到成功为止</p>
+
+<pre><code>rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr
+
+ruby --version
+</code></pre>
+
+<p>记得：终端-首选项-未命名-命令-勾选‘以登陆shell方式运行命令’，重启所有终端</p>
+
+<pre><code>rvm use 2.6.9 --default
+
+
+cd octopress/
+
+完整复制下面这行，要安装指定版本
+gem install bundler -v 2.4.22
+</code></pre>
+
+<p>dg，看提示，版本问题对应</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<p>到这个文件，/home/dong/.rvm/gems/ruby-2.6.9/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss</p>
+
+<pre><code>gedit /home/dong/.rvm/gems/ruby-2.6.9/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss
+</code></pre>
+
+<p>改文件87行，To fix the error message, just change the line 87 from your “_deprecated-support.scss” file to this:</p>
 
 <pre><code>    // A debug tool for checking browser support
 @mixin debug-support-matrix($experimental: true, $ie: true) {
@@ -203,7 +206,237 @@ You can use the sass-convert command to automatically fix most cases.
 }
 </code></pre>
 
-<p>The file can be found at your <strong>/home/dong/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets/compass/css3/_deprecated-support.scss</strong></p>
+<h3>Octopress 3.0</h3>
+
+<pre><code>cd /haydnyau
+</code></pre>
+
+<pre><code>ruby --version
+rvm use 2.6.9 --default
+</code></pre>
+
+<pre><code>jekyll --version
+</code></pre>
+
+<p>确保安装正确<br/>
+安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：<br/>
+<code>
+gem install octopress
+</code>
+有时网络问题，多试几次，确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的<br/>
+好了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Install Python 2.7 on Ubuntu 24.04]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/"/>
+    <updated>2025-04-08T23:14:16+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04</id>
+    <content type="html"><![CDATA[<p>机翻的文章，可能有错，建议看原文，链接：</p>
+
+<p><a href="https://linux.how2shout.com/how-to-install-python-2-7-on-ubuntu-24-04-noble-lts-linux/">How to install Python 2.7 on Ubuntu 24.04</a></p>
+
+<!--more-->
+
+
+<p>Canonical 在长期 Ubuntu 20.04 Focal 之后放弃了对 Python 版本 2.x 的支持，以便为最新的 Python 3 版本腾出空间。这就是为什么我们没有使用其官方系统存储库在 Ubuntu 24.04 上安装 Python 2 的原因。此外，Python 开发人员也不再支持版本 2，但是，如果您的一些旧项目需要 Python 版本 2，那么在本文中，我们将学习如何在 Ubuntu 24.04上安装它来运行一些旧的应用程序。</p>
+
+<p>第 1 步：打开命令终端<br/>
+第 2 步：安装依赖项<br/>
+第 3 步：下载 Python 2.7 源代码<br/>
+第 4 步：在 Ubuntu 2.7 上编译和安装 Python 24.04<br/>
+第 5 步：验证安装<br/>
+<del>第 6 步：为 Python 2.7 设置 pip</del><br/>
+第 7 步：更改默认 Python 优先级<br/>
+第 8 步：从 Ubuntu 2.7 卸载 Python 24.04</p>
+
+<h3>第 1 步：打开命令终端</h3>
+
+<p>在您的 Ubuntu 上访问终端，因为我们需要它来安装软件包，因此您应该对它以及命令行的工作原理有所了解。进入终端后，运行 system update 命令：</p>
+
+<pre><code>sudo apt update 
+(dg不要后面这一步，以防新版本的ubuntu有问题，安装不了博客)sudo apt upgrade
+</code></pre>
+
+<h3>第 2 步：安装依赖项</h3>
+
+<p>众所周知，Python 2.7 不再通过 Ubuntu 的默认系统存储库甚至流行的 PPA Dead Snake 存储库获得，因此在本文中，我们将使用其源文件对其进行编译。但是，在此之前，请安装一些基本的开发人员工具。</p>
+
+<pre><code>sudo apt install -y build-essential checkinstall libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev
+</code></pre>
+
+<h3>第 3 步：下载 Python 2.7 源代码</h3>
+
+<p>现在，使用 wget 工具并从其官方网站下载 Python 2.7 的源代码，2.7 可用的最新版本是 2.7.18。</p>
+
+<pre><code>wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
+</code></pre>
+
+<p>解压 ：</p>
+
+<pre><code>tar -xvf Python-2.7.18.tgz
+</code></pre>
+
+<h3>第 4 步：在 Ubuntu 2.7 上编译和安装 Python 24.04</h3>
+
+<p>解压后，首先切换到解压后的目录，然后按照给定的过程编译源码。</p>
+
+<pre><code>cd Python-2.7.18
+
+./configure --enable-optimizations
+</code></pre>
+
+<p>编译安装 Python：</p>
+
+<p>编译过程需要一些时间，所以请坐下来，让它完成。</p>
+
+<pre><code>make -j16
+
+sudo make install
+</code></pre>
+
+<h3>第 5 步：验证安装</h3>
+
+<p>安装“make”文件后，您的 Ubuntu 24.04 系统将安装 Python 2.7。要确认，只需通过运行给定的命令来检查版本：</p>
+
+<pre><code>python -V
+</code></pre>
+
+<h3><del>第 6 步：为 Python 2.7 设置 pip</del></h3>
+
+<p><del>在 Ubuntu 24.04 上安装 Python 2.7 后，您可能还需要 PIP 来管理库和包，因此要获取它，以下是命令：</del></p>
+
+<pre><code>~~sudo apt install curl~~  
+
+~~curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py~~  
+
+~~sudo python2.7 get-pip.py~~  
+</code></pre>
+
+<p><del>验证 pip 安装：</del></p>
+
+<pre><code>~~pip2.7 --version~~
+</code></pre>
+
+<h3>第 7 步：更改默认 Python 优先级</h3>
+
+<p>如果您的 Ubuntu 2.7 Linux 上同时有 Python 3 和 24.04，则默认情况下系统会优先考虑 Python3，这就是为什么当我们运行“命令时，它会给出错误：</p>
+
+<pre><code>Command 'python' not found, did you mean:
+command 'python 3' from deb python3
+command 'python' from deb python-is-python3
+</code></pre>
+
+<p>因此，我们将更改优先级并将 Python2 设置在顶部，以便应用程序可以将其作为默认版本调用。而 Python3 将位居第二。</p>
+
+<p>设置替代方案：</p>
+
+<pre><code>sudo update-alternatives --install /usr/bin/python python /usr/local/lib/python2.7 1
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
+</code></pre>
+
+<p>现在，检查默认版本：</p>
+
+<pre><code>python -V
+</code></pre>
+
+<p>将来，如果您想将 Python 3 设置为优先级列表中的默认版本或第一个版本，只需使用以下命令更新替代列表：</p>
+
+<pre><code>sudo update-alternatives --config python
+</code></pre>
+
+<p>您将获得类似于以下屏幕截图的内容，并可选择将一个设置为优先级。要进行选择，请在 Selection 列下输入与每个版本路径对应的数字，然后按 Enter 键。</p>
+
+<p>将 Python 2.7 或 3 设置为 Ubuntu 24.04 上的默认值</p>
+
+<h3>第 8 步：从 Ubuntu 2.7 卸载 Python 24.04</h3>
+
+<p>如果您的系统上不需要 Python 2.7，那么以下是将其完全删除的命令：</p>
+
+<pre><code>sudo rm -rf /usr/local/bin/python2.7
+sudo rm -rf /usr/local/bin/python2.7-config
+sudo rm -rf /usr/local/lib/python2.7
+sudo rm -rf /usr/local/include/python2.7
+sudo rm -rf /usr/local/share/man/man1/python2.7.1
+</code></pre>
+
+<p>删除在安装过程中创建的符号链接：</p>
+
+<pre><code>sudo rm /usr/local/bin/python2
+sudo rm /usr/local/bin/python
+</code></pre>
+
+<p>更新 update-alternatives 系统</p>
+
+<pre><code>sudo update-alternatives --remove python /usr/local/bin/python2.7
+</code></pre>
+
+<p>您可能希望将另一个 Python 版本设置为默认版本：</p>
+
+<pre><code>sudo update-alternatives --config python
+</code></pre>
+
+<p>删除 Python 2.7 pip 和其他相关工具</p>
+
+<pre><code>sudo rm /usr/local/bin/pip2.7
+sudo rm -rf /usr/local/lib/python2.7/site-packages
+</code></pre>
+
+<p>清理剩余文件</p>
+
+<pre><code>rm -rf ~/.local/lib/python2.7
+rm -rf ~/.local/bin/pip2
+rm -rf ~/.cache/pip
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu24.04 设置充电保护]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/04/08/ubuntu-charge-protect/"/>
+    <updated>2025-04-08T18:11:10+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/04/08/ubuntu-charge-protect</id>
+    <content type="html"><![CDATA[<p><strong>编辑这个文件，把数值0（关闭）改为1（开启充电保护模式），保存</strong></p>
+
+<pre><code>/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+</code></pre>
+
+<p>编写一个battery-protect.sh脚本（名字随便），添加命令：</p>
+
+<pre><code>sudo gedit /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+</code></pre>
+
+<p>之后开机时，执行，改数值为1</p>
+
+<!--more-->
+
+
+<p>安装 TLP：<strong>虽然我试过没什么作用</strong>，<strong><em>只能用来看看充电状态</em></strong></p>
+
+<pre><code>sudo apt install tlp
+sudo gedit /etc/tlp.conf
+</code></pre>
+
+<p>找到以下两行（Ctrl+F），取消注释（删除开头的#），然后根据需要更改数字(充电到百分之几)。<br/>
+<strong>DG：改了也没什么作用</strong></p>
+
+<pre><code>START_CHARGE_THRESH_BAT0=70
+STOP_CHARGE_THRESH_BAT0=80
+</code></pre>
+
+<p>保存<br/>
+运行命令<strong>检查充电状态</strong> ：</p>
+
+<pre><code>sudo tlp-stat -b
+</code></pre>
+
+<p><img src="https://storage.deepin.org/thread/202303052303521160_image.png" alt="" /></p>
+
+<p>参考：
+<a href="https://cn.linux-terminal.com/?p=7554">如何在 Ubuntu 22.04 和 24.04 中设置电池充电限制</a><br/>
+<a href="https://bbs.deepin.org/post/253376">笔记本充电阈值限制（以联想拯救者Y7000P2020H为例）</a></p>
 ]]></content>
   </entry>
   

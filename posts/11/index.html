@@ -1,0 +1,818 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>丘海东</title>g
+
+  
+  <meta name="description" content="原博：OS Prober 被禁用，Ubuntu 正在考虑新的多重引导方案 GNU GRUB（GRUB）是一个来自 GNU 项目的启动引导程序。它允许用户在计算机内同时拥有多个操作系统，并在计算机启动时选择希望运行的操作系统。 今年 6 月，由于上游 GRUB 引导程序在发布 2.06 版本时禁用 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="https://qiuhaidong.github.io/posts/11/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.useso.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">丘海东</a></h1>
+  
+    <h2>读书写字  热爱生活  ⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.baidu.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="qiuhaidong.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/categories/">Categories</a></li>
+  <li><a href="/tag-cloud/">Tags</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/15/ubuntu-cannot-boot-windows/">ubuntu2022年无法添加引导windows，官方禁用OS Prober</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-15T15:34:36+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:34 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3><a href="https://www.oschina.net/news/174751/ubuntu-22.04-multi-boot-changes">原博：OS Prober 被禁用，Ubuntu 正在考虑新的多重引导方案</a></h3>
+
+<p>GNU GRUB（GRUB）是一个来自 GNU 项目的启动引导程序。它允许用户在计算机内同时拥有多个操作系统，并在计算机启动时选择希望运行的操作系统。</p>
+
+<p>今年 6 月，由于上游 GRUB 引导程序在发布 2.06 版本时禁用 OS_Prober 后所带来的一些变化，Ubuntu 的开发者正在考虑如何在 Ubuntu 22.04 LTS 中管理双引导/多引导方案。</p>
+
+<p>Ubuntu 依靠 OS-Prober 来检查其他已安装的操作系统，以便能够方便地在 GRUB 引导程序中显示它们。这意味着随着 Ubuntu 22.04 转向 GRUB 2.06，非 UEFI BIOS 用户不能再启动任何其他操作系统，而基于 UEFI 的系统如果通过 UEFI 引导程序，则仍然可以启动其他操作系统。这个问题主要是会阻碍那些仍然运行传统 BIOS 启动程序的用户使用已安装的系统。</p>
+
+<p>默认禁用OS-Prober旨在通过操作系统检测功能解决潜在的安全问题，因为它在检查其他操作系统时，会检查并挂载系统上的所有分区，如果利用文件系统的漏洞，启用该功能会引发一个能被黑客利用的安全问题。</p>
+
+<p>因此，面对安全和用户体验这个两难的选择下，Ubuntu 开发者也不得不考虑是否要重新启用 OS-Prober。</p>
+
+<p>因为 OS_Prober 存在潜在安全风险，所以重新启用它并不是一个理想的解决方案，目前 Ubuntu 团队内部也在仔细思考这个问题，但不排除这个可能性。</p>
+
+<p>Ubuntu 团队考虑的其他解决方案包括：创建一个新的 GRUB 模块，该模块只在用户查找系统时才执行 OS-Prober 的一些功能，用于增加一个链式启动选项专门处理用户需要启动 Windows 的需求；亦或是仅在安装系统时运行 OS-Prober，然后依靠该信息进行后续启动；最后一种可能性是，从以前的 Ubuntu 版本升级到 Ubuntu 22.04 时启用 OS-Prober。</p>
+
+<p>我们还不清楚 Ubuntu 团队在上述选择中最终会如何进行抉择，在 Ubuntu 22.04 正式推出之前还有充足的考虑时间，可以访问 ubuntu-devel 了解更多详情。我们也将关注 GRUB 上游在此期间是否也会推出相应的解决方案。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/15/model/">Post文件模板</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-15T03:18:34+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:18 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>layout: post<br/>
+title: <br/>
+date: <br/>
+tags: <br/>
+author: 丘海东<br/>
+comments: <br/>
+categories:</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/15/fucking-hard/">好艰难---把Gemfile和Gemfile.lock文件删除</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-15T02:48:34+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>15</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>2:48 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>怎么都不行<br/>
+用octopress3.0创建theme blog，可能因为</p>
+
+<h2>网络不行？</h2>
+
+<p>一直卡在那里，一动不动<br/>
+<code>bundle</code> 和 <code>bundle install</code> 也是一动不动<br/>
+这是没有成功的，后面会报错<br/>
+重复，直到ok</p>
+
+<h2>对了，我把Gemfile和Gemfile.lock文件删除，就没报错了</h2>
+
+<p>正常来说，rvm安装ruby就行了，如果还不行，再用<code>apt</code> ubuntu官方源安装一次</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install ruby</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/13/zhe-teng/">生命不息，折腾不止</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-13T07:45:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:45 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>强迫症发作<br/>
+Ubuntu：20.04  21.10  12.04  16.04  18.04<br/>
+Ocotpress：2.0  3.0  ， jekyll：theme<br/>
+折腾了好几天，没日没夜，不眠不休，吃喝不管，性格使然<br/>
+好了，好好吃个早餐，睡觉<br/>
+买票，回家  过年  又一年</p>
+
+<p><img src="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF4SNHNw/TmEUgtj9EK6.7V8ajmQrED*vOD1GW9P6z*YHWzdix5ugnQZhaqS7C.z080deNWFg4xOMjEHv1aasu8tzxYvAtb1t9yau2Mq4OpNK*fQIgtU!/r" alt="qq" /></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEBBt8qnK74UlxjsyjJazHjsofXQG0rneEceE2fxJ0iYoev1qV8XUkGa4f3zBfsnMgFIYBE1jz*MnTX.pIZ3Q*vM!/r">1</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEMvM6fKWWIQv6JDPdRrBOJqFS4uUzBy0m8XBjGOIoiZXMSoI.HdGAy.rkrSc5UI8Z*ysJrYVi0R.4DY*u*OrPQE!/r">2</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEAw6qMrx.DeMqYhYPoEnryZ2mTrcAJOnMc9Xx2iSdXrgYHFg4sZN5ZGinn5jCvWIvCcJjldvIixNDk52hLvjZn8!/r">3</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEG.2u5LO7ccw90DKotmv7RsLQgumBc.mg5E5KTLsM.Fg99Fhnb9DK0Ses.zLtoernJRx3brpcsyNMPD0RVJRaq8!/r">4</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEFlB5ERIdlKsfngVuoiz21Qj4tdrizVtkIJ0ua4Xq9SfOVPBzKif3gRqpfZEbyjsP3R8CwlHEt.Xm8iJyuz2nGw!/r">5</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEMUFcGm9g7XE9f.fwXhEjR30nG7aiswalxP6Ywg3gXL0M95PSB.m8xx8UpxlTcm.R*BBTWREfGkrCrcndSaspsQ!/r">6</a></p>
+
+<p><a href="https://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF1Pu30D/TmEUgtj9EK6.7V8ajmQrEDw6.pSwRjPoCMVPlKqnitgykgEcoUEE0NkZ2XKCIsiXTx9gMTxcD2J6wujiIkfLV6RfO4AVxca.yqf9IyAzHzk!/r">7</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/13/jekyll-theme-config/">Jekyll Theme Octopress 博客的具体配置</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-13T00:58:31+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:58 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 2.7.0  </span></code></pre></td></tr></table></div></figure>
+
+
+<p>_config.yml<br/>
+gemfile<br/>
+gemfile.lock</p>
+
+<p>一些问题看手机图片,在空间</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/12/new-and-old-blog/">新 舊博客</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-12T23:56:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:56 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3><a href="https://haydnyau.github.io/">新博客</a></h3>
+
+<h3><a href="https://qiuhaidong.github.io/">旧博客</a></h3>
+
+<p>折腾了好几天，终于迁移好了</p>
+
+<p><a href="https://gaohaoyang.github.io/">这是主题作者的Blog</a></p>
+
+<p><a href="https://github.com/Gaohaoyang">这是他的Github</a> 和 <a href="https://github.com/Gaohaoyang/gaohaoyang.github.io">仓库</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/12/no-binary-rubies-available-for-ubuntu-slash-20-dot-04-slash-x86-64-slash-ruby-2-dot-2-6/">No Binary Rubies Available for: ubuntu/20.04/x86_64/ruby-2.2.6</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-12T19:03:01+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:03 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://blog.csdn.net/qq_41988167/article/details/106202868">No binary rubies available for: ubuntu/20.04/x86_64/ruby-2.2.6;;Error running requirements_debian_libs_install libssl1.0-dev</a></p>
+
+<p>原博内容：</p>
+
+<p>rvm安装低版本ruby报错Error running ‘requirements_debian_libs_install libssl1.0-dev’,Requirements installation failed with status: 100.</p>
+
+<p>由于参与的一个项目在用2.3.1版本的ruby，所以想用rvm来安装ruby2.3.1。运行报错，需要libssl1.0-dev.<br/>
+解决办法：</p>
+
+<ul>
+<li>运行</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/apt/sources.list</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在<code>/etc/apt/sources.list</code> 中添加下载源 <code>deb http://security.ubuntu.com/ubuntu bionic-security main</code>。保存退出。</p>
+
+<ul>
+<li>更新</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt update</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>安装</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-cache policy libssl1.0-dev  #（这步我没有做，先不做）</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后再安装<code>rvm install 2.2.6</code></p>
+
+<p>————————————————<br/>
+版权声明：本文为CSDN博主「会打滚的咸鱼」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/qq_41988167/article/details/106202868">https://blog.csdn.net/qq_41988167/article/details/106202868</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/12/write-them-all/">好记性不如烂笔头</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-12T00:37:26+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:37 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>很多以前做过的事，细节步骤都不记得了，多写字吧，详细地记录下来，以后也有个回忆。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress2.0 自动打开文件 插入本地图片 程序</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T22:42:33+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:42 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://blog.lessfun.com/blog/2013/12/05/config-the-octopress-blog-after-deployed/">教程</a></p>
+
+<h3>添加功能：自动打开文件编辑</h3>
+
+<p><code>rake new_post["file name"]</code> 后自动打开博客文件<br/>
+编辑<code>Rakefile</code>文件，上面位置，添加定义：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>editor = "gedit"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后在<code>new_post</code>命令后面添加：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if #{editor}
+</span><span class='line'>  system "#{editor} #{filename}"
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>插入本地图片</h3>
+
+<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中可直接引用，用法：</p>
+
+<p><img src="https://qiuhaidong.github.io/images/%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80-%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87-%E7%A8%8B%E5%BA%8F.png" alt="语法冲突，不能显示正确代码，看图片" /></p>
+
+<p><img src="https://qiuhaidong.github.io/images/%E9%BA%A6%E8%BF%AA%E7%A7%91%E6%AF%94.jpg" alt="kobi t-mac" /></p>
+
+<h4>前后行3个```显示代码，且有显示行数</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>c++
+</span><span class='line'>int main()
+</span><span class='line'>{
+</span><span class='line'>  cout&lt;&lt;"hello world"&lt;&lt;endl;
+</span><span class='line'>};
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-2.0-test-on-ubuntu-20.04/">Octopress 2.0 Test on Ubuntu 20.04</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-01-11T07:52:12+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>7:52 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>rvm install 2.3.1  
+</code></pre>
+
+<p>失败<br/>
+.</p>
+
+<pre><code>cd octopress
+</code></pre>
+
+<p>.</p>
+
+<pre><code>ruby --version
+</code></pre>
+
+<p>.</p>
+
+<pre><code>rvm use 2.7.0
+Required ruby-2.7.0 is not installed.
+To install do: 'rvm install "ruby-2.7.0"'  
+</code></pre>
+
+<h1>记得是用2.7.0</h1>
+
+<p> .</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rvm install "ruby-2.7.0"  
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ ruby --version
+ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+Could not find rake-10.5.0 in any of the sources
+Run `bundle install` to install missing gems.
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ bundle install
+Traceback (most recent call last):
+4: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/ruby_executable_hooks:22:in `&lt;main&gt;'
+3: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/ruby_executable_hooks:22:in `eval'
+2: from /home/dong/.rvm/rubies/ruby-2.7.0/bin/bundle:23:in `&lt;main&gt;'
+1: from /home/dong/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/rubygems.rb:294:in `activate_bin_path'
+/home/dong/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0/rubygems.rb:275:in `find_spec_for_exe': Could not find 'bundler' (1.17.3) required by your /home/dong/octopress/Gemfile.lock. (Gem::GemNotFoundException)
+To update to the latest version installed on your system, run `bundle update --bundler`.
+To install the missing version, run `gem install bundler:1.17.3`
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ gem install bundler:1.17.3
+Fetching bundler-1.17.3.gem
+Successfully installed bundler-1.17.3
+Parsing documentation for bundler-1.17.3
+Installing ri documentation for bundler-1.17.3
+Done installing documentation for bundler after 3 seconds
+1 gem installed
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+Could not find rake-10.5.0 in any of the sources
+Run `bundle install` to install missing gems.
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ bundle install
+</code></pre>
+
+<p>.</p>
+
+<pre><code>dong@Ubuntu:~/octopress$ rake generate
+rake aborted!
+Gem::LoadError: You have already activated rake 13.0.1, but your Gemfile requires rake 10.5.0. Prepending `bundle exec` to your command may solve this.
+/home/dong/octopress/Rakefile:2:in `&lt;top (required)&gt;'
+(See full trace by running task with --trace)
+</code></pre>
+
+<p>提示失败，<br/>
+但是可以加上<code>bundle exec</code></p>
+
+<pre><code>dong@Ubuntu:~/octopress$bundle exec rake generate
+</code></pre>
+
+<p>很多警告，但是成了，<br/>
+下面也一样：</p>
+
+<pre><code>bundle exec rake preview
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/posts/12">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/posts/10">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2223/12/21/day-2223/">知自己，识世界</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/23/day-154/">Day 154：因为睡觉错过交易点</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/23/ubuntu-24-04-boot-repair/">Ubuntu24.04 修复引导</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/21/day-153/">Day 153：行动</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/14/lost-two-chances/">股市，错过两个大机会</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/">Ubuntu 24.04 安装 Octopress2.0和3.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/">How to Install Python 2.7 on Ubuntu 24.04</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/08/ubuntu-charge-protect/">Ubuntu24.04 设置充电保护</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/08/day-150/">Day 150：但行好事，莫问前程</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/08/day-149/">Day 149：事物是复杂、多面的</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/07/boot-grub/">Ubuntu开机引导项</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/">windows11和Ubuntu24.04双系统，时间不对</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/03/17/day-147/">Day 147：这三个月节奏都错了</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/01/27/henduoshishidushibeiaihewunai/">很多世事都是悲哀和无奈</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/01/23/renyurendeyuanfen-rucideqianbao/">人与人的缘分，如此的浅薄</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/12/23/day-146/">Day 146：获利和被套的心态、处理能力</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/11/05/day-140/">Day 140：懒，蠢，代价很大</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/10/18/day-138/">Day 138：盈亏同源，门外汉</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2024/10/13/day-137:gu-shi/">Day 137：短疯牛，股市一二浪</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (165)</a></li>
+<li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (62)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Tags</h1>
+  <ul id="tag-cloud">
+    <li><a style="font-size: 120%" href="/tags/c-number/">C#</a></li>
+<li><a style="font-size: 120%" href="/tags/octopress/">Octopress</a></li>
+<li><a style="font-size: 120%" href="/tags/c/">c</a></li>
+<li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
+<li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
+<li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
+<li><a style="font-size: 131%" href="/tags/octopress/">octopress</a></li>
+<li><a style="font-size: 136%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 148%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 120%" href="/tags/python2-ubuntu/">python2-ubuntu</a></li>
+<li><a style="font-size: 140%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
+<li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
+<li><a style="font-size: 127%" href="/tags/she/">she</a></li>
+<li><a style="font-size: 131%" href="/tags/ssh/">ssh</a></li>
+<li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
+<li><a style="font-size: 134%" href="/tags/ubuntu/">ubuntu</a></li>
+<li><a style="font-size: 120%" href="/tags/ubuntu-charge-protect/">ubuntu-charge-protect</a></li>
+<li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
+
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/qiuhaidong">@qiuhaidong</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'qiuhaidong',
+            count: 1,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  <!--返回顶部开始-->
+<div id="full" style="width:30px; height:30px; position:fixed; right:13px; bottom:13px; z-index:100; text-align:center; background-color:transparent; cursor:pointer;">
+<a href="#" onclick="goTop();return false;"><img src="/images/top.png" border=0 alt="返回顶部"></a>
+</div>
+<script src="/javascripts/top.js" type="text/javascript"></script>
+<!--返回顶部结束-->
+
+
+  Copyright &copy; 2025 - 丘海东 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

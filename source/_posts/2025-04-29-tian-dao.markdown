@@ -8,5 +8,5 @@ comments: true
 categories: personal
 published: true
 ---
-弱者思维：等，靠，要。  
-强者思维：觉醒，主动，争取，坚持。
+弱者：等，靠，要。  
+强者：觉醒，主动，争取，坚持。

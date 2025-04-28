@@ -8,20 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="农历正月十八
-有时雨，有时雾
-破烂的旧房子
-天花板不时剥落残渣
-雨水漏下，打在铁谷柜上，在这寂静中，尤为响动 我父亲是可怜的
-我母亲是可怜的
-时代给他们的无知
-身处巨大变革而无能为力
-求而不得
-我是可怜可悲的
-这是时代的安排
-宿命的印记
-是知识见闻和无能的无奈和残酷
-如果我是一样的无知就好了 &hellip;">
+  <meta name="description" content="在根目录新建一文件夹_templates，文件夹里建一个文件post，无后缀，内容是： 注意，格式问题，显示有问题，参见原文件 layout: title: &ldquo;&rdquo;
+date: author:
+tags: comments: true categories: ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +68,46 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/21/template-of-new-post/">新建post文件的“头文件”</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-21T04:39:45+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2022</span></span> <span class='time'>4:39 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在根目录新建一文件夹<code>_templates</code>，文件夹里建一个文件<code>post</code>，无后缀，内容是：</p>
+
+<h2><strong><em>注意，格式问题，显示有问题，参见原文件</em></strong>  </h2>
+
+<p>layout: <br/>
+title: &ldquo;&rdquo;<br/>
+date: <br/>
+author:<br/>
+tags: <br/>
+comments: true</p>
+
+<h2>categories:   </h2>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -479,79 +508,6 @@ gemfile.lock</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/11/octopress-new-post-auto-open/">Octopress2.0 自动打开文件 插入本地图片 程序</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-11T22:42:33+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:42 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://blog.lessfun.com/blog/2013/12/05/config-the-octopress-blog-after-deployed/">教程</a></p>
-
-<h3>添加功能：自动打开文件编辑</h3>
-
-<p><code>rake new_post["file name"]</code> 后自动打开博客文件<br/>
-编辑<code>Rakefile</code>文件，上面位置，添加定义：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>editor = "gedit"</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后在<code>new_post</code>命令后面添加：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>if #{editor}
-</span><span class='line'>  system "#{editor} #{filename}"
-</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>插入本地图片</h3>
-
-<p>将图片放到<code>octopress/source/images/</code>下，然后在Markdown文件中可直接引用，用法：</p>
-
-<p><img src="https://qiuhaidong.github.io/images/%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80-%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87-%E7%A8%8B%E5%BA%8F.png" alt="语法冲突，不能显示正确代码，看图片" /></p>
-
-<p><img src="https://qiuhaidong.github.io/images/%E9%BA%A6%E8%BF%AA%E7%A7%91%E6%AF%94.jpg" alt="kobi t-mac" /></p>
-
-<h4>前后行3个```显示代码，且有显示行数</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>c++
-</span><span class='line'>int main()
-</span><span class='line'>{
-</span><span class='line'>  cout&lt;&lt;"hello world"&lt;&lt;endl;
-</span><span class='line'>};
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/12">&larr; Older</a>
@@ -574,6 +530,10 @@ gemfile.lock</p>
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/04/29/tian-dao/">天道</a>
       </li>
     
       <li class="post">
@@ -644,10 +604,6 @@ gemfile.lock</p>
         <a href="/blog/2024/11/05/day-140/">Day 140：懒，蠢，代价很大</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2024/10/18/day-138/">Day 138：盈亏同源，门外汉</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -655,7 +611,7 @@ gemfile.lock</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (159)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (160)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

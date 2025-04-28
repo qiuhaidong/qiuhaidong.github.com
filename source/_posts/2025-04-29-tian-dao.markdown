@@ -1,0 +1,12 @@
+---
+layout: post
+title: "天道"
+date: 2025-04-29 02:46:24 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+弱者思维：等，靠，要。  
+强者思维：觉醒，主动，争取，坚持。

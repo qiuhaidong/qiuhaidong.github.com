@@ -8,6 +8,8 @@ comments: true
 categories: personal
 published: true
 ---
+## 5. 看书，学习  
+
 1. 戒抖音  
 	1小时	
 2. 按时睡觉  
@@ -16,4 +18,3 @@ published: true
 	~~外卖，煎炸，可乐，奶茶，糖，油，盐~~
 4. 适量运动  
 	拉伸筋骨，不多不少
-5. 看书，学习

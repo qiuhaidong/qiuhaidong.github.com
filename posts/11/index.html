@@ -8,11 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="專注內容
-專注技術
-Octopress2.0、3.0、jekyll官方、其他主題，都不重要
-博文才重要
-">
+  <meta name="description" content="原博： jekyll-paginate 依赖缺失 因为 jekyll 3 中默认安装已经没有这个分页组件了，官方把这个分页组件插件化了，因此要独立安装。详情见 https://jekyllrb.com/docs/pagination/。 错误呈现 在启动 jekyll 服务的时候出现以下错误： 1 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +66,75 @@ Octopress2.0、3.0、jekyll官方、其他主題，都不重要
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/24/error-jekyll-paginate/">Error: Jekyll-paginate 分頁功能錯誤，依赖缺失</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-24T04:02:35+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:02 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>jekyll-paginate 依赖缺失</h2>
+
+<p>因为 jekyll 3 中默认安装已经没有这个分页组件了，官方把这个分页组件插件化了，因此要独立安装。详情见 <a href="https://jekyllrb.com/docs/pagination/">https://jekyllrb.com/docs/pagination/</a>。</p>
+
+<h3>错误呈现</h3>
+
+<p>在启动 jekyll 服务的时候出现以下错误：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>jekyll serve
+</span><span class='line'>Configuration file: c:/gitWorkSpace/blog-based-on-jekyll-3/_config.yml
+</span><span class='line'>  Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate' If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!
+</span><span class='line'>jekyll 3.1.2 | Error:  jekyll-paginate</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>解决方法</h3>
+
+<p>我们安装这个插件到本地即可。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install jekyll-paginate
+</span><span class='line'>Fetching: jekyll-paginate-1.1.0.gem (100%)
+</span><span class='line'>Successfully installed jekyll-paginate-1.1.0
+</span><span class='line'>Parsing documentation for jekyll-paginate-1.1.0
+</span><span class='line'>Installing ri documentation for jekyll-paginate-1.1.0
+</span><span class='line'>Done installing documentation for jekyll-paginate after 3 seconds
+</span><span class='line'>1 gem installed</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -446,43 +511,6 @@ gemfile.lock</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/12/new-and-old-blog/">新 舊博客</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-12T23:56:02+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>11:56 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3><a href="https://haydnyau.github.io/">新博客</a></h3>
-
-<h3><a href="https://qiuhaidong.github.io/">旧博客</a></h3>
-
-<p>折腾了好几天，终于迁移好了</p>
-
-<p><a href="https://gaohaoyang.github.io/">这是主题作者的Blog</a></p>
-
-<p><a href="https://github.com/Gaohaoyang">这是他的Github</a> 和 <a href="https://github.com/Gaohaoyang/gaohaoyang.github.io">仓库</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/12">&larr; Older</a>
@@ -505,6 +533,10 @@ gemfile.lock</p>
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/05/07/dont-be-stupid/">别做蠢人，别做蠢事</a>
       </li>
     
       <li class="post">
@@ -575,10 +607,6 @@ gemfile.lock</p>
         <a href="/blog/2025/01/27/henduoshishidushibeiaihewunai/">很多世事都是悲哀和无奈</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/01/23/renyurendeyuanfen-rucideqianbao/">人与人的缘分，如此的浅薄</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -586,7 +614,7 @@ gemfile.lock</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (162)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (163)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

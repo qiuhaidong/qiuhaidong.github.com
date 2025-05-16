@@ -8,11 +8,8 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="MACHINE: fish hunting
-black pan: GND
-red pan:
-A: co1 press 100 voltage change from 3.36V to almost 0V,and then come back to 3.36V
-PRESS 10 3.36V,0.9V &hellip;">
+  <meta name="description" content="原博文 windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是： sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no 然而并没有什么效果，ubuntu16. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +67,65 @@ PRESS 10 3.36V,0.9V &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">windows10和Ubuntu双系统，时间不对</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-10T21:37:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:37 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.cnblogs.com/qf19910623/p/5559514.html">原博文</a></p>
+
+<p>windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：</p>
+
+<pre><code>sudo gedit /etc/default/rcS
+utc=yes 改成 utc=no
+</code></pre>
+
+<p>然而并没有什么效果，ubuntu16.04里面根本就没有utc这一项！<br/>
+后来谷歌了半天找到了一个完美解决办法：<br/>
+先在ubuntu下更新一下时间，确保时间无误：</p>
+
+<pre><code>sudo apt-get install ntpdate
+sudo ntpdate time.windows.com
+</code></pre>
+
+<p>然后将时间更新到硬件上：</p>
+
+<pre><code>sudo hwclock --localtime --systohc
+</code></pre>
+
+<p>重新进入windows10，发现时间恢复正常了！</p>
+
+<p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a></p>
+
+<h3>但是在ubuntu24.04中，更新：</h3>
+
+<p>简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 因此我们可以在联网状态中使用下列代码实现Ubuntu与Windows的时间同步。</p>
+
+<pre><code>sudo timedatectl set-local-rtc 1
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -447,36 +503,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/08/28/system-link/">Alien System</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-08-28T21:06:27+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:06 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/source/source/images/%E7%B3%BB%E7%BB%9F%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg" alt="系统接线图" /><br/>
-三辊闸，淘气堡，后台终端管理，扣费由场地决定，投币数设置为1即可。若扣费50，投币50，会导致三辊闸打开时间过长，比如连续20秒～～～</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/20">&larr; Older</a>
@@ -499,6 +525,10 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/05/16/action/">克服人性！坚决执行！</a>
       </li>
     
       <li class="post">
@@ -569,10 +599,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
         <a href="/blog/2025/03/17/day-147/">Day 147：这三个月节奏都错了</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/01/27/henduoshishidushibeiaihewunai/">很多世事都是悲哀和无奈</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -580,7 +606,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (163)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (164)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -598,7 +624,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 <li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 131%" href="/tags/octopress/">octopress</a></li>
-<li><a style="font-size: 136%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 135%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 148%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 120%" href="/tags/python2-ubuntu/">python2-ubuntu</a></li>
 <li><a style="font-size: 140%" href="/tags/rough/">rough</a></li>

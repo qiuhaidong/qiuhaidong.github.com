@@ -8,9 +8,38 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="有時會出現標題的錯誤，ssh無法連接服務器，試過網上的幾種方法都不行，其實是國內網絡經常封鎖github，過段時間就好了。
-update: 1. 收到邮件： GitGuardian检测到您的GitHub帐户中暴露了以下OpenSSH私钥。
-GitGuardian has detected the &hellip;">
+  <meta name="description" content="教程1
+教程2 实现返回按钮功能 首先创建source/javascripts/top.js，添加如下代码实现滑动返回顶部效果: 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,101 +97,6 @@ GitGuardian has detected the &hellip;">
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer/">Kex_exchange_identification: Read: Connection Reset by Peer</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-03-20T10:32:48+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:32 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>有時會出現標題的錯誤，ssh無法連接服務器，試過網上的幾種方法都不行，其實是國內網絡經常封鎖github，過段時間就好了。<br/>
-update:</p>
-
-<h4>1. 收到邮件：</h4>
-
-<p>GitGuardian检测到您的GitHub帐户中暴露了以下OpenSSH私钥。<br/>
-GitGuardian has detected the following OpenSSH Private Key exposed within your GitHub account.<br/>
-新建key即可。</p>
-
-<h4>2. 如果把SSH key上传到仓库，会提示安全验证：</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ERROR: We're doing an SSH key audit.
-</span><span class='line'>Reason: unverified automatically (private key found in a public repository)
-</span><span class='line'>Please visit https://github.com/settings/keys/********
-</span><span class='line'>to approve this key so we know it's safe.
-</span><span class='line'>
-</span><span class='line'>Fingerprint:
-</span><span class='line'>SHA256:***********************************************
-</span><span class='line'>
-</span><span class='line'>fatal: 无法读取远程仓库。
-</span><span class='line'>
-</span><span class='line'>请确认您有正确的访问权限并且仓库存在。</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/03/02/no-good-thing-ever-dies/">有時間絕望，還不如吃點好吃的然後睡個覺</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-03-02T21:26:11+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2022</span></span> <span class='time'>9:26 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>日劇《非自然死亡》，石原里美的經典台詞：</h3>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEPMAzCkpOgy5tCy3tTQ3OyKRNUeV6.9vL0xbD4ehX3kSfXse0GFc5y1t4paxnyymqnq24kw..dtLIAjvznsA7ts!/r" alt="1" /></p>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -763,6 +697,156 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/24/git-clone-not-master-branch/">Git 如何 Clone 非 Master 分支的代码</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-24T04:08:51+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:08 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>问题描述</h2>
+
+<p>我们每次使用命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@gitlab.xxx.com:xxxxx.git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在<code>daily/1.4.1</code>分支上，我们希望拿到这个分支上的代码。</p>
+
+<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png" /></p>
+
+<h2>解决方法</h2>
+
+<p>直接使用命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -r #查看远程分支</span></code></pre></td></tr></table></div></figure>
+
+
+<p>或</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -a #查看所有分支</span></code></pre></td></tr></table></div></figure>
+
+
+<p>会显示</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>origin/HEAD -&gt; origin/master
+</span><span class='line'>origin/daily/1.2.2
+</span><span class='line'>origin/daily/1.3.0
+</span><span class='line'>origin/daily/1.4.1
+</span><span class='line'>origin/develop
+</span><span class='line'>origin/feature/daily-1.0.0
+</span><span class='line'>origin/master</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后直接</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git checkout origin/daily/1.4.1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>就好了。。。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/24/error-jekyll-paginate/">Error: Jekyll-paginate 分頁功能錯誤，依赖缺失</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-24T04:02:35+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:02 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
+
+<h2>jekyll-paginate 依赖缺失</h2>
+
+<p>因为 jekyll 3 中默认安装已经没有这个分页组件了，官方把这个分页组件插件化了，因此要独立安装。详情见 <a href="https://jekyllrb.com/docs/pagination/">https://jekyllrb.com/docs/pagination/</a>。</p>
+
+<h3>错误呈现</h3>
+
+<p>在启动 jekyll 服务的时候出现以下错误：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>jekyll serve
+</span><span class='line'>Configuration file: c:/gitWorkSpace/blog-based-on-jekyll-3/_config.yml
+</span><span class='line'>  Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate' If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!
+</span><span class='line'>jekyll 3.1.2 | Error:  jekyll-paginate</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>解决方法</h3>
+
+<p>我们安装这个插件到本地即可。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install jekyll-paginate
+</span><span class='line'>Fetching: jekyll-paginate-1.1.0.gem (100%)
+</span><span class='line'>Successfully installed jekyll-paginate-1.1.0
+</span><span class='line'>Parsing documentation for jekyll-paginate-1.1.0
+</span><span class='line'>Installing ri documentation for jekyll-paginate-1.1.0
+</span><span class='line'>Done installing documentation for jekyll-paginate after 3 seconds
+</span><span class='line'>1 gem installed</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/posts/11">&larr; Older</a>
@@ -785,14 +869,6 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2025/05/16/action/">克服人性！坚决执行！</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2025/05/07/dont-be-stupid/">别做蠢人，别做蠢事</a>
       </li>
     
       <li class="post">
@@ -859,6 +935,14 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
         <a href="/blog/2025/03/17/day-147/">Day 147：这三个月节奏都错了</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/2025/01/27/henduoshishidushibeiaihewunai/">很多世事都是悲哀和无奈</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/01/23/renyurendeyuanfen-rucideqianbao/">人与人的缘分，如此的浅薄</a>
+      </li>
+    
   </ul>
 </section>
 <section>
@@ -866,7 +950,7 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (164)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (162)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -884,7 +968,7 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 <li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 131%" href="/tags/octopress/">octopress</a></li>
-<li><a style="font-size: 135%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 136%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 148%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 120%" href="/tags/python2-ubuntu/">python2-ubuntu</a></li>
 <li><a style="font-size: 140%" href="/tags/rough/">rough</a></li>

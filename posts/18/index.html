@@ -8,8 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="想说说nba。
-不可免俗地和大多数国人一样，我关注nba，也是受姚明的影响，诚然，有自己人在就有些许参与感代入感，这很重要。不过很遗憾的是，鉴于我来自偏远的地方，小学中学时期我都没能看nba，上大学了，有条件有机会看比赛了，姚麦却相相因伤病而接连地赛季报销，而我的兴趣就这样提不起来了。 &hellip;">
+  <meta name="description" content="也好久没读书。
+捡起来。
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +68,36 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/12/24/do-not-write-for-long-sometime/">好久没写字</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-12-24T18:07:17+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>6:07 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>也好久没读书。<br/>
+捡起来。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -414,65 +445,6 @@ Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.e
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/11/10/time-stuff-between-windows-and-ubuntu/">windows10和Ubuntu双系统，时间不对</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-11-10T21:37:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>9:37 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.cnblogs.com/qf19910623/p/5559514.html">原博文</a></p>
-
-<p>windows10和ubuntu16.04双系统，仍然出现了喜闻乐见的老问题，装完后，在windows下时区不对，之前的老办法是：</p>
-
-<pre><code>sudo gedit /etc/default/rcS
-utc=yes 改成 utc=no
-</code></pre>
-
-<p>然而并没有什么效果，ubuntu16.04里面根本就没有utc这一项！<br/>
-后来谷歌了半天找到了一个完美解决办法：<br/>
-先在ubuntu下更新一下时间，确保时间无误：</p>
-
-<pre><code>sudo apt-get install ntpdate
-sudo ntpdate time.windows.com
-</code></pre>
-
-<p>然后将时间更新到硬件上：</p>
-
-<pre><code>sudo hwclock --localtime --systohc
-</code></pre>
-
-<p>重新进入windows10，发现时间恢复正常了！</p>
-
-<p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a></p>
-
-<h3>但是在ubuntu24.04中，更新：</h3>
-
-<p>简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 因此我们可以在联网状态中使用下列代码实现Ubuntu与Windows的时间同步。</p>
-
-<pre><code>sudo timedatectl set-local-rtc 1
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/19">&larr; Older</a>
@@ -495,6 +467,10 @@ sudo ntpdate time.windows.com
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/06/12/change/">改变</a>
       </li>
     
       <li class="post">
@@ -565,10 +541,6 @@ sudo ntpdate time.windows.com
         <a href="/blog/2025/03/17/day-147/">Day 147：这三个月节奏都错了</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/01/27/henduoshishidushibeiaihewunai/">很多世事都是悲哀和无奈</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -576,7 +548,7 @@ sudo ntpdate time.windows.com
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (163)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (164)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -594,7 +566,7 @@ sudo ntpdate time.windows.com
 <li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 131%" href="/tags/octopress/">octopress</a></li>
-<li><a style="font-size: 136%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 135%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 148%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 120%" href="/tags/python2-ubuntu/">python2-ubuntu</a></li>
 <li><a style="font-size: 140%" href="/tags/rough/">rough</a></li>

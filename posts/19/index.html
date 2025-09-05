@@ -8,8 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="工具，选项，SQL Server 对象资源管理器，命令……
-">
+  <meta name="description" content="原帖
+DG works：
+打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +68,53 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/11/13/explorer-do-not-start-up-on-windows/">Windows本地浏览器没有启动 Explorer Do Not Start Up on Windows</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-11-13T18:51:00+08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>13</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>6:51 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://zhidao.baidu.com/question/588254618.html">原帖</a><br/>
+<strong>DG works：</strong><br/>
+<strong>打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。这样在登录时系统会再加载一次Explorer.exe就可以显示出桌面了。但也有如我的状况，gpedit.msc打不开。</strong></p>
+
+<p>关于explorer.exe加载不了 无法显示任务栏与桌面解决办法<br/>
+Ctrl+Alt+Del打开“Windows任务管理器”，发现进程里没有Explorer.exe。说明系统启动时候没有加载Explorer.exe。(explorer是Windows程序管理器或者Windows资源管理器，它用于管理Windows图形壳，包括开始菜单、任务栏、桌面和文件管理。删除该程序会导致Windows图形界面无法适用。)<br/>
+点击“Windows任务管理器”&ndash;>“文件”&ndash;>“新建任务（运行……）”敲入Explorer.exe看看是否能够执行，如果不能执行说明系统的winnt目录下没有Explorer.exe这个文件或者Explorer.exe文件损坏。<br/>
+首先尝试下面的方法：<br/>
+1<br/>
+<strong>打开系统组策略编辑器就是gpedit.msc，找到“用户配置”——“Windows设置”项——脚本（注销与登录）——登录（添加，将脚本路径改为Explorer.exe的路径，如：C:\windows\Explorer.exe）即可。这样在登录时系统会再加载一次Explorer.exe就可以显示出桌面了。但也有如我的状况，gpedit.msc打不开。</strong><br/>
+2<br/>
+打开注册表，找到子键“HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer”，新建“DWORD”值“NoDesktop”，其值为“1”。（这个是我在网上搜索的方法，为什么要使用这个健值我不清楚。）再检查注册表&hellip;.HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell
+看是否为explorer.exe，不是的话自己改.</p>
+
+<p>第一个，把Explorer加入进程：<br/>
+开始菜单→运行→输入“regedit”，回车→打开注册表内的HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\项，在该项下新建一个名称为“Explorer.exe”的新字符串值，编辑该值，数据为你系统中Explorer.exe的位置。<br/>
+第二个，取消开机项目<br/>
+开始菜单→运行→输入“msconfig”，回车→在『启动』选项卡中，找到那个安装程序的对应的值（如果不知道就把一些没有必要的全部去掉），去掉前面的“√”，保存，退出。<br/>
+重启电脑。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -463,44 +511,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/09/03/sql2000-install-hang-up/">SQL2000:某个程序安装已在安装计算机上创建挂起的文件操作</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-09-03T19:16:20+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2016</span></span> <span class='time'>7:16 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ol>
-<li>在添加/删除程序中彻底删除sql server</li>
-<li>将没有删除的sql server目录也删除掉</li>
-<li>打开注册表编辑器，在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager中找到PendingFileRenameOperations项目，并删除它。这样就可以清除安装暂挂项目</li>
-<li>删除注册表中跟sql server相关的键</li>
-</ol>
-
-
-<p><em>或者使用:SQL安装挂起解决工具免安装版.exe</em><br/>
-<strong>DG：在安装盘C或D，搜索sql，会看到一个关于sql的编辑注册表项——SQL2000安装挂起.reg</strong></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/20">&larr; Older</a>
@@ -519,6 +529,10 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
     
       <li class="post">
         <a href="/blog/2223/12/21/day-2223/">知自己，识世界</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2125/09/05/jiao-yi-yuan-ze/">交易原则</a>
       </li>
     
       <li class="post">
@@ -593,10 +607,6 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
         <a href="/blog/2025/04/07/boot-grub/">Ubuntu开机引导项</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/">windows11和Ubuntu24.04双系统，时间不对</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -604,7 +614,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (165)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (166)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -621,7 +631,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
 <li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
-<li><a style="font-size: 131%" href="/tags/octopress/">octopress</a></li>
+<li><a style="font-size: 130%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 135%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 148%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 120%" href="/tags/python2-ubuntu/">python2-ubuntu</a></li>
@@ -629,7 +639,7 @@ install ruby:we don&rsquo;t use version 1.9.3 anymore，search the official webs
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 127%" href="/tags/she/">she</a></li>
-<li><a style="font-size: 131%" href="/tags/ssh/">ssh</a></li>
+<li><a style="font-size: 130%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
 <li><a style="font-size: 133%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/ubuntu-charge-protect/">ubuntu-charge-protect</a></li>

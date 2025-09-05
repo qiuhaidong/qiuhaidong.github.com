@@ -8,10 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="去年12月开始，节奏都错了。
-一个错误，引发后续的连续错误。
-同时变得没有耐心，应该进场重仓持股等待的时机，不敢进，没耐心。
-">
+  <meta name="description" content="新博文
+先在ubuntu下更新一下时间，确保时间无误： sudo apt-get install ntpdate
+sudo ntpdate time.windows.com 简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,6 +68,45 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/">windows11和Ubuntu24.04双系统，时间不对</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2025-04-07T06:59:28+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2025</span></span> <span class='time'>6:59 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://blog.csdn.net/weixin_42066135/article/details/144369653">新博文</a><br/>
+先在ubuntu下更新一下时间，确保时间无误：</p>
+
+<pre><code>sudo apt-get install ntpdate
+sudo ntpdate time.windows.com
+</code></pre>
+
+<p>简单来说，在Ubuntu24.04中，hwclock已经被淘汰了，并采用了timedatectl去代替它。 因此我们可以在联网状态中使用下列代码实现Ubuntu与Windows的时间同步。</p>
+
+<pre><code>sudo timedatectl set-local-rtc 1
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -400,41 +438,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2024/08/22/day-125/">Day 125：为什么锻炼身体后还是弱不禁风？</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2024-08-22T16:04:23+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2024</span></span> <span class='time'>4:04 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>先把健身跑步都停了。<br/>
-每晚10点多爬上床，然后别碰手机，11点之前睡觉，早上7点之前起床，拉伸锻炼半小时，然后吃早餐，坚持一个月，你的精气神就完全不同了。<br/>
-睡眠足够了，早睡早起，三餐准点，比什么都强。<br/>
-坚持一个月之后，你整个人明显就不一样，不会犯困，精神抖擞。<br/>
-接着，进入第二阶段，此时才跑步和健身。<br/>
-跑步以一天6公里内为佳，健身为2小时以内，<strong>轻重量，多组数</strong>。跑多了，练多了,就内耗了，亏精气神亏气血。我们不是专业健身人员，运动员，营养跟休息跟不上的运动锻炼，都是亏气血耗精气。<br/>
-很多人第一阶段的早睡早起就做不到。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/4">&larr; Older</a>
@@ -453,6 +456,10 @@
     
       <li class="post">
         <a href="/blog/2223/12/21/day-2223/">知自己，识世界</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2125/09/05/jiao-yi-yuan-ze/">交易原则</a>
       </li>
     
       <li class="post">
@@ -527,10 +534,6 @@
         <a href="/blog/2025/04/07/boot-grub/">Ubuntu开机引导项</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/04/07/time-stuff-between-windows11-and-ubuntu/">windows11和Ubuntu24.04双系统，时间不对</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -538,7 +541,7 @@
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (165)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (166)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -555,7 +558,7 @@
 <li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
 <li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
-<li><a style="font-size: 131%" href="/tags/octopress/">octopress</a></li>
+<li><a style="font-size: 130%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 135%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 148%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 120%" href="/tags/python2-ubuntu/">python2-ubuntu</a></li>
@@ -563,7 +566,7 @@
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
 <li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
 <li><a style="font-size: 127%" href="/tags/she/">she</a></li>
-<li><a style="font-size: 131%" href="/tags/ssh/">ssh</a></li>
+<li><a style="font-size: 130%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
 <li><a style="font-size: 133%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/ubuntu-charge-protect/">ubuntu-charge-protect</a></li>

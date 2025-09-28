@@ -1,0 +1,15 @@
+---
+layout: post
+title: "看书-经济学"
+date: 2025-09-28 16:38:34 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+一本简单通识的书。  
+思考自己去年今年的理财行为。  
+去年下跌时果断进场，大胆，分仓，控风险，降低心慌，不致操作变形，耐心几个月，抗得住波动。  
+今年害怕，急躁，全仓。  
+改正

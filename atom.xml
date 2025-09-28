@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2025-09-05T11:01:25+08:00</updated>
+  <updated>2025-09-28T16:44:12+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -63,6 +63,19 @@
 <li><strong>学习</strong>：股市、金融知识，关注世事、时局，了解行业、公司。</li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[看书-经济学]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2025/09/28/jing-ji-xue/"/>
+    <updated>2025-09-28T16:38:34+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2025/09/28/jing-ji-xue</id>
+    <content type="html"><![CDATA[<p>一本简单通识的书。<br/>
+思考自己去年今年的理财行为。<br/>
+去年下跌时果断进场，大胆，分仓，控风险，降低心慌，不致操作变形，耐心几个月，抗得住波动。<br/>
+今年害怕，急躁，全仓。<br/>
+改正</p>
 ]]></content>
   </entry>
   
@@ -684,36 +697,6 @@ STOP_CHARGE_THRESH_BAT0=80
 我只能对自己说，他的出身、成长环境、性格等，注定了他就是这样，而且到了这个年纪，和现在的身体精神条件，是不可能改的了。<br/>
 我不能把他贬得一无是处，他生我养我，熬过，他青中年时，也懂挺多，做成过挺多。<br/>
 事物，人性，世界，是复杂、多面的。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu开机引导项]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/07/boot-grub/"/>
-    <updated>2025-04-07T07:32:27+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/07/boot-grub</id>
-    <content type="html"><![CDATA[<p><a href="https://cn.linux-terminal.com/?p=8402">配置 Ubuntu 24.04 中默认引导的操作系统或内核</a></p>
-
-<p>选项 2：使用图形工具<br/>
-对于那些不喜欢 Linux 命令的人，有一个流行的免费开放工具 Grub Customizer，它提供了完成这项工作的图形选项。</p>
-
-<!--more-->
-
-
-<p>许多 Linux（例如 Arch、Debian、Fedora 和 RHEL 9）在其系统存储库中包含 Grub 定制器。然而，由于脚本编写问题（尽管现已修复），Ubuntu 自 22.04 以来已将其从系统存储库中删除。</p>
-
-<p>要在 Ubuntu 中安装 Grub 定制器，请打开终端（Ctrl+Alt+T）并一一运行以下命令，从开发者的 PPA 中获取它。</p>
-
-<pre><code>sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-sudo apt-get update
-sudo apt-get install grub-customizer
-</code></pre>
-
-<p>然后，启动该工具并导航到“常规设置”选项卡。接下来，选择预定义条目或先前启动的条目作为默认值。最后，单击“保存”按钮应用更改。</p>
-
-<p><strong><em>还可以设置等待的秒数</em></strong></p>
-
-<p><img src="https://linux-terminal.com/common-images/os-kernel-boot-default-ubuntu-linux/grubcustomizer-defaultos.webp" alt="使用图形工具修改Ubuntu开机引导项" /></p>
 ]]></content>
   </entry>
   

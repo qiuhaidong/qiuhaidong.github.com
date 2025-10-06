@@ -8,7 +8,7 @@ comments: true
 categories: personal
 published: true
 ---
-别铲不平路、论不平事。  
+铲不平路？论不平事？  
 太傲慢。  
 我一定对？别人服我？  
 人微言轻！  

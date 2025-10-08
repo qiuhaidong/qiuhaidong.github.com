@@ -8,12 +8,12 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="看到张朝阳的物理课，查了下。
-张朝阳，清华物理系，麻省理工博士，创立搜狐，中国互联网教父，位列中国富豪榜。
-年少得志，生活潇洒风流，商海浮沉，抑郁过几年。
-2021年末，57岁，讲授物理课，各种深奥晦涩的知识。
-很多人三十来岁，已经连初中数学都不记得了。
-他还能讲授深奥的物理和数学知识， &hellip;">
+  <meta name="description" content="Ubuntu24.04安装
+以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。
+依赖：python2，ruby2.6.9 Octopress 2.0 1
+2
+git --version
+sudo apt install &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +71,241 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/04/05/octopress2-and-3-on-ubuntu-22-04/">Ubuntu 22.04安装Octopress 2.0和3.0</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-04-05T22:03:16+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:03 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://qiuhaidong.github.io/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/">Ubuntu24.04安装</a><br/>
+以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。<br/>
+依赖：python2，ruby2.6.9</p>
+
+<h3>Octopress 2.0</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git --version
+</span><span class='line'>sudo apt install git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后配置git，把之前的octopress-haydnyau和ssh2-ssh3文件夹和.gitconfig文件复制到主目录，改ssh文件夹名</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ssh -T git@github.com</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ok</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>python2 --version
+</span><span class='line'>sudo apt install python2
+</span><span class='line'>
+</span><span class='line'>ruby --version</span></code></pre></td></tr></table></div></figure>
+
+
+<p>没有<br/>
+到rvm官网(下面的命令可能有更新，看官网)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB</span></code></pre></td></tr></table></div></figure>
+
+
+<p>提示：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Command 'gpg2' not found, but can be installed with:
+</span><span class='line'>sudo apt install gnupg2</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install gnupg2
+</span><span class='line'>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+</span><span class='line'>
+</span><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
+
+
+<p>提示：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Command 'curl' not found, but can be installed with:
+</span><span class='line'>dg不要这样安装sudo apt install curl</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>注意: <a href="https://qiuhaidong.github.io/blog/2023/09/01/install-curl/">安装新版本的curl</a></h3>
+
+<h3>否则会出错</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dong@dong-Ubuntu:~$ curl -V
+</span><span class='line'>
+</span><span class='line'>找不到命令 “curl”，但可以通过以下软件包安装它：
+</span><span class='line'>sudo snap install curl  # version 8.1.2, or
+</span><span class='line'>dg不要这样安装sudo apt  install curl  # version 7.81.0-1ubuntu1.13
+</span><span class='line'>输入 “snap info curl” 以查看更多版本。
+</span><span class='line'>
+</span><span class='line'>dong@dong-Ubuntu:~$ sudo snap install curl</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>不要下面这个了:</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dg不要这样安装sudo apt install curl
+</span><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
+
+
+<p>提示：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 28 ms: 拒绝连接</span></code></pre></td></tr></table></div></figure>
+
+
+<p>解决：<br/>
+<a href="https://blog.csdn.net/u014375643/article/details/115826506">Failed to connect to raw.githubusercontent.com</a><br/>
+到这个网址：<code>https://www.ipaddress.com/</code>，输入：<code>raw.githubusercontent.com</code>，查询，得到IP地址，选择其中一个或多个，修改本地HOSTS：Ubuntu下打开/etc/hosts，添加 IP地址：<code>185.199.108.133 raw.githubusercontent.com</code>，重试，不行就重启再试。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
+
+
+<p>提示：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>* To start using RVM you need to run `source /home/dong/.rvm/scripts/rvm`
+</span><span class='line'>    in all your open shell windows, in rare cases you need to reopen all shell windows.
+</span><span class='line'>Thanks for installing RVM</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>source /home/dong/.rvm/scripts/rvm</span></code></pre></td></tr></table></div></figure>
+
+
+<p>重启命令行</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm --version
+</span><span class='line'>rvm install 2.6.9</span></code></pre></td></tr></table></div></figure>
+
+
+<p>提示错误：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Error running '__rvm_make -j4',
+</span><span class='line'>please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log
+</span><span class='line'>
+</span><span class='line'>There has been an error while running make. Halting the installation.
+</span><span class='line'>......</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>解决：</strong><br/>
+<a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm pkg install openssl
+</span><span class='line'>rvm remove 2.6.9
+</span><span class='line'>rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby --version</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>记得：终端-首选项-未命名-命令-勾选‘以登陆shell方式运行命令’，重启所有终端</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm use 2.6.9 --default</span></code></pre></td></tr></table></div></figure>
+
+
+<p>把 <code>/octopress/Gemfile</code> 文件里的源改回最初的：<code>source "https://rubygems.org/"</code></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler
+</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://qiuhaidong.github.io/blog/2022/03/26/you-can-use-the-sass-convert-command-to-automatically-fix-most-cases/">更改：You can use the sass-convert command to automatically fix most cases.</a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>......</span></code></pre></td></tr></table></div></figure>
+
+
+<p>之后就都是常规操作。</p>
+
+<h3>Octopress 3.0</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd /haydnyau</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby --version
+</span><span class='line'>rvm use 2.6.9 --default</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>jekyll --version</span></code></pre></td></tr></table></div></figure>
+
+
+<p>确保安装正确<br/>
+安装好Octopress 2.0之后，其他的依赖都安装好了，只需要：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install octopress</span></code></pre></td></tr></table></div></figure>
+
+
+<p>确保安装正确，成功，曾试过因为系统自带了ruby3.0，导致ruby版本不对，失败的<br/>
+好了。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -644,152 +879,6 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/27/add-tags/">添加tags，導航欄，側邊欄</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-27T16:34:34+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:34 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.aobosir.com/blog/2016/10/12/octopress-build-static-blog-site-add-tag-cloud-to-site-sidebar/">参考1</a></p>
-
-<h3>下载</h3>
-
-<p>首先到 <a href="https://github.com/robbyedwards/octopress-tag-pages">https://github.com/robbyedwards/octopress-tag-pages</a> 和 <a href="https://github.com/robbyedwards/octopress-tag-cloud">https://github.com/robbyedwards/octopress-tag-cloud</a> 下载这两个项目的代码。</p>
-
-<h3>octopress-tag-pages</h3>
-
-<p>把里面的文件复制到相应位置，之前已有的文件，看代码，把需要的代码加上去，<code>.md</code>文件先不用管</p>
-
-<h3>octopress-tag-cloud</h3>
-
-<p><strong>1 .</strong> 将 <code>octopress-tag-cloud\plugins</code>  路径里面的 <code>tag_cloud.rb</code>  文件复制到 <code>octopress\plugins\</code>  文件夹里面。</p>
-
-<p><strong>2 .</strong> 将下面的代码复制到 <code>octopress\source\_includes\custom\asides\tags.html</code>。（这个文件需要自己新建。）
-<strong>注意：</strong> 去掉 <code>%</code> 前面的反斜杠<code>\</code>。</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;section&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;h1&gt;</span>Tags<span class="nt">&lt;/h1&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">&quot;tag-cloud&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    {\% tag_cloud font-size: 120-160%, limit: 20 \%}
-</span><span class='line'>  <span class="nt">&lt;/ul&gt;</span>
-</span><span class='line'><span class="nt">&lt;/section&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>解释：</p>
-
-<p><code>tag_cloud</code> 的参数中， <code>font-size</code> 指定 <code>tag</code> 的大小范围；<code>limit</code> 限定 <code>20</code> 个 <code>tag</code> 。</p>
-
-<p><strong>3 .</strong> 在 <code>octopress\_config.yml</code> 中的 <code>default_asides</code> 中添加 <code>custom/asides/tags.html</code>，注意相应的位置。</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>default_asides: [custom/asides/tags.html, .....]
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>博文写标签：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>tags: [tag1, tag2, tag3]
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p> <code>rake generate</code> 出现问题：</p>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEBdI0C.SIjWT7xp6kxk44HtNtPC263DeEkNHJxhmSxZADk0hrbMx8wpKHzK5e5i3chf0lcEBpbc6HvuMur2Yj2M!/r" alt="Alt text" /></p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>  Liquid Exception: comparison of Array with Array failed in _layouts/page.html
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>解决</h3>
-
-<p><code>octopress\plugins\tag_cloud.rb</code> 第74行:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">if</span> <span class="vi">@limit</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="vi">@sort</span> <span class="o">!=</span> <span class="s1">&#39;rand&#39;</span>
-</span><span class='line'>    <span class="c1"># sort the tag pairs by frequency in descending order</span>
-</span><span class='line'>    <span class="n">weighted</span><span class="o">.</span><span class="n">sort!</span> <span class="p">{</span> <span class="o">|</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">|</span> <span class="n">b</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">&lt;=&gt;</span> <span class="n">a</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="p">}</span>
-</span><span class='line'>    <span class="c1"># then slice off the top @limit tag pairs</span>
-</span><span class='line'>    <span class="n">weighted</span> <span class="o">=</span> <span class="n">weighted</span><span class="o">[</span><span class="mi">0</span><span class="p">,</span><span class="vi">@limit</span><span class="o">]</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><code>weighted = weighted[0,@limit]</code> 应该是取指定数目的标签。如果标签数量少于 <code>@limit</code> ，会报错。</p>
-
-<p>修改第74行为:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>  <span class="k">if</span> <span class="vi">@limit</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="vi">@sort</span> <span class="o">!=</span> <span class="s1">&#39;rand&#39;</span> <span class="ow">and</span> <span class="vi">@limit</span> <span class="o">&lt;</span> <span class="n">weighted</span><span class="o">.</span><span class="n">length</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>修改第95行为:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="k">if</span> <span class="vi">@limit</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="vi">@limit</span> <span class="o">&lt;</span> <span class="n">weighted</span><span class="o">.</span><span class="n">length</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><code>rake generate</code> ，不再出现错误</p>
-
-<p>出现另一警告：</p>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEEVv9L5qdjCrWDNsdaae1gecrl4Dk5DfGovwzPBz4NGxy2YEcsjFTGZk9HPnZ4pdOW3MLz5JmXZtaeKeBaKa9YY!/r" alt="Alt text" /></p>
-
-<p><code>rake preview</code> ，标签云成功添加:</p>
-
-<p><img src="http://r.photo.store.qq.com/psc?/V53xBhKC4JFvE03uTNAL1QWxNF3K6JJT/TmEUgtj9EK6.7V8ajmQrEMkifW2gJW9D*DOdH8mhfQXdNtXOdqE9gQNJ5cLGRw3mEOzZJ.eR*6x07lmQqrmSHEFlbcBrFrU*4FcTQePqHV0!/r" alt="Alt text" /></p>
-
-<h3>解决 <code>Build Warning: Layout 'nil' requested in tags/标签名/atom.xml does not exist.</code> 警告问题</h3>
-
-<p>将 <code>octopress\source\_includes\custom\tag_feed.xml</code> 文件里面 <code>nil</code> 改为 <code>null</code> ：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">---</span>
-</span><span class='line'><span class="ss">layout</span><span class="p">:</span> <span class="n">null</span>
-</span><span class='line'><span class="o">---</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>搞定</h2>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/11">&larr; Older</a>
@@ -816,6 +905,10 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/10/09/hao-wei-ren-shi/">好为人师</a>
       </li>
     
       <li class="post">
@@ -882,10 +975,6 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
         <a href="/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/">How to Install Python 2.7 on Ubuntu 24.04</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/04/08/ubuntu-charge-protect/">Ubuntu24.04 设置充电保护</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -893,7 +982,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (169)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (170)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

@@ -8,12 +8,14 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="Ubuntu24.04安装
-以后重装系统，记得把octopress、haydnyau、ssh2、ssh3文件夹、.gitconfig，打包备份，并上传网盘。
-依赖：python2，ruby2.6.9 Octopress 2.0 1
+  <meta name="description" content="1
+rvm install 2.6.9 提示错误： 1
 2
-git --version
-sudo apt install &hellip;">
+3
+4
+5
+Error running '__rvm_make -j4',
+please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log There has been an &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +73,62 @@ sudo apt install &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/04/05/install-ruby2.6.9-error-running-rvm-make-j4/">安装Ruby2.6.9，Error Running '__rvm_make -j4'</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-04-05T22:22:58+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:22 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install 2.6.9</span></code></pre></td></tr></table></div></figure>
+
+
+<p>提示错误：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Error running '__rvm_make -j4',
+</span><span class='line'>please read /home/dong/.rvm/log/1649165570_ruby-2.6.9/make.log
+</span><span class='line'>
+</span><span class='line'>There has been an error while running make. Halting the installation.
+</span><span class='line'>......</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://github.com/rvm/rvm/issues/4370">Error running &lsquo;__rvm_make -j4&rsquo; ruby 2.6.9 Ubuntu 22.04 </a><br/>
+<strong>解决：</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm pkg install openssl
+</span><span class='line'>rvm remove 2.6.9
+</span><span class='line'>rvm install 2.6.9 -C --with-openssl-dir=$HOME/.rvm/usr</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -845,40 +903,6 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/27/read-on/">Read on 阅读全文</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-27T16:45:06+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:45 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>如果正文太长，不希望在首页直接显示完整内容，可以在适当的位置加上一句<code>&lt;!--more--&gt;</code>，后面的内容就会被按钮<code>Read on→</code>所替代，点击阅读全文。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2022/02/27/read-on/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/11">&larr; Older</a>
@@ -905,6 +929,10 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2025/10/26/zhao-hua-xi-shi/">朝花夕拾</a>
       </li>
     
       <li class="post">
@@ -971,10 +999,6 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
         <a href="/blog/2025/04/09/ubuntu24-dot-04-install-octopress-2-and-3/">Ubuntu 24.04 安装 Octopress2.0和3.0</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/04/08/how-to-install-python-2-dot-7-on-ubuntu-24-dot-04/">How to Install Python 2.7 on Ubuntu 24.04</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -982,7 +1006,7 @@ GitGuardian has detected the following OpenSSH Private Key exposed within your G
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (170)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (171)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

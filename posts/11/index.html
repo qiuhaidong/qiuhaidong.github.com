@@ -8,7 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="日劇《非自然死亡》，石原里美的經典台詞： ">
+  <meta name="description" content="有時會出現標題的錯誤，ssh無法連接服務器，試過網上的幾種方法都不行，其實是國內網絡經常封鎖github，過段時間就好了。
+update: 1. 收到邮件： GitGuardian检测到您的GitHub帐户中暴露了以下OpenSSH私钥。
+GitGuardian has detected the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +68,70 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/03/20/kex-exchange-identification-read-connection-reset-by-peer/">Kex_exchange_identification: Read: Connection Reset by Peer</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-03-20T10:32:48+08:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>10:32 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>有時會出現標題的錯誤，ssh無法連接服務器，試過網上的幾種方法都不行，其實是國內網絡經常封鎖github，過段時間就好了。<br/>
+update:</p>
+
+<h4>1. 收到邮件：</h4>
+
+<p>GitGuardian检测到您的GitHub帐户中暴露了以下OpenSSH私钥。<br/>
+GitGuardian has detected the following OpenSSH Private Key exposed within your GitHub account.<br/>
+新建key即可。</p>
+
+<h4>2. 如果把SSH key上传到仓库，会提示安全验证：</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ERROR: We're doing an SSH key audit.
+</span><span class='line'>Reason: unverified automatically (private key found in a public repository)
+</span><span class='line'>Please visit https://github.com/settings/keys/********
+</span><span class='line'>to approve this key so we know it's safe.
+</span><span class='line'>
+</span><span class='line'>Fingerprint:
+</span><span class='line'>SHA256:***********************************************
+</span><span class='line'>
+</span><span class='line'>fatal: 无法读取远程仓库。
+</span><span class='line'>
+</span><span class='line'>请确认您有正确的访问权限并且仓库存在。</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -697,87 +763,6 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/02/24/git-clone-not-master-branch/">Git 如何 Clone 非 Master 分支的代码</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-02-24T04:08:51+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>4:08 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2><a href="https://gaohaoyang.github.io/">原博：</a></h2>
-
-<h2>问题描述</h2>
-
-<p>我们每次使用命令</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@gitlab.xxx.com:xxxxx.git</span></code></pre></td></tr></table></div></figure>
-
-
-<p>默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在<code>daily/1.4.1</code>分支上，我们希望拿到这个分支上的代码。</p>
-
-<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png" /></p>
-
-<h2>解决方法</h2>
-
-<p>直接使用命令</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -r #查看远程分支</span></code></pre></td></tr></table></div></figure>
-
-
-<p>或</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git branch -a #查看所有分支</span></code></pre></td></tr></table></div></figure>
-
-
-<p>会显示</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>origin/HEAD -&gt; origin/master
-</span><span class='line'>origin/daily/1.2.2
-</span><span class='line'>origin/daily/1.3.0
-</span><span class='line'>origin/daily/1.4.1
-</span><span class='line'>origin/develop
-</span><span class='line'>origin/feature/daily-1.0.0
-</span><span class='line'>origin/master</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后直接</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git checkout origin/daily/1.4.1</span></code></pre></td></tr></table></div></figure>
-
-
-<p>就好了。。。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/12">&larr; Older</a>
@@ -804,6 +789,10 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/01/03/you-qing-xiu-cheng-wu-qing-dao/">有情修成无情道</a>
       </li>
     
       <li class="post">
@@ -870,10 +859,6 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
         <a href="/blog/2025/04/23/ubuntu-24-04-boot-repair/">Ubuntu24.04 修复引导</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/04/21/day-153/">Day 153：行动</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -881,7 +866,7 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (173)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (174)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -959,7 +944,7 @@ Ubuntu20.04自帶3版本的python，不兼容Octopress2.0的依賴。故安裝2�
 <!--返回顶部结束-->
 
 
-  Copyright &copy; 2025 - 丘海东 -
+  Copyright &copy; 2026 - 丘海东 -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

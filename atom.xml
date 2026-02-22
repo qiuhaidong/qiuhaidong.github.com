@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2026-02-22T18:53:40+08:00</updated>
+  <updated>2026-02-22T19:03:48+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -63,6 +63,18 @@
 <li><strong>学习</strong>：股市、金融知识，关注世事、时局，了解行业、公司。</li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Day 156]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2026/02/22/day-156/"/>
+    <updated>2026-02-22T18:56:16+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2026/02/22/day-156</id>
+    <content type="html"><![CDATA[<p>人到中年，对父母越来越了解，慢慢地变得复杂<br/>
+对他们又爱又恨，怒气不争，哀其不幸<br/>
+无奈、无力于：无法改变他们的认知、性格脾气。<br/>
+爱恨交织，错综复杂，说不得，剪不断，理不清，放不下。</p>
 ]]></content>
   </entry>
   
@@ -332,22 +344,6 @@ shuffle的一代二代，已经快20年了，无论哪一代，都过了其产�
     <id>https://qiuhaidong.github.io/blog/2025/04/29/tian-dao</id>
     <content type="html"><![CDATA[<p>弱者：等，靠，要。<br/>
 强者：觉醒，主动，争取，坚持。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[改hosts文件，指定IP]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2025/04/24/ipaddress/"/>
-    <updated>2025-04-24T23:47:10+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2025/04/24/ipaddress</id>
-    <content type="html"><![CDATA[<p>网站无法访问，则改hosts文件，指定IP<br/>
-到：<a href="https://www.ipaddress.com/">https://www.ipaddress.com</a>，找到网站的IP</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/hosts</span></code></pre></td></tr></table></div></figure>
-
-
-<p>格式：IP (空格) 域名，如：<code>140.82.114.36      ssh.github.com</code></p>
 ]]></content>
   </entry>
   

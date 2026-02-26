@@ -8,7 +8,8 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="参考官方说明 attention:有些commend不适合ubuntu，要区分 参见另一篇blog install mono,(mono-complete and monodevelop): sudo apt-get install mono-complete monodevelop edit: &hellip;">
+  <meta name="description" content="SSH KEYS认证方式改动
+关于git pull origin sourceorgit push origin source,若出错： fatal: Could not read from remote repository. Please make sure you have the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +67,51 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/08/22/SSL-cannot-push-pull-keys-https-issue/">路径权限错误，无法pull Push: Not Read From Remote Repository. Correct Access Rights and the Repository Exists.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-08-22T16:58:26+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2016</span></span> <span class='time'>4:58 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://help.github.com/articles/securing-your-github-pages-site-with-https/">SSH KEYS认证方式改动</a>
+关于<code>git pull origin source</code>or<code>git push origin source</code>,若出错：</p>
+
+<pre><code>fatal: Could not read from remote repository. 
+Please make sure you have the correct access rights and the repository exists.
+</code></pre>
+
+<p>SSH keys不用动</p>
+
+<pre><code>gedit octopress/.git/config
+</code></pre>
+
+<p>把<code>url = git@github.com:qiuhaidong/qiuhaidong.github.com.git</code><br/>
+改为<code>url = https://github.com/qiuhaidong/qiuhaidong.github.com.git</code><br/>
+<a href="http://bbs.csdn.net/topics/390909877">参见此Blog，9楼</a><br/>
+done.<br/>
+<code>pull</code>or<code>push</code>时或会报错，但不影响功能，多用几次就好了。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -575,35 +621,6 @@ S7 Edge：弧形屏幕的误触问题</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2016/04/01/be-alone/">习惯一个人</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-04-01T20:29:00+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>8:29 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>独自面对自己的世界。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/23">&larr; Older</a>
@@ -630,6 +647,10 @@ S7 Edge：弧形屏幕的误触问题</p>
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/02/27/day-157/">见世面的7个阶段</a>
       </li>
     
       <li class="post">
@@ -696,10 +717,6 @@ S7 Edge：弧形屏幕的误触问题</p>
         <a href="/blog/2025/05/06/duan-qi-mu-biao/">短期目标</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/05/01/qu-nian-he-jin-nian-de-gu-piao-cao-zuo-chai-yi/">去年和今年的股票操作差异</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -707,7 +724,7 @@ S7 Edge：弧形屏幕的误触问题</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (178)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (179)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -726,7 +743,7 @@ S7 Edge：弧形屏幕的误触问题</p>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 130%" href="/tags/octopress/">octopress</a></li>
 <li><a style="font-size: 135%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
-<li><a style="font-size: 147%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 146%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 120%" href="/tags/python2-ubuntu/">python2-ubuntu</a></li>
 <li><a style="font-size: 139%" href="/tags/rough/">rough</a></li>
 <li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>

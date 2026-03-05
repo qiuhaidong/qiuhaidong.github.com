@@ -8,9 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="在根目录新建一文件夹_templates，文件夹里建一个文件post，无后缀，内容是： 注意，格式问题，显示有问题，参见原文件 layout: title: &ldquo;&rdquo;
-date: author:
-tags: comments: true categories: ">
+  <meta name="description" content="博客根目录，文件index.html，找到Recent Posts这一大段内容，复制，打开_layouts/post.html，找到： 1
+2
+&lt;div class="right"&gt; &lt;div class="wrap"&gt; 复制到其后面。 因为只复制一段老是有错， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +68,47 @@ tags: comments: true categories: ">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/02/21/post-html-add-sidebar-about-recent-posts/">博文页增加Recent Posts等侧边栏</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-02-21T21:43:06+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2022</span></span> <span class='time'>9:43 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>博客根目录，文件<code>index.html</code>，找到<code>Recent Posts</code>这一大段内容，复制，打开<code>_layouts/post.html</code>，找到：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;div class="right"&gt;
+</span><span class='line'>    &lt;div class="wrap"&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>复制到其后面。</p>
+
+<p>因为只复制一段老是有错，现在我是把<code>index.html</code>的<code>&lt;div class="right"&gt;</code>右边栏一直到最后的内容，代替了<code>_layouts/post.html</code>右边栏一直到最后的内容。</p>
+
+<h1>🤪😀</h1>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -479,35 +520,6 @@ gemfile.lock</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/01/12/write-them-all/">好记性不如烂笔头</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-01-12T00:37:26+08:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>12:37 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>很多以前做过的事，细节步骤都不记得了，多写字吧，详细地记录下来，以后也有个回忆。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/14">&larr; Older</a>
@@ -534,6 +546,10 @@ gemfile.lock</p>
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/03/06/kan-po-di-yu-xiang/">勘破地狱相</a>
       </li>
     
       <li class="post">
@@ -600,10 +616,6 @@ gemfile.lock</p>
         <a href="/blog/2025/06/12/change/">改变</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/06/02/watch-out/">警惕网上附和你情绪的奶头乐</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -611,7 +623,7 @@ gemfile.lock</p>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (180)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (181)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

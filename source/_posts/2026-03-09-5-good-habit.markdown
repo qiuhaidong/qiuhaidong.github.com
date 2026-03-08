@@ -1,0 +1,21 @@
+---
+layout: post
+title: "5 good habit"
+date: 2026-03-09 02:15:19 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+1. 记录小赢  
+培养成就感，转变悲观思维。  
+2. 写日记  
+记录想法，锻炼表达能力和逻辑思维。  
+3. 戒色情  
+直面色情冲动，通过贴标签、观察和转移注意力来克服。  
+4. 与陌生人说话  
+提高社交能力，变得更加开朗。  
+5. 运动  
+适度运动，释放负面情绪，提升毅力和成就感。
+

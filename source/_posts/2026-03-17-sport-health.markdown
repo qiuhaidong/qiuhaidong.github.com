@@ -19,4 +19,6 @@ published: true
 现在不知是不是心理作用，感觉心偶尔有一两下刺痛。  
 **明天不允许运动！**  
 顶多只能散步。  
+
+
 ![运动健康](https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/refs/heads/source/source/images/%E8%BF%90%E5%8A%A8%E5%81%A5%E5%BA%B7.jpg)  

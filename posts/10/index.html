@@ -8,13 +8,8 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="出现标题问题，打开：IPAddress.com ，有时会出现403禁止访问的错误，要点一下Go to Homepage才行。输入：ssh.github.com，得到IP地址：
-140.82.113.36
-140.82.114.35
-修改本地hosts： 1
-2
-cd /etc
-sudo gedit &hellip;">
+  <meta name="description" content="问题解决：curl: (7) Failed to connect to raw.githubusercontent.com port 443: 拒绝连接
+https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -72,6 +67,52 @@ sudo gedit &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2022/05/27/curl-7-failed-to-connect-to-raw-dot-githubusercontent-dot-com-port-443-after-28-ms-ju-jue-lian-jie/">Curl: (7) Failed to Connect to raw.githubusercontent.com Port 443 After 28 Ms: 拒绝连接</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2022-05-27T15:19:28+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>3:19 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://blog.csdn.net/u014375643/article/details/115826506">问题解决：curl: (7) Failed to connect to raw.githubusercontent.com port 443: 拒绝连接</a><br/>
+<a href="https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/">https://qiuhaidong.github.io/blog/2022/04/05/octopress2-on-ubuntu-22-dot-04/</a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt install curl
+</span><span class='line'>curl -sSL https://get.rvm.io | bash -s stable</span></code></pre></td></tr></table></div></figure>
+
+
+<p>提示：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 28 ms: 拒绝连接</span></code></pre></td></tr></table></div></figure>
+
+
+<p>解决：<br/>
+<a href="https://blog.csdn.net/u014375643/article/details/115826506">Failed to connect to raw.githubusercontent.com</a><br/>
+到这个网址：<code>https://www.ipaddress.com/</code>，输入：<code>raw.githubusercontent.com</code>，查询，得到IP地址，选择其中一个或多个，修改本地HOSTS：Ubuntu下打开/etc/hosts，添加 IP地址：<code>185.199.108.133 raw.githubusercontent.com</code>，重试，不行就重启再试。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -392,65 +433,6 @@ sudo gedit &hellip;">
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2022/05/11/think-different/">Think Different 不同凡响</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2022-05-11T20:44:09+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>11</span><span class='date-suffix'>th</span>, <span class='date-year'>2022</span></span> <span class='time'>8:44 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>苹果公司1997年广告  🍎</p>
-
-<p>Here&rsquo;s to the crazy ones.<br/>
-向那些疯狂的家伙们致敬。<br/>
-The misfits.<br/>
-他们特立独行，<br/>
-The rebels.<br/>
-他们桀骜不驯，<br/>
-The troublemakers.<br/>
-他们惹是生非，<br/>
-The round pegs in the square holes.<br/>
-他们格格不入，<br/>
-The ones who see things differently.<br/>
-他们用与众不同的眼光看待事物，<br/>
-They&rsquo;re not fond of rules.<br/>
-他们不喜欢墨守成规，<br/>
-And they have no respect for the status quo.<br/>
-他们也不愿安于现状。<br/>
-You can quote them, disagree with them，glorify or vilify them.<br/>
-你可以赞美他们，反对他们，颂扬或是诋毁他们，<br/>
-About the only thing that you can&rsquo;t do is ignore them.<br/>
-但唯独不能漠视他们。<br/>
-Because they change things.<br/>
-因为他们改变了寻常事物。<br/>
-They push the human race forward.<br/>
-他们推动人类向前发展。<br/>
-While some may see them as the crazy ones, we see genius.<br/>
-或许他们是别人眼里的疯子，但他们却是我们眼中的天才。<br/>
-Because the people who are crazy enough to think that they can change the world, are the ones who do.<br/>
-因为只有那些疯狂到以为自己能够改变世界的人，<br/>
-才能真正地改变世界。</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/11">&larr; Older</a>
@@ -477,6 +459,10 @@ Because the people who are crazy enough to think that they can change the world,
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/03/25/health/">健康，拯救自己千万次</a>
       </li>
     
       <li class="post">
@@ -543,10 +529,6 @@ Because the people who are crazy enough to think that they can change the world,
         <a href="/blog/2025/10/08/chu-xiu/">除锈</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/10/07/yuan-chi-lan-ren-lan-shi/">远离烂人烂事，不作恶，少为“善”</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -554,7 +536,7 @@ Because the people who are crazy enough to think that they can change the world,
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (184)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (185)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
@@ -572,7 +554,7 @@ Because the people who are crazy enough to think that they can change the world,
 <li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
 <li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
 <li><a style="font-size: 130%" href="/tags/octopress/">octopress</a></li>
-<li><a style="font-size: 135%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 134%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
 <li><a style="font-size: 146%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
 <li><a style="font-size: 120%" href="/tags/python2-ubuntu/">python2-ubuntu</a></li>
 <li><a style="font-size: 139%" href="/tags/rough/">rough</a></li>
@@ -581,7 +563,7 @@ Because the people who are crazy enough to think that they can change the world,
 <li><a style="font-size: 126%" href="/tags/she/">she</a></li>
 <li><a style="font-size: 130%" href="/tags/ssh/">ssh</a></li>
 <li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
-<li><a style="font-size: 133%" href="/tags/ubuntu/">ubuntu</a></li>
+<li><a style="font-size: 132%" href="/tags/ubuntu/">ubuntu</a></li>
 <li><a style="font-size: 120%" href="/tags/ubuntu-charge-protect/">ubuntu-charge-protect</a></li>
 <li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
 

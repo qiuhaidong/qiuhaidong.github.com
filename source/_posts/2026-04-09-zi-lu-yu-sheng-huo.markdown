@@ -14,6 +14,7 @@ published: true
 **Read** for 2 hours, not 5.  
 **Deep work** for 3 hours, not 12.  
 You're a **human**, not a **machine**.  
+
 **睡眠**，8小时，而不是6小时。  
 **锻炼**，1小时，而不是4小时。  
 **学习**，3小时，而不是10小时。  

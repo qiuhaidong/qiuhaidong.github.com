@@ -8,11 +8,9 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="无法验证此文件的数字签名
-进入bios
-1. security选项，secure boot control这类的选项，设置为disabled。
-2. boot选项，launch csm 设置为enabled。
-">
+  <meta name="description" content="参见原博：error : no symbol table
+升级到ubuntu18.04后，开机出现： error：no symbol table
+press any key to continue&hellip; sudo fdisk -l This will list all &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +68,54 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2018/09/05/error-no-symbol-table/">Ubuntu启动问题 : No Symbol Table</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2018-09-05T09:17:32+08:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>9:17 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://askubuntu.com/questions/965070/no-symbol-table-error-after-upgrading-to-17-04">参见原博：error : no symbol table</a><br/>
+升级到ubuntu18.04后，开机出现：</p>
+
+<p><strong><em>error：no symbol table</em></strong><br/>
+<strong><em>press any key to continue&hellip;</em></strong></p>
+
+<pre><code>sudo fdisk -l  
+</code></pre>
+
+<p>This will list all partitions on your HDD (find under Type section the Ubuntu or Linux and its Device (like <code>/dev/sda</code>)) then, do:</p>
+
+<pre><code>sudo grub-install /dev/sda  
+</code></pre>
+
+<p>note that is sda and NOT sda1</p>
+
+<pre><code>sudo update-grub  
+
+sudo reboot  
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -393,36 +439,6 @@ CPU：联发科X20<br/>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2017/05/23/ju-ci-lang-de-xia-tian/">菊次郎的夏天</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2017-05-23T11:58:35+08:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2017</span></span> <span class='time'>11:58 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>那些已冷藏的伤疤，被温暖照亮，却愈发刺眼。<br/>
-<img src="http://r.photo.store.qq.com/psb?/V13NDf2z0er9V4/gEEtVVwokP3l3d8.*duRr7cZTSt2bXHsR2Dn2jcwWts!/r/dFYBAAAAAAAA" alt="1" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/19">&larr; Older</a>
@@ -449,6 +465,10 @@ CPU：联发科X20<br/>
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/04/09/zi-lu-yu-sheng-huo/">自律与生活管理</a>
       </li>
     
       <li class="post">
@@ -515,10 +535,6 @@ CPU：联发科X20<br/>
         <a href="/blog/2025/10/09/hao-wei-ren-shi/">好为人师</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2025/10/08/chu-xiu/">除锈</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -526,7 +542,7 @@ CPU：联发科X20<br/>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (185)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (186)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

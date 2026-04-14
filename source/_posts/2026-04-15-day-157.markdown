@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Day 157"
+date: 2026-04-15 02:12:52 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+认真做好每一件事。  
+比如打球，作出改变，改进打法

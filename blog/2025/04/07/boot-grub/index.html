@@ -8,8 +8,9 @@
   <title>Ubuntu开机引导项 - 丘海东</title>g
 
   
-  <meta name="description" content="配置 Ubuntu 24.04 中默认引导的操作系统或内核 选项 2：使用图形工具
-对于那些不喜欢 Linux 命令的人，有一个流行的免费开放工具 Grub Customizer，它提供了完成这项工作的图形选项。 许多 Linux（例如 Arch、Debian、Fedora 和 RHEL 9） &hellip;">
+  <meta name="description" content="2026-04-07，更新： 命令行升级（不是说这里有因果关系），Ubuntu26.04，之后想更改默认启动项，用下面的图形工具，报错。
+尝试改 /etc/default/grub，应用：sudo update-grub，还是报错。
+再回到图形工具，点击“还原”，（忘了要不要先保存一下），再重新改 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,7 +87,18 @@
   </header>
 
 
-<div class="entry-content"><p><a href="https://cn.linux-terminal.com/?p=8402">配置 Ubuntu 24.04 中默认引导的操作系统或内核</a></p>
+<div class="entry-content"><h3>2026-04-07，更新：</h3>
+
+<p>命令行升级（不是说这里有因果关系），Ubuntu26.04，之后想更改默认启动项，用下面的图形工具，报错。<br/>
+尝试改 <code>/etc/default/grub</code>，应用：<code>sudo update-grub</code>，还是报错。<br/>
+再回到图形工具，点击“还原”，（忘了要不要先保存一下），再重新改，<br/>
+<strong>行了</strong>。</p>
+
+<hr />
+
+<hr />
+
+<p><a href="https://cn.linux-terminal.com/?p=8402">配置 Ubuntu 24.04 中默认引导的操作系统或内核</a></p>
 
 <p>选项 2：使用图形工具<br/>
 对于那些不喜欢 Linux 命令的人，有一个流行的免费开放工具 Grub Customizer，它提供了完成这项工作的图形选项。</p>

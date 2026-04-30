@@ -186,7 +186,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2026/04/30/123/">123test26.04</a></h1>
+      <h1 class="entry-title"><a href="/blog/2026/04/30/update-to-ubuntu-26-dot-04/">用命令行升级到Ubuntu 26.04</a></h1>
     
     
       <p class="meta">
@@ -195,43 +195,53 @@
 
 
 
-<time class='entry-date' datetime='2026-04-30T21:24:36+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2026</span></span> <span class='time'>9:24 pm</span></time>
+<time class='entry-date' datetime='2026-04-30T21:34:30+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2026</span></span> <span class='time'>9:34 pm</span></time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content">
-</div>
-  
-  
+  <div class="entry-content"><p>参考：<a href="https://www.bilibili.com/opus/1194724902391775251">如何优雅地升级到 Ubuntu 26.04 LTS</a><br/>
+Ubuntu 25.10系统可以立即升级（有时要等待几天，分批推送），而Ubuntu 24.04 LTS系统将在Ubuntu 26.04.1发布后获得标准升级路径。</p>
 
+<h3>首先，最重要的：备份。</h3>
 
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2026/04/30/test2510/">Test2510</a></h1>
-    
-    
-      <p class="meta">
-        
+<p>然后，先更新现有系统到最新：</p>
 
+<pre><code>sudo apt update
+sudo apt upgrade
+</code></pre>
 
+<p>开始版本升级，请运行：</p>
 
+<pre><code>sudo do-release-upgrade
+</code></pre>
 
-<time class='entry-date' datetime='2026-04-30T19:51:07+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2026</span></span> <span class='time'>7:51 pm</span></time>
-        
-      </p>
-    
-  </header>
+<p>如果Ubuntu尚未提供新版本（尚未推送），请遵循您当前版本的标准支持发布流程。</p>
 
+<p>但您想立即升级，可以添加 -d 参数强制检查开发/发布版本：</p>
 
-  <div class="entry-content">
+<pre><code>sudo do-release-upgrade -d
+</code></pre>
+
+<p>该工具将禁用第三方仓库，将apt源更新为指向Ubuntu 26.04的仓库，并开始下载所需的软件包。在此过程中，您将多次收到提示。当询问服务是否应自动重启时，输入 y。当询问配置文件时，如果您没有进行自定义更改，则输入 Y以接受软件包维护者的版本；否则保留您的当前版本以避免丢失自定义设置。</p>
+
+<p>升级过程在一个GNU screen会话中运行，如果连接断开，它会自动重新附加。此过程可能需要一段时间，具体取决于软件包数量、您的硬件和互联网速度。</p>
+
+<p>安装完新软件包后，工具会询问是否要删除过时的软件。输入 d以先查看列表，或输入 y以继续删除。</p>
+
+<p>当升级完成时，系统会提示您重新启动系统。输入 y以重启并完成升级。</p>
+
+<p>验证升级，系统启动后，登录并检查Ubuntu版本：</p>
+
+<pre><code>lsb_release -a
+</code></pre>
+
+<p>确认内核版本：</p>
+
+<pre><code>uname -r
+</code></pre>
 </div>
   
   
@@ -404,6 +414,46 @@
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2026/04/21/jian-fei-day-30/">减肥 Day 30</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2026-04-21T23:59:24+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2026</span></span> <span class='time'>11:59 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h5>正式执行！</h5>
+
+<p>今天只吃了1餐，没吃米饭<br/>
+鸡蛋羹（4个）：300卡<br/>
+水煮包菜，200g：100卡<br/>
+油、调料：100卡<br/>
+共：500卡<br/>
+跑步：6km <br/>
+体重：123.4斤</p>
+
+<p>昨天太晚睡，不好。<br/>
+今晚早点睡</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -431,11 +481,7 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2026/04/30/123/">123test26.04</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2026/04/30/test2510/">Test2510</a>
+        <a href="/blog/2026/04/30/update-to-ubuntu-26-dot-04/">用命令行升级到Ubuntu 26.04</a>
       </li>
     
       <li class="post">
@@ -498,6 +544,10 @@
         <a href="/blog/2026/03/17/sport-health/">运动健康</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/2026/03/09/5-good-habit/">5个好习惯</a>
+      </li>
+    
   </ul>
 </section>
 <section>
@@ -505,7 +555,7 @@
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (199)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (198)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
 <li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>

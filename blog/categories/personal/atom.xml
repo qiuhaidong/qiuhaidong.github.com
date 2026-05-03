@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2026-05-04T04:17:23+08:00</updated>
+  <updated>2026-05-04T04:45:20+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -67,6 +67,27 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Newpost Error: libgedit-gtksourceview-WARNING, Failed to Load Style Scheme File]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2026/05/04/newpost-libgedit-gtksourceview-warning-failed-to-load-style-scheme-file/"/>
+    <updated>2026-05-04T04:30:15+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2026/05/04/newpost-libgedit-gtksourceview-warning-failed-to-load-style-scheme-file</id>
+    <content type="html"><![CDATA[<p>Ubuntu 26.04，新建blog提示错误：</p>
+
+<pre><code>dong@dong-Ubuntu:~$ ./newpost.sh 
+*********************
+
+(gedit:8630): libgedit-gtksourceview-WARNING **: 04:11:11.080: Failed to load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru.xml': 第 3 行第 1 个字符出错： attribute 'version' invalid for element 'style-scheme'
+
+(gedit:8630): libgedit-gtksourceview-WARNING **: 04:11:11.081: Failed to load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru-dark.xml': 第 3 行第 1 个字符出错： attribute 'version' invalid for element 'style-scheme'
+</code></pre>
+
+<p>找到这两个文件，先备份（到阿里云盘），然后把第二行的<code>version="1.0"</code>删除。<br/>
+就不再提示错误了。<br/>
+如果以后出现其他问题，把它们改回来。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Daily 160]]></title>
     <link href="https://qiuhaidong.github.io/blog/2026/05/04/daily-160/"/>
     <updated>2026-05-04T04:11:10+08:00</updated>
@@ -80,54 +101,6 @@
 <p>如果你能在别人身上，看到非凡勇气和魄力，那么在你的内心深处,一定也有同样的东西，否则你是看不出来的。<br/>
 不要只仰望别人的光，你能认出光，证明你本身也有光。<br/>
 你心里有光，你内心深处的力量其实并未缺席，只是需要你去勇敢的唤醒，大胆的去做，你远比自己想象中更厉害。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[用命令行升级到Ubuntu 26.04]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2026/04/30/update-to-ubuntu-26-dot-04/"/>
-    <updated>2026-04-30T21:34:30+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2026/04/30/update-to-ubuntu-26-dot-04</id>
-    <content type="html"><![CDATA[<p>参考：<a href="https://www.bilibili.com/opus/1194724902391775251">如何优雅地升级到 Ubuntu 26.04 LTS</a><br/>
-Ubuntu 25.10系统可以立即升级（有时要等待几天，分批推送），而Ubuntu 24.04 LTS系统将在Ubuntu 26.04.1发布后获得标准升级路径。</p>
-
-<h3>首先，最重要的：备份。</h3>
-
-<p>然后，先更新现有系统到最新：</p>
-
-<pre><code>sudo apt update
-sudo apt upgrade
-</code></pre>
-
-<p>开始版本升级，请运行：</p>
-
-<pre><code>sudo do-release-upgrade
-</code></pre>
-
-<p>如果Ubuntu尚未提供新版本（尚未推送），请遵循您当前版本的标准支持发布流程。</p>
-
-<p>但您想立即升级，可以添加 -d 参数强制检查开发/发布版本：</p>
-
-<pre><code>sudo do-release-upgrade -d
-</code></pre>
-
-<p>该工具将禁用第三方仓库，将apt源更新为指向Ubuntu 26.04的仓库，并开始下载所需的软件包。在此过程中，您将多次收到提示。当询问服务是否应自动重启时，输入 y。当询问配置文件时，如果您没有进行自定义更改，则输入 Y以接受软件包维护者的版本；否则保留您的当前版本以避免丢失自定义设置。</p>
-
-<p>升级过程在一个GNU screen会话中运行，如果连接断开，它会自动重新附加。此过程可能需要一段时间，具体取决于软件包数量、您的硬件和互联网速度。</p>
-
-<p>安装完新软件包后，工具会询问是否要删除过时的软件。输入 d以先查看列表，或输入 y以继续删除。</p>
-
-<p>当升级完成时，系统会提示您重新启动系统。输入 y以重启并完成升级。</p>
-
-<p>验证升级，系统启动后，登录并检查Ubuntu版本：</p>
-
-<pre><code>lsb_release -a
-</code></pre>
-
-<p>确认内核版本：</p>
-
-<pre><code>uname -r
-</code></pre>
 ]]></content>
   </entry>
   

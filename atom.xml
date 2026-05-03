@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2026-05-04T04:17:23+08:00</updated>
+  <updated>2026-05-04T04:45:20+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -63,6 +63,27 @@
 <li><strong>学习</strong>：股市、金融知识，关注世事、时局，了解行业、公司。</li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newpost Error: libgedit-gtksourceview-WARNING, Failed to Load Style Scheme File]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2026/05/04/newpost-libgedit-gtksourceview-warning-failed-to-load-style-scheme-file/"/>
+    <updated>2026-05-04T04:30:15+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2026/05/04/newpost-libgedit-gtksourceview-warning-failed-to-load-style-scheme-file</id>
+    <content type="html"><![CDATA[<p>Ubuntu 26.04，新建blog提示错误：</p>
+
+<pre><code>dong@dong-Ubuntu:~$ ./newpost.sh 
+*********************
+
+(gedit:8630): libgedit-gtksourceview-WARNING **: 04:11:11.080: Failed to load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru.xml': 第 3 行第 1 个字符出错： attribute 'version' invalid for element 'style-scheme'
+
+(gedit:8630): libgedit-gtksourceview-WARNING **: 04:11:11.081: Failed to load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru-dark.xml': 第 3 行第 1 个字符出错： attribute 'version' invalid for element 'style-scheme'
+</code></pre>
+
+<p>找到这两个文件，先备份（到阿里云盘），然后把第二行的<code>version="1.0"</code>删除。<br/>
+就不再提示错误了。<br/>
+如果以后出现其他问题，把它们改回来。</p>
 ]]></content>
   </entry>
   
@@ -340,27 +361,6 @@ You&rsquo;re a <strong>human</strong>, not a <strong>machine</strong>.</p>
     <content type="html"><![CDATA[<p>如果你是内向，高敏的人，你大概率是有学习和思考天赋的，因此你必须向上走，没有别的选择。<br/>
 底层世界大多在用动物的思维来做事，野蛮暴力，污言秽语不堪入耳。你的天赋不仅毫无用处，反而容易被同化。<br/>
 而高层的人与环境，更纯净，更高能，跟你的频率更接近，这才是你应该发挥的地方。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[运动健康]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2026/03/17/sport-health/"/>
-    <updated>2026-03-17T00:14:09+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2026/03/17/sport-health</id>
-    <content type="html"><![CDATA[<p><strong>危险！</strong><br/>
-<strong>警觉！</strong><br/>
-今天跑步15公里。<br/>
-这几天都是<strong>失眠</strong>，6点才能睡着。这种情况下，跑15公里，<strong>很容易猝死！</strong><br/>
-<strong>警觉！</strong><br/>
-万幸的是，我白天还是睡到自然醒的，6点睡到2-3点，不过期间醒醒睡睡，睡眠质量不好。另外我是7分配速，同时心率147，控制得比较好。<br/>
-以后跑步，不能快过7分配，最好7分30，心率不能超过150，最好140-130以内，还有，最好5-8公里，尽量别超过10公里。<br/>
-<strong>不求速度，不求记录，只求健康。</strong><br/>
-现在不知是不是心理作用，感觉心偶尔有一两下刺痛。<br/>
-<strong>明天不允许运动！</strong><br/>
-顶多只能散步。</p>
-
-<p><img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/refs/heads/source/source/images/%E8%BF%90%E5%8A%A8%E5%81%A5%E5%BA%B7.jpg" alt="运动健康" /></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2026-04-30T23:46:40+08:00</updated>
+  <updated>2026-05-04T04:17:23+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -67,6 +67,23 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Daily 160]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2026/05/04/daily-160/"/>
+    <updated>2026-05-04T04:11:10+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2026/05/04/daily-160</id>
+    <content type="html"><![CDATA[<p>你崇拜的人身上，藏着你的品位和志趣。<br/>
+你厌恶的人身上，藏着你的底线和原则。<br/>
+在高认知的环境中，多表达你的真诚。<br/>
+在低认知的环境中，多展示你的强大。<br/>
+在崇拜与厌恶中照见自我，以人为镜，以己为尺，可明得失。</p>
+
+<p>如果你能在别人身上，看到非凡勇气和魄力，那么在你的内心深处,一定也有同样的东西，否则你是看不出来的。<br/>
+不要只仰望别人的光，你能认出光，证明你本身也有光。<br/>
+你心里有光，你内心深处的力量其实并未缺席，只是需要你去勇敢的唤醒，大胆的去做，你远比自己想象中更厉害。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[用命令行升级到Ubuntu 26.04]]></title>
     <link href="https://qiuhaidong.github.io/blog/2026/04/30/update-to-ubuntu-26-dot-04/"/>
     <updated>2026-04-30T21:34:30+08:00</updated>
@@ -111,17 +128,6 @@ sudo apt upgrade
 
 <pre><code>uname -r
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Daily 159]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2026/04/28/daily-159/"/>
-    <updated>2026-04-28T11:20:44+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2026/04/28/daily-159</id>
-    <content type="html"><![CDATA[<p>走出困境，就问：<br/>
-眼下，我还能做些什么？<br/>
-做小事，一点，一点，一小步，一小步，走出来。</p>
 ]]></content>
   </entry>
   

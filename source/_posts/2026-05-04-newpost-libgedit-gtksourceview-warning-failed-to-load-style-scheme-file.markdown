@@ -19,6 +19,7 @@ Ubuntu 26.04，新建blog提示错误：
 
 
 找到这两个文件，先备份（到阿里云盘），然后把第二行的`version="1.0"`删除。  
+![Yaru.xml, Yaru-dark.xml](https://wx3.sinaimg.cn/large/780bc50fgy1icsyi44l0gj213w0hmqch.jpg)
 就不再提示错误了。  
 如果以后出现其他问题，把它们改回来。
 

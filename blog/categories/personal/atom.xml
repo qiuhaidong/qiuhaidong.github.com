@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2026-05-04T04:57:14+08:00</updated>
+  <updated>2026-05-04T05:02:10+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -81,9 +81,12 @@
 (gedit:8630): libgedit-gtksourceview-WARNING **: 04:11:11.081: Failed to load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru-dark.xml': 第 3 行第 1 个字符出错： attribute 'version' invalid for element 'style-scheme'
 </code></pre>
 
-<p>找到这两个文件，先备份（到阿里云盘），然后把第二行的<code>version="1.0"</code>删除。<br/>
-<img src="https://wx3.sinaimg.cn/large/780bc50fgy1icsyi44l0gj213w0hmqch.jpg" alt="Yaru.xml, Yaru-dark.xml" />
-就不再提示错误了。<br/>
+<p>找到这两个文件，先备份（到阿里云盘），然后把第二行的<code>version="1.0"</code>删除。</p>
+
+<p><img src="https://wx3.sinaimg.cn/large/780bc50fgy1icsyi44l0gj213w0hmqch.jpg" alt="Yaru.xml, Yaru-dark.xml" /><br/>
+<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/refs/heads/source/source/images/libgedit-gtksourceview-WARNING%20.png" alt="in source" /></p>
+
+<p>就不再提示错误了。<br/>
 如果以后出现其他问题，把它们改回来。</p>
 ]]></content>
   </entry>

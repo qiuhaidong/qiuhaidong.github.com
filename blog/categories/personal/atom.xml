@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Personal | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/blog/categories/personal/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2026-05-06T03:06:49+08:00</updated>
+  <updated>2026-05-09T03:00:11+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -67,6 +67,16 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Daily 162]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2026/05/09/daily-162/"/>
+    <updated>2026-05-09T02:58:50+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2026/05/09/daily-162</id>
+    <content type="html"><![CDATA[<p>思路打开，自由，不设限！<br/>
+做点事情！</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Daily 161：回避型人格，怕]]></title>
     <link href="https://qiuhaidong.github.io/blog/2026/05/06/daily-161/"/>
     <updated>2026-05-06T03:01:12+08:00</updated>
@@ -74,31 +84,6 @@
     <content type="html"><![CDATA[<p>混的不好的人往往都是<strong>回避型人格</strong>。<br/>
 这类人都有一个共同特征：就是<strong>怕，怕抛头露面，怕出丑，怕承担责任</strong>。<br/>
 他们通常都<strong>缺乏过程思维和长期主义</strong>精神。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newpost Error: libgedit-gtksourceview-WARNING, Failed to Load Style Scheme File]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2026/05/04/newpost-libgedit-gtksourceview-warning-failed-to-load-style-scheme-file/"/>
-    <updated>2026-05-04T04:30:15+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2026/05/04/newpost-libgedit-gtksourceview-warning-failed-to-load-style-scheme-file</id>
-    <content type="html"><![CDATA[<p>Ubuntu 26.04，新建blog提示错误：</p>
-
-<pre><code>dong@dong-Ubuntu:~$ ./newpost.sh 
-*********************
-
-(gedit:8630): libgedit-gtksourceview-WARNING **: 04:11:11.080: Failed to load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru.xml': 第 3 行第 1 个字符出错： attribute 'version' invalid for element 'style-scheme'
-
-(gedit:8630): libgedit-gtksourceview-WARNING **: 04:11:11.081: Failed to load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru-dark.xml': 第 3 行第 1 个字符出错： attribute 'version' invalid for element 'style-scheme'
-</code></pre>
-
-<p>找到这两个文件，先备份（到阿里云盘），然后把第二行的<code>version="1.0"</code>删除。</p>
-
-<p><img src="https://wx3.sinaimg.cn/large/780bc50fgy1icsyi44l0gj213w0hmqch.jpg" alt="Yaru.xml, Yaru-dark.xml" /><br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/refs/heads/source/source/images/libgedit-gtksourceview-WARNING%20.png" alt="in source" /></p>
-
-<p>就不再提示错误了。<br/>
-如果以后出现其他问题，把它们改回来。</p>
 ]]></content>
   </entry>
   

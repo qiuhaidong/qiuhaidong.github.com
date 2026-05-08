@@ -8,5 +8,5 @@ comments: true
 categories: personal
 published: true
 ---
-思路打开，自由，不设限！  
-做点事情！
+**思路打开，身体、时间、精神都自由，不设限！**  
+**做点事情！**

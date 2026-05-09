@@ -8,4 +8,6 @@ comments: true
 categories: personal
 published: true
 ---
-错了就错了，别总欺负以前的自己。他当时一个人，站在迷雾里也很迷茫。
+错了就错了，别总欺负以前的自己。  
+他当时一个人，站在迷雾里也很迷茫。  
+放下，轻装上阵。

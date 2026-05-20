@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2026-05-20T07:54:40+08:00</updated>
+  <updated>2026-05-20T08:11:28+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -154,6 +154,19 @@ Caring too much about others' judgments is bullying yourself.</p>
 <p>如果你能在别人身上，看到非凡勇气和魄力，那么在你的内心深处,一定也有同样的东西，否则你是看不出来的。<br/>
 不要只仰望别人的光，你能认出光，证明你本身也有光。<br/>
 你心里有光，你内心深处的力量其实并未缺席，只是需要你去勇敢的唤醒，大胆的去做，你远比自己想象中更厉害。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu 26.04 开机引导项]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2026/04/30/ubuntu-26-boot-grub/"/>
+    <updated>2026-04-30T22:02:57+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2026/04/30/ubuntu-26-boot-grub</id>
+    <content type="html"><![CDATA[<p>命令行升级（不是说这里有因果关系），Ubuntu26.04，之后想更改默认启动项，用下面的图形工具，报错。<br/>
+<a href="https://qiuhaidong.github.io/blog/2025/04/07/boot-grub/">Grub Customizer</a><br/>
+尝试改 <code>/etc/default/grub</code>，应用：<code>sudo update-grub</code>，还是报错。<br/>
+再回到图形工具，点击“还原”，（忘了要不要先保存一下），再重新改，<br/>
+<strong>行了</strong>。</p>
 ]]></content>
   </entry>
   
@@ -334,16 +347,6 @@ sudo apt upgrade
     <content type="html"><![CDATA[<p>做好饮食管理，作息管理，运动管理。<br/>
 今天计划，跑步5km。<br/>
 打球看情况另作决定。  比如打完球，再去跑步。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day 157]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2026/04/15/day-157/"/>
-    <updated>2026-04-15T02:12:52+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2026/04/15/day-157</id>
-    <content type="html"><![CDATA[<p>认真做好每一件事。<br/>
-比如打球，作出改变，改进打法</p>
 ]]></content>
   </entry>
   

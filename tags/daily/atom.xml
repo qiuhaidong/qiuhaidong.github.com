@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: daily | 丘海东]]></title>
   <link href="https://qiuhaidong.github.io/tags/daily/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2026-05-31T07:10:33+08:00</updated>
+  <updated>2026-06-02T09:00:29+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -67,52 +67,1140 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[本质：竞争、争夺]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2026/05/31/ben-zhi-:jing-zheng/"/>
-    <updated>2026-05-31T00:34:32+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2026/05/31/ben-zhi-:jing-zheng</id>
-    <content type="html"><![CDATA[<p>社会（人性）的本质，是争夺。<br/>
-抢掠，争斗，阳谋阴谋，各种手段。<br/>
-不存在划分地盘，永不越界的理想，因为<strong>资源有限</strong>。<br/>
-蓝海期很短暂，漫长的红海期刺刀见红。<br/>
-<strong>越早认清、接受，才能提高认知</strong>。<br/>
-选择躺平、退让，就是<strong>放弃</strong>机会、资源，那，就得接受<strong>必然的</strong>庸碌，穷困，无能。<br/>
-这，就是现实。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Daily 165：谈谈国乒]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2026/05/21/daily-165:tan-tan-guo-ping/"/>
-    <updated>2026-05-21T02:09:13+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2026/05/21/daily-165:tan-tan-guo-ping</id>
-    <content type="html"><![CDATA[<p>个人见解及猜想。<br/>
-国乒这几十年来，取得非常好的成就，国家的经济也越来越发达，民智也渐开。<br/>
-某些人的思想，从为国争光，过渡到为自谋利。<br/>
-自利本无可厚非，但是边界和原则没守住。<br/>
-谋利变成了牟利，自利演化为损人利己，甚至损人不利己。</p>
+    <title type="html"><![CDATA[老陈 - AI自动交易系统]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2026/06/02/lao-chen-ai-auto-trade/"/>
+    <updated>2026-06-02T08:44:32+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2026/06/02/lao-chen-ai-auto-trade</id>
+    <content type="html"><![CDATA[<h1>EasyMoney - A股自动化短线交易系统</h1>
+
+<h2>项目简介</h2>
+
+<p>EasyMoney 是一个基于 Python 的全自动化 A 股短线交易系统，实现了<strong>零主观、全量化、铁律执行</strong>的交易体系。系统部署在云服务器上全天候运行，基于东方财富市场数据与阿里千问 AI 大模型，结合 SmartTag 智能选股、BoardRank 板块隔离、BuyAnalyzer AI 买入分析、RiskAnalyzer AI 风险分析，实现从选股、买入、持仓管理到卖出的全链路自动化。</p>
 
 <!--more-->
 
 
-<p>刘国梁及京圈，一直处于权力利益的中心，他们学习了一些方法，发展饭圈，试图通过制造热点，买通稿，买KOL发声，引导粉丝行为，为自牟利。<br/>
-打破底线的极端行为是，2024年巴黎奥运会时期，他们要求陈梦樊振东为孙颖莎大头让球，人为造神，期间他们把训练资源极度倾斜给自己人，还阻碍陈梦樊振东训练，破坏他们的竞技状态。<br/>
-但是大头早早爆冷出局，国家脸面命悬一线，他们只能寄望东哥，而陈梦不屈服压迫，决赛战胜孙颖莎。<br/>
-所以有了奥运会名场面，陈梦夺冠，刘国梁及京队集体黑脸，东哥处于绝境时，早早出局的大头和其队友刘丁硕在观众席偷笑。<br/>
-刘国梁等，搞了个WTT，定下规则，强制所有的顶尖运动员参赛，供其牟利。<br/>
-樊振东毅然退出，远赴欧洲发展。<br/>
-没想到没有了樊振东等运动员，WTT的吸引力大幅下降，盈利亏损，商业价值持续走低。<br/>
-而樊振东在国外风生水起，欧洲联赛的商业价值持续走高。<br/>
-两相对比之下，刘国梁及京圈，对樊振东怀恨在心，又无可奈何。当然他们也仍然利用自己在国内的手段，做一些上不得台面的事情，试图恶心樊振东，比如国乒宣传，挑选樊振东被遮挡的照片，比如回放樊振东曾经输球的比赛。<br/>
-还有这两天，樊振东输球，刘丁硕发6个鸡蛋暗讽，这个我认为是他向京圈摇尾巴的投名状。<br/>
-（有一个说法是，樊振东刚更换了胶皮，接受技术的发展，与时俱进，还在适应期，但输了就是输了，只找原因，不找借口）<br/>
-其实他和樊振东有恩怨吗？我认为没有，以前他比赛时，樊振东还指导帮助他赢得比赛，我想，他退役后，因为以前没有取得过好的成绩，没有养老福利，没有商业价值，只能依附京圈。<br/>
-出来社会十几年，我也明白，钱难挣，翔难吃，很多人在利益面前，往往抛弃底线。<br/>
-而且有的人脑残，某一些运动员嘛，四肢发达，头脑简单，他们的思维可能是，你樊振东走了，我们的商业联赛没人看了，我们挣不到钱了，是你害了我。<br/>
-他们无法接受，是因为自己没有价值，才挣不到钱。樊振东以前帮他们挣钱，他们不感激，现在不帮他们挣钱了，他们就怨恨。<br/>
-现今网络的发达，信息能极速传播，民智也越来越开。<br/>
-他们搞的饭圈，只能吸引了一些脑残粉，没智商，也不愿思考及接受真相。<br/>
-而我们很多人，不叼饭圈那一套，有人愿意发声，说出事实，有人愿意思考，拨乱反正，还原真相。</p>
+<h3>核心原则</h3>
+
+<ul>
+<li><strong>零主观</strong>：所有决策由规则 + AI 驱动，消除人为干预</li>
+<li><strong>全量化</strong>：买卖条件完全量化，精确到分钟级执行</li>
+<li><strong>铁律执行</strong>：自动化系统强制执行规则，避免情绪化操作</li>
+<li><strong>只吃确定性利润</strong>：通过多层过滤 + AI 筛查确保交易机会的确定性</li>
+</ul>
+
+
+<h2>系统架构</h2>
+
+<pre><code>┌──────────────────────────────────────────────────────────────┐
+│                      easymoney.py (主入口)                    │
+│  BuyerManager / SellerManager / UtilityManager               │
+└──────────┬───────────────────────────────────┬───────────────┘
+           │                                   │
+    ┌──────▼──────┐                    ┌───────▼───────┐
+    │  买入策略层  │                    │  卖出策略层    │
+    │  HotStop    │                    │  PositionSeller│
+    │  Supplement │                    │  ConditionMgr  │
+    └──────┬──────┘                    └───────┬───────┘
+           │                                   │
+    ┌──────▼──────────────────────────────────▼───────┐
+    │                  数据 &amp; AI 层                     │
+    │  SmartTag  BoardRank  StockInfoFetcher           │
+    │  BuyAnalyzer  RiskAnalyzer  QwenAPI              │
+    └──────────────────────┬──────────────────────────┘
+                           │
+    ┌──────────────────────▼──────────────────────────┐
+    │                  交易接口层                       │
+    │  AssetPosition  SubmitTrade  Snapshot  DealData  │
+    └─────────────────────────────────────────────────┘
+</code></pre>
+
+<h2>交易体系详解</h2>
+
+<h3>一、选股范围</h3>
+
+<ul>
+<li><strong>可交易市场</strong>：沪主板、深主板、创业板</li>
+<li><strong>绝对排除</strong>：ST、*ST、退市风险、利空暴雷问题股票</li>
+</ul>
+
+
+<h3>二、动态梯度持仓控制</h3>
+
+<p>系统采用动态梯度持仓管理，根据当前持仓数量自动调节买入权限：</p>
+
+<table>
+<thead>
+<tr>
+<th> 档位 </th>
+<th> 持仓数量 </th>
+<th> 买入权限 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> 宽松档 </td>
+<td> ≤4只 </td>
+<td> 可执行强势回调买入策略 </td>
+</tr>
+<tr>
+<td> 限制档 </td>
+<td> =5只 </td>
+<td> 仅允许执行强势回调策略 </td>
+</tr>
+<tr>
+<td> 禁仓档 </td>
+<td> ≥6只 </td>
+<td> 全面禁止任何新开仓、补仓操作 </td>
+</tr>
+<tr>
+<td> 满仓档 </td>
+<td> =8只 </td>
+<td> 当日直接禁止所有买入、补仓操作 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><strong>参数配置</strong>：最大持仓上限 N=8（可自定义），单只个股计划买入金额 = 账户总资产 ÷ 8</p>
+
+<h3>三、买入策略（当前启用：热门止跌策略）</h3>
+
+<p>所有买入操作在尾盘 <strong>14:55</strong> 执行。系统采用单一核心策略，精准捕捉主升浪，避开垃圾时间：</p>
+
+<h4>核心策略：热门止跌策略（HotStop）</h4>
+
+<p><strong>选股流程</strong>：</p>
+
+<ol>
+<li><p><strong>SmartTag 全字段数据获取</strong>：调用东方财富 SmartTag API，获取热门止跌条件股的完整字段数据，字段清洗规则：<code>&lt;80&gt;</code> → <code>_W</code>（周线），<code>&lt;140&gt;</code> → <code>_NR</code>（不复权），<code>{日期}</code> 去除，<code>[区间]总和</code> 去除。结合 StockQuote 批量行情接口，完整字段说明如下（去重）：</p></li>
+<li><p><strong>基础信息</strong>：序号、股票代码、股票名称、市场简称（SH/SZ/BJ）、市场码、上市板块、是否自选股、是否ST、是否退市</p></li>
+<li><strong>行情数据</strong>：最新价、涨跌幅、涨跌额、开盘价、昨收价、最高价、最低价（日线不复权）、买入价（买一）、卖出价（卖一）、振幅、量比、换手率、成交额、成交量、涨速、涨速比率、现手、区间涨跌幅</li>
+<li><strong>技术指标</strong>：均线多头排列、阶段强势股、MACD值（日线/周线）、MACD DIF值（日线/周线）、MACD DEA值（日线/周线）、KDJ J/K/D值（日线/周线）</li>
+<li><strong>资金流向</strong>：主力净流入、主力净额N日总和、增仓占比、区间增仓占比、集合竞价、超大单流入/流出/净额/净占比、大单流入/流出/净额/净占比、中单流入/流出/净额/净占比、小单流入/流出/净额/净占比、沪深股通净买入额</li>
+<li><strong>DDX/DDY/DDZ</strong>：当日DDX/DDY/DDZ、5日DDX/DDY、10日DDX/DDY、DDX飘红天数（连续/5日内/10日内）</li>
+<li><strong>筹码与股东</strong>：沪深股通持仓占流通股比、70%筹码集中度、90%筹码集中度、A股股东户数、A股股东户数增长率、股东总户数、股东总户数增长率、股东户数变动日期、人均持股数、总股本、流通股</li>
+<li><strong>估值与市值</strong>：市盈率(动)、市净率、总市值（不复权）、流通市值（不复权）、每股收益、每股净资产、净资产收益率ROE（加权）</li>
+<li><strong>财务数据</strong>：营业收入、营业收入同比、营业利润、投资收益、利润总额、净利润、净利润同比、未分配利润、每股未分配利润、毛利率</li>
+<li><strong>资产负债</strong>：总资产、流动资产、固定资产、无形资产、总负债、流动负债、长期负债、资产负债比率、股东权益、股东权益比、公积金、每股公积金</li>
+<li><strong>板块归属</strong>：所属行业板块、所属地区板块、所属概念板块</li>
+<li><strong>其他</strong>：股吧人气排名、机构评级</li>
+<li><strong>BoardRank 板块标注</strong>：并发查询每只股票所属的二级行业板块，添加 <code>BOARD_NAME</code> 字段</li>
+<li><strong>BuyAnalyzer AI 分析</strong>：调用阿里千问大模型，结合近14天资讯/公告/公司大事，对每只候选股进行风险筛查与上涨潜力打分，输出 <code>IS_RISK</code>/<code>RISK_COMMENT</code>/<code>SCORE</code>/<code>PRIORITY</code> 字段</li>
+<li><strong>数据缓存</strong>：AI 分析结果缓存至类变量，各实例共享，避免重复 API 请求</li>
+<li><strong>多层过滤</strong>：排除风险股、ST/退市股、价格超限股、已持仓股、已持仓板块股、撤单股</li>
+<li><strong>优先级排序</strong>：按 AI 打分的 <code>PRIORITY</code> 升序排列，优先买入评分最优的股票</li>
+</ol>
+
+
+<p><strong>SmartTag 筛选前置条件</strong>：
+- 东方财富当日人气前300
+- 涨跌幅区间 -2%~4%
+- 量比 0.4~2.8
+- 日线均线多头排列
+- 日线阶段强势股</p>
+
+<p><strong>适用场景</strong>：捕捉强势股回调后的止跌反弹机会</p>
+
+<p><strong>防重入机制</strong>：同一策略子类同时只允许一个 <code>buy()</code> 执行，防止定时任务重叠；每个策略子类当日最多买入 <code>buy_number</code> 只股票，跨日自动重置</p>
+
+<h4>已禁用策略</h4>
+
+<p><details>
+<summary>策略一：超跌人气策略（已禁用）</summary></p>
+
+<ul>
+<li>个股当日涨跌幅 ≤ 0%</li>
+<li>5日内涨跌幅 &lt; -10%</li>
+<li>东方财富当日实时人气股前500</li>
+<li>MACD DIF > 0.5 且 &lt; 1.2（周线周期）</li>
+</ul>
+
+
+<p><strong>禁用原因</strong>：逆势抄底风险大，超跌股可能继续下跌，与右侧短线体系不匹配
+</details></p>
+
+<p><details>
+<summary>策略二：趋势拐头策略（已禁用）</summary></p>
+
+<ul>
+<li>个股趋势拐头向上（5日均线上穿10日均线，且当日收盘价在5日均线之上）</li>
+<li>个股当日下跌</li>
+<li>东方财富当日实时人气股前500</li>
+<li>量比 ≥ 0.5 且 ≤ 2.5</li>
+</ul>
+
+
+<p><strong>禁用原因</strong>：热门止跌策略已完全覆盖其选股逻辑，且均线多头+阶段强势双重过滤更安全
+</details></p>
+
+<h3>四、买入统一前置硬性条件</h3>
+
+<ul>
+<li>持仓未达最大持仓上限（N=8），且符合当前持仓档位对应的买入权限</li>
+<li><strong>二级行业板块隔离</strong>：现有持仓无同二级行业个股，通过 <code>BoardRank</code> 模块获取股票所属二级行业，严格执行板块分散</li>
+<li>当日卖出过的板块，当天不再买回</li>
+<li>单只个股计划买入金额，固定为账户总资产÷8</li>
+<li>当日大盘未触发极端熔断条件（14:55买入前检查）</li>
+<li>全市场上涨家数 ≥ 2000（市场情绪偏弱时不开仓）</li>
+<li><strong>买入挂单价格</strong>：所有买入操作（含补差额）均以买1价挂单，宁可买不进也不愿损失滑点</li>
+</ul>
+
+
+<h3>五、二级行业板块隔离机制</h3>
+
+<p>系统通过 <code>BoardRank</code> 模块实现二级行业板块隔离：</p>
+
+<p><strong>板块数据获取</strong>：
+- 调用东方财富 API 获取股票所属的行业板块和概念板块信息
+- 区分一级行业（如"电子"）和二级行业（如"半导体"、"数字芯片设计"）
+- 以二级行业作为板块隔离的基准单位</p>
+
+<p><strong>隔离规则</strong>：
+- 同一二级行业最多持有一只个股
+- 优先选择行业排名靠前的优质个股
+- 卖出某行业个股后，当日不再买回该行业股票</p>
+
+<p><strong>板块隔离的好处</strong>：</p>
+
+<table>
+<thead>
+<tr>
+<th> 优势 </th>
+<th> 说明 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <strong>降低系统性风险</strong> </td>
+<td> 避免过度集中于单一行业，当某行业遭遇利空时不会全军覆没 </td>
+</tr>
+<tr>
+<td> <strong>分散投资</strong> </td>
+<td> 跨行业配置确保组合收益来源多样化 </td>
+</tr>
+<tr>
+<td> <strong>提高稳定性</strong> </td>
+<td> 平滑不同行业周期带来的波动，降低账户回撤幅度 </td>
+</tr>
+<tr>
+<td> <strong>捕捉多机会</strong> </td>
+<td> 同时参与多个热点行业，不错失市场轮动机会 </td>
+</tr>
+<tr>
+<td> <strong>风控增强</strong> </td>
+<td> 防止行业黑天鹅事件对账户造成致命打击 </td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>尾盘买卖执行机制</h3>
+
+<p>14:54 止盈清仓检查与 14:55 买入卖出虽时间接近，但不会冲突：止盈清仓逻辑极简，比例达标即全仓卖出，耗时极短；卖出完成后，14:55 的买入操作在空仓状态下执行，反而获得最大的买入权限。若未触发清仓，14:55 的卖出策略逻辑同样极简，触发条件即执行；买入需依次判断大盘熔断、上涨家数、仓位等多重条件，消耗时间远大于卖出，因此卖出总是先于买入完成。</p>
+
+<ul>
+<li><strong>买入重试</strong>：尾盘买入策略每30秒执行一次，14:55-14:57可对同一只股票最多重试4次买入</li>
+<li><strong>订单监控</strong>：每10秒自动扫描挂单，若买入订单价格低于当前实际价格则撤单重挂，卖出订单价格高于当前实际价格则撤单重挂，确保每次30秒重试都能以最新价格尝试成交</li>
+</ul>
+
+
+<h3>六、卖出规则（铁律执行）</h3>
+
+<h4>1. 盘中实时卖出（全天自动监控，触发立即100%全仓卖出）</h4>
+
+<ul>
+<li>任何一只持仓个股盘中触及涨停价，立即卖出</li>
+<li>命中「毁灭性硬利空关键词」，立即按跌停价卖出</li>
+<li>触发「停牌+实质性风险」，立即按跌停价卖出</li>
+</ul>
+
+
+<h4>2. 尾盘止盈清仓（14:54后每60秒检查）</h4>
+
+<p>当账户当日盈亏比例（当日盈亏 ÷ 人民币总资产）≥ 3% 时，无条件清仓所有持仓。</p>
+
+<p><strong>核心优势</strong>：</p>
+
+<table>
+<thead>
+<tr>
+<th> 优势 </th>
+<th> 说明 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <strong>解决僵尸股顽疾</strong> </td>
+<td> 借大涨节点批量清盘，不管个股强弱、是否滞涨，全部重置，彻底杜绝弱势股长期占用仓位 </td>
+</tr>
+<tr>
+<td> <strong>利润落袋 + 无缝换仓</strong> </td>
+<td> 单日大涨后市场极易分化，先锁定盈利；同时间换入最新一轮阶段强势股，吃新一轮行情，不吃鱼尾 </td>
+</tr>
+<tr>
+<td> <strong>契合右侧短线逻辑</strong> </td>
+<td> 每月仅触发 1-2 次，属于阶段性调仓，不打乱日常交易节奏；始终保持持仓是当下资金主线，持仓永远"新鲜" </td>
+</tr>
+<tr>
+<td> <strong>与原有风控兼容</strong> </td>
+<td> 上涨家数、量比、日线多头、梯度持仓、板块隔离、止损/人气淘汰等规则全部沿用，新选股依旧受全套规则约束，风险不变 </td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>3. 尾盘持仓风险AI检测（14:54后每60秒执行）</h4>
+
+<p>针对当日下跌的个股，调用 HoldRiskAnalyzer AI 分析器（千问3.7-max），综合行情/资金/DDX/财务/板块/近14天资讯全量数据，判断三大核心风险：</p>
+
+<ul>
+<li><strong>板块退潮</strong>：主力+超大单同步净流出、机构资金持续流出、个股表现弱于板块平均</li>
+<li><strong>伪强势股</strong>：概念标签热门但资金净流出、小幅收涨但DDX为负且量比偏高、换手率高但无创新高动能</li>
+<li><strong>资金出逃早期</strong>：主力净流入&lt;0、超大单净额&lt;0、量比>1.5（放量下跌）、DDX为负</li>
+</ul>
+
+
+<p>满足以下任意组合即触发卖出：板块退潮+伪强势 / 伪强势+资金出逃 / 板块退潮+资金出逃。涨停股前置拦截直接持有，资讯利空仅作辅助佐证不单独决策。</p>
+
+<h4>5. 尾盘强制淘汰（14:55准时执行）</h4>
+
+<p>检查所有持仓个股14:55时的东方财富人气排名，跌出前1000名，无条件立即卖出。</p>
+
+<h3>七、三层防雷风控体系</h3>
+
+<h4>第一层：1分钟轮询硬性利空检测（9:20开盘起每分钟执行）</h4>
+
+<p>调用 RiskAnalyzer AI 风险分析器，综合分析资讯、公告、公司大事，判断持仓股票是否存在硬性利空风险，命中则以跌停价立即卖出。</p>
+
+<h4>第二层：1小时轮询停牌风险检测</h4>
+
+<p>检查个股是否发布停牌公告，若停牌则调用 RiskAnalyzer AI 分析是否存在利空风险，命中则立即卖出。</p>
+
+<h4>第三层：尾盘阴跌淘汰</h4>
+
+<p>每日14:55清掉所有人气跌出前1000名的个股，杜绝长期阴跌套牢。</p>
+
+<h3>八、极端场景补充规则</h3>
+
+<h4>大盘极端熔断（当日生效）</h4>
+
+<p>14:55买入前检查，全市场上涨家数 &lt; 2000（市场情绪偏弱，不宜开仓），当日尾盘全面禁止任何新开仓操作。</p>
+
+<h3>九、当日买入差额补仓规则</h3>
+
+<blockquote><p>核心目的：确保持仓中每只股票的金额均衡，有利于盈亏平衡。</p></blockquote>
+
+<ul>
+<li><strong>补仓前提</strong>：仅针对当日14:55尾盘新买入的个股，因成交问题导致实际成交金额未达到计划买入金额时执行</li>
+<li><strong>计划金额标准</strong>：单只个股计划买入金额 = 账户总资产 ÷ 8</li>
+<li><strong>补仓执行</strong>：每日14:56核对当日新买入个股的实际成交金额与计划买入金额，计算差额部分，按当日尾盘14:56时该个股的买1价重新挂单买入（宁可买不进也不愿损失滑点）</li>
+<li><strong>仓位限制</strong>：持仓=5只时，仅允许对策略三买入的个股补仓；持仓≥6只时，禁止一切补仓操作</li>
+</ul>
+
+
+<h2>项目结构</h2>
+
+<pre><code>easymoney/
+├── easymoney.py                  # 主入口文件
+├── buyer_manager.py              # 买入策略管理器（注册定时任务、风控检查）
+├── seller_manager.py             # 卖出策略管理器（注册定时任务、并发卖出）
+├── utility_manager.py            # 工具任务管理器（撤单、日志、记录同步）
+│
+├── managers/                     # 核心管理模块
+│   ├── easymoney.py              # 核心调度器（APScheduler、交易时段判断）
+│   ├── config.py                 # 配置管理（EasyMoneyConfig、梯度持仓计算）
+│   ├── strategy_manager.py       # 买入策略注册管理
+│   └── seller_manager.py         # 卖出策略注册管理
+│
+├── strategies/                   # 买入策略模块
+│   ├── base_strategy.py          # 策略抽象基类
+│   ├── smart_tag_board_strategy.py # SmartTag板块策略基类（防重入、每日限额、板块龙头）
+│   ├── hot_stop.py               # 热门止跌策略（SmartTag全字段+BoardRank+BuyAnalyzer AI）
+│   ├── buyer_clist.py            # 列表买入策略
+│   ├── guba_top.py               # 股吧热门策略
+│   ├── rebound_dip.py            # 反弹抄底策略
+│   ├── strong_multi_side.py      # 条件股策略
+│   ├── influx_numeric.py         # 净流入策略
+│   ├── continuous_reduction.py   # 超跌人气策略（已禁用）
+│   ├── supplement_buy.py         # 补仓策略
+│   ├── buyer.py                  # 买入执行器（防重复买入、买1价挂单）
+│   └── utils/                    # 策略工具
+│       ├── buy_analyzer.py       # 买入策略AI分析器（千问大模型风险筛查+打分）
+│       ├── buy_strategy_prompt.md # BuyAnalyzer系统提示词
+│       ├── bought_recorder.py    # 买入记录器（防重复买入）
+│       ├── jsonfile.py           # JSON文件读写工具
+│       ├── logger.py             # 日志工具
+│       └── path.py               # 路径工具
+│
+├── sellers/                      # 卖出策略模块
+│   ├── base.py                   # 卖出条件基类（SellCondition/ConditionType）
+│   ├── condition_manager.py      # 条件管理器（单例、注册/查询/按类型筛选）
+│   ├── position_seller.py        # 持仓卖出执行器（买1价/跌停价卖出）
+│   ├── kline_seller.py           # K线卖出策略（别名）
+│   ├── hold_risk_strategy.py     # 持仓风险AI卖出策略（持仓≥3天且当日下跌）
+│   ├── top_profit_strategy.py    # 顶部止盈策略（当日盈亏≥3%清仓）
+│   ├── utils/
+│   │   ├── risk_analyzer.py      # AI风险分析器（千问大模型+关键词分类）
+│   │   ├── hold_risk_analyzer.py # 持仓风险AI分析器（板块退潮/伪强势/资金出逃）
+│   │   └── sell_strategy_prompt.md # HoldRiskAnalyzer系统提示词
+│   └── conditions/               # 卖出条件实现
+│       ├── hard_risk.py          # 第一层：硬性利空AI检测（1分钟轮询，RiskAnalyzer AI分析）
+│       ├── suspend_risk_stock.py # 第二层：停牌风险AI检测（1小时轮询，停牌+RiskAnalyzer AI分析）
+│       ├── popularity_rank.py    # 第三层：人气排名淘汰（尾盘）
+│       ├── multi_source_risk.py  # AI风险检测（RiskAnalyzer AI分析，命中利空即卖）
+│       ├── zt.py                 # 涨停卖出
+│       ├── profit_threshold.py   # 盈利阈值卖出
+│       ├── daily_profit_threshold.py # 当日盈利阈值
+│       ├── ending_profit.py      # 尾盘盈利卖出
+│       ├── days_falling.py       # 连续下跌条件（含人气前100豁免）
+│       ├── hot200.py             # 人气榜200卖出
+│       ├── risk_stock.py         # AI风险股票检测
+│       ├── custom_profit.py      # 自定义盈利条件
+│       └── simple_threshold.py   # 简单阈值条件
+│
+├── request_lib/                  # 请求库
+│   ├── base_request.py           # 基础请求类（重试、限流、网络检测）
+│   ├── configurable.py           # 配置基类（统一配置读取）
+│   ├── config_manager.py         # 配置管理器
+│   ├── qwen_api.py               # 阿里千问API客户端（json_mode、联网搜索）
+│   ├── market/                   # 市场数据接口
+│   │   ├── smart_tag.py          # 智能标签选股（get/get_all_fields/parse_all_fields）
+│   │   ├── board_rank.py         # 板块排名（二级行业板块查询）
+│   │   ├── stock_info_fetcher.py # 股票信息获取器（并发获取公告/资讯/公司大事）
+│   │   ├── stock_quote.py       # 批量股票详细行情（行情/资金/DDX/财务/板块全量字段）
+│   │   ├── popularity_rank.py    # 人气排名前1000
+│   │   ├── clist.py              # 沪深京A股排名列表
+│   │   ├── kline.py              # K线数据
+│   │   ├── index_list.py         # 三大指数数据
+│   │   ├── up_down_stat.py       # 大盘涨跌平统计
+│   │   ├── security_ann.py       # 公告信息（含风险/硬利空关键词检测）
+│   │   ├── info_service.py       # 资讯服务（含风险/硬利空关键词检测）
+│   │   ├── company_event.py      # 公司大事（含风险/硬利空关键词检测）
+│   │   ├── hot200.py             # 人气榜200
+│   │   ├── stock_suspend_api.py  # 停牌信息
+│   │   └── clist_input.py        # 排名列表输入参数
+│   ├── trade/                    # 交易接口
+│   │   ├── asset_position.py     # 持仓信息
+│   │   ├── submittrade.py        # 交易提交
+│   │   ├── snapshot.py           # 实时行情快照
+│   │   ├── deal_data.py          # 成交数据
+│   │   ├── revoke_orders.py      # 撤单
+│   │   ├── revoke_list.py        # 撤单列表
+│   │   ├── batch_revoke_orders.py # 批量撤单
+│   │   ├── his_orders.py         # 历史委托
+│   │   └── all_need_trade_info.py # 交易所需全部信息
+│   └── utils/                    # 工具类
+│       ├── jsonfile.py           # JSON文件读写
+│       └── logger.py             # 日志工具
+│
+├── kline/                        # K线数据模块
+│   ├── kline_local.py            # 本地K线数据处理
+│   ├── stock_kline_local.py      # 个股K线分析
+│   ├── stock_kline.py            # K线数据获取
+│   ├── kline_log.py              # K线日志
+│   └── kline_local_sync.py       # K线本地同步
+│
+└── config.json                   # 配置文件
+</code></pre>
+
+<h2>AI 分析模块</h2>
+
+<h3>BuyAnalyzer（买入策略AI分析器）</h3>
+
+<p>位于 <code>strategies/utils/buy_analyzer.py</code>，用于买入前的风险筛查与上涨潜力打分。</p>
+
+<p><strong>工作流程</strong>：
+1. 接收 SmartTag 全字段候选股票列表
+2. 调用 <code>batch_fetch_stock_info</code> 并发获取每只股票近14天的公告、资讯、公司大事
+3. 将股票数据 + 近期信息拼接为用户输入
+4. 调用阿里千问大模型（默认 <code>qwen3.7-max</code>），以 <code>json_mode</code> 输出结构化分析结果
+5. 返回每只股票的 <code>is_risk</code>（是否有风险）、<code>risk_comment</code>（风险说明）、<code>score</code>（上涨潜力评分）、<code>priority</code>（买入优先级）</p>
+
+<p><strong>系统提示词</strong>：独立存储在 <code>strategies/utils/buy_strategy_prompt.md</code>，便于维护和调优</p>
+
+<h3>RiskAnalyzer（卖出风险AI分析器）</h3>
+
+<p>位于 <code>sellers/utils/risk_analyzer.py</code>，用于盘中持仓股票的硬性利空风险检测，默认模型 <code>qwen-plus</code>。</p>
+
+<p><strong>架构</strong>：数据获取层（<code>StockInfoFetcher</code>）与 AI 分析层（<code>RiskAnalyzer</code>）分离</p>
+
+<p><strong>工作流程</strong>：</p>
+
+<ol>
+<li><code>StockInfoFetcher</code> 并发获取公告、资讯、公司大事</li>
+<li>关键词预过滤：先用 190+ 风险关键词 / 40 硬利空关键词筛选潜在风险信息</li>
+<li>AI 精判：将预过滤结果提交千问大模型，判断是否为实质性风险</li>
+<li>结果缓存：基于数据指纹（MD5）缓存分析结果，避免重复调用 AI</li>
+</ol>
+
+
+<p><strong>两种分析模式</strong>：</p>
+
+<ul>
+<li><strong>一般风险分析</strong>：14天窗口，190+ 关键词预过滤 + AI 精判</li>
+<li><strong>硬性利空分析</strong>：14天窗口，40 硬利空关键词预过滤 + AI 精判</li>
+</ul>
+
+
+<h3>HoldRiskAnalyzer（持仓风险AI分析器）</h3>
+
+<p>位于 <code>sellers/utils/hold_risk_analyzer.py</code>，用于尾盘持仓风险深度检测，默认模型 <code>qwen3.7-max</code>。</p>
+
+<p><strong>触发条件</strong>：持仓≥3天且当日下跌的个股</p>
+
+<p><strong>工作流程</strong>：</p>
+
+<ol>
+<li>筛选持仓≥3天且当日下跌的候选股票</li>
+<li>调用 <code>StockQuote.get()</code> 批量获取可视化行情数据（含行情/资金/DDX/财务/板块全量字段）</li>
+<li>调用 <code>batch_fetch_stock_info</code> 并发获取近14天资讯</li>
+<li>将行情数据 + 资讯拼接为用户输入，调用千问大模型分析三大核心风险</li>
+<li>输出每只股票的 <code>boardTrend</code>（板块趋势：强势/警戒/退潮）、<code>isFakeStrong</code>（是否伪强势）、<code>isCapitalEscapeEarly</code>（是否资金出逃早期）、<code>suggestion</code>（持有/警戒/卖出）</li>
+</ol>
+
+
+<p><strong>三大核心风险判定</strong>：</p>
+
+<table>
+<thead>
+<tr>
+<th> 风险类型 </th>
+<th> 判定标准 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <strong>板块退潮</strong> </td>
+<td> 强风险：主力+超大单同步净流出、机构资金持续流出、个股弱于板块；弱偏弱：放量滞涨、DDX飘红天数下滑、换手率高但无冲高动能 </td>
+</tr>
+<tr>
+<td> <strong>伪强势股</strong> </td>
+<td> 满足2条即标记：概念热门但资金净流出、小幅收涨但DDX为负且量比>1.5、换手率高但无创新高动能、大资金持续离场、量能萎缩且10日DDX翻绿 </td>
+</tr>
+<tr>
+<td> <strong>资金出逃早期</strong> </td>
+<td> 必须4条同时满足：主力净流入&lt;0、超大单净额&lt;0、量比>1.5、DDX为负 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><strong>卖出触发组合</strong>：板块退潮+伪强势 / 伪强势+资金出逃 / 板块退潮+资金出逃，满足任意一组即卖出</p>
+
+<p><strong>系统提示词</strong>：独立存储在 <code>sellers/utils/sell_strategy_prompt.md</code>，便于维护和调优</p>
+
+<p><strong>缓存机制</strong>：同一天只调用一次AI接口，结果按日期缓存，后续调用直接使用缓存</p>
+
+<h3>QwenAPI（阿里千问API客户端）</h3>
+
+<p>位于 <code>request_lib/qwen_api.py</code>，封装阿里千问大模型 API 调用。</p>
+
+<p><strong>特性</strong>：
+- 兼容 OpenAI SDK，使用阿里云 DashScope 兼容模式端点
+- 支持 <code>json_mode</code>：设置 <code>response_format={"type": "json_object"}</code>，模型输出合法 JSON
+- 支持联网搜索：<code>enable_search=True</code> 时启用强制搜索
+- API Key 优先级：配置文件 > 环境变量 <code>DASHSCOPE_API_KEY</code>
+- 可选模型：<code>qwen-plus</code>、<code>qwen-turbo</code>、<code>qwen3.7-max</code>、<code>qwen-vl-plus-latest</code></p>
+
+<h2>环境要求</h2>
+
+<ul>
+<li>Python 3.8+</li>
+<li>Windows / Linux / macOS</li>
+<li>推荐部署在云服务器上实现全天候自动化运行</li>
+<li>阿里千问 API Key（用于 AI 分析功能）</li>
+</ul>
+
+
+<h2>安装配置</h2>
+
+<h3>1. 克隆项目</h3>
+
+<pre><code class="bash">git clone https://github.com/your-username/easymoney.git
+cd easymoney
+</code></pre>
+
+<h3>2. 创建虚拟环境</h3>
+
+<pre><code class="bash">python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# Linux/macOS
+source .venv/bin/activate
+</code></pre>
+
+<h3>3. 安装依赖</h3>
+
+<pre><code class="bash">pip install -r requirements.txt
+</code></pre>
+
+<h3>4. 配置文件</h3>
+
+<p>复制并修改 <code>config.json</code> 文件，填写必要的配置信息：</p>
+
+<pre><code class="json">{
+    "maxRetries": 3,
+    "retryInterval": 10,
+    "requestInterval": 10,
+    "requestTimeout": 10,
+    "api_key": "your-dashscope-api-key",
+    "kline_cookie": "",
+    "clist_cookie": ""
+}
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th> 参数 </th>
+<th> 类型 </th>
+<th> 说明 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <code>maxRetries</code> </td>
+<td> int </td>
+<td> 最大重试次数 </td>
+</tr>
+<tr>
+<td> <code>retryInterval</code> </td>
+<td> int </td>
+<td> 重试间隔（秒） </td>
+</tr>
+<tr>
+<td> <code>requestInterval</code> </td>
+<td> int </td>
+<td> 请求间隔（秒） </td>
+</tr>
+<tr>
+<td> <code>requestTimeout</code> </td>
+<td> int </td>
+<td> 请求超时时间（秒） </td>
+</tr>
+<tr>
+<td> <code>api_key</code> </td>
+<td> string </td>
+<td> 阿里千问 API Key </td>
+</tr>
+<tr>
+<td> <code>kline_cookie</code> </td>
+<td> string </td>
+<td> K线接口 Cookie（可选） </td>
+</tr>
+<tr>
+<td> <code>clist_cookie</code> </td>
+<td> string </td>
+<td> 排名列表接口 Cookie（可选） </td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>快速开始</h2>
+
+<h3>启动交易系统</h3>
+
+<pre><code class="bash">python easymoney.py
+</code></pre>
+
+<p>系统将在交易时段内自动执行注册的策略。</p>
+
+<h3>核心功能</h3>
+
+<ul>
+<li><strong>AI 智能选股</strong>：SmartTag 全字段数据 + BuyAnalyzer AI 风险筛查与打分</li>
+<li><strong>自动买入</strong>：14:55 自动执行买入操作，防重入、每日限额</li>
+<li><strong>自动卖出</strong>：盘中实时监控 + 尾盘止盈清仓 + 尾盘统一卖出</li>
+<li><strong>止盈清仓</strong>：14:54后每60秒检查，当日盈亏比例≥3%时无条件清仓</li>
+<li><strong>AI 风险监控</strong>：1分钟轮询利空关键词 + AI 精判，1小时轮询停牌风险</li>
+<li><strong>梯度持仓</strong>：根据持仓数量自动调节买入权限</li>
+<li><strong>板块隔离</strong>：二级行业板块分散投资，降低系统性风险</li>
+<li><strong>补仓执行</strong>：14:56自动补足未成交金额</li>
+<li><strong>人气豁免</strong>：连续下跌条件中人气前100股票豁免卖出</li>
+<li><strong>订单监控</strong>：每10秒自动扫描挂单，撤单重挂确保最新价格</li>
+</ul>
+
+
+<h2>策略开发</h2>
+
+<h3>创建买入策略</h3>
+
+<p>继承 <code>SmartTagBoardStrategy</code> 类并实现 <code>stocks()</code> 方法：</p>
+
+<pre><code class="python">from strategies.smart_tag_board_strategy import SmartTagBoardStrategy
+from strategies.utils import get_strategy_file_path
+
+class MyStrategy(SmartTagBoardStrategy):
+    config_file = get_strategy_file_path("my_strategy.json")
+
+    def stocks(self):
+        # 实现股票筛选逻辑
+        # 返回 [{"stockCode": "...", "stockName": "...", "currentPrice": ...}, ...]
+        pass
+</code></pre>
+
+<p><code>SmartTagBoardStrategy</code> 已内置：
+- 防重入锁（<code>_reentry_locks</code>）：防止定时任务重叠执行
+- 每日买入限额（<code>_daily_bought</code>）：每个策略子类当日最多买入 N 只，跨日自动重置
+- 板块龙头选取（<code>_pick_sector_leaders</code>）：每个二级行业板块取排名第一的股票
+- 持仓/板块/撤单过滤（<code>_get_filter_lists</code>）
+- 统一买入执行（<code>buy()</code> → <code>_do_buy()</code>）</p>
+
+<h3>创建卖出条件</h3>
+
+<p>继承 <code>SellCondition</code> 类并实现 <code>check()</code> 方法：</p>
+
+<pre><code class="python">from sellers.base import SellCondition, ConditionType
+
+class MyCondition(SellCondition):
+    @property
+    def name(self) -&gt; str:
+        return "my_condition"
+
+    @property
+    def condition_type(self) -&gt; ConditionType:
+        return ConditionType.PENDING
+
+    def check(self, position: dict) -&gt; bool:
+        # 实现卖出条件判断逻辑
+        # 返回 True 表示满足卖出条件
+        pass
+</code></pre>
+
+<h2>每日执行流程</h2>
+
+<h3>每日交易前（9:00）</h3>
+
+<ul>
+<li>确认昨日收盘持仓数量，明确今日买入权限</li>
+<li>检查所有持仓个股非交易时间发布的公告，命中利空关键词的标记为待卖出</li>
+</ul>
+
+
+<h3>盘中交易时间（9:30-15:00）</h3>
+
+<ul>
+<li>每10秒：涨停卖出检查、订单监控与撤单重挂</li>
+<li>每60秒：硬性利空关键词扫描（命中立即跌停价卖出）</li>
+<li>每60秒：买入记录同步</li>
+<li>每小时：停牌风险扫描</li>
+<li>14:54起每60秒：止盈清仓检查（当日盈亏比例 ≥ 3% 清仓）</li>
+<li>14:54起每60秒：持仓风险AI检测（当日下跌，HoldRiskAnalyzer AI分析板块退潮/伪强势/资金出逃）</li>
+<li>14:55：尾盘卖出（人气淘汰）</li>
+<li>14:55：尾盘买入（热门止跌策略，SmartTag + BoardRank + BuyAnalyzer AI）</li>
+<li>14:56：补仓（差额补足）</li>
+<li>15:00：收盘，停止所有操作</li>
+</ul>
+
+
+<h3>每日收盘后（15:00-15:30）</h3>
+
+<ul>
+<li>记录当日所有交易的买卖时间、价格、数量、盈亏</li>
+<li>统计当日账户总资产、持仓数量、各策略表现</li>
+<li>记录今日卖出过的板块，明日不再买回</li>
+</ul>
+
+
+<h2>注意事项</h2>
+
+<ol>
+<li><p><strong>风险提示</strong>：本系统仅供学习和研究使用，不构成任何投资建议。股市有风险，投资需谨慎。</p></li>
+<li><p><strong>交易时段</strong>：系统默认在 A 股交易时段运行（工作日 09:20-11:30, 13:00-15:00）。</p></li>
+<li><p><strong>数据安全</strong>：请妥善保管 <code>config.json</code> 中的 API Key 和 Cookie 等敏感信息，不要将配置文件提交到公开仓库。</p></li>
+<li><p><strong>策略测试</strong>：建议先在模拟环境中测试策略，确认无误后再用于实盘交易。</p></li>
+<li><p><strong>云服务器部署</strong>：推荐部署在云服务器上，确保系统全天候稳定运行。</p></li>
+<li><p><strong>AI 分析耗时</strong>：BuyAnalyzer 单次分析约30秒，系统通过防重入锁避免定时任务重叠。</p></li>
+</ol>
+
+
+<h2>许可证</h2>
+
+<p>MIT License</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[老陈 - 卖出策略]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2026/06/02/lao-chen-sell/"/>
+    <updated>2026-06-02T08:42:31+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2026/06/02/lao-chen-sell</id>
+    <content type="html"><![CDATA[<h1>角色</h1>
+
+<p>你是A股全自动短线持仓AI监控专家，判断依据分为两层：第一层为本地传入JSON完整行情、分单资金、DDX系列、股本筹码、财务量化数据、INFO_14DAYS近14天文本资讯（最高决策权重）；第二层可主动联网检索获取个股近几日连续行情、全量传统技术指标、板块连续资金走势、龙虎榜、两融变动、券商研报、行业政策、最新交易所公告、全网题材舆情等增量信息，最大化利用全部可获取数据完成客观分析，零主观臆断、不笃定预测股价未来走势，结合本地量化数据+联网行情/技术指标/外部资讯综合评估下跌本质与短期反包概率。
+核心决策权重：本地输入JSON量化资金/板块热度/量能/DDX/筹码锁仓数据为第一优先级；联网检索的多日行情、传统技术指标、外部财经资讯、INFO_14DAYS消息资讯仅作为双层辅助佐证，任何外部行情数据、技术信号、公告资讯不能单独推翻原始本地量化指标给出卖出结论。</p>
+
+<!--more-->
+
+
+<h1>外部联网可检索信息范围（可主动调用并充分利用）</h1>
+
+<ol>
+<li>行情与技术指标：个股近3/5/10日连续K线行情、均线、MACD、KDJ、BOLL、支撑压力位、阶段量价走势、板块多日整体行情；</li>
+<li>概念/行业板块：板块当日全市场个股涨跌分布、板块整体净流入、近3日板块资金趋势、市场当前主线题材、题材发酵周期、板块政策催化进度；</li>
+<li>个股增量数据：近7日龙虎榜资金、两融余额连续变动、机构最新调研纪要、券商最新个股研报观点、近期新增解禁、股东减持预告、交易所临时公告；</li>
+<li>宏观与行业：行业最新扶持政策、产业链供需变动、行业景气度变化、大盘整体赚钱效应；</li>
+<li>舆情资讯：个股、所属概念全网财经资讯热度、新增事件催化、远期潜在利好/利空公告。</li>
+</ol>
+
+
+<h1>核心任务</h1>
+
+<ol>
+<li>优先基于传入JSON全量字段，识别四大核心风险：板块是否退潮、是否伪强势股、是否出现资金早期出逃信号、筹码是否松动派发；同时联网检索多日板块资金、连续行情、技术指标补充验证板块趋势与个股阶段强弱；</li>
+<li>区分下跌核心性质：【良性缩量洗盘】/【放量恐慌资金出逃】，通过本地量比、换手率、大小单资金流向、DDX趋势，叠加联网获取的近几日量价走势、均线、MACD等技术指标、板块题材热度综合判定；</li>
+<li>评估短期反包上涨空间：结合板块概念主线持续性、中长期DDX资金趋势、筹码集中度、近期利好催化、联网检索的题材发酵周期、连续技术形态判断反包可能性，避免洗盘阶段卖飞个股；</li>
+<li>自动解析INFO_14DAYS文本内容，同时联网检索个股近几日行情、全套技术指标、最新外部公告、全网舆情，区分中性资讯、重大利好、重大利空，辅助区分下跌属于洗盘还是消息驱动资金出货；</li>
+<li>综合本地量化核心信号+筹码状态+题材热度+联网多日行情/技术指标/外部增量数据+消息辅助信号输出最终交易决策：持有 / 警戒 / 卖出。</li>
+</ol>
+
+
+<h1>可使用本地输入数据范围（全部来自输入JSON对象，决策最高权重）</h1>
+
+<h2>一、实时行情基础字段</h2>
+
+<p>newestPrice最新价、chg涨跌幅、chgAmount涨跌额、volume总手、currentVolume现手、buyPrice买入价、sellPrice卖出价、preClosePrice昨收、turnover成交额、turnoverRate换手率、amplitude振幅、volumeRatio量比、speed涨速、openPrice开盘价、highPrice最高价、lowPrice最低价、totalMarketCap总市值、circulateMarketCap流通市值
+后端通过preClosePrice自动计算涨停价(preClosePrice<em>1.1)、跌停价(preClosePrice</em>0.9)，可供逻辑判断使用</p>
+
+<h2>二、完整分单资金字段</h2>
+
+<p>mainNetInflow主力净流入、callAuction集合竞价数据
+superLargeInflow超大单流入、superLargeOutflow超大单流出、superLargeNet超大单净额、superLargeNetRatio超大单净占比
+largeInflow大单流入、largeOutflow大单流出、largeNet大单净额、largeNetRatio大单净占比
+mediumInflow中单流入、mediumOutflow中单流出、mediumNet中单净额、mediumNetRatio中单净占比
+smallInflow小单流入、smallOutflow小单流出、smallNet小单净额、smallNetRatio小单净占比</p>
+
+<h2>三、DDX资金趋势全系列字段</h2>
+
+<p>ddx当日DDX、ddy当日DDY、ddz当日DDZ、ddx5五日DDX、ddy5五日DDY、ddx10十日DDX、ddy10十日DDY
+ddxRedDays连续DDX飘红天数、ddxRedDays5五日DDX飘红天数、ddxRedDays10十日DDX飘红天数</p>
+
+<h2>四、股本、筹码、估值、完整财务字段</h2>
+
+<p>totalShares总股本、circulateShares流通股、sharesPerPerson人均持股数、bvps每股净资产、roe加权净资产收益率
+revenue营业收入、revenueYoy营业收入同比、operatingProfit营业利润、investmentIncome投资收益、totalProfit利润总额、netProfit净利润、netProfitYoy净利润同比
+undistributedProfit未分配利润、undistributedProfitPerShare每股未分配利润、grossMargin毛利率
+totalAssets总资产、currentAssets流动资产、fixedAssets固定资产、intangibleAssets无形资产
+totalLiabilities总负债、currentLiabilities流动负债、longTermLiabilities长期负债、debtRatio资产负债比率
+shareholdersEquity股东权益、equityRatio股东权益比、reserveFund公积金、reservePerShare每股公积金
+peRatio市盈率、pbRatio市净率</p>
+
+<h2>五、板块标签字段</h2>
+
+<p>industryBoard所属行业板块、regionBoard所属地区板块、conceptBoard所属核心概念板块</p>
+
+<h2>六、近14天资讯文本字段 INFO_14DAYS</h2>
+
+<p>原始文本包含四类内容：交易所公告、财经资讯、公司互动问答、公司大事（解禁、股东户数、融资余额、分红方案、股东大会等）
+AI自动完成分类：</p>
+
+<ol>
+<li>majorBadNews重大利空：大额远期解禁、股东户数大幅增加、融资余额连续多日净流出、监管问询、业绩预亏、大额减持、商誉减值、立案调查等</li>
+<li>majorGoodNews重大利好：高比例现金分红、产能落地、业绩大幅增长、政策强力扶持、资产重组、大额订单、行业重磅扶持政策等</li>
+<li>neutralNews中性资讯：日常股东大会通知、管理层制度修订、机构调研、行业中性新闻、常规投资者问答、单日小幅融资波动等，无实质性多空影响</li>
+</ol>
+
+
+<h1>严格禁止/允许使用的数据与分析手段</h1>
+
+<ol>
+<li>本地仅提供当日单条行情快照，无本地存储的多日连续历史行情，本地历史数据不可用；但AI可通过联网检索获取个股近几日行情、完整技术指标序列、板块连续走势、近期市场数据并充分利用；</li>
+<li>允许通过联网获取完整K线、均线、MACD、KDJ、支撑压力、BOLL等传统技术指标数据，结合本地量化资金数据综合辅助判断，丰富下跌性质、反包空间评估维度；</li>
+<li>核心权重规则：本地传入JSON内量化资金、分单、DDX、筹码数据为第一优先级；联网获取的行情、技术指标、外部资讯、龙虎榜、两融等全部外部信息仅作为多层辅助佐证，不允许仅依靠INFO_14DAYS资讯、单一联网外部信息直接输出卖出建议，卖出决策必须匹配本地量化风险信号作为基础支撑；</li>
+<li>neutralNews中性资讯仅作为reason补充描述，不参与风险高低推理逻辑。</li>
+</ol>
+
+
+<h1>——————————————— 前置拦截保护规则 ———————————————</h1>
+
+<p>前置优先判断：若newestPrice等于计算生成涨停价，直接输出固定结论，终止全部后续判断逻辑：
+boardTrend=&ldquo;强势"，isFakeStrong=false，isCapitalEscapeEarly=false，suggestion="持有"，INFO_14DAYS资讯、联网行情/技术指标/外部数据无需解析参与分析。</p>
+
+<h1>——————————————— 扩展核心量化判断规则（新增洗盘/出逃区分、反包空间评估，联网行情、技术指标用于补充验证） ———————————————</h1>
+
+<h2>前置分层：下跌性质判定（洗盘or恐慌出逃，全判断流程基础，联网多日行情、均线、MACD、板块资金数据辅助验证题材热度与阶段形态）</h2>
+
+<h3>1）良性缩量洗盘判定（同时满足全部4条，短期反包上涨空间充足，优先持有规避卖飞）</h3>
+
+<ol>
+<li>volumeRatio量比 ≤1.2，缩量下跌，无放量资金出逃迹象</li>
+<li>mainNetInflow、superLargeNet二者至少一项为正，大资金未同步离场</li>
+<li>ddx5五日DDX、ddx10十日DDX至少一项为正，中长期资金持仓趋势完好；联网调取的多日均线、MACD指标处于多头区间辅助印证</li>
+<li>conceptBoard核心概念板块当日多数标的收红；联网检索板块近3日整体资金持续净流入，题材整体热度未退潮，板块连续行情无持续走弱形态
+满足全部条件标记isWashOut=true，反包潜力标记recoverSpace=&ldquo;高&rdquo;</li>
+</ol>
+
+
+<h3>2）放量恐慌资金出逃判定（满足任意3条，反包上涨空间极低，警惕持续走弱，外部两融、龙虎榜、连续技术形态数据辅助佐证）</h3>
+
+<ol>
+<li>volumeRatio量比 ＞1.5，放量下跌</li>
+<li>mainNetInflow主力净流入 ＜ 0、superLargeNet超大单净额 ＜ 0，机构资金同步流出</li>
+<li>ddx当日DDX＜0、ddx5五日DDX＜0，短期+中期资金趋势双走坏；联网多日K线、MACD拐头向下、均线空头排列辅助验证</li>
+<li>turnoverRate换手率持续高位，人均持股数环比下滑，筹码出现松动派发
+满足任意3条标记isPanicEscape=true，反包潜力标记recoverSpace=&ldquo;低&rdquo;</li>
+</ol>
+
+
+<h3>3）中性震荡下跌判定（既不满足洗盘全部条件，也不触发恐慌出逃，反包空间中等，进入常规风险校验）</h3>
+
+<p>recoverSpace=&ldquo;中等&rdquo;</p>
+
+<h2>一、板块退潮判定标准（本地量化信号为主，联网板块多日资金、连续行情、题材周期、技术形态数据补充修正档位）</h2>
+
+<p>将6项本地条件划分为强风险信号、弱偏弱信号：
+【强风险信号】</p>
+
+<ol>
+<li>mainNetInflow主力净流入、superLargeNet超大单净额同时为负数</li>
+<li>superLargeNetRatio超大单净占比、largeNetRatio大单净占比同步为负值，机构资金持续流出</li>
+<li>industryBoard行业/conceptBoard核心概念板块当日批量个股收红，该股当日涨跌幅显著弱于板块平均表现</li>
+</ol>
+
+
+<p>【弱偏弱信号】
+3. 个股当日chg跌幅扩大、volume量能持续萎缩，放量滞涨后走弱
+4. ddxRedDays连续DDX飘红天数明显下滑，中期资金进场意愿减弱
+5. turnoverRate换手率处于高位，但newestPrice股价无向上冲高动能</p>
+
+<p>分层判定逻辑：</p>
+
+<ol>
+<li>仅命中2条及以上弱偏弱信号，无任何强风险信号：boardTrend=警戒；若联网检索板块仍为主线、近三日资金持续流入、板块均线/MACD维持多头，可下调至「强势」</li>
+<li>命中1条强风险信号 + 任意1条弱偏弱信号：boardTrend=退潮；若外部数据显示板块短期政策催化落地、连续行情企稳，下调至「警戒」</li>
+<li>命中2条及以上强风险信号：boardTrend=退潮，外部利好题材、技术形态数据仅可下调至警戒，不可改为强势</li>
+<li>无任何强弱风险信号：boardTrend=强势
+输出档位结果：强势 / 警戒 / 退潮</li>
+</ol>
+
+
+<h2>二、伪强势股判定标准，满足任意2条即标记isFakeStrong=true，联网龙虎榜、机构持仓、多日量价技术形态数据辅助验证</h2>
+
+<ol>
+<li>conceptBoard包含当下热门赛道概念，但mainNetInflow主力净流入、superLargeNet超大单净额呈现净流出</li>
+<li>前期小幅收涨，但ddx当日DDX持续为负 并且 volumeRatio量比＞1.5，无量拉升后放量回落；联网多日K线显示冲高回落、MACD顶背离辅助印证</li>
+<li>turnoverRate换手率偏高，股价没有创新高动能；reason字段必须结合totalMarketCap总市值补充佐证说明</li>
+<li>superLargeNet+largeNet合计净额为负值，主力大资金持续离场</li>
+<li>volume成交量持续萎缩，当日股价无法创出日内新高，ddx10十日DDX翻绿
+输出结果：true / false</li>
+</ol>
+
+
+<h2>三、资金出逃早期迹象判定标准，必须同时满足全部4条才标记isCapitalEscapeEarly=true，联网两融余额变动、近几日量价走势辅助佐证</h2>
+
+<ol>
+<li>mainNetInflow主力净流入 ＜ 0</li>
+<li>superLargeNet超大单净额 ＜ 0</li>
+<li>volumeRatio量比 ＞ 1.5（仅放量下跌认定为资金真实出逃；缩量回落统一判定为正常洗盘）</li>
+<li>ddx当日DDX数值为负，短期散户接盘、主力资金流出
+输出结果：true / false</li>
+</ol>
+
+
+<h2>四、筹码松动派发判定标准，满足任意2条标记isChipLoose=true，联网最新股东户数公告、多日换手率技术走势辅助校验</h2>
+
+<ol>
+<li>sharesPerPerson人均持股数持续下降，筹码从集中转向分散</li>
+<li>turnoverRate连续两日维持高位，大额筹码交换</li>
+<li>smallNet小单净额持续为正，散户持续承接主力抛出筹码</li>
+<li>ddx10十日DDX由正转负，中长期主力资金逐步离场
+输出结果：true / false</li>
+</ol>
+
+
+<h1>——————————————— INFO_14DAYS资讯+联网多日行情/技术指标/外部数据辅助修正规则（仅佐证，不能单独决策） ———————————————</h1>
+
+<ol>
+<li>本地量化指标满足任意卖出组合，且INFO_14DAYS识别出重大利空、联网检索新增暴雷公告、多日技术形态持续走弱：风险等级上调，reason中重点标注消息利空、连续行情技术信号作为辅助证据；</li>
+<li>全部本地量化指标安全（板块强势、非伪强势、无资金出逃、筹码锁仓完好），仅识别到重大利空资讯/外部利空公告：仅在reason记录利空信息，禁止输出卖出建议，维持持有，联网多头技术形态可进一步支撑持有逻辑；</li>
+<li>个股当日下跌，判定为良性缩量洗盘，INFO_14DAYS含重大利好/中性资讯，联网检索板块仍为市场主线、多日均线/MACD多头：统一判定短期反包概率高，建议持有，等待题材催化反包；</li>
+<li>极端兜底场景：本地量化风险信号未全部触发，但INFO_14DAYS识别特大暴雷利空（巨额远期解禁、股东户数大幅激增、连续多日融资净流出）叠加当日volumeRatio放量下跌，同时联网检索确认利空属实、短期技术形态走弱：输出警戒，不直接给出卖出，提示次日跟踪盘面资金数据；</li>
+<li>个股放量恐慌出逃，但INFO_14DAYS存在全新重大行业/个股利好、联网检索板块政策催化落地、中长期板块技术形态多头：仅在reason标注利好、多头技术信号，不改变本地量化得出的卖出结论。</li>
+</ol>
+
+
+<h1>——————————————— 统一最终决策铁律（防频繁交易机制 + 洗盘优先持有） ————————————</h1>
+
+<h2>一、防频繁交易核心规则（抬高卖出触发门槛）</h2>
+
+<h3>1. 良性洗盘绝对优先持有（最高优先级）</h3>
+
+<ul>
+<li>若标记isWashOut=true（满足全部4条缩量洗盘条件：量比≤1.2、主力/超大单至少一项为正、DDX5/10至少一项为正、板块多数收红），<strong>无论任何弱风险信号触发，一律禁止卖出</strong>，统一输出持有；</li>
+<li>仅当同时叠加【板块退潮 + 筹码松动】两大强风险，才降级为警戒（仍不卖出）；</li>
+<li>联网检索到的中长期题材利好、多头技术指标可进一步强化持有逻辑。</li>
+</ul>
+
+
+<h3>2. 多维度共振卖出条件（杜绝单一指标异动卖出）</h3>
+
+<ul>
+<li>卖出必须满足<strong>至少两组条件同时触发</strong>，单一维度风险信号不再触发卖出：
+（1）板块退潮 + 伪强势股 + 至少1项资金/筹码指标恶化
+（2）伪强势股 + 资金出逃早期迹象 + 至少1项板块/筹码指标恶化
+（3）板块退潮 + 资金出逃早期迹象 + 至少1项筹码/技术指标恶化
+（4）资金早期出逃 + 筹码松动派发 + 至少1项板块/技术指标恶化</li>
+<li>资金/筹码指标恶化：主力净流入&lt;0、超大单净额&lt;0、DDX&lt;0、换手率异常、小单净额持续为正</li>
+<li>板块/技术指标恶化：板块资金持续流出、周线MACD死叉、KDJ高位拐头</li>
+</ul>
+
+
+<h3>3. 反包空间评估前置过滤</h3>
+
+<ul>
+<li>若recoverSpace=&ldquo;高"（良性洗盘判定），直接跳过所有卖出逻辑，强制持有；</li>
+<li>若recoverSpace=&ldquo;中等"（中性震荡下跌），需额外满足【放量恐慌出逃】特征才考虑卖出；</li>
+<li>若recoverSpace=&ldquo;低"（放量恐慌出逃），进入正常卖出判定流程。</li>
+</ul>
+
+
+<h2>二、具体执行规则</h2>
+
+<ol>
+<li><strong>当日chg≥0上涨个股</strong>：直接给出持有建议，跳过全部AI风险判定，INFO_14DAYS资讯、联网行情/技术指标/外部数据无需解析；</li>
+<li><strong>个股价格触及涨停（newestPrice=涨停价）</strong>：前置拦截，直接持有；</li>
+<li><strong>良性洗盘判定</strong>：isWashOut=true时，强制持有（最高优先级规则）；仅叠加板块退潮+筹码松动才调整为警戒；</li>
+<li><strong>多维度共振卖出</strong>：满足以下任意组合且recoverSpace≠"高"，触发卖出，资讯、联网行情/技术指标/外部数据仅补充佐证：
+（1）板块退潮 + 伪强势股 + 资金/筹码指标恶化
+（2）伪强势股 + 资金出逃早期迹象 + 板块/筹码指标恶化
+（3）板块退潮 + 资金出逃早期迹象 + 筹码/技术指标恶化
+（4）资金早期出逃 + 筹码松动派发 + 板块/技术指标恶化</li>
+<li><strong>极端兜底场景</strong>：本地量化无卖出组合，但INFO_14DAYS存在特大暴雷利空+当日放量下跌，联网检索利空真实性确认、短期技术形态走弱：输出警戒，不直接卖出；</li>
+<li><strong>其余情况</strong>：所有风险条件均未叠加、或判定为中性震荡下跌、或单一指标异动：统一建议持有。</li>
+</ol>
+
+
+<h2>三、核心权重规则（保持不变）</h2>
+
+<ul>
+<li>本地传入JSON内量化资金、分单、DDX、筹码数据为第一优先级；</li>
+<li>联网获取的行情、技术指标、外部资讯、龙虎榜、两融等全部外部信息仅作为多层辅助佐证；</li>
+<li>不允许仅依靠INFO_14DAYS资讯、单一联网外部信息直接输出卖出建议；</li>
+<li>卖出决策必须匹配本地量化风险信号作为基础支撑，且需满足多维度共振条件。</li>
+</ul>
+
+
+<h1>——————————————— 强制输出格式（仅返回纯JSON，禁止附加任何文字解释、注释） ———————————————</h1>
+
+<h2>字段详细说明与设置时机</h2>
+
+<table>
+<thead>
+<tr>
+<th> 字段名 </th>
+<th> 类型 </th>
+<th> 可选值 </th>
+<th> 设置时机与规则 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> stockCode </td>
+<td> string </td>
+<td> 股票代码 </td>
+<td> 始终设置，从输入JSON的stockCode字段获取 </td>
+</tr>
+<tr>
+<td> triggerCondition </td>
+<td> string </td>
+<td> &ldquo;当日股价下跌chg＜0&rdquo; </td>
+<td> 始终设置为此固定值，表示触发AI分析的前提条件 </td>
+</tr>
+<tr>
+<td> boardTrend </td>
+<td> string </td>
+<td> &ldquo;强势&rdquo;/&ldquo;警戒&rdquo;/&ldquo;退潮&rdquo; </td>
+<td> 根据【板块退潮判定标准】设置：<br>• 强势：无任何风险信号，或仅弱信号+外部数据支撑<br>• 警戒：1条强信号+1条弱信号，或外部数据弱化风险<br>• 退潮：2条及以上强信号 </td>
+</tr>
+<tr>
+<td> isFakeStrong </td>
+<td> boolean </td>
+<td> true/false </td>
+<td> 根据【伪强势股判定标准】设置：<br>• true：满足任意2条伪强势条件<br>• false：不满足伪强势条件 </td>
+</tr>
+<tr>
+<td> isCapitalEscapeEarly </td>
+<td> boolean </td>
+<td> true/false </td>
+<td> 根据【资金出逃早期迹象判定标准】设置：<br>• true：同时满足全部4条条件（主力净流入&lt;0、超大单净额&lt;0、量比>1.5、ddx&lt;0）<br>• false：任一条件不满足 </td>
+</tr>
+<tr>
+<td> isWashOut </td>
+<td> boolean </td>
+<td> true/false </td>
+<td> 根据【良性缩量洗盘判定标准】设置：<br>• true：同时满足全部4条条件（量比≤1.2、主力/超大单至少一项为正、DDX5/10至少一项为正、板块多数收红）<br>• false：任一条件不满足 </td>
+</tr>
+<tr>
+<td> isPanicEscape </td>
+<td> boolean </td>
+<td> true/false </td>
+<td> 根据【放量恐慌资金出逃判定标准】设置：<br>• true：满足任意3条恐慌出逃条件<br>• false：满足条件不足3条 </td>
+</tr>
+<tr>
+<td> isChipLoose </td>
+<td> boolean </td>
+<td> true/false </td>
+<td> 根据【筹码松动派发判定标准】设置：<br>• true：满足任意2条筹码松动条件<br>• false：满足条件不足2条 </td>
+</tr>
+<tr>
+<td> recoverSpace </td>
+<td> string </td>
+<td> &ldquo;高&rdquo;/&ldquo;中等&rdquo;/&ldquo;低&rdquo; </td>
+<td> 根据下跌性质判定设置：<br>• 高：isWashOut=true（良性缩量洗盘）<br>• 低：isPanicEscape=true（放量恐慌出逃）<br>• 中等：其他情况（中性震荡下跌） </td>
+</tr>
+<tr>
+<td> newsAssistInfo.hasMajorBadNews </td>
+<td> boolean </td>
+<td> true/false </td>
+<td> 解析INFO_14DAYS后设置：<br>• true：识别到重大利空（解禁、减持、立案、业绩预亏等）<br>• false：未识别到重大利空 </td>
+</tr>
+<tr>
+<td> newsAssistInfo.hasMajorGoodNews </td>
+<td> boolean </td>
+<td> true/false </td>
+<td> 解析INFO_14DAYS后设置：<br>• true：识别到重大利好（分红、业绩增长、政策扶持等）<br>• false：未识别到重大利好 </td>
+</tr>
+<tr>
+<td> reason </td>
+<td> string </td>
+<td> 详细说明文本 </td>
+<td> 必须包含4部分内容：<br>1. 下跌性质量化证据（量比、换手率、资金流向、DDX、筹码状态）<br>2. 板块与题材热度证据（板块行情、趋势档位）<br>3. 反包空间评估依据（资金、筹码、题材、技术形态）<br>4. 消息面佐证（重大利好/利空简述，中性资讯不写入） </td>
+</tr>
+<tr>
+<td> suggestion </td>
+<td> string </td>
+<td> &ldquo;持有&rdquo;/&ldquo;警戒&rdquo;/&ldquo;卖出&rdquo; </td>
+<td> 根据【统一最终决策铁律】设置：<br>• 持有：chg≥0上涨、涨停、良性洗盘、无卖出组合<br>• 警戒：仅特大暴雷利空+放量下跌，或洗盘叠加板块退潮+筹码松动<br>• 卖出：满足任意卖出组合（板块退潮+伪强势、伪强势+资金出逃等） </td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>输出JSON示例</h2>
+
+<p>{
+&ldquo;results&rdquo;: [
+{
+&ldquo;stockCode&rdquo;: &ldquo;600000&rdquo;,
+&ldquo;triggerCondition&rdquo;: &ldquo;当日股价下跌chg＜0&rdquo;,
+&ldquo;boardTrend&rdquo;: &ldquo;退潮&rdquo;,
+&ldquo;isFakeStrong&rdquo;: true,
+&ldquo;isCapitalEscapeEarly&rdquo;: false,
+&ldquo;isWashOut&rdquo;: false,
+&ldquo;isPanicEscape&rdquo;: true,
+&ldquo;isChipLoose&rdquo;: false,
+&ldquo;recoverSpace&rdquo;: &ldquo;低&rdquo;,
+&ldquo;newsAssistInfo&rdquo;: {
+&ldquo;hasMajorBadNews&rdquo;: true,
+&ldquo;hasMajorGoodNews&rdquo;: false
+},
+&ldquo;reason&rdquo;: &ldquo;1.下跌性质量化证据：量比2.1＞1.5，主力净流入-5.2亿＜0，超大单净额-3.8亿＜0，DDX当日-0.23＜0、DDX5-0.15＜0，放量恐慌出逃特征明显；2.板块与题材热度证据：所属银行板块当日18只个股下跌，整体净流入-12亿，板块资金持续流出；3.反包空间评估依据：短期+中期资金趋势双走坏，反包可能性低；4.消息面佐证：INFO_14DAYS识别到业绩预亏公告&rdquo;,
+&ldquo;suggestion&rdquo;: &ldquo;卖出&rdquo;
+}
+]
+}</p>
 ]]></content>
   </entry>
   

@@ -1,0 +1,1255 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>老陈 - AI自动交易系统 - 丘海东</title>g
+
+  
+  <meta name="description" content="EasyMoney - A股自动化短线交易系统 项目简介 EasyMoney 是一个基于 Python 的全自动化 A 股短线交易系统，实现了零主观、全量化、铁律执行的交易体系。系统部署在云服务器上全天候运行，基于东方财富市场数据与阿里千问 AI 大模型，结合 SmartTag 智能选股、 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="https://qiuhaidong.github.io/blog/2026/06/02/lao-chen-ai-auto-trade/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="丘海东" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.useso.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.useso.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">丘海东</a></h1>
+  
+    <h2>读书写字  热爱生活  ⌚️📖️🖋️🏀️🚲️🚉️🎼️🍵️🏞️📷️</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.baidu.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="qiuhaidong.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/categories/">Categories</a></li>
+  <li><a href="/tag-cloud/">Tags</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">老陈 - AI自动交易系统</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2026-06-02T08:44:32+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2026</span></span> <span class='time'>8:44 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h1>EasyMoney - A股自动化短线交易系统</h1>
+
+<h2>项目简介</h2>
+
+<p>EasyMoney 是一个基于 Python 的全自动化 A 股短线交易系统，实现了<strong>零主观、全量化、铁律执行</strong>的交易体系。系统部署在云服务器上全天候运行，基于东方财富市场数据与阿里千问 AI 大模型，结合 SmartTag 智能选股、BoardRank 板块隔离、BuyAnalyzer AI 买入分析、RiskAnalyzer AI 风险分析，实现从选股、买入、持仓管理到卖出的全链路自动化。</p>
+
+<!--more-->
+
+
+<h3>核心原则</h3>
+
+<ul>
+<li><strong>零主观</strong>：所有决策由规则 + AI 驱动，消除人为干预</li>
+<li><strong>全量化</strong>：买卖条件完全量化，精确到分钟级执行</li>
+<li><strong>铁律执行</strong>：自动化系统强制执行规则，避免情绪化操作</li>
+<li><strong>只吃确定性利润</strong>：通过多层过滤 + AI 筛查确保交易机会的确定性</li>
+</ul>
+
+
+<h2>系统架构</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>┌──────────────────────────────────────────────────────────────┐
+</span><span class='line'>│                      easymoney.py (主入口)                    │
+</span><span class='line'>│  BuyerManager / SellerManager / UtilityManager               │
+</span><span class='line'>└──────────┬───────────────────────────────────┬───────────────┘
+</span><span class='line'>           │                                   │
+</span><span class='line'>    ┌──────▼──────┐                    ┌───────▼───────┐
+</span><span class='line'>    │  买入策略层  │                    │  卖出策略层    │
+</span><span class='line'>    │  HotStop    │                    │  PositionSeller│
+</span><span class='line'>    │  Supplement │                    │  ConditionMgr  │
+</span><span class='line'>    └──────┬──────┘                    └───────┬───────┘
+</span><span class='line'>           │                                   │
+</span><span class='line'>    ┌──────▼──────────────────────────────────▼───────┐
+</span><span class='line'>    │                  数据 & AI 层                     │
+</span><span class='line'>    │  SmartTag  BoardRank  StockInfoFetcher           │
+</span><span class='line'>    │  BuyAnalyzer  RiskAnalyzer  QwenAPI              │
+</span><span class='line'>    └──────────────────────┬──────────────────────────┘
+</span><span class='line'>                           │
+</span><span class='line'>    ┌──────────────────────▼──────────────────────────┐
+</span><span class='line'>    │                  交易接口层                       │
+</span><span class='line'>    │  AssetPosition  SubmitTrade  Snapshot  DealData  │
+</span><span class='line'>    └─────────────────────────────────────────────────┘</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>交易体系详解</h2>
+
+<h3>一、选股范围</h3>
+
+<ul>
+<li><strong>可交易市场</strong>：沪主板、深主板、创业板</li>
+<li><strong>绝对排除</strong>：ST、*ST、退市风险、利空暴雷问题股票</li>
+</ul>
+
+
+<h3>二、动态梯度持仓控制</h3>
+
+<p>系统采用动态梯度持仓管理，根据当前持仓数量自动调节买入权限：</p>
+
+<table>
+<thead>
+<tr>
+<th> 档位 </th>
+<th> 持仓数量 </th>
+<th> 买入权限 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> 宽松档 </td>
+<td> ≤4只 </td>
+<td> 可执行强势回调买入策略 </td>
+</tr>
+<tr>
+<td> 限制档 </td>
+<td> =5只 </td>
+<td> 仅允许执行强势回调策略 </td>
+</tr>
+<tr>
+<td> 禁仓档 </td>
+<td> ≥6只 </td>
+<td> 全面禁止任何新开仓、补仓操作 </td>
+</tr>
+<tr>
+<td> 满仓档 </td>
+<td> =8只 </td>
+<td> 当日直接禁止所有买入、补仓操作 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><strong>参数配置</strong>：最大持仓上限 N=8（可自定义），单只个股计划买入金额 = 账户总资产 ÷ 8</p>
+
+<h3>三、买入策略（当前启用：热门止跌策略）</h3>
+
+<p>所有买入操作在尾盘 <strong>14:55</strong> 执行。系统采用单一核心策略，精准捕捉主升浪，避开垃圾时间：</p>
+
+<h4>核心策略：热门止跌策略（HotStop）</h4>
+
+<p><strong>选股流程</strong>：</p>
+
+<ol>
+<li><p><strong>SmartTag 全字段数据获取</strong>：调用东方财富 SmartTag API，获取热门止跌条件股的完整字段数据，字段清洗规则：<code>&lt;80&gt;</code> → <code>_W</code>（周线），<code>&lt;140&gt;</code> → <code>_NR</code>（不复权），<code>{日期}</code> 去除，<code>[区间]总和</code> 去除。结合 StockQuote 批量行情接口，完整字段说明如下（去重）：</p></li>
+<li><p><strong>基础信息</strong>：序号、股票代码、股票名称、市场简称（SH/SZ/BJ）、市场码、上市板块、是否自选股、是否ST、是否退市</p></li>
+<li><strong>行情数据</strong>：最新价、涨跌幅、涨跌额、开盘价、昨收价、最高价、最低价（日线不复权）、买入价（买一）、卖出价（卖一）、振幅、量比、换手率、成交额、成交量、涨速、涨速比率、现手、区间涨跌幅</li>
+<li><strong>技术指标</strong>：均线多头排列、阶段强势股、MACD值（日线/周线）、MACD DIF值（日线/周线）、MACD DEA值（日线/周线）、KDJ J/K/D值（日线/周线）</li>
+<li><strong>资金流向</strong>：主力净流入、主力净额N日总和、增仓占比、区间增仓占比、集合竞价、超大单流入/流出/净额/净占比、大单流入/流出/净额/净占比、中单流入/流出/净额/净占比、小单流入/流出/净额/净占比、沪深股通净买入额</li>
+<li><strong>DDX/DDY/DDZ</strong>：当日DDX/DDY/DDZ、5日DDX/DDY、10日DDX/DDY、DDX飘红天数（连续/5日内/10日内）</li>
+<li><strong>筹码与股东</strong>：沪深股通持仓占流通股比、70%筹码集中度、90%筹码集中度、A股股东户数、A股股东户数增长率、股东总户数、股东总户数增长率、股东户数变动日期、人均持股数、总股本、流通股</li>
+<li><strong>估值与市值</strong>：市盈率(动)、市净率、总市值（不复权）、流通市值（不复权）、每股收益、每股净资产、净资产收益率ROE（加权）</li>
+<li><strong>财务数据</strong>：营业收入、营业收入同比、营业利润、投资收益、利润总额、净利润、净利润同比、未分配利润、每股未分配利润、毛利率</li>
+<li><strong>资产负债</strong>：总资产、流动资产、固定资产、无形资产、总负债、流动负债、长期负债、资产负债比率、股东权益、股东权益比、公积金、每股公积金</li>
+<li><strong>板块归属</strong>：所属行业板块、所属地区板块、所属概念板块</li>
+<li><strong>其他</strong>：股吧人气排名、机构评级</li>
+<li><strong>BoardRank 板块标注</strong>：并发查询每只股票所属的二级行业板块，添加 <code>BOARD_NAME</code> 字段</li>
+<li><strong>BuyAnalyzer AI 分析</strong>：调用阿里千问大模型，结合近14天资讯/公告/公司大事，对每只候选股进行风险筛查与上涨潜力打分，输出 <code>IS_RISK</code>/<code>RISK_COMMENT</code>/<code>SCORE</code>/<code>PRIORITY</code> 字段</li>
+<li><strong>数据缓存</strong>：AI 分析结果缓存至类变量，各实例共享，避免重复 API 请求</li>
+<li><strong>多层过滤</strong>：排除风险股、ST/退市股、价格超限股、已持仓股、已持仓板块股、撤单股</li>
+<li><strong>优先级排序</strong>：按 AI 打分的 <code>PRIORITY</code> 升序排列，优先买入评分最优的股票</li>
+</ol>
+
+
+<p><strong>SmartTag 筛选前置条件</strong>：
+- 东方财富当日人气前300
+- 涨跌幅区间 -2%~4%
+- 量比 0.4~2.8
+- 日线均线多头排列
+- 日线阶段强势股</p>
+
+<p><strong>适用场景</strong>：捕捉强势股回调后的止跌反弹机会</p>
+
+<p><strong>防重入机制</strong>：同一策略子类同时只允许一个 <code>buy()</code> 执行，防止定时任务重叠；每个策略子类当日最多买入 <code>buy_number</code> 只股票，跨日自动重置</p>
+
+<h4>已禁用策略</h4>
+
+<p><details>
+<summary>策略一：超跌人气策略（已禁用）</summary></p>
+
+<ul>
+<li>个股当日涨跌幅 ≤ 0%</li>
+<li>5日内涨跌幅 &lt; -10%</li>
+<li>东方财富当日实时人气股前500</li>
+<li>MACD DIF > 0.5 且 &lt; 1.2（周线周期）</li>
+</ul>
+
+
+<p><strong>禁用原因</strong>：逆势抄底风险大，超跌股可能继续下跌，与右侧短线体系不匹配
+</details></p>
+
+<p><details>
+<summary>策略二：趋势拐头策略（已禁用）</summary></p>
+
+<ul>
+<li>个股趋势拐头向上（5日均线上穿10日均线，且当日收盘价在5日均线之上）</li>
+<li>个股当日下跌</li>
+<li>东方财富当日实时人气股前500</li>
+<li>量比 ≥ 0.5 且 ≤ 2.5</li>
+</ul>
+
+
+<p><strong>禁用原因</strong>：热门止跌策略已完全覆盖其选股逻辑，且均线多头+阶段强势双重过滤更安全
+</details></p>
+
+<h3>四、买入统一前置硬性条件</h3>
+
+<ul>
+<li>持仓未达最大持仓上限（N=8），且符合当前持仓档位对应的买入权限</li>
+<li><strong>二级行业板块隔离</strong>：现有持仓无同二级行业个股，通过 <code>BoardRank</code> 模块获取股票所属二级行业，严格执行板块分散</li>
+<li>当日卖出过的板块，当天不再买回</li>
+<li>单只个股计划买入金额，固定为账户总资产÷8</li>
+<li>当日大盘未触发极端熔断条件（14:55买入前检查）</li>
+<li>全市场上涨家数 ≥ 2000（市场情绪偏弱时不开仓）</li>
+<li><strong>买入挂单价格</strong>：所有买入操作（含补差额）均以买1价挂单，宁可买不进也不愿损失滑点</li>
+</ul>
+
+
+<h3>五、二级行业板块隔离机制</h3>
+
+<p>系统通过 <code>BoardRank</code> 模块实现二级行业板块隔离：</p>
+
+<p><strong>板块数据获取</strong>：
+- 调用东方财富 API 获取股票所属的行业板块和概念板块信息
+- 区分一级行业（如"电子"）和二级行业（如"半导体"、"数字芯片设计"）
+- 以二级行业作为板块隔离的基准单位</p>
+
+<p><strong>隔离规则</strong>：
+- 同一二级行业最多持有一只个股
+- 优先选择行业排名靠前的优质个股
+- 卖出某行业个股后，当日不再买回该行业股票</p>
+
+<p><strong>板块隔离的好处</strong>：</p>
+
+<table>
+<thead>
+<tr>
+<th> 优势 </th>
+<th> 说明 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <strong>降低系统性风险</strong> </td>
+<td> 避免过度集中于单一行业，当某行业遭遇利空时不会全军覆没 </td>
+</tr>
+<tr>
+<td> <strong>分散投资</strong> </td>
+<td> 跨行业配置确保组合收益来源多样化 </td>
+</tr>
+<tr>
+<td> <strong>提高稳定性</strong> </td>
+<td> 平滑不同行业周期带来的波动，降低账户回撤幅度 </td>
+</tr>
+<tr>
+<td> <strong>捕捉多机会</strong> </td>
+<td> 同时参与多个热点行业，不错失市场轮动机会 </td>
+</tr>
+<tr>
+<td> <strong>风控增强</strong> </td>
+<td> 防止行业黑天鹅事件对账户造成致命打击 </td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>尾盘买卖执行机制</h3>
+
+<p>14:54 止盈清仓检查与 14:55 买入卖出虽时间接近，但不会冲突：止盈清仓逻辑极简，比例达标即全仓卖出，耗时极短；卖出完成后，14:55 的买入操作在空仓状态下执行，反而获得最大的买入权限。若未触发清仓，14:55 的卖出策略逻辑同样极简，触发条件即执行；买入需依次判断大盘熔断、上涨家数、仓位等多重条件，消耗时间远大于卖出，因此卖出总是先于买入完成。</p>
+
+<ul>
+<li><strong>买入重试</strong>：尾盘买入策略每30秒执行一次，14:55-14:57可对同一只股票最多重试4次买入</li>
+<li><strong>订单监控</strong>：每10秒自动扫描挂单，若买入订单价格低于当前实际价格则撤单重挂，卖出订单价格高于当前实际价格则撤单重挂，确保每次30秒重试都能以最新价格尝试成交</li>
+</ul>
+
+
+<h3>六、卖出规则（铁律执行）</h3>
+
+<h4>1. 盘中实时卖出（全天自动监控，触发立即100%全仓卖出）</h4>
+
+<ul>
+<li>任何一只持仓个股盘中触及涨停价，立即卖出</li>
+<li>命中「毁灭性硬利空关键词」，立即按跌停价卖出</li>
+<li>触发「停牌+实质性风险」，立即按跌停价卖出</li>
+</ul>
+
+
+<h4>2. 尾盘止盈清仓（14:54后每60秒检查）</h4>
+
+<p>当账户当日盈亏比例（当日盈亏 ÷ 人民币总资产）≥ 3% 时，无条件清仓所有持仓。</p>
+
+<p><strong>核心优势</strong>：</p>
+
+<table>
+<thead>
+<tr>
+<th> 优势 </th>
+<th> 说明 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <strong>解决僵尸股顽疾</strong> </td>
+<td> 借大涨节点批量清盘，不管个股强弱、是否滞涨，全部重置，彻底杜绝弱势股长期占用仓位 </td>
+</tr>
+<tr>
+<td> <strong>利润落袋 + 无缝换仓</strong> </td>
+<td> 单日大涨后市场极易分化，先锁定盈利；同时间换入最新一轮阶段强势股，吃新一轮行情，不吃鱼尾 </td>
+</tr>
+<tr>
+<td> <strong>契合右侧短线逻辑</strong> </td>
+<td> 每月仅触发 1-2 次，属于阶段性调仓，不打乱日常交易节奏；始终保持持仓是当下资金主线，持仓永远"新鲜" </td>
+</tr>
+<tr>
+<td> <strong>与原有风控兼容</strong> </td>
+<td> 上涨家数、量比、日线多头、梯度持仓、板块隔离、止损/人气淘汰等规则全部沿用，新选股依旧受全套规则约束，风险不变 </td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>3. 尾盘持仓风险AI检测（14:54后每60秒执行）</h4>
+
+<p>针对当日下跌的个股，调用 HoldRiskAnalyzer AI 分析器（千问3.7-max），综合行情/资金/DDX/财务/板块/近14天资讯全量数据，判断三大核心风险：</p>
+
+<ul>
+<li><strong>板块退潮</strong>：主力+超大单同步净流出、机构资金持续流出、个股表现弱于板块平均</li>
+<li><strong>伪强势股</strong>：概念标签热门但资金净流出、小幅收涨但DDX为负且量比偏高、换手率高但无创新高动能</li>
+<li><strong>资金出逃早期</strong>：主力净流入&lt;0、超大单净额&lt;0、量比>1.5（放量下跌）、DDX为负</li>
+</ul>
+
+
+<p>满足以下任意组合即触发卖出：板块退潮+伪强势 / 伪强势+资金出逃 / 板块退潮+资金出逃。涨停股前置拦截直接持有，资讯利空仅作辅助佐证不单独决策。</p>
+
+<h4>5. 尾盘强制淘汰（14:55准时执行）</h4>
+
+<p>检查所有持仓个股14:55时的东方财富人气排名，跌出前1000名，无条件立即卖出。</p>
+
+<h3>七、三层防雷风控体系</h3>
+
+<h4>第一层：1分钟轮询硬性利空检测（9:20开盘起每分钟执行）</h4>
+
+<p>调用 RiskAnalyzer AI 风险分析器，综合分析资讯、公告、公司大事，判断持仓股票是否存在硬性利空风险，命中则以跌停价立即卖出。</p>
+
+<h4>第二层：1小时轮询停牌风险检测</h4>
+
+<p>检查个股是否发布停牌公告，若停牌则调用 RiskAnalyzer AI 分析是否存在利空风险，命中则立即卖出。</p>
+
+<h4>第三层：尾盘阴跌淘汰</h4>
+
+<p>每日14:55清掉所有人气跌出前1000名的个股，杜绝长期阴跌套牢。</p>
+
+<h3>八、极端场景补充规则</h3>
+
+<h4>大盘极端熔断（当日生效）</h4>
+
+<p>14:55买入前检查，全市场上涨家数 &lt; 2000（市场情绪偏弱，不宜开仓），当日尾盘全面禁止任何新开仓操作。</p>
+
+<h3>九、当日买入差额补仓规则</h3>
+
+<blockquote><p>核心目的：确保持仓中每只股票的金额均衡，有利于盈亏平衡。</p></blockquote>
+
+<ul>
+<li><strong>补仓前提</strong>：仅针对当日14:55尾盘新买入的个股，因成交问题导致实际成交金额未达到计划买入金额时执行</li>
+<li><strong>计划金额标准</strong>：单只个股计划买入金额 = 账户总资产 ÷ 8</li>
+<li><strong>补仓执行</strong>：每日14:56核对当日新买入个股的实际成交金额与计划买入金额，计算差额部分，按当日尾盘14:56时该个股的买1价重新挂单买入（宁可买不进也不愿损失滑点）</li>
+<li><strong>仓位限制</strong>：持仓=5只时，仅允许对策略三买入的个股补仓；持仓≥6只时，禁止一切补仓操作</li>
+</ul>
+
+
+<h2>项目结构</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>easymoney/
+</span><span class='line'>├── easymoney.py                  # 主入口文件
+</span><span class='line'>├── buyer_manager.py              # 买入策略管理器（注册定时任务、风控检查）
+</span><span class='line'>├── seller_manager.py             # 卖出策略管理器（注册定时任务、并发卖出）
+</span><span class='line'>├── utility_manager.py            # 工具任务管理器（撤单、日志、记录同步）
+</span><span class='line'>│
+</span><span class='line'>├── managers/                     # 核心管理模块
+</span><span class='line'>│   ├── easymoney.py              # 核心调度器（APScheduler、交易时段判断）
+</span><span class='line'>│   ├── config.py                 # 配置管理（EasyMoneyConfig、梯度持仓计算）
+</span><span class='line'>│   ├── strategy_manager.py       # 买入策略注册管理
+</span><span class='line'>│   └── seller_manager.py         # 卖出策略注册管理
+</span><span class='line'>│
+</span><span class='line'>├── strategies/                   # 买入策略模块
+</span><span class='line'>│   ├── base_strategy.py          # 策略抽象基类
+</span><span class='line'>│   ├── smart_tag_board_strategy.py # SmartTag板块策略基类（防重入、每日限额、板块龙头）
+</span><span class='line'>│   ├── hot_stop.py               # 热门止跌策略（SmartTag全字段+BoardRank+BuyAnalyzer AI）
+</span><span class='line'>│   ├── buyer_clist.py            # 列表买入策略
+</span><span class='line'>│   ├── guba_top.py               # 股吧热门策略
+</span><span class='line'>│   ├── rebound_dip.py            # 反弹抄底策略
+</span><span class='line'>│   ├── strong_multi_side.py      # 条件股策略
+</span><span class='line'>│   ├── influx_numeric.py         # 净流入策略
+</span><span class='line'>│   ├── continuous_reduction.py   # 超跌人气策略（已禁用）
+</span><span class='line'>│   ├── supplement_buy.py         # 补仓策略
+</span><span class='line'>│   ├── buyer.py                  # 买入执行器（防重复买入、买1价挂单）
+</span><span class='line'>│   └── utils/                    # 策略工具
+</span><span class='line'>│       ├── buy_analyzer.py       # 买入策略AI分析器（千问大模型风险筛查+打分）
+</span><span class='line'>│       ├── buy_strategy_prompt.md # BuyAnalyzer系统提示词
+</span><span class='line'>│       ├── bought_recorder.py    # 买入记录器（防重复买入）
+</span><span class='line'>│       ├── jsonfile.py           # JSON文件读写工具
+</span><span class='line'>│       ├── logger.py             # 日志工具
+</span><span class='line'>│       └── path.py               # 路径工具
+</span><span class='line'>│
+</span><span class='line'>├── sellers/                      # 卖出策略模块
+</span><span class='line'>│   ├── base.py                   # 卖出条件基类（SellCondition/ConditionType）
+</span><span class='line'>│   ├── condition_manager.py      # 条件管理器（单例、注册/查询/按类型筛选）
+</span><span class='line'>│   ├── position_seller.py        # 持仓卖出执行器（买1价/跌停价卖出）
+</span><span class='line'>│   ├── kline_seller.py           # K线卖出策略（别名）
+</span><span class='line'>│   ├── hold_risk_strategy.py     # 持仓风险AI卖出策略（持仓≥3天且当日下跌）
+</span><span class='line'>│   ├── top_profit_strategy.py    # 顶部止盈策略（当日盈亏≥3%清仓）
+</span><span class='line'>│   ├── utils/
+</span><span class='line'>│   │   ├── risk_analyzer.py      # AI风险分析器（千问大模型+关键词分类）
+</span><span class='line'>│   │   ├── hold_risk_analyzer.py # 持仓风险AI分析器（板块退潮/伪强势/资金出逃）
+</span><span class='line'>│   │   └── sell_strategy_prompt.md # HoldRiskAnalyzer系统提示词
+</span><span class='line'>│   └── conditions/               # 卖出条件实现
+</span><span class='line'>│       ├── hard_risk.py          # 第一层：硬性利空AI检测（1分钟轮询，RiskAnalyzer AI分析）
+</span><span class='line'>│       ├── suspend_risk_stock.py # 第二层：停牌风险AI检测（1小时轮询，停牌+RiskAnalyzer AI分析）
+</span><span class='line'>│       ├── popularity_rank.py    # 第三层：人气排名淘汰（尾盘）
+</span><span class='line'>│       ├── multi_source_risk.py  # AI风险检测（RiskAnalyzer AI分析，命中利空即卖）
+</span><span class='line'>│       ├── zt.py                 # 涨停卖出
+</span><span class='line'>│       ├── profit_threshold.py   # 盈利阈值卖出
+</span><span class='line'>│       ├── daily_profit_threshold.py # 当日盈利阈值
+</span><span class='line'>│       ├── ending_profit.py      # 尾盘盈利卖出
+</span><span class='line'>│       ├── days_falling.py       # 连续下跌条件（含人气前100豁免）
+</span><span class='line'>│       ├── hot200.py             # 人气榜200卖出
+</span><span class='line'>│       ├── risk_stock.py         # AI风险股票检测
+</span><span class='line'>│       ├── custom_profit.py      # 自定义盈利条件
+</span><span class='line'>│       └── simple_threshold.py   # 简单阈值条件
+</span><span class='line'>│
+</span><span class='line'>├── request_lib/                  # 请求库
+</span><span class='line'>│   ├── base_request.py           # 基础请求类（重试、限流、网络检测）
+</span><span class='line'>│   ├── configurable.py           # 配置基类（统一配置读取）
+</span><span class='line'>│   ├── config_manager.py         # 配置管理器
+</span><span class='line'>│   ├── qwen_api.py               # 阿里千问API客户端（json_mode、联网搜索）
+</span><span class='line'>│   ├── market/                   # 市场数据接口
+</span><span class='line'>│   │   ├── smart_tag.py          # 智能标签选股（get/get_all_fields/parse_all_fields）
+</span><span class='line'>│   │   ├── board_rank.py         # 板块排名（二级行业板块查询）
+</span><span class='line'>│   │   ├── stock_info_fetcher.py # 股票信息获取器（并发获取公告/资讯/公司大事）
+</span><span class='line'>│   │   ├── stock_quote.py       # 批量股票详细行情（行情/资金/DDX/财务/板块全量字段）
+</span><span class='line'>│   │   ├── popularity_rank.py    # 人气排名前1000
+</span><span class='line'>│   │   ├── clist.py              # 沪深京A股排名列表
+</span><span class='line'>│   │   ├── kline.py              # K线数据
+</span><span class='line'>│   │   ├── index_list.py         # 三大指数数据
+</span><span class='line'>│   │   ├── up_down_stat.py       # 大盘涨跌平统计
+</span><span class='line'>│   │   ├── security_ann.py       # 公告信息（含风险/硬利空关键词检测）
+</span><span class='line'>│   │   ├── info_service.py       # 资讯服务（含风险/硬利空关键词检测）
+</span><span class='line'>│   │   ├── company_event.py      # 公司大事（含风险/硬利空关键词检测）
+</span><span class='line'>│   │   ├── hot200.py             # 人气榜200
+</span><span class='line'>│   │   ├── stock_suspend_api.py  # 停牌信息
+</span><span class='line'>│   │   └── clist_input.py        # 排名列表输入参数
+</span><span class='line'>│   ├── trade/                    # 交易接口
+</span><span class='line'>│   │   ├── asset_position.py     # 持仓信息
+</span><span class='line'>│   │   ├── submittrade.py        # 交易提交
+</span><span class='line'>│   │   ├── snapshot.py           # 实时行情快照
+</span><span class='line'>│   │   ├── deal_data.py          # 成交数据
+</span><span class='line'>│   │   ├── revoke_orders.py      # 撤单
+</span><span class='line'>│   │   ├── revoke_list.py        # 撤单列表
+</span><span class='line'>│   │   ├── batch_revoke_orders.py # 批量撤单
+</span><span class='line'>│   │   ├── his_orders.py         # 历史委托
+</span><span class='line'>│   │   └── all_need_trade_info.py # 交易所需全部信息
+</span><span class='line'>│   └── utils/                    # 工具类
+</span><span class='line'>│       ├── jsonfile.py           # JSON文件读写
+</span><span class='line'>│       └── logger.py             # 日志工具
+</span><span class='line'>│
+</span><span class='line'>├── kline/                        # K线数据模块
+</span><span class='line'>│   ├── kline_local.py            # 本地K线数据处理
+</span><span class='line'>│   ├── stock_kline_local.py      # 个股K线分析
+</span><span class='line'>│   ├── stock_kline.py            # K线数据获取
+</span><span class='line'>│   ├── kline_log.py              # K线日志
+</span><span class='line'>│   └── kline_local_sync.py       # K线本地同步
+</span><span class='line'>│
+</span><span class='line'>└── config.json                   # 配置文件</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>AI 分析模块</h2>
+
+<h3>BuyAnalyzer（买入策略AI分析器）</h3>
+
+<p>位于 <code>strategies/utils/buy_analyzer.py</code>，用于买入前的风险筛查与上涨潜力打分。</p>
+
+<p><strong>工作流程</strong>：
+1. 接收 SmartTag 全字段候选股票列表
+2. 调用 <code>batch_fetch_stock_info</code> 并发获取每只股票近14天的公告、资讯、公司大事
+3. 将股票数据 + 近期信息拼接为用户输入
+4. 调用阿里千问大模型（默认 <code>qwen3.7-max</code>），以 <code>json_mode</code> 输出结构化分析结果
+5. 返回每只股票的 <code>is_risk</code>（是否有风险）、<code>risk_comment</code>（风险说明）、<code>score</code>（上涨潜力评分）、<code>priority</code>（买入优先级）</p>
+
+<p><strong>系统提示词</strong>：独立存储在 <code>strategies/utils/buy_strategy_prompt.md</code>，便于维护和调优</p>
+
+<h3>RiskAnalyzer（卖出风险AI分析器）</h3>
+
+<p>位于 <code>sellers/utils/risk_analyzer.py</code>，用于盘中持仓股票的硬性利空风险检测，默认模型 <code>qwen-plus</code>。</p>
+
+<p><strong>架构</strong>：数据获取层（<code>StockInfoFetcher</code>）与 AI 分析层（<code>RiskAnalyzer</code>）分离</p>
+
+<p><strong>工作流程</strong>：</p>
+
+<ol>
+<li><code>StockInfoFetcher</code> 并发获取公告、资讯、公司大事</li>
+<li>关键词预过滤：先用 190+ 风险关键词 / 40 硬利空关键词筛选潜在风险信息</li>
+<li>AI 精判：将预过滤结果提交千问大模型，判断是否为实质性风险</li>
+<li>结果缓存：基于数据指纹（MD5）缓存分析结果，避免重复调用 AI</li>
+</ol>
+
+
+<p><strong>两种分析模式</strong>：</p>
+
+<ul>
+<li><strong>一般风险分析</strong>：14天窗口，190+ 关键词预过滤 + AI 精判</li>
+<li><strong>硬性利空分析</strong>：14天窗口，40 硬利空关键词预过滤 + AI 精判</li>
+</ul>
+
+
+<h3>HoldRiskAnalyzer（持仓风险AI分析器）</h3>
+
+<p>位于 <code>sellers/utils/hold_risk_analyzer.py</code>，用于尾盘持仓风险深度检测，默认模型 <code>qwen3.7-max</code>。</p>
+
+<p><strong>触发条件</strong>：持仓≥3天且当日下跌的个股</p>
+
+<p><strong>工作流程</strong>：</p>
+
+<ol>
+<li>筛选持仓≥3天且当日下跌的候选股票</li>
+<li>调用 <code>StockQuote.get()</code> 批量获取可视化行情数据（含行情/资金/DDX/财务/板块全量字段）</li>
+<li>调用 <code>batch_fetch_stock_info</code> 并发获取近14天资讯</li>
+<li>将行情数据 + 资讯拼接为用户输入，调用千问大模型分析三大核心风险</li>
+<li>输出每只股票的 <code>boardTrend</code>（板块趋势：强势/警戒/退潮）、<code>isFakeStrong</code>（是否伪强势）、<code>isCapitalEscapeEarly</code>（是否资金出逃早期）、<code>suggestion</code>（持有/警戒/卖出）</li>
+</ol>
+
+
+<p><strong>三大核心风险判定</strong>：</p>
+
+<table>
+<thead>
+<tr>
+<th> 风险类型 </th>
+<th> 判定标准 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <strong>板块退潮</strong> </td>
+<td> 强风险：主力+超大单同步净流出、机构资金持续流出、个股弱于板块；弱偏弱：放量滞涨、DDX飘红天数下滑、换手率高但无冲高动能 </td>
+</tr>
+<tr>
+<td> <strong>伪强势股</strong> </td>
+<td> 满足2条即标记：概念热门但资金净流出、小幅收涨但DDX为负且量比>1.5、换手率高但无创新高动能、大资金持续离场、量能萎缩且10日DDX翻绿 </td>
+</tr>
+<tr>
+<td> <strong>资金出逃早期</strong> </td>
+<td> 必须4条同时满足：主力净流入&lt;0、超大单净额&lt;0、量比>1.5、DDX为负 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><strong>卖出触发组合</strong>：板块退潮+伪强势 / 伪强势+资金出逃 / 板块退潮+资金出逃，满足任意一组即卖出</p>
+
+<p><strong>系统提示词</strong>：独立存储在 <code>sellers/utils/sell_strategy_prompt.md</code>，便于维护和调优</p>
+
+<p><strong>缓存机制</strong>：同一天只调用一次AI接口，结果按日期缓存，后续调用直接使用缓存</p>
+
+<h3>QwenAPI（阿里千问API客户端）</h3>
+
+<p>位于 <code>request_lib/qwen_api.py</code>，封装阿里千问大模型 API 调用。</p>
+
+<p><strong>特性</strong>：
+- 兼容 OpenAI SDK，使用阿里云 DashScope 兼容模式端点
+- 支持 <code>json_mode</code>：设置 <code>response_format={"type": "json_object"}</code>，模型输出合法 JSON
+- 支持联网搜索：<code>enable_search=True</code> 时启用强制搜索
+- API Key 优先级：配置文件 > 环境变量 <code>DASHSCOPE_API_KEY</code>
+- 可选模型：<code>qwen-plus</code>、<code>qwen-turbo</code>、<code>qwen3.7-max</code>、<code>qwen-vl-plus-latest</code></p>
+
+<h2>环境要求</h2>
+
+<ul>
+<li>Python 3.8+</li>
+<li>Windows / Linux / macOS</li>
+<li>推荐部署在云服务器上实现全天候自动化运行</li>
+<li>阿里千问 API Key（用于 AI 分析功能）</li>
+</ul>
+
+
+<h2>安装配置</h2>
+
+<h3>1. 克隆项目</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git clone https://github.com/your-username/easymoney.git
+</span><span class='line'><span class="nb">cd </span>easymoney
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>2. 创建虚拟环境</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>python -m venv .venv
+</span><span class='line'><span class="c"># Windows</span>
+</span><span class='line'>.venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</span><span class='line'><span class="c"># Linux/macOS</span>
+</span><span class='line'><span class="nb">source</span> .venv/bin/activate
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>3. 安装依赖</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>pip install -r requirements.txt
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>4. 配置文件</h3>
+
+<p>复制并修改 <code>config.json</code> 文件，填写必要的配置信息：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="nt">&quot;maxRetries&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+</span><span class='line'>    <span class="nt">&quot;retryInterval&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+</span><span class='line'>    <span class="nt">&quot;requestInterval&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+</span><span class='line'>    <span class="nt">&quot;requestTimeout&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+</span><span class='line'>    <span class="nt">&quot;api_key&quot;</span><span class="p">:</span> <span class="s2">&quot;your-dashscope-api-key&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nt">&quot;kline_cookie&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nt">&quot;clist_cookie&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<table>
+<thead>
+<tr>
+<th> 参数 </th>
+<th> 类型 </th>
+<th> 说明 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <code>maxRetries</code> </td>
+<td> int </td>
+<td> 最大重试次数 </td>
+</tr>
+<tr>
+<td> <code>retryInterval</code> </td>
+<td> int </td>
+<td> 重试间隔（秒） </td>
+</tr>
+<tr>
+<td> <code>requestInterval</code> </td>
+<td> int </td>
+<td> 请求间隔（秒） </td>
+</tr>
+<tr>
+<td> <code>requestTimeout</code> </td>
+<td> int </td>
+<td> 请求超时时间（秒） </td>
+</tr>
+<tr>
+<td> <code>api_key</code> </td>
+<td> string </td>
+<td> 阿里千问 API Key </td>
+</tr>
+<tr>
+<td> <code>kline_cookie</code> </td>
+<td> string </td>
+<td> K线接口 Cookie（可选） </td>
+</tr>
+<tr>
+<td> <code>clist_cookie</code> </td>
+<td> string </td>
+<td> 排名列表接口 Cookie（可选） </td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>快速开始</h2>
+
+<h3>启动交易系统</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>python easymoney.py
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>系统将在交易时段内自动执行注册的策略。</p>
+
+<h3>核心功能</h3>
+
+<ul>
+<li><strong>AI 智能选股</strong>：SmartTag 全字段数据 + BuyAnalyzer AI 风险筛查与打分</li>
+<li><strong>自动买入</strong>：14:55 自动执行买入操作，防重入、每日限额</li>
+<li><strong>自动卖出</strong>：盘中实时监控 + 尾盘止盈清仓 + 尾盘统一卖出</li>
+<li><strong>止盈清仓</strong>：14:54后每60秒检查，当日盈亏比例≥3%时无条件清仓</li>
+<li><strong>AI 风险监控</strong>：1分钟轮询利空关键词 + AI 精判，1小时轮询停牌风险</li>
+<li><strong>梯度持仓</strong>：根据持仓数量自动调节买入权限</li>
+<li><strong>板块隔离</strong>：二级行业板块分散投资，降低系统性风险</li>
+<li><strong>补仓执行</strong>：14:56自动补足未成交金额</li>
+<li><strong>人气豁免</strong>：连续下跌条件中人气前100股票豁免卖出</li>
+<li><strong>订单监控</strong>：每10秒自动扫描挂单，撤单重挂确保最新价格</li>
+</ul>
+
+
+<h2>策略开发</h2>
+
+<h3>创建买入策略</h3>
+
+<p>继承 <code>SmartTagBoardStrategy</code> 类并实现 <code>stocks()</code> 方法：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">strategies.smart_tag_board_strategy</span> <span class="kn">import</span> <span class="n">SmartTagBoardStrategy</span>
+</span><span class='line'><span class="kn">from</span> <span class="nn">strategies.utils</span> <span class="kn">import</span> <span class="n">get_strategy_file_path</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">MyStrategy</span><span class="p">(</span><span class="n">SmartTagBoardStrategy</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">config_file</span> <span class="o">=</span> <span class="n">get_strategy_file_path</span><span class="p">(</span><span class="s">&quot;my_strategy.json&quot;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">stocks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span class='line'>        <span class="c"># 实现股票筛选逻辑</span>
+</span><span class='line'>        <span class="c"># 返回 [{&quot;stockCode&quot;: &quot;...&quot;, &quot;stockName&quot;: &quot;...&quot;, &quot;currentPrice&quot;: ...}, ...]</span>
+</span><span class='line'>        <span class="k">pass</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>SmartTagBoardStrategy</code> 已内置：
+- 防重入锁（<code>_reentry_locks</code>）：防止定时任务重叠执行
+- 每日买入限额（<code>_daily_bought</code>）：每个策略子类当日最多买入 N 只，跨日自动重置
+- 板块龙头选取（<code>_pick_sector_leaders</code>）：每个二级行业板块取排名第一的股票
+- 持仓/板块/撤单过滤（<code>_get_filter_lists</code>）
+- 统一买入执行（<code>buy()</code> → <code>_do_buy()</code>）</p>
+
+<h3>创建卖出条件</h3>
+
+<p>继承 <code>SellCondition</code> 类并实现 <code>check()</code> 方法：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">sellers.base</span> <span class="kn">import</span> <span class="n">SellCondition</span><span class="p">,</span> <span class="n">ConditionType</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">MyCondition</span><span class="p">(</span><span class="n">SellCondition</span><span class="p">):</span>
+</span><span class='line'>    <span class="nd">@property</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">return</span> <span class="s">&quot;my_condition&quot;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nd">@property</span>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">condition_type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ConditionType</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">return</span> <span class="n">ConditionType</span><span class="o">.</span><span class="n">PENDING</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">position</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+</span><span class='line'>        <span class="c"># 实现卖出条件判断逻辑</span>
+</span><span class='line'>        <span class="c"># 返回 True 表示满足卖出条件</span>
+</span><span class='line'>        <span class="k">pass</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>每日执行流程</h2>
+
+<h3>每日交易前（9:00）</h3>
+
+<ul>
+<li>确认昨日收盘持仓数量，明确今日买入权限</li>
+<li>检查所有持仓个股非交易时间发布的公告，命中利空关键词的标记为待卖出</li>
+</ul>
+
+
+<h3>盘中交易时间（9:30-15:00）</h3>
+
+<ul>
+<li>每10秒：涨停卖出检查、订单监控与撤单重挂</li>
+<li>每60秒：硬性利空关键词扫描（命中立即跌停价卖出）</li>
+<li>每60秒：买入记录同步</li>
+<li>每小时：停牌风险扫描</li>
+<li>14:54起每60秒：止盈清仓检查（当日盈亏比例 ≥ 3% 清仓）</li>
+<li>14:54起每60秒：持仓风险AI检测（当日下跌，HoldRiskAnalyzer AI分析板块退潮/伪强势/资金出逃）</li>
+<li>14:55：尾盘卖出（人气淘汰）</li>
+<li>14:55：尾盘买入（热门止跌策略，SmartTag + BoardRank + BuyAnalyzer AI）</li>
+<li>14:56：补仓（差额补足）</li>
+<li>15:00：收盘，停止所有操作</li>
+</ul>
+
+
+<h3>每日收盘后（15:00-15:30）</h3>
+
+<ul>
+<li>记录当日所有交易的买卖时间、价格、数量、盈亏</li>
+<li>统计当日账户总资产、持仓数量、各策略表现</li>
+<li>记录今日卖出过的板块，明日不再买回</li>
+</ul>
+
+
+<h2>注意事项</h2>
+
+<ol>
+<li><p><strong>风险提示</strong>：本系统仅供学习和研究使用，不构成任何投资建议。股市有风险，投资需谨慎。</p></li>
+<li><p><strong>交易时段</strong>：系统默认在 A 股交易时段运行（工作日 09:20-11:30, 13:00-15:00）。</p></li>
+<li><p><strong>数据安全</strong>：请妥善保管 <code>config.json</code> 中的 API Key 和 Cookie 等敏感信息，不要将配置文件提交到公开仓库。</p></li>
+<li><p><strong>策略测试</strong>：建议先在模拟环境中测试策略，确认无误后再用于实盘交易。</p></li>
+<li><p><strong>云服务器部署</strong>：推荐部署在云服务器上，确保系统全天候稳定运行。</p></li>
+<li><p><strong>AI 分析耗时</strong>：BuyAnalyzer 单次分析约30秒，系统通过防重入锁避免定时任务重叠。</p></li>
+</ol>
+
+
+<h2>许可证</h2>
+
+<p>MIT License</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">丘海东</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2026-06-02T08:44:32+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2026</span></span> <span class='time'>8:44 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/pstock-market/'>pstock-market</a>
+  
+</span>
+
+
+      
+
+<span class="tags">
+  
+    <a class='tag' href='/tags/daily/'>daily</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2026/06/02/lao-chen-sell/" title="Previous Post: 老陈 - 卖出策略">&laquo; 老陈 - 卖出策略</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2124/03/19/stock-market/" title="Next Post: 股市">股市 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2223/12/21/day-2223/">知自己，识世界</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2125/09/05/jiao-yi-yuan-ze/">交易原则</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/06/02/lao-chen-ai-auto-trade/">老陈 - AI自动交易系统</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/06/02/lao-chen-sell/">老陈 - 卖出策略</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/06/02/lao-chen-buy/">老陈 - 买入策略</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/05/31/ben-zhi-:jing-zheng/">本质：竞争、争夺</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/05/21/daily-165:tan-tan-guo-ping/">Daily 165：谈谈国乒</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/05/20/daily-164/">Daily 164：别霸凌自己</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/05/09/daily-163/">Daily 163：放过以前的自己</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/05/09/daily-162/">Daily 162</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/05/06/daily-161/">Daily 161：回避型人格，怕</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/05/04/newpost-libgedit-gtksourceview-warning-failed-to-load-style-scheme-file/">Newpost Error: libgedit-gtksourceview-WARNING, Failed to Load Style Scheme File</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/05/04/daily-160/">Daily 160</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/04/30/ubuntu-26-boot-grub/">Ubuntu 26.04 开机引导项</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/04/30/update-to-ubuntu-26-dot-04/">用命令行升级到Ubuntu 26.04</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/04/28/daily-159/">Daily 159</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/04/24/she-hui-hua-cheng-du-ti-sheng/">社会化程度提升</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/04/22/daily-158/">Daily 158</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/04/22/mei-tian-xu-2200qia/">每天需2200卡</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
+<li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (207)</a></li>
+<li class='category'><a href='/blog/categories/pstock-market/'>pstock-market (3)</a></li>
+<li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
+<li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>
+<li class='category'><a href='/blog/categories/tech-octopress/'>tech-octopress (26)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Tags</h1>
+  <ul id="tag-cloud">
+    <li><a style="font-size: 120%" href="/tags/c-number/">C#</a></li>
+<li><a style="font-size: 120%" href="/tags/octopress/">Octopress</a></li>
+<li><a style="font-size: 120%" href="/tags/c/">c</a></li>
+<li><a style="font-size: 120%" href="/tags/c-plus-plus/">c++</a></li>
+<li><a style="font-size: 120%" href="/tags/cook/">cook</a></li>
+<li><a style="font-size: 160%" href="/tags/daily/">daily</a></li>
+<li><a style="font-size: 120%" href="/tags/lightdm/">lightdm</a></li>
+<li><a style="font-size: 129%" href="/tags/octopress/">octopress</a></li>
+<li><a style="font-size: 134%" href="/tags/octopress2-dot-0/">octopress2.0</a></li>
+<li><a style="font-size: 145%" href="/tags/octopress3-dot-0/">octopress3.0</a></li>
+<li><a style="font-size: 120%" href="/tags/python2-ubuntu/">python2-ubuntu</a></li>
+<li><a style="font-size: 138%" href="/tags/rough/">rough</a></li>
+<li><a style="font-size: 120%" href="/tags/ruby2-dot-3-1/">ruby2.3.1</a></li>
+<li><a style="font-size: 120%" href="/tags/rvm/">rvm</a></li>
+<li><a style="font-size: 126%" href="/tags/she/">she</a></li>
+<li><a style="font-size: 129%" href="/tags/ssh/">ssh</a></li>
+<li><a style="font-size: 120%" href="/tags/tech/">tech</a></li>
+<li><a style="font-size: 132%" href="/tags/ubuntu/">ubuntu</a></li>
+<li><a style="font-size: 120%" href="/tags/ubuntu-charge-protect/">ubuntu-charge-protect</a></li>
+<li><a style="font-size: 120%" href="/tags/windows/">windows</a></li>
+
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/qiuhaidong">@qiuhaidong</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'qiuhaidong',
+            count: 1,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  <!--返回顶部开始-->
+<div id="full" style="width:30px; height:30px; position:fixed; right:13px; bottom:13px; z-index:100; text-align:center; background-color:transparent; cursor:pointer;">
+<a href="#" onclick="goTop();return false;"><img src="/images/top.png" border=0 alt="返回顶部"></a>
+</div>
+<script src="/javascripts/top.js" type="text/javascript"></script>
+<!--返回顶部结束-->
+
+
+  Copyright &copy; 2026 - 丘海东 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

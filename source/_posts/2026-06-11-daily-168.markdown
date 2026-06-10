@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Daily 168：减肥"
+date: 2026-06-11 01:28:59 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+睡眠的问题解决了。  
+接下来，减肥。

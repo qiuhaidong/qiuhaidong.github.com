@@ -8,14 +8,7 @@
   <title>丘海东</title>g
 
   
-  <meta name="description" content="社会（人性）的本质，是争夺。
-抢掠，争斗，阳谋阴谋，各种手段。
-不存在划分地盘，永不越界的理想，因为资源有限。
-蓝海期很短暂，漫长的红海期刺刀见红。
-越早认清、接受，才能提高认知。
-选择躺平、退让，就是放弃机会、资源，那，就得接受必然的庸碌，穷困，无能。
-这，就是现实。
-">
+  <meta name="description" content="角色定位 你是A股短线右侧阶段强势股专属选股智能体。分析分为两个层次：第一层基于用户传入的完整JSON数据（决策最高权重）；第二层可主动使用联网搜索、轻量搜索等功能获取增量信息，最大化利用全部可获取数据完成客观分析，提高判断准确性。所有进入候选池的股票已满足前置硬筛选：东方财富当日人气前300、 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +66,47 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2026/06/02/lao-chen-buy/">老陈 - 买入策略</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2026-06-02T08:41:13+08:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>2</span><span class='date-suffix'>nd</span>, <span class='date-year'>2026</span></span> <span class='time'>8:41 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>角色定位</h1>
+
+<p>你是A股短线右侧阶段强势股专属选股智能体。分析分为两个层次：第一层基于用户传入的完整JSON数据（决策最高权重）；第二层可主动使用联网搜索、轻量搜索等功能获取增量信息，最大化利用全部可获取数据完成客观分析，提高判断准确性。所有进入候选池的股票已满足前置硬筛选：东方财富当日人气前300、涨跌幅-4%~4%、量比0.4~2.8、日线均线多头、日线阶段强势股，无需校验。</p>
+
+<p>你的工作严格分为三大阶段：
+1. 全量个股实质性风险筛查
+2. 强势真实性精细校验（上涨/下跌分离判断）
+3. 无风险个股上涨潜力打分</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2026/06/02/lao-chen-buy/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -391,74 +425,6 @@ Caring too much about others' judgments is bullying yourself.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2026/04/30/update-to-ubuntu-26-dot-04/">用命令行升级到Ubuntu 26.04</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2026-04-30T21:34:30+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2026</span></span> <span class='time'>9:34 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>参考：<a href="https://www.bilibili.com/opus/1194724902391775251">如何优雅地升级到 Ubuntu 26.04 LTS</a><br/>
-Ubuntu 25.10系统可以立即升级（有时要等待几天，分批推送），而Ubuntu 24.04 LTS系统将在Ubuntu 26.04.1发布后获得标准升级路径。</p>
-
-<h3>首先，最重要的：备份。</h3>
-
-<p>然后，先更新现有系统到最新：</p>
-
-<pre><code>sudo apt update
-sudo apt upgrade
-</code></pre>
-
-<p>开始版本升级，请运行：</p>
-
-<pre><code>sudo do-release-upgrade
-</code></pre>
-
-<p>如果Ubuntu尚未提供新版本（尚未推送），请遵循您当前版本的标准支持发布流程。</p>
-
-<p>但您想立即升级，可以添加 -d 参数强制检查开发/发布版本：</p>
-
-<pre><code>sudo do-release-upgrade -d
-</code></pre>
-
-<p>该工具将禁用第三方仓库，将apt源更新为指向Ubuntu 26.04的仓库，并开始下载所需的软件包。在此过程中，您将多次收到提示。当询问服务是否应自动重启时，输入 y。当询问配置文件时，如果您没有进行自定义更改，则输入 Y以接受软件包维护者的版本；否则保留您的当前版本以避免丢失自定义设置。</p>
-
-<p>升级过程在一个GNU screen会话中运行，如果连接断开，它会自动重新附加。此过程可能需要一段时间，具体取决于软件包数量、您的硬件和互联网速度。</p>
-
-<p>安装完新软件包后，工具会询问是否要删除过时的软件。输入 d以先查看列表，或输入 y以继续删除。</p>
-
-<p>当升级完成时，系统会提示您重新启动系统。输入 y以重启并完成升级。</p>
-
-<p>验证升级，系统启动后，登录并检查Ubuntu版本：</p>
-
-<pre><code>lsb_release -a
-</code></pre>
-
-<p>确认内核版本：</p>
-
-<pre><code>uname -r
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/3">&larr; Older</a>
@@ -485,6 +451,10 @@ sudo apt upgrade
     
       <li class="post">
         <a href="/blog/2124/03/19/stock-market/">股市</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2026/06/14/daily-169/">Daily 169：忍住了一次想喝可乐</a>
       </li>
     
       <li class="post">
@@ -551,10 +521,6 @@ sudo apt upgrade
         <a href="/blog/2026/04/30/ubuntu-26-boot-grub/">Ubuntu 26.04 开机引导项</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2026/04/30/update-to-ubuntu-26-dot-04/">用命令行升级到Ubuntu 26.04</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -562,7 +528,7 @@ sudo apt upgrade
   <ul id="categories">
     <li class='category'><a href='/blog/categories/excel/'>excel (2)</a></li>
 <li class='category'><a href='/blog/categories/only-for-you/'>only-for-you (1)</a></li>
-<li class='category'><a href='/blog/categories/personal/'>personal (211)</a></li>
+<li class='category'><a href='/blog/categories/personal/'>personal (212)</a></li>
 <li class='category'><a href='/blog/categories/pstock-market/'>pstock-market (3)</a></li>
 <li class='category'><a href='/blog/categories/rvm/'>rvm (1)</a></li>
 <li class='category'><a href='/blog/categories/tech/'>tech (69)</a></li>

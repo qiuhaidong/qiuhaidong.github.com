@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2026-06-14T02:59:09+08:00</updated>
+  <updated>2026-06-17T02:31:37+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -63,6 +63,19 @@
 <li><strong>学习</strong>：股市、金融知识，关注世事、时局，了解行业、公司。</li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Daily 170：减肥]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2026/06/17/daily-170/"/>
+    <updated>2026-06-17T02:25:27+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2026/06/17/daily-170</id>
+    <content type="html"><![CDATA[<p><strong>今晚又忍住了一顿宵夜，好。</strong><br/>
+最近，饮食和睡眠恢复正常后，这几天反而有点食欲大增，睡眠也增。<br/>
+其实也不能说大增，因为我之前是一天吃两餐的，最近偶尔吃三餐。<br/>
+睡眠也是，晚上睡5小时，白天还能睡2-3小时，其实正常。<br/>
+注意控制，保持健康。</p>
 ]]></content>
   </entry>
   
@@ -2445,19 +2458,6 @@ Caring too much about others' judgments is bullying yourself.</p>
 <p>如果你能在别人身上，看到非凡勇气和魄力，那么在你的内心深处,一定也有同样的东西，否则你是看不出来的。<br/>
 不要只仰望别人的光，你能认出光，证明你本身也有光。<br/>
 你心里有光，你内心深处的力量其实并未缺席，只是需要你去勇敢的唤醒，大胆的去做，你远比自己想象中更厉害。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu 26.04 开机引导项]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2026/04/30/ubuntu-26-boot-grub/"/>
-    <updated>2026-04-30T22:02:57+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2026/04/30/ubuntu-26-boot-grub</id>
-    <content type="html"><![CDATA[<p>命令行升级（不是说这里有因果关系），Ubuntu26.04，之后想更改默认启动项，用下面的图形工具，报错。<br/>
-<a href="https://qiuhaidong.github.io/blog/2025/04/07/boot-grub/">Grub Customizer</a><br/>
-尝试改 <code>/etc/default/grub</code>，应用：<code>sudo update-grub</code>，还是报错。<br/>
-再回到图形工具，点击“还原”，（忘了要不要先保存一下），再重新改，<br/>
-<strong>行了</strong>。</p>
 ]]></content>
   </entry>
   

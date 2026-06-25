@@ -4,7 +4,7 @@
   <title><![CDATA[丘海东]]></title>
   <link href="https://qiuhaidong.github.io/atom.xml" rel="self"/>
   <link href="https://qiuhaidong.github.io/"/>
-  <updated>2026-06-24T04:52:09+08:00</updated>
+  <updated>2026-06-26T02:27:34+08:00</updated>
   <id>https://qiuhaidong.github.io/</id>
   <author>
     <name><![CDATA[丘海东]]></name>
@@ -63,6 +63,25 @@
 <li><strong>学习</strong>：股市、金融知识，关注世事、时局，了解行业、公司。</li>
 </ol>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[执行力，自制力，太懒了]]></title>
+    <link href="https://qiuhaidong.github.io/blog/2026/06/26/zhi-xing-li-,tai-lan-liao-,zi-zhi-li/"/>
+    <updated>2026-06-26T02:20:16+08:00</updated>
+    <id>https://qiuhaidong.github.io/blog/2026/06/26/zhi-xing-li-,tai-lan-liao-,zi-zhi-li</id>
+    <content type="html"><![CDATA[<p>这几天疯狂吃东西，放纵了几天。<br/>
+自控力不行，要加强。<br/>
+接下来开始减肥。</p>
+
+<p>股市有太多的好股票，好板块，好业绩，涨了好久、好多。<br/>
+AI链，存储芯片，光模块，PCB。<br/>
+N倍的牛股。<br/>
+但是自己都不肯花一点时间去行动：<br/>
+思考，查询，选择。<br/>
+要偷懒也看一下ETF嘛！！！<br/>
+这都是钱呀！！！</p>
 ]]></content>
   </entry>
   
@@ -2427,31 +2446,6 @@ Caring too much about others' judgments is bullying yourself.</p>
     <content type="html"><![CDATA[<p>混的不好的人往往都是<strong>回避型人格</strong>。<br/>
 这类人都有一个共同特征：就是<strong>怕，怕抛头露面，怕出丑，怕承担责任</strong>。<br/>
 他们通常都<strong>缺乏过程思维和长期主义</strong>精神。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newpost Error: libgedit-gtksourceview-WARNING, Failed to Load Style Scheme File]]></title>
-    <link href="https://qiuhaidong.github.io/blog/2026/05/04/newpost-libgedit-gtksourceview-warning-failed-to-load-style-scheme-file/"/>
-    <updated>2026-05-04T04:30:15+08:00</updated>
-    <id>https://qiuhaidong.github.io/blog/2026/05/04/newpost-libgedit-gtksourceview-warning-failed-to-load-style-scheme-file</id>
-    <content type="html"><![CDATA[<p>Ubuntu 26.04，新建blog提示错误：</p>
-
-<pre><code>dong@dong-Ubuntu:~$ ./newpost.sh 
-*********************
-
-(gedit:8630): libgedit-gtksourceview-WARNING **: 04:11:11.080: Failed to load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru.xml': 第 3 行第 1 个字符出错： attribute 'version' invalid for element 'style-scheme'
-
-(gedit:8630): libgedit-gtksourceview-WARNING **: 04:11:11.081: Failed to load style scheme file '/usr/share/libgedit-gtksourceview-300/styles/Yaru-dark.xml': 第 3 行第 1 个字符出错： attribute 'version' invalid for element 'style-scheme'
-</code></pre>
-
-<p>找到这两个文件，先备份（到阿里云盘），然后把第二行的<code>version="1.0"</code>删除。</p>
-
-<p><img src="https://wx3.sinaimg.cn/large/780bc50fgy1icsyi44l0gj213w0hmqch.jpg" alt="Yaru.xml, Yaru-dark.xml" /><br/>
-<img src="https://raw.githubusercontent.com/qiuhaidong/qiuhaidong.github.com/refs/heads/source/source/images/libgedit-gtksourceview-WARNING%20.png" alt="in source" /></p>
-
-<p>就不再提示错误了。<br/>
-如果以后出现其他问题，把它们改回来。</p>
 ]]></content>
   </entry>
   

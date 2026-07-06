@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Daily 172"
+date: 2026-07-07 02:22:13 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+减肥，饮食，睡眠，戒抖音  
+学习  
+实践、行动

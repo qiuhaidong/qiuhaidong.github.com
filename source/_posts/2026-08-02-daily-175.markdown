@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Daily 175"
+date: 2026-08-02 01:02:18 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+作息、饮食调一调。  
+早上8点起床，下午2点起床。  
+通过控制起床时间，来控制睡眠时间。  
+减肥。  
+每天管理摄入量。
+

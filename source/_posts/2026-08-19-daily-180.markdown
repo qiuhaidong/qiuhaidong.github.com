@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Daily 180"
+date: 2026-08-19 07:59:49 +0800
+author: 丘海东 
+tags: daily
+comments: true
+categories: personal
+published: true
+---
+真正的聪明  
+是制定一个可实现的长期目标  
+然后坚定地，长时间地，集中大部分（允许偶尔放纵）注意力、专注力在上面  
